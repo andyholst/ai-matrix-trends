@@ -6,6 +6,9 @@ tags:
   - opencode
   - codex
   - mcp
+links:
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Jev Agent Router]]"
 ---
 
 # Oh My OpenAgent
@@ -49,7 +52,7 @@ npx lazycodex-ai install
 - Ultrawork mode for extended autonomous coding sessions
 
 ## Compatibility
-- **Agent:** [[OpenCode]], [[Codex CLI]]
+- **Agent:** [[2026092012 - OpenCode]], [[202609202000 - Codex]]
 - **Versions:** OpenCode v1.x+, Codex CLI
 
 ## Related Plugins

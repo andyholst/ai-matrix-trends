@@ -4,6 +4,9 @@ created: 2026-09-20T30:00:00+02:00
 tags:
   - architecture
   - context-engineering
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # Context Engineering
@@ -33,11 +36,11 @@ Context engineering replaces prompt engineering as the primary lever for agent q
 - **Cons:** Requires careful engineering of compaction and retrieval logic; irreversible compression risks information loss; adds complexity to the agent loop; tool masking requires constrained decoding support
 
 ## Examples
-- [[Claude Code]] — uses compaction, memory tool, and sub-agent isolation
+- [[202609202000 - Claude Code]] — uses compaction, memory tool, and sub-agent isolation
 - [[Manus]] — file system as context, KV-cache optimization, tool masking via state machine
 
 ## Related Patterns
-- [[Sub-Agent Delegation]], [[Agent Teams]], [[MCP Protocol]]
+- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092032 - Agent Teams Pattern]], [[MCP Protocol]]
 
 ## Sources
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

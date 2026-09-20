@@ -6,6 +6,9 @@ tags:
   - mcp
   - claude-code
   - integrations
+links:
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Jev Agent Router]]"
 ---
 
 # Composio MCP
@@ -46,7 +49,7 @@ composio login
 - Design-to-code pipelines via Figma integration
 
 ## Compatibility
-- **Agent:** [[Claude Code]], [[Cursor]], [[Codex CLI]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]]
 - **Versions:** Any MCP-compliant agent
 
 ## Related Plugins

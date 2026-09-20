@@ -5,6 +5,9 @@ tags:
   - plugin
   - claude-code
   - skills
+links:
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Jev Agent Router]]"
 ---
 
 # Superpowers
@@ -42,7 +45,7 @@ npx skills add obra/superpowers
 - Code review with actionable feedback loops
 
 ## Compatibility
-- **Agent:** [[Claude Code]]
+- **Agent:** [[202609202000 - Claude Code]]
 - **Versions:** Claude Code v2.x+
 
 ## Related Plugins

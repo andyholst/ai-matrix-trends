@@ -4,6 +4,9 @@ created: 2026-09-20T40:00:00+02:00
 tags:
   - workflow
   - config
+links:
+  - "[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]"
+  - "[[202609202001 - Claude Code Hooks for CI-CD Automation]]"
 ---
 
 # Spec-Driven Development with Spec Kit

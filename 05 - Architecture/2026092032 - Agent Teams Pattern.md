@@ -5,6 +5,9 @@ tags:
   - architecture
   - agent-teams
   - parallel-execution
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # Agent Teams Pattern
@@ -36,11 +39,11 @@ File locking prevents two teammates from editing the same file simultaneously. E
 - **Cons:** More complex setup than simple sub-agents; requires git worktrees or similar isolation; WIP limits needed (3–5 agents sweet spot); vague specs multiply errors across the fleet; verification becomes the bottleneck, not generation
 
 ## Examples
-- [[Claude Code]] — experimental Agent Teams feature (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
+- [[202609202000 - Claude Code]] — experimental Agent Teams feature (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
 - [[Conductor]] — local orchestrator managing agents in isolated worktrees
 
 ## Related Patterns
-- [[Sub-Agent Delegation]], [[Context Engineering]], [[Orchestrator-Worker]]
+- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092030 - Context Engineering]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 
 ## Sources
 - https://addyosmani.com/blog/code-agent-orchestra/

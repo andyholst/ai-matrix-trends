@@ -5,6 +5,9 @@ tags:
   - architecture
   - sub-agent
   - orchestration
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # Sub-Agent Delegation Pattern
@@ -34,11 +37,11 @@ The parent manages the dependency graph manually, tracking which sub-agents have
 - **Cons:** Parent must manually manage dependency graph; no peer messaging between sub-agents; no shared task list; requires careful file scoping to avoid conflicts; vague delegation produces vague results
 
 ## Examples
-- [[Claude Code]] — Task tool spawns sub-agents with markdown-defined briefs
+- [[202609202000 - Claude Code]] — Task tool spawns sub-agents with markdown-defined briefs
 - [[Spring AI]] — Task tool implementation inspired by Claude Code's subagents, model-agnostic
 
 ## Related Patterns
-- [[Context Engineering]], [[Agent Teams]], [[Orchestrator-Worker]]
+- [[2026092030 - Context Engineering]], [[2026092032 - Agent Teams Pattern]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 
 ## Sources
 - https://addyosmani.com/blog/code-agent-orchestra/

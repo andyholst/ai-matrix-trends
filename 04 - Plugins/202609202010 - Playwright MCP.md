@@ -11,7 +11,7 @@ links:
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Cursor]]"
   - "[[202609200800 - Windsurf]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
 ---
 
 # Playwright MCP
@@ -59,7 +59,7 @@ claude mcp add playwright -- npx @playwright/mcp@latest
 - Regression testing through scripted browser sessions
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200800 - Windsurf]], [[202609200758 - OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200800 - Windsurf]], [[2026092012 - OpenCode]]
 - **Versions:** Node.js 18+, Playwright MCP 0.0.82+
 
 ## Related Plugins

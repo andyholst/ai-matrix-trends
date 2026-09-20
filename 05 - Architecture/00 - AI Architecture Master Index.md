@@ -186,7 +186,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 
 ### Agents (03 - Agents/)
 - [[202609202000 - Claude Code]] — Anthropic CLI agent
-- [[202609200758 - OpenCode]] — Open-source CLI agent
+- [[2026092012 - OpenCode]] — Open-source CLI agent
 - [[202609200759 - Hermes Agent]] — Nous Research multi-platform agent
 
 ---

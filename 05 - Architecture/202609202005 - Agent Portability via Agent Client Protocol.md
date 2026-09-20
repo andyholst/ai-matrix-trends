@@ -54,7 +54,7 @@ Key insight from Zed Industries: maintaining a VS Code extension for goose prove
 - Limited awareness compared to MCP; fewer tutorials and community resources
 
 ## Examples
-- [[202609200758 - OpenCode]] — goose running inside Zed editor via ACP instead of a VS Code extension
+- [[2026092012 - OpenCode]] — goose running inside Zed editor via ACP instead of a VS Code extension
 - [[202609200759 - Hermes Agent]] — JetBrains IDEs adopting ACP for AI assistant integration
 - Agents that need to operate across design tools, browsers, and other platforms beyond editors
 - Terminal agents that want to be accessible from any ACP-supporting host

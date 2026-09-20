@@ -49,7 +49,7 @@ claude mcp add agent-browser -- npx agent-browser-mcp
 - Cloud browser session management with provider failover
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200758 - OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[2026092012 - OpenCode]]
 - **Versions:** Node.js 18+, Rust 1.75+
 
 ## Related Plugins

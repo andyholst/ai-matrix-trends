@@ -12,7 +12,7 @@ aliases:
 links:
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Cursor]]"
-  - "[[202609202002 - Gemini CLI]]"
+  - "[[2026092011 - Gemini CLI]]"
   - "[[202609202023 - MCP Gateway Aggregation Layer]]"
 ---
 
@@ -72,7 +72,7 @@ project_context:
 ## Related Agents
 - [[202609202000 - Claude Code]] — terminal-native agent with broader model support
 - [[202609202000 - Cursor]] — model-agnostic IDE alternative
-- [[202609202002 - Gemini CLI]] — Google's terminal-first agent
+- [[2026092011 - Gemini CLI]] — Google's terminal-first agent
 
 ## Sources
 - [Google Antigravity](https://antigravity.dev/)

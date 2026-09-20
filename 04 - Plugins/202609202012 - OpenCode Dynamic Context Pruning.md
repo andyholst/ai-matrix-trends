@@ -8,7 +8,7 @@ tags:
 links:
   - "[[MOC-Plugin-Ecosystem]]"
   - "[[MOC-Trending-Agents]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
 ---
 
 # OpenCode Dynamic Context Pruning
@@ -44,12 +44,12 @@ OpenCode Dynamic Context Pruning (DCP) is a plugin that intelligently manages co
 - Preventing hallucinations from outdated context
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]]
+- **Agent:** [[2026092012 - OpenCode]]
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins
 - [[202609202000 - Jev Agent Router]] — alternative context management approach
-- [[202609200758 - OpenCode]] — persistent memory across sessions
+- [[2026092012 - OpenCode]] — persistent memory across sessions
 
 ## Sources
 - [GitHub](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning)

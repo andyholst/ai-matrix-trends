@@ -52,7 +52,7 @@ OpenCode Chromium Browser is a browser automation plugin for OpenCode that contr
 - Integration with existing Chromium profiles
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]]
+- **Agent:** [[2026092012 - OpenCode]]
 - **Versions:** OpenCode 2.x+, Chromium 120+, Node.js 18+
 
 ## Related Plugins

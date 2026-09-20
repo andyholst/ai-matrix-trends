@@ -5,6 +5,9 @@ tags:
   - plugin
   - opencode
   - token-optimization
+links:
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Jev Agent Router]]"
 ---
 
 # OpenCode Snip
@@ -41,7 +44,7 @@ go install github.com/edouard-claude/snip/cmd/snip@latest
 - CI/CD pipeline runs where output verbosity is high
 
 ## Compatibility
-- **Agent:** [[OpenCode]]
+- **Agent:** [[2026092012 - OpenCode]]
 - **Versions:** OpenCode v1.x+
 
 ## Related Plugins

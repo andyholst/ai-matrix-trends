@@ -11,7 +11,7 @@ aliases:
 links:
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Aider]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
 ---
 
 # Terminal Agent Wars
@@ -33,7 +33,7 @@ Multiple AI coding agents are competing for developer mindshare in the terminal,
 
 ## Related Patterns
 - [[202609202000 - Claude Code]] — Anthropic's CLI agent
-- [[202609200758 - OpenCode]] — Open-source CLI agent
+- [[2026092012 - OpenCode]] — Open-source CLI agent
 - [[202609202000 - Aider]] — Terminal pair-programming
 
 ## Sources

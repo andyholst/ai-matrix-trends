@@ -5,9 +5,9 @@ tags:
   - trend
   - tool
 links:
-  - "[[202609200758 - OpenCode]]"
-  - "[[202609200758 - OpenCode]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
+  - "[[2026092012 - OpenCode]]"
 ---
 
 # OpenCode Plugin Ecosystem Maturation
@@ -24,11 +24,11 @@ The pattern is clear: OpenCode is becoming a platform, not just a CLI agent. The
 OpenCode's plugin ecosystem maturation signals a shift from "CLI agent" to "agent platform." Teams can now assemble tailored agent workflows by combining plugins, similar to how VS Code extensions work. The local-first approach of OpenCodeRAG and the MCP-free Chromium Browser plugin show that OpenCode is prioritizing self-hosting and privacy — a differentiator against cloud-only competitors.
 
 ## Related
-- [[202609200758 - OpenCode]]
-- [[202609200758 - OpenCode]]
-- [[202609200758 - OpenCode]]
-- [[202609200758 - OpenCode]]
-- [[202609200758 - OpenCode]]
+- [[2026092012 - OpenCode]]
+- [[2026092012 - OpenCode]]
+- [[2026092012 - OpenCode]]
+- [[2026092012 - OpenCode]]
+- [[2026092012 - OpenCode]]
 
 ## Sources
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
