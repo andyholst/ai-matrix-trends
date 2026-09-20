@@ -12,11 +12,11 @@
 
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
-| 1 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
-| 2 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
-| 3 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
-| 4 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
-| 5 | [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | agent | 0 | Heating Up |
+| 1 | [202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) | 130 | agent | 0 | Heating Up |
+| 2 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
+| 3 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
+| 4 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
+| 5 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
 
 
 ## 🔌 Top Plugins & Extensions
@@ -96,11 +96,11 @@
 
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
-| 1 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
-| 2 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
-| 3 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
-| 4 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
-| 5 | [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | agent | 0 | Heating Up |
+| 1 | [202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) | 130 | agent | 0 | Heating Up |
+| 2 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
+| 3 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
+| 4 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
+| 5 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
 
 ### Stable
 
@@ -117,10 +117,10 @@
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
 | 1 | [2026092020 - Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 18 | plugin | 0 | Emerging |
-| 2 | [2026092011 - Gemini CLI](./03%20-%20Agents/2026092011%20-%20Gemini%20CLI.md) | 15 | agent | 0 | Emerging |
-| 3 | [202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md) | 15 | agent | 0 | Emerging |
-| 4 | [202609200911 - Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | 15 | agent | 0 | Emerging |
-| 5 | [202609200914 - JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | 15 | agent | 0 | Emerging |
+| 2 | [202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md) | 15 | agent | 0 | Emerging |
+| 3 | [202609200911 - Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | 15 | agent | 0 | Emerging |
+| 4 | [202609200914 - JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | 15 | agent | 0 | Emerging |
+| 5 | [202609200913 - Replit Agent](./03%20-%20Agents/202609200913%20-%20Replit%20Agent.md) | 15 | agent | 0 | Emerging |
 
 
 ## 📁 Vault Structure

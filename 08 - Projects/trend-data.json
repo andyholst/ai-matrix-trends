@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-09-20T14:55:17.886494",
+  "last_updated": "2026-09-20T14:56:28.640410",
   "items": {
     "Cline": {
       "type": "agent",
       "stars": 0,
-      "mentions": 1,
+      "mentions": 23,
       "tags": [
         "agent",
-        "vscode",
+        "tool",
         "mcp"
       ],
-      "score": 20,
-      "file": "03 - Agents/2026092013 - Cline.md"
+      "score": 130,
+      "file": "03 - Agents/202609202000 - Cline.md"
     },
     "Codex": {
       "type": "agent",
@@ -40,14 +40,12 @@
     "Gemini CLI": {
       "type": "agent",
       "stars": 0,
-      "mentions": 1,
+      "mentions": 5,
       "tags": [
-        "agent",
-        "cli",
-        "google"
+        "agent"
       ],
-      "score": 15,
-      "file": "03 - Agents/2026092011 - Gemini CLI.md"
+      "score": 25,
+      "file": "03 - Agents/202609202002 - Gemini CLI.md"
     },
     "GitHub Copilot Agent": {
       "type": "agent",
@@ -58,17 +56,6 @@
       ],
       "score": 10,
       "file": "03 - Agents/202609202001 - GitHub Copilot Agent.md"
-    },
-    "Kilo Code": {
-      "type": "agent",
-      "stars": 0,
-      "mentions": 4,
-      "tags": [
-        "agent",
-        "cli"
-      ],
-      "score": 30,
-      "file": "03 - Agents/2026092014 - Kilo Code.md"
     },
     "JetBrains Junie": {
       "type": "agent",
@@ -141,14 +128,14 @@
     "OpenCode": {
       "type": "agent",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 13,
       "tags": [
         "agent",
         "open-source",
         "cli"
       ],
-      "score": 25,
-      "file": "03 - Agents/2026092012 - OpenCode.md"
+      "score": 75,
+      "file": "03 - Agents/202609200758 - OpenCode.md"
     },
     "Devin": {
       "type": "agent",
@@ -351,6 +338,17 @@
       ],
       "score": 20,
       "file": "03 - Agents/2026092010 - Claw Code.md"
+    },
+    "Kilo Code": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 4,
+      "tags": [
+        "agent",
+        "cli"
+      ],
+      "score": 30,
+      "file": "03 - Agents/2026092014 - Kilo Code.md"
     },
     "SWE-2": {
       "type": "agent",
