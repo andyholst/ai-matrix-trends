@@ -374,6 +374,23 @@ tags:
 6. **MOC update** → Add to relevant Map of Content if the theme exists; create new MOC if threshold reached
 7. **Refactor** → After batch ingestion, revisit earlier notes to strengthen links, merge duplicates, or split oversized notes
 
+### Wikilink Resolution (CRITICAL)
+
+Sub-agents write notes with short-name wikilinks like `[[Claude Code]]` for readability. The merge step MUST resolve these to actual filenames before completing.
+
+**Rules:**
+- `[[Claude Code]]` must resolve to `[[202609202000 - Claude Code]]` (the actual file)
+- `[[Browser Use MCP]]` must resolve to `[[202609202000 - Browser Use MCP]]`
+- Always search all folders to find the matching filename
+- If no exact match exists, find the closest partial match (e.g., `[[opencode-tavily]]` → `[[202609202000 - OpenCode Firecrawl]]`)
+- If no match exists at all, link to the most relevant MOC
+
+**Process:**
+1. Use `search_files(pattern="\\[\\[.*\\]\\]", ...)` to find all wikilinks
+2. For each `[[link_text]]` find the actual file
+3. Apply fix with `patch(path=..., old_string="[[link_text]]", new_string="[[actual filename]]")`
+4. Repeat until zero orphans remain
+
 ### Refactoring Rules
 
 Refactoring is expected. When restructuring:
@@ -450,12 +467,52 @@ GitHub does NOT render `[[wikilinks]]` as clickable. Use standard Markdown:
 
 ---
 
+## Link Verification Rules
+
+Every note must have at least 2 working outbound links. No exceptions.
+
+**Definition of "working link":**
+- `[[wikilink]]` points to a file that actually exists in the vault
+- `[markdown link](url)` points to a valid relative path
+
+**How to verify:**
+1. Read note content
+2. Extract all `[[...]]` links
+3. For each link, search filesystem for matching file
+4. If match not found, resolve to actual filename using partial matching
+5. Apply fix with `patch()`
+
+**README-specific:**
+1. All links must be Markdown format (not wikilinks)
+2. All links must point to existing files
+3. No duplicate entries (timestamped version takes precedence over short-name)
+
+---
+
 ## Editing Existing Notes
 
 Never overwrite an entire file. Always:
 1. `read_file(path="...")` to see current content
 2. Use `patch(path="...", old_string="...", new_string="...")` for targeted edits
 3. Verify the edit landed with another `read_file` if needed
+
+---
+
+## Required Skills & Tools
+
+**Skills:**
+- `skill_view(name="obsidian")` — vault operations, wikilink conventions, read/write/append
+
+**Research tools (Firecrawl enabled in this profile):**
+- `web_search(query)` — search for trending tools, plugins, patterns
+- `web_extract([urls])` — scrape content from specific pages for detailed info
+
+**File operations:**
+- `search_files(pattern, target, path)` — find files or content
+- `read_file(path)` — read before editing
+- `write_file(path, content)` — create new files (notes, manifests)
+- `patch(path, old_string, new_string)` — edit existing files
+- `terminal(command)` — git operations, cleanup
 
 ---
 
