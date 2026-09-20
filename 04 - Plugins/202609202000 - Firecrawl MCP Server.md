@@ -62,8 +62,8 @@ Set `FIRECRAWL_API_KEY` in your environment or `.env` file. The key is `fc-` pre
 - **Dependencies:** Node.js 18+, npx, Firecrawl API key
 
 ## Related Plugins
-- [[opencode-firecrawl]] — OpenCode-specific wrapper around the same CLI
-- [[opencode-tavily]] — Alternative web search plugin for OpenCode
+- [[202609202000 - OpenCode Firecrawl]] — OpenCode-specific wrapper around the same CLI
+- [[202609202000 - OpenCode Firecrawl]] — Alternative web search plugin for OpenCode
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — Unified MCP gateway that includes scraping tools
 
 ## Sources
