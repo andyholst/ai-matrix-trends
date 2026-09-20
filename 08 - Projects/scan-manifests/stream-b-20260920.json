@@ -1,0 +1,32 @@
+[
+  {
+    "file": "04 - Plugins/202609202010 - Playwright MCP.md",
+    "title": "Playwright MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Windsurf", "VS Code", "OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/202609202011 - Chrome DevTools MCP.md",
+    "title": "Chrome DevTools MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Windsurf", "VS Code"]
+  },
+  {
+    "file": "04 - Plugins/202609202012 - OpenCode Dynamic Context Pruning.md",
+    "title": "OpenCode Dynamic Context Pruning",
+    "type": "plugin",
+    "agents": ["OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/202609202013 - Hermes Plugin System.md",
+    "title": "Hermes Plugin System",
+    "type": "plugin",
+    "agents": ["Hermes Agent"]
+  },
+  {
+    "file": "04 - Plugins/202609202014 - OpenCode Oh-My-Openagent.md",
+    "title": "OpenCode Oh-My-Openagent",
+    "type": "plugin",
+    "agents": ["OpenCode"]
+  }
+]

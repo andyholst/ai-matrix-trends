@@ -267,25 +267,22 @@ Format:
 
 ### Step 5: Update README (DEDUPLICATE AND CLEAN)
 
-**CRITICAL FOR GITHUB COMPATIBILITY:**
-GitHub does NOT render `[[Obsidian wikilinks]]` as clickable links. The README MUST use standard Markdown link format: `[Display Text](./path/to/file.md)`
+**CRITICAL: README LINK FORMAT FOR GITHUB**
+GitHub does NOT render `[[wikilinks]]` as clickable. Every link MUST use: `[Display Text](./path%20with%20spaces/file.md)`
 
-**For example, instead of:**
-```markdown
-| [[202609202000 - Claude Code]] | Anthropic | ...
-```
+**Examples:**
+- ✅ `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+- ❌ `[[Claude Code]]`
 
-**Use:**
-```markdown
-|[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
-```
+**Steps:**
+1. `read_file(path="README.md")` to see current content
+2. Convert every `[[...]]` to `[text](./path.md)` format
+3. Verify target exists: `search_files(pattern="filename.md", target="files", path=".")`
+4. Remove duplicate entries (old non-timestamped versions)
+5. Update tables from manifests, update trend radar, update date
+6. `write_file(path="README.md", content="...")` with complete updated content
 
-**Important:** The README likely contains BOTH old placeholder links AND new timestamped links. You MUST:
-
-1. **Read current README** with `read_file(path="README.md")` to see all existing links
-2. **Remove duplicate entries:** If both `[[Claude Code]]` and `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` exist, REMOVE the non-timestamped version
-3. **Check every link** — for each `[text](url)`, verify the target file exists with `search_files`
-4. **Replace wikilinks with Markdown links** everywhere
+**Goal:** Zero `[[wikilinks]]` in README. All links are clickable Markdown.
 5. **Update tables:**
    - Trending Agents — from stream-a manifest, remove old duplicates
    - Top Plugins — from stream-b manifest, remove old duplicates
