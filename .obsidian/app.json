@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "newLinkMode": "relative",
+  "useMarkdownLinks": false,
+  "attachmentFolderPath": "99 - Attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00 - Inbox"
+}
