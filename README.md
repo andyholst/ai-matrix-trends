@@ -76,7 +76,9 @@
 | [MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md) | LLMs on both MCP server and client for flexibility | Emerging |
 | [MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) | Gateway federating multiple MCP servers behind one client endpoint | Emerging |
 | [Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md) | Lead agent dispatching stateless workers with clean context windows | Emerging |
-| [Compaction and Note-Taking for Long-Horizon Context](./05%20-%20Architecture/202609202025%20-%20Compaction%20and%20Note-Taking%20for%20Long-Horizon%20Context.md) | Compaction + external notes for coherence beyond context limits | Growing |
+|[Compaction and Note-Taking for Long-Horizon Context](./05%20-%20Architecture/202609202025%20-%20Compaction%20and%20Note-Taking%20for%20Long-Horizon%20Context.md) | Compaction + external notes for coherence beyond context limits | Growing |
+
+**Full index:** [AI Architecture Master Index](./05%20-%20Architecture/00%20-%20AI%20Architecture%20Master%20Index.md) (12 patterns, comparison table, protocol analysis)
 
 ---
 

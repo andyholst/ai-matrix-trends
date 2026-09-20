@@ -357,7 +357,7 @@ Use the manifest data to add intelligent cross-links:
          new_string="links:\n  - [[202609202000 - Codex]]\n  - [[202609202000 - Cline]]\n  - [[202609202010 - Browser Use MCP]]")
    ```
 
-### Step 4: Update MOCs with New Notes
+### Step 4: Update MOCs and Master Index with New Notes
 
 Open each MOC file and add new notes from manifests to the appropriate cluster:
 - `07 - Structure/MOC-Trending-Agents.md` — add new agents from stream-a manifest
@@ -372,6 +372,11 @@ Format:
 ```markdown
 - [[YYYYMMDDHHMM - Note Title]] — [one-line summary from manifest]
 ```
+
+**For Architecture Patterns:**
+- Also update the AI Architecture Master Index at `05 - Architecture/00 - AI Architecture Master Index.md`
+- Add new patterns to the appropriate section (Core, Emerging, Production)
+- Update the comparison table if adoption levels changed
 
 ### Step 5: Update README (DEDUPLICATE AND CLEAN)
 

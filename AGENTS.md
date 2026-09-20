@@ -585,6 +585,37 @@ The Trend Radar is the vault's analysis of where AI coding agent trends are head
 
 ---
 
+---
+
+## Architecture Patterns (Critical Section)
+
+Modern AI architecture patterns are documented in `05 - Architecture/`. This vault tracks:
+
+### Core Patterns
+- **Single-Agent**: CLI agents with tool loops
+- **Multi-Agent**: Orchestrator-worker, peer-to-peer, hierarchical
+- **MCP Server**: Universal tool/resource interface
+- **Context Engineering**: Jev system, compaction, RAG
+
+### Emerging Patterns
+- MCP Proxy Aggregator
+- MCP Apps Interactive UI
+- Agent Portability (ACP)
+- Verifiable Execution
+- Federated Agent Networks
+
+### Master Index
+**All architecture patterns are indexed in:** `05 - Architecture/00 - AI Architecture Master Index.md`
+
+**Maintenance rules:**
+1. Add new patterns to both `05 - Architecture/` and the master index
+2. Update the comparison table when adoption levels change
+3. Link to related agents/plugins/MOCs
+4. Track emerging patterns in Trend Radar
+5. Update Trend Radar Emerging section when patterns gain traction
+
+---
+
 ## Link Verification Rules
 
 Every note must have at least 2 working outbound links. No exceptions.
