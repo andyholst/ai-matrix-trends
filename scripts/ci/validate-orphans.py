@@ -2,16 +2,21 @@
 """
 validate-orphans.py - Detect orphan notes that aren't linked from anywhere.
 Stage 6 of CI pipeline.
+FAILS the pipeline when orphans are detected (not just a warning).
 """
 
 import os
 import re
 import sys
 
-VAULT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Get the vault root directory (3 levels up from this script)
+SCRIPT_PATH = os.path.abspath(__file__)
+SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
+CI_DIR = os.path.dirname(SCRIPT_DIR)
+VAULT_DIR = os.path.dirname(CI_DIR)
 
 def build_file_map():
-    """Build map of all existing files"""
+    """Build map of all existing files: lowered_filename -> relative_path"""
     file_map = {}
     for root, dirs, files in os.walk(VAULT_DIR):
         if '/.git' in root:
@@ -19,15 +24,14 @@ def build_file_map():
         for f in files:
             if f.endswith('.md'):
                 fname = f.replace('.md', '')
-                rel_path = os.path.relpath(os.path.join(root, f), VAULT_DIR)
+                full_path = os.path.join(root, f)
+                rel_path = os.path.relpath(full_path, VAULT_DIR)
+                # Store by lowered filename
                 file_map[fname.lower()] = rel_path
-                if ' - ' in fname:
-                    title = fname.split(' - ', 1)[1]
-                    file_map[title.lower()] = rel_path
     return file_map
 
 def find_linked_files():
-    """Find all files that are linked from other files"""
+    """Find all files that are linked from other files (wikilinks + frontmatter)"""
     linked = set()
     
     for root, dirs, files in os.walk(VAULT_DIR):
@@ -39,7 +43,7 @@ def find_linked_files():
                 with open(filepath) as fh:
                     content = fh.read()
                 
-                # Find all wikilinks
+                # Find all wikilinks in body
                 wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
                 for link in wikilinks:
                     linked.add(link.strip().lower())
@@ -59,27 +63,27 @@ def find_linked_files():
 def main():
     print("STAGE 6: Orphan Detection")
     print("=" * 60)
+    print(f"Vault: {VAULT_DIR}")
     
     file_map = build_file_map()
     linked_files = find_linked_files()
     
-    # Files to skip (indexes, MOCs, templates)
-    skip_patterns = ['00 -', 'MOC-', 'AGENTS.md', 'README.md', 'LICENSE', 'daily-scan-prompt.md']
+    # Files to skip (indexes, MOCs, templates, scripts)
+    skip_patterns = ['00 -', 'MOC-', 'AGENTS.md', 'README.md', 'LICENSE', 
+                     'daily-scan-prompt.md', 'scripts/ci/', '.obsidian/templates/']
     
     orphans = []
     for fname, rel_path in file_map.items():
-        # Skip index files and templates
+        # Skip index files, templates, and scripts
         if any(pattern in rel_path for pattern in skip_patterns):
             continue
         
-        # Check if file is linked
+        # Check if file is linked (by full filename)
         if fname not in linked_files:
-            # Check if title is linked
-            if ' - ' in fname:
-                title = fname.split(' - ', 1)[1]
-                if title in linked_files:
-                    continue
-            orphans.append(rel_path)
+            # Also check by title only (after " - ")
+            title = fname.split(' - ', 1)[1] if ' - ' in fname else fname
+            if title not in linked_files:
+                orphans.append(rel_path)
     
     print(f"Total files: {len(file_map)}")
     print(f"Linked files: {len(linked_files)}")
@@ -92,13 +96,12 @@ def main():
     
     print(f"\n{'=' * 60}")
     if orphans:
-        # Orphans are warnings, not failures
-        print("⚠ Orphans detected (warning only)")
-        sys.exit(0)
+        print(f"✗ FAIL: {len(orphans)} orphan files detected")
+        print("  These notes should be linked from other notes or indexed in MOCs")
+        sys.exit(1)
     else:
         print("✓ No orphan files")
         sys.exit(0)
 
 if __name__ == '__main__':
-    os.chdir(VAULT_DIR)
     main()
