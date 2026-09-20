@@ -542,6 +542,31 @@ Items are scored based on:
 - `scripts/update-readme.py` - Updates README tables with scored data
 
 
+
+
+## Daily Scan Scripts (CRITICAL)
+
+The cron job MUST execute these scripts in EXACT ORDER:
+
+1. **fix_all_links.py** - Resolves ALL broken wikilinks to actual filenames
+2. **aggregate-trends.py** - Scores all items based on stars/mentions/tags
+3. **collect_agent_plugins.py** - Builds per-agent plugin compatibility tables
+4. **update_readme.py** - Updates README with scored trend tables
+5. **verify-vault.py** - Verifies all links resolve correctly
+
+**NEVER skip any script. NEVER change the order.**
+
+### Script Details
+
+| Script | Purpose | Output |
+|--------|---------|--------|
+| fix_all_links.py | Fixes frontmatter + body wikilinks | Fixed files |
+| aggregate-trends.py | Scores all items | trend-data.json |
+| collect_agent_plugins.py | Builds per-agent plugin tables | Updated README |
+| update_readme.py | Updates Trend Radar tables | Updated README |
+| verify-vault.py | Verifies all links work | Console output |
+
+
 ## Frontmatter Links Requirement (CRITICAL)
 
 Every note's frontmatter MUST contain at least 2 wikilinks in the `links:` field:

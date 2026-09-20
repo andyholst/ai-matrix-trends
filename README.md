@@ -230,3 +230,83 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | 3 | [202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md) | 15 | agent | 0 | Emerging |
 | 4 | [202609200911 - Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | 15 | agent | 0 | Emerging |
 | 5 | [202609200914 - JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | 15 | agent | 0 | Emerging |
+
+## 🔌 Plugins by Agent
+
+*Top 5 scored plugins for each agentic tool — Last updated: 2026-09-20*
+
+### Claude Code
+
+*Top plugins/extensions for Claude Code*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
+| 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 75 | — | plugin, mcp |
+| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 75 | — | plugin, mcp |
+
+### OpenCode
+
+*Top plugins/extensions for OpenCode*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
+| 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 75 | — | plugin, mcp |
+| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 75 | — | plugin, mcp |
+
+### Hermes Agent
+
+*Top plugins/extensions for Hermes Agent*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 55 | — | plugin, tool |
+| 2 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | plugin, hermes |
+| 3 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 20 | — | plugin, hermes |
+| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 20 | — | plugin, hermes |
+
+### Cursor
+
+*Top plugins/extensions for Cursor*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
+| 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 75 | — | plugin, mcp |
+| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 75 | — | plugin, mcp |
+
+### Codex
+
+*Top plugins/extensions for Codex*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
+| 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md) | 75 | — | plugin, mcp |
+| 5 | [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | 55 | — | plugin, opencode |
+
+## 📊 Plugin Compatibility Matrix
+
+| Plugin | claude-code | opencode | hermes | cursor | codex | Score |
+|--------|------|------|------|------|------|-------|
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md) | ✅ | — | — | ✅ | ✅ | 75 |
+| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | ✅ | — | — | — | — | 70 |
+
+---
