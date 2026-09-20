@@ -1,0 +1,26 @@
+[
+  {
+    "file": "06 - Use Cases/202609202030 - CI-CD Pipeline Automation with Claude Code Hooks and GitHub Actions.md",
+    "title": "CI/CD Pipeline Automation with Claude Code Hooks and GitHub Actions",
+    "type": "workflow",
+    "agents": ["Claude Code"],
+    "plugins": ["GitHub Actions", "MCP"],
+    "tags": ["ci-cd", "hooks", "automation"]
+  },
+  {
+    "file": "06 - Use Cases/202609202031 - Multi-Server MCP Orchestration for Enterprise Agent Workflows.md",
+    "title": "Multi-Server MCP Orchestration for Enterprise Agent Workflows",
+    "type": "workflow",
+    "agents": ["Claude Code"],
+    "plugins": ["MCP Hub", "MCP"],
+    "tags": ["mcp", "orchestration", "enterprise"]
+  },
+  {
+    "file": "06 - Use Cases/202609202032 - Custom Skills and Slash Commands as Team Workflow Accelerators.md",
+    "title": "Custom Skills and Slash Commands as Team Workflow Accelerators",
+    "type": "workflow",
+    "agents": ["Claude Code"],
+    "plugins": ["Skills", "Slash Commands"],
+    "tags": ["skills", "automation", "team-workflow"]
+  }
+]

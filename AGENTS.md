@@ -498,12 +498,41 @@ Every note must have at least 2 working outbound links. No exceptions.
 
 ---
 
-## Editing Existing Notes
+## Link Verification Using Obsidian Skill
 
-Never overwrite an entire file. Always:
-1. `read_file(path="...")` to see current content
-2. Use `patch(path="...", old_string="...", new_string="...")` for targeted edits
-3. Verify the edit landed with another `read_file` if needed
+The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsidian CLI — the agent uses `search_files`, `read_file`, and `patch()` to verify and fix links.
+
+**How the merge agent identifies orphans:**
+
+1. **Extract all wikilinks** from every note:
+   ```
+   search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")
+   search_files(pattern="\\[\\[.*\\]\\]", target="content", path="04 - Plugins", file_glob="*.md")
+   search_files(pattern="\\[\\[.*\\]\\]", target="content", path="05 - Architecture", file_glob="*.md")
+   search_files(pattern="\\[\\[.*\\]\\]", target="content", path="06 - Use Cases", file_glob="*.md")
+   ```
+
+2. **Build a file map** by walking all vault folders and noting every `.md` filename
+
+3. **Cross-reference** each `[[wikilink]]` against the file map:
+   - Direct match: `[[202609200758 - OpenCode]]` matches `03 - Agents/202609200758 - OpenCode.md`
+   - Short-name match: `[[OpenCode]]` partially matches → resolve to actual filename
+   - No match: orphan → fix with `patch()` or replace with closest existing file
+
+4. **Fix orphans** using `patch()`:
+   ```
+   patch(path="04 - Plugins/202609202000 - Firecrawl MCP Server.md",
+         old_string="[[opencode-tavily]]",
+         new_string="[[202609202000 - OpenCode Firecrawl]]")
+   ```
+
+5. **Repeat** until zero orphans remain.
+
+**Why this works:**
+- `search_files` extracts every wikilink from the DOM/text
+- The agent reads each note's content and compares against filesystem
+- `patch()` updates links without overwriting existing content
+- The Obsidian skill's wikilink convention (`[[Note Name]]`) is preserved for Obsidian vault navigation
 
 ---
 
