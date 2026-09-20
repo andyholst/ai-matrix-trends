@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T12:05:02.649411",
+  "last_updated": "2026-09-20T12:43:11.219926",
   "items": {
     "Cline": {
       "type": "agent",
@@ -351,6 +351,63 @@
       ],
       "score": 20,
       "file": "03 - Agents/2026092010 - Claw Code.md"
+    },
+    "SWE-2": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 14,
+      "tags": [
+        "agent",
+        "model"
+      ],
+      "score": 70,
+      "file": "03 - Agents/202609202015 - SWE-2.md"
+    },
+    "Pareto": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 7,
+      "tags": [
+        "agent",
+        "model",
+        "composite"
+      ],
+      "score": 35,
+      "file": "03 - Agents/202609202045 - Pareto.md"
+    },
+    "Jev": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 13,
+      "tags": [
+        "agent",
+        "model",
+        "decision-model"
+      ],
+      "score": 65,
+      "file": "03 - Agents/202609202035 - Jev.md"
+    },
+    "Devin Desktop": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 8,
+      "tags": [
+        "agent",
+        "ide"
+      ],
+      "score": 40,
+      "file": "03 - Agents/202609202025 - Devin Desktop.md"
+    },
+    "Muse Code": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 8,
+      "tags": [
+        "agent",
+        "cli"
+      ],
+      "score": 50,
+      "file": "03 - Agents/202609202055 - Muse Code.md"
     },
     "Browser Use MCP": {
       "type": "plugin",
@@ -712,6 +769,138 @@
       ],
       "score": 23,
       "file": "04 - Plugins/2026092023 - CodeGraph MCP.md"
+    },
+    "Supabase MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202035 - Supabase MCP.md"
+    },
+    "Exa MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202025 - Exa MCP.md"
+    },
+    "Linear MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202055 - Linear MCP.md"
+    },
+    "Notion MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202045 - Notion MCP.md"
+    },
+    "Figma MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202105 - Figma MCP.md"
+    },
+    "Datadog MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202135 - Datadog MCP.md"
+    },
+    "Cloudflare MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202125 - Cloudflare MCP.md"
+    },
+    "Stripe MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202115 - Stripe MCP.md"
+    },
+    "Sequential Thinking MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202205 - Sequential Thinking MCP.md"
+    },
+    "Kubernetes MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202145 - Kubernetes MCP.md"
+    },
+    "Terraform MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202155 - Terraform MCP.md"
+    },
+    "Zapier MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202215 - Zapier MCP.md"
     }
   }
 }
