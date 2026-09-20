@@ -6,8 +6,8 @@ tags:
   - enterprise
   - autonomous
 links:
-  - "[[202609202000 - Devin]]"
-  - "[[202609202000 - Cursor]]"
+  - "[Devin](./03%20-%20Agents/202609202000%20-%20Devin.md)"
+  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
 ---
 
 # Factory Droids

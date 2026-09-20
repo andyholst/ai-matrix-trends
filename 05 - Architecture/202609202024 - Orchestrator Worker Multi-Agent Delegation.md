@@ -8,9 +8,9 @@ tags:
   - delegation
 aliases:
 links:
-  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
-  - "[[202609202000 - Claude Code]]"
+  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Orchestrator-Worker Multi-Agent Delegation

@@ -7,8 +7,8 @@ tags:
   - codex
   - mcp
 links:
-  - "[[202609202000 - Browser Use MCP]]"
-  - "[[202609202000 - Jev Agent Router]]"
+  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # Oh My OpenAgent

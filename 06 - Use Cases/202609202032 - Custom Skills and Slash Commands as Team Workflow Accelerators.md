@@ -6,8 +6,8 @@ tags:
   - tool
 aliases:
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202013 - Hermes Plugin System]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md)"
 ---
 
 # Custom Skills and Slash Commands as Team Workflow Accelerators

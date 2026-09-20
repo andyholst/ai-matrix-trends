@@ -4,9 +4,9 @@ created: 2026-09-20T09:31:00+02:00
 tags:
   - architecture
 links:
-  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
-  - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
+  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # Adaptive Planning (Magentic) Orchestration Pattern

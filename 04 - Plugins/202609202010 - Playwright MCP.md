@@ -6,10 +6,10 @@ tags:
   - mcp
   - browser-automation
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Cursor]]"
-  - "[[202609200800 - Windsurf]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
+  - "[Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md)"
+  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # Playwright MCP

@@ -7,7 +7,7 @@ tags:
   - agent
   - tool
 links:
-  - "[[202609202000 - Claude Code]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Multi-Server MCP Orchestration for Cross-Tool Workflows

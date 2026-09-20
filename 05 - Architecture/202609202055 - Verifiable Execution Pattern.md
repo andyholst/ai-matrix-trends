@@ -5,8 +5,8 @@ tags:
   - architecture
   - mcp
 links:
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
-  - "[[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
 ---
 
 # Verifiable Execution Pattern

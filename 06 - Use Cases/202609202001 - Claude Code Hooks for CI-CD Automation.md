@@ -6,8 +6,8 @@ tags:
   - config
   - cli
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)"
 ---
 
 # Claude Code Hooks for CI/CD Automation

@@ -6,8 +6,8 @@ tags:
   - mcp
   - integrations
 links:
-  - "[[2026092022 - Composio MCP]]"
-  - "[[202609202000 - Browser Use MCP]]"
+  - "[Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md)"
+  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
 ---
 
 # Composio Universal Integration

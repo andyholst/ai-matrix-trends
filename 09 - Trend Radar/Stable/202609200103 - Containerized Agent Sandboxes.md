@@ -9,8 +9,8 @@ tags:
 aliases:
   - Containerized Agent Sandboxes
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Codex]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)"
 ---
 
 # Containerized Agent Sandboxes

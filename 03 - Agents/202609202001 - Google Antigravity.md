@@ -10,10 +10,10 @@ aliases:
   - Google Antigravity
   - Antigravity
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Cursor]]"
-  - "[[202609202002 - Gemini CLI]]"
-  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
+  - "[Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)"
+  - "[MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
 ---
 
 # Google Antigravity

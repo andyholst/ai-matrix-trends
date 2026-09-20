@@ -5,8 +5,8 @@ tags:
   - workflow
   - config
 links:
-  - "[[2026092040 - Multi-Agent Team Orchestration for Parallel Development]]"
-  - "[[2026092041 - Git Worktree Isolation for Parallel AI Agents]]"
+  - "[Multi-Agent Team Orchestration for Parallel Development](./06%20-%20Use%20Cases/2026092040%20-%20Multi-Agent%20Team%20Orchestration%20for%20Parallel%20Development.md)"
+  - "[Git Worktree Isolation for Parallel AI Agents](./06%20-%20Use%20Cases/2026092041%20-%20Git%20Worktree%20Isolation%20for%20Parallel%20AI%20Agents.md)"
 ---
 
 # Background Cloud Agents for Asynchronous Development

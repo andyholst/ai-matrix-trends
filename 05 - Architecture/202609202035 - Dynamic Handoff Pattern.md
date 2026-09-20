@@ -5,8 +5,8 @@ tags:
   - architecture
   - mcp
 links:
-  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
+  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # Dynamic Handoff Pattern

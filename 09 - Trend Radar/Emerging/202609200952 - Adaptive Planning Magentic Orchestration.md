@@ -5,9 +5,9 @@ tags:
   - trend
   - architecture
 links:
-  - "[[202609200931 - Adaptive Planning Magentic Orchestration Pattern]]"
-  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
-  - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
+  - "[Adaptive Planning Magentic Orchestration Pattern](./05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md)"
+  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
 ---
 
 # Adaptive Planning (Magentic) Orchestration

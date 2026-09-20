@@ -5,8 +5,8 @@ tags:
   - plugin
   - mcp
 links:
-  - "[[2026092020 - Superpowers]]"
-  - "[[202609202000 - Jev Agent Router]]"
+  - "[Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)"
+  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # Sequential Thinking MCP

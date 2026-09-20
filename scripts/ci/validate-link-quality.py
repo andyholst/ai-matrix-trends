@@ -2,7 +2,9 @@
 """
 validate-link-quality.py - Validate quality of frontmatter links.
 Stage 9 of CI pipeline.
-FAILS when links contain MOC references or other non-note links.
+FAILS when:
+1. Links use wikilink format [[...]] instead of markdown [text](path)
+2. Link target files don't exist
 """
 
 import os
@@ -26,13 +28,23 @@ SKIP_FOLDERS = [
     '00 - Inbox',
 ]
 
-# Patterns that indicate non-note links (fishy)
-FISHY_PATTERNS = [
-    'MOC-',           # MOC references belong in body, not frontmatter links
-    'MOC:',           # MOC colon format
-]
+def build_file_map():
+    """Build map of all existing files: lowered_filename -> relative_path"""
+    file_map = {}
+    for root, dirs, files in os.walk(VAULT_DIR):
+        if '/.git' in root:
+            continue
+        for f in files:
+            if f.endswith('.md'):
+                fname = f.replace('.md', '')
+                rel_path = os.path.relpath(os.path.join(root, f), VAULT_DIR)
+                file_map[fname.lower()] = rel_path
+                if ' - ' in fname:
+                    title = fname.split(' - ', 1)[1]
+                    file_map[title.lower()] = rel_path
+    return file_map
 
-def validate_file(filepath):
+def validate_file(filepath, file_map):
     """Check if file has fishy frontmatter links"""
     errors = []
     
@@ -64,16 +76,23 @@ def validate_file(filepath):
     links = re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1))
     
     for link in links:
-        # Check for fishy patterns
-        for pattern in FISHY_PATTERNS:
-            if pattern in link:
-                errors.append(f"  Fishy link: [[{link}]] (contains '{pattern}' - MOCs should be in body, not frontmatter)")
+        # Check if it's a wikilink (should be markdown link)
+        # Wikilinks in frontmatter are fishy - they should be markdown links
+        errors.append(f"  Wikilink in frontmatter: [[{link}]] (should be markdown link [title](path))")
+        
+        # Check if target exists
+        link_lower = link.lower().strip()
+        if link_lower not in file_map:
+            errors.append(f"  Missing target: [[{link}]] (file does not exist)")
     
     return errors
 
 def main():
     print("STAGE 9: Link Quality Validation")
     print("=" * 60)
+    
+    file_map = build_file_map()
+    print(f"Built file map: {len(file_map)} entries")
     
     total_errors = 0
     files_with_errors = 0
@@ -84,7 +103,7 @@ def main():
         for f in files:
             if f.endswith('.md'):
                 filepath = os.path.join(root, f)
-                errors = validate_file(filepath)
+                errors = validate_file(filepath, file_map)
                 if errors:
                     files_with_errors += 1
                     total_errors += len(errors)
@@ -94,12 +113,13 @@ def main():
                         print(error)
     
     print(f"\n{'=' * 60}")
-    print(f"Files with fishy links: {files_with_errors}")
-    print(f"Total fishy links: {total_errors}")
+    print(f"Files with errors: {files_with_errors}")
+    print(f"Total errors: {total_errors}")
     
     if total_errors > 0:
-        print(f"✗ FAIL: {total_errors} fishy links detected")
-        print("  MOC references should be in body (## Related), not frontmatter links:")
+        print(f"✗ FAIL: {total_errors} link quality issues detected")
+        print("  - Wikilinks [[...]] should be markdown links [title](path)")
+        print("  - Missing target files should be created")
         sys.exit(1)
     else:
         print("✓ All links are high quality")

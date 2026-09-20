@@ -6,9 +6,9 @@ tags:
   - opencode
   - browser-automation
 links:
-  - "[[202609202010 - Playwright MCP]]"
-  - "[[202609202011 - Chrome DevTools MCP]]"
-  - "[[202609202000 - Browser Use MCP]]"
+  - "[Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md)"
+  - "[Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)"
+  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
 ---
 
 # OpenCode Chromium Browser

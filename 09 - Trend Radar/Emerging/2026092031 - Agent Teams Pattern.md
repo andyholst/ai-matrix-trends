@@ -6,8 +6,8 @@ tags:
   - architecture
   - multi-agent
 links:
-  - "[[2026092031 - Agent Teams Pattern]]"
-  - "[[2026092031 - Sub-Agent Delegation Pattern]]"
+  - "[Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md)"
+  - "[Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md)"
 ---
 
 # Agent Teams Pattern

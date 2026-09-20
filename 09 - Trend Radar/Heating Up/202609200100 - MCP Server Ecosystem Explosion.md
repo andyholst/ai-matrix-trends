@@ -10,8 +10,8 @@ tags:
 aliases:
   - MCP Server Explosion
 links:
-  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
-  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
 ---
 
 # MCP Server Ecosystem Explosion

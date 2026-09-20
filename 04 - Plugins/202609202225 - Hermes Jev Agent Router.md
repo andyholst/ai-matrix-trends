@@ -8,8 +8,8 @@ agents:
   - hermes
   - claude-code
 links:
-  - "[[202609200759 - Hermes Agent]]"
-  - "[[202609202000 - Claude Code]]"
+  - "[Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Hermes Jev Agent Router

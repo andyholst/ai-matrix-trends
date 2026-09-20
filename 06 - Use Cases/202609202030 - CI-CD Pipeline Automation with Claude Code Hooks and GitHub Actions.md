@@ -6,7 +6,7 @@ tags:
   - tool
 aliases:
 links:
-  - "[[202609202000 - Claude Code]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # CI/CD Pipeline Automation with Claude Code Hooks and GitHub Actions

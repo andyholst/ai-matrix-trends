@@ -4,9 +4,9 @@ created: 2026-09-20T09:30:00+02:00
 tags:
   - architecture
 links:
-  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
-  - "[[202609202022 - MCP Hybrid Client-Server Architecture]]"
-  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
+  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)"
+  - "[MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
 ---
 
 # MCP Server-Side LLM Reusable Agent Pattern

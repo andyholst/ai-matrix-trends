@@ -17,11 +17,11 @@
 -
 
 ## Compatibility
-**Agent:** [[agent-name]]
+**Agent:** [[202609202000 - Claude Code]]
 **Versions:** x.x.x+
 
 ## Related Plugins
-- [[link-to-related-plugin]]
+- [[202609200803 - Context7 MCP]]
 
 ## Sources
 - [GitHub](url)

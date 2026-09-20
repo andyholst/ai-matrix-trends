@@ -29,7 +29,7 @@ VALID_TAGS = {
     'collaboration', 'workspace', 'visual', 'jetbrains', 'preview',
     'personal-assistant', 'code-intelligence', 'ide-plugin', 'aws',
     'google', 'gemini', 'rebrand', 'self-improving', 'messaging',
-    'multi-model', 'code-editing', 'event-driven', 'MCP',
+    'multi-model', 'code-editing', 'event-driven', 'MCP', 'placeholder',
 }
 
 # Files to skip

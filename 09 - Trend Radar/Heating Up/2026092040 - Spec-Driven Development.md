@@ -6,8 +6,8 @@ tags:
   - workflow
   - spec-driven
 links:
-  - "[[2026092040 - Spec-Driven Development with Spec Kit]]"
-  - "[[202609202000 - Claude Code]]"
+  - "[Spec-Driven Development with Spec Kit](./06%20-%20Use%20Cases/2026092040%20-%20Spec-Driven%20Development%20with%20Spec%20Kit.md)"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Spec-Driven Development

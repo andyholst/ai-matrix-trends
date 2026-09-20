@@ -6,7 +6,7 @@ tags:
   - opencode
   - context-management
 links:
-  - "[[202609200758 - OpenCode]]"
+  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # OpenCode Dynamic Context Pruning

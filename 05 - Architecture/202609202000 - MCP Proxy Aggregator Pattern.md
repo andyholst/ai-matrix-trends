@@ -6,7 +6,7 @@ tags:
   - mcp
   - workflow
 links:
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # MCP Proxy Aggregator Pattern

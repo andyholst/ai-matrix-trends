@@ -7,8 +7,8 @@ tags:
   - enterprise
   - ide-plugin
 links:
-  - "[[202609202003 - AWS Kiro]]"
-  - "[[202609202001 - GitHub Copilot Agent]]"
+  - "[AWS Kiro](./03%20-%20Agents/202609202003%20-%20AWS%20Kiro.md)"
+  - "[GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md)"
 ---
 
 # Amazon Q Developer

@@ -6,8 +6,8 @@ tags:
   - plugin
   - claude-code
 links:
-  - "[[2026092020 - Superpowers]]"
-  - "[[202609202000 - Claude Code]]"
+  - "[Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Superpowers Skills Framework

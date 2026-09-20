@@ -6,7 +6,7 @@ tags:
   - workflow
   - config
 links:
-  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
+  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering

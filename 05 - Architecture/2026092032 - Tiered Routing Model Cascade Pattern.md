@@ -6,9 +6,9 @@ tags:
   - cost-optimization
   - model-routing
 links:
-  - "[[2026092030 - Bidirectional MCP Agent Pattern]]"
-  - "[[2026092031 - Event-Driven Agent Concurrency Pattern]]"
-  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
+  - "[Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md)"
+  - "[Event-Driven Agent Concurrency Pattern](./05%20-%20Architecture/2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md)"
+  - "[MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
 ---
 
 # Tiered Routing / Model Cascade Pattern

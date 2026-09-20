@@ -9,9 +9,9 @@ tags:
 aliases:
   - Terminal Agent Wars
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Aider]]"
-  - "[[202609200758 - OpenCode]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Aider](./03%20-%20Agents/202609202000%20-%20Aider.md)"
+  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # Terminal Agent Wars

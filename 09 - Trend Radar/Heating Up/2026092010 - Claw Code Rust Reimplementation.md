@@ -6,8 +6,8 @@ tags:
   - agent
   - rust
 links:
-  - "[[2026092010 - Claw Code]]"
-  - "[[202609202000 - Claude Code]]"
+  - "[Claw Code](./03%20-%20Agents/2026092010%20-%20Claw%20Code.md)"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Claw Code Rust Reimplementation

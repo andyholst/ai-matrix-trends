@@ -6,8 +6,8 @@ tags:
   - architecture
   - context-engineering
 links:
-  - "[[2026092030 - Context Engineering]]"
-  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[Context Engineering](./05%20-%20Architecture/2026092030%20-%20Context%20Engineering.md)"
+  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
 ---
 
 # Context Engineering Discipline

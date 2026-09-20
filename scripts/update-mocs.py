@@ -14,6 +14,7 @@ MOC_MAPPINGS = {
     '03 - Agents': '07 - Structure/MOC-Trending-Agents.md',
     '04 - Plugins': '07 - Structure/MOC-Plugin-Ecosystem.md',
     '05 - Architecture': '07 - Structure/MOC-Architecture-Patterns.md',
+    '06 - Use Cases': '07 - Structure/MOC-Use-Cases.md',
     '09 - Trend Radar': '07 - Structure/MOC-Trend-Radar.md',
 }
 

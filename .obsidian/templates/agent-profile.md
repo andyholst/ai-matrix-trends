@@ -18,7 +18,7 @@
 ```
 
 ## Key Plugins/Extensions
-- [[link-to-plugin]]
+- [[202609202000 - Browser Use MCP]]
 
 ## Strengths
 -
@@ -30,7 +30,7 @@
 -
 
 ## Related Agents
-- [[link-to-comparable-agent]]
+- [[202609200758 - OpenCode]]
 
 ## Sources
 - [Official Docs](url)

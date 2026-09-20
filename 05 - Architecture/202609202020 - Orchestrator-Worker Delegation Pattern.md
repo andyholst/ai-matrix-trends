@@ -8,8 +8,8 @@ aliases:
   - Manager-Worker Pattern
 links:
 links:
-  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
-  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
+  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # Orchestrator-Worker Delegation Pattern

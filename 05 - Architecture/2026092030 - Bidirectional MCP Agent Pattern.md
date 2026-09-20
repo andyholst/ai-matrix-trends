@@ -6,9 +6,9 @@ tags:
   - mcp
   - multi-agent
 links:
-  - "[[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]]"
-  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
-  - "[[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]"
+  - "[MCP Server-Side LLM Reusable Agent Pattern](./09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md)"
+  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[Fan-Out Fan-In Parallel Agent Pattern](./05%20-%20Architecture/202609200932%20-%20Fan-Out%20Fan-In%20Parallel%20Agent%20Pattern.md)"
 ---
 
 # Bidirectional MCP Agent Pattern

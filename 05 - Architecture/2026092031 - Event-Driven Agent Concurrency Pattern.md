@@ -6,9 +6,9 @@ tags:
   - multi-agent
   - event-driven
 links:
-  - "[[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]"
-  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
-  - "[[2026092030 - Bidirectional MCP Agent Pattern]]"
+  - "[Fan-Out Fan-In Parallel Agent Pattern](./05%20-%20Architecture/202609200932%20-%20Fan-Out%20Fan-In%20Parallel%20Agent%20Pattern.md)"
+  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md)"
 ---
 
 # Event-Driven Agent Concurrency Pattern

@@ -14,6 +14,7 @@ MOC_MAPPINGS = {
     '03 - Agents': '07 - Structure/MOC-Trending-Agents.md',
     '04 - Plugins': '07 - Structure/MOC-Plugin-Ecosystem.md',
     '05 - Architecture': '07 - Structure/MOC-Architecture-Patterns.md',
+    '06 - Use Cases': '07 - Structure/MOC-Use-Cases.md',
     '09 - Trend Radar': '07 - Structure/MOC-Trend-Radar.md',
 }
 
@@ -26,13 +27,14 @@ def extract_moc_entries(moc_content):
     return entries
 
 def get_folder_notes(folder_path):
-    """Get all note filenames in a folder"""
+    """Get all note filenames in a folder (including subfolders)"""
     notes = set()
     if not os.path.exists(folder_path):
         return notes
-    for f in os.listdir(folder_path):
-        if f.endswith('.md') and not f.startswith('00 -'):
-            notes.add(f.replace('.md', '').lower())
+    for root, dirs, files in os.walk(folder_path):
+        for f in files:
+            if f.endswith('.md') and not f.startswith('00 -'):
+                notes.add(f.replace('.md', '').lower())
     return notes
 
 def main():
@@ -76,5 +78,4 @@ def main():
         sys.exit(0)
 
 if __name__ == '__main__':
-    os.chdir(VAULT_DIR)
     main()
