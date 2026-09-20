@@ -539,7 +539,7 @@ Items are scored based on:
 
 ### Scripts for Trend Management
 - `scripts/aggregate-trends.py` - Scores all items
-- `scripts/update-readme.py` - Updates README tables with scored data
+- `scripts/update_readme.py` - Updates README tables with scored data
 
 
 
@@ -586,28 +586,15 @@ links:
 ```
 
 **Sub-Agent Rules:**
-- **DO NOT put links in frontmatter** — leave `links:` empty or omit it entirely
-- Only put links in the `## Related` section at the bottom of notes
-- Use short names in ## Related: `[[Claude Code]]`, `[[Aider]]`, etc.
-- The merge step will resolve short names to actual filenames and add frontmatter links
+- **ALWAYS USE FULL FILENAMES FOR WIKILINKS** — `[[202609202000 - Claude Code]]`, never `[[Claude Code]]`
+- **ALWAYS CHECK FOR EXISTING FILES FIRST** — use `search_files` before writing
+- **ALWAYS ADD `links:` FIELD TO FRONTMATTER** — with 2+ full filename wikilinks
+- **NEVER CREATE DUPLICATES** — if a note exists, `patch()` it instead of writing new
 
-**Merge Step Rules:**
-1. Read each new note
-2. Find short names in `## Related` section
-3. Search all folders for matching filenames
-4. Add `links:` field to frontmatter with 2+ actual filename wikilinks
-5. Fix any orphan wikilinks in body text
-
-**How the merge step fixes missing links:**
-1. Read note: `read_file(path="<note>", limit=15)`
-2. Check for `links:` field
-3. If missing or empty, add it using `patch()`:
-   ```
-   patch(path="<note>",
-         old_string="---\nid: ...\ncreated: ...\ntags:\n  - ...",
-         new_string="---\nid: ...\ncreated: ...\ntags:\n  - ...\nlinks:\n  - \"[[<actual filename 1>]]\"\n  - \"[[<actual filename 2>]]\"\n---")
-   ```
-4. Verify the fix landed
+**How agents avoid broken links:**
+1. Before writing: `search_files(pattern="*", target="files", path="03 - Agents")` to see what exists
+2. Use full filenames for ALL wikilinks — both in frontmatter `links:` and body `## Related`
+3. Verify target files exist before linking to them
 
 The vault is a living system. Small, frequent, well-linked notes beat large, infrequent ones. Refactoring is growth.
 

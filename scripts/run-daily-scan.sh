@@ -142,25 +142,34 @@ EOF
 echo ""
 echo "Step 3: Research streams launched. They will complete in ~3 minutes..."
 
-# Step 4: Run the link fixer script
+# Step 4: Run link resolvers and fixers (IN ORDER — matches daily-scan-prompt.md)
 echo ""
-echo "Step 4: Running link fixer..."
-python3 "$SCRIPTS_DIR/fix-links.py"
+echo "Step 4/7: Resolving wikilinks..."
+python3 "$SCRIPTS_DIR/resolve_wikilinks.py"
 
-# Step 5: Update MOCs
 echo ""
-echo "Step 5: Updating MOCs..."
-python3 "$SCRIPTS_DIR/update-mocs.py"
+echo "Step 5/7: Fixing all broken links..."
+python3 "$SCRIPTS_DIR/fix_all_links.py"
 
-# Step 6: Update README
 echo ""
-echo "Step 6: Updating README..."
-python3 "$SCRIPTS_DIR/update-readme.py"
+echo "Step 6/7: Aggregating trend scores..."
+python3 "$SCRIPTS_DIR/aggregate-trends.py"
 
-# Step 7: Final verification
 echo ""
-echo "Step 7: Final verification..."
+echo "Step 7/7a: Collecting agent plugins..."
+python3 "$SCRIPTS_DIR/collect_agent_plugins.py"
+
+echo ""
+echo "Step 7/7b: Updating README tables..."
+python3 "$SCRIPTS_DIR/update_readme.py"
+
+echo ""
+echo "Step 7/7c: Verifying vault links..."
 python3 "$SCRIPTS_DIR/verify-vault.py"
+
+echo ""
+echo "Step 7/7d: Updating MOCs..."
+python3 "$SCRIPTS_DIR/update-mocs.py"
 
 echo ""
 echo "============================================"

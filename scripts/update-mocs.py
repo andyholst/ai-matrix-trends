@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Update MOCs with new notes from vault folders.
-Run after fix-links.py.
+Run after fix_all_links.py.
 """
 
 import os

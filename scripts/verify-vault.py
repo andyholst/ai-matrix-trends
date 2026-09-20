@@ -67,5 +67,5 @@ if __name__ == '__main__':
     if verify():
         print("✓ VAULT IS CLEAN")
     else:
-        print("✗ VAULT HAS ISSUES - Run fix-links.py first")
+        print("✗ VAULT HAS ISSUES - Run fix_all_links.py first")
         exit(1)
