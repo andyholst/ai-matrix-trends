@@ -508,6 +508,40 @@ When the agent produces work in this vault:
 5. **MOCs are current** — no orphan notes in clusters of 5+
 6. **Timestamps are accurate** — creation dates reflect when the note was written, not the source date
 
+
+
+## Trend Scoring and README Tables
+
+The cron job MUST maintain comprehensive scored trend tables in README.md:
+
+### Required README Tables
+1. **🚀 Trending Agents** - Top 5 scored agents
+2. **🔌 Top Plugins & Extensions** - Top 5 scored plugins  
+3. **📊 Trend Radar** - Three sub-tables:
+   - 🔥 Heating Up (score >= 50)
+   - 📈 Stable (score 20-49)
+   - 🌱 Emerging (score < 20)
+
+### Table Format
+Each table MUST use this exact format:
+```
+| # | Name | Score | Type | Stars | Status |
+|---|------|-------|------|-------|--------|
+| 1 | [Title](./path) | 130 | agent | 50k+ | Heating Up |
+```
+
+### Scoring Algorithm
+Items are scored based on:
+- GitHub stars (1 point per 1000 stars, max 50)
+- Mention frequency (5 points per mention)
+- Tag bonuses (cli=+10, mcp=+15, trending=+20)
+- Source quality (HN/Reddit mentions score higher)
+
+### Scripts for Trend Management
+- `scripts/aggregate-trends.py` - Scores all items
+- `scripts/update-readme.py` - Updates README tables with scored data
+
+
 ## Frontmatter Links Requirement (CRITICAL)
 
 Every note's frontmatter MUST contain at least 2 wikilinks in the `links:` field:

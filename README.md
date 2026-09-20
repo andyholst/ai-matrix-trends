@@ -194,6 +194,39 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20 11:08*
+*Last refreshed: 2026-09-20*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
+## Trend Radar
+
+*Last updated: 2026-09-20*
+
+### Heating Up
+
+| # | Name | Score | Type | Stars | Status |
+|---|------|-------|------|-------|--------|
+| 1 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
+| 2 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
+| 3 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
+| 4 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
+| 5 | [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | agent | 0 | Heating Up |
+
+### Stable
+
+| # | Name | Score | Type | Stars | Status |
+|---|------|-------|------|-------|--------|
+| 1 | [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | 45 | agent | 0 | Stable |
+| 2 | [2026092021 - Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 33 | plugin | 858 | Stable |
+| 3 | [2026092022 - Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 32 | plugin | 0 | Stable |
+| 4 | [2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md) | 30 | agent | 0 | Stable |
+| 5 | [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md) | 30 | agent | 0 | Stable |
+
+### Emerging
+
+| # | Name | Score | Type | Stars | Status |
+|---|------|-------|------|-------|--------|
+| 1 | [2026092020 - Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 18 | plugin | 0 | Emerging |
+| 2 | [2026092011 - Gemini CLI](./03%20-%20Agents/2026092011%20-%20Gemini%20CLI.md) | 15 | agent | 0 | Emerging |
+| 3 | [202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md) | 15 | agent | 0 | Emerging |
+| 4 | [202609200911 - Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | 15 | agent | 0 | Emerging |
+| 5 | [202609200914 - JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | 15 | agent | 0 | Emerging |
