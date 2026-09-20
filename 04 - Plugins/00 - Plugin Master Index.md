@@ -23,6 +23,7 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | Claude Code, Cursor, Windsurf, OpenCode | Image generation via FAL | 5k+ |
 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | Claude Code, Cursor, VS Code, OpenCode | Browser automation with Playwright | 4k+ |
 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | Claude Code, Cursor, VS Code, OpenCode | End-to-end browser debugging | 3k+ |
+| [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | Claude Code, Cursor, OpenCode | Rust-based browser automation CLI | 42.9k+ |
 
 ### Agent-Specific Plugins
 | Plugin | Agent | Description | Status |
@@ -81,6 +82,10 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 2. [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) — Cross-session memory
 3. [OpenCode Dynamic Context Pruning](./04%20-%20Plugins/202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruning.md) — Context optimization
 4. [OpenCode Oh-My-Openagent](./04%20-%20Plugins/202609202014%20-%20OpenCode%20Oh-My-Openagent.md) — Plugin manager
+5. [OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) — 10x faster code editing
+6. [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) — Multi-agent teams
+7. [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) — Semantic code search
+8. [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) — Browser automation
 
 ### Hermes Agent Plugins
 1. [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) — Plugin framework

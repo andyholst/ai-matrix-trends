@@ -166,6 +166,9 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 - [[202609202023 - MCP Gateway Aggregation Layer]]
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]]
 - [[202609202025 - Compaction and Note-Taking for Long-Horizon Context]]
+- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]]
+- [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]]
+- [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]
 
 ### Plugins (04 - Plugins/)
 - [[hermes-jev]] — Typesafe context engine for Hermes

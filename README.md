@@ -26,6 +26,11 @@
 | [Augment](./03%20-%20Agents/202609202002%20-%20Augment.md) | Augment Code | — | Code-intelligence platform for enterprise teams |
 | [AWS Kiro](./03%20-%20Agents/202609202003%20-%20AWS%20Kiro.md) | Amazon | — | Spec-driven agentic environment for AWS-centric teams |
 | [Pi](./03%20-%20Agents/202609202004%20-%20Pi.md) | Pi AI | — | Lightweight open-source CLI agent, multi-provider + local model support |
+| [Vellum](./03%20-%20Agents/202609200910%20-%20Vellum.md) | Vellum AI | — | Open-source personal AI assistant with three-layer persistent memory |
+| [Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | AWS | — | Agentic coding assistant across VS Code, JetBrains, Visual Studio, Eclipse, CLI |
+| [Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | Nimbalyst | — | Open-source visual workspace wrapping Claude Code and Codex with kanban board |
+| [Replit Agent](./03%20-%20Agents/202609200913%20-%20Replit%20Agent.md) | Replit | — | Cloud-only AI app builder with design canvas and one-click deployment |
+| [JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | JetBrains | — | Agentic Development Environment running multiple agents side by side |
 
 ---
 
@@ -56,7 +61,12 @@
 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | Claude, Cursor, Windsurf, OpenCode | 1,000+ generative models |
 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | Claude, Cursor, Windsurf, VS Code, OpenCode | Microsoft's official browser automation MCP |
 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | Claude, Cursor, Windsurf, VS Code | Google's official DevTools Protocol MCP |
-59|| [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions |
+| [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | Claude, Cursor, OpenCode | Rust-based browser automation CLI, 42.9k stars |
+| [OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | OpenCode | 10x faster code editing via Morph API |
+| [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | OpenCode | Multi-agent teams with parallel execution |
+| [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) | OpenCode | Local-first semantic code search |
+| [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) | OpenCode | Browser automation via Manifest V3 extension |
+| [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions |
 
 **Full index:** [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) (20+ plugins, by agent ecosystem, comparison table)
 
@@ -78,7 +88,10 @@
 | [MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md) | LLMs on both MCP server and client for flexibility | Emerging |
 | [MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) | Gateway federating multiple MCP servers behind one client endpoint | Emerging |
 | [Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md) | Lead agent dispatching stateless workers with clean context windows | Emerging |
-|[Compaction and Note-Taking for Long-Horizon Context](./05%20-%20Architecture/202609202025%20-%20Compaction%20and%20Note-Taking%20for%20Long-Horizon%20Context.md) | Compaction + external notes for coherence beyond context limits | Growing |
+| [Compaction and Note-Taking for Long-Horizon Context](./05%20-%20Architecture/202609202025%20-%20Compaction%20and%20Note-Taking%20for%20Long-Horizon%20Context.md) | Compaction + external notes for coherence beyond context limits | Growing |
+| [MCP Server-Side LLM Reusable Agent Pattern](./05%20-%20Architecture/202609200930%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) | MCP server embeds its own LLM as a self-contained reusable agent | Emerging |
+| [Adaptive Planning (Magentic) Orchestration Pattern](./05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md) | Manager agent dynamically builds and pivots a task plan | Emerging |
+| [Fan-Out / Fan-In Parallel Agent Pattern](./05%20-%20Architecture/202609200932%20-%20Fan-Out%20Fan-In%20Parallel%20Agent%20Pattern.md) | Dispatcher fans out to N parallel agents, collector aggregates | Emerging |
 
 **Full index:** [AI Architecture Master Index](./05%20-%20Architecture/00%20-%20AI%20Architecture%20Master%20Index.md) (12 patterns, comparison table, protocol analysis)
 
@@ -105,18 +118,21 @@
 
 | Heating Up 🔥 | Summary |
 |---------------|---------|
-|[MCP Server Ecosystem Explosion](./09%20-%20Trend%20Radar/Heating%20Up/202609200100%20-%20MCP%20Server%20Ecosystem%20Explosion.md) | 100+ community servers, new ones shipping weekly |
-|[Terminal Agent Wars](./09%20-%20Trend%20Radar/Heating%20Up/202609200101%20-%20Terminal%20Agent%20Wars.md) | Claude Code vs OpenCode vs Codex vs Cline |
+| [MCP Server Ecosystem Explosion](./09%20-%20Trend%20Radar/Heating%20Up/202609200100%20-%20MCP%20Server%20Ecosystem%20Explosion.md) | 100+ community servers, new ones shipping weekly |
+| [Terminal Agent Wars](./09%20-%20Trend%20Radar/Heating%20Up/202609200101%20-%20Terminal%20Agent%20Wars.md) | Claude Code vs OpenCode vs Codex vs Cline |
+| [OpenCode Plugin Ecosystem Maturation](./09%20-%20Trend%20Radar/Heating%20Up/202609200950%20-%20OpenCode%20Plugin%20Ecosystem%20Maturation.md) | 5+ new plugins: Morph Fast Apply, Ensemble, OpenCodeRAG, Chromium Browser |
 
 | Stable 📈 | Summary |
 |-----------|---------|
-|[Tool-Calling as Standard Interface](./09%20-%20Trend%20Radar/Stable/202609200102%20-%20Tool-Calling%20as%20Standard%20Interface.md) | All agents use structured tool-calling |
-|[Containerized Agent Sandboxes](./09%20-%20Trend%20Radar/Stable/202609200103%20-%20Containerized%20Agent%20Sandboxes.md) | Docker isolation for agent safety |
+| [Tool-Calling as Standard Interface](./09%20-%20Trend%20Radar/Stable/202609200102%20-%20Tool-Calling%20as%20Standard%20Interface.md) | All agents use structured tool-calling |
+| [Containerized Agent Sandboxes](./09%20-%20Trend%20Radar/Stable/202609200103%20-%20Containerized%20Agent%20Sandboxes.md) | Docker isolation for agent safety |
 
 | Emerging 🌱 | Summary |
 |-------------|---------|
-|[Agent-to-Agent Communication Protocols](./09%20-%20Trend%20Radar/Emerging/202609200104%20-%20Agent-to-Agent%20Communication%20Protocols.md) | A2A, ACP enabling multi-agent orchestration |
-|[Personal Agent Memory Systems](./09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) | Cross-session memory and personalization |
+| [Agent-to-Agent Communication Protocols](./09%20-%20Trend%20Radar/Emerging/202609200104%20-%20Agent-to-Agent%20Communication%20Protocols.md) | A2A, ACP enabling multi-agent orchestration |
+| [Personal Agent Memory Systems](./09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) | Cross-session memory and personalization |
+| [MCP Server-Side LLM Reusable Agent Pattern](./09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) | MCP servers embedding their own LLM as self-contained agents |
+| [Adaptive Planning (Magentic) Orchestration](./09%20-%20Trend%20Radar/Emerging/202609200952%20-%20Adaptive%20Planning%20Magentic%20Orchestration.md) | Manager agents that dynamically build and pivot task plans |
 
 ---
 
@@ -150,6 +166,6 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20 20:45*
+*Last refreshed: 2026-09-20 09:23*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*

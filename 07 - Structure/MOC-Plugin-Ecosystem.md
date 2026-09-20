@@ -24,6 +24,11 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
 - [[202609202013 - Hermes Plugin System]] — Comprehensive plugin architecture for Hermes Agent
 - [[202609202014 - OpenCode Oh-My-Openagent]] — All-in-one OpenCode plugin with 10 specialized agents
+- [[202609200920 - Vercel Agent Browser]] — Rust-based browser automation CLI, 42.9k stars
+- [[202609200921 - OpenCode Morph Fast Apply]] — 10x faster code editing via Morph API
+- [[202609200922 - OpenCode Ensemble]] — Multi-agent teams with parallel execution
+- [[202609200923 - OpenCodeRAG]] — Local-first semantic code search with tree-sitter + LanceDB
+- [[202609200924 - OpenCode Chromium Browser]] — Browser automation via Manifest V3 extension
 - [[202609202010 - Playwright MCP]] — Microsoft's official browser automation MCP, 24 structured tools
 - [[202609202011 - Chrome DevTools MCP]] — Google's official DevTools Protocol MCP, 52k+ stars
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
@@ -66,6 +71,16 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202000 - OpenCode Supermemory]]
 - [[202609202012 - OpenCode Dynamic Context Pruning]]
 - [[202609202014 - OpenCode Oh-My-Openagent]]
+- [[202609200921 - OpenCode Morph Fast Apply]]
+- [[202609200922 - OpenCode Ensemble]]
+- [[202609200923 - OpenCodeRAG]]
+- [[202609200924 - OpenCode Chromium Browser]]
+
+### Cross-Agent Browser Automation
+- [[202609202000 - Browser Use MCP]]
+- [[202609202010 - Playwright MCP]]
+- [[202609202011 - Chrome DevTools MCP]]
+- [[202609200920 - Vercel Agent Browser]]
 
 ### Hermes Plugins
 - [[202609202000 - Jev Agent Router]]

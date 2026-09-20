@@ -21,6 +21,9 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[202609202023 - MCP Gateway Aggregation Layer]] — Gateway federating multiple MCP servers behind one client endpoint
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]] — Lead agent dispatching stateless workers with clean context windows
 - [[202609202025 - Compaction and Note-Taking for Long-Horizon Context]] — Compaction + external notes for coherence beyond context limits
+- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]] — MCP server embeds its own LLM as a self-contained reusable agent
+- [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]] — Manager agent dynamically builds and pivots a task plan
+- [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]] — Dispatcher fans out to N parallel agents, collector aggregates
 - [[MCP Protocol]] — Standardized tool/resource interface
 - [[Multi-Agent Orchestration]] — Coordinator + specialist trees
 - [[Context Engineering]] — Dynamic context curation
@@ -35,11 +38,14 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[202609202005 - Agent Portability via Agent Client Protocol]]
 - [[202609202022 - MCP Hybrid Client-Server Architecture]]
 - [[202609202023 - MCP Gateway Aggregation Layer]]
+- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]]
 - [[MCP Protocol]]
 - [[Multi-Agent Orchestration]]
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]]
+- [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]]
+- [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]
 
 ### Context Management
 - [[202609202001 - Context Engineering for Long-Horizon Agents]]

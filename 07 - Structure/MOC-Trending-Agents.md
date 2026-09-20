@@ -27,6 +27,11 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202002 - Augment]] — Code-intelligence platform for enterprise teams
 - [[202609202003 - AWS Kiro]] — Amazon's spec-driven agentic environment for AWS teams
 - [[202609202004 - Pi]] — Lightweight open-source CLI agent, multi-provider + local model support
+- [[202609200910 - Vellum]] — Open-source personal AI assistant with three-layer persistent memory
+- [[202609200911 - Amazon Q Developer]] — AWS's agentic coding assistant across IDEs and CLI
+- [[202609200912 - Nimbalyst]] — Open-source visual workspace wrapping Claude Code and Codex
+- [[202609200913 - Replit Agent]] — Cloud-only AI app builder with design canvas
+- [[202609200914 - JetBrains Air]] — Agentic Development Environment running multiple agents side by side
 - [[Claude Code]] — Anthropic's CLI agent
 - [[OpenAI Codex]] — OpenAI's cloud agent
 - [[OpenCode]] — Open-source CLI agent
@@ -60,9 +65,18 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 ### Cloud Agents
 - [[202609202000 - Codex]]
 - [[202609202000 - Devin]]
+- [[202609200913 - Replit Agent]]
 
 ### Conversational
 - [[202609202004 - Pi]]
+- [[202609200910 - Vellum]]
+
+### Enterprise IDE
+- [[202609200911 - Amazon Q Developer]]
+- [[202609200914 - JetBrains Air]]
+
+### Visual Workspaces
+- [[202609200912 - Nimbalyst]]
 
 ## Open Questions
 - Which agents support MCP natively vs via extension?
