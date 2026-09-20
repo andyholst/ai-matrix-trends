@@ -183,14 +183,30 @@ Format:
 
 ### Step 5: Update README (DEDUPLICATE AND CLEAN)
 
+**CRITICAL FOR GITHUB COMPATIBILITY:**
+GitHub does NOT render `[[Obsidian wikilinks]]` as clickable links. The README MUST use standard Markdown link format: `[Display Text](./path/to/file.md)`
+
+**For example, instead of:**
+```markdown
+| [[202609202000 - Claude Code]] | Anthropic | ...
+```
+
+**Use:**
+```markdown
+|[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
+```
+
+Or relative links:
+```markdown
+|[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
+```
+
 **Important:** The README likely contains BOTH old placeholder links AND new timestamped links. You MUST:
 
-1. **Read current README** with `read_file(path="README.md")` to see all existing wikilinks
-2. **Remove duplicate entries:** If both `[[Claude Code]]` and `[[202609202000 - Claude Code]]` exist, REMOVE the non-timestamped version (keep only the timestamped one)
-3. **Check every wikilink in README** — for each `[[link]]`, verify the target file exists:
-   - `search_files(pattern="link.md", target="files", path="03 - Agents")` (or appropriate folder)
-   - If the file does NOT exist, either create it or replace with a link to an existing note
-4. **Replace non-timestamped links with timestamped ones** where they exist
+1. **Read current README** with `read_file(path="README.md")` to see all existing links
+2. **Remove duplicate entries:** If both `[[Claude Code]]` and `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` exist, REMOVE the non-timestamped version
+3. **Check every link** — for each `[text](url)`, verify the target file exists with `search_files`
+4. **Replace wikilinks with Markdown links** everywhere
 5. **Update tables:**
    - Trending Agents — from stream-a manifest, remove old duplicates
    - Top Plugins — from stream-b manifest, remove old duplicates
@@ -199,7 +215,7 @@ Format:
 6. **Update Trend Radar** — move items as needed
 7. **Update `Last refreshed: YYYY-MM-DD`** at the bottom
 
-**Goal:** Every `[[wikilink]]` in README must point to a real file. No orphans allowed.
+**Goal:** Every link in README must be a working Markdown link. No orphans, no `[[wikilinks]]`.
 
 ### Step 6: Verify All Links (NOTES + README)
 

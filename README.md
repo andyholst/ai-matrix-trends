@@ -8,81 +8,40 @@
 
 | Agent | Ecosystem | Stars | Description |
 |-------|-----------|-------|-------------|
-| [[202609202000 - Claude Code]] | Anthropic | — | CLI agent with MCP integration and multi-file editing |
-| [[202609202000 - Codex]] | OpenAI | — | Cloud-native agent with sandboxed execution |
-| [[202609202000 - Cursor]] | Anysphere | — | IDE-integrated AI agent with codebase indexing |
-| [[202609202000 - Cline]] | Cline Bot | ⭐ 35k+ | VS Code extension with autonomous capabilities |
-| [[202609202000 - Aider]] | Aider-AI | ⭐ 25k+ | Terminal pair-programming agent with repo mapping |
-| [[Claude Code]] | Anthropic | — | CLI agent with MCP integration and multi-file editing |
-| [[OpenAI Codex]] | OpenAI | — | Cloud-native agent with sandboxed execution |
-| [[OpenCode]] | Open source | — | Open-source CLI coding agent |
-| [[Hermes]] | Nous Research | — | Multi-platform agent with skills & plugins |
-| [[Cursor]] | Anysphere | — | IDE-integrated AI agent with codebase indexing |
-| [[Cline]] | Cline Bot | ⭐ 35k+ | VS Code extension with autonomous capabilities |
-| [[Aider]] | Aider-AI | ⭐ 25k+ | Terminal pair-programming agent with repo mapping |
-| [[Windsurf]] | Codeium | — | Full IDE with integrated agentic flows |
-| [[Pi]] | Pi AI | — | Conversational coding agent by Inflection alumni |
+|[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | — | CLI agent with MCP integration and multi-file editing |
+|[Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | OpenAI | — | Cloud-native agent with sandboxed execution |
+|[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | Anysphere | — | IDE-integrated AI agent with codebase indexing |
+|[Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) | Cline Bot | ⭐ 35k+ | VS Code extension with autonomous capabilities |
+|[Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | Aider-AI | ⭐ 25k+ | Terminal pair-programming agent with repo mapping |
 
 ---
 
 ## 🔌 Top Plugins & Extensions
 
 ### Hermes Ecosystem
-| Plugin | Description | Status |
-|--------|-------------|--------|
-| [[202609202000 - Jev Agent Router]] | Typesafe context engine with agent_route MCP server | ✅ Active |
-| [[hermes-jev]] | Typesafe context engine | ✅ Active |
-| [[hermes-mcp]] | Model Context Protocol server integration | ✅ Active |
-| [[hermes-kanban]] | Multi-agent work queue | ✅ Active |
-| [[hermes-curator]] | Session memory consolidation | ✅ Active |
-
-### Claude Code Ecosystem
-| Plugin | Description | Status |
-|--------|-------------|--------|
-| [[202609202000 - Browser Use MCP]] | Browser automation via stdio MCP server | ✅ Active |
-| [[Claude MCP]] | External tool & resource integrations | ✅ Active |
-| [[Claude Skills]] | Reusable skill bundles | ✅ Active |
+|[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | Typesafe context engine with agent_route MCP server | ✅ Active |
+|[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | Browser automation via stdio MCP server | ✅ Active |
+|[Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | Up-to-date documentation injection | ✅ Active |
+|[FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | Image generation via FAL | ✅ Active |
+|[Hermes Kanban](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | Multi-agent work queue | ✅ Active |
+|[Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | Session memory consolidation | ✅ Active |
 
 ### OpenCode Ecosystem
-| Plugin | Description | Status |
-|--------|-------------|--------|
-| [[202609202000 - OpenCode Firecrawl]] | Firecrawl CLI wrapper with file-based results | ✅ Active |
-| [[202609202000 - OpenCode Supermemory]] | Persistent cross-session memory via Supermemory | ✅ Active |
+|[OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | Firecrawl CLI wrapper with file-based results | ✅ Active |
+|[OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | Persistent cross-session memory via Supermemory | ✅ Active |
 
 ### Cross-Agent Plugins
-| Plugin | Agents | Description |
-|--------|--------|-------------|
-| [[202609202000 - Firecrawl MCP Server]] | All MCP-compatible | Web scrape/search/crawl/map/parse tools |
-| [[202609202000 - Browser Use MCP]] | Claude, Cursor, Windsurf, OpenCode | Browser automation |
-| [[MCP Servers]] | All | Universal tool/resource bridge protocol |
-| [[Browser Use]] | Claude, Hermes | Browser automation |
-| [[Firecrawl]] | Multiple | Web scraping API |
-| [[FAL]] | Multiple | Image generation API |
+|[Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | All MCP-compatible | Web scrape/search/crawl/map/parse tools |
+|[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | Claude, Cursor, Windsurf, OpenCode | Browser automation |
 
 ---
 
 ## 🏗️ Architecture Patterns
 
 ### Core Patterns
-| Pattern | Description | Adoption |
-|---------|-------------|----------|
-| [[202609202000 - MCP Proxy Aggregator Pattern]] | Namespaced routing across upstream MCP servers | Emerging |
-| [[202609202001 - Context Engineering for Long-Horizon Agents]] | Compaction, structured notes, just-in-time retrieval | Growing |
-| [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] | Fan-out/fan-in with validation layers | Emerging |
-| [[MCP Protocol]] | Standardized tool/resource/context interface | Widespread |
-| [[Multi-Agent Orchestration]] | Coordinator + specialist agent trees | Growing |
-| [[Context Engineering]] | Dynamic context curation (RAG, summarization) | Critical |
-| [[Tool-Calling Patterns]] | Structured function invocation with validation | Standard |
-| [[Guardrails & Safety]] | Approval modes, sandboxing, red-teaming | Essential |
-
-### Workflow Patterns
-| Pattern | Use Case |
-|---------|----------|
-| [[Sub-Agent Delegation]] | Parallel task execution within a session |
-| [[Checkpoint & Rollback]] | Safe file editing with snapshot restore |
-| [[Progressive Summarization]] | Large codebase comprehension |
-| [[Skill Bundles]] | Reusable procedural memory |
-| [[Git Worktree Isolation]] | Parallel editing without conflicts |
+|[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) | Namespaced routing across upstream MCP servers | Emerging |
+|[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md) | Compaction, structured notes, just-in-time retrieval | Growing |
+|[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) | Fan-out/fan-in with validation layers | Emerging |
 
 ---
 
@@ -90,11 +49,9 @@
 
 Quick-start configs for popular setups:
 
-- [[Claude Code + MCP + Browser Setup]]
-- [[Hermes Docker Profile + Skills Setup]]
-- [[OpenCode + Git Worktree Workflow]]
-- [[Aider + Custom Model Provider]]
-- [[Multi-Agent Kanban with Delegation]]
+- [Claude Code Plugin Distribution for Team Workflow Standardization](./06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)
+- [Claude Code Hooks for CI/CD Automation](./06%20-%20Use%20Cases/202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md)
+- [Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
 
 ---
 
@@ -145,9 +102,9 @@ This README is the vault's **dashboard**. It should be refreshed whenever:
 - A pattern crosses from "emerging" to "adopted"
 - New configuration workflows are documented
 
-> **Open this vault in Obsidian** for the full linked experience — every `[[wikilink]]` below is a note with install guides, config snippets, and real-world patterns.
+> **Open this vault in Obsidian** for the full linked experience — every note has install guides, config snippets, and real-world patterns.
 
 ---
 
 *Last refreshed: 2026-09-20*
-*Agent profile: [[hermes-profile|ai-matrix-trends]]*
+*Agent profile: ai-matrix-trends*
