@@ -25,12 +25,14 @@ The cron job reads AGENTS.md first for context, then this file for instructions.
 
 Launch 4 parallel streams via `delegate_task`.
 
-**Important for sub-agents:**
+**IMPORTANT FOR SUB-AGENTS:**
 - You are a sub-agent. Load skills independently: `skill_view(name="obsidian")`
 - Use `terminal(command="...")` for all git operations
 - Use `write_file(path="...", content="...")` to create notes and manifests
 - Use `read_file(path="...")` to read templates before writing
-- **FRONTMATTER MUST INCLUDE `links:` WITH AT LEAST 2 WIKILINKS**
+- **DO NOT PUT LINKS IN FRONTMATTER** — leave `links:` empty or omit it entirely
+- The merge step will populate frontmatter links from actual folder contents
+- **ONLY put links in the `## Related` section at the bottom of the note**
 
 ### Stream A: Agent Profiles
 ```
@@ -48,23 +50,19 @@ Research:
 
 Write to: 03 - Agents/
 
-MANDATORY FRONTMATTER TEMPLATE:
+FRONTMATTER TEMPLATE (NO LINKS):
 ---
 id: 2026092010
 created: 2026-09-20T10:00:00+02:00
 tags:
   - agent
   - cli
-links:
-  - "[[2026092011 - Agent Name 2]]"
-  - "[[2026092012 - Agent Name 3]]"
 ---
 
 RULES:
-- Every note MUST have links field with 2+ wikilinks in frontmatter
-- Wikilink format: [[YYYYMMDDHHMM - Exact Title.md]] (the actual filename)
-- Do NOT write [[Claude Code]] — write [[2026092010 - Claude Code]] (actual filename)
-- Link to notes in the SAME folder (other agents)
+- DO NOT add links: field to frontmatter
+- Put all links in the ## Related section at the bottom
+- Use short names in ## Related: [[Claude Code]], [[Aider]], etc.
 - After writing: create manifest at 08 - Projects/scan-manifests/stream-a-UNIQUE.json
   Format: [{"file": "03 - Agents/2026092010 - Name.md", "title": "Name", "type": "agent", "tags": [...]}]
 - Git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: agent profiles' && git push")
@@ -87,22 +85,19 @@ Research:
 
 Write to: 04 - Plugins/
 
-MANDATORY FRONTMATTER TEMPLATE:
+FRONTMATTER TEMPLATE (NO LINKS):
 ---
 id: 2026092020
 created: 2026-09-20T20:00:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
 ---
 
 RULES:
-- Every note MUST have links field with 2+ wikilinks in frontmatter
-- Link to MOC-Plugin-Ecosystem and MOC-Trending-Agents
-- Do NOT link to specific agent notes yet (cross-linking in merge)
+- DO NOT add links: field to frontmatter
+- Put all links in the ## Related section at the bottom
+- Link to MOCs in ## Related: [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
 - After writing: create manifest at 08 - Projects/scan-manifests/stream-b-UNIQUE.json
   Format: [{"file": "04 - Plugins/2026092020 - Name.md", "title": "Name", "type": "plugin", "agents": ["Claude Code"]}]
 - Git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: plugin ecosystem' && git push")
@@ -125,22 +120,19 @@ Research:
 
 Write to: 05 - Architecture/
 
-MANDATORY FRONTMATTER TEMPLATE:
+FRONTMATTER TEMPLATE (NO LINKS):
 ---
 id: 2026092030
 created: 2026-09-20T30:00:00+02:00
 tags:
   - architecture
   - mcp
-links:
-  - "[[2026092031 - Pattern Name 2]]"
-  - "[[2026092032 - Pattern Name 3]]"
 ---
 
 RULES:
-- Every note MUST have links field with 2+ wikilinks in frontmatter
-- Wikilink format: [[YYYYMMDDHHMM - Exact Title.md]] (the actual filename)
-- Link to notes in the SAME folder (other patterns)
+- DO NOT add links: field to frontmatter
+- Put all links in the ## Related section at the bottom
+- Use short names: [[Claude Code]], [[MCP Protocol]], etc.
 - After writing: create manifest at 08 - Projects/scan-manifests/stream-c-UNIQUE.json
   Format: [{"file": "05 - Architecture/2026092030 - Name.md", "title": "Name", "type": "architecture", "examples": ["Claude Code"]}]
 - Git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: architecture patterns' && git push")
@@ -163,22 +155,19 @@ Research:
 
 Write to: 06 - Use Cases/
 
-MANDATORY FRONTMATTER TEMPLATE:
+FRONTMATTER TEMPLATE (NO LINKS):
 ---
 id: 2026092040
 created: 2026-09-20T40:00:00+02:00
 tags:
   - workflow
   - config
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
 ---
 
 RULES:
-- Every note MUST have links field with 2+ wikilinks in frontmatter
-- Link to MOC-Plugin-Ecosystem and MOC-Architecture-Patterns
-- Do NOT link to specific notes yet (cross-linking in merge)
+- DO NOT add links: field to frontmatter
+- Put all links in the ## Related section at the bottom
+- Link to MOCs: [[MOC-Plugin-Ecosystem]], [[MOC-Architecture-Patterns]]
 - After writing: create manifest at 08 - Projects/scan-manifests/stream-d-UNIQUE.json
   Format: [{"file": "06 - Use Cases/2026092040 - Name.md", "title": "Name", "type": "workflow", "agents": ["Claude Code"], "plugins": ["Firecrawl"]}]
 - Git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: use cases' && git push")
@@ -194,73 +183,90 @@ search_files(pattern="stream-*.json", target="files", path="08 - Projects/scan-m
 ```
 Read each manifest to understand what was created.
 
-### Step 2: Fix Orphan Wikilinks AND Frontmatter Links
+### Step 2: Build Link Map from Actual Files
 
-**For each folder (03 - Agents, 04 - Plugins, 05 - Architecture, 06 - Use Cases):**
+**Create a complete file map of the vault:**
 
-1. Extract all wikilinks: `search_files(pattern="\\[\\[.*\\]\\]", target="content", path="<folder>", file_glob="*.md")`
+```python
+# Pseudocode — execute via execute_code or logic in your response:
+file_map = {}
+for root, dirs, files in os.walk('${HOME}/repository/git/ai-matrix-trends'):
+    if '/.git' in root: continue
+    for f in files:
+        if f.endswith('.md'):
+            fname = f.replace('.md', '')
+            file_map[fname.lower()] = os.path.join(root, f)
+```
 
-2. For each `[[link_text]]` found, check if target file exists by walking all folders
+**Then for each new note from manifests:**
+1. Read note content
+2. Find all `[[short name]]` links in body
+3. Match each short name against file_map
+4. Build proper links using actual filenames
+5. Add `links:` field to frontmatter with 2+ actual filename wikilinks
 
-3. If NO match found, find the best replacement using partial matching
+### Step 3: Add Frontmatter Links to New Notes
 
-4. Apply fix: `patch(path="<file>", old_string="[[<link>]]", new_string="[[<actual filename>]]")`
+For EVERY note created by sub-agents:
 
-5. **CHECK FRONTMATTER:** For every note, verify the `links:` field exists and has 2+ wikilinks:
-   - Read note: `read_file(path="<note>", limit=15)`
-   - Check for `links:` field
-   - If missing or empty, ADD IT using patch():
-   ```
-   patch(path="<note>",
-         old_string="---\nid: ...\ncreated: ...\ntags:\n  - ...",
-         new_string="---\nid: ...\ncreated: ...\ntags:\n  - ...\nlinks:\n  - \"[[<actual filename 1>]]\"\n  - \"[[<actual filename 2>]]\"\n---")
-   ```
+1. Read the note
+2. Find the `## Related` section
+3. Extract short names from `[[...]]` links
+4. Search all folders for matching filenames
+5. Add a `links:` field to frontmatter:
 
-6. Repeat until zero orphans AND all frontmatter has 2+ links.
+```
+patch(path="<note>",
+      old_string="---\nid: ...\ncreated: ...\ntags:\n  - ...",
+      new_string="---\nid: ...\ncreated: ...\ntags:\n  - ...\nlinks:\n  - \"[[YYYYMMDDHHMM - Actual Title]]\"\n  - \"[[YYYYMMDDHHMM - Actual Title 2]]\"\n---")
+```
 
-**Important:** Sub-agents write short-name wikilinks like `[[Claude Code]]` but files are named `2026092010 - Claude Code.md`. Resolve to actual filename.
+**Critical:** The links field MUST contain at least 2 wikilinks pointing to EXISTING files.
 
-**Common patterns:**
-- `[[Claude Code]]` → `[[2026092010 - Claude Code]]`
-- `[[OpenCode]]` → `[[2026092011 - OpenCode]]`
-- `[[opencode-tavily]]` → `[[2026092020 - OpenCode Firecrawl]]`
+### Step 4: Fix Orphan Wikilinks
 
-### Step 3: Add Cross-Stream Links
-Use manifest data to add intelligent cross-links:
+For EVERY note in all folders:
+1. Find all `[[link_text]]` in body
+2. Check if target exists in file_map
+3. If not, find closest match and fix with `patch()`
+
+### Step 5: Add Cross-Stream Links
+
+Using manifest data:
 - Agents → Plugins (from plugin manifest `agents` field)
 - Plugins → Agents (same)
 - Architecture → Agents (from pattern manifest `examples` field)
 - Use Cases → Agents + Plugins (from use case manifest)
 
-### Step 4: Update MOCs and Master Indexes
+### Step 6: Update MOCs and Master Indexes
 - Update MOC-Trending-Agents.md
 - Update MOC-Plugin-Ecosystem.md
 - Update MOC-Architecture-Patterns.md
 - Update AI Architecture Master Index (05 - Architecture/00 - AI Architecture Master Index.md)
 - Update Plugin Master Index (04 - Plugins/00 - Plugin Master Index.md)
 
-### Step 5: Update README
+### Step 7: Update README
 - Convert all `[[wikilinks]]` to `[text](./path.md)` Markdown links
 - Remove duplicates
 - Update Trend Radar tables
 - Create atomic notes in 09 - Trend Radar/ folders for new trends
 - Update date
 
-### Step 6: Verify All Links
+### Step 8: Verify All Links
 - Count wikilinks per note (all must have ≥2)
 - Check README links are valid
 - Fix any remaining orphans
 
-### Step 7: Final Commit
+### Step 9: Final Commit
 ```
 terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: cross-links, MOCs, README' && git push")
 ```
 
-### Step 8: Cleanup
+### Step 10: Cleanup
 Remove old manifest files, keep current day.
 
-### Step 9: Validate Frontmatter
-Spot-check 3-5 notes: verify `id`, `created`, `tags`, `links` all present and populated.
+### Step 11: Validate Frontmatter
+Spot-check 5 notes: verify `id`, `created`, `tags`, `links` all present and populated.
 
 ---
 
@@ -268,7 +274,8 @@ Spot-check 3-5 notes: verify `id`, `created`, `tags`, `links` all present and po
 - One idea per note
 - Own words, never copy-paste
 - Unique timestamps per filename
-- Frontmatter must include: `id`, `created`, `tags`, `links`
+- Sub-agents: DO NOT put links in frontmatter — use ## Related section
+- Merge step: ADD frontmatter links from actual folder contents
 - Minimum 2 outbound links per note
 - Cross-stream linking is mandatory
 

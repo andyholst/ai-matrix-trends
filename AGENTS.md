@@ -525,13 +525,18 @@ links:
 ---
 ```
 
-**Rules:**
-- The `links:` field MUST exist in every note's frontmatter
-- It MUST contain at least 2 working wikilinks
-- Wikilinks must point to files that actually exist in the vault
-- The `links:` field is separate from the `## Related` section at the bottom of notes
-- **Sub-agents are responsible for adding these links when they write notes**
-- **The merge step is responsible for verifying and fixing them**
+**Sub-Agent Rules:**
+- **DO NOT put links in frontmatter** — leave `links:` empty or omit it entirely
+- Only put links in the `## Related` section at the bottom of notes
+- Use short names in ## Related: `[[Claude Code]]`, `[[Aider]]`, etc.
+- The merge step will resolve short names to actual filenames and add frontmatter links
+
+**Merge Step Rules:**
+1. Read each new note
+2. Find short names in `## Related` section
+3. Search all folders for matching filenames
+4. Add `links:` field to frontmatter with 2+ actual filename wikilinks
+5. Fix any orphan wikilinks in body text
 
 **How the merge step fixes missing links:**
 1. Read note: `read_file(path="<note>", limit=15)`
