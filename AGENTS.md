@@ -171,7 +171,7 @@ links:
 ```
 
 ## Key Plugins/Extensions
-- [[link-to-plugin]]
+- [[202609202000 - Browser Use MCP]]
 
 ## Strengths
 -
@@ -183,7 +183,7 @@ links:
 - 
 
 ## Related Agents
-- [[link-to-comparable-agent]]
+- [[202609200758 - OpenCode]]
 
 ## Sources
 - [Official Docs](url)
@@ -221,11 +221,11 @@ links:
 - 
 
 ## Compatibility
-- **Agent:** [[agent-name]]
+- **Agent:** [[202609202000 - Claude Code]]
 - **Versions:** x.x.x+
 
 ## Related Plugins
-- [[link-to-related-plugin]]
+- [[202609200803 - Context7 MCP]]
 
 ## Sources
 - [GitHub](url)
@@ -260,10 +260,10 @@ links:
 - **Cons:** 
 
 ## Examples
-- [[agent-that-uses-this]]
+- [[202609202000 - Claude Code]]
 
 ## Related Patterns
-- [[link-to-related-pattern]]
+- [[202609202000 - MCP Proxy Aggregator Pattern]]
 
 ## Sources
 -
@@ -276,7 +276,7 @@ links:
 | `id` | Timestamp ID matching filename |
 | `created` | ISO 8601 creation date |
 | `tags` | Flat tag list — no hierarchy. Use kebab-case |
-| `aliases` | Alternative titles Obsidian can match via `[[wikilinks]]` |
+| `aliases` | Alternative titles Obsidian can match via `[[202609202000 - Claude Code]]` |
 | `links` | Explicit list of strongly related permanent notes |
 | `Core Idea` | The one-liner — if you can only read one sentence |
 | `Details` | The meat — own words, blockquotes for source material |
@@ -339,22 +339,22 @@ tags:
 [2 sentences on what this map covers]
 
 ## Key Notes
-- [[YYYYMMDDHHMM - Note title]] — [one-line summary]
-- [[YYYYMMDDHHMM - Note title]] — [one-line summary]
+- [[202609202000 - Claude Code]] — [one-line summary]
+- [[202609202000 - Claude Code]] — [one-line summary]
 
 ## Clusters
 ### Sub-theme A
-- [[note-link-1]]
-- [[note-link-2]]
+- [[202609202000 - Claude Code]]
+- [[202609200758 - OpenCode]]
 
 ### Sub-theme B
-- [[note-link-3]]
+- [[202609202000 - Cursor]]
 
 ## Open Questions
 - What is the relationship between X and Y?
 
 ## Related MOCs
-- [[MOC: Related theme]]
+- [[MOC-Trending-Agents]]
 ```
 
 ### MOC Maintenance
@@ -402,11 +402,11 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 | `[[202609202000 - Cline]]` | Find file with "Cline" in name | `[[202609202000 - Cline]]` |
 | `[[202609202000 - Aider]]` | Find file with "Aider" in name | `[[202609202000 - Aider]]` |
 | `[[202609200800 - Windsurf]]` | Find file with "Windsurf" in name | `[[202609200800 - Windsurf]]` |
-| `[[VS Code]]` | Closest editor agent → Cursor | `[[202609202000 - Cursor]]` |
+| `[[202609202000 - Cursor]]` | Closest editor agent → Cursor | `[[202609202000 - Cursor]]` |
 | `[[202609202001 - GitHub Copilot Agent]]` | Find file with "Copilot" or "GitHub" | `[[202609202001 - GitHub Copilot Agent]]` |
 | `[[202609202002 - Gemini CLI]]` | Find file with "Gemini" | `[[202609202002 - Gemini CLI]]` |
 | `[[202609202005 - JetBrains Junie]]` | Find file with "Junie" or "JetBrains" | `[[202609202005 - JetBrains Junie]]` |
-| `[[2026092014 - Kilo Code]]` | Find file with "Kilo" | `[[202609202003 - Kilo Code]]` |
+| `[[2026092014 - Kilo Code]]` | Find file with "Kilo" | `[[2026092014 - Kilo Code]]` |
 | `[[202609202004 - RooCode]]` | Find file with "Roo" | `[[202609202004 - RooCode]]` |
 | `[[202609202004 - Pi]]` | Pi agent not yet created → link to MOC | `[[MOC-Trending-Agents]]` |
 | `[[202609202000 - Browser Use MCP]]` | Find file with "Browser Use" | `[[202609202000 - Browser Use MCP]]` |
@@ -420,13 +420,13 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 | `[[202609202011 - Chrome DevTools MCP]]` | Find file with "Chrome DevTools" | `[[202609202011 - Chrome DevTools MCP]]` |
 | `[[202609202000 - OpenCode Firecrawl]]` | Find file with "OpenCode Firecrawl" | `[[202609202000 - OpenCode Firecrawl]]` |
 | `[[202609202000 - OpenCode Supermemory]]` | Find file with "Supermemory" | `[[202609202000 - OpenCode Supermemory]]` |
-| `[[opencode-tavily]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
-| `[[opencode-websearch-cited]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
-| `[[hermes-memory-wiki]]` | Closest Hermes plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
-| `[[mnemosyne-dashboard]]` | Closest memory/dashboard plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
-| `[[mcp-browser-use]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
-| `[[chrome-devtools-mcp]]` | Closest devtools MCP | `[[202609202011 - Chrome DevTools MCP]]` |
-| `[[safari-mcp]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
+| `[[202609202000 - OpenCode Firecrawl]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
+| `[[202609202000 - OpenCode Firecrawl]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
+| `[[202609200805 - Hermes Kanban Dashboard]]` | Closest Hermes plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
+| `[[202609200805 - Hermes Kanban Dashboard]]` | Closest memory/dashboard plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
+| `[[202609202000 - Browser Use MCP]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
+| `[[202609202011 - Chrome DevTools MCP]]` | Closest devtools MCP | `[[202609202011 - Chrome DevTools MCP]]` |
+| `[[202609202000 - Browser Use MCP]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
 | `[[202609202000 - MCP Proxy Aggregator Pattern]]` | Find file with "Proxy Aggregator" | `[[202609202000 - MCP Proxy Aggregator Pattern]]` |
 | `[[202609202001 - Context Engineering for Long-Horizon Agents]]` | Find file with "Context Engineering" | `[[202609202001 - Context Engineering for Long-Horizon Agents]]` |
 | `[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]` | Find file with "Multi-Agent Orchestration" | `[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]` |
@@ -439,15 +439,15 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 | `[[202609202001 - Claude Code Hooks for CI-CD Automation]]` | Find file with "CI/CD" | `[[202609202001 - Claude Code Hooks for CI-CD Automation]]` |
 | `[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]` | Find file with "Plugin Distribution" | `[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]` |
 | `[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]` | Find file with "Multi-Server MCP" | `[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]` |
-| `[[20260920200758 - OpenCode]]` | Wrong timestamp → actual file | `[[202609200758 - OpenCode]]` |
-| `[[20260920200759 - Hermes Agent]]` | Wrong timestamp → actual file | `[[202609200759 - Hermes Agent]]` |
+| `[[202609200758 - OpenCode]]` | Wrong timestamp → actual file | `[[202609200758 - OpenCode]]` |
+| `[[202609200759 - Hermes Agent]]` | Wrong timestamp → actual file | `[[202609200759 - Hermes Agent]]` |
 
 **Important:** Wikilinks with wrong timestamps should resolve to the actual file. Check all folders systematically.
 
 **Process:**
 1. Use `search_files(pattern="\\[\\[.*\\]\\]", ...)` to find all wikilinks
-2. For each `[[link_text]]` find the actual file using the table above as reference
-3. Apply fix with `patch(path=..., old_string="[[link_text]]", new_string="[[actual filename]]")`
+2. For each `[[202609202000 - Claude Code]]` find the actual file using the table above as reference
+3. Apply fix with `patch(path=..., old_string="[[202609202000 - Claude Code]]", new_string="[[202609202000 - Claude Code]]")`
 4. Repeat until zero orphans remain
 
 ### Refactoring Rules
@@ -455,9 +455,9 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 Refactoring is expected. When restructuring:
 
 - **Never delete content** — split into new notes or move to `01 - Fleeting/` if it loses relevance
-- **Preserve wikilinks** — if a filename changes, update all `[[links]]` across the vault
+- **Preserve wikilinks** — if a filename changes, update all `[[202609202000 - Claude Code]]` across the vault
 - **Update MOCs** — rename or re-point any MOC references to moved notes
-- **Leave traces** — if a note is superseded, add a `replaced-by: [[new-note]]` frontmatter field
+- **Leave traces** — if a note is superseded, add a `replaced-by: [[202609202000 - Claude Code]]` frontmatter field
 
 ### When to Create vs Link
 
@@ -597,8 +597,8 @@ tags:
   - agent
   - cli
 links:
-  - "[[2026092011 - Agent Name 2]]"
-  - "[[2026092012 - Agent Name 3]]"
+  - "[[202609202002 - Gemini CLI]]"
+  - "[[2026092012 - Factory Droids]]"
 ---
 ```
 
@@ -620,10 +620,10 @@ The vault is a living system. Small, frequent, well-linked notes beat large, inf
 ## Wikilink vs Markdown Link Rules
 
 **Inside notes (`03 - Agents/`, `04 - Plugins/`, etc.):**
-Use Obsidian `[[wikilinks]]` — e.g., `[[202609202000 - Claude Code]]`
+Use Obsidian `[[202609202000 - Claude Code]]` — e.g., `[[202609202000 - Claude Code]]`
 
 **In README.md:**
-GitHub does NOT render `[[wikilinks]]` as clickable. Use standard Markdown:
+GitHub does NOT render `[[202609202000 - Claude Code]]` as clickable. Use standard Markdown:
 - `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
 - `[Firecrawl MCP](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP.md)`
 
@@ -749,7 +749,7 @@ Every note must have at least 2 working outbound links. No exceptions.
 
 **How to verify:**
 1. Read note content
-2. Extract all `[[...]]` links
+2. Extract all `[[202609202000 - Claude Code]]` links
 3. For each link, search filesystem for matching file
 4. If match not found, resolve to actual filename using partial matching
 5. Apply fix with `patch()`
@@ -785,7 +785,7 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 4. **Fix orphans** using `patch()`:
    ```
    patch(path="04 - Plugins/202609202000 - Firecrawl MCP Server.md",
-         old_string="[[opencode-tavily]]",
+         old_string="[[202609202000 - OpenCode Firecrawl]]",
          new_string="[[202609202000 - OpenCode Firecrawl]]")
    ```
 
@@ -795,7 +795,7 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 - `search_files` extracts every wikilink from the DOM/text
 - The agent reads each note's content and compares against filesystem
 - `patch()` updates links without overwriting existing content
-- The Obsidian skill's wikilink convention (`[[Note Name]]`) is preserved for Obsidian vault navigation
+- The Obsidian skill's wikilink convention (`[[202609202000 - Claude Code]]`) is preserved for Obsidian vault navigation
 
 ---
 

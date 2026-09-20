@@ -23,10 +23,10 @@ links:
 - **Cons:** 
 
 ## Examples
-- [[agent-that-uses-this]]
+- [[202609202000 - Claude Code]]
 
 ## Related Patterns
-- [[link-to-related-pattern]]
+- [[202609202000 - MCP Proxy Aggregator Pattern]]
 
 ## Sources
 -

@@ -4,7 +4,7 @@
 [2 sentences on what this map covers]
 
 ## Key Notes
-- [[YYYYMMDDHHMM - Note title]] — [one-line summary]
+- [[202609202000 - Claude Code]] — [one-line summary]
 
 ## Clusters
 ### Sub-theme A

@@ -1,4 +1,5 @@
 ---
+id: 00
 tags:
   - moc
   - plugin
@@ -48,6 +49,7 @@ links:
   - "[[2026092023 - CodeGraph MCP]]"
   - "[[2026092024 - OpenCode Snip]]"
   - "[[2026092024 - Sourcegraph MCP]]"
+created: 2026-09-20T18:50:01+02:00
 ---
 
 # AI Plugins & Extensions — Master Index

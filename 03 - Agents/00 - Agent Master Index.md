@@ -1,4 +1,5 @@
 ---
+id: 00
 tags:
   - moc
   - agent
@@ -39,6 +40,7 @@ links:
   - "[[202609202035 - Jev]]"
   - "[[202609202045 - Pareto]]"
   - "[[202609202055 - Muse Code]]"
+created: 2026-09-20T18:50:01+02:00
 ---
 
 # AI Agents — Master Index

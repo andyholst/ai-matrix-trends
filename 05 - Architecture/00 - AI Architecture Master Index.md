@@ -1,12 +1,13 @@
 ---
+id: 00
 tags:
   - moc
   - architecture
-  - ai-architecture
-  - index
-links:
+  - architecture
+  - indexlinks:
   - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
   - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
+created: 2026-09-20T18:50:01+02:00
 ---
 
 # AI Architecture Patterns — Master Index
