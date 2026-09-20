@@ -1,0 +1,20 @@
+[
+  {
+    "file": "05 - Architecture/202609202023 - MCP Gateway Aggregation Layer.md",
+    "title": "MCP Gateway Aggregation Layer",
+    "type": "architecture",
+    "examples": ["Claude Code", "MCP Gateway Proxy"]
+  },
+  {
+    "file": "05 - Architecture/202609202024 - Orchestrator Worker Multi-Agent Delegation.md",
+    "title": "Orchestrator-Worker Multi-Agent Delegation",
+    "type": "architecture",
+    "examples": ["Claude Code", "LangGraph Deep Agents"]
+  },
+  {
+    "file": "05 - Architecture/202609202025 - Compaction and Note-Taking for Long-Horizon Context.md",
+    "title": "Compaction and Note-Taking for Long-Horizon Context",
+    "type": "architecture",
+    "examples": ["Claude Code", "LangChain Deep Agents"]
+  }
+]

@@ -6,8 +6,8 @@ tags:
   - opencode
   - all-in-one
 links:
-  - [[202609202000 - OpenCode Supermemory]]
-  - [[202609202000 - OpenCode Firecrawl]]
+  - [[MOC-Plugin-Ecosystem]]
+  - [[MOC-Trending-Agents]]
 ---
 
 # OpenCode Oh-My-Openagent

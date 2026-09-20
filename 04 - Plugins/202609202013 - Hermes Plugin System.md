@@ -6,8 +6,8 @@ tags:
   - hermes
   - architecture
 links:
-  - [[202609202000 - Jev Agent Router]]
-  - [[202609202000 - OpenCode Supermemory]]
+  - [[MOC-Plugin-Ecosystem]]
+  - [[MOC-Trending-Agents]]
 ---
 
 # Hermes Plugin System

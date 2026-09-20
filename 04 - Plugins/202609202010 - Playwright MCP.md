@@ -6,8 +6,8 @@ tags:
   - mcp
   - browser-automation
 links:
-  - [[202609202000 - Browser Use MCP]]
-  - [[202609202000 - Jev Agent Router]]
+  - [[MOC-Plugin-Ecosystem]]
+  - [[MOC-Trending-Agents]]
 ---
 
 # Playwright MCP
