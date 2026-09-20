@@ -35,8 +35,8 @@ def main():
     print("\nStep 2a: Resolving wikilinks...")
     run("resolve_wikilinks.py")
 
-    print("\nStep 2b: Fixing broken links...")
-    run("fix_all_links.py")
+    print("\nStep 2b: Fixing all links (dedup + resolve + create missing)...")
+    run("fix-all-links.py")
 
     print("\nStep 2c: Verifying vault links...")
     run("verify-vault.py")
