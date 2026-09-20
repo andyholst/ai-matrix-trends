@@ -8,10 +8,30 @@ set -euo pipefail
 
 VAULT_DIR="${HOME}/repository/git/ai-matrix-trends"
 PROFILE="ai-matrix-trends"
+HERMES_SCRIPTS_DIR="${HOME}/hermes/profiles/${PROFILE}/scripts"
 
 echo "→ Setting up AI Matrix Trends cron jobs"
 echo "  Profile: ${PROFILE}"
 echo "  Vault:   ${VAULT_DIR}"
+echo ""
+
+# Ensure Hermes scripts directory exists
+mkdir -p "${HERMES_SCRIPTS_DIR}"
+
+# Symlink stage scripts to Hermes profile
+echo "→ Symlinking stage scripts to ${HERMES_SCRIPTS_DIR}/"
+for script in stage-1-research.sh stage-2-links.sh stage-3-scoring.sh stage-4-indexes.sh; do
+  src="${VAULT_DIR}/scripts/${script}"
+  dest="${HERMES_SCRIPTS_DIR}/${script}"
+  if [[ -L "${dest}" ]]; then
+    rm "${dest}"
+  elif [[ -f "${dest}" ]]; then
+    echo "  ⚠ ${script} already exists, skipping"
+    continue
+  fi
+  ln -s "${src}" "${dest}"
+  echo "  ✓ Linked ${script}"
+done
 echo ""
 
 # ===== STAGE 1: Research (0 20 * * *) =====
@@ -23,7 +43,7 @@ else
   hermes cron create '0 20 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 1 - Research' \
-    --script "${VAULT_DIR}/scripts/stage-1-research.sh" \
+    --script "stage-1-research.sh" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 1 created"
@@ -38,7 +58,7 @@ else
   hermes cron create '30 20 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 2 - Links' \
-    --script "${VAULT_DIR}/scripts/stage-2-links.sh" \
+    --script "stage-2-links.sh" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 2 created"
@@ -53,7 +73,7 @@ else
   hermes cron create '45 20 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 3 - Scoring' \
-    --script "${VAULT_DIR}/scripts/stage-3-scoring.sh" \
+    --script "stage-3-scoring.sh" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 3 created"
@@ -68,7 +88,7 @@ else
   hermes cron create '0 21 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 4 - Indexes' \
-    --script "${VAULT_DIR}/scripts/stage-4-indexes.sh" \
+    --script "stage-4-indexes.sh" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 4 created"

@@ -818,10 +818,18 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 
 ---
 
-## Daily Trend Scan
+## Cron Jobs
 
-For the daily scan workflow, see `scripts/daily-scan-prompt.md`.
-The cron job reads AGENTS.md first, then executes the scan prompt instructions.
+The daily scan runs as **4 separate cron jobs** at staggered times:
+
+| Time | Job | Script | What it does |
+|------|-----|--------|--------------|
+| 20:00 | Trends Stage 1 - Research | `stage-1-research.sh` | Launches 4 parallel research sub-agents |
+| 20:30 | Trends Stage 2 - Links | `stage-2-links.sh` | Resolves & fixes wikilinks |
+| 20:45 | Trends Stage 3 - Scoring | `stage-3-scoring.py` | Aggregates trend scores |
+| 21:00 | Trends Stage 4 - Indexes | `stage-4-indexes.sh` | Updates MOCs, indexes, README, commits |
+
+Setup: `bash scripts/setup-cron.sh` (run once after cloning)
 
 ---
 

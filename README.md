@@ -131,9 +131,9 @@ ai-matrix-trends/
 ├── 01 - Fleeting/        # Quick capture
 ├── 02 - Literature/      # Source material
 ├── 03 - Agents/          # Agent profiles & configs
-│   └── 00 - Agent Master Index.md  # Top 5 + complete agent list
+│   └── 00 - Agent Master Index.md  # Top 5 + complete agent list (auto-generated)
 ├── 04 - Plugins/         # Plugin documentation
-│   └── 00 - Plugin Master Index.md # Per-agent plugin tables
+│   └── 00 - Plugin Master Index.md # Per-agent plugin tables (auto-generated)
 ├── 05 - Architecture/    # Pattern notes
 ├── 06 - Use Cases/       # Real-world workflows
 ├── 07 - Structure/       # Maps of Content (MOCs)
