@@ -17,8 +17,21 @@ Launch 4 streams via `delegate_task`.
 
 ### Stream A: Agents (minutes 10-14)
 ```
-Goal: 3-5 new agents | Folder: 03 - Agents/
-Timestamps: 2026092010, 2026092011, etc.
+Goal: Find 5 NEW trending AI coding agents (not already in vault).
+Folder: 03 - Agents/
+Timestamps: 2026092010-2026092014
+
+SEARCH QUERIES (run ALL):
+1. web_search("trending AI coding agents 2026 new releases")
+2. web_search("best new AI code assistant tools github stars")
+3. web_search("Claude Code alternatives 2026")
+4. web_search("new open source coding agent github")
+5. web_search("AI pair programming tools new 2026")
+
+EXTRACT: Name, GitHub stars, description, supported models, key features.
+ONLY include agents with 1000+ stars or significant community buzz.
+Do NOT include agents already in the vault.
+
 Frontmatter (NO links):
 ---
 id: 2026092010
@@ -27,15 +40,34 @@ tags:
   - agent
   - cli
 ---
-Body ## Related: [[Claude Code]], [[Aider]] (short names)
+
+Body ## Related: [[Agent 1]], [[Agent 2]] (short names)
 Manifest: 08 - Projects/scan-manifests/stream-a-UNIQUE.json
 Git: commit + push
 ```
 
 ### Stream B: Plugins (minutes 20-24)
 ```
-Goal: 3-5 new plugins | Folder: 04 - Plugins/
-Timestamps: 2026092020, 2026092021, etc.
+Goal: Find 10 NEW plugins/extensions for EACH major agent (Claude Code, OpenCode, Hermes, Cursor, Codex).
+Folder: 04 - Plugins/
+Timestamps: 2026092020-2026092029
+
+SEARCH QUERIES (run ALL):
+1. web_search("best Claude Code MCP servers 2026")
+2. web_search("Claude Code extensions plugins new")
+3. web_search("OpenCode plugins ecosystem new")
+4. web_search("Hermes AI agent plugins new")
+5. web_search("Cursor IDE extensions AI coding")
+6. web_search("Codex OpenAI plugins integrations")
+7. web_search("MCP servers trending 2026")
+8. web_search("AI coding agent browser automation tools")
+9. web_search("Claude Code hooks CI/CD tools")
+10. web_search("new AI developer tools september 2026")
+
+EXTRACT: Name, supported agents, description, stars/installs, key features.
+Include ONLY plugins not already in vault.
+Aim for 10+ new plugins.
+
 Frontmatter (NO links):
 ---
 id: 2026092020
@@ -44,15 +76,26 @@ tags:
   - plugin
   - mcp
 ---
-Body ## Related: [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
+
+Body ## Related: [[Plugin 1]], [[Plugin 2]] (short names)
 Manifest: 08 - Projects/scan-manifests/stream-b-UNIQUE.json
 Git: commit + push
 ```
 
 ### Stream C: Architecture (minutes 30-32)
 ```
-Goal: 2-3 new patterns | Folder: 05 - Architecture/
-Timestamps: 2026092030, 2026092031, etc.
+Goal: Find 3 NEW emerging architecture patterns.
+Folder: 05 - Architecture/
+Timestamps: 2026092030-2026092032
+
+SEARCH QUERIES:
+1. web_search("MCP protocol new patterns 2026")
+2. web_search("multi-agent AI orchestration architecture")
+3. web_search("context engineering long-horizon agents new")
+4. web_search("AI agent safety guardrails patterns")
+
+EXTRACT: Pattern name, description, adoption level, tradeoffs.
+
 Frontmatter (NO links):
 ---
 id: 2026092030
@@ -61,15 +104,25 @@ tags:
   - architecture
   - mcp
 ---
-Body ## Related: [[MCP Protocol]], [[Claude Code]]
+
+Body ## Related: [[Pattern 1]], [[Pattern 2]] (short names)
 Manifest: 08 - Projects/scan-manifests/stream-c-UNIQUE.json
 Git: commit + push
 ```
 
 ### Stream D: Use Cases (minutes 40-42)
 ```
-Goal: 2-3 new use cases | Folder: 06 - Use Cases/
-Timestamps: 2026092040, 2026092041, etc.
+Goal: Find 3 NEW real-world use cases.
+Folder: 06 - Use Cases/
+Timestamps: 2026092040-2026092042
+
+SEARCH QUERIES:
+1. web_search("Claude Code hooks CI/CD automation examples")
+2. web_search("multi-server MCP orchestration enterprise workflows")
+3. web_search("AI agent plugin combinations use cases 2026")
+
+EXTRACT: Use case description, agents/plugins involved, benefits.
+
 Frontmatter (NO links):
 ---
 id: 2026092040
@@ -78,7 +131,8 @@ tags:
   - workflow
   - config
 ---
-Body ## Related: [[MOC-Plugin-Ecosystem]], [[MOC-Architecture-Patterns]]
+
+Body ## Related: [[Use Case 1]], [[Use Case 2]] (short names)
 Manifest: 08 - Projects/scan-manifests/stream-d-UNIQUE.json
 Git: commit + push
 ```
@@ -87,48 +141,56 @@ Git: commit + push
 
 ## Post-Scan Merge (MANDATORY — RUN IN ORDER)
 
-### Step 1: Run Link Fixer
+### Step 1: Run Meta Tag Fixer
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/fix_meta_tags.py
+```
+
+### Step 2: Run Link Fixer
 ```bash
 cd ~/repository/git/ai-matrix-trends && python3 scripts/fix-links.py
 ```
 
-### Step 2: Update MOCs
+### Step 3: Update MOCs
 ```bash
 cd ~/repository/git/ai-matrix-trends && python3 scripts/update-mocs.py
 ```
 
-### Step 3: Agent Updates README with Meaningful Content
+### Step 4: Aggregate Trends
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/aggregate-trends.py
+```
 
-**After the scripts run, YOU must update README.md with meaningful content:**
+### Step 5: Agent Updates README
 
-1. Read each new note created by the streams
-2. Extract key information (trending status, category, importance)
-3. Update README Trend Radar tables with new findings:
-   - Add to Heating Up 🔥 for rapid growth/new tools
-   - Add to Stable 📈 for established patterns
-   - Add to Emerging 🌱 for early signals
-4. Update the Trend Radar description to reflect current state
-5. Update the `Last refreshed: YYYY-MM-DD` date
-6. Format all links as Markdown: `[text](./path.md)`
+**After scripts run, YOU must update README.md:**
 
-### Step 4: Verify Vault
+1. Read new notes from all streams
+2. Read trend-data.json for scored trends
+3. Update Trend Radar tables:
+   - **Heating Up 🔥**: Top 5 highest scored items (score >= 50)
+   - **Stable 📈**: Next 5 items (score 20-49)
+   - **Emerging 🌱**: Items with score < 20 but showing growth signals
+4. Update agent/plugin/pattern tables with new entries
+5. Format all links as: `[text](./path.md)`
+6. Update `Last refreshed: YYYY-MM-DD`
+
+### Step 6: Verify Vault
 ```bash
 cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py
 ```
 
-### Step 5: Agent Verification of README
+### Step 7: Agent Verification of README
+**YOU must verify:**
+1. Trend Radar has correct top 5 entries per category
+2. All Markdown links resolve
+3. No duplicates
+4. Scoring is reflected in descriptions
+5. Proper formatting
 
-**YOU must verify README looks correct:**
-1. Read README.md
-2. Check Trend Radar tables have correct entries from Step 3
-3. Check all Markdown links resolve (decode %20 before checking)
-4. Verify no duplicate entries
-5. Verify formatting is clean and consistent
-6. Fix any issues found
-
-### Step 6: Commit and Push
+### Step 8: Commit and Push
 ```bash
-cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: cross-links, MOCs, README" && git push
+cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: fix links, update MOCs, README" && git push
 ```
 
 ---
@@ -136,9 +198,9 @@ cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan:
 ## Rules
 
 - Sub-agents: NEVER write `links:` in frontmatter
-- Merge step: ALWAYS runs Python scripts in order FIRST
-- Main agent: ALWAYS updates README with meaningful content AFTER scripts
-- Main agent: ALWAYS verifies README looks correct after updating
+- Sub-agents: Run ALL search queries, get MAXIMUM results
+- Merge step: ALWAYS runs scripts in order
+- Main agent: ALWAYS updates README with scored trend data
 - Every note MUST end with 2+ working frontmatter wikilinks
 - Zero orphans in body text
 
