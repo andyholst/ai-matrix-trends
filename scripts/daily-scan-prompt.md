@@ -102,6 +102,7 @@ RULES:
 - Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - **CRITICAL: The `links:` frontmatter field MUST contain at least 2 working wikilinks**
+- **Sub-agents: Do NOT write links like `[[Claude Code]]` in the frontmatter — write `[[202609202000 - Claude Code]]` (the actual filename)**
 - Example frontmatter:
   ```
   ---
@@ -178,6 +179,7 @@ RULES:
 - Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - **CRITICAL: The `links:` frontmatter field MUST contain at least 2 working wikilinks**
+- **Sub-agents: Do NOT write links like `[[Claude Code]]` in the frontmatter — write `[[202609202000 - Claude Code]]` (the actual filename)**
 - Example frontmatter:
   ```
   ---
