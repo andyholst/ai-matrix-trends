@@ -1,0 +1,32 @@
+[
+  {
+    "file": "03 - Agents/202609200758 - OpenCode.md",
+    "title": "OpenCode",
+    "type": "agent",
+    "tags": ["agent", "open-source", "cli"]
+  },
+  {
+    "file": "03 - Agents/202609200759 - Hermes Agent.md",
+    "title": "Hermes Agent",
+    "type": "agent",
+    "tags": ["agent", "open-source", "self-improving", "messaging"]
+  },
+  {
+    "file": "03 - Agents/202609200800 - Windsurf.md",
+    "title": "Windsurf",
+    "type": "agent",
+    "tags": ["agent", "ide", "rebrand"]
+  },
+  {
+    "file": "03 - Agents/202609202000 - Claude Code.md",
+    "title": "Claude Code",
+    "type": "agent",
+    "tags": ["agent", "cli", "tool"]
+  },
+  {
+    "file": "03 - Agents/202609202000 - Cursor.md",
+    "title": "Cursor",
+    "type": "agent",
+    "tags": ["agent", "tool"]
+  }
+]
