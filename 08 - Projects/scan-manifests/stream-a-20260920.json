@@ -1,0 +1,32 @@
+[
+  {
+    "file": "03 - Agents/202609202001 - GitHub Copilot Agent.md",
+    "title": "GitHub Copilot Agent",
+    "type": "agent-profile",
+    "tags": ["agent", "github", "copilot", "ide"]
+  },
+  {
+    "file": "03 - Agents/202609202002 - Gemini CLI.md",
+    "title": "Gemini CLI",
+    "type": "agent-profile",
+    "tags": ["agent", "google", "gemini", "cli"]
+  },
+  {
+    "file": "03 - Agents/202609202003 - Kilo Code.md",
+    "title": "Kilo Code",
+    "type": "agent-profile",
+    "tags": ["agent", "vscode", "context-control"]
+  },
+  {
+    "file": "03 - Agents/202609202004 - RooCode.md",
+    "title": "RooCode",
+    "type": "agent-profile",
+    "tags": ["agent", "vscode", "open-source", "reliability"]
+  },
+  {
+    "file": "03 - Agents/202609202005 - JetBrains Junie.md",
+    "title": "JetBrains Junie",
+    "type": "agent-profile",
+    "tags": ["agent", "jetbrains", "ide", "junie"]
+  }
+]
