@@ -6,8 +6,8 @@ tags:
   - tool
   - mcp
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # OpenCode Supermemory

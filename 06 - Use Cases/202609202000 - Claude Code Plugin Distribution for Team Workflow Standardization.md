@@ -6,8 +6,8 @@ tags:
   - config
   - agent
 links:
-  - [[202609202000 - Claude Code]]
-  - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
+  - "[[202609202000 - Claude Code]]"
+  - "[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]"
 ---
 
 # Claude Code Plugin Distribution for Team Workflow Standardization

@@ -43,7 +43,7 @@ Two complementary techniques address context overflow:
   - Multi-agent coordination adds orchestration overhead and prompt complexity.
 
 ## Examples
-- [[AGENTS]] — Broader context engineering strategies including compaction and sub-agent architectures.
+- [[MOC-Trending-Agents]] — Broader context engineering strategies including compaction and sub-agent architectures.
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — Sub-agent isolation as a guardrail mechanism.
 
 ## Related Patterns

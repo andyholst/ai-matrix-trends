@@ -6,9 +6,9 @@ tags:
   - hermes
   - architecture
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609200759 - Hermes Agent]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609200759 - Hermes Agent]]"
 ---
 
 # Hermes Plugin System

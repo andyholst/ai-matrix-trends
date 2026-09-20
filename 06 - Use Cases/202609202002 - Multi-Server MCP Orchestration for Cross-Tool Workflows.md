@@ -7,8 +7,8 @@ tags:
   - agent
   - tool
 links:
-  - [[202609202000 - Claude Code]]
-  - [[202609202001 - Claude Code Hooks for CI-CD Automation]]
+  - "[[202609202000 - Claude Code]]"
+  - "[[202609202000 - Claude Code]]"
 ---
 
 # Multi-Server MCP Orchestration for Cross-Tool Workflows

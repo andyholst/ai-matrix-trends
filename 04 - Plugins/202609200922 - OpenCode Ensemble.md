@@ -6,10 +6,10 @@ tags:
   - opencode
   - multi-agent
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609200758 - OpenCode]]
-  - [[202609200758 - OpenCode]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609200758 - OpenCode]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Ensemble

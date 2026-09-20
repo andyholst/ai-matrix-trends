@@ -6,8 +6,8 @@ tags:
   - mcp
   - debugging
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Architecture-Patterns]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
 ---
 
 # Chrome DevTools MCP for End-to-End Browser Debugging

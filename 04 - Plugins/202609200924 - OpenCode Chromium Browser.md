@@ -6,11 +6,11 @@ tags:
   - opencode
   - browser-automation
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609202010 - Playwright MCP]]
-  - [[202609202011 - Chrome DevTools MCP]]
-  - [[202609202000 - Browser Use MCP]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609202010 - Playwright MCP]]"
+  - "[[202609202011 - Chrome DevTools MCP]]"
+  - "[[202609202000 - Browser Use MCP]]"
 ---
 
 # OpenCode Chromium Browser

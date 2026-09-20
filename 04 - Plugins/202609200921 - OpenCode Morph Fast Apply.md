@@ -6,10 +6,10 @@ tags:
   - opencode
   - code-editing
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609200758 - OpenCode]]
-  - [[202609200758 - OpenCode]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609200758 - OpenCode]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Morph Fast Apply

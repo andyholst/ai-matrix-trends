@@ -6,8 +6,8 @@ tags:
   - workflow
   - config
 links:
-  - [[202609202000 - MCP Proxy Aggregator Pattern]]
-  - [[AGENTS]]
+  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering
@@ -104,7 +104,7 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 
 ## Related Patterns
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — aggregated tool servers may feed into multi-agent pipelines
-- [[AGENTS]] — orchestration context management uses the same compaction and note-taking strategies
+- [[MOC-Trending-Agents]] — orchestration context management uses the same compaction and note-taking strategies
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows for agent workers
 
 ## Sources

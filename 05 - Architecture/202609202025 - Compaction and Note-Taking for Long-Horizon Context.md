@@ -10,7 +10,7 @@ tags:
 aliases:
 links:
   - "[[202609202021 - Context Compaction and Structured Note-Taking]]"
-  - "[[AGENTS]]"
+  - "[[MOC-Trending-Agents]]"
   - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
   - "[[202609202000 - Claude Code]]"
 ---
@@ -48,7 +48,7 @@ Session 2: agent reads notes.md ──► reorients ──► continues work
 
 ## Related Patterns
 - [[202609202021 - Context Compaction and Structured Note-Taking]]
-- [[AGENTS]]
+- [[MOC-Trending-Agents]]
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]]
 
 ## Sources

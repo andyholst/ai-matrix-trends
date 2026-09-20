@@ -10,7 +10,7 @@ aliases:
 links:
   - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
   - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
-  - "[[AGENTS]]"
+  - "[[MOC-Trending-Agents]]"
   - "[[202609202000 - Claude Code]]"
 ---
 
@@ -47,7 +47,7 @@ User Goal ──► Orchestrator ──┬── Worker A (logs)    ──► re
 ## Related Patterns
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
-- [[AGENTS]]
+- [[MOC-Trending-Agents]]
 
 ## Sources
 - Anthropic Engineering: "How we built our multi-agent research system" (https://www.anthropic.com/engineering/multi-agent-research-system)

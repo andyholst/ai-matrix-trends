@@ -6,8 +6,8 @@ tags:
   - hooks
   - git
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Architecture-Patterns]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
 ---
 
 # Auto-Commit Checkpoint Workflow with Stop Hooks and Git

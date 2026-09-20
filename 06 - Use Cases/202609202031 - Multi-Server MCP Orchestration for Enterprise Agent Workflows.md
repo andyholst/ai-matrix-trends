@@ -6,10 +6,10 @@ tags:
   - tool
 aliases:
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Architecture-Patterns]]
-  - [[202609202000 - Claude Code]]
-  - [[202609202023 - MCP Gateway Aggregation Layer]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
+  - "[[202609202000 - Claude Code]]"
+  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
 ---
 
 # Multi-Server MCP Orchestration for Enterprise Agent Workflows

@@ -6,9 +6,9 @@ tags:
   - opencode
   - context-management
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609200758 - OpenCode]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Dynamic Context Pruning

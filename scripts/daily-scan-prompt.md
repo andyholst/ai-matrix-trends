@@ -15,15 +15,14 @@ Launch 4 streams via `delegate_task`.
 
 **CRITICAL RULE FOR SUB-AGENTS:**
 - **DO NOT add `links:` field to frontmatter**
-- **ONLY put links in `## Related` section at bottom of note using short names like `[[Claude Code]]`**
+- **ONLY put links in `## Related` section at bottom using short names like `[[Claude Code]]`**
 - The merge step will resolve short names to actual filenames
 
 ### Stream A: Agents (minutes 10-14)
 ```
 Goal: 3-5 new agents | Folder: 03 - Agents/
-Timestamps: 2026092010, 2026092011, 2026092012, etc.
-
-Frontmatter (NO links field):
+Timestamps: 2026092010, 2026092011, etc.
+Frontmatter (NO links):
 ---
 id: 2026092010
 created: 2026-09-20T10:00:00+02:00
@@ -31,8 +30,7 @@ tags:
   - agent
   - cli
 ---
-
-Body ## Related: [[Name 1]], [[Name 2]] (short names only)
+Body ## Related: [[Claude Code]], [[Aider]] (short names)
 Manifest: 08 - Projects/scan-manifests/stream-a-UNIQUE.json
 Git: commit + push
 ```
@@ -41,8 +39,7 @@ Git: commit + push
 ```
 Goal: 3-5 new plugins | Folder: 04 - Plugins/
 Timestamps: 2026092020, 2026092021, etc.
-
-Frontmatter (NO links field):
+Frontmatter (NO links):
 ---
 id: 2026092020
 created: 2026-09-20T20:00:00+02:00
@@ -50,7 +47,6 @@ tags:
   - plugin
   - mcp
 ---
-
 Body ## Related: [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
 Manifest: 08 - Projects/scan-manifests/stream-b-UNIQUE.json
 Git: commit + push
@@ -60,8 +56,7 @@ Git: commit + push
 ```
 Goal: 2-3 new patterns | Folder: 05 - Architecture/
 Timestamps: 2026092030, 2026092031, etc.
-
-Frontmatter (NO links field):
+Frontmatter (NO links):
 ---
 id: 2026092030
 created: 2026-09-20T30:00:00+02:00
@@ -69,8 +64,7 @@ tags:
   - architecture
   - mcp
 ---
-
-Body ## Related: [[Pattern 1]], [[Pattern 2]]
+Body ## Related: [[MCP Protocol]], [[Claude Code]]
 Manifest: 08 - Projects/scan-manifests/stream-c-UNIQUE.json
 Git: commit + push
 ```
@@ -79,8 +73,7 @@ Git: commit + push
 ```
 Goal: 2-3 new use cases | Folder: 06 - Use Cases/
 Timestamps: 2026092040, 2026092041, etc.
-
-Frontmatter (NO links field):
+Frontmatter (NO links):
 ---
 id: 2026092040
 created: 2026-09-20T40:00:00+02:00
@@ -88,7 +81,6 @@ tags:
   - workflow
   - config
 ---
-
 Body ## Related: [[MOC-Plugin-Ecosystem]], [[MOC-Architecture-Patterns]]
 Manifest: 08 - Projects/scan-manifests/stream-d-UNIQUE.json
 Git: commit + push
@@ -96,12 +88,10 @@ Git: commit + push
 
 ---
 
-## Post-Scan Merge (MANDATORY — after all streams complete)
+## Post-Scan Merge (MANDATORY)
 
 ### Step 1: Read Manifests
-```
-search_files(pattern="stream-*.json", target="files", path="08 - Projects/scan-manifests")
-```
+`search_files(pattern="stream-*.json", target="files", path="08 - Projects/scan-manifests")`
 
 ### Step 2: Add Frontmatter Links to ALL New Notes
 
@@ -110,74 +100,73 @@ search_files(pattern="stream-*.json", target="files", path="08 - Projects/scan-m
 ```python
 import os, re
 
-# Build file map
-file_map = {}
+# Build title -> filename map
+title_map = {}
 for root, dirs, files in os.walk('${HOME}/repository/git/ai-matrix-trends'):
     if '/.git' in root: continue
     for f in files:
         if f.endswith('.md'):
             fname = f.replace('.md', '')
-            file_map[fname.lower()] = fname
             if ' - ' in fname:
-                no_ts = fname.split(' - ', 1)[1].lower().replace(' ', '-')
-                file_map[no_ts] = fname
+                title = fname.split(' - ', 1)[1]
+                title_map[title.lower().replace(' ', '-').replace("'", "")] = fname
 
-# Manual mappings
-file_map.update({
-    'cursor': '202609202000 - Cursor',
-    'windsurf': '202609200800 - Windsurf',
-    'opencode': '202609200758 - OpenCode',
-    'hermes': '202609200759 - Hermes Agent',
-    'hermes-agent': '202609200759 - Hermes Agent',
-    'claude-code': '202609202000 - Claude Code',
-    'codex': '202609202000 - Codex',
-    'openai-codex': '202609202000 - Codex',
-    'mcp-proxy-aggregator-pattern': '202609202000 - MCP Proxy Aggregator Pattern',
-    'context-engineering-long-horizon-agents': '202609202001 - Context Engineering for Long-Horizon Agents',
-    'multi-agent-orchestration-patterns': '202609202002 - Multi-Agent Orchestration with Guardrail Layering',
-    'chrome-devtools-mcp': '202609202011 - Chrome DevTools MCP',
-    'mcp-server-ecosystem-explosion': '202609200100 - MCP Server Ecosystem Explosion',
-    'hermes-jev': '202609202000 - Jev Agent Router',
-})
+# Add MOCs
+title_map['moc-trending-agents'] = 'MOC-Trending-Agents'
+title_map['moc-plugin-ecosystem'] = 'MOC-Plugin-Ecosystem'
+title_map['moc-architecture-patterns'] = 'MOC-Architecture-Patterns'
+
+# Add short names
+title_map['claude-code'] = '202609202000 - Claude Code'
+title_map['codex'] = '202609202000 - Codex'
+title_map['cursor'] = '202609202000 - Cursor'
+title_map['opencode'] = '202609200758 - OpenCode'
+title_map['hermes'] = '202609200759 - Hermes Agent'
 
 # For each new note:
-# 1. Read note
-# 2. Find ## Related section
-# 3. Extract short names
-# 4. Resolve against file_map
-# 5. Add links: field to frontmatter
-# 6. Also fix all body wikilinks
+# 1. Read note, find ## Related section
+# 2. Extract short names from [[...]]
+# 3. Resolve against title_map
+# 4. Add links: field to frontmatter with 2+ actual filename wikilinks
+# 5. Fix body wikilinks the same way
 ```
 
-### Step 3: Update MOCs + Master Indexes
-- `07 - Structure/MOC-Trending-Agents.md`
-- `07 - Structure/MOC-Plugin-Ecosystem.md`
-- `07 - Structure/MOC-Architecture-Patterns.md`
-- `05 - Architecture/00 - AI Architecture Master Index.md`
-- `04 - Plugins/00 - Plugin Master Index.md`
+**Then use patch() to add frontmatter links to EVERY new note.**
 
-### Step 4: Update README
+### Step 3: Fix Orphan Wikilinks
+For EVERY note in ALL folders, check all `[[...]]` resolve to existing files. Fix with `patch()`.
+
+### Step 4: Add Cross-Stream Links
+From manifests:
+- Agents → Plugins (from plugin `agents` field)
+- Plugins → Agents (same)
+- Architecture → Agents (from pattern `examples` field)
+
+### Step 5: Update MOCs + Master Indexes
+- MOC-Trending-Agents.md
+- MOC-Plugin-Ecosystem.md
+- MOC-Architecture-Patterns.md
+- 05 - Architecture/00 - AI Architecture Master Index.md
+- 04 - Plugins/00 - Plugin Master Index.md
+
+### Step 6: Update README
 - Convert ALL `[[wikilinks]]` to `[text](./path.md)` Markdown
 - Update Trend Radar
-- Create atomic notes in `09 - Trend Radar/`
+- Create atomic notes in 09 - Trend Radar/ folders
 - Update date
 
-### Step 5: Final Commit
-```
-terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: cross-links, MOCs, README' && git push")
-```
+### Step 7: Final Commit
+`terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: cross-links, MOCs, README' && git push")`
 
-### Step 6: Cleanup + Validate
-Remove old manifests. Verify 5 random notes have complete frontmatter.
+### Step 8: Cleanup + Validate
+Remove old manifests. Verify 5 random notes.
 
 ---
 
 ## Rules
-
 - Sub-agents: NEVER write `links:` in frontmatter
 - Merge step: ALWAYS uses Python to resolve links from actual folder contents
 - Every note MUST end with 2+ working frontmatter wikilinks
 - Zero orphans in body text
 
 *Vault path: ${HOME}/repository/git/ai-matrix-trends*
-*Agent profile: ai-matrix-trends*

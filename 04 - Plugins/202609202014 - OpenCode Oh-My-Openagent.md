@@ -6,9 +6,9 @@ tags:
   - opencode
   - all-in-one
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
-  - [[202609200758 - OpenCode]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Oh-My-Openagent

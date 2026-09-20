@@ -43,7 +43,7 @@ This pattern works when the subtask decomposition is known at design time and a 
 
 ## Examples
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — Guardrail layering applied to orchestrator-worker pipelines.
-- [[AGENTS]] — Managing orchestrator context across many worker handoffs.
+- [[MOC-Trending-Agents]] — Managing orchestrator context across many worker handoffs.
 
 ## Related Patterns
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — Worker agents exposed behind an MCP proxy for tool-based delegation.

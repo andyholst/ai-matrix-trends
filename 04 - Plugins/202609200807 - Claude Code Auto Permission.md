@@ -6,8 +6,8 @@ tags:
   - claude-code
   - tool
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Claude Code Auto Permission

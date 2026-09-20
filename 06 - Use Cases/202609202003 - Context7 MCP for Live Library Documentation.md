@@ -6,8 +6,8 @@ tags:
   - mcp
   - docs
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Architecture-Patterns]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
 ---
 
 # Context7 MCP for Live Library Documentation

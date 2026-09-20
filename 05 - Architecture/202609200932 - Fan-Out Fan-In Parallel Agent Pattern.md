@@ -6,7 +6,7 @@ tags:
 links:
   - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
   - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
-  - "[[AGENTS]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Fan-Out / Fan-In Parallel Agent Pattern
@@ -72,7 +72,7 @@ A dispatcher sends the same input (or independent subtasks) to multiple agents r
 ## Related Patterns
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]] — orchestrator-worker is sequential delegation; fan-out/fan-in is parallel
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]] — similar but typically sequential or dependency-ordered
-- [[AGENTS]] — context engineering needed to manage the collector's aggregation context
+- [[MOC-Trending-Agents]] — context engineering needed to manage the collector's aggregation context
 
 ## Sources
 - Beam AI: "6 Multi-Agent Orchestration Patterns for Production (2026)" — Fan-out/fan-in (https://beam.ai/agentic-insights/multi-agent-orchestration-patterns-production)

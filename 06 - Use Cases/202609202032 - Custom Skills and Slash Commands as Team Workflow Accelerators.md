@@ -6,10 +6,10 @@ tags:
   - tool
 aliases:
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Architecture-Patterns]]
-  - [[202609202000 - Claude Code]]
-  - [[202609202013 - Hermes Plugin System]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
+  - "[[202609202000 - Claude Code]]"
+  - "[[202609202013 - Hermes Plugin System]]"
 ---
 
 # Custom Skills and Slash Commands as Team Workflow Accelerators

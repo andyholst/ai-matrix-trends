@@ -158,7 +158,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 
 ### Architecture Patterns (05 - Architecture/)
 - [[202609202000 - MCP Proxy Aggregator Pattern]]
-- [[AGENTS]]
+- [[MOC-Trending-Agents]]
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 - [[202609202003 - MCP Apps Interactive UI Protocol]]
 - [[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]
@@ -169,7 +169,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 - [[202609202023 - MCP Gateway Aggregation Layer]]
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]]
 - [[202609202025 - Compaction and Note-Taking for Long-Horizon Context]]
-- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]]
+- [[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]]
 - [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]]
 - [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]
 

@@ -7,8 +7,8 @@ tags:
   - protocol
   - portability
 links:
-  - [[202609202000 - MCP Proxy Aggregator Pattern]]
-  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
+  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # Agent Portability via Agent Client Protocol (ACP)

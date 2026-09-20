@@ -6,8 +6,8 @@ tags:
   - hermes
   - tool
 links:
-  - [[MOC-Plugin-Ecosystem]]
-  - [[MOC-Trending-Agents]]
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Hermes Curator

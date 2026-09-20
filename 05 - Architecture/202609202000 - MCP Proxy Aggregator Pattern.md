@@ -6,8 +6,8 @@ tags:
   - mcp
   - workflow
 links:
-  - [[AGENTS]]
-  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
+  - "[[MOC-Trending-Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # MCP Proxy Aggregator Pattern
@@ -63,7 +63,7 @@ The scoped variant adds a retrieval step: given the current task context, it sel
 ## Related Patterns
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — the upstream servers being aggregated often follow this pattern
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows
-- [[AGENTS]] — the scoped variant's retrieval step is itself a context engineering challenge
+- [[MOC-Trending-Agents]] — the scoped variant's retrieval step is itself a context engineering challenge
 
 ## Sources
 - Rodrigues & Vas, "MCP Server Architecture Patterns for LLM-Integrated Applications" (arXiv:2606.30317, 2026)

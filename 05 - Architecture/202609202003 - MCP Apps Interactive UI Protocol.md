@@ -7,8 +7,8 @@ tags:
   - ui
   - protocol
 links:
-  - [[202609202000 - MCP Proxy Aggregator Pattern]]
-  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
+  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # MCP Apps: Interactive UI Protocol Pattern
