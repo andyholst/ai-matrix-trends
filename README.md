@@ -99,30 +99,20 @@
 
 ## 📊 Trend Radar
 
-### Heating Up 🔥
-- MCP server ecosystem explosion (100+ community servers)
-- Multi-agent workflows via delegation
-- Containerized agent sandboxes (Docker profiles)
-- Skill/plugin marketplaces maturing
-- Browser automation MCPs (Playwright, Chrome DevTools)
-- Cloud-native autonomous agents (Devin, AWS Kiro)
-- Spec-driven development environments
+| Heating Up 🔥 | Summary |
+|---------------|---------|
+|[MCP Server Ecosystem Explosion](./09%20-%20Trend%20Radar/Heating%20Up/202609200100%20-%20MCP%20Server%20Ecosystem%20Explosion.md) | 100+ community servers, new ones shipping weekly |
+|[Terminal Agent Wars](./09%20-%20Trend%20Radar/Heating%20Up/202609200101%20-%20Terminal%20Agent%20Wars.md) | Claude Code vs OpenCode vs Codex vs Cline |
 
-### Stable 📈
-- Tool-calling as standard interface
-- RAG + context compression patterns
-- IDE integrations (VS Code, JetBrains, Zed)
-- Context engineering for long-horizon tasks
-- Multi-provider model support (Pi, OpenCode)
+| Stable 📈 | Summary |
+|-----------|---------|
+|[Tool-Calling as Standard Interface](./09%20-%20Trend%20Radar/Stable/202609200102%20-%20Tool-Calling%20as%20Standard%20Interface.md) | All agents use structured tool-calling |
+|[Containerized Agent Sandboxes](./09%20-%20Trend%20Radar/Stable/202609200103%20-%20Containerized%20Agent%20Sandboxes.md) | Docker isolation for agent safety |
 
-### Emerging 🌱
-- Agent-to-agent communication protocols (A2A, ACP)
-- Verifiable execution (cryptographic proof)
-- Federated agent networks
-- Personal agent memory systems
-- Hybrid client-server MCP architectures
-- MCP gateway aggregation layers
-- Enterprise multi-server orchestration
+| Emerging 🌱 | Summary |
+|-------------|---------|
+|[Agent-to-Agent Communication Protocols](./09%20-%20Trend%20Radar/Emerging/202609200104%20-%20Agent-to-Agent%20Communication%20Protocols.md) | A2A, ACP enabling multi-agent orchestration |
+|[Personal Agent Memory Systems](./09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) | Cross-session memory and personalization |
 
 ---
 
@@ -139,6 +129,10 @@ ai-matrix-trends/
 ├── 06 - Use Cases/       # Real-world workflows
 ├── 07 - Structure/       # Maps of Content (MOCs)
 ├── 08 - Projects/        # Time-bound work
+├── 09 - Trend Radar/     # Trend analysis
+│   ├── Heating Up/       # Rapid growth signals
+│   ├── Stable/           # Established patterns
+│   └── Emerging/         # Early signals
 └── 99 - Attachments/     # Images, PDFs
 ```
 

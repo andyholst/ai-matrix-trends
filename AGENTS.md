@@ -63,6 +63,10 @@ ai-matrix-trends/
 ├── 06 - Use Cases/         # Real-world workflows, config snippets, integrations
 ├── 07 - Structure/         # MOCs, indexes, dashboards
 ├── 08 - Projects/          # Time-bound work
+├── 09 - Trend Radar/       # Trend analysis
+│   ├── Heating Up/         # Rapid growth signals
+│   ├── Stable/             # Established patterns
+│   └── Emerging/           # Early signals, watch list
 ├── 99 - Attachments/       # Images, PDFs, exported files
 ├── AGENTS.md               # This file
 └── LICENSE
@@ -522,24 +526,24 @@ GitHub does NOT render `[[wikilinks]]` as clickable. Use standard Markdown:
 
 ---
 
-### Trend Radar (in README.md)
+### Trend Radar (in README.md and `09 - Trend Radar/`)
 
-The Trend Radar is the vault's analysis of where AI coding agent trends are heading. It has three categories:
+The Trend Radar is the vault's analysis of where AI coding agent trends are heading. It has three categories, each with its own folder:
 
-**Heating Up 🔥** — Recent, rapid growth:
+**Heating Up 🔥** (`09 - Trend Radar/Heating Up/`) — Recent, rapid growth:
 - New tools/plugins with >5k GitHub stars/week
 - HN front page or Reddit r/LocalLMAI top posts
 - New architecture patterns gaining adoption
 - Major player releases (Claude Code, OpenAI Codex)
 
-**Stable 📈** — Established patterns:
+**Stable 📈** (`09 - Trend Radar/Stable/`) — Established patterns:
 - Tool-calling as standard interface
 - RAG + context compression
 - IDE integrations
 - MCP as universal protocol
 - Containerized agent sandboxes
 
-**Emerging 🌁** — Early signals:
+**Emerging 🌱** (`09 - Trend Radar/Emerging/`) — Early signals:
 - Agent-to-agent communication (A2A, ACP)
 - Verifiable execution
 - Federated agent networks
@@ -552,6 +556,7 @@ The Trend Radar is the vault's analysis of where AI coding agent trends are head
 3. Add new items with citations from research
 4. Remove outdated items
 5. Use `patch()` to update README.md
+6. Create atomic notes in the appropriate Trend Radar folder for each new trend signal
 
 ---
 
