@@ -16,5 +16,26 @@
     "title": "MCP Hybrid Client-Server Architecture",
     "type": "architecture-pattern",
     "examples": ["MCP Hybrid Client-Server Architecture"]
+  },
+  {
+    "file": "05 - Architecture/202609200930 - MCP Server-Side LLM Reusable Agent Pattern.md",
+    "title": "MCP Server-Side LLM Reusable Agent Pattern",
+    "type": "architecture",
+    "examples": ["IBM Developer", "ANSYR voice AI platform"],
+    "created": "2026-09-20T09:30:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/202609200931 - Adaptive Planning Magentic Orchestration Pattern.md",
+    "title": "Adaptive Planning (Magentic) Orchestration Pattern",
+    "type": "architecture",
+    "examples": ["Microsoft Azure", "Salesforce Agentforce 2.0"],
+    "created": "2026-09-20T09:31:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/202609200932 - Fan-Out Fan-In Parallel Agent Pattern.md",
+    "title": "Fan-Out / Fan-In Parallel Agent Pattern",
+    "type": "architecture",
+    "examples": ["Microsoft Azure", "Beam AI"],
+    "created": "2026-09-20T09:32:00+02:00"
   }
 ]
