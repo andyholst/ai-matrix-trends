@@ -612,34 +612,7 @@ Modern AI architecture patterns are documented in `05 - Architecture/`. This vau
 2. Update the comparison table when adoption levels change
 3. Link to related agents/plugins/MOCs
 4. Track emerging patterns in Trend Radar
-5. Update Trend Radar Emerging section when patterns gain traction
 
-Modern AI architecture patterns are documented in `05 - Architecture/`. This vault tracks:
-
-### Core Patterns
-- **Single-Agent**: CLI agents with tool loops
-- **Multi-Agent**: Orchestrator-worker, peer-to-peer, hierarchical
-- **MCP Server**: Universal tool/resource interface
-- **Context Engineering**: Jev system, compaction, RAG
-
-### Emerging Patterns
-- MCP Proxy Aggregator
-- MCP Apps Interactive UI
-- Agent Portability (ACP)
-- Verifiable Execution
-- Federated Agent Networks
-
-### Master Index
-**All architecture patterns are indexed in:** `05 - Architecture/00 - AI Architecture Master Index.md`
-
-**Maintenance rules:**
-1. Add new patterns to both `05 - Architecture/` and the master index
-2. Update the comparison table when adoption levels change
-3. Link to related agents/plugins/MOCs
-4. Track emerging patterns in Trend Radar
-5. Update Trend Radar Emerging section when patterns gain traction
-
----
 
 ## Link Verification Rules
 
