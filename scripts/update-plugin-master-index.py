@@ -145,10 +145,10 @@ def scan_all_plugins():
                             break
         
         # 4. If plugin has mcp tag and mentions "any MCP-compatible" in body, add all MCP agents
-        tags_match = re.search(r'^tags:\n((?:-\s*.+\n?)+)', content, re.MULTILINE)
+        tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
         tags = []
         if tags_match:
-            tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
+            tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n') if t.strip()]
         
         if 'mcp' in tags:
             full_text = content.lower()

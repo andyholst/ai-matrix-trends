@@ -79,10 +79,10 @@ def scan_plugins():
         score += len(compat_agents) * 20
         
         # Tags
-        tags_match = re.search(r'^tags:\n((?:-\s*.+\n?)+)', content, re.MULTILINE)
+        tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
         tags = []
         if tags_match:
-            tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
+            tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n') if t.strip()]
         
         if 'mcp' in tags:
             score += 15

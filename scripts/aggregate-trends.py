@@ -45,7 +45,7 @@ def extract_trends_from_notes():
                     mentions = len(re.findall(r'\b' + re.escape(name) + r'\b', content, re.IGNORECASE))
                     
                     # Extract tags
-                    tags_match = re.search(r'^tags:\n((?:\s*-\s*.+\n?)+)', content, re.MULTILINE)
+                    tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
                     tags = []
                     if tags_match:
                         tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
@@ -99,7 +99,7 @@ def extract_trends_from_notes():
                     mentions = len(re.findall(r'\b' + re.escape(name) + r'\b', content, re.IGNORECASE))
                     
                     # Tags
-                    tags_match = re.search(r'^tags:\n((?:\s*-\s*.+\n?)+)', content, re.MULTILINE)
+                    tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
                     tags = []
                     if tags_match:
                         tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
