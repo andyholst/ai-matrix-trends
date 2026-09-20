@@ -101,6 +101,20 @@ Write notes to: 03 - Agents/
 RULES:
 - Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
+- **CRITICAL: The `links:` frontmatter field MUST contain at least 2 working wikilinks**
+- Example frontmatter:
+  ```
+  ---
+  id: 202609202000
+  created: 2026-09-20T20:00:00+02:00
+  tags:
+    - agent
+    - cli
+  links:
+    - "[[202609202000 - Claude Code]]"
+    - "[[202609202000 - Aider]]"
+  ---
+  ```
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
 - After writing notes, create manifest using write_file:
   write_file("08 - Projects/scan-manifests/stream-a-UNIQUE.json", '[{"file": "03 - Agents/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "agent", "tags": ["cli", "tool"]}, ...]')
@@ -161,8 +175,22 @@ Research steps:
 Write notes to: 05 - Architecture/
 
 RULES:
-- Use UNIQUE timestamps: 202609202020, 202609202021, 202609202022, etc.
+- Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
+- **CRITICAL: The `links:` frontmatter field MUST contain at least 2 working wikilinks**
+- Example frontmatter:
+  ```
+  ---
+  id: 202609202000
+  created: 2026-09-20T20:00:00+02:00
+  tags:
+    - agent
+    - cli
+  links:
+    - "[[202609202000 - Claude Code]]"
+    - "[[202609202000 - Aider]]"
+  ---
+  ```
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
 - After writing notes, create manifest using write_file:
   write_file("08 - Projects/scan-manifests/stream-c-UNIQUE.json", '[{"file": "05 - Architecture/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "architecture", "examples": ["Claude Code"]}, ...]')
@@ -218,7 +246,7 @@ Read each manifest file to understand what was created:
 - `stream-c-*.json` — architecture patterns (with `examples` field)
 - `stream-d-*.json` — use cases (with `agents` and `plugins` fields)
 
-### Step 2: Fix Orphan Wikilinks
+### Step 2: Fix Orphan Wikilinks and Frontmatter Links
 
 For each folder (03 - Agents, 04 - Plugins, 05 - Architecture, 06 - Use Cases):
 
@@ -241,7 +269,14 @@ For each folder (03 - Agents, 04 - Plugins, 05 - Architecture, 06 - Use Cases):
          new_string="[[202609202000 - OpenCode Firecrawl]]")
    ```
 
-5. Repeat until zero orphans remain.
+5. **Verify frontmatter links:** For every note, ensure the `links:` field exists and has at least 2 working wikilinks. If missing, add them using `patch()`:
+   ```
+   patch(path="03 - Agents/202609202000 - Devin.md",
+         old_string="---\nid: 202609202000\ncreated: ...",
+         new_string="---\nid: 202609202000\ncreated: ...\nlinks:\n  - \"[[202609202000 - Claude Code]]\"\n  - \"[[202609200758 - OpenCode]]\"\n---")
+   ```
+
+6. Repeat until zero orphans remain.
 
 **Important:** The sub-agents write notes with short-name wikilinks like `[[Claude Code]]` but files are named `202609202000 - Claude Code.md`. Your job is to resolve these to the actual filename.
 
@@ -428,9 +463,24 @@ terminal(command="find '${HOME}/repository/git/ai-matrix-trends/08 - Projects/sc
 
 ### Step 9: Validate Frontmatter
 
-Spot-check 2-3 notes to verify frontmatter is complete:
+Verify every note has complete frontmatter with working links:
+
+```bash
+# Check each note
+read_file(path="03 - Agents/<note>.md", limit=15)
 ```
-read_file(path="03 - Agents/<newest-note>.md", limit=15)
+
+**Verify all fields:**
+- `id:` — matches filename timestamp
+- `created:` — ISO 8601 date
+- `tags:` — at least 1 tag
+- `links:` — **at least 2 working wikilinks**
+
+**Fix missing links field:**
+```
+patch(path="...", 
+      old_string="---\nid: ...\ncreated: ...\ntags:\n  - ...",
+      new_string="---\nid: ...\ncreated: ...\ntags:\n  - ...\nlinks:\n  - \"[[...]]\"\n  - \"[[...]]\"")
 ```
 
 Verify: `id`, `created`, `tags`, `links` all present and populated. If missing, add them via `patch()`.

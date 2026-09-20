@@ -508,6 +508,31 @@ When the agent produces work in this vault:
 5. **MOCs are current** — no orphan notes in clusters of 5+
 6. **Timestamps are accurate** — creation dates reflect when the note was written, not the source date
 
+## Frontmatter Links Requirement (CRITICAL)
+
+Every note's frontmatter MUST contain at least 2 wikilinks in the `links:` field:
+
+```markdown
+---
+id: 202609202000
+created: 2026-09-20T20:00:00+02:00
+tags:
+  - agent
+  - cli
+links:
+  - "[[202609202000 - Claude Code]]"
+  - "[[202609202000 - Aider]]"
+---
+```
+
+**Rules:**
+- The `links:` field MUST exist in every note's frontmatter
+- It MUST contain at least 2 working wikilinks
+- Wikilinks must point to files that actually exist in the vault
+- The `links:` field is separate from the `## Related` section at the bottom of notes
+- **Sub-agents are responsible for adding these links when they write notes**
+- **The merge step is responsible for verifying and fixing them**
+
 The vault is a living system. Small, frequent, well-linked notes beat large, infrequent ones. Refactoring is growth.
 
 ---
