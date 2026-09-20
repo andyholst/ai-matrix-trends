@@ -8,6 +8,7 @@ tags:
 links:
   - [[MOC-Plugin-Ecosystem]]
   - [[MOC-Trending-Agents]]
+  - [[202609200758 - OpenCode]]
 ---
 
 # OpenCode Oh-My-Openagent
@@ -43,7 +44,7 @@ Oh-My-Openagent is the most prominent all-in-one plugin in the OpenCode ecosyste
 - Curated agent packs for common development patterns
 
 ## Compatibility
-- **Agent:** [[OpenCode]]
+- **Agent:** [[202609200758 - OpenCode]]
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins

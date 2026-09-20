@@ -9,6 +9,9 @@ tags:
 links:
   - [[MOC-Plugin-Ecosystem]]
   - [[MOC-Trending-Agents]]
+  - [[202609202000 - Claude Code]]
+  - [[202609202000 - Cursor]]
+  - [[202609200800 - Windsurf]]
 ---
 
 # Chrome DevTools MCP
@@ -55,7 +58,7 @@ claude mcp add chrome-devtools -- npx @modelcontextprotocol/server-chrome-devtoo
 - Cookie and storage debugging
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[Cursor]], [[Windsurf]], [[VS Code]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200800 - Windsurf]], [[202609202000 - Cursor]]
 - **Versions:** Node.js LTS, Chrome 112+
 
 ## Related Plugins
