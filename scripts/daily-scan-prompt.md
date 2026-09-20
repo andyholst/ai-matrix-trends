@@ -245,6 +245,18 @@ For each folder (03 - Agents, 04 - Plugins, 05 - Architecture, 06 - Use Cases):
 
 **Important:** The sub-agents write notes with short-name wikilinks like `[[Claude Code]]` but files are named `202609202000 - Claude Code.md`. Your job is to resolve these to the actual filename.
 
+**Common patterns to fix:**
+- `[[Claude Code]]` → find file containing "Claude Code" in name → `[[202609202000 - Claude Code]]`
+- `[[OpenCode]]` → find file containing "OpenCode" → `[[202609200758 - OpenCode]]`
+- `[[Hermes]]` → find file containing "Hermes" → `[[202609200759 - Hermes Agent]]`
+- `[[VS Code]]` → `[[202609202000 - Cursor]]` (closest existing editor note)
+- `[[opencode-tavily]]` → `[[202609202000 - OpenCode Firecrawl]]` (closest match)
+- `[[hermes-memory-wiki]]` → `[[202609200805 - Hermes Kanban Dashboard]]` (closest Hermes match)
+- `[[mnemosyne-dashboard]]` → `[[202609200805 - Hermes Kanban Dashboard]]` (closest match)
+- `[[opencode-websearch-cited]]` → `[[202609202000 - OpenCode Firecrawl]]` (closest match)
+
+**Important:** Wikilinks with wrong timestamps like `[[20260920200758 - OpenCode]]` should resolve to `[[202609200758 - OpenCode]]` (the actual file). Check all folders systematically.
+
 ### Step 3: Add Cross-Stream Links Using Manifests
 
 Use the manifest data to add intelligent cross-links:

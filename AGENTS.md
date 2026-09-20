@@ -381,9 +381,18 @@ Sub-agents write notes with short-name wikilinks like `[[Claude Code]]` for read
 **Rules:**
 - `[[Claude Code]]` must resolve to `[[202609202000 - Claude Code]]` (the actual file)
 - `[[Browser Use MCP]]` must resolve to `[[202609202000 - Browser Use MCP]]`
+- `[[OpenCode]]` must resolve to `[[202609200758 - OpenCode]]`
 - Always search all folders to find the matching filename
-- If no exact match exists, find the closest partial match (e.g., `[[opencode-tavily]]` → `[[202609202000 - OpenCode Firecrawl]]`)
+- If no exact match exists, find the closest partial match
 - If no match exists at all, link to the most relevant MOC
+
+**Common patterns to fix:**
+- `[[Claude Code]]` → `[[202609202000 - Claude Code]]`
+- `[[OpenCode]]` → `[[202609200758 - OpenCode]]`
+- `[[Hermes]]` → `[[202609200759 - Hermes Agent]]`
+- `[[VS Code]]` → `[[202609202000 - Cursor]]`
+- `[[opencode-*]]` → `[[202609202000 - OpenCode Firecrawl]]`
+- `[[hermes-*]]` → `[[202609200805 - Hermes Kanban Dashboard]]` or `[[202609200759 - Hermes Agent]]`
 
 **Process:**
 1. Use `search_files(pattern="\\[\\[.*\\]\\]", ...)` to find all wikilinks
