@@ -28,5 +28,40 @@
     "title": "JetBrains Junie",
     "type": "agent-profile",
     "tags": ["agent", "jetbrains", "ide", "junie"]
+  },
+  {
+    "file": "03 - Agents/202609200910 - Vellum.md",
+    "title": "Vellum",
+    "type": "agent-profile",
+    "tags": ["agent", "personal-assistant", "open-source", "memory"],
+    "created": "2026-09-20T09:10:00+02:00"
+  },
+  {
+    "file": "03 - Agents/202609200911 - Amazon Q Developer.md",
+    "title": "Amazon Q Developer",
+    "type": "agent-profile",
+    "tags": ["agent", "aws", "enterprise", "ide-plugin"],
+    "created": "2026-09-20T09:11:00+02:00"
+  },
+  {
+    "file": "03 - Agents/202609200912 - Nimbalyst.md",
+    "title": "Nimbalyst",
+    "type": "agent-profile",
+    "tags": ["agent", "workspace", "open-source", "visual", "multi-agent"],
+    "created": "2026-09-20T09:12:00+02:00"
+  },
+  {
+    "file": "03 - Agents/202609200913 - Replit Agent.md",
+    "title": "Replit Agent",
+    "type": "agent-profile",
+    "tags": ["agent", "app-builder", "cloud", "no-code", "collaboration"],
+    "created": "2026-09-20T09:13:00+02:00"
+  },
+  {
+    "file": "03 - Agents/202609200914 - JetBrains Air.md",
+    "title": "JetBrains Air",
+    "type": "agent-profile",
+    "tags": ["agent", "ide", "multi-agent", "jetbrains", "preview"],
+    "created": "2026-09-20T09:14:00+02:00"
   }
 ]
