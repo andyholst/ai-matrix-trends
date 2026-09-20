@@ -5,6 +5,7 @@ tags:
 
 # MOC: 05 - Architecture
 
+- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[2026092032 - Agent Teams Pattern]] - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 05 - Architecture.
@@ -33,5 +34,4 @@ Auto-generated Map of Content for 05 - Architecture.
 - [[2026092030 - Context Engineering]] - [auto-summary]
 - [[2026092031 - Event-Driven Agent Concurrency Pattern]] - [auto-summary]
 - [[2026092031 - Sub-Agent Delegation Pattern]] - [auto-summary]
-- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[2026092032 - Tiered Routing Model Cascade Pattern]] - [auto-summary]
