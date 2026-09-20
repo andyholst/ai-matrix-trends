@@ -31,32 +31,48 @@ def get_notes_in_folder(folder):
     return sorted(notes)
 
 def extract_existing_entries(content):
-    """Extract all wikilink entries from MOC content"""
+    """Extract all link entries from MOC content (wikilinks + markdown links)"""
     entries = set()
+    # Wikilinks
     links = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
     for link in links:
         entries.add(link.strip().lower())
+    # Markdown links
+    md_links = re.findall(r'\]\(([^)]+)\)', content)
+    for link in md_links:
+        if not link.startswith('http'):
+            entries.add(link.strip().lower().replace('%20', ' '))
     return entries
 
 def deduplicate_moc_content(content):
-    """Remove duplicate wikilinks from MOC while preserving structure"""
+    """Remove duplicate links from MOC (wikilinks + markdown links)"""
     lines = content.split('\n')
     seen = set()
     new_lines = []
     
     for line in lines:
+        # Check for wikilinks
         match = re.match(r'^(\s*-\s*)\[\[([^\]|]+)(?:\|[^\]]+)?\]\](\s*.*)$', line)
         if match:
             link = match.group(2).strip()
             link_lower = link.lower()
-            
             if link_lower in seen:
                 continue
-            else:
-                seen.add(link_lower)
-                new_lines.append(line)
-        else:
+            seen.add(link_lower)
             new_lines.append(line)
+            continue
+        
+        # Check for markdown links
+        match = re.match(r'^(\s*-\s*)\[([^\]]+)\]\(([^)]+)\)(\s*.*)$', line)
+        if match:
+            link = match.group(3).strip().replace('%20', ' ').lower()
+            if link in seen:
+                continue
+            seen.add(link)
+            new_lines.append(line)
+            continue
+        
+        new_lines.append(line)
     
     return '\n'.join(new_lines)
 
@@ -79,7 +95,7 @@ Auto-generated Map of Content for {folder}.
 ## Key Notes
 """
         for note in notes:
-            content += f"- [[{note}]] - [auto-summary]\n"
+            content += f"- [{note}](./{note.replace(' ', '%20')}.md) - [auto-summary]\n"
     else:
         with open(moc_path) as f:
             content = f.read()

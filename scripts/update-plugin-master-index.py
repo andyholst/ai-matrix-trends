@@ -371,8 +371,8 @@ tags:
   - ai-tools
   - index
 links:
-  - "[[202609202000 - Browser Use MCP]]"
-  - "[[202609202000 - Jev Agent Router]]"
+  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # AI Plugins & Extensions — Master Index
@@ -435,10 +435,10 @@ links:
 
 ## 🔗 Related
 
-- [[README]] — vault dashboard
-- [[04 - Plugins/|All Plugins]] — all plugin notes
-- [[05 - Architecture/|Architecture]] — architecture patterns
-- [[09 - Trend Radar/|Trend Radar]] — trend analysis
+- [README](./README.md) — vault dashboard
+- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — agent index
+- [Architecture MOC](../07%20-%20Structure/MOC-Architecture-Patterns.md) — architecture patterns
+- [Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
 """
     
     with open(INDEX_FILE, 'w') as f:

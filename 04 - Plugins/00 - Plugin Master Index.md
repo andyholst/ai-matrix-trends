@@ -1,62 +1,64 @@
 ---
-id: 00
 tags:
   - moc
   - plugin
   - ai-tools
   - index
 links:
-  - "[Plugins/202609200803 - Context7 MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200803%20-%20Context7%20MCPmd.md)"
-  - "[Plugins/202609200804 - FAL MCP Server.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200804%20-%20FAL%20MCP%20Servermd.md)"
-  - "[Plugins/202609200805 - Hermes Kanban Dashboard.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200805%20-%20Hermes%20Kanban%20Dashboardmd.md)"
-  - "[Plugins/202609200806 - Hermes Curator.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200806%20-%20Hermes%20Curatormd.md)"
-  - "[Plugins/202609200807 - Claude Code Auto Permission.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200807%20-%20Claude%20Code%20Auto%20Permissionmd.md)"
-  - "[Plugins/202609200920 - Vercel Agent Browser.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200920%20-%20Vercel%20Agent%20Browsermd.md)"
-  - "[Plugins/202609200921 - OpenCode Morph Fast Apply.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200921%20-%20OpenCode%20Morph%20Fast%20Applymd.md)"
-  - "[Plugins/202609200922 - OpenCode Ensemble.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200922%20-%20OpenCode%20Ensemblemd.md)"
-  - "[Plugins/202609200923 - OpenCodeRAG.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200923%20-%20OpenCodeRAGmd.md)"
-  - "[Plugins/202609200924 - OpenCode Chromium Browser.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609200924%20-%20OpenCode%20Chromium%20Browsermd.md)"
-  - "[Plugins/2026092020 - GitHub MCP Server.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092020%20-%20GitHub%20MCP%20Servermd.md)"
-  - "[Plugins/2026092020 - Superpowers.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092020%20-%20Superpowersmd.md)"
-  - "[Plugins/202609202000 - Browser Use MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202000%20-%20Browser%20Use%20MCPmd.md)"
-  - "[Plugins/202609202000 - Firecrawl MCP Server.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202000%20-%20Firecrawl%20MCP%20Servermd.md)"
-  - "[Plugins/202609202000 - Jev Agent Router.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202000%20-%20Jev%20Agent%20Routermd.md)"
-  - "[Plugins/202609202000 - OpenCode Firecrawl.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202000%20-%20OpenCode%20Firecrawlmd.md)"
-  - "[Plugins/202609202000 - OpenCode Supermemory.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202000%20-%20OpenCode%20Supermemorymd.md)"
-  - "[Plugins/202609202010 - Playwright MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202010%20-%20Playwright%20MCPmd.md)"
-  - "[Plugins/202609202011 - Chrome DevTools MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202011%20-%20Chrome%20DevTools%20MCPmd.md)"
-  - "[Plugins/202609202012 - OpenCode Dynamic Context Pruning.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruningmd.md)"
-  - "[Plugins/202609202013 - Hermes Plugin System.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202013%20-%20Hermes%20Plugin%20Systemmd.md)"
-  - "[Plugins/202609202014 - OpenCode Oh-My-Openagent.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202014%20-%20OpenCode%20Oh-My-Openagentmd.md)"
-  - "[Plugins/202609202025 - Exa MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202025%20-%20Exa%20MCPmd.md)"
-  - "[Plugins/202609202035 - Supabase MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202035%20-%20Supabase%20MCPmd.md)"
-  - "[Plugins/202609202045 - Notion MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202045%20-%20Notion%20MCPmd.md)"
-  - "[Plugins/202609202055 - Linear MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202055%20-%20Linear%20MCPmd.md)"
-  - "[Plugins/2026092021 - Oh My OpenAgent.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092021%20-%20Oh%20My%20OpenAgentmd.md)"
-  - "[Plugins/2026092021 - Sentry MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092021%20-%20Sentry%20MCPmd.md)"
-  - "[Plugins/202609202105 - Figma MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202105%20-%20Figma%20MCPmd.md)"
-  - "[Plugins/202609202115 - Stripe MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202115%20-%20Stripe%20MCPmd.md)"
-  - "[Plugins/202609202125 - Cloudflare MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202125%20-%20Cloudflare%20MCPmd.md)"
-  - "[Plugins/202609202135 - Datadog MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202135%20-%20Datadog%20MCPmd.md)"
-  - "[Plugins/202609202145 - Kubernetes MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202145%20-%20Kubernetes%20MCPmd.md)"
-  - "[Plugins/202609202155 - Terraform MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202155%20-%20Terraform%20MCPmd.md)"
-  - "[Plugins/2026092022 - Browserbase MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092022%20-%20Browserbase%20MCPmd.md)"
-  - "[Plugins/2026092022 - Composio MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092022%20-%20Composio%20MCPmd.md)"
-  - "[Plugins/202609202205 - Sequential Thinking MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202205%20-%20Sequential%20Thinking%20MCPmd.md)"
-  - "[Plugins/202609202215 - Zapier MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202215%20-%20Zapier%20MCPmd.md)"
-  - "[Plugins/202609202225 - Hermes Jev Agent Router.md](./04%20-%20Plugins/202609202012%20-%20Plugins202609202225%20-%20Hermes%20Jev%20Agent%20Routermd.md)"
-  - "[Plugins/2026092023 - Claude Code Code Review.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092023%20-%20Claude%20Code%20Code%20Reviewmd.md)"
-  - "[Plugins/2026092023 - CodeGraph MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092023%20-%20CodeGraph%20MCPmd.md)"
-  - "[Plugins/2026092024 - OpenCode Snip.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092024%20-%20OpenCode%20Snipmd.md)"
-  - "[Plugins/2026092024 - Sourcegraph MCP.md](./04%20-%20Plugins/202609202012%20-%20Plugins2026092024%20-%20Sourcegraph%20MCPmd.md)"created: 2026-09-20T18:50:01+02:00
-created: 2026-09-20T20:13:43+02:00
+  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
+links:
+  - "[[202609200803 - Context7 MCP]]"
+  - "[[202609200804 - FAL MCP Server]]"
+  - "[[202609200805 - Hermes Kanban Dashboard]]"
+  - "[[202609200806 - Hermes Curator]]"
+  - "[[202609200807 - Claude Code Auto Permission]]"
+  - "[[202609200920 - Vercel Agent Browser]]"
+  - "[[202609200921 - OpenCode Morph Fast Apply]]"
+  - "[[202609200922 - OpenCode Ensemble]]"
+  - "[[202609200923 - OpenCodeRAG]]"
+  - "[[202609200924 - OpenCode Chromium Browser]]"
+  - "[[2026092020 - GitHub MCP Server]]"
+  - "[[2026092020 - Superpowers]]"
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Firecrawl MCP Server]]"
+  - "[[202609202000 - Jev Agent Router]]"
+  - "[[202609202000 - OpenCode Firecrawl]]"
+  - "[[202609202000 - OpenCode Supermemory]]"
+  - "[[202609202010 - Playwright MCP]]"
+  - "[[202609202011 - Chrome DevTools MCP]]"
+  - "[[202609202013 - Hermes Plugin System]]"
+  - "[[202609202014 - OpenCode Oh-My-Openagent]]"
+  - "[[202609202025 - Exa MCP]]"
+  - "[[202609202035 - Plugins]]"
+  - "[[202609202035 - Plugins00 - Plugin Master Index]]"
+  - "[[202609202035 - Supabase MCP]]"
+  - "[[202609202045 - Notion MCP]]"
+  - "[[202609202055 - Linear MCP]]"
+  - "[[2026092021 - Oh My OpenAgent]]"
+  - "[[2026092021 - Sentry MCP]]"
+  - "[[202609202105 - Figma MCP]]"
+  - "[[202609202115 - Stripe MCP]]"
+  - "[[202609202125 - Cloudflare MCP]]"
+  - "[[202609202135 - Datadog MCP]]"
+  - "[[202609202145 - Kubernetes MCP]]"
+  - "[[202609202155 - Terraform MCP]]"
+  - "[[2026092022 - Browserbase MCP]]"
+  - "[[2026092022 - Composio MCP]]"
+  - "[[202609202205 - Sequential Thinking MCP]]"
+  - "[[202609202215 - Zapier MCP]]"
+  - "[[202609202225 - Hermes Jev Agent Router]]"
+  - "[[2026092023 - Claude Code Code Review]]"
+  - "[[2026092023 - CodeGraph MCP]]"
+  - "[[2026092024 - OpenCode Snip]]"
+  - "[[2026092024 - Sourcegraph MCP]]"
 ---
 
 # AI Plugins & Extensions — Master Index
 
 *Comprehensive index of all plugins/extensions for AI coding agents — Last updated: 2026-09-20*
 
-**Total plugins tracked:** 43
+**Total plugins tracked:** 44
 **Agents covered:** Claude Code, OpenCode, Hermes Agent, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie
 
 ---
@@ -114,8 +116,7 @@ created: 2026-09-20T20:13:43+02:00
 | 10 | [OpenCode Chromium Browser](./202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 20 | — | OpenCode | OpenCode Chromium Browser is a browser automation plugin for... |
 | 11 | [Superpowers](./2026092020%20-%20Superpowers.md) | 20 | — | Claude Code | Superpowers is an agentic skills framework and software deve... |
 | 12 | [OpenCode Firecrawl](./202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | OpenCode | OpenCode Firecrawl is a plugin that integrates Firecrawl's w... |
-| 13 | [OpenCode Dynamic Context Pruning](./202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruning.md) | 20 | — | OpenCode | OpenCode Dynamic Context Pruning (DCP) is a plugin that inte... |
-| 14 | [OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | OpenCode | OpenCode Snip is an OpenCode plugin that automatically prefi... |
+| 13 | [OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | OpenCode | OpenCode Snip is an OpenCode plugin that automatically prefi... |
 
 ---
 
@@ -125,7 +126,8 @@ created: 2026-09-20T20:13:43+02:00
 
 | # | Plugin | Score | Stars | Agents | Description |
 |---|--------|-------|-------|--------|-------------|
-*No emerging plugins yet.*
+| 1 | [Plugins/](./202609202035%20-%20Plugins.md) | 0 | — | — | [Auto-created placeholder for 04 - Plugins/] |
+| 2 | [Plugins/00 - Plugin Master Index](./202609202035%20-%20Plugins00%20-%20Plugin%20Master%20Index.md) | 0 | — | — | [Auto-created placeholder for 04 - Plugins/00 - Plugin Maste... |
 
 ---
 
@@ -174,7 +176,7 @@ created: 2026-09-20T20:13:43+02:00
 
 ### OpenCode
 
-*All plugins/extensions for OpenCode — 20 total*
+*All plugins/extensions for OpenCode — 19 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -196,8 +198,7 @@ created: 2026-09-20T20:13:43+02:00
 | 16 | [OpenCodeRAG](./202609200923%20-%20OpenCodeRAG.md) | 20 | — | Stable | OpenCodeRAG is a local-first Retrieval-Augmented Generation plugin for OpenCode ... |
 | 17 | [OpenCode Chromium Browser](./202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 20 | — | Stable | OpenCode Chromium Browser is a browser automation plugin for OpenCode that contr... |
 | 18 | [OpenCode Firecrawl](./202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | Stable | OpenCode Firecrawl is a plugin that integrates Firecrawl's web scraping, crawlin... |
-| 19 | [OpenCode Dynamic Context Pruning](./202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruning.md) | 20 | — | Stable | OpenCode Dynamic Context Pruning (DCP) is a plugin that intelligently manages co... |
-| 20 | [OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | Stable | OpenCode Snip is an OpenCode plugin that automatically prefixes shell commands w... |
+| 19 | [OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | Stable | OpenCode Snip is an OpenCode plugin that automatically prefixes shell commands w... |
 
 ### Hermes Agent
 
@@ -385,12 +386,6 @@ created: 2026-09-20T20:13:43+02:00
 | 7 | [Superpowers](./2026092020%20-%20Superpowers.md) | 20 | — | Claude Code |
 | 8 | [OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | OpenCode |
 
-### Context & Memory
-
-| # | Plugin | Score | Stars | Agents |
-|---|--------|-------|-------|--------|
-| 1 | [OpenCode Dynamic Context Pruning](./202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruning.md) | 20 | — | OpenCode |
-
 ### MCP Servers
 
 | # | Plugin | Score | Stars | Agents |
@@ -415,6 +410,8 @@ created: 2026-09-20T20:13:43+02:00
 | 3 | [Hermes Kanban Dashboard](./202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Hermes Agent |
 | 4 | [Hermes Curator](./202609200806%20-%20Hermes%20Curator.md) | 20 | — | Hermes Agent |
 | 5 | [OpenCode Firecrawl](./202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | OpenCode |
+| 6 | [Plugins/](./202609202035%20-%20Plugins.md) | 0 | — | — |
+| 7 | [Plugins/00 - Plugin Master Index](./202609202035%20-%20Plugins00%20-%20Plugin%20Master%20Index.md) | 0 | — | — |
 
 ---
 
@@ -451,10 +448,10 @@ created: 2026-09-20T20:13:43+02:00
 
 | Metric | Value |
 |--------|-------|
-| Total plugins | 43 |
+| Total plugins | 44 |
 | Heating Up | 29 |
-| Stable | 14 |
-| Emerging | 0 |
+| Stable | 13 |
+| Emerging | 2 |
 | MCP servers | 27 |
 | Cross-agent (2+) | 32 |
 
@@ -462,7 +459,7 @@ created: 2026-09-20T20:13:43+02:00
 
 ## 🔗 Related
 
-- [README.md](./README.md) — vault dashboard
-- [All Plugins](./04%20-%20Plugins/202609202035%20-%20Plugins.md) — all plugin notes
-- [Architecture](./05%20-%20Architecture/202609202035%20-%20Architecture.md) — architecture patterns
-- [Trend Radar](./00%20-%20Inbox/202609202035%20-%20Trend%20Radar.md) — trend analysis
+- [README](./README.md) — vault dashboard
+- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — agent index
+- [Architecture MOC](../07%20-%20Structure/MOC-Architecture-Patterns.md) — architecture patterns
+- [Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis

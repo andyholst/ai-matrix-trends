@@ -212,9 +212,9 @@ tags:
   - ai-tools
   - index
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609200758 - OpenCode]]"
-  - "[[202609200759 - Hermes Agent]]"
+  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+  - "[Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)"
 ---
 
 # AI Agents — Master Index
@@ -271,12 +271,10 @@ links:
 
 ## 🔗 Related
 
-## 🔗 Related
-
-- [[README]] — vault dashboard
-- [[03 - Agents/|All Agents]] — all agent notes
-- [[04 - Plugins/00 - Plugin Master Index|Plugin Master Index]] — plugin index
-- [[09 - Trend Radar/|Trend Radar]] — trend analysis
+- [README](./README.md) — vault dashboard
+- [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — plugin index
+- [Architecture MOC](../07%20-%20Structure/MOC-Architecture-Patterns.md) — architecture patterns
+- [Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
 """
     
     with open(INDEX_FILE, 'w') as f:

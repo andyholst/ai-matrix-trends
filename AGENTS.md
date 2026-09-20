@@ -598,7 +598,6 @@ tags:
   - cli
 links:
   - "[202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)"
-  - "[2026092012 - Factory Droids](./03%20-%20Agents/2026092012%20-%20Factory%20Droids.md)"
 ---
 ```
 
