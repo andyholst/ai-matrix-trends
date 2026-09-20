@@ -24,6 +24,7 @@ else
     --profile "${PROFILE}" \
     --name 'Trends Stage 1 - Research' \
     --script "${VAULT_DIR}/scripts/stage-1-research.sh" \
+    --no-agent \
     --deliver origin
   echo "  ✓ Stage 1 created"
 fi
@@ -38,6 +39,7 @@ else
     --profile "${PROFILE}" \
     --name 'Trends Stage 2 - Links' \
     --script "${VAULT_DIR}/scripts/stage-2-links.sh" \
+    --no-agent \
     --deliver origin
   echo "  ✓ Stage 2 created"
 fi
@@ -52,6 +54,7 @@ else
     --profile "${PROFILE}" \
     --name 'Trends Stage 3 - Scoring' \
     --script "${VAULT_DIR}/scripts/stage-3-scoring.sh" \
+    --no-agent \
     --deliver origin
   echo "  ✓ Stage 3 created"
 fi
@@ -66,6 +69,7 @@ else
     --profile "${PROFILE}" \
     --name 'Trends Stage 4 - Indexes' \
     --script "${VAULT_DIR}/scripts/stage-4-indexes.sh" \
+    --no-agent \
     --deliver origin
   echo "  ✓ Stage 4 created"
 fi
