@@ -378,6 +378,12 @@ Format:
 - Add new patterns to the appropriate section (Core, Emerging, Production)
 - Update the comparison table if adoption levels changed
 
+**For Plugins:**
+- Also update the Plugin Master Index at `04 - Plugins/00 - Plugin Master Index.md`
+- Categorize new plugins as Trending/Stable/Emerging
+- Add to the By Agent Ecosystem section
+- Link to supported agents
+
 ### Step 5: Update README (DEDUPLICATE AND CLEAN)
 
 **CRITICAL: README LINK FORMAT FOR GITHUB**

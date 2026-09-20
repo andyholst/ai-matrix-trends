@@ -585,6 +585,25 @@ The Trend Radar is the vault's analysis of where AI coding agent trends are head
 
 ---
 
+## 🔌 Plugins & Extensions (Critical Section)
+
+Modern AI plugins and extensions are documented in `04 - Plugins/`. This vault tracks:
+
+### Categories
+- **Trending**: Rapid growth, high community adoption (Browser Use, Firecrawl, Context7)
+- **Stable**: Established patterns, steady adoption (Jev, Hermes Kanban, MCP servers)
+- **Emerging**: Early signals, watch list (Oh-My-Openagent, Auto Permission)
+
+### Master Index
+**All plugins are indexed in:** `04 - Plugins/00 - Plugin Master Index.md`
+
+**Maintenance rules:**
+1. Add new plugins to both `04 - Plugins/` and the master index
+2. Categorize by trending/stable/emerging based on adoption data
+3. Link to supported agents (Claude Code, OpenCode, Hermes, Cursor, Codex)
+4. Update the comparison table when new plugins are added
+5. Track plugin growth in Trend Radar
+
 ---
 
 ## Architecture Patterns (Critical Section)

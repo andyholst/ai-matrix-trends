@@ -56,7 +56,9 @@
 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | Claude, Cursor, Windsurf, OpenCode | 1,000+ generative models |
 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | Claude, Cursor, Windsurf, VS Code, OpenCode | Microsoft's official browser automation MCP |
 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | Claude, Cursor, Windsurf, VS Code | Google's official DevTools Protocol MCP |
-| [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions |
+59|| [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions |
+
+**Full index:** [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) (20+ plugins, by agent ecosystem, comparison table)
 
 ---
 
