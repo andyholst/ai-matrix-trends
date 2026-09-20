@@ -350,7 +350,39 @@ GitHub does NOT render `[[wikilinks]]` as clickable. Every link MUST use: `[Disp
 2. Convert every `[[...]]` to `[text](./path.md)` format
 3. Verify target exists: `search_files(pattern="filename.md", target="files", path=".")`
 4. Remove duplicate entries (old non-timestamped versions)
-5. Update tables from manifests, update trend radar, update date
+5. **Update Trend Radar (CRITICAL):**
+   Analyze all new findings and update the Trend Radar section in README.md:
+
+   **Heating Up 🔥** — Recent (last 30 days), rapid growth signals:
+   - New tools/plugins with rapid GitHub star growth (>5k stars/week)
+   - New architecture patterns gaining adoption (MCP servers, multi-agent orchestration)
+   - Community buzz (HN front page, Reddit r/LocalLMAI top posts)
+   - New releases from major players (Claude Code features, OpenAI Codex updates)
+
+   **Stable 📈** — Established patterns, steady adoption:
+   - Tool-calling as standard interface (all agents now do this)
+   - RAG + context compression (standard practice)
+   - IDE integrations (VS Code, JetBrains, Zed)
+   - MCP as universal plugin protocol
+   - Containerized agent sandboxes (Docker profiles)
+
+   **Emerging 🌱** — Early signals, watch list:
+   - Agent-to-agent communication (A2A, ACP protocols)
+   - Verifiable execution (cryptographic proof of agent actions)
+   - Federated agent networks
+   - Personal agent memory systems (cross-session memory)
+   - Interactive UI protocols (MCP Apps)
+   - New architecture patterns from Stream C analysis
+
+   **How to update:**
+   1. Read current Trend Radar from README.md
+   2. Analyze findings from all 4 streams
+   3. Move items between categories based on new evidence
+   4. Add new items with evidence from research
+   5. Remove outdated items
+   6. Write updated Trend Radar using `patch()` on README.md
+
+6. **Update `Last refreshed: YYYY-MM-DD`** at the bottom
 6. `write_file(path="README.md", content="...")` with complete updated content
 
 

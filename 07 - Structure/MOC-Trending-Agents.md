@@ -22,6 +22,11 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202003 - Kilo Code]] — VS Code agent focused on context control, 12k+ stars
 - [[202609202004 - RooCode]] — Reliability-first VS Code agent for large monorepos
 - [[202609202005 - JetBrains Junie]] — JetBrains' native IDE agent, 9% developer adoption
+- [[202609202000 - Devin]] — Cognition's cloud-native autonomous agent, issue-to-PR workflow
+- [[202609202001 - Google Antigravity]] — Google's Gemini 3-based agentic IDE, 47% awareness
+- [[202609202002 - Augment]] — Code-intelligence platform for enterprise teams
+- [[202609202003 - AWS Kiro]] — Amazon's spec-driven agentic environment for AWS teams
+- [[202609202004 - Pi]] — Lightweight open-source CLI agent, multi-provider + local model support
 - [[Claude Code]] — Anthropic's CLI agent
 - [[OpenAI Codex]] — OpenAI's cloud agent
 - [[OpenCode]] — Open-source CLI agent
@@ -49,12 +54,15 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202003 - Kilo Code]]
 - [[202609202004 - RooCode]]
 - [[202609202005 - JetBrains Junie]]
+- [[202609202001 - Google Antigravity]]
+- [[202609202002 - Augment]]
 
 ### Cloud Agents
 - [[202609202000 - Codex]]
+- [[202609202000 - Devin]]
 
 ### Conversational
-- [[Pi]]
+- [[202609202004 - Pi]]
 
 ## Open Questions
 - Which agents support MCP natively vs via extension?

@@ -24,6 +24,11 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
 - [[202609202013 - Hermes Plugin System]] — Comprehensive plugin architecture for Hermes Agent
 - [[202609202014 - OpenCode Oh-My-Openagent]] — All-in-one OpenCode plugin with 10 specialized agents
+- [[202609202010 - Playwright MCP]] — Microsoft's official browser automation MCP, 24 structured tools
+- [[202609202011 - Chrome DevTools MCP]] — Google's official DevTools Protocol MCP, 52k+ stars
+- [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
+- [[202609202013 - Hermes Plugin System]] — Comprehensive plugin architecture for Hermes Agent
+- [[202609202014 - OpenCode Oh-My-Openagent]] — All-in-one OpenCode plugin with 10 specialized agents
 - [[hermes-jev]] — Typesafe context engine for Hermes
 - [[hermes-mcp]] — MCP server integration
 - [[hermes-kanban]] — Multi-agent work queue
@@ -55,16 +60,18 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609200804 - FAL MCP Server]]
 - [[202609202010 - Playwright MCP]]
 - [[202609202011 - Chrome DevTools MCP]]
-- [[MCP Servers]]
-- [[Browser Use]]
-- [[Firecrawl]]
-- [[FAL]]
 
 ### OpenCode Plugins
 - [[202609202000 - OpenCode Firecrawl]]
 - [[202609202000 - OpenCode Supermemory]]
 - [[202609202012 - OpenCode Dynamic Context Pruning]]
 - [[202609202014 - OpenCode Oh-My-Openagent]]
+
+### Hermes Plugins
+- [[202609202000 - Jev Agent Router]]
+- [[202609200805 - Hermes Kanban Dashboard]]
+- [[202609200806 - Hermes Curator]]
+- [[202609202013 - Hermes Plugin System]]
 
 ## Open Questions
 - Is there a universal plugin standard emerging?

@@ -11,6 +11,7 @@ links:
   - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
   - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
   - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202000 - Claude Code]]"
 ---
 
 # Orchestrator-Worker Multi-Agent Delegation

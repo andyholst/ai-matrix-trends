@@ -12,6 +12,7 @@ links:
   - "[[202609202021 - Context Compaction and Structured Note-Taking]]"
   - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
   - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
+  - "[[202609202000 - Claude Code]]"
 ---
 
 # Compaction and Note-Taking for Long-Horizon Context

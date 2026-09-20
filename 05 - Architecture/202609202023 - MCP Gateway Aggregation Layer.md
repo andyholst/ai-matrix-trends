@@ -11,6 +11,7 @@ links:
   - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
   - "[[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]"
   - "[[202609202022 - MCP Hybrid Client-Server Architecture]]"
+  - "[[202609202000 - Claude Code]]"
 ---
 
 # MCP Gateway Aggregation Layer

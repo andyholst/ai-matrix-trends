@@ -6,6 +6,9 @@ tags:
   - tool
 aliases:
 links:
+  - [[MOC-Plugin-Ecosystem]]
+  - [[MOC-Architecture-Patterns]]
+  - [[202609202000 - Claude Code]]
 ---
 
 # CI/CD Pipeline Automation with Claude Code Hooks and GitHub Actions

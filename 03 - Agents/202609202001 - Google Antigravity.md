@@ -13,6 +13,7 @@ links:
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Cursor]]"
   - "[[202609202002 - Gemini CLI]]"
+  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
 ---
 
 # Google Antigravity
