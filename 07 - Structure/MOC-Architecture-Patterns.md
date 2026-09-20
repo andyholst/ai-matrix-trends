@@ -123,4 +123,5 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[2026092031 - Agent Teams Pattern]] - [auto-summary]
+- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[2026092032 - Agent Teams Pattern]] - [auto-summary]
