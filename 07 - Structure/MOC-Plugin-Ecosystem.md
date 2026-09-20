@@ -14,6 +14,11 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202000 - Firecrawl MCP Server]] — Web scrape/search/crawl tools for any MCP agent
 - [[202609202000 - OpenCode Firecrawl]] — OpenCode plugin wrapping Firecrawl CLI
 - [[202609202000 - OpenCode Supermemory]] — Persistent memory for OpenCode via Supermemory
+- [[202609200803 - Context7 MCP]] — Up-to-date code docs for any MCP agent
+- [[202609200804 - FAL MCP Server]] — 1,000+ generative AI models via MCP
+- [[202609200805 - Hermes Kanban Dashboard]] — Visual Kanban board for multi-agent dispatcher
+- [[202609200806 - Hermes Curator]] — Automatic skill catalog maintenance
+- [[202609200807 - Claude Code Auto Permission]] — Server-evaluated tool call permissions
 - [[hermes-jev]] — Typesafe context engine for Hermes
 - [[hermes-mcp]] — MCP server integration
 - [[hermes-kanban]] — Multi-agent work queue
@@ -25,6 +30,8 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 
 ### Hermes Plugins
 - [[202609202000 - Jev Agent Router]]
+- [[202609200805 - Hermes Kanban Dashboard]]
+- [[202609200806 - Hermes Curator]]
 - [[hermes-jev]]
 - [[hermes-mcp]]
 - [[hermes-kanban]]
@@ -32,12 +39,15 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 
 ### Claude Code Extensions
 - [[202609202000 - Browser Use MCP]]
+- [[202609200807 - Claude Code Auto Permission]]
 - [[Claude MCP]]
 - [[Claude Skills]]
 
 ### Cross-Agent Tools
 - [[202609202000 - Browser Use MCP]]
 - [[202609202000 - Firecrawl MCP Server]]
+- [[202609200803 - Context7 MCP]]
+- [[202609200804 - FAL MCP Server]]
 - [[MCP Servers]]
 - [[Browser Use]]
 - [[Firecrawl]]

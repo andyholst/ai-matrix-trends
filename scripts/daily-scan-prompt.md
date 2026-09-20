@@ -181,24 +181,43 @@ Format:
 - [[YYYYMMDDHHMM - Note Title]] — [one-line summary from manifest]
 ```
 
-### Step 5: Update README
+### Step 5: Update README (DEDUPLICATE AND CLEAN)
 
-1. Update **Trending Agents** table — add new agents from stream-a manifest with stars/description
-2. Update **Top Plugins & Extensions** — add new plugins from stream-b manifest
-3. Update **Architecture Patterns** — add new patterns from stream-c manifest
-4. Update **Configuration Snippets** — add new use case links from stream-d manifest
-5. Update **Trend Radar** — move items between heating/stable/emerging as needed
-6. Update `Last refreshed: YYYY-MM-DD` at the bottom
+**Important:** The README likely contains BOTH old placeholder links AND new timestamped links. You MUST:
 
-### Step 6: Verify Minimum Link Count
+1. **Read current README** with `read_file(path="README.md")` to see all existing wikilinks
+2. **Remove duplicate entries:** If both `[[Claude Code]]` and `[[202609202000 - Claude Code]]` exist, REMOVE the non-timestamped version (keep only the timestamped one)
+3. **Check every wikilink in README** — for each `[[link]]`, verify the target file exists:
+   - `search_files(pattern="link.md", target="files", path="03 - Agents")` (or appropriate folder)
+   - If the file does NOT exist, either create it or replace with a link to an existing note
+4. **Replace non-timestamped links with timestamped ones** where they exist
+5. **Update tables:**
+   - Trending Agents — from stream-a manifest, remove old duplicates
+   - Top Plugins — from stream-b manifest, remove old duplicates
+   - Architecture Patterns — from stream-c manifest, remove old duplicates
+   - Configuration Snippets — from stream-d manifest, only link to existing files
+6. **Update Trend Radar** — move items as needed
+7. **Update `Last refreshed: YYYY-MM-DD`** at the bottom
 
-Every note must have at least 2 working outbound links. Run:
+**Goal:** Every `[[wikilink]]` in README must point to a real file. No orphans allowed.
+
+### Step 6: Verify All Links (NOTES + README)
+
+Every note AND every wikilinks in README/MOCs must have at least 2 working outbound links.
+
 ```bash
+# Count links per file (should be >= 2)
 grep -c "\\[\\[" "03 - Agents/"*.md
 grep -c "\\[\\[" "04 - Plugins/"*.md
 grep -c "\\[\\[" "05 - Architecture/"*.md
 grep -c "\\[\\[" "06 - Use Cases/"*.md
 ```
+
+**Also verify README links:**
+1. Read README.md
+2. Extract all `[[wikilinks]]`
+3. For each, check if target file exists with `search_files`
+4. If any link is broken, fix it now
 
 If any note has fewer than 2 links, add more.
 
