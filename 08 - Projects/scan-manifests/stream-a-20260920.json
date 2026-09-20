@@ -63,5 +63,40 @@
     "type": "agent-profile",
     "tags": ["agent", "ide", "multi-agent", "jetbrains", "preview"],
     "created": "2026-09-20T09:14:00+02:00"
+  },
+  {
+    "file": "03 - Agents/2026092010 - Claw Code.md",
+    "title": "Claw Code",
+    "type": "agent-profile",
+    "tags": ["agent", "cli", "rust", "open-source"],
+    "created": "2026-09-20T10:00:00+02:00"
+  },
+  {
+    "file": "03 - Agents/2026092011 - Gemini CLI.md",
+    "title": "Gemini CLI",
+    "type": "agent-profile",
+    "tags": ["agent", "cli", "google", "gemini"],
+    "created": "2026-09-20T10:01:00+02:00"
+  },
+  {
+    "file": "03 - Agents/2026092012 - OpenCode.md",
+    "title": "OpenCode",
+    "type": "agent-profile",
+    "tags": ["agent", "cli", "open-source", "provider-agnostic"],
+    "created": "2026-09-20T10:02:00+02:00"
+  },
+  {
+    "file": "03 - Agents/2026092013 - Cline.md",
+    "title": "Cline",
+    "type": "agent-profile",
+    "tags": ["agent", "cli", "sdk", "ide"],
+    "created": "2026-09-20T10:03:00+02:00"
+  },
+  {
+    "file": "03 - Agents/2026092014 - Kilo Code.md",
+    "title": "Kilo Code",
+    "type": "agent-profile",
+    "tags": ["agent", "cli", "vscode", "context-control"],
+    "created": "2026-09-20T10:04:00+02:00"
   }
 ]
