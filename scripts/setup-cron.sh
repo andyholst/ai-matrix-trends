@@ -1,58 +1,78 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # scripts/setup-cron.sh
-# Sets up the daily AI Matrix Trends trend scan cron job.
+# Sets up the AI Matrix Trends daily scan cron jobs.
+# Creates separate cron jobs for each stage.
 # Run once after cloning the repo.
-#
-# Usage: bash scripts/setup-cron.sh
 
 set -euo pipefail
 
 VAULT_DIR="${HOME}/repository/git/ai-matrix-trends"
 PROFILE="ai-matrix-trends"
-SCHEDULE="0 20 * * *"
-JOB_NAME="AI Matrix Trends - Daily Trend Scan"
 
-PROMPT="You are the AI Matrix Trends vault agent.
-
-1. Read ${VAULT_DIR}/AGENTS.md to understand vault structure, note templates, and rules.
-2. Read ${VAULT_DIR}/scripts/daily-scan-prompt.md for the daily scan instructions.
-3. Execute the workflow EXACTLY as described in the scan prompt file.
-
-CRITICAL: After research streams complete, run these Python scripts in EXACT ORDER:
-  1. cd ${VAULT_DIR} && python3 scripts/resolve_wikilinks.py
-  2. cd ${VAULT_DIR} && python3 scripts/fix_all_links.py
-  3. cd ${VAULT_DIR} && python3 scripts/aggregate-trends.py
-  4. cd ${VAULT_DIR} && python3 scripts/collect_agent_plugins.py
-  5. cd ${VAULT_DIR} && python3 scripts/update_readme.py
-  6. cd ${VAULT_DIR} && python3 scripts/verify-vault.py
-  7. cd ${VAULT_DIR} && python3 scripts/update-mocs.py
-
-NEVER skip any script. NEVER change the order. NEVER delete files.
-
-Vault path: ${VAULT_DIR}"
-
-echo "→ Setting up cron job: ${JOB_NAME}"
-echo "  Schedule: ${SCHEDULE} (daily at 20:00)"
-echo "  Profile:  ${PROFILE}"
-echo "  Vault:    ${VAULT_DIR}"
+echo "→ Setting up AI Matrix Trends cron jobs"
+echo "  Profile: ${PROFILE}"
+echo "  Vault:   ${VAULT_DIR}"
 echo ""
 
-# Check if job already exists
-EXISTING="$(hermes cron list 2>/dev/null | grep -c "${JOB_NAME}" || true)"
-if [[ "${EXISTING}" -gt 0 ]]; then
-  echo "⚠ Cron job '${JOB_NAME}' already exists. Updating prompt..."
-  hermes cron edit "$(hermes cron list --json 2>/dev/null | python3 -c "import sys,json; jobs=json.load(sys.stdin); print([j['id'] for j in jobs if j['name']=='${JOB_NAME}'][0])" 2>/dev/null || echo "5b0d68d1f40e")" \
-    --prompt "${PROMPT}" \
+# ===== STAGE 1: Research (0 20 * * *) =====
+echo "→ Stage 1: Research streams (20:00)"
+EXISTING1="$(hermes cron list 2>/dev/null | grep -c 'Trends.*Stage 1' || true)"
+if [[ "${EXISTING1}" -gt 0 ]]; then
+  echo "  ⚠ Stage 1 job exists, skipping."
+else
+  hermes cron create '0 20 * * *' \
+    --profile "${PROFILE}" \
+    --name 'Trends Stage 1 - Research' \
+    --script "${VAULT_DIR}/scripts/stage-1-research.sh" \
     --deliver origin
-  echo "✓ Cron job updated."
-  exit 0
+  echo "  ✓ Stage 1 created"
 fi
 
-hermes cron create "${SCHEDULE}" \
-  --profile "${PROFILE}" \
-  --prompt "${PROMPT}" \
-  --name "${JOB_NAME}" \
-  --deliver origin
+# ===== STAGE 2: Link Resolution (30 20 * * *) =====
+echo "→ Stage 2: Link resolution (20:30)"
+EXISTING2="$(hermes cron list 2>/dev/null | grep -c 'Trends.*Stage 2' || true)"
+if [[ "${EXISTING2}" -gt 0 ]]; then
+  echo "  ⚠ Stage 2 job exists, skipping."
+else
+  hermes cron create '30 20 * * *' \
+    --profile "${PROFILE}" \
+    --name 'Trends Stage 2 - Links' \
+    --script "${VAULT_DIR}/scripts/stage-2-links.sh" \
+    --deliver origin
+  echo "  ✓ Stage 2 created"
+fi
+
+# ===== STAGE 3: Scoring (45 20 * * *) =====
+echo "→ Stage 3: Scoring (20:45)"
+EXISTING3="$(hermes cron list 2>/dev/null | grep -c 'Trends.*Stage 3' || true)"
+if [[ "${EXISTING3}" -gt 0 ]]; then
+  echo "  ⚠ Stage 3 job exists, skipping."
+else
+  hermes cron create '45 20 * * *' \
+    --profile "${PROFILE}" \
+    --name 'Trends Stage 3 - Scoring' \
+    --script "${VAULT_DIR}/scripts/stage-3-scoring.sh" \
+    --deliver origin
+  echo "  ✓ Stage 3 created"
+fi
+
+# ===== STAGE 4: Indexes & Commit (0 21 * * *) =====
+echo "→ Stage 4: Indexes & commit (21:00)"
+EXISTING4="$(hermes cron list 2>/dev/null | grep -c 'Trends.*Stage 4' || true)"
+if [[ "${EXISTING4}" -gt 0 ]]; then
+  echo "  ⚠ Stage 4 job exists, skipping."
+else
+  hermes cron create '0 21 * * *' \
+    --profile "${PROFILE}" \
+    --name 'Trends Stage 4 - Indexes' \
+    --script "${VAULT_DIR}/scripts/stage-4-indexes.sh" \
+    --deliver origin
+  echo "  ✓ Stage 4 created"
+fi
 
 echo ""
-echo "✓ Cron job created. Run 'hermes cron list' to verify."
+echo "✓ All 4 cron jobs configured"
+echo "  20:00 - Stage 1: Research (parallel sub-agents)"
+echo "  20:30 - Stage 2: Link resolution & verification"
+echo "  20:45 - Stage 3: Scoring & aggregation"
+echo "  21:00 - Stage 4: Indexes, MOCs, README, commit & push"

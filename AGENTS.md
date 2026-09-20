@@ -546,20 +546,34 @@ Items are scored based on:
 
 ## Daily Scan Scripts (CRITICAL)
 
-The cron job MUST execute these scripts in EXACT ORDER:
+The cron job runs in **4 stages** — each as a separate cron job at staggered times:
 
-1. **resolve_wikilinks.py** - Resolves ALL short-name wikilinks to actual filenames
-2. **fix_all_links.py** - Resolves ALL broken wikilinks to actual filenames
-3. **aggregate-trends.py** - Scores all items based on stars/mentions/tags
-4. **collect_agent_plugins.py** - Builds per-agent plugin compatibility tables
-5. **update_readme.py** - Updates README with scored trend tables
-6. **verify-vault.py** - Verifies all links resolve correctly
-7. **update-mocs.py** - Updates Maps of Content
-8. **update-plugin-master-index.py** - Generates Plugin Master Index with per-agent tables
-9. **update-agent-master-index.py** - Generates Agent Master Index with top 5 + complete list
-10. **fix-master-index-links.py** - Fixes frontmatter links in Master Indexes
+### Stage 1: Research (20:00)
+`stage-1-research.sh` — Launches 4 parallel sub-agents via `delegate_task`.
+Each sub-agent has a specific prompt file with full research instructions.
 
-**NEVER skip any script. NEVER change the order.**
+### Stage 2: Link Resolution (20:30)
+`stage-2-links.sh` — Fixes wikilinks after research completes:
+1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
+2. `fix_all_links.py` — Fixes broken wikilinks
+3. `verify-vault.py` — Verifies all links resolve
+
+### Stage 3: Scoring (20:45)
+`stage-3-scoring.py` — Aggregates trend scores:
+1. `aggregate-trends.py` — Scores items based on stars/mentions/tags
+2. `collect_agent_plugins.py` — Builds per-agent plugin tables
+
+### Stage 4: Indexes & Commit (21:00)
+`stage-4-indexes.sh` — Updates all indexes and pushes:
+1. `update-mocs.py` — Updates Maps of Content
+2. `update-plugin-master-index.py` — Generates Plugin Master Index
+3. `update-agent-master-index.py` — Generates Agent Master Index
+4. `update_readme.py` — Updates README tables
+5. `fix-master-index-links.py` — Fixes Master Index frontmatter links
+6. `verify-vault.py` — Final verification
+7. `git add -A && git commit && git push`
+
+**NEVER skip any script. NEVER change the order. NEVER delete files.**
 
 ### Script Details
 
