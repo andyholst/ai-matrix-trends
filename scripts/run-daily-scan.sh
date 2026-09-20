@@ -26,7 +26,7 @@ echo "Current notes in vault"
 echo ""
 echo "Step 2: Launching research streams..."
 
-# Stream A: Agents
+# Stream A: Agents (find 5 new agents)
 echo "  Launching Stream A: Agents..."
 cat > /tmp/stream-a-prompt.txt << 'EOF'
 You are an AI Matrix Trends sub-agent. Your task is to find 3-5 trending AI coding agents and create atomic notes.
@@ -41,10 +41,12 @@ created: 2026-09-20T10:00:00+02:00
 tags:
   - agent
   - cli
+links:
+  - "[[full-filename-1]]"
+  - "[[full-filename-2]]"
 ---
 
-DO NOT add links: field to frontmatter.
-Put all links in the ## Related section at the bottom using short names like [[Claude Code]].
+ALWAYS USE FULL FILENAMES FOR WIKILINKS: [[202609202000 - Claude Code]] NOT [[Claude Code]]
 
 Research steps:
 1. web_search("trending AI coding agents 2026")
@@ -54,13 +56,13 @@ Research steps:
 Create 5 atomic notes for the most trending agents.
 EOF
 
-# Stream B: Plugins
-echo "  Launching Stream B: Plugins..."
+# Stream B: Plugins for EACH major agent (comprehensive)
+echo "  Launching Stream B: Plugins (per-agent research)..."
 cat > /tmp/stream-b-prompt.txt << 'EOF'
-You are an AI Matrix Trends sub-agent. Your task is to find 3-5 trending plugins/extensions and create atomic notes.
+You are an AI Matrix Trends sub-agent. Your task is to find the MOST POPULAR plugins/extensions for EACH major AI coding agent.
 
 Write notes to: ~/repository/git/ai-matrix-trends/04 - Plugins/
-Use timestamps: 2026092020, 2026092021, 2026092022, 2026092023, 2026092024
+Use timestamps: 2026092020 through 2026092029
 
 MANDATORY FRONTMATTER FORMAT:
 ---
@@ -69,17 +71,41 @@ created: 2026-09-20T20:00:00+02:00
 tags:
   - plugin
   - mcp
+agents:
+  - claude-code
+  - opencode
+links:
+  - "[[full-filename-1]]"
+  - "[[full-filename-2]]"
 ---
 
-DO NOT add links: field to frontmatter.
-Put all links in the ## Related section at bottom using short names.
+ALWAYS USE FULL FILENAMES FOR WIKILINKS: [[202609202000 - Claude Code]] NOT [[Claude Code]]
 
-Research steps:
-1. web_search("best Claude Code MCP servers 2026")
-2. web_search("OpenCode plugins and extensions")
-3. web_extract relevant URLs
+CRITICAL: For EACH plugin you create, you MUST include a ## Compatibility section with:
+**Agent:** [[202609202000 - Claude Code]], [[202609200758 - OpenCode]], etc.
 
-Create 5 atomic notes for the most trending plugins.
+Research steps (search for plugins for EACH agent):
+1. web_search("best Claude Code MCP servers plugins 2026")
+2. web_search("best OpenCode plugins extensions 2026")
+3. web_search("best Cursor AI plugins MCP 2026")
+4. web_search("best Codex OpenAI plugins 2026")
+5. web_search("best Windsurf plugins MCP 2026")
+6. web_search("best Aider plugins 2026")
+7. web_search("best Gemini CLI plugins 2026")
+8. web_search("best GitHub Copilot plugins 2026")
+9. web_search("Hermes Agent plugins extensions 2026")
+10. web_search("best Kilo Code plugins 2026")
+11. web_search("best RooCode plugins 2026")
+12. web_search("best JetBrains Junie plugins 2026")
+13. web_search("popular MCP servers 2026")
+14. web_search("trending AI coding agent plugins 2026")
+15. web_extract relevant URLs
+
+Create 10+ atomic notes covering plugins for ALL major agents.
+Each plugin note MUST have:
+- ## Compatibility section with **Agent:** line listing supported agents
+- agents: field in frontmatter with agent keys
+- Tags including mcp if applicable
 EOF
 
 # Stream C: Architecture
@@ -97,10 +123,12 @@ created: 2026-09-20T30:00:00+02:00
 tags:
   - architecture
   - mcp
+links:
+  - "[[full-filename-1]]"
+  - "[[full-filename-2]]"
 ---
 
-DO NOT add links: field to frontmatter.
-Put all links in the ## Related section at bottom using short names.
+ALWAYS USE FULL FILENAMES FOR WIKILINKS: [[202609202000 - Claude Code]] NOT [[Claude Code]]
 
 Research steps:
 1. web_search("MCP protocol architecture patterns 2026")
@@ -125,10 +153,12 @@ created: 2026-09-20T40:00:00+02:00
 tags:
   - workflow
   - config
+links:
+  - "[[full-filename-1]]"
+  - "[[full-filename-2]]"
 ---
 
-DO NOT add links: field to frontmatter.
-Put all links in the ## Related section at bottom using short names.
+ALWAYS USE FULL FILENAMES FOR WIKILINKS: [[202609202000 - Claude Code]] NOT [[Claude Code]]
 
 Research steps:
 1. web_search("Claude Code hooks CI/CD automation")

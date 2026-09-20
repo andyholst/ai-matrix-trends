@@ -554,6 +554,10 @@ The cron job MUST execute these scripts in EXACT ORDER:
 4. **collect_agent_plugins.py** - Builds per-agent plugin compatibility tables
 5. **update_readme.py** - Updates README with scored trend tables
 6. **verify-vault.py** - Verifies all links resolve correctly
+7. **update-mocs.py** - Updates Maps of Content
+8. **update-plugin-master-index.py** - Generates Plugin Master Index with per-agent tables
+9. **update-agent-master-index.py** - Generates Agent Master Index with top 5 + complete list
+10. **fix-master-index-links.py** - Fixes frontmatter links in Master Indexes
 
 **NEVER skip any script. NEVER change the order.**
 

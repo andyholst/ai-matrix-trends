@@ -32,31 +32,32 @@ Launch 4 streams via `delegate_task`.
 **SUB-AGENTS: CHECK FOR EXISTING FILES BEFORE WRITING.**
 If a note already exists for a topic, UPDATE it instead of creating a duplicate.
 
-### Stream A: Agents
+### Stream A: Agents (Goal: 5 new agents)
+Research trending AI coding agents. Search GitHub, Hacker News, Reddit for new releases.
+
+### Stream B: Plugins (Goal: 50+ plugins for ALL major agents)
+CRITICAL: Research plugins/extensions for EACH of these 50+ major agents:
+- Claude Code, OpenCode, Cursor, Codex, Windsurf, Aider, Gemini CLI
+- GitHub Copilot, Kilo Code, RooCode, JetBrains Junie, Hermes Agent
+- And any other trending agents found in Stream A
+
+For EACH agent, search:
+- web_search("best [agent name] plugins 2026")
+- web_search("[agent name] MCP servers 2026")
+- web_search("[agent name] extensions 2026")
+
+Each plugin note MUST have:
 ```
-Goal: 5 agents | 03 - Agents/ | Timestamps: USE search_files to find max existing + 10
-Frontmatter: id, created, tags, links (2+ full filename links)
-Body: ## Related with [[FULL Filename]]
+## Compatibility
+**Agent:** [[202609202000 - Claude Code]], [[202609200759 - Hermes Agent]]
+agents: [claude-code, hermes, opencode]
 ```
 
-### Stream B: Plugins
-```
-Goal: 10+ plugins | 04 - Plugins/ | Timestamps: USE search_files to find max existing + 10
-Frontmatter: id, created, tags, links (2+ full filename links)
-Body: ## Related with [[FULL Filename]]
-```
+### Stream C: Architecture (Goal: 3 patterns)
+Research emerging architecture patterns.
 
-### Stream C: Architecture
-```
-Goal: 3 patterns | 05 - Architecture/ | Timestamps: USE search_files to find max existing + 10
-Frontmatter: id, created, tags, links (2+ full filename links)
-```
-
-### Stream D: Use Cases
-```
-Goal: 3 use cases | 06 - Use Cases/ | Timestamps: USE search_files to find max existing + 10
-Frontmatter: id, created, tags, links (2+ full filename links)
-```
+### Stream D: Use Cases (Goal: 3 use cases)
+Research real-world workflows.
 
 ---
 
