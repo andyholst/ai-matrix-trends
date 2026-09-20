@@ -9,7 +9,7 @@ import re
 import sys
 from collections import Counter
 
-VAULT_DIR = os.path.expanduser("~/repository/git/ai-matrix-trends")
+VAULT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def main():
     print("STAGE 3: Duplicate File Detection")

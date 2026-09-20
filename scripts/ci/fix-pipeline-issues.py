@@ -9,7 +9,7 @@ import sys
 from datetime import datetime
 from collections import Counter
 
-VAULT_DIR = os.path.expanduser("~/repository/git/ai-matrix-trends")
+VAULT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Comprehensive valid tags based on what's actually in the vault
 VALID_TAGS = {

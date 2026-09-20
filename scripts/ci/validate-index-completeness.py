@@ -8,7 +8,7 @@ import os
 import re
 import sys
 
-VAULT_DIR = os.path.expanduser("~/repository/git/ai-matrix-trends")
+VAULT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 MOC_MAPPINGS = {
     '03 - Agents': '07 - Structure/MOC-Trending-Agents.md',
