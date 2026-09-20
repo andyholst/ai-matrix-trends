@@ -5,10 +5,6 @@ tags:
 
 # MOC: 03 - Agents
 
-## Overview
-Auto-generated Map of Content for 03 - Agents.
-
-## Key Notes
 - [03 - Agents/202609200758 - OpenCode](./../03%20-%20Agents/202609200758%20-%20OpenCode.md) - [auto-summary]
 - [03 - Agents/202609200759 - Hermes Agent](./../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md) - [auto-summary]
 - [03 - Agents/202609200800 - Windsurf](./../03%20-%20Agents/202609200800%20-%20Windsurf.md) - [auto-summary]
@@ -42,3 +38,7 @@ Auto-generated Map of Content for 03 - Agents.
 - [03 - Agents/202609202035 - Jev](./../03%20-%20Agents/202609202035%20-%20Jev.md) - [auto-summary]
 - [03 - Agents/202609202045 - Pareto](./../03%20-%20Agents/202609202045%20-%20Pareto.md) - [auto-summary]
 - [03 - Agents/202609202055 - Muse Code](./../03%20-%20Agents/202609202055%20-%20Muse%20Code.md) - [auto-summary]
+## Overview
+Auto-generated Map of Content for 03 - Agents.
+
+## Key Notes

@@ -38,11 +38,20 @@ def fix_frontmatter_links(filepath, folder_filter):
     
     fm = fm_match.group(1)
     
-    # Extract existing links from frontmatter
-    links_match = re.search(r'^links:\n((?:\s*-\s*"\[\[.*?\]\]"\n?)+)', fm, re.MULTILINE)
+    # Extract existing links from frontmatter (wikilink or markdown format)
+    links_match = re.search(r'^links:\n((?:\s*-\s*"(?:\[\[.*?\]\]|\[.*?\]\(.*?\))"\n?)+)', fm, re.MULTILINE)
     existing_links = set()
     if links_match:
-        existing_links = set(re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1)))
+        # Wikilinks
+        existing_links |= set(re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1)))
+        # Markdown links: extract target filename from [title](path)
+        for title, path in re.findall(r'"\[([^\]]+)\]\(([^)]+)\)"', links_match.group(1)):
+            import os.path as _osp
+            from urllib.parse import unquote as _uq
+            fname = _osp.basename(_uq(path.split('#')[0]))
+            if fname.endswith('.md'):
+                fname = fname[:-3]
+            existing_links.add(fname)
     
     # Get all files in the target folder (these are the links we need)
     folder_path = os.path.join(VAULT, folder_filter)
@@ -55,9 +64,15 @@ def fix_frontmatter_links(filepath, folder_filter):
         print(f"  {os.path.basename(filepath)}: links complete ({len(existing_links)} links)")
         return
     
-    # Build new links section with ALL links (existing + new), sorted
+    # Build new links section with ALL links (existing + new), sorted.
+    # Markdown format, file-relative to the index file's own folder.
     all_links = sorted(existing_links | missing_links)
-    links_lines = '\n'.join([f'  - "[[{l}]]"' for l in all_links])
+    from urllib.parse import quote
+    from_dir = os.path.dirname(filepath)
+    links_lines = '\n'.join([
+        f'  - "[{l.split(" - ", 1)[1] if " - " in l else l}](./{quote(l, safe="/._-")}.md)"'
+        for l in all_links
+    ])
     new_links_section = f'links:\n{links_lines}'
     
     # Replace in frontmatter

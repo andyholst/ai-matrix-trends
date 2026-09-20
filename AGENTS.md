@@ -552,9 +552,9 @@ The cron job runs in **8 stages**:
 `stage-1-research.py` — Creates new agent and plugin notes directly.
 
 ### Stage 2: Link Resolution (20:30)
-`stage-2-links.py` — Fixes wikilinks after research completes:
-1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
-2. `fix-all-links.py` — Comprehensive link fixing (dedup + resolve + create missing)
+`stage-2-links.py` — Fixes links after research completes:
+1. `resolve_wikilinks.py` — Resolves remaining short-name wikilinks
+2. `fix-all-links.py` — Comprehensive link fixing (dedup + resolve + create missing; emits markdown links)
 3. `verify-vault.py` — Verifies all links resolve
 
 ### Stage 3: Scoring (20:45)
@@ -568,9 +568,10 @@ The cron job runs in **8 stages**:
 2. `update-plugin-master-index.py` — Generates Plugin Master Index (deduplicated)
 3. `update-agent-master-index.py` — Generates Agent Master Index (deduplicated)
 4. `update_readme.py` — Updates README tables
-5. `fix-master-index-links.py` — Fixes Master Index frontmatter links
-6. `verify-vault.py` — Final verification
-7. `git add -A && git commit && git push`
+5. `fix-master-index-links.py` — Fixes Master Index frontmatter links (markdown, file-relative)
+6. `fix-links-relative.py` — Rewrites any vault-root-style link to file-relative (safety net)
+7. `verify-vault.py` — Final verification
+8. `git add -A && git commit && git push`
 
 **NEVER skip any script. NEVER change the order. NEVER delete files.**
 
@@ -587,7 +588,8 @@ The cron job runs in **8 stages**:
 
 ## Frontmatter Links Requirement (CRITICAL)
 
-Every note's frontmatter MUST contain at least 2 wikilinks in the `links:` field:
+Every note's frontmatter MUST contain at least 2 links in the `links:` field,
+in standard Markdown format with FILE-RELATIVE paths:
 
 ```markdown
 ---
@@ -597,20 +599,24 @@ tags:
   - agent
   - cli
 links:
-  - "[202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)"
+  - "[Gemini CLI](../03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)"
 ---
 ```
 
+(The example above is for a note in `04 - Plugins/`. From a note in the same
+folder, the path would be `202609202002%20-%20Gemini%20CLI.md` with no `../`.)
+
 **Sub-Agent Rules:**
-- **ALWAYS USE FULL FILENAMES FOR WIKILINKS** — `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`, never `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+- **ALWAYS USE FULL FILENAMES** — `202609202000 - Claude Code`, never short names
 - **ALWAYS CHECK FOR EXISTING FILES FIRST** — use `search_files` before writing
-- **ALWAYS ADD `links:` FIELD TO FRONTMATTER** — with 2+ full filename wikilinks
+- **ALWAYS ADD `links:` FIELD TO FRONTMATTER** — with 2+ markdown links (file-relative)
 - **NEVER CREATE DUPLICATES** — if a note exists, `patch()` it instead of writing new
 
 **How agents avoid broken links:**
 1. Before writing: `search_files(pattern="*", target="files", path="03 - Agents")` to see what exists
-2. Use full filenames for ALL wikilinks — both in frontmatter `links:` and body `## Related`
-3. Verify target files exist before linking to them
+2. Use full filenames for ALL links — both in frontmatter `links:` and body `## Related`
+3. Links are file-relative: from a note in a subfolder, prefix `../` to reach another folder
+4. Verify target files exist before linking to them
 
 The vault is a living system. Small, frequent, well-linked notes beat large, infrequent ones. Refactoring is growth.
 
@@ -618,15 +624,28 @@ The vault is a living system. Small, frequent, well-linked notes beat large, inf
 
 ## Wikilink vs Markdown Link Rules
 
-**Inside notes (`03 - Agents/`, `04 - Plugins/`, etc.):**
-Use Obsidian `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` — e.g., `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+**All links everywhere are standard Markdown** `[title](path)` — never `[[wikilinks]]`.
 
-**In README.md:**
-GitHub does NOT render `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` as clickable. Use standard Markdown:
-- `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
-- `[Firecrawl MCP](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP.md)`
+**Link paths are FILE-RELATIVE (GitHub behavior):** a link resolves relative to the
+directory of the file containing it, NOT the vault root. This is how GitHub renders
+links, and the CI pipeline validates links the same way.
 
-**Always verify the target file exists** before linking. If the file doesn't exist, either create it or link to an existing note.
+Examples:
+- From `04 - Plugins/2026092023 - CodeGraph MCP.md` to an agent note:
+  `[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+- Between notes in the same folder:
+  `[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)`
+- From `README.md` (vault root) into a folder:
+  `[Claude Code](03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+
+**Rules:**
+1. `%20`-encode spaces in link paths.
+2. Always verify the target file exists before linking. If the file doesn't exist, either create it or link to an existing note.
+3. If you write or see a link with a vault-root-style path (`./03 - Agents/...`) inside a note that lives in a subfolder, run `python3 scripts/ci/fix-links-relative.py` to rewrite it correctly.
+
+**Auto-fix:** `scripts/ci/fix-links-relative.py` rewrites any link that resolves
+against the vault root but not against the containing file's directory. It is
+idempotent and safe to run any time.
 
 ---
 

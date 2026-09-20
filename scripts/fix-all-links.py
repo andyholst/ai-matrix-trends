@@ -226,8 +226,22 @@ def fix_frontmatter_links(filepath, file_map):
     if not changed and len(fixed_links) == len(links):
         return False
     
-    # Rebuild links section
-    new_links_text = '\n'.join([f'  - "[[{l}]]"' for l in fixed_links])
+    # Rebuild links section — markdown links, file-relative to the containing file
+    from urllib.parse import quote
+    from_dir = os.path.dirname(filepath)
+    fixed_entries = []
+    for l in fixed_links:
+        # l is either a resolved full filename or an unresolved link text
+        resolved = resolve_link(l, file_map)
+        if resolved:
+            target = resolved if resolved.endswith('.md') else resolved + '.md'
+            rel = os.path.relpath(os.path.join(VAULT_DIR, target), from_dir)
+            title = l.split(' - ', 1)[1] if ' - ' in l else l
+            fixed_entries.append(f'  - "[{title}](./{quote(rel, safe="/._-")})"')
+        else:
+            # Unresolvable: keep as wikilink marker for the fixer to report
+            fixed_entries.append(f'  - "[[{l}]]"')
+    new_links_text = '\n'.join(fixed_entries)
     new_fm = fm.replace(links_text, new_links_text)
     new_content = content.replace(fm, new_fm)
     

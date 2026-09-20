@@ -5,10 +5,6 @@ tags:
 
 # MOC: 04 - Plugins
 
-## Overview
-Auto-generated Map of Content for 04 - Plugins.
-
-## Key Notes
 - [04 - Plugins/202609200803 - Context7 MCP](./../04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) - [auto-summary]
 - [04 - Plugins/202609200804 - FAL MCP Server](./../04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) - [auto-summary]
 - [04 - Plugins/202609200805 - Hermes Kanban Dashboard](./../04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) - [auto-summary]
@@ -53,3 +49,7 @@ Auto-generated Map of Content for 04 - Plugins.
 - [04 - Plugins/2026092023 - CodeGraph MCP](./../04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) - [auto-summary]
 - [04 - Plugins/2026092024 - OpenCode Snip](./../04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) - [auto-summary]
 - [04 - Plugins/2026092024 - Sourcegraph MCP](./../04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) - [auto-summary]
+## Overview
+Auto-generated Map of Content for 04 - Plugins.
+
+## Key Notes

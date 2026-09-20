@@ -64,10 +64,13 @@ def main():
     print("\nStep 4e: Fixing Master Index links...")
     run("fix-master-index-links.py")
 
-    print("\nStep 4f: Final verification...")
+    print("\nStep 4f: Rewriting vault-root-style links to file-relative...")
+    run(os.path.join("ci", "fix-links-relative.py"))
+
+    print("\nStep 4g: Final verification...")
     run("verify-vault.py")
 
-    print("\nStep 4g: Committing and pushing...")
+    print("\nStep 4h: Committing and pushing...")
     today = datetime.now().strftime('%Y-%m-%d')
     run_shell("git add -A")
     run_shell(f"git commit -m 'Daily scan: {today}'")

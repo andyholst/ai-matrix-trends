@@ -5,10 +5,6 @@ tags:
 
 # MOC: 09 - Trend Radar
 
-## Overview
-Auto-generated Map of Content for 09 - Trend Radar.
-
-## Key Notes
 - [09 - Trend Radar/Emerging/202609200104 - Agent-to-Agent Communication Protocols](./../09%20-%20Trend%20Radar/Emerging/202609200104%20-%20Agent-to-Agent%20Communication%20Protocols.md) - [auto-summary]
 - [09 - Trend Radar/Emerging/202609200105 - Personal Agent Memory Systems](./../09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) - [auto-summary]
 - [09 - Trend Radar/Emerging/202609200951 - MCP Server-Side LLM Reusable Agent Pattern](./../09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) - [auto-summary]
@@ -24,3 +20,7 @@ Auto-generated Map of Content for 09 - Trend Radar.
 - [09 - Trend Radar/Heating Up/2026092040 - Spec-Driven Development](./../09%20-%20Trend%20Radar/Heating%20Up/2026092040%20-%20Spec-Driven%20Development.md) - [auto-summary]
 - [09 - Trend Radar/Stable/202609200102 - Tool-Calling as Standard Interface](./../09%20-%20Trend%20Radar/Stable/202609200102%20-%20Tool-Calling%20as%20Standard%20Interface.md) - [auto-summary]
 - [09 - Trend Radar/Stable/202609200103 - Containerized Agent Sandboxes](./../09%20-%20Trend%20Radar/Stable/202609200103%20-%20Containerized%20Agent%20Sandboxes.md) - [auto-summary]
+## Overview
+Auto-generated Map of Content for 09 - Trend Radar.
+
+## Key Notes

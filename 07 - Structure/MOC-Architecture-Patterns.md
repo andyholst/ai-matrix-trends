@@ -5,10 +5,6 @@ tags:
 
 # MOC: 05 - Architecture
 
-## Overview
-Auto-generated Map of Content for 05 - Architecture.
-
-## Key Notes
 - [05 - Architecture/202609200930 - MCP Server-Side LLM Reusable Agent Pattern](./../05%20-%20Architecture/202609200930%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) - [auto-summary]
 - [05 - Architecture/202609200931 - Adaptive Planning Magentic Orchestration Pattern](./../05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md) - [auto-summary]
 - [05 - Architecture/202609200932 - Fan-Out Fan-In Parallel Agent Pattern](./../05%20-%20Architecture/202609200932%20-%20Fan-Out%20Fan-In%20Parallel%20Agent%20Pattern.md) - [auto-summary]
@@ -34,3 +30,7 @@ Auto-generated Map of Content for 05 - Architecture.
 - [05 - Architecture/2026092031 - Sub-Agent Delegation Pattern](./../05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md) - [auto-summary]
 - [05 - Architecture/2026092032 - Agent Teams Pattern](./../05%20-%20Architecture/2026092032%20-%20Agent%20Teams%20Pattern.md) - [auto-summary]
 - [05 - Architecture/2026092032 - Tiered Routing Model Cascade Pattern](./../05%20-%20Architecture/2026092032%20-%20Tiered%20Routing%20Model%20Cascade%20Pattern.md) - [auto-summary]
+## Overview
+Auto-generated Map of Content for 05 - Architecture.
+
+## Key Notes

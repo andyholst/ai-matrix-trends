@@ -25,6 +25,15 @@ for script in stage-2-links.py stage-3-scoring.py stage-4-indexes.py; do
   chmod +x "${HERMES_SCRIPTS_DIR}/${script}"
   echo "  ✓ Copied ${script}"
 done
+
+# Copy CI scripts (used by stage-4 as safety-net link fixer)
+echo "→ Copying CI scripts to ${HERMES_SCRIPTS_DIR}/ci/"
+mkdir -p "${HERMES_SCRIPTS_DIR}/ci"
+for script in fix-links-relative.py validate-links.py validate-link-quality.py; do
+  cp -f "${VAULT_DIR}/scripts/ci/${script}" "${HERMES_SCRIPTS_DIR}/ci/${script}"
+  chmod +x "${HERMES_SCRIPTS_DIR}/ci/${script}"
+  echo "  ✓ Copied ci/${script}"
+done
 echo ""
 
 # ===== STAGE 1: Research (0 20 * * *) =====

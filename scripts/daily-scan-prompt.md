@@ -52,14 +52,20 @@ agents: [claude-code, hermes, opencode]
 
 ---
 
-## Stage 4: Indexes & Commit (21:00) — `stage-4-indexes.sh`
+## Stage 4: Indexes & Commit (21:00) — `stage-4-indexes.py`
 
 6. `python3 scripts/update-mocs.py`
 7. `python3 scripts/update-plugin-master-index.py`
 8. `python3 scripts/update-agent-master-index.py`
 9. `python3 scripts/update_readme.py`
 10. `python3 scripts/fix-master-index-links.py`
-11. `python3 scripts/verify-vault.py`
-12. `git add -A && git commit -m 'Daily scan' && git push`
+11. `python3 scripts/ci/fix-links-relative.py` (safety net: rewrite vault-root-style links to file-relative)
+12. `python3 scripts/verify-vault.py`
+13. `git add -A && git commit -m 'Daily scan' && git push`
 
 **NEVER skip any script. NEVER change the order. NEVER delete files.**
+
+**Link rules (CRITICAL):** All links are standard Markdown `[title](path)` — never
+`[[wikilinks]]`. Paths are FILE-RELATIVE (same as GitHub): from a note in a
+subfolder, use `../03%20-%20Agents/...` to reach another folder. See
+"Link Verification" in AGENTS.md.

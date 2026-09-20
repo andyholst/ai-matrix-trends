@@ -5,10 +5,6 @@ tags:
 
 # MOC: 06 - Use Cases
 
-## Overview
-Auto-generated Map of Content for 06 - Use Cases.
-
-## Key Notes
 - [06 - Use Cases/202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization](./../06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md) - [auto-summary]
 - [06 - Use Cases/202609202001 - Claude Code Hooks for CI-CD Automation](./../06%20-%20Use%20Cases/202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md) - [auto-summary]
 - [06 - Use Cases/202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./../06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md) - [auto-summary]
@@ -30,3 +26,7 @@ Auto-generated Map of Content for 06 - Use Cases.
 - [06 - Use Cases/2026092041 - Git Worktree Isolation for Parallel AI Agents](./../06%20-%20Use%20Cases/2026092041%20-%20Git%20Worktree%20Isolation%20for%20Parallel%20AI%20Agents.md) - [auto-summary]
 - [06 - Use Cases/2026092042 - Automated Documentation Generation and Maintenance](./../06%20-%20Use%20Cases/2026092042%20-%20Automated%20Documentation%20Generation%20and%20Maintenance.md) - [auto-summary]
 - [06 - Use Cases/2026092042 - CLAUDE.md as Runtime Configuration for Agent Behavior](./../06%20-%20Use%20Cases/2026092042%20-%20CLAUDE.md%20as%20Runtime%20Configuration%20for%20Agent%20Behavior.md) - [auto-summary]
+## Overview
+Auto-generated Map of Content for 06 - Use Cases.
+
+## Key Notes
