@@ -2,13 +2,14 @@
 """
 update_readme.py - Update README.md with comprehensive scored trend tables.
 Run AFTER aggregate-trends.py to populate all tables.
+
+This script is idempotent — it cleans up any duplicate sections before writing.
 """
 
 import os
 import re
 import json
 from datetime import datetime
-from collections import Counter
 
 VAULT = os.path.expanduser("~/repository/git/ai-matrix-trends")
 DATA_FILE = os.path.join(VAULT, "08 - Projects", "trend-data.json")
@@ -58,6 +59,32 @@ def generate_table_row(i, name, item):
     encoded = filename.replace(' ', '%20')
     return f"| {i} | [{title}](./{encoded}) | {score} | {item_type} | {stars} | {status} |"
 
+def clean_duplicates(content):
+    """Remove duplicate sections, keeping only the first occurrence of each."""
+    # Find all section headers and their positions
+    headers = [(m.start(), m.group()) for m in re.finditer(r'^## .+', content, re.MULTILINE)]
+    
+    seen = set()
+    to_remove = []
+    
+    for pos, header in headers:
+        # Normalize header for comparison (remove emojis for matching)
+        normalized = re.sub(r'[^\w\s]', '', header).strip().lower()
+        if normalized in seen:
+            to_remove.append((pos, header))
+        else:
+            seen.add(normalized)
+    
+    # Remove duplicates (from end to start to preserve positions)
+    for pos, header in reversed(to_remove):
+        # Find where this duplicate section ends (next ## or end)
+        next_section = content.find('\n## ', pos + 1)
+        if next_section == -1:
+            next_section = len(content)
+        content = content[:pos] + content[next_section:]
+    
+    return content
+
 def update_readme():
     """Update README.md with scored trend tables"""
     os.chdir(VAULT)
@@ -66,6 +93,9 @@ def update_readme():
     with open(os.path.join(VAULT, 'README.md')) as f:
         content = f.read()
     
+    # Clean up any duplicate sections first
+    content = clean_duplicates(content)
+    
     # Get top items for each category
     agents = get_top_items('agent', 5)
     plugins = get_top_items('plugin', 5)
@@ -73,75 +103,86 @@ def update_readme():
     print(f"Top 5 Agents: {[a[0] for a in agents]}")
     print(f"Top 5 Plugins: {[p[0] for p in plugins]}")
     
-    # Update Trending Agents section
-    if '## Trending Agents' in content:
-        # Find and replace the table
-        pattern = r'(## Trending Agents\n.*?)(?=\n## |\Z)'
-        
-        new_section = "## Trending Agents\n\n"
-        new_section += f"*Top 5 scored trending - Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
-        new_section += generate_table_header() + "\n"
-        
-        for i, (name, item) in enumerate(agents, 1):
-            new_section += generate_table_row(i, name, item) + "\n"
-        
-        new_section += "\n"
-        
-        content = re.sub(pattern, new_section, content, flags=re.DOTALL)
+    date_str = datetime.now().strftime('%Y-%m-%d')
     
-    # Update Plugins section
-    if '## Top Plugins' in content:
-        pattern = r'(## Top Plugins.*?\n.*?)(?=\n## |\Z)'
-        
-        new_section = "## Top Plugins & Extensions\n\n"
-        new_section += f"*Top 5 scored trending - Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
-        new_section += generate_table_header() + "\n"
-        
-        for i, (name, item) in enumerate(plugins, 1):
-            new_section += generate_table_row(i, name, item) + "\n"
-        
-        new_section += "\n"
-        
-        content = re.sub(pattern, new_section, content, flags=re.DOTALL)
+    # Build new Trending Agents section
+    agents_section = f"""## 🚀 Trending Agents
+
+*Top 5 scored trending — Last updated: {date_str}*
+
+{generate_table_header()}
+"""
+    for i, (name, item) in enumerate(agents, 1):
+        agents_section += generate_table_row(i, name, item) + "\n"
+    agents_section += "\n"
     
-    # Update Trend Radar
+    # Build new Plugins section
+    plugins_section = f"""## 🔌 Top Plugins & Extensions
+
+*Top 5 scored trending — Last updated: {date_str}*
+
+{generate_table_header()}
+"""
+    for i, (name, item) in enumerate(plugins, 1):
+        plugins_section += generate_table_row(i, name, item) + "\n"
+    plugins_section += "\n"
+    
+    # Build new Trend Radar section
     data = load_trend_data()
     items = data.get('items', {})
-    
-    # Sort all items by score
     all_sorted = sorted(items.items(), key=lambda x: x[1].get('score', 0), reverse=True)
     
     heating_up = [(k, v) for k, v in all_sorted if v.get('score', 0) >= 50][:5]
     stable = [(k, v) for k, v in all_sorted if 20 <= v.get('score', 0) < 50][:5]
     emerging = [(k, v) for k, v in all_sorted if v.get('score', 0) < 20][:5]
     
-    trend_section = "## Trend Radar\n\n"
-    trend_section += f"*Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
+    def build_subsection(title, data_list):
+        section = f"### {title}\n\n"
+        section += generate_table_header() + "\n"
+        for i, (name, item) in enumerate(data_list, 1):
+            section += generate_table_row(i, name, item) + "\n"
+        return section + "\n"
     
-    trend_section += "### Heating Up\n\n"
-    trend_section += generate_table_header() + "\n"
-    for i, (name, item) in enumerate(heating_up, 1):
-        trend_section += generate_table_row(i, name, item) + "\n"
+    radar_section = f"""## 📊 Trend Radar
+
+*Last updated: {date_str}*
+
+"""
+    radar_section += build_subsection("Heating Up", heating_up)
+    radar_section += build_subsection("Stable", stable)
+    radar_section += build_subsection("Emerging", emerging)
     
-    trend_section += "\n### Stable\n\n"
-    trend_section += generate_table_header() + "\n"
-    for i, (name, item) in enumerate(stable, 1):
-        trend_section += generate_table_row(i, name, item) + "\n"
+    # === REPLACE SECTIONS IN README ===
     
-    trend_section += "\n### Emerging\n\n"
-    trend_section += generate_table_header() + "\n"
-    for i, (name, item) in enumerate(emerging, 1):
-        trend_section += generate_table_row(i, name, item) + "\n"
+    # Replace Trending Agents
+    if '## 🚀 Trending Agents' in content:
+        content = re.sub(
+            r'## 🚀 Trending Agents\n.*?(?=\n## |\Z)',
+            agents_section,
+            content,
+            flags=re.DOTALL
+        )
     
-    # Replace or add Trend Radar section
-    if '## Trend Radar' in content:
-        pattern = r'(## Trend Radar\n)(.*?)(?=\n## |\Z)'
-        content = re.sub(pattern, trend_section, content, flags=re.DOTALL)
-    else:
-        content += trend_section
+    # Replace Top Plugins & Extensions
+    if '## 🔌 Top Plugins' in content:
+        content = re.sub(
+            r'## 🔌 Top Plugins[^\n]*\n.*?(?=\n## |\Z)',
+            plugins_section,
+            content,
+            flags=re.DOTALL
+        )
+    
+    # Replace Trend Radar
+    if '## 📊 Trend Radar' in content:
+        content = re.sub(
+            r'## 📊 Trend Radar\n.*?(?=\n## |\Z)',
+            radar_section,
+            content,
+            flags=re.DOTALL
+        )
     
     # Update date
-    content = re.sub(r'\*Last refreshed: .*\*', f'*Last refreshed: {datetime.now().strftime("%Y-%m-%d")}*', content)
+    content = re.sub(r'\*Last refreshed: .*\*', f'*Last refreshed: {date_str}*', content)
     
     with open(os.path.join(VAULT, 'README.md'), 'w') as f:
         f.write(content)

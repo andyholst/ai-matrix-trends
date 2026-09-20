@@ -79,7 +79,7 @@ def scan_plugins():
         score += len(compat_agents) * 20
         
         # Tags
-        tags_match = re.search(r'^tags:\n((?:\s*-\s*.+\n?)+)', content, re.MULTILINE)
+        tags_match = re.search(r'^tags:\n((?:-\s*.+\n?)+)', content, re.MULTILINE)
         tags = []
         if tags_match:
             tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
@@ -124,6 +124,28 @@ def generate_agent_table(agent_key, agent_name, plugins):
     table += "\n"
     return table
 
+def clean_duplicates(content):
+    """Remove duplicate sections, keeping only the first occurrence of each."""
+    headers = [(m.start(), m.group()) for m in re.finditer(r'^## .+', content, re.MULTILINE)]
+    
+    seen = set()
+    to_remove = []
+    
+    for pos, header in headers:
+        normalized = re.sub(r'[^\w\s-]', '', header).strip().lower()
+        if normalized in seen:
+            to_remove.append((pos, header))
+        else:
+            seen.add(normalized)
+    
+    for pos, header in reversed(to_remove):
+        next_section = content.find('\n## ', pos + 1)
+        if next_section == -1:
+            next_section = len(content)
+        content = content[:pos] + content[next_section:]
+    
+    return content
+
 def update_readme_agent_plugins():
     """Update README.md with per-agent plugin tables"""
     plugins = scan_plugins()
@@ -131,6 +153,9 @@ def update_readme_agent_plugins():
     readme_path = os.path.join(VAULT, 'README.md')
     with open(readme_path) as f:
         content = f.read()
+    
+    # Clean up any duplicate sections first
+    content = clean_duplicates(content)
     
     # Generate per-agent tables
     agent_tables = "## 🔌 Plugins by Agent\n\n"
@@ -143,7 +168,7 @@ def update_readme_agent_plugins():
     # Also add cross-agent comparison table
     agent_tables += "## 📊 Plugin Compatibility Matrix\n\n"
     agent_tables += "| Plugin | " + " | ".join(AGENTS.keys()) + " | Score |\n"
-    agent_tables += "|--------|" + "|".join(["------" for _ in AGENTS]) + "|-------|\n"
+    agent_tables += "|" + "|".join(["--------" for _ in AGENTS]) + "|-------|\n"
     
     # Sort all plugins by score
     sorted_all = sorted(plugins.items(), key=lambda x: x[1]['score'], reverse=True)
@@ -163,7 +188,7 @@ def update_readme_agent_plugins():
     # Replace or add section
     if '## 🔌 Plugins by Agent' in content:
         # Replace existing
-        pattern = r'(## 🔌 Plugins by Agent\n)(.*?)(?=\n## [^🔌]|\Z)'
+        pattern = r'## 🔌 Plugins by Agent\n.*?(?=\n## [^🔌]|\Z)'
         content = re.sub(pattern, agent_tables, content, flags=re.DOTALL)
     else:
         content += agent_tables
