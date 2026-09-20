@@ -10,6 +10,7 @@ FAILS when:
 import os
 import re
 import sys
+from urllib.parse import unquote
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 VAULT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
@@ -59,6 +60,9 @@ def validate_file(filepath, file_map):
     with open(filepath) as f:
         content = f.read()
     
+    # Strip code blocks so links inside fences are not checked
+    body = re.sub(r'```.*?```', '', content, flags=re.DOTALL)
+    
     # === Check wikilinks [[...]] ===
     wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
     for link in wikilinks:
@@ -71,61 +75,20 @@ def validate_file(filepath, file_map):
             title = link.split(' - ', 1)[1] if ' - ' in link else link
             errors.append(f"  Wikilink: [[{link}]] (should be markdown: [{title}](./{encoded_path}))")
     
-    # === Check markdown links [text](path) ===
-    md_links = re.findall(r'\]\(([^)]+)\)', content)
-    for link in md_links:
-        if link.startswith('http://') or link.startswith('https://'):
+    # === Check markdown links [text](path) — FILE-RELATIVE (GitHub behavior) ===
+    from_dir = os.path.dirname(filepath)
+    for link in re.findall(r'\]\(([^)]+)\)', body):
+        if link.startswith(('http://', 'https://', '#', 'mailto:')):
             continue
-        if link.startswith('#'):
+        clean = unquote(link.split('#')[0])
+        if not clean:
             continue
-        clean = link
-        
-        # Obsidian links are relative to vault root
-        if clean.startswith('./'):
-            clean = clean[2:]
-        elif clean.startswith('../'):
-            clean = clean[3:]
-        
-        clean_lower = clean.replace('%20', ' ').lower()
-        
-        if clean_lower.endswith('/'):
-            clean_lower = clean_lower.rstrip('/')
-        
-        if clean_lower.endswith('.md'):
-            clean_no_ext = clean_lower[:-3]
-        else:
-            clean_no_ext = clean_lower
-        
-        # Check 1: full relative path
-        if clean_no_ext in file_map:
+        target = os.path.normpath(os.path.join(from_dir, clean))
+        if os.path.isfile(target) or os.path.isdir(target):
             continue
-        
-        # Check 2: with .md extension
-        if clean_no_ext + '.md' in file_map:
-            continue
-        
-        # Check 3: just the filename (basename)
-        fname = os.path.basename(clean_no_ext)
-        if fname in file_map:
-            continue
-        
-        # Check 4: title only (after " - ")
-        if ' - ' in fname:
-            title = fname.split(' - ', 1)[1]
-            if title in file_map:
-                continue
-        
-        # Check 5: it's a directory
-        test_dir = os.path.join(VAULT_DIR, clean_no_ext)
-        if os.path.isdir(test_dir):
-            continue
-        
-        # Check 6: filesystem check
-        test_file = os.path.join(VAULT_DIR, clean_no_ext + '.md')
-        if os.path.isfile(test_file):
-            continue
-        
-        errors.append(f"  Markdown link: {link} -> NOT FOUND")
+        resolved = os.path.relpath(target, VAULT_DIR)
+        errors.append(f"  Markdown link: {link} -> NOT FOUND (resolves to: {resolved})")
+    
     return errors
 
 def main():

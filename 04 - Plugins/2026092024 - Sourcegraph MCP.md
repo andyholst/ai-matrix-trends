@@ -58,10 +58,10 @@ claude mcp add sourcegraph -- npx -y @sourcegraph/mcp-server
 - **Auth:** Sourcegraph access token
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [Sourcegraph MCP](https://github.com/sourcegraph/sourcegraph/tree/main/mcp)

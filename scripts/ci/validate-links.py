@@ -2,7 +2,9 @@
 """
 validate-links.py - Validate ALL links in vault (wikilinks + markdown links).
 Stage 1 of CI pipeline.
-FAILS when:
+
+Markdown links are resolved RELATIVE TO THE CONTAINING FILE's directory
+(same as GitHub). FAILS when:
 1. Wikilinks [[...]] point to non-existent files
 2. Markdown links [text](path) point to non-existent files
 """
@@ -10,6 +12,7 @@ FAILS when:
 import os
 import re
 import sys
+from urllib.parse import unquote
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 VAULT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
@@ -55,7 +58,10 @@ def validate_file(filepath, file_map):
             return errors
     with open(filepath) as f:
         content = f.read()
-    
+
+    # Strip code blocks so links inside ``` fences are not checked
+    body = re.sub(r'```.*?```', '', content, flags=re.DOTALL)
+
     # === Check wikilinks [[...]] ===
     fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
     if fm_match:
@@ -66,65 +72,32 @@ def validate_file(filepath, file_map):
             for link in links:
                 if link.lower() not in file_map:
                     errors.append(f"  Wikilink (frontmatter): [[{link}]] -> NOT FOUND")
-    
-    body_sections = content.split('\n## ')
-    for section in body_sections[1:]:
-        wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', section)
-        for link in wikilinks:
-            link_lower = link.lower().strip()
-            if link_lower not in file_map:
-                if '[' in link or ']' in link or '{{' in link:
-                    continue
-                if link.endswith('/'):
-                    continue
-                errors.append(f"  Wikilink (body): [[{link}]] -> NOT FOUND")
-    
-    # === Check markdown links [text](path) ===
-    md_links = re.findall(r'\]\(([^)]+)\)', content)
-    for link in md_links:
-        if link.startswith('http://') or link.startswith('https://'):
-            continue
-        if link.startswith('#'):
-            continue
-        clean = link
-        if clean.startswith('./'):
-            clean = clean[2:]
-        elif clean.startswith('../'):
-            clean = clean[3:]
-        clean_lower = clean.replace('%20', ' ').lower()
-        if clean_lower.endswith('/'):
-            clean_lower = clean_lower.rstrip('/')
-        if clean_lower.endswith('.md'):
-            clean_no_ext = clean_lower[:-3]
-        else:
-            clean_no_ext = clean_lower
-        
-        # Check 1: full relative path
-        if clean_no_ext in file_map:
-            continue
-        # Check 2: basename only
-        fname = os.path.basename(clean_no_ext)
-        if fname in file_map:
-            continue
-        # Check 3: title after " - "
-        if ' - ' in fname:
-            title = fname.split(' - ', 1)[1]
-            if title in file_map:
+
+    for link in re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', body):
+        link_lower = link.lower().strip()
+        if link_lower not in file_map:
+            if '[' in link or ']' in link or '{{' in link or link.endswith('/'):
                 continue
-        # Check 4: directory link
-        test_dir = os.path.join(VAULT_DIR, clean_no_ext)
-        if os.path.isdir(test_dir):
+            errors.append(f"  Wikilink (body): [[{link}]] -> NOT FOUND")
+
+    # === Check markdown links [text](path) — FILE-RELATIVE (GitHub behavior) ===
+    from_dir = os.path.dirname(filepath)
+    for link in re.findall(r'\]\(([^)]+)\)', body):
+        if link.startswith(('http://', 'https://', '#', 'mailto:')):
             continue
-        # Check 5: filesystem
-        test_file = os.path.join(VAULT_DIR, clean_no_ext + '.md')
-        if os.path.isfile(test_file):
+        clean = unquote(link.split('#')[0])
+        if not clean:
             continue
-        
-        errors.append(f"  Markdown link: {link} -> NOT FOUND")
+        target = os.path.normpath(os.path.join(from_dir, clean))
+        if os.path.isfile(target) or os.path.isdir(target):
+            continue
+        resolved = os.path.relpath(target, VAULT_DIR)
+        errors.append(f"  Markdown link: {link} -> NOT FOUND (resolves to: {resolved})")
+
     return errors
 
 def main():
-    print("STAGE 1: Link Validation (wikilinks + markdown links)")
+    print("STAGE 1: Link Validation (wikilinks + markdown links, file-relative)")
     print("=" * 60)
     file_map = build_file_map()
     print(f"Built file map: {len(file_map)} entries")

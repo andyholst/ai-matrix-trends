@@ -46,14 +46,14 @@ Set `FIRECRAWL_API_KEY` in your environment for authenticated higher-rate access
 - Answering "what's the latest..." questions with live data
 
 ## Compatibility
-- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
+- **Agent:** [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** OpenCode 1.0+, Node.js 18+
 - **Dependencies:** firecrawl-cli (npm), Firecrawl API key (recommended)
 
 ## Related Plugins
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Alternative search/scrape plugin using Tavily
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Native web search with citation grounding
-- [202609202000 - Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) — The MCP-server version for non-OpenCode agents
+- [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md) — Alternative search/scrape plugin using Tavily
+- [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md) — Native web search with citation grounding
+- [202609202000 - Firecrawl MCP Server](202609202000%20-%20Firecrawl%20MCP%20Server.md) — The MCP-server version for non-OpenCode agents
 
 ## Sources
 - [OpenCode Firecrawl GitHub](https://github.com/firecrawl/opencode-firecrawl)
@@ -61,5 +61,5 @@ Set `FIRECRAWL_API_KEY` in your environment for authenticated higher-rate access
 - [Firecrawl Blog: Best OpenCode Skills](https://www.firecrawl.dev/blog/best-opencode-skills)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

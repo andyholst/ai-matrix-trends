@@ -44,18 +44,18 @@ plugins:
 - Coordinating sub-agents on large refactors or research tasks
 
 ## Compatibility
-**Agent:** [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
+**Agent:** [202609200759 - Hermes Agent](../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
 **Versions:** Hermes Agent 1.0+ (requires `hermes-agent[web,pty]`)
 **Dependencies:** pip, PTY support
 
 ## Related Plugins
-- [202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) — Pair with Curator for lifecycle management of the skills used by Kanban workers
-- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) — Use Jev for intelligent routing decisions within Kanban workflows
+- [202609200806 - Hermes Curator](202609200806%20-%20Hermes%20Curator.md) — Pair with Curator for lifecycle management of the skills used by Kanban workers
+- [202609202000 - Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md) — Use Jev for intelligent routing decisions within Kanban workflows
 
 ## Sources
 - [Hermes Docs: Built-in Plugins](https://hermes-agent.nousresearch.com/docs/user-guide/features/built-in-plugins)
 - [Firecrawl: 9 Best Hermes Tools](https://www.firecrawl.dev/blog/best-hermes-plugins)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

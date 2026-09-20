@@ -56,8 +56,8 @@ The documentation tool stack has split into four layers:
 - FAQs are almost the perfect format for machines: clear question, clear answer, easily parseable
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
 
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)

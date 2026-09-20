@@ -6,8 +6,8 @@ tags:
   - plugin
   - claude-code
 links:
-  - "[Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)"
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Superpowers](../../04%20-%20Plugins/2026092020%20-%20Superpowers.md)"
+  - "[Claude Code](../../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Superpowers Skills Framework
@@ -24,9 +24,9 @@ The framework enforces structured workflows: TDD with red-green-refactor cycles,
 The 200K+ star count signals that developers want structured, methodology-driven AI coding — not just raw code generation. Superpowers demonstrates that the "skills" pattern (reusable, composable workflow primitives) is a viable plugin architecture for AI agents. This could become a standard approach for team workflow standardization.
 
 ## Related
-- [2026092020 - Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
-- [202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization](./06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)
+- [2026092020 - Superpowers](../../04%20-%20Plugins/2026092020%20-%20Superpowers.md)
+- [202609202000 - Claude Code](../../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization](../../06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)
 
 ## Sources
 - [GitHub](https://github.com/obra/superpowers)

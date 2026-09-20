@@ -6,8 +6,8 @@ tags:
   - sub-agent
   - orchestration
 links:
-  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Context Engineering for Long-Horizon Agents](202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # Sub-Agent Delegation Pattern
@@ -37,11 +37,11 @@ The parent manages the dependency graph manually, tracking which sub-agents have
 - **Cons:** Parent must manually manage dependency graph; no peer messaging between sub-agents; no shared task list; requires careful file scoping to avoid conflicts; vague delegation produces vague results
 
 ## Examples
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — Task tool spawns sub-agents with markdown-defined briefs
+- [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — Task tool spawns sub-agents with markdown-defined briefs
 - Spring AI — Task tool implementation inspired by Claude Code's subagents, model-agnostic
 
 ## Related Patterns
-- [2026092030 - Context Engineering](./05%20-%20Architecture/2026092030%20-%20Context%20Engineering.md), [2026092031 - Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md), [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
+- [2026092030 - Context Engineering](2026092030%20-%20Context%20Engineering.md), [2026092031 - Agent Teams Pattern](../09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md), [202609202020 - Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
 
 ## Sources
 - https://addyosmani.com/blog/code-agent-orchestra/

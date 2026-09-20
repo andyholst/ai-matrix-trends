@@ -5,9 +5,9 @@ tags:
   - trend
   - architecture
 links:
-  - "[Adaptive Planning Magentic Orchestration Pattern](./05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md)"
-  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
-  - "[Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
+  - "[Adaptive Planning Magentic Orchestration Pattern](../../05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md)"
+  - "[Orchestrator-Worker Delegation Pattern](../../05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Orchestrator Worker Multi-Agent Delegation](../../05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
 ---
 
 # Adaptive Planning (Magentic) Orchestration
@@ -24,10 +24,10 @@ The pattern differs from static orchestrator-worker delegation in that the plan 
 Adaptive planning represents a maturation of multi-agent orchestration from rigid hierarchies to flexible, LLM-driven planning. It enables agents to handle novel tasks without pre-programmed decomposition strategies. However, it also introduces complexity — the manager agent's planning quality depends on its LLM's reasoning ability, and the dynamic nature makes debugging harder. As LLMs improve at planning, this pattern is likely to become the default for complex multi-agent workflows.
 
 ## Related
-- [202609200931 - Adaptive Planning Magentic Orchestration Pattern](./05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md)
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
-- [202609202024 - Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)
-- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)
+- [202609200931 - Adaptive Planning Magentic Orchestration Pattern](../../05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md)
+- [202609202020 - Orchestrator-Worker Delegation Pattern](../../05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
+- [202609202024 - Orchestrator Worker Multi-Agent Delegation](../../05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](../../05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)
 
 ## Sources
 - [Microsoft Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)

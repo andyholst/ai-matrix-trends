@@ -57,13 +57,13 @@ claude update
 - Background safety checks that pause for approval when actions deviate from the request
 
 ## Compatibility
-**Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+**Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
 **Versions:** v2.1.259+
 **Dependencies:** Claude Pro/Max or API access
 
 ## Related Plugins
-- [202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — A prime candidate for managedMcpServers deployment
-- [202609200804 - FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) — Deploy as a managed server for org-wide media generation
+- [202609200803 - Context7 MCP](202609200803%20-%20Context7%20MCP.md) — A prime candidate for managedMcpServers deployment
+- [202609200804 - FAL MCP Server](202609200804%20-%20FAL%20MCP%20Server.md) — Deploy as a managed server for org-wide media generation
 
 ## Sources
 - [Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview)
@@ -71,5 +71,5 @@ claude update
 - [managedMcpServers setting](https://www.getclaudeskills.com/blog/claude-code-managed-mcp-servers-setting)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

@@ -4,9 +4,9 @@ created: 2026-09-20T09:30:00+02:00
 tags:
   - architecture
 links:
-  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
-  - "[MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)"
-  - "[MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
+  - "[MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[MCP Hybrid Client-Server Architecture](202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)"
+  - "[MCP Gateway Aggregation Layer](202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
 ---
 
 # MCP Server-Side LLM Reusable Agent Pattern
@@ -57,9 +57,9 @@ Each MCP server embeds its own LLM, making it a self-contained, reusable AI agen
 - Translation or summarization agents exposed as MCP servers
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — proxy aggregator sits in front of multiple servers; this pattern is the server itself
-- [202609202022 - MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md) — hybrid splits LLM placement between client and server
-- [202609202023 - MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) — gateway aggregates multiple servers; this pattern is the individual server
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — proxy aggregator sits in front of multiple servers; this pattern is the server itself
+- [202609202022 - MCP Hybrid Client-Server Architecture](202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md) — hybrid splits LLM placement between client and server
+- [202609202023 - MCP Gateway Aggregation Layer](202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) — gateway aggregates multiple servers; this pattern is the individual server
 
 ## Sources
 - IBM Developer: "Model Context Protocol architecture patterns for multi-agent AI systems" (https://developer.ibm.com/articles/mcp-architecture-patterns-ai-systems/)

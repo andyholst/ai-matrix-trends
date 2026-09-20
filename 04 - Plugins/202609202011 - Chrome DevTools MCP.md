@@ -7,9 +7,9 @@ tags:
   - browser-automation
   - debugging
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
-  - "[Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md)"
+  - "[Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md)"
 ---
 
 # Chrome DevTools MCP
@@ -56,17 +56,17 @@ claude mcp add chrome-devtools -- npx @modelcontextprotocol/server-chrome-devtoo
 - Cookie and storage debugging
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md)
 - **Versions:** Node.js LTS, Chrome 112+
 
 ## Related Plugins
-- [202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — alternative for headless automation
-- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — alternative for persistent profiles
+- [202609202010 - Playwright MCP](202609202010%20-%20Playwright%20MCP.md) — alternative for headless automation
+- [202609202000 - Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md) — alternative for persistent profiles
 
 ## Sources
 - [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 - [Chrome DevTools for Agents](https://developer.chrome.com/docs/devtools/agents)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

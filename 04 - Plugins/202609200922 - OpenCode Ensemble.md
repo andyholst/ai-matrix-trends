@@ -6,7 +6,7 @@ tags:
   - opencode
   - multi-agent
 links:
-  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+  - "[OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # OpenCode Ensemble
@@ -46,13 +46,13 @@ OpenCode Ensemble is a multi-agent orchestration plugin that enables parallel ag
 - Coordinated refactoring across large codebases
 
 ## Compatibility
-- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
+- **Agent:** [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** OpenCode 2.x+, Node.js 24+
 
 ## Related Plugins
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — all-in-one agent harness
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — persistent memory across sessions
-- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) — agent routing and orchestration
+- [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md) — all-in-one agent harness
+- [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md) — persistent memory across sessions
+- [202609202000 - Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md) — agent routing and orchestration
 
 ## Sources
 - [GitHub](https://github.com/hueyexe/opencode-ensemble)
@@ -60,5 +60,5 @@ OpenCode Ensemble is a multi-agent orchestration plugin that enables parallel ag
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

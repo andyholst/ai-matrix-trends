@@ -6,9 +6,9 @@ tags:
   - cost-optimization
   - model-routing
 links:
-  - "[Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md)"
-  - "[Event-Driven Agent Concurrency Pattern](./05%20-%20Architecture/2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md)"
-  - "[MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
+  - "[Bidirectional MCP Agent Pattern](2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md)"
+  - "[Event-Driven Agent Concurrency Pattern](2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md)"
+  - "[MCP Gateway Aggregation Layer](202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)"
 ---
 
 # Tiered Routing / Model Cascade Pattern
@@ -71,9 +71,9 @@ Request ──►┌──────────────────┐
 - **Ignoring tail latency**: Cheaper models with 2x latency can hurt UX — test p95 and p99
 
 ## Related Patterns
-- [2026092030 - Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md) — tiered routing can sit in front of a bidirectional MCP server to reduce per-call costs
-- [2026092031 - Event-Driven Agent Concurrency Pattern](./05%20-%20Architecture/2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md) — event-driven agents can each apply tiered routing independently
-- [202609202023 - MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) — gateway can enforce tiered routing across all backend agents
+- [2026092030 - Bidirectional MCP Agent Pattern](2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md) — tiered routing can sit in front of a bidirectional MCP server to reduce per-call costs
+- [2026092031 - Event-Driven Agent Concurrency Pattern](2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md) — event-driven agents can each apply tiered routing independently
+- [202609202023 - MCP Gateway Aggregation Layer](202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md) — gateway can enforce tiered routing across all backend agents
 
 ## Sources
 - Google Developers Blog: "4 engineering patterns behind the strongest AI Agents Challenge submissions" (Sept 2026) — https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/

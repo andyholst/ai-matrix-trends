@@ -154,7 +154,7 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 **Complete Lists:**
 - [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — Top 5 trending + complete agent list (38 agents)
 - [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — Per-agent plugin tables (42 plugins)
-- [Trend Radar](../09%20-%20Trend%20Radar/) — Trend analysis
+- [Trend Radar](09%20-%20Trend%20Radar) — Trend analysis
 
 > **Open this vault in Obsidian** for the full linked experience — every note has install guides, config snippets, and real-world patterns.
 

@@ -8,8 +8,8 @@ aliases:
   - Hybrid LLM Placement Pattern
 links:
 links:
-  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Context Engineering for Long-Horizon Agents](202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # MCP Hybrid Client-Server Architecture
@@ -48,11 +48,11 @@ The hybrid model combines two placement strategies:
   - Increased architectural complexity from managing both client and server LLMs.
 
 ## Examples
-- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — How MCP fits into a broader protocol stack including A2A and Streamable HTTP.
-- [202609202005 - Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md) — Agent Client Protocol as an alternative to MCP for client-side orchestration.
+- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — How MCP fits into a broader protocol stack including A2A and Streamable HTTP.
+- [202609202005 - Agent Portability via Agent Client Protocol](202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md) — Agent Client Protocol as an alternative to MCP for client-side orchestration.
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Proxy aggregators as an intermediary between clients and MCP servers.
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Proxy aggregators as an intermediary between clients and MCP servers.
 
 ## Sources
 - https://developer.ibm.com/articles/mcp-architecture-patterns-ai-systems/

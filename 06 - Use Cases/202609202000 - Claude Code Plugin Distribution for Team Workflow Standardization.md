@@ -6,8 +6,8 @@ tags:
   - config
   - agent
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Multi-Server MCP Orchestration for Cross-Tool Workflows](202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)"
 ---
 
 # Claude Code Plugin Distribution for Team Workflow Standardization
@@ -69,8 +69,8 @@ A reference implementation is Cole Medin's `helpline` repo, which ships a stop h
 Plugins transform Claude Code from a personal tool into a platform. A team can standardize on a single `/deploy` skill, a shared set of MCP servers, and organization-wide hooks that enforce code quality — all maintained by one engineer and consumed by everyone. The tribal-knowledge problem that plagues AI-assisted teams (screenshots in Slack threads, incomplete README instructions) is solved by a single install command that delivers the entire workflow.
 
 ## Related
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
-- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
+- [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
 
 ## Sources
 - https://code.claude.com/docs/en/plugins

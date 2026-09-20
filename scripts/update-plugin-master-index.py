@@ -185,7 +185,7 @@ def scan_all_plugins():
         plugin_data = {
             'title': title,
             'file': f,
-            'rel_path': f"./{f.replace(' ', '%20')}",
+            'rel_path': f"{f.replace(' ', '%20')}",
             'stars': stars_num,
             'agents': sorted(compat_agents),
             'score': score,
@@ -371,8 +371,8 @@ tags:
   - ai-tools
   - index
 links:
-  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
+  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # AI Plugins & Extensions — Master Index
@@ -435,8 +435,8 @@ links:
 
 ## 🔗 Related
 
-- [README](./README.md) — vault dashboard
-- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — agent index
+- [README](../README.md) — vault dashboard
+- [Agent Master Index](../03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — agent index
 - [Architecture MOC](../07%20-%20Structure/MOC-Architecture-Patterns.md) — architecture patterns
 - [Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
 """

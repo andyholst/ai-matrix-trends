@@ -7,8 +7,8 @@ tags:
   - claude-code
   - integrations
 links:
-  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
+  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # Composio MCP
@@ -49,11 +49,11 @@ composio login
 - Design-to-code pipelines via Figma integration
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](../03%20-%20Agents/202609202000%20-%20Codex.md)
 - **Versions:** Any MCP-compliant agent
 
 ## Related Plugins
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [Docs](https://docs.composio.dev/docs/claude-code-plugin)

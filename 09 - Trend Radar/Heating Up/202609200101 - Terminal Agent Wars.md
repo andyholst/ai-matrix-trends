@@ -9,9 +9,9 @@ tags:
 aliases:
   - Terminal Agent Wars
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Aider](./03%20-%20Agents/202609202000%20-%20Aider.md)"
-  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+  - "[Claude Code](../../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Aider](../../03%20-%20Agents/202609202000%20-%20Aider.md)"
+  - "[OpenCode](../../03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # Terminal Agent Wars
@@ -32,9 +32,9 @@ Multiple AI coding agents are competing for developer mindshare in the terminal,
 - Claude Code adopted by 67% of Fortune 500 companies
 
 ## Related Patterns
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — Anthropic's CLI agent
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Open-source CLI agent
-- [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) — Terminal pair-programming
+- [202609202000 - Claude Code](../../03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — Anthropic's CLI agent
+- [202609200758 - OpenCode](../../03%20-%20Agents/202609200758%20-%20OpenCode.md) — Open-source CLI agent
+- [202609202000 - Aider](../../03%20-%20Agents/202609202000%20-%20Aider.md) — Terminal pair-programming
 
 ## Sources
 - [OpenCode GitHub](https://github.com/opencode-ai/opencode)

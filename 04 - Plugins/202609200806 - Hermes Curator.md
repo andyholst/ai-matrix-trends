@@ -49,18 +49,18 @@ curator:
 - Adopting unmanaged skills into curator governance
 
 ## Compatibility
-**Agent:** [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
+**Agent:** [202609200759 - Hermes Agent](../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
 **Versions:** Hermes Agent 1.0+
 **Dependencies:** None (built-in)
 
 ## Related Plugins
-- [202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Kanban workers create skills; Curator keeps the catalog clean
-- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) — Jev can help decide which skills to prune or consolidate
+- [202609200805 - Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Kanban workers create skills; Curator keeps the catalog clean
+- [202609202000 - Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md) — Jev can help decide which skills to prune or consolidate
 
 ## Sources
 - [Hermes Docs: Curator](https://hermes-agent.nousresearch.com/docs/user-guide/features/curator)
 - [YouTube: Hermes Agent Curator Guide](https://www.youtube.com/watch?v=SpFgS7WlCJc)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

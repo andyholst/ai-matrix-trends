@@ -6,8 +6,8 @@ tags:
   - architecture
   - multi-agent
 links:
-  - "[Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md)"
-  - "[Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md)"
+  - "[Agent Teams Pattern](2026092031%20-%20Agent%20Teams%20Pattern.md)"
+  - "[Sub-Agent Delegation Pattern](../../05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md)"
 ---
 
 # Agent Teams Pattern
@@ -24,9 +24,9 @@ When a teammate marks a task complete, any blocked tasks that depended on it aut
 Agent Teams represent the evolution from simple sub-agent delegation to true multi-agent collaboration. The pattern is being explored experimentally by Claude Code (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`) and implemented in tools like Conductor. As agent tasks grow more complex, team-based coordination will become essential.
 
 ## Related
-- [2026092031 - Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md)
-- [2026092031 - Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md)
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
+- [2026092031 - Agent Teams Pattern](2026092031%20-%20Agent%20Teams%20Pattern.md)
+- [2026092031 - Sub-Agent Delegation Pattern](../../05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md)
+- [202609202020 - Orchestrator-Worker Delegation Pattern](../../05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
 
 ## Sources
 - [Addy Osmani — Code Agent Orchestra](https://addyosmani.com/blog/code-agent-orchestra/)

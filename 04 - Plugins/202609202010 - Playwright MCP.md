@@ -6,10 +6,10 @@ tags:
   - mcp
   - browser-automation
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
-  - "[Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md)"
-  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md)"
+  - "[Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md)"
+  - "[OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)"
 ---
 
 # Playwright MCP
@@ -57,17 +57,17 @@ claude mcp add playwright -- npx @playwright/mcp@latest
 - Regression testing through scripted browser sessions
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** Node.js 18+, Playwright MCP 0.0.82+
 
 ## Related Plugins
-- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — alternative browser automation MCP
-- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) — context management for long browser sessions
+- [202609202000 - Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md) — alternative browser automation MCP
+- [202609202000 - Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md) — context management for long browser sessions
 
 ## Sources
 - [GitHub](https://github.com/microsoft/playwright-mcp)
 - [npm](https://www.npmjs.com/package/@playwright/mcp)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

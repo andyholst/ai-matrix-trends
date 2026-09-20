@@ -6,7 +6,7 @@ tags:
   - workflow
   - config
 links:
-  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering
@@ -102,9 +102,9 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 - **Over-architecting**: Using multi-agent when a single agent with the same tools would suffice
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — aggregated tool servers may feed into multi-agent pipelines
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md) — orchestration context management uses the same compaction and note-taking strategies
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — composite tools that wrap multi-system workflows for agent workers
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — aggregated tool servers may feed into multi-agent pipelines
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md) — orchestration context management uses the same compaction and note-taking strategies
+- [202609202020 - Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — composite tools that wrap multi-system workflows for agent workers
 
 ## Sources
 - Beam AI, "6 Multi-Agent Orchestration Patterns for Production (2026)"
@@ -113,4 +113,4 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 - Princeton NLP, multi-agent benchmarking study (2025)
 
 ## Related
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

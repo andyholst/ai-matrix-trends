@@ -5,8 +5,8 @@ tags:
   - workflow
   - config
 links:
-  - "[Claude Code Plugin Distribution for Team Workflow Standardization](./06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)"
-  - "[Claude Code Hooks for CI-CD Automation](./06%20-%20Use%20Cases/202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md)"
+  - "[Claude Code Plugin Distribution for Team Workflow Standardization](202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)"
+  - "[Claude Code Hooks for CI-CD Automation](202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md)"
 ---
 
 # Git Worktree Isolation for Parallel AI Agents
@@ -64,8 +64,8 @@ post_merge = []
 
 ## Related
 
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 

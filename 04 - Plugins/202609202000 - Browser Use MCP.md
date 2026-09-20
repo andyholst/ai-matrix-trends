@@ -59,19 +59,19 @@ Key environment variables: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` (one required
 - Any agent task that needs a real browser environment
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200800 - Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** browser-use 0.4+, Python 3.10+, uv
 - **Dependencies:** Chrome or Chromium, uvx
 
 ## Related Plugins
-- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Community fork with skills system and deep research workflow
-- [202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Chrome DevTools team's MCP for debugging and performance
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Safari-only MCP server for macOS users
+- [202609202000 - Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md) — Community fork with skills system and deep research workflow
+- [202609202011 - Chrome DevTools MCP](202609202011%20-%20Chrome%20DevTools%20MCP.md) — Chrome DevTools team's MCP for debugging and performance
+- [202609202000 - MCP Proxy Aggregator Pattern](../05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Safari-only MCP server for macOS users
 
 ## Sources
 - [Browser Use Docs: MCP Server](https://docs.browser-use.com/open-source/customize/integrations/mcp-server)
 - [Browser Use GitHub](https://github.com/browser-use/browser-use)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

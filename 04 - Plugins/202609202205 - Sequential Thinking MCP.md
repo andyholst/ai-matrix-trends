@@ -5,8 +5,8 @@ tags:
   - plugin
   - mcp
 links:
-  - "[Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)"
-  - "[Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)"
+  - "[Superpowers](2026092020%20-%20Superpowers.md)"
+  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
 ---
 
 # Sequential Thinking MCP
@@ -46,12 +46,12 @@ mcpServers:
 - Any task where the agent needs to "think out loud" across many steps
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](../03%20-%20Agents/202609202000%20-%20Codex.md)
 - **Versions:** MCP spec 2025-03-26+
 
 ## Related Plugins
-- [2026092020 - Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md)
-- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)
+- [2026092020 - Superpowers](2026092020%20-%20Superpowers.md)
+- [202609202000 - Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)
 
 ## Sources
 - [GitHub](https://github.com/modelcontextprotocol/servers)

@@ -9,9 +9,9 @@ tags:
   - long-horizon
 aliases:
 links:
-  - "[Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)"
-  - "[Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Context Compaction and Structured Note-Taking](202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)"
+  - "[Orchestrator Worker Multi-Agent Delegation](202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Compaction and Note-Taking for Long-Horizon Context
@@ -46,9 +46,9 @@ Session 2: agent reads notes.md ──► reorients ──► continues work
 - Enterprise expense agents: pruning to last 5 tool calls + summarization achieved 91.6% completion vs. 71% for full history (arXiv:2606.10209)
 
 ## Related Patterns
-- [202609202021 - Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
-- [202609202024 - Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)
+- [202609202021 - Context Compaction and Structured Note-Taking](202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
+- [202609202024 - Orchestrator Worker Multi-Agent Delegation](202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)
 
 ## Sources
 - Anthropic Engineering: "Effective context engineering for AI agents" (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
@@ -56,4 +56,4 @@ Session 2: agent reads notes.md ──► reorients ──► continues work
 - Sequoia Capital: "Context Engineering Our Way to Long-Horizon Agents" — Harrison Chase interview (https://sequoiacap.com/podcast/context-engineering-our-way-to-long-horizon-agents-langchains-harrison-chase)
 
 ## Related
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

@@ -78,11 +78,11 @@ In a monorepo with multiple services using different library versions, each agen
 Context7 turns "trust the model's training data" into "verify against the source." For teams upgrading libraries or working with internal packages, it eliminates a whole class of subtle bugs where code compiles but uses deprecated signatures. The MCP pattern means the same server works identically in Claude Code, Cursor, Windsurf, or any compliant client — no custom integration per tool.
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
-- [202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — The plugin this workflow uses
-- [202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — This note (self-reference for Obsidian graph)
-- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [202609200803 - Context7 MCP](../04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — The plugin this workflow uses
+- [202609200803 - Context7 MCP](../04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — This note (self-reference for Obsidian graph)
+- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
 
 ## Sources
 - https://dev.to/erikch/10-mcp-servers-worth-adding-to-your-ai-coding-workflow-in-2026-1j1m

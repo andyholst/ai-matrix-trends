@@ -10,8 +10,8 @@ tags:
 aliases:
   - Agent-to-Agent Communication
 links:
-  - "[Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
-  - "[Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md)"
+  - "[Layered Protocol Stack MCP A2A Streamable HTTP](../../05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
+  - "[Agent Portability via Agent Client Protocol](../../05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md)"
 ---
 
 # Agent-to-Agent Communication Protocols
@@ -31,9 +31,9 @@ New protocols (A2A, ACP) are emerging to enable agents to communicate with each 
 - Anthropic's MCP adding multi-agent features
 
 ## Related Patterns
-- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — Three-layer stack
-- [202609202005 - Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md) — Agent-to-host standard
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — Multi-agent orchestration
+- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](../../05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — Three-layer stack
+- [202609202005 - Agent Portability via Agent Client Protocol](../../05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md) — Agent-to-host standard
+- [202609202020 - Orchestrator-Worker Delegation Pattern](../../05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — Multi-agent orchestration
 
 ## Sources
 - [Google A2A Protocol](https://github.com/google/A2A)

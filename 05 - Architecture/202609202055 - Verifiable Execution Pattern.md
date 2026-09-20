@@ -5,8 +5,8 @@ tags:
   - architecture
   - mcp
 links:
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
-  - "[Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Layered Protocol Stack MCP A2A Streamable HTTP](202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
 ---
 
 # Verifiable Execution Pattern
@@ -54,9 +54,9 @@ The pattern addresses a governance gap: between declared intent and executed act
 - VeritasChain Standards Organization's cryptographic audit protocol for algorithmic trading
 
 ## Related Patterns
-- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — guardrails at execution points
-- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — protocol-level security
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — delegation with accountability
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — guardrails at execution points
+- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — protocol-level security
+- [202609202020 - Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — delegation with accountability
 
 ## Sources
 - https://invarians.com/blog/verifiable-ai-execution-2026.html

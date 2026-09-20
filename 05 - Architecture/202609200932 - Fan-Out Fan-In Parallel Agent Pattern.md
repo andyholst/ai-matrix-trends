@@ -4,8 +4,8 @@ created: 2026-09-20T09:32:00+02:00
 tags:
   - architecture
 links:
-  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
-  - "[Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
+  - "[Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Orchestrator Worker Multi-Agent Delegation](202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md)"
 ---
 
 # Fan-Out / Fan-In Parallel Agent Pattern
@@ -69,13 +69,13 @@ A dispatcher sends the same input (or independent subtasks) to multiple agents r
 - Multi-model consensus: running the same prompt on GPT-5, Claude, and Gemini, then voting on the best response
 
 ## Related Patterns
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — orchestrator-worker is sequential delegation; fan-out/fan-in is parallel
-- [202609202024 - Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md) — similar but typically sequential or dependency-ordered
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md) — context engineering needed to manage the collector's aggregation context
+- [202609202020 - Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — orchestrator-worker is sequential delegation; fan-out/fan-in is parallel
+- [202609202024 - Orchestrator Worker Multi-Agent Delegation](202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md) — similar but typically sequential or dependency-ordered
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md) — context engineering needed to manage the collector's aggregation context
 
 ## Sources
 - Beam AI: "6 Multi-Agent Orchestration Patterns for Production (2026)" — Fan-out/fan-in (https://beam.ai/agentic-insights/multi-agent-orchestration-patterns-production)
 - Microsoft Azure Architecture Center: "AI Agent Orchestration Patterns" — Concurrent orchestration (https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
 
 ## Related
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

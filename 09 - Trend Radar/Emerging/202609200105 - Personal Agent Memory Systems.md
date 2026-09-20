@@ -9,9 +9,9 @@ tags:
 aliases:
   - Personal Agent Memory Systems
 links:
-  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
-  - "[Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)"
-  - "[Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)"
+  - "[OpenCode](../../03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+  - "[Hermes Kanban Dashboard](../../04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)"
+  - "[Context Compaction and Structured Note-Taking](../../05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)"
 ---
 
 # Personal Agent Memory Systems
@@ -29,9 +29,9 @@ Agents are gaining persistent memory across sessions — storing project context
 Multiple approaches are competing. No clear winner yet. Privacy concerns are unresolved.
 
 ## Related Patterns
-- [202609202021 - Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md) — Long-term context management
-- [202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Work queue + memory
-- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Cross-session memory
+- [202609202021 - Context Compaction and Structured Note-Taking](../../05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md) — Long-term context management
+- [202609200805 - Hermes Kanban Dashboard](../../04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Work queue + memory
+- [202609200758 - OpenCode](../../03%20-%20Agents/202609200758%20-%20OpenCode.md) — Cross-session memory
 
 ## Sources
 - [Supermemory AI](https://supermemory.ai)

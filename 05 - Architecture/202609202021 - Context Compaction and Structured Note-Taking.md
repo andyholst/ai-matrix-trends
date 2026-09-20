@@ -8,8 +8,8 @@ aliases:
   - Agentic Memory Pattern
 links:
 links:
-  - "[Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Context Engineering for Long-Horizon Agents](202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # Context Compaction and Structured Note-Taking
@@ -43,11 +43,11 @@ Two complementary techniques address context overflow:
   - Multi-agent coordination adds orchestration overhead and prompt complexity.
 
 ## Examples
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md) — Broader context engineering strategies including compaction and sub-agent architectures.
-- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — Sub-agent isolation as a guardrail mechanism.
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md) — Broader context engineering strategies including compaction and sub-agent architectures.
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — Sub-agent isolation as a guardrail mechanism.
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Proxy aggregators can enforce context budgets on tool responses.
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Proxy aggregators can enforce context budgets on tool responses.
 
 ## Sources
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

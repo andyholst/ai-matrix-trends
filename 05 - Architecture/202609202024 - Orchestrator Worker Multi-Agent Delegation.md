@@ -8,9 +8,9 @@ tags:
   - delegation
 aliases:
 links:
-  - "[Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # Orchestrator-Worker Multi-Agent Delegation
@@ -44,9 +44,9 @@ User Goal ──► Orchestrator ──┬── Worker A (logs)    ──► re
 - A coding harness that delegates "search codebase" to one worker, "run tests" to another, and "update docs" to a third
 
 ## Related Patterns
-- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
-- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [202609202020 - Orchestrator-Worker Delegation Pattern](202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - Anthropic Engineering: "How we built our multi-agent research system" (https://www.anthropic.com/engineering/multi-agent-research-system)
@@ -54,4 +54,4 @@ User Goal ──► Orchestrator ──┬── Worker A (logs)    ──► re
 - Azure Architecture Center: "AI agent orchestration patterns" (https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
 
 ## Related
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

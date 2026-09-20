@@ -97,7 +97,10 @@ Auto-generated Map of Content for {folder}.
 ## Key Notes
 """
         for note in notes:
-            content += f"- [{note}](./{note.replace(' ', '%20')}.md) - [auto-summary]\n"
+            # note is vault-root-relative; MOC lives in 07 - Structure/
+            moc_dir = os.path.dirname(moc_path)
+            link_path = os.path.relpath(os.path.join(VAULT_DIR, note + '.md'), moc_dir)
+            content += f"- [{note}](./{link_path.replace(' ', '%20')}) - [auto-summary]\n"
     else:
         with open(moc_path) as f:
             content = f.read()
@@ -118,8 +121,10 @@ Auto-generated Map of Content for {folder}.
                     break
             
             new_lines = []
+            moc_dir = os.path.dirname(moc_path)
             for note in to_add:
-                new_lines.append(f"- [{note}](./{note.replace(' ', '%20')}.md) - [auto-summary]")
+                link_path = os.path.relpath(os.path.join(VAULT_DIR, note + '.md'), moc_dir)
+                new_lines.append(f"- [{note}](./{link_path.replace(' ', '%20')}) - [auto-summary]")
             
             lines = lines[:insert_idx] + new_lines + lines[insert_idx:]
             content = '\n'.join(lines)

@@ -7,8 +7,8 @@ tags:
   - enterprise
   - ide-plugin
 links:
-  - "[AWS Kiro](./03%20-%20Agents/202609202003%20-%20AWS%20Kiro.md)"
-  - "[GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md)"
+  - "[AWS Kiro](202609202003%20-%20AWS%20Kiro.md)"
+  - "[GitHub Copilot Agent](202609202001%20-%20GitHub%20Copilot%20Agent.md)"
 ---
 
 # Amazon Q Developer
@@ -79,8 +79,8 @@ npm install -g @aws-amplify/q-developer-cli
 - Teams already invested in AWS ecosystem
 
 ## Related Agents
-- [202609202003 - AWS Kiro](./03%20-%20Agents/202609202003%20-%20AWS%20Kiro.md)
-- [202609202001 - GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md)
+- [202609202003 - AWS Kiro](202609202003%20-%20AWS%20Kiro.md)
+- [202609202001 - GitHub Copilot Agent](202609202001%20-%20GitHub%20Copilot%20Agent.md)
 
 ## Sources
 - [Official Site](https://aws.amazon.com/q/developer/)

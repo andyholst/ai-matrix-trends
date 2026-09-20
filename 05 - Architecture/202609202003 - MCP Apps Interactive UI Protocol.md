@@ -7,8 +7,8 @@ tags:
   - ui
   - protocol
 links:
-  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
-  - "[Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
+  - "[MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)"
 ---
 
 # MCP Apps: Interactive UI Protocol Pattern
@@ -52,8 +52,8 @@ Key design decisions:
 - Limited adoption as of early 2026; most clients still expect text-only agent responses
 
 ## Examples
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — OpenAI's Apps SDK extends MCP with interactive UI components
-- [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) — goose adopted MCP-UI early and is shipping full MCP Apps support
+- [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — OpenAI's Apps SDK extends MCP with interactive UI components
+- [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md) — goose adopted MCP-UI early and is shipping full MCP Apps support
 - Approval workflows where the agent presents a diff and the user approves/rejects via buttons
 - Configuration agents that render forms for parameter selection
 
@@ -63,8 +63,8 @@ Key design decisions:
 - **Context flooding**: Rendering large data tables as UI components when a text summary would suffice
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — proxy aggregators may need to route UI component specs alongside tool calls
-- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — orchestrator agents may use UI components to present aggregated results for human review
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — proxy aggregators may need to route UI component specs alongside tool calls
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — orchestrator agents may use UI components to present aggregated results for human review
 
 ## Sources
 - Model Context Protocol blog, "MCP Apps" (November 2025)

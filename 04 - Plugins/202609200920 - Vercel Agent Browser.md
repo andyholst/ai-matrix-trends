@@ -6,9 +6,9 @@ tags:
   - browser-automation
   - cli
 links:
-  - "[Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md)"
-  - "[Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)"
+  - "[Playwright MCP](202609202010%20-%20Playwright%20MCP.md)"
+  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
+  - "[Chrome DevTools MCP](202609202011%20-%20Chrome%20DevTools%20MCP.md)"
 ---
 
 # Vercel Agent Browser
@@ -47,13 +47,13 @@ claude mcp add agent-browser -- npx agent-browser-mcp
 - Cloud browser session management with provider failover
 
 ## Compatibility
-- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
+- **Agent:** [202609202000 - Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md), [202609200758 - OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** Node.js 18+, Rust 1.75+
 
 ## Related Plugins
-- [202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — alternative browser automation via MCP
-- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Python-based browser agent
-- [202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Chrome DevTools Protocol MCP server
+- [202609202010 - Playwright MCP](202609202010%20-%20Playwright%20MCP.md) — alternative browser automation via MCP
+- [202609202000 - Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md) — Python-based browser agent
+- [202609202011 - Chrome DevTools MCP](202609202011%20-%20Chrome%20DevTools%20MCP.md) — Chrome DevTools Protocol MCP server
 
 ## Sources
 - [GitHub](https://github.com/vercel-labs/agent-browser)
@@ -61,5 +61,5 @@ claude mcp add agent-browser -- npx agent-browser-mcp
 - [Bright Data](https://brightdata.com/blog/ai/best-agent-browsers)
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](../07%20-%20Structure/MOC-Trending-Agents.md)

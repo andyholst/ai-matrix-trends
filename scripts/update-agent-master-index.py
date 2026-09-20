@@ -90,7 +90,7 @@ def scan_all_agents():
         agent_data = {
             'title': title,
             'file': f,
-            'rel_path': f"./{f.replace(' ', '%20')}",
+            'rel_path': f"{f.replace(' ', '%20')}",
             'stars': stars_num,
             'score': score,
             'tags': tags,
@@ -212,9 +212,9 @@ tags:
   - ai-tools
   - index
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)"
-  - "[Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)"
+  - "[Claude Code](202609202000%20-%20Claude%20Code.md)"
+  - "[OpenCode](202609200758%20-%20OpenCode.md)"
+  - "[Hermes Agent](202609200759%20-%20Hermes%20Agent.md)"
 ---
 
 # AI Agents — Master Index
@@ -271,8 +271,8 @@ links:
 
 ## 🔗 Related
 
-- [README](./README.md) — vault dashboard
-- [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — plugin index
+- [README](../README.md) — vault dashboard
+- [Plugin Master Index](../04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — plugin index
 - [Architecture MOC](../07%20-%20Structure/MOC-Architecture-Patterns.md) — architecture patterns
 - [Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
 """

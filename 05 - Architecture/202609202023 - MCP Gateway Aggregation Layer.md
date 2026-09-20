@@ -8,10 +8,10 @@ tags:
   - protocol
 aliases:
 links:
-  - "[MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
-  - "[Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
-  - "[MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)"
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)"
+  - "[Layered Protocol Stack MCP A2A Streamable HTTP](202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)"
+  - "[MCP Hybrid Client-Server Architecture](202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # MCP Gateway Aggregation Layer
@@ -43,9 +43,9 @@ Client ──► Gateway ──┬── MCP Server A (tools)
 - A multi-tenant SaaS that exposes per-customer tool subsets through the same gateway infrastructure
 
 ## Related Patterns
-- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)
-- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)
-- [202609202022 - MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)
+- [202609202000 - MCP Proxy Aggregator Pattern](202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)
+- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)
+- [202609202022 - MCP Hybrid Client-Server Architecture](202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)
 
 ## Sources
 - IBM Developer: "Model Context Protocol architecture patterns for multi-agent AI systems" (https://developer.ibm.com/articles/mcp-architecture-patterns-ai-systems/)

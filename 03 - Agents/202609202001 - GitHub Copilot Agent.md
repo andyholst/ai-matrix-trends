@@ -7,9 +7,9 @@ aliases:
   - GitHub Copilot
   - Copilot Agent Mode
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)"
-  - "[Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)"
+  - "[Claude Code](202609202000%20-%20Claude%20Code.md)"
+  - "[Codex](202609202000%20-%20Codex.md)"
+  - "[Cursor](202609202000%20-%20Cursor.md)"
 ---
 
 # GitHub Copilot Agent
@@ -42,10 +42,10 @@ coding_standards:
 ```
 
 ## Key Plugins/Extensions
-- [202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) (alternative VS Code agent)
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) (terminal-native alternative)
-- [202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) (browser automation)
-- [202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) (browser debugging)
+- [202609202000 - Cline](202609202000%20-%20Cline.md) (alternative VS Code agent)
+- [202609202000 - Claude Code](202609202000%20-%20Claude%20Code.md) (terminal-native alternative)
+- [202609202010 - Playwright MCP](../04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) (browser automation)
+- [202609202011 - Chrome DevTools MCP](../04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) (browser debugging)
 
 ## Strengths
 - Deepest IDE integration (VS Code, Visual Studio, JetBrains)
@@ -66,9 +66,9 @@ coding_standards:
 - Organizations with existing GitHub Enterprise licenses
 
 ## Related Agents
-- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
-- [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
-- [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)
+- [202609202000 - Claude Code](202609202000%20-%20Claude%20Code.md)
+- [202609202000 - Codex](202609202000%20-%20Codex.md)
+- [202609202000 - Cursor](202609202000%20-%20Cursor.md)
 
 ## Sources
 - [Official Docs](https://docs.github.com/en/copilot)

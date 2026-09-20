@@ -6,7 +6,7 @@ tags:
   - tool
 aliases:
 links:
-  - "[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
+  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
 ---
 
 # CI/CD Pipeline Automation with Claude Code Hooks and GitHub Actions
@@ -23,10 +23,10 @@ The autonomy model is tiered: in development the agent deploys freely; in stagin
 CI/CD pipelines shift from deterministic scripts that pause on judgment calls to hybrid workflows where the agent handles triage, fixes lint, updates docs, and even ships changes — all inside gates the organization defines. The developer role changes from manually investigating every failed build to reviewing agent-authored summaries and PRs. DORA metrics improve as build triage time drops to zero and mean-time-to-recovery shrinks because the agent can immediately diagnose and propose fixes for pipeline failures.
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
 
 ## Sources
 - https://academy.claude.com/courses/ai-native-sdlc-playbook/ci-cd-integration-and-deployment

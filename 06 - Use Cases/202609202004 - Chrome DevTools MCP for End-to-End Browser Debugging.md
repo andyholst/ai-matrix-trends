@@ -86,10 +86,10 @@ The agent's verification becomes a quality gate before merge.
 The boundary between "coding" and "debugging" blurs when the agent can see the running application. This shifts the agent's role from code generator to full-stack verifier — it doesn't just write the React component, it confirms the component renders, the API call succeeds, and no console errors appear. For frontend-heavy teams, this is the difference between "my code works" and "my app works."
 
 ## Related
-- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
-- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
-- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation plugin used alongside DevTools MCP
-- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
+- [MOC-Plugin-Ecosystem](../07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](../07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [202609202000 - Browser Use MCP](../04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation plugin used alongside DevTools MCP
+- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
 
 ## Sources
 - https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e
