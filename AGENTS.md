@@ -649,6 +649,24 @@ Modern AI architecture patterns are documented in `05 - Architecture/`. This vau
 4. Track emerging patterns in Trend Radar
 
 
+
+
+## File Deletion Prevention (CRITICAL)
+
+**NEVER DELETE FILES.** No agent, sub-agent, or script should ever delete a `.md` note file.
+
+**Rules:**
+1. If a note already exists for a topic, UPDATE it (use `patch()`) instead of creating a duplicate
+2. If a note has a duplicate timestamp, rename one (e.g., `2026092010` → `2026092015`) instead of deleting
+3. Scripts should NEVER contain `os.remove()`, `subprocess.run(['rm', ...])`, or any file deletion commands
+4. Sub-agents should NEVER be instructed to "remove", "delete", "clean up", or "deduplicate" files
+5. The only exception is manifest files in `08 - Projects/scan-manifests/` which can be cleaned up after processing
+
+**If a sub-agent reports a duplicate:**
+- Rename one file to use a different timestamp
+- Merge content if appropriate
+- NEVER delete either file
+
 ## Link Verification Rules
 
 Every note must have at least 2 working outbound links. No exceptions.

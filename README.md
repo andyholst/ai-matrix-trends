@@ -144,29 +144,23 @@
 
 ## 📊 Trend Radar
 
-| Heating Up 🔥 | Summary |
-|---------------|---------|
-| [MCP Server Ecosystem Explosion](./09%20-%20Trend%20Radar/Heating%20Up/202609200100%20-%20MCP%20Server%20Ecosystem%20Explosion.md) | 100+ community servers, new ones shipping weekly |
-| [Terminal Agent Wars](./09%20-%20Trend%20Radar/Heating%20Up/202609200101%20-%20Terminal%20Agent%20Wars.md) | Claude Code vs OpenCode vs Codex vs Cline |
-| [OpenCode Plugin Ecosystem Maturation](./09%20-%20Trend%20Radar/Heating%20Up/202609200950%20-%20OpenCode%20Plugin%20Ecosystem%20Maturation.md) | 5+ new plugins: Morph Fast Apply, Ensemble, OpenCodeRAG, Chromium Browser |
-| [Claw Code Rust Reimplementation](./09%20-%20Trend%20Radar/Heating%20Up/2026092010%20-%20Claw%20Code%20Rust%20Reimplementation.md) | 195K+ stars, fastest repo to 100K in history |
-| [Superpowers Skills Framework](./09%20-%20Trend%20Radar/Heating%20Up/2026092020%20-%20Superpowers%20Skills%20Framework.md) | 200K+ stars, methodology-driven Claude Code plugin |
-| [Composio Universal Integration](./09%20-%20Trend%20Radar/Heating%20Up/2026092022%20-%20Composio%20Universal%20Integration.md) | 1500+ apps via single MCP connection |
-| [Spec-Driven Development](./09%20-%20Trend%20Radar/Heating%20Up/2026092040%20-%20Spec-Driven%20Development.md) | Spec-as-source-of-truth workflow goes mainstream |
+### Top 5 Agents
+| Agent | Score | Mentions | Tags |
+|-------|-------|----------|------|
+| [Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | 24 | agent, cli, tool |
+| [Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | 22 | agent, workspace, open-source, visual, multi-agent |
+| [Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | 21 | agent, tool |
+| [Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | 20 | agent, cloud, autonomous |
+| [Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | 17 | agent, cli, tool |
 
-| Stable 📈 | Summary |
-|-----------|---------|
-| [Tool-Calling as Standard Interface](./09%20-%20Trend%20Radar/Stable/202609200102%20-%20Tool-Calling%20as%20Standard%20Interface.md) | All agents use structured tool-calling |
-| [Containerized Agent Sandboxes](./09%20-%20Trend%20Radar/Stable/202609200103%20-%20Containerized%20Agent%20Sandboxes.md) | Docker isolation for agent safety |
-
-| Emerging 🌱 | Summary |
-|-------------|---------|
-| [Agent-to-Agent Communication Protocols](./09%20-%20Trend%20Radar/Emerging/202609200104%20-%20Agent-to-Agent%20Communication%20Protocols.md) | A2A, ACP enabling multi-agent orchestration |
-| [Personal Agent Memory Systems](./09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) | Cross-session memory and personalization |
-| [MCP Server-Side LLM Reusable Agent Pattern](./09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) | MCP servers embedding their own LLM as self-contained agents |
-| [Adaptive Planning (Magentic) Orchestration](./09%20-%20Trend%20Radar/Emerging/202609200952%20-%20Adaptive%20Planning%20Magentic%20Orchestration.md) | Manager agents that dynamically build and pivot task plans |
-| [Context Engineering Discipline](./09%20-%20Trend%20Radar/Emerging/2026092030%20-%20Context%20Engineering%20Discipline.md) | Curating minimal high-signal token sets for agent context |
-| [Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md) | Parallel agents with shared task lists and peer messaging |
+### Top 5 Plugins
+| Plugin | Score | Mentions | Tags |
+|--------|-------|----------|------|
+| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 33 | 4 | plugin, mcp |
+| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 32 | 4 | plugin, mcp |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 29 | 3 | plugin, tool, mcp |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 29 | 3 | plugin, mcp, tool |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 29 | 3 | plugin, tool, mcp |
 
 ---
 
@@ -200,6 +194,6 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20 20:30*
+*Last refreshed: 2026-09-20 11:08*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
