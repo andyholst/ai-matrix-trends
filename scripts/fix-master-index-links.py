@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 fix-master-index-links.py - Fix frontmatter links in Master Index files.
-Ensures all files referenced in tables are listed in the links: field.
-Run after update-agent-master-index.py and update-plugin-master-index.py.
+Ensures all files in the folder are listed in the links: field.
+This script is IDEMPOTENT - running it multiple times produces the same result.
 """
 
 import os
@@ -11,36 +11,24 @@ import re
 VAULT = os.path.expanduser("~/repository/git/ai-matrix-trends")
 
 INDEX_FILES = [
-    os.path.join(VAULT, "03 - Agents", "00 - Agent Master Index.md"),
-    os.path.join(VAULT, "04 - Plugins", "00 - Plugin Master Index.md"),
+    (os.path.join(VAULT, "03 - Agents", "00 - Agent Master Index.md"), "03 - Agents"),
+    (os.path.join(VAULT, "04 - Plugins", "00 - Plugin Master Index.md"), "04 - Plugins"),
 ]
 
-def extract_linked_files(content):
-    """Extract all markdown links [text](path.md) from content"""
-    # Match markdown links: [text](./path.md) or [text](path.md)
-    links = re.findall(r'\]\(([^)]+\.md)\)', content)
-    # Extract just the filename
-    files = []
-    for link in links:
-        # Remove ./ prefix and %20 encoding
-        clean = link.replace('./', '').replace('%20', ' ')
-        # Get just the filename
-        fname = os.path.basename(clean)
-        if fname and fname not in files:
-            files.append(fname)
+def get_files_in_folder(folder_path):
+    """Get all filenames (without .md) in a folder, excluding index files"""
+    files = set()
+    if not os.path.exists(folder_path):
+        return files
+    for f in os.listdir(folder_path):
+        if f.endswith('.md') and not f.startswith('00 -'):
+            files.add(f.replace('.md', ''))
     return files
 
-def fix_frontmatter_links(filepath):
-    """Fix the links: field in frontmatter to match all referenced files"""
+def fix_frontmatter_links(filepath, folder_filter):
+    """Fix the links: field in frontmatter to match all files in the folder"""
     with open(filepath) as f:
         content = f.read()
-    
-    # Extract all markdown links from the body
-    linked_files = extract_linked_files(content)
-    
-    if not linked_files:
-        print(f"  No links found in {os.path.basename(filepath)}")
-        return
     
     # Parse frontmatter
     fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
@@ -50,26 +38,25 @@ def fix_frontmatter_links(filepath):
     
     fm = fm_match.group(1)
     
-    # Extract existing links
+    # Extract existing links from frontmatter
     links_match = re.search(r'^links:\n((?:\s*-\s*"\[\[.*?\]\]"\n?)+)', fm, re.MULTILINE)
-    existing_links = []
+    existing_links = set()
     if links_match:
-        existing_links = re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1))
+        existing_links = set(re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1)))
     
-    # Convert linked files to wikilink format
-    new_links = []
-    for fname in linked_files:
-        # Remove .md extension for wikilink
-        link_text = fname.replace('.md', '')
-        if link_text not in existing_links and link_text not in new_links:
-            new_links.append(link_text)
+    # Get all files in the target folder (these are the links we need)
+    folder_path = os.path.join(VAULT, folder_filter)
+    needed_links = get_files_in_folder(folder_path)
     
-    if not new_links:
-        print(f"  {os.path.basename(filepath)}: links already complete ({len(existing_links)} links)")
+    # Find missing links
+    missing_links = needed_links - existing_links
+    
+    if not missing_links:
+        print(f"  {os.path.basename(filepath)}: links complete ({len(existing_links)} links)")
         return
     
-    # Build new links section
-    all_links = existing_links + new_links
+    # Build new links section with ALL links (existing + new), sorted
+    all_links = sorted(existing_links | missing_links)
     links_lines = '\n'.join([f'  - "[[{l}]]"' for l in all_links])
     new_links_section = f'links:\n{links_lines}'
     
@@ -85,13 +72,13 @@ def fix_frontmatter_links(filepath):
     with open(filepath, 'w') as f:
         f.write(new_content)
     
-    print(f"  {os.path.basename(filepath)}: added {len(new_links)} links (total: {len(all_links)})")
+    print(f"  {os.path.basename(filepath)}: added {len(missing_links)} links (total: {len(all_links)})")
 
 def main():
     print("Fixing Master Index frontmatter links...")
-    for filepath in INDEX_FILES:
+    for filepath, folder_filter in INDEX_FILES:
         if os.path.exists(filepath):
-            fix_frontmatter_links(filepath)
+            fix_frontmatter_links(filepath, folder_filter)
         else:
             print(f"  {filepath} not found")
 
