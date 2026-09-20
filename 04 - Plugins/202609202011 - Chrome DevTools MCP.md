@@ -62,8 +62,8 @@ claude mcp add chrome-devtools -- npx @modelcontextprotocol/server-chrome-devtoo
 - **Versions:** Node.js LTS, Chrome 112+
 
 ## Related Plugins
-- [[202609202504 - Playwright MCP]] — alternative for headless automation
-- [[202609202503 - Browser Use MCP]] — alternative for persistent profiles
+- [[202609202010 - Playwright MCP]] — alternative for headless automation
+- [[202609202000 - Browser Use MCP]] — alternative for persistent profiles
 
 ## Sources
 - [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp)

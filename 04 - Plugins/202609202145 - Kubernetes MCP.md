@@ -5,8 +5,8 @@ tags:
   - plugin
   - mcp
 links:
-  - "[[202609202500 - GitHub MCP Server]]"
-  - "[[202609202503 - Browser Use MCP]]"
+  - "[[2026092020 - GitHub MCP Server]]"
+  - "[[202609202000 - Browser Use MCP]]"
 ---
 
 # Kubernetes MCP
@@ -49,8 +49,8 @@ mcpServers:
 - **Versions:** MCP spec 2025-03-26+
 
 ## Related Plugins
-- [[202609202500 - GitHub MCP Server]]
-- [[202609202503 - Browser Use MCP]]
+- [[2026092020 - GitHub MCP Server]]
+- [[202609202000 - Browser Use MCP]]
 
 ## Sources
 - [GitHub](https://github.com/Flux159/mcp-server-kubernetes)

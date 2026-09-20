@@ -7,7 +7,7 @@ tags:
   - integrations
 links:
   - "[[2026092022 - Composio MCP]]"
-  - "[[202609202503 - Browser Use MCP]]"
+  - "[[202609202000 - Browser Use MCP]]"
 ---
 
 # Composio Universal Integration
@@ -25,8 +25,8 @@ The "universal integration layer" pattern could become essential infrastructure 
 
 ## Related
 - [[2026092022 - Composio MCP]]
-- [[202609202503 - Browser Use MCP]]
-- [[202609202500 - GitHub MCP Server]]
+- [[202609202000 - Browser Use MCP]]
+- [[2026092020 - GitHub MCP Server]]
 
 ## Sources
 - [Docs](https://docs.composio.dev/docs/claude-code-plugin)

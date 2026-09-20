@@ -189,3 +189,4 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202500 - GitHub MCP Server]] - [auto-summary]
 - [[202609202500 - GitHub MCP Server]] - [auto-summary]
 - [[2026092020 - GitHub MCP Server]] - [auto-summary]
+- [[202609202225 - Hermes Jev Agent Router]] - [auto-summary]

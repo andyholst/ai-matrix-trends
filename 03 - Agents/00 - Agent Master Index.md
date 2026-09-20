@@ -43,11 +43,6 @@ links:
   - "[[202609202035 - Jev]]"
   - "[[202609202045 - Pareto]]"
   - "[[202609202055 - Muse Code]]"
-  - "[[202609202500 - Claude Code]]"
-  - "[[202609202501 - OpenCode]]"
-  - "[[202609202502 - Cursor]]"
-  - "[[202609202503 - Codex]]"
-  - "[[202609202504 - Devin]]"
 ---
 
 # AI Agents — Master Index
@@ -55,7 +50,7 @@ links:
 *Comprehensive index of all trending AI coding agents — Last updated: 2026-09-20*
 
 **Total agents tracked:** 34
-**Heating Up:** 9 | **Stable:** 16 | **Emerging:** 9
+**Heating Up:** 12 | **Stable:** 13 | **Emerging:** 9
 
 ---
 
@@ -77,9 +72,9 @@ links:
 |---|-------|-------|-------|--------|-------------|
 | 1 | [Aider](./202609202000%20-%20Aider.md) | 130 | — | Heating Up | Aider is an open-source terminal AI pair programmer that brings LLM-powered deve... |
 | 2 | [Nimbalyst](./202609200912%20-%20Nimbalyst.md) | 110 | — | Heating Up | Nimbalyst is an open-source visual workspace that wraps around Claude Code and O... |
-| 3 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Heating Up | Vellum is an open-source personal AI assistant that goes beyond code editing to ... |
-| 4 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Heating Up | Pi is an open-source, terminal-native coding agent that supports multiple model ... |
-| 5 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | SWE-2 is Cognition's coding model released on September 10, 2026, post-trained f... |
+| 3 | [Cursor](./202609202000%20-%20Cursor.md) | 105 | — | Heating Up | Cursor is an AI-native IDE (built as a VS Code fork) that surpassed $2B in annua... |
+| 4 | [Devin](./202609202000%20-%20Devin.md) | 100 | — | Heating Up | Devin is Cognition AI's cloud-native autonomous coding agent, positioned as the ... |
+| 5 | [Codex](./202609202000%20-%20Codex.md) | 95 | — | Heating Up | Codex is OpenAI's agent-native coding platform, re-emerged in late 2025 as a ser... |
 
 ---
 
@@ -91,26 +86,26 @@ links:
 |---|-------|-------|-------|--------|------|-------|
 | 1 | [Aider](./202609202000%20-%20Aider.md) | 130 | — | Heating Up | — | 0 |
 | 2 | [Nimbalyst](./202609200912%20-%20Nimbalyst.md) | 110 | — | Heating Up | — | 0 |
-| 3 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Heating Up | — | 0 |
-| 4 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Heating Up | — | 0 |
-| 5 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | — | 0 |
-| 6 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Heating Up | — | 0 |
-| 7 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | — | 0 |
-| 8 | [Augment](./202609202002%20-%20Augment.md) | 50 | — | Heating Up | — | 0 |
-| 9 | [Muse Code](./202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up | — | 0 |
-| 10 | [Claude Code](./202609202000%20-%20Claude%20Code.md) | 45 | — | Stable | — | 0 |
-| 11 | [Devin Desktop](./202609202025%20-%20Devin%20Desktop.md) | 40 | — | Stable | — | 0 |
-| 12 | [Pareto](./202609202045%20-%20Pareto.md) | 35 | — | Stable | — | 0 |
-| 13 | [OpenCode](./202609200758%20-%20OpenCode.md) | 30 | — | Stable | — | 0 |
-| 14 | [Hermes Agent](./202609200759%20-%20Hermes%20Agent.md) | 30 | — | Stable | — | 0 |
-| 15 | [Kilo Code](./202609202003%20-%20Kilo%20Code.md) | 30 | — | Stable | — | 0 |
-| 16 | [Codex](./202609202000%20-%20Codex.md) | 30 | — | Stable | — | 0 |
-| 17 | [Amp](./2026092010%20-%20Amp.md) | 25 | — | Stable | — | 0 |
-| 18 | [Claw Code](./2026092010%20-%20Claw%20Code.md) | 20 | — | Stable | — | 0 |
-| 19 | [Qwen Code](./2026092011%20-%20Qwen%20Code.md) | 20 | — | Stable | — | 0 |
-| 20 | [Cline](./202609202000%20-%20Cline.md) | 20 | — | Stable | — | 0 |
-| 21 | [Cursor](./202609202000%20-%20Cursor.md) | 20 | — | Stable | — | 0 |
-| 22 | [Devin](./202609202000%20-%20Devin.md) | 20 | — | Stable | — | 0 |
+| 3 | [Cursor](./202609202000%20-%20Cursor.md) | 105 | — | Heating Up | — | 0 |
+| 4 | [Devin](./202609202000%20-%20Devin.md) | 100 | — | Heating Up | — | 0 |
+| 5 | [Codex](./202609202000%20-%20Codex.md) | 95 | — | Heating Up | — | 0 |
+| 6 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Heating Up | — | 0 |
+| 7 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Heating Up | — | 0 |
+| 8 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | — | 0 |
+| 9 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Heating Up | — | 0 |
+| 10 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | — | 0 |
+| 11 | [Augment](./202609202002%20-%20Augment.md) | 50 | — | Heating Up | — | 0 |
+| 12 | [Muse Code](./202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up | — | 0 |
+| 13 | [Claude Code](./202609202000%20-%20Claude%20Code.md) | 45 | — | Stable | — | 0 |
+| 14 | [Devin Desktop](./202609202025%20-%20Devin%20Desktop.md) | 40 | — | Stable | — | 0 |
+| 15 | [Pareto](./202609202045%20-%20Pareto.md) | 35 | — | Stable | — | 0 |
+| 16 | [Hermes Agent](./202609200759%20-%20Hermes%20Agent.md) | 30 | — | Stable | — | 0 |
+| 17 | [Kilo Code](./202609202003%20-%20Kilo%20Code.md) | 30 | — | Stable | — | 0 |
+| 18 | [OpenCode](./202609200758%20-%20OpenCode.md) | 25 | — | Stable | — | 0 |
+| 19 | [Amp](./2026092010%20-%20Amp.md) | 25 | — | Stable | — | 0 |
+| 20 | [Claw Code](./2026092010%20-%20Claw%20Code.md) | 20 | — | Stable | — | 0 |
+| 21 | [Qwen Code](./2026092011%20-%20Qwen%20Code.md) | 20 | — | Stable | — | 0 |
+| 22 | [Cline](./202609202000%20-%20Cline.md) | 20 | — | Stable | — | 0 |
 | 23 | [Google Antigravity](./202609202001%20-%20Google%20Antigravity.md) | 20 | — | Stable | — | 0 |
 | 24 | [AWS Kiro](./202609202003%20-%20AWS%20Kiro.md) | 20 | — | Stable | — | 0 |
 | 25 | [RooCode](./202609202004%20-%20RooCode.md) | 20 | — | Stable | — | 0 |
@@ -128,40 +123,40 @@ links:
 
 ## 📊 By Status
 
-### Heating Up (9)
+### Heating Up (12)
 
 | # | Agent | Score | Stars | Description |
 |---|-------|-------|-------|-------------|
 | 1 | [Aider](./202609202000%20-%20Aider.md) | 130 | — | Aider is an open-source terminal AI pair programmer that bri... |
 | 2 | [Nimbalyst](./202609200912%20-%20Nimbalyst.md) | 110 | — | Nimbalyst is an open-source visual workspace that wraps arou... |
-| 3 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Vellum is an open-source personal AI assistant that goes bey... |
-| 4 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Pi is an open-source, terminal-native coding agent that supp... |
-| 5 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | SWE-2 is Cognition's coding model released on September 10, ... |
-| 6 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Jev is TypeSafe AI's first "System One Model," released on S... |
-| 7 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Windsurf was a popular AI coding IDE built on VS Code, known... |
-| 8 | [Augment](./202609202002%20-%20Augment.md) | 50 | — | Augment is a code-intelligence platform that combines deep r... |
-| 9 | [Muse Code](./202609202055%20-%20Muse%20Code.md) | 50 | — | Muse Code is Meta's first terminal-based coding agent, relea... |
+| 3 | [Cursor](./202609202000%20-%20Cursor.md) | 105 | — | Cursor is an AI-native IDE (built as a VS Code fork) that su... |
+| 4 | [Devin](./202609202000%20-%20Devin.md) | 100 | — | Devin is Cognition AI's cloud-native autonomous coding agent... |
+| 5 | [Codex](./202609202000%20-%20Codex.md) | 95 | — | Codex is OpenAI's agent-native coding platform, re-emerged i... |
+| 6 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Vellum is an open-source personal AI assistant that goes bey... |
+| 7 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Pi is an open-source, terminal-native coding agent that supp... |
+| 8 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | SWE-2 is Cognition's coding model released on September 10, ... |
+| 9 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Jev is TypeSafe AI's first "System One Model," released on S... |
+| 10 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Windsurf was a popular AI coding IDE built on VS Code, known... |
+| 11 | [Augment](./202609202002%20-%20Augment.md) | 50 | — | Augment is a code-intelligence platform that combines deep r... |
+| 12 | [Muse Code](./202609202055%20-%20Muse%20Code.md) | 50 | — | Muse Code is Meta's first terminal-based coding agent, relea... |
 
-### Stable (16)
+### Stable (13)
 
 | # | Agent | Score | Stars | Description |
 |---|-------|-------|-------|-------------|
 | 1 | [Claude Code](./202609202000%20-%20Claude%20Code.md) | 45 | — | Claude Code is Anthropic's terminal-native agentic coding to... |
 | 2 | [Devin Desktop](./202609202025%20-%20Devin%20Desktop.md) | 40 | — | Devin Desktop is the rebranded Windsurf IDE, renamed on June... |
 | 3 | [Pareto](./202609202045%20-%20Pareto.md) | 35 | — | Pareto is a composite AI model from Unbiased, launched on Se... |
-| 4 | [OpenCode](./202609200758%20-%20OpenCode.md) | 30 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
-| 5 | [Hermes Agent](./202609200759%20-%20Hermes%20Agent.md) | 30 | — | Hermes Agent is a self-hosted, self-improving AI agent built... |
-| 6 | [Kilo Code](./202609202003%20-%20Kilo%20Code.md) | 30 | — | Kilo Code is a rising VS Code agent focused on context contr... |
-| 7 | [Codex](./202609202000%20-%20Codex.md) | 30 | — | Codex is OpenAI's agent-native coding platform, re-emerged i... |
-| 8 | [Amp](./2026092010%20-%20Amp.md) | 25 | — |  |
-| 9 | [Claw Code](./2026092010%20-%20Claw%20Code.md) | 20 | — | Claw Code is a clean-room Rust reimplementation of the Claud... |
-| 10 | [Qwen Code](./2026092011%20-%20Qwen%20Code.md) | 20 | — |  |
-| 11 | [Cline](./202609202000%20-%20Cline.md) | 20 | — | Cline is an open-source (Apache 2. |
-| 12 | [Cursor](./202609202000%20-%20Cursor.md) | 20 | — | Cursor is an AI-native IDE (built as a VS Code fork) that su... |
-| 13 | [Devin](./202609202000%20-%20Devin.md) | 20 | — | Devin is Cognition AI's cloud-native autonomous coding agent... |
-| 14 | [Google Antigravity](./202609202001%20-%20Google%20Antigravity.md) | 20 | — | Google Antigravity is an agentic development environment bui... |
-| 15 | [AWS Kiro](./202609202003%20-%20AWS%20Kiro.md) | 20 | — | AWS Kiro is Amazon's spec-driven agentic development environ... |
-| 16 | [RooCode](./202609202004%20-%20RooCode.md) | 20 | — | RooCode is a reliability-first AI coding agent designed for ... |
+| 4 | [Hermes Agent](./202609200759%20-%20Hermes%20Agent.md) | 30 | — | Hermes Agent is a self-hosted, self-improving AI agent built... |
+| 5 | [Kilo Code](./202609202003%20-%20Kilo%20Code.md) | 30 | — | Kilo Code is a rising VS Code agent focused on context contr... |
+| 6 | [OpenCode](./202609200758%20-%20OpenCode.md) | 25 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
+| 7 | [Amp](./2026092010%20-%20Amp.md) | 25 | — |  |
+| 8 | [Claw Code](./2026092010%20-%20Claw%20Code.md) | 20 | — | Claw Code is a clean-room Rust reimplementation of the Claud... |
+| 9 | [Qwen Code](./2026092011%20-%20Qwen%20Code.md) | 20 | — |  |
+| 10 | [Cline](./202609202000%20-%20Cline.md) | 20 | — | Cline is an open-source (Apache 2. |
+| 11 | [Google Antigravity](./202609202001%20-%20Google%20Antigravity.md) | 20 | — | Google Antigravity is an agentic development environment bui... |
+| 12 | [AWS Kiro](./202609202003%20-%20AWS%20Kiro.md) | 20 | — | AWS Kiro is Amazon's spec-driven agentic development environ... |
+| 13 | [RooCode](./202609202004%20-%20RooCode.md) | 20 | — | RooCode is a reliability-first AI coding agent designed for ... |
 
 ### Emerging (9)
 
@@ -187,14 +182,14 @@ links:
 |---|-------|-------|-------|--------|
 | 1 | [Aider](./202609202000%20-%20Aider.md) | 130 | — | Heating Up |
 | 2 | [Nimbalyst](./202609200912%20-%20Nimbalyst.md) | 110 | — | Heating Up |
-| 3 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Heating Up |
-| 4 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Heating Up |
-| 5 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | Heating Up |
-| 6 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Heating Up |
-| 7 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Heating Up |
-| 8 | [Augment](./202609202002%20-%20Augment.md) | 50 | — | Heating Up |
-| 9 | [Muse Code](./202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up |
-| 10 | [Claude Code](./202609202000%20-%20Claude%20Code.md) | 45 | — | Stable |
+| 3 | [Cursor](./202609202000%20-%20Cursor.md) | 105 | — | Heating Up |
+| 4 | [Devin](./202609202000%20-%20Devin.md) | 100 | — | Heating Up |
+| 5 | [Codex](./202609202000%20-%20Codex.md) | 95 | — | Heating Up |
+| 6 | [Vellum](./202609200910%20-%20Vellum.md) | 80 | — | Heating Up |
+| 7 | [Pi](./202609202004%20-%20Pi.md) | 75 | — | Heating Up |
+| 8 | [SWE-2](./202609202015%20-%20SWE-2.md) | 70 | — | Heating Up |
+| 9 | [Jev](./202609202035%20-%20Jev.md) | 65 | — | Heating Up |
+| 10 | [Windsurf](./202609200800%20-%20Windsurf.md) | 50 | — | Heating Up |
 
 ---
 
@@ -203,8 +198,8 @@ links:
 | Metric | Value |
 |--------|-------|
 | Total agents | 34 |
-| Heating Up | 9 |
-| Stable | 16 |
+| Heating Up | 12 |
+| Stable | 13 |
 | Emerging | 9 |
 | CLI agents | 0 |
 | MCP-compatible | 0 |

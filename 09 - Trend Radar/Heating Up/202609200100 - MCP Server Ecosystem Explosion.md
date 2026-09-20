@@ -32,7 +32,7 @@ The MCP (Model Context Protocol) ecosystem is experiencing hypergrowth with 100+
 
 ## Related Patterns
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — Namespaced routing across upstream MCP servers
-- [[202609202502 - Context7 MCP]] — Up-to-date documentation injection
+- [[202609200803 - Context7 MCP]] — Up-to-date documentation injection
 - [[202609200804 - FAL MCP Server]] — Image generation via FAL
 
 ## Sources

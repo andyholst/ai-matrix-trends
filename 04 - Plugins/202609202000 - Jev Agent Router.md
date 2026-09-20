@@ -67,9 +67,9 @@ router = ModelRouterMiddleware(
 **Dependencies:** uv, Python 3.10+, TypeSafe API key (for LangChain integration)
 
 ## Related Plugins
-- [[202609202503 - Browser Use MCP]] — Validate browser tool calls with Jev before execution
-- [[202609202506 - Hermes Kanban Dashboard]] — Route Kanban worker tasks through Jev for cost optimization
-- [[202609202507 - Hermes Curator]] — Use Jev to decide which skills to prune or consolidate
+- [[202609202000 - Browser Use MCP]] — Validate browser tool calls with Jev before execution
+- [[202609200805 - Hermes Kanban Dashboard]] — Route Kanban worker tasks through Jev for cost optimization
+- [[202609200806 - Hermes Curator]] — Use Jev to decide which skills to prune or consolidate
 
 ## Sources
 - [TypeSafe AI: Introducing System One Models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)

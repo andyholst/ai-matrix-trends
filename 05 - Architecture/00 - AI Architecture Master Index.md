@@ -182,10 +182,10 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 ### Plugins (04 - Plugins/)
 - [[202609200759 - Hermes Agent]] — Typesafe context engine for Hermes
 - [[202609202000 - Jev Agent Router]] — Agent routing via Jev
-- [[202609202502 - Context7 MCP]] — Live library documentation
+- [[202609200803 - Context7 MCP]] — Live library documentation
 - [[202609200804 - FAL MCP Server]] — Image generation
-- [[202609202503 - Browser Use MCP]] — Browser automation
-- [[202609202501 - Firecrawl MCP Server]] — Web scraping
+- [[202609202000 - Browser Use MCP]] — Browser automation
+- [[202609202000 - Firecrawl MCP Server]] — Web scraping
 
 ### Agents (03 - Agents/)
 - [[202609202000 - Claude Code]] — Anthropic CLI agent

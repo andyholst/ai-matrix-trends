@@ -56,7 +56,7 @@ curator:
 **Dependencies:** None (built-in)
 
 ## Related Plugins
-- [[202609202506 - Hermes Kanban Dashboard]] — Kanban workers create skills; Curator keeps the catalog clean
+- [[202609200805 - Hermes Kanban Dashboard]] — Kanban workers create skills; Curator keeps the catalog clean
 - [[202609202000 - Jev Agent Router]] — Jev can help decide which skills to prune or consolidate
 
 ## Sources

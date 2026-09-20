@@ -63,8 +63,8 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 
 ## Related Plugins
 - [[202609200758 - OpenCode]] — Same plugin, Claude Code variant
-- [[202609202506 - Hermes Kanban Dashboard]] — Memory dashboard for Hermes
-- [[202609202506 - Hermes Kanban Dashboard]] — Local memory visualization for Hermes
+- [[202609200805 - Hermes Kanban Dashboard]] — Memory dashboard for Hermes
+- [[202609200805 - Hermes Kanban Dashboard]] — Local memory visualization for Hermes
 
 ## Sources
 - [Supermemory Docs: OpenCode](https://supermemory.ai/docs/integrations/opencode)

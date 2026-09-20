@@ -6,7 +6,7 @@ tags:
   - enterprise
   - autonomous
 links:
-  - "[[202609202504 - Devin]]"
+  - "[[202609202000 - Devin]]"
   - "[[202609202000 - Cursor]]"
 ---
 
@@ -37,4 +37,4 @@ Autonomous AI agents for enterprise engineering teams. Raised $200M at $5B valua
 
 ## Related
 
-[[202609202504 - Devin]], [[202609202000 - Cursor]]
+[[202609202000 - Devin]], [[202609202000 - Cursor]]

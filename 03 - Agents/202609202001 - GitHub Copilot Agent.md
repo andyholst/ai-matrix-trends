@@ -44,7 +44,7 @@ coding_standards:
 ## Key Plugins/Extensions
 - [[202609202000 - Cline]] (alternative VS Code agent)
 - [[202609202000 - Claude Code]] (terminal-native alternative)
-- [[202609202504 - Playwright MCP]] (browser automation)
+- [[202609202010 - Playwright MCP]] (browser automation)
 - [[202609202011 - Chrome DevTools MCP]] (browser debugging)
 
 ## Strengths

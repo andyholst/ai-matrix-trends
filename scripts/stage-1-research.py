@@ -2,7 +2,7 @@
 """
 Stage 1: Research - Create new agent and plugin notes directly.
 Runs as a Python script (no delegate_task needed).
-Prevents duplicates by checking existing titles.
+Prevents duplicates by checking ALL vault folders for existing titles.
 """
 
 import os
@@ -15,18 +15,16 @@ PLUGINS_DIR = os.path.join(VAULT_DIR, "04 - Plugins")
 ARCH_DIR = os.path.join(VAULT_DIR, "05 - Architecture")
 USE_CASES_DIR = os.path.join(VAULT_DIR, "06 - Use Cases")
 
-def get_existing_titles(folder):
-    """Get all existing note titles in a folder"""
+def get_all_existing_titles():
+    """Get ALL note titles across ALL vault folders (prevents cross-folder duplicates)"""
     titles = set()
-    if not os.path.exists(folder):
-        return titles
-    for f in os.listdir(folder):
-        if f.endswith('.md') and ' - ' in f:
-            # Extract title after timestamp
-            title = f.split(' - ', 1)[1].replace('.md', '').lower()
-            titles.add(title)
-            # Also add the full filename without timestamp
-            titles.add(f.replace('.md', '').lower())
+    for root, dirs, files in os.walk(VAULT_DIR):
+        if '/.git' in root:
+            continue
+        for f in files:
+            if f.endswith('.md') and ' - ' in f and not f.startswith('00 -'):
+                title = f.split(' - ', 1)[1].replace('.md', '').lower()
+                titles.add(title)
     return titles
 
 def get_next_timestamp(folder):
@@ -43,12 +41,12 @@ def get_next_timestamp(folder):
     return max_ts + 10
 
 def create_note(folder, title, tags, links, overview, agents=None):
-    """Create a new note file (skips if title already exists)"""
-    existing = get_existing_titles(folder)
+    """Create a new note file (skips if title exists ANYWHERE in vault)"""
+    existing = get_all_existing_titles()
     
-    # Check if a note with this title already exists
+    # Check if a note with this title already exists ANYWHERE
     if title.lower() in existing:
-        print(f"  ⚠ {title} already exists, skipping")
+        print(f"  ⚠ {title} already exists (somewhere in vault), skipping")
         return
     
     # Generate new timestamp

@@ -55,7 +55,7 @@ Set `FIRECRAWL_API_KEY` in your environment for authenticated higher-rate access
 ## Related Plugins
 - [[202609200758 - OpenCode]] — Alternative search/scrape plugin using Tavily
 - [[202609200758 - OpenCode]] — Native web search with citation grounding
-- [[202609202501 - Firecrawl MCP Server]] — The MCP-server version for non-OpenCode agents
+- [[202609202000 - Firecrawl MCP Server]] — The MCP-server version for non-OpenCode agents
 
 ## Sources
 - [OpenCode Firecrawl GitHub](https://github.com/firecrawl/opencode-firecrawl)
