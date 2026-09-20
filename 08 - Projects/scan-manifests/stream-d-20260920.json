@@ -1,0 +1,23 @@
+[
+  {
+    "file": "06 - Use Cases/202609202030 - Project-Level Rules for AI Code Standardization.md",
+    "title": "Project-Level Rules for AI Code Standardization",
+    "type": "use-case",
+    "agents": ["Claude Code", "GitHub Copilot"],
+    "plugins": ["project-level-rules"]
+  },
+  {
+    "file": "06 - Use Cases/202609202031 - Throwaway Scripts and One-Off Automation.md",
+    "title": "Throwaway Scripts and One-Off Automation",
+    "type": "use-case",
+    "agents": ["Claude Code"],
+    "plugins": []
+  },
+  {
+    "file": "06 - Use Cases/202609202032 - Agentic Debugging with CLI Observability.md",
+    "title": "Agentic Debugging with CLI Observability",
+    "type": "use-case",
+    "agents": ["Claude Code"],
+    "plugins": ["Aspire CLI", "Grafana MCP", "kubectl"]
+  }
+]

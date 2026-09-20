@@ -1,0 +1,20 @@
+[
+  {
+    "file": "05 - Architecture/202609202020 - Orchestrator-Worker Delegation Pattern.md",
+    "title": "Orchestrator-Worker Delegation Pattern",
+    "type": "architecture-pattern",
+    "examples": ["Orchestrator-Worker Delegation Pattern"]
+  },
+  {
+    "file": "05 - Architecture/202609202021 - Context Compaction and Structured Note-Taking.md",
+    "title": "Context Compaction and Structured Note-Taking",
+    "type": "architecture-pattern",
+    "examples": ["Context Compaction and Structured Note-Taking"]
+  },
+  {
+    "file": "05 - Architecture/202609202022 - MCP Hybrid Client-Server Architecture.md",
+    "title": "MCP Hybrid Client-Server Architecture",
+    "type": "architecture-pattern",
+    "examples": ["MCP Hybrid Client-Server Architecture"]
+  }
+]
