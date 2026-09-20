@@ -43,5 +43,29 @@
     "agents": ["Claude Code", "Cursor", "Codex"],
     "plugins": ["Context7", "Superpowers", "DataImpulse", "Linear", "Obsidian"],
     "created": "2026-09-20T09:42:00+02:00"
+  },
+  {
+    "file": "06 - Use Cases/2026092040 - Spec-Driven Development with Spec Kit.md",
+    "title": "Spec-Driven Development with Spec Kit",
+    "type": "workflow",
+    "agents": ["Claude Code", "GitHub Copilot", "Gemini CLI"],
+    "plugins": ["Spec Kit"],
+    "created": "2026-09-20T40:00:00+02:00"
+  },
+  {
+    "file": "06 - Use Cases/2026092041 - Git Worktree Isolation for Parallel AI Agents.md",
+    "title": "Git Worktree Isolation for Parallel AI Agents",
+    "type": "workflow",
+    "agents": ["Claude Code", "Codex"],
+    "plugins": ["agent-worktree"],
+    "created": "2026-09-20T41:00:00+02:00"
+  },
+  {
+    "file": "06 - Use Cases/2026092042 - CLAUDE.md as Runtime Configuration for Agent Behavior.md",
+    "title": "CLAUDE.md as Runtime Configuration for Agent Behavior",
+    "type": "config",
+    "agents": ["Claude Code", "Codex", "Gemini CLI"],
+    "plugins": [],
+    "created": "2026-09-20T42:00:00+02:00"
   }
 ]

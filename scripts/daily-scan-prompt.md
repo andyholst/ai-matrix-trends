@@ -1,5 +1,9 @@
 # AI Matrix Trends — Daily Scan Instructions
 
+**CRITICAL: Run each step SEPARATELY IN ORDER. Do NOT skip steps. Do NOT combine steps.**
+
+---
+
 ## Pre-Scan Setup
 
 1. `skill_view(name="obsidian")`
@@ -13,10 +17,7 @@
 
 Launch 4 streams via `delegate_task`.
 
-**CRITICAL RULE FOR SUB-AGENTS:**
-- **DO NOT add `links:` field to frontmatter**
-- **ONLY put links in `## Related` section at bottom using short names like `[[Claude Code]]`**
-- The merge step will resolve short names to actual filenames
+**SUB-AGENTS: DO NOT ADD `links:` TO FRONTMATTER. Only use `## Related` section at bottom.**
 
 ### Stream A: Agents (minutes 10-14)
 ```
@@ -88,85 +89,43 @@ Git: commit + push
 
 ---
 
-## Post-Scan Merge (MANDATORY)
+## Post-Scan Merge (MANDATORY — RUN SCRIPTS IN ORDER)
 
-### Step 1: Read Manifests
-`search_files(pattern="stream-*.json", target="files", path="08 - Projects/scan-manifests")`
+**AFTER ALL STREAMS COMPLETE, RUN THESE COMMANDS IN ORDER. DO NOT SKIP.**
 
-### Step 2: Add Frontmatter Links to ALL New Notes
-
-**Use execute_code to resolve links from actual files:**
-
-```python
-import os, re
-
-# Build title -> filename map
-title_map = {}
-for root, dirs, files in os.walk('${HOME}/repository/git/ai-matrix-trends'):
-    if '/.git' in root: continue
-    for f in files:
-        if f.endswith('.md'):
-            fname = f.replace('.md', '')
-            if ' - ' in fname:
-                title = fname.split(' - ', 1)[1]
-                title_map[title.lower().replace(' ', '-').replace("'", "")] = fname
-
-# Add MOCs
-title_map['moc-trending-agents'] = 'MOC-Trending-Agents'
-title_map['moc-plugin-ecosystem'] = 'MOC-Plugin-Ecosystem'
-title_map['moc-architecture-patterns'] = 'MOC-Architecture-Patterns'
-
-# Add short names
-title_map['claude-code'] = '202609202000 - Claude Code'
-title_map['codex'] = '202609202000 - Codex'
-title_map['cursor'] = '202609202000 - Cursor'
-title_map['opencode'] = '202609200758 - OpenCode'
-title_map['hermes'] = '202609200759 - Hermes Agent'
-
-# For each new note:
-# 1. Read note, find ## Related section
-# 2. Extract short names from [[...]]
-# 3. Resolve against title_map
-# 4. Add links: field to frontmatter with 2+ actual filename wikilinks
-# 5. Fix body wikilinks the same way
+### Step 1: Run Link Fixer
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/fix-links.py
 ```
 
-**Then use patch() to add frontmatter links to EVERY new note.**
+### Step 2: Update MOCs
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/update-mocs.py
+```
 
-### Step 3: Fix Orphan Wikilinks
-For EVERY note in ALL folders, check all `[[...]]` resolve to existing files. Fix with `patch()`.
+### Step 3: Update README
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/update-readme.py
+```
 
-### Step 4: Add Cross-Stream Links
-From manifests:
-- Agents → Plugins (from plugin `agents` field)
-- Plugins → Agents (same)
-- Architecture → Agents (from pattern `examples` field)
+### Step 4: Verify Vault
+```bash
+cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py
+```
 
-### Step 5: Update MOCs + Master Indexes
-- MOC-Trending-Agents.md
-- MOC-Plugin-Ecosystem.md
-- MOC-Architecture-Patterns.md
-- 05 - Architecture/00 - AI Architecture Master Index.md
-- 04 - Plugins/00 - Plugin Master Index.md
-
-### Step 6: Update README
-- Convert ALL `[[wikilinks]]` to `[text](./path.md)` Markdown
-- Update Trend Radar
-- Create atomic notes in 09 - Trend Radar/ folders
-- Update date
-
-### Step 7: Final Commit
-`terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: cross-links, MOCs, README' && git push")`
-
-### Step 8: Cleanup + Validate
-Remove old manifests. Verify 5 random notes.
+### Step 5: Commit and Push
+```bash
+cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: cross-links, MOCs, README" && git push
+```
 
 ---
 
 ## Rules
+
 - Sub-agents: NEVER write `links:` in frontmatter
-- Merge step: ALWAYS uses Python to resolve links from actual folder contents
+- Merge step: ALWAYS runs the 5 Python scripts in order
 - Every note MUST end with 2+ working frontmatter wikilinks
 - Zero orphans in body text
 
 *Vault path: ${HOME}/repository/git/ai-matrix-trends*
+*Agent profile: ai-matrix-trends*
