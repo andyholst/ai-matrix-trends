@@ -5,8 +5,6 @@ tags:
 created: 2026-09-20T20:13:43+02:00
 ---
 
-# MOC: Use Cases
-
 ## Overview
 Real-world workflows, config snippets, and integration patterns for AI coding agents.
 
@@ -56,16 +54,7 @@ Real-world workflows, config snippets, and integration patterns for AI coding ag
 ## Clusters
 
 ### Workflows
-- [[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]
-- [[202609202001 - Claude Code Hooks for CI-CD Automation]]
-- [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 
 ### Configuration
-- [[202609202003 - Context7 MCP for Live Library Documentation]]
-- [[202609202004 - Chrome DevTools MCP for End-to-End Browser Debugging]]
-- [[202609202005 - Auto-Commit Checkpoint Workflow with Stop Hooks and Git]]
 
 ## Related MOCs
-- [[MOC: Trending Agents]]
-- [[MOC: Plugin Ecosystem]]
-- [[MOC: Architecture Patterns]]
