@@ -109,5 +109,7 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]] - [auto-summary]
 - [[2026092031 - Agent Teams Pattern]] - [auto-summary]
+- [[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]] - [auto-summary]
+- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
 - [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]] - [auto-summary]
 - [[2026092032 - Agent Teams Pattern]] - [auto-summary]
