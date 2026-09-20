@@ -27,7 +27,9 @@ def get_notes_in_folder(folder):
     for root, dirs, files in os.walk(folder_path):
         for f in files:
             if f.endswith('.md') and not f.startswith('00 -'):
-                notes.append(f.replace('.md', ''))
+                full_path = os.path.join(root, f)
+                rel_path = os.path.relpath(full_path, VAULT_DIR)
+                notes.append(rel_path.removesuffix('.md'))
     return sorted(notes)
 
 def extract_existing_entries(content):
@@ -117,7 +119,7 @@ Auto-generated Map of Content for {folder}.
             
             new_lines = []
             for note in to_add:
-                new_lines.append(f"- [[{note}]] - [auto-summary]")
+                new_lines.append(f"- [{note}](./{note.replace(' ', '%20')}.md) - [auto-summary]")
             
             lines = lines[:insert_idx] + new_lines + lines[insert_idx:]
             content = '\n'.join(lines)

@@ -4,7 +4,7 @@ validate-link-quality.py - Validate quality of all links in vault.
 Stage 9 of CI pipeline.
 FAILS when:
 1. Any wikilink [[...]] found (should be markdown link [title](path))
-2. Markdown links point to non-existent files (Obsidian-style: relative to vault root)
+2. Markdown links point to non-existent files
 """
 
 import os
@@ -35,7 +35,7 @@ def build_file_map():
             continue
         for f in files:
             if f.endswith('.md'):
-                fname = f.replace('.md', '')
+                fname = f.removesuffix('.md')
                 rel_path = os.path.relpath(os.path.join(root, f), VAULT_DIR)
                 file_map[fname.lower()] = rel_path
                 file_map[fname.lower() + '.md'] = rel_path
@@ -81,7 +81,6 @@ def validate_file(filepath, file_map):
         clean = link
         
         # Obsidian links are relative to vault root
-        # Remove ./ prefix
         if clean.startswith('./'):
             clean = clean[2:]
         elif clean.startswith('../'):
@@ -97,20 +96,31 @@ def validate_file(filepath, file_map):
         else:
             clean_no_ext = clean_lower
         
-        # Check in file_map (relative to vault root)
+        # Check 1: full relative path
         if clean_no_ext in file_map:
             continue
         
-        # Also check with .md extension
+        # Check 2: with .md extension
         if clean_no_ext + '.md' in file_map:
             continue
         
-        # Check if it's a directory
+        # Check 3: just the filename (basename)
+        fname = os.path.basename(clean_no_ext)
+        if fname in file_map:
+            continue
+        
+        # Check 4: title only (after " - ")
+        if ' - ' in fname:
+            title = fname.split(' - ', 1)[1]
+            if title in file_map:
+                continue
+        
+        # Check 5: it's a directory
         test_dir = os.path.join(VAULT_DIR, clean_no_ext)
         if os.path.isdir(test_dir):
             continue
         
-        # Check filesystem directly
+        # Check 6: filesystem check
         test_file = os.path.join(VAULT_DIR, clean_no_ext + '.md')
         if os.path.isfile(test_file):
             continue

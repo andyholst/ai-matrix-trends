@@ -19,11 +19,23 @@ MOC_MAPPINGS = {
 }
 
 def extract_moc_entries(moc_content):
-    """Extract all wikilink entries from MOC"""
+    """Extract all link entries from MOC (wikilinks + markdown links)"""
     entries = set()
+    # Wikilinks
     links = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', moc_content)
     for link in links:
         entries.add(link.strip().lower())
+    # Markdown links
+    md_links = re.findall(r'\]\(([^)]+)\)', moc_content)
+    for link in md_links:
+        if not link.startswith('http'):
+            clean = link.replace('%20', ' ').lower()
+            entries.add(clean)
+            # Also add just the filename
+            fname = os.path.basename(clean)
+            if fname.endswith('.md'):
+                fname = fname.removesuffix('.md')
+            entries.add(fname)
     return entries
 
 def get_folder_notes(folder_path):
@@ -34,43 +46,34 @@ def get_folder_notes(folder_path):
     for root, dirs, files in os.walk(folder_path):
         for f in files:
             if f.endswith('.md') and not f.startswith('00 -'):
-                notes.add(f.replace('.md', '').lower())
+                notes.add(f.removesuffix('.md').lower())
     return notes
 
 def main():
     print("STAGE 5: Index Completeness")
     print("=" * 60)
-    
     total_missing = 0
     folders_with_missing = 0
-    
     for folder, moc_file in MOC_MAPPINGS.items():
         folder_path = os.path.join(VAULT_DIR, folder)
         moc_path = os.path.join(VAULT_DIR, moc_file)
-        
         if not os.path.exists(moc_path):
             print(f"  WARNING: MOC file not found: {moc_file}")
             continue
-        
         with open(moc_path) as f:
             moc_content = f.read()
-        
         moc_entries = extract_moc_entries(moc_content)
         folder_notes = get_folder_notes(folder_path)
-        
         missing = folder_notes - moc_entries
-        
         if missing:
             folders_with_missing += 1
             total_missing += len(missing)
             print(f"\n{folder}:")
             for note in sorted(missing):
                 print(f"  MISSING FROM MOC: {note}")
-    
     print(f"\n{'=' * 60}")
     print(f"Folders with missing entries: {folders_with_missing}")
     print(f"Total missing from MOCs: {total_missing}")
-    
     if total_missing > 0:
         sys.exit(1)
     else:
