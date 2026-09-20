@@ -8,6 +8,8 @@
 
 *Top 5 scored trending — Last updated: 2026-09-20*
 
+*See [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) for complete list*
+
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
 | 1 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
@@ -20,6 +22,8 @@
 ## 🔌 Top Plugins & Extensions
 
 *Top 5 scored trending — Last updated: 2026-09-20*
+
+*See [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete per-agent tables*
 
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
@@ -127,7 +131,9 @@ ai-matrix-trends/
 ├── 01 - Fleeting/        # Quick capture
 ├── 02 - Literature/      # Source material
 ├── 03 - Agents/          # Agent profiles & configs
+│   └── 00 - Agent Master Index.md  # Top 5 + complete agent list
 ├── 04 - Plugins/         # Plugin documentation
+│   └── 00 - Plugin Master Index.md # Per-agent plugin tables
 ├── 05 - Architecture/    # Pattern notes
 ├── 06 - Use Cases/       # Real-world workflows
 ├── 07 - Structure/       # Maps of Content (MOCs)
@@ -144,6 +150,11 @@ ai-matrix-trends/
 ## 🔄 Maintenance
 
 This README is the vault's **dashboard**. It refreshes daily via cron job at 20:00.
+
+**Complete Lists:**
+- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — Top 5 trending + complete agent list (38 agents)
+- [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — Per-agent plugin tables (42 plugins)
+- [Trend Radar](../09%20-%20Trend%20Radar/) — Trend analysis
 
 > **Open this vault in Obsidian** for the full linked experience — every note has install guides, config snippets, and real-world patterns.
 

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T13:05:30.484097",
+  "last_updated": "2026-09-20T13:19:12.642791",
   "items": {
     "Cline": {
       "type": "agent",
@@ -408,6 +408,19 @@
       ],
       "score": 50,
       "file": "03 - Agents/202609202055 - Muse Code.md"
+    },
+    "AI Agents \u2014 Master Index": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 1,
+      "tags": [
+        "moc",
+        "agent",
+        "ai-tools",
+        "index"
+      ],
+      "score": 5,
+      "file": "03 - Agents/00 - Agent Master Index.md"
     },
     "Browser Use MCP": {
       "type": "plugin",

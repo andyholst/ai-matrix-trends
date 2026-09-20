@@ -164,12 +164,20 @@ echo "Step 7/7b: Updating README tables..."
 python3 "$SCRIPTS_DIR/update_readme.py"
 
 echo ""
-echo "Step 7/7c: Verifying vault links..."
+echo "Step 7/7d: Verifying vault links..."
 python3 "$SCRIPTS_DIR/verify-vault.py"
 
 echo ""
-echo "Step 7/7e: Updating Plugin Master Index..."
+echo "Step 7/7e: Updating MOCs..."
+python3 "$SCRIPTS_DIR/update-mocs.py"
+
+echo ""
+echo "Step 7/7f: Updating Plugin Master Index..."
 python3 "$SCRIPTS_DIR/update-plugin-master-index.py"
+
+echo ""
+echo "Step 7/7g: Updating Agent Master Index..."
+python3 "$SCRIPTS_DIR/update-agent-master-index.py"
 
 echo ""
 echo "============================================"

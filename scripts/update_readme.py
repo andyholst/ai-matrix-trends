@@ -110,6 +110,8 @@ def update_readme():
 
 *Top 5 scored trending — Last updated: {date_str}*
 
+*See [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) for complete list*
+
 {generate_table_header()}
 """
     for i, (name, item) in enumerate(agents, 1):
@@ -120,6 +122,8 @@ def update_readme():
     plugins_section = f"""## 🔌 Top Plugins & Extensions
 
 *Top 5 scored trending — Last updated: {date_str}*
+
+*See [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete per-agent tables*
 
 {generate_table_header()}
 """
