@@ -24,9 +24,9 @@ The project supports multiple providers (Anthropic, OpenAI-compatible, Ollama, M
 The explosive growth signals that developers want open-source, provider-agnostic alternatives to Claude Code. The "agent-managed development" experiment — where autonomous agents maintain the codebase — is a novel approach that could influence how AI coding tools evolve. The Rust implementation offers performance and memory safety advantages over TypeScript-based agents.
 
 ## Related
-- [[2026092010 - Claw Code]]
-- [[202609202000 - Claude Code]]
-- [[202609200758 - OpenCode]]
+- [2026092010 - Claw Code](./03%20-%20Agents/2026092010%20-%20Claw%20Code.md)
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 
 ## Sources
 - [GitHub](https://github.com/ultraworkers/claw-code)

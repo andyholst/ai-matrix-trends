@@ -50,13 +50,13 @@ OpenCode Chromium Browser is a browser automation plugin for OpenCode that contr
 - Integration with existing Chromium profiles
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]]
+- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** OpenCode 2.x+, Chromium 120+, Node.js 18+
 
 ## Related Plugins
-- [[202609202010 - Playwright MCP]] — MCP-based browser automation
-- [[202609202011 - Chrome DevTools MCP]] — Chrome DevTools Protocol MCP
-- [[202609202000 - Browser Use MCP]] — Python-based browser agent
+- [202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — MCP-based browser automation
+- [202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Chrome DevTools Protocol MCP
+- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Python-based browser agent
 
 ## Sources
 - [GitHub](https://github.com/Quindart-com/opencode-chromium)
@@ -64,5 +64,5 @@ OpenCode Chromium Browser is a browser automation plugin for OpenCode that contr
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

@@ -63,9 +63,9 @@ A manager agent dynamically builds, refines, and executes a task plan by consult
 - Complex codebase migration where the plan evolves as the agent discovers dependencies
 
 ## Related Patterns
-- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — static plan known upfront; adaptive planning discovers the plan
-- [[202609202024 - Orchestrator Worker Multi-Agent Delegation]] — similar but with fixed decomposition
-- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — guardrails can be layered on top of adaptive planning
+- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — static plan known upfront; adaptive planning discovers the plan
+- [202609202024 - Orchestrator Worker Multi-Agent Delegation](./05%20-%20Architecture/202609202024%20-%20Orchestrator%20Worker%20Multi-Agent%20Delegation.md) — similar but with fixed decomposition
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — guardrails can be layered on top of adaptive planning
 
 ## Sources
 - Microsoft Azure Architecture Center: "AI Agent Orchestration Patterns" — Magentic orchestration (https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)

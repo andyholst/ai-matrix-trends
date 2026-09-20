@@ -57,8 +57,8 @@ validation_gates:
 
 ## Related
 
-- [[MOC-Architecture-Patterns]]
-- [[MOC-Trending-Agents]]
+- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 

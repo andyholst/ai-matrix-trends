@@ -41,8 +41,8 @@ auggie token print  # save as AUGMENT_SESSION_AUTH secret
 - Enables self-healing agent loops with automated remediation
 
 ## Related Use Cases
-- [[202609202030 - CI-CD Pipeline Automation with Claude Code Hooks and GitHub Actions]]
-- [[2026092040 - Spec-Driven Development with Spec Kit]]
+- [202609202030 - CI-CD Pipeline Automation with Claude Code Hooks and GitHub Actions](./06%20-%20Use%20Cases/202609202030%20-%20CI-CD%20Pipeline%20Automation%20with%20Claude%20Code%20Hooks%20and%20GitHub%20Actions.md)
+- [2026092040 - Spec-Driven Development with Spec Kit](./06%20-%20Use%20Cases/2026092040%20-%20Spec-Driven%20Development%20with%20Spec%20Kit.md)
 
 ## Sources
 - [CI/CD for AI Agents: How to Integrate Agent Orchestration into Your Pipeline — Augment Code](https://www.augmentcode.com/guides/cicd-ai-agents-pipeline-integration)

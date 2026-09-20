@@ -28,8 +28,8 @@ All modern AI coding agents now use structured tool-calling as their primary int
 This pattern has crossed the chasm from "innovation" to "requirement." No serious agent launches without tool-calling support.
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — Namespaced tool routing
-- [[MOC-Trending-Agents]] — Tools for context curation
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Namespaced tool routing
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md) — Tools for context curation
 
 ## Sources
 - [Anthropic Tool Use Docs](https://docs.anthropic.com/en/docs/tool-use)

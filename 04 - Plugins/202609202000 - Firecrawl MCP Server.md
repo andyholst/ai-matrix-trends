@@ -55,14 +55,14 @@ Set `FIRECRAWL_API_KEY` in your environment or `.env` file. The key is `fc-` pre
 - Answering questions that require live information beyond the agent's training cutoff
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]], [[202609200800 - Windsurf]], [[202609200758 - OpenCode]]
+- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md), [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md), [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** Any MCP-compatible client
 - **Dependencies:** Node.js 18+, npx, Firecrawl API key
 
 ## Related Plugins
-- [[202609200758 - OpenCode]] — OpenCode-specific wrapper around the same CLI
-- [[202609200758 - OpenCode]] — Alternative web search plugin for OpenCode
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — Unified MCP gateway that includes scraping tools
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — OpenCode-specific wrapper around the same CLI
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Alternative web search plugin for OpenCode
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Unified MCP gateway that includes scraping tools
 
 ## Sources
 - [Firecrawl MCP Server GitHub](https://github.com/firecrawl/firecrawl-mcp-server)
@@ -70,5 +70,5 @@ Set `FIRECRAWL_API_KEY` in your environment or `.env` file. The key is `fc-` pre
 - [Firecrawl Blog: Best MCP Servers](https://www.firecrawl.dev/blog/best-mcp-servers-for-developers)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

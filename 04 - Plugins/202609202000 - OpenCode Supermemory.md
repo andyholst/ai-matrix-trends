@@ -55,14 +55,14 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 - Onboarding to a new codebase by pre-loading project memory
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]], [[202609202000 - Claude Code]] (via separate plugin)
+- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md), [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) (via separate plugin)
 - **Versions:** OpenCode 1.0+, bun or npx
 - **Dependencies:** Supermemory account or self-hosted instance
 
 ## Related Plugins
-- [[202609200758 - OpenCode]] — Same plugin, Claude Code variant
-- [[202609200805 - Hermes Kanban Dashboard]] — Memory dashboard for Hermes
-- [[202609200805 - Hermes Kanban Dashboard]] — Local memory visualization for Hermes
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — Same plugin, Claude Code variant
+- [202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Memory dashboard for Hermes
+- [202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Local memory visualization for Hermes
 
 ## Sources
 - [Supermemory Docs: OpenCode](https://supermemory.ai/docs/integrations/opencode)
@@ -70,5 +70,5 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 - [Supermemory Blog: OpenCode Memory](https://supermemory.ai/blog/opencode-memory/)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

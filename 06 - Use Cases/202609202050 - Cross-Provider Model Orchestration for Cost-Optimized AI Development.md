@@ -39,8 +39,8 @@ claude config set subagent.model gpt-6-astra  # worker
 - Vendor redundancy avoids single-provider outages or rate limits
 
 ## Related Use Cases
-- [[2026092040 - Multi-Agent Team Orchestration for Parallel Development]]
-- [[2026092041 - AI-Powered Automated Code Review and QA]]
+- [2026092040 - Multi-Agent Team Orchestration for Parallel Development](./06%20-%20Use%20Cases/2026092040%20-%20Multi-Agent%20Team%20Orchestration%20for%20Parallel%20Development.md)
+- [2026092041 - AI-Powered Automated Code Review and QA](./06%20-%20Use%20Cases/2026092041%20-%20AI-Powered%20Automated%20Code%20Review%20and%20QA.md)
 
 ## Sources
 - [Best AI Coding Agents in 2026, Ranked — MightyBot](https://mightybot.ai/blog/coding-ai-agents-for-accelerating-engineering-workflows/)

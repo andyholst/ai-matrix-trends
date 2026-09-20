@@ -37,4 +37,4 @@ Autonomous AI agents for enterprise engineering teams. Raised $200M at $5B valua
 
 ## Related
 
-[[202609202000 - Devin]], [[202609202000 - Cursor]]
+[202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)

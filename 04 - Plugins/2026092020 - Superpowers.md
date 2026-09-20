@@ -45,11 +45,11 @@ npx skills add obra/superpowers
 - Code review with actionable feedback loops
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]]
+- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
 - **Versions:** Claude Code v2.x+
 
 ## Related Plugins
-- [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [GitHub](https://github.com/obra/superpowers)

@@ -70,9 +70,9 @@ project_context:
 - Early adopters willing to tolerate preview instability
 
 ## Related Agents
-- [[202609202000 - Claude Code]] — terminal-native agent with broader model support
-- [[202609202000 - Cursor]] — model-agnostic IDE alternative
-- [[202609202002 - Gemini CLI]] — Google's terminal-first agent
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — terminal-native agent with broader model support
+- [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) — model-agnostic IDE alternative
+- [202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md) — Google's terminal-first agent
 
 ## Sources
 - [Google Antigravity](https://antigravity.dev/)

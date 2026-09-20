@@ -60,9 +60,9 @@ The scoped variant adds a retrieval step: given the current task context, it sel
 - **Unsanitized resource content**: Returning user-generated data without stripping injected content
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — the upstream servers being aggregated often follow this pattern
-- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows
-- [[MOC-Trending-Agents]] — the scoped variant's retrieval step is itself a context engineering challenge
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — the upstream servers being aggregated often follow this pattern
+- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — composite tools that wrap multi-system workflows
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md) — the scoped variant's retrieval step is itself a context engineering challenge
 
 ## Sources
 - Rodrigues & Vas, "MCP Server Architecture Patterns for LLM-Integrated Applications" (arXiv:2606.30317, 2026)
@@ -70,4 +70,4 @@ The scoped variant adds a retrieval step: given the current task context, it sel
 - Gan & Sun, "RAG-MCP: Mitigating prompt bloat in LLM tool selection via retrieval-augmented generation" (arXiv:2505.03275, 2025)
 
 ## Related
-- [[MOC-Trending-Agents]]
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

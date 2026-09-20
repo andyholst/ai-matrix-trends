@@ -57,10 +57,10 @@ claude mcp add browserbase --transport http https://mcp.browserbase.com/mcp
 - **Status:** Self-hosted package archived July 2026; use hosted endpoint
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [Browserbase MCP](https://github.com/browserbase/mcp-server-browserbase)

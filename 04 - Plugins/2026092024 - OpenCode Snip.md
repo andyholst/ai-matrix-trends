@@ -44,11 +44,11 @@ go install github.com/edouard-claude/snip/cmd/snip@latest
 - CI/CD pipeline runs where output verbosity is high
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]]
+- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** OpenCode v1.x+
 
 ## Related Plugins
-- [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [GitHub](https://github.com/VincentHardouin/opencode-snip)

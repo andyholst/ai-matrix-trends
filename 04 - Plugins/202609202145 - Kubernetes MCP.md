@@ -45,12 +45,12 @@ mcpServers:
 - Reasoning about cluster capacity and scaling
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]]
+- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
 - **Versions:** MCP spec 2025-03-26+
 
 ## Related Plugins
-- [[2026092020 - GitHub MCP Server]]
-- [[202609202000 - Browser Use MCP]]
+- [2026092020 - GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md)
+- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)
 
 ## Sources
 - [GitHub](https://github.com/Flux159/mcp-server-kubernetes)

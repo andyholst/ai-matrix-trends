@@ -45,12 +45,12 @@ OpenCode Morph Fast Apply is a plugin that integrates the Morph Fast Apply API i
 - Fallback to standard edit when Morph is unavailable
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]]
+- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins
-- [[202609200758 - OpenCode]] — all-in-one agent harness
-- [[202609200758 - OpenCode]] — context optimization
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — all-in-one agent harness
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — context optimization
 
 ## Sources
 - [GitHub](https://github.com/JRedeker/opencode-morph-fast-apply)
@@ -58,5 +58,5 @@ OpenCode Morph Fast Apply is a plugin that integrates the Morph Fast Apply API i
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

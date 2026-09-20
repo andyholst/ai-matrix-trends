@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-validate-link-quality.py - Validate quality of frontmatter links.
+validate-link-quality.py - Validate quality of all links in vault.
 Stage 9 of CI pipeline.
 FAILS when:
-1. Links use wikilink format [[...]] instead of markdown [text](path)
+1. Any wikilink [[...]] found (should be markdown link [title](path))
 2. Link target files don't exist
 """
 
@@ -14,7 +14,6 @@ import sys
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 VAULT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 
-# Files to skip
 SKIP_FILES = [
     'AGENTS.md',
     'README.md', 
@@ -26,6 +25,7 @@ SKIP_FOLDERS = [
     '.obsidian',
     'scripts/ci',
     '00 - Inbox',
+    '07 - Structure',  # MOCs use wikilinks intentionally
 ]
 
 def build_file_map():
@@ -38,22 +38,28 @@ def build_file_map():
             if f.endswith('.md'):
                 fname = f.replace('.md', '')
                 rel_path = os.path.relpath(os.path.join(root, f), VAULT_DIR)
+                # Add without .md extension
                 file_map[fname.lower()] = rel_path
+                # Also add with .md extension for matching
+                file_map[fname.lower() + '.md'] = rel_path
                 if ' - ' in fname:
                     title = fname.split(' - ', 1)[1]
                     file_map[title.lower()] = rel_path
+                    file_map[title.lower() + '.md'] = rel_path
+    # Add special mappings for common references
+    file_map['readme.md'] = 'README.md'
+    file_map['readme'] = 'README.md'
+    
     return file_map
 
 def validate_file(filepath, file_map):
-    """Check if file has fishy frontmatter links"""
+    """Check if file has any wikilinks (should be markdown links)"""
     errors = []
     
-    # Skip certain files
     for skip in SKIP_FILES:
         if skip in filepath:
             return errors
     
-    # Skip certain folders
     for folder in SKIP_FOLDERS:
         if folder in filepath:
             return errors
@@ -61,29 +67,21 @@ def validate_file(filepath, file_map):
     with open(filepath) as f:
         content = f.read()
     
-    # Parse frontmatter
-    fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
-    if not fm_match:
-        return errors
+    # Find ALL wikilinks in the entire file
+    wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
     
-    fm = fm_match.group(1)
-    
-    # Find links section
-    links_match = re.search(r'^links:\n((?:\s*-\s*"\[\[.*?\]\]"\n?)+)', fm, re.MULTILINE)
-    if not links_match:
-        return errors
-    
-    links = re.findall(r'"\[\[(.*?)\]\]"', links_match.group(1))
-    
-    for link in links:
-        # Check if it's a wikilink (should be markdown link)
-        # Wikilinks in frontmatter are fishy - they should be markdown links
-        errors.append(f"  Wikilink in frontmatter: [[{link}]] (should be markdown link [title](path))")
+    for link in wikilinks:
+        link_lower = link.lower().strip()
         
         # Check if target exists
-        link_lower = link.lower().strip()
         if link_lower not in file_map:
             errors.append(f"  Missing target: [[{link}]] (file does not exist)")
+        else:
+            # Target exists but wikilink should be markdown link
+            target_path = file_map[link_lower]
+            encoded_path = target_path.replace(' ', '%20')
+            title = link.split(' - ', 1)[1] if ' - ' in link else link
+            errors.append(f"  Wikilink: [[{link}]] (should be markdown: [{title}](./{encoded_path}))")
     
     return errors
 
@@ -118,7 +116,7 @@ def main():
     
     if total_errors > 0:
         print(f"✗ FAIL: {total_errors} link quality issues detected")
-        print("  - Wikilinks [[...]] should be markdown links [title](path)")
+        print("  - All [[wikilinks]] should be markdown links [title](path)")
         print("  - Missing target files should be created")
         sys.exit(1)
     else:

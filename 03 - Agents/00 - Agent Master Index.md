@@ -209,7 +209,7 @@ created: 2026-09-20T20:13:43+02:00
 
 ## 🔗 Related
 
-- [[README.md]] — vault dashboard
-- [[03 - Agents/|All Agents]] — all agent notes
-- [[04 - Plugins/00 - Plugin Master Index|Plugin Master Index]] — plugin index
-- [[09 - Trend Radar/|Trend Radar]] — trend analysis
+- [README.md](./README.md) — vault dashboard
+- [All Agents](./03%20-%20Agents/202609202035%20-%20Agents.md) — all agent notes
+- [Plugin Master Index](./04%20-%20Plugins/202609202035%20-%20Plugins00%20-%20Plugin%20Master%20Index.md) — plugin index
+- [Trend Radar](./00%20-%20Inbox/202609202035%20-%20Trend%20Radar.md) — trend analysis

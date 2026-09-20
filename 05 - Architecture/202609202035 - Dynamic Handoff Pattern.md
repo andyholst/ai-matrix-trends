@@ -46,9 +46,9 @@ Key characteristics:
 - Healthcare triage systems where initial symptoms reveal specialist needs progressively
 
 ## Related Patterns
-- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — centralized alternative with a supervisor
-- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — adds guardrails to multi-agent coordination
-- [[2026092031 - Agent Teams Pattern]] — team-based coordination alternative
+- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — centralized alternative with a supervisor
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — adds guardrails to multi-agent coordination
+- [2026092031 - Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md) — team-based coordination alternative
 
 ## Sources
 - https://beam.ai/agentic-insights/multi-agent-orchestration-patterns-production

@@ -24,10 +24,10 @@ The portability is the key differentiator: skills are just markdown, so the same
 Custom skills shift workflow automation from ad-hoc prompts to standardized, team-owned tools. The cost of encoding a recurring workflow is low — a markdown file — but the payoff is consistency: every commit follows the same format, every Jira ticket has the required fields, every podcast episode has show notes in the same style. This also creates a continuous improvement loop: teams discover edge cases, update the skill, and every developer's agent immediately benefits.
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Architecture-Patterns]]
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Architecture-Patterns]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
 
 ## Sources
 - https://www.danclarke.com/the-many-use-cases-of-ai-coding-agents/

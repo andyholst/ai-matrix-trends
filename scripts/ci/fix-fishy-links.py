@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-fix-fishy-links.py - Convert wikilinks to markdown links and create missing targets.
-Converts [[...]] format in frontmatter to [title](path) format.
+fix-fishy-links.py - Convert all wikilinks to markdown links.
+Converts [[title]] and [[title|display]] to [display](./path).
+Creates missing target files when needed.
 """
 
 import os
@@ -26,30 +27,31 @@ def build_file_map():
                 if ' - ' in fname:
                     title = fname.split(' - ', 1)[1]
                     file_map[title.lower()] = rel_path
+    # Add special mappings for common references
+    file_map['readme.md'] = 'README.md'
+    file_map['readme'] = 'README.md'
+    
     return file_map
 
 def create_missing_target(link_text, file_map):
     """Create a placeholder file for a missing link target"""
     link_lower = link_text.lower()
     
-    # Don't create MOC files - those should be fixed differently
-    if 'moc-' in link_lower or 'moc:' in link_lower:
-        return None
-    
     # Determine target folder based on link content
-    if any(kw in link_lower for kw in ['plugin', 'mcp server', 'mcp']):
+    if any(kw in link_lower for kw in ['plugin', 'mcp']):
         target_folder = '04 - Plugins'
-    elif any(kw in link_lower for kw in ['agent', 'cli', 'copilot']):
+    elif any(kw in link_lower for kw in ['agent', 'cli', 'copilot', 'code']):
         target_folder = '03 - Agents'
     elif any(kw in link_lower for kw in ['pattern', 'architecture', 'orchestration']):
         target_folder = '05 - Architecture'
-    elif any(kw in link_lower for kw in ['use case', 'workflow', 'hooks']):
+    elif any(kw in link_lower for kw in ['use case', 'workflow', 'hooks', 'ci-cd']):
         target_folder = '06 - Use Cases'
+    elif 'readme' in link_lower:
+        return None  # Don't create README
     else:
         target_folder = '00 - Inbox'
     
     # Generate filename from link text
-    # Extract title from "timestamp - title" format or use whole link
     if ' - ' in link_text:
         title = link_text.split(' - ', 1)[1]
     else:
@@ -93,75 +95,68 @@ links:
     
     return filepath
 
+def convert_wikilink_to_markdown(wikilink, file_map):
+    """Convert a wikilink to markdown link format"""
+    # Handle [[title|display]] format
+    if '|' in wikilink:
+        target, display = wikilink.split('|', 1)
+    else:
+        target = wikilink
+        display = wikilink
+    
+    target_lower = target.lower().strip()
+    display = display.strip()
+    
+    # Check if target exists
+    if target_lower in file_map:
+        target_path = file_map[target_lower]
+        encoded_path = target_path.replace(' ', '%20')
+        return f'[{display}](./{encoded_path})'
+    else:
+        # Create missing target
+        new_target = create_missing_target(target, file_map)
+        if new_target:
+            # Rebuild file_map entry
+            new_fname = os.path.basename(new_target).replace('.md', '')
+            file_map[new_fname.lower()] = os.path.relpath(new_target, VAULT_DIR)
+            if ' - ' in new_fname:
+                t = new_fname.split(' - ', 1)[1]
+                file_map[t.lower()] = file_map[new_fname.lower()]
+            
+            target_path = file_map[target_lower] if target_lower in file_map else file_map[new_fname.lower()]
+            encoded_path = target_path.replace(' ', '%20')
+            return f'[{display}](./{encoded_path})'
+        else:
+            # Return original if can't create (README, etc.)
+            return f'[[{wikilink}]]'
+
 def fix_file(filepath, file_map):
-    """Convert wikilinks to markdown links in frontmatter"""
+    """Convert all wikilinks in a file to markdown links"""
     with open(filepath) as f:
         content = f.read()
     
-    # Parse frontmatter
-    fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
-    if not fm_match:
+    original = content
+    
+    # Find all wikilinks
+    wikilinks = re.findall(r'\[\[([^\]]+)\]\]', content)
+    
+    if not wikilinks:
         return False
     
-    fm = fm_match.group(1)
+    for wikilink in wikilinks:
+        markdown_link = convert_wikilink_to_markdown(wikilink, file_map)
+        if markdown_link != f'[[{wikilink}]]':
+            content = content.replace(f'[[{wikilink}]]', markdown_link, 1)
     
-    # Find links section
-    links_match = re.search(r'^links:\n((?:\s*-\s*"\[\[.*?\]\]"\n?)+)', fm, re.MULTILINE)
-    if not links_match:
-        return False
+    if content != original:
+        with open(filepath, 'w') as f:
+            f.write(content)
+        return True
     
-    links_text = links_match.group(1)
-    links = re.findall(r'"\[\[(.*?)\]\]"', links_text)
-    
-    if not links:
-        return False
-    
-    # Convert wikilinks to markdown links
-    new_links = []
-    changed = False
-    
-    for link in links:
-        link_lower = link.lower().strip()
-        
-        # Check if target exists
-        if link_lower in file_map:
-            # Convert to markdown link
-            target_path = file_map[link_lower]
-            # Use relative path with %20 for spaces (markdown standard)
-            encoded_path = target_path.replace(' ', '%20')
-            # Use title part for display
-            title = link.split(' - ', 1)[1] if ' - ' in link else link
-            new_links.append(f'  - "[{title}](./{encoded_path})"')
-            changed = True
-        else:
-            # Create missing target
-            new_target = create_missing_target(link, file_map)
-            if new_target:
-                # Convert to markdown link
-                target_path = file_map[link_lower] if link_lower in file_map else os.path.relpath(new_target, VAULT_DIR)
-                encoded_path = target_path.replace(' ', '%20')
-                title = link.split(' - ', 1)[1] if ' - ' in link else link
-                new_links.append(f'  - "[{title}](./{encoded_path})"')
-                changed = True
-            else:
-                # Keep as-is (MOC link, etc.)
-                new_links.append(f'  - "[[{link}]]"')
-    
-    if not changed:
-        return False
-    
-    # Rebuild frontmatter
-    new_links_text = '\n'.join(new_links)
-    new_fm = fm.replace(links_text, new_links_text)
-    new_content = content.replace(fm, new_fm)
-    
-    with open(filepath, 'w') as f:
-        f.write(new_content)
-    
-    return True
+    return False
 
 def main():
-    print("Fixing fishy links (converting wikilinks to markdown links)...")
+    print("Converting all wikilinks to markdown links...")
     
     file_map = build_file_map()
     fixed = 0

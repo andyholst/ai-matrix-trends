@@ -49,11 +49,11 @@ composio login
 - Design-to-code pipelines via Figma integration
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]]
+- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
 - **Versions:** Any MCP-compliant agent
 
 ## Related Plugins
-- [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [Docs](https://docs.composio.dev/docs/claude-code-plugin)

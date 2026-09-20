@@ -56,8 +56,8 @@ Key principles:
 - Signal-to-noise ratio is the most important metric for tool adoption
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Architecture-Patterns]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)
 
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Architecture-Patterns]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Architecture-Patterns](./07%20-%20Structure/MOC-Architecture-Patterns.md)

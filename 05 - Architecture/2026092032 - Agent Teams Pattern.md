@@ -39,11 +39,11 @@ File locking prevents two teammates from editing the same file simultaneously. E
 - **Cons:** More complex setup than simple sub-agents; requires git worktrees or similar isolation; WIP limits needed (3–5 agents sweet spot); vague specs multiply errors across the fleet; verification becomes the bottleneck, not generation
 
 ## Examples
-- [[202609202000 - Claude Code]] — experimental Agent Teams feature (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — experimental Agent Teams feature (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
 - Conductor — local orchestrator managing agents in isolated worktrees
 
 ## Related Patterns
-- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092030 - Context Engineering]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]
+- [2026092031 - Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md), [2026092030 - Context Engineering](./05%20-%20Architecture/2026092030%20-%20Context%20Engineering.md), [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)
 
 ## Sources
 - https://addyosmani.com/blog/code-agent-orchestra/

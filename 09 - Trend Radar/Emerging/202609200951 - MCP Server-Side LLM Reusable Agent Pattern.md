@@ -24,10 +24,10 @@ The key advantage is reusability: a well-designed server-side agent can be calle
 This pattern blurs the line between MCP server and MCP client. A server-side agent can itself call other MCP servers, creating a recursive agent topology. It also raises questions about context management — the server's LLM needs its own context window, separate from the client's. As MCP adoption grows, expect more servers to embed LLMs for autonomous operation.
 
 ## Related
-- [[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]]
-- [[202609202022 - MCP Hybrid Client-Server Architecture]]
-- [[202609202023 - MCP Gateway Aggregation Layer]]
-- [[202609202000 - MCP Proxy Aggregator Pattern]]
+- [202609200951 - MCP Server-Side LLM Reusable Agent Pattern](./09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md)
+- [202609202022 - MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)
+- [202609202023 - MCP Gateway Aggregation Layer](./05%20-%20Architecture/202609202023%20-%20MCP%20Gateway%20Aggregation%20Layer.md)
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)
 
 ## Sources
 - [IBM Developer: MCP Architecture Patterns](https://developer.ibm.com/articles/mcp-architecture-patterns-ai-systems/)

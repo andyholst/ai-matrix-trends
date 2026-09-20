@@ -49,12 +49,12 @@ requires_env:
 - Registering context-compression engines via `ctx.register_context_engine()`
 
 ## Compatibility
-- **Agent:** [[202609200759 - Hermes Agent]]
+- **Agent:** [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
 - **Versions:** Hermes Agent 1.0+
 
 ## Related Plugins
-- [[202609202000 - Jev Agent Router]] — example plugin using the system
-- [[202609200758 - OpenCode]] — alternative memory approach
+- [202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) — example plugin using the system
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) — alternative memory approach
 
 ## Sources
 - [Hermes Plugin Docs](https://hermes-agent.nousresearch.com/docs/user-guide/features/plugins)
@@ -62,5 +62,5 @@ requires_env:
 - [Evey's Hermes Plugins](https://github.com/42-evey/hermes-plugins)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

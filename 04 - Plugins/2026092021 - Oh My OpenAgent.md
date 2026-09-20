@@ -52,11 +52,11 @@ npx lazycodex-ai install
 - Ultrawork mode for extended autonomous coding sessions
 
 ## Compatibility
-- **Agent:** [[202609200758 - OpenCode]], [[202609202000 - Codex]]
+- **Agent:** [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md), [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)
 - **Versions:** OpenCode v1.x+, Codex CLI
 
 ## Related Plugins
-- [[MOC-Plugin-Ecosystem]], [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md), [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 
 ## Sources
 - [GitHub](https://github.com/code-yeongyu/oh-my-openagent)

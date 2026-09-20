@@ -171,7 +171,7 @@ links:
 ```
 
 ## Key Plugins/Extensions
-- [[202609202000 - Browser Use MCP]]
+- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)
 
 ## Strengths
 -
@@ -183,7 +183,7 @@ links:
 -
 
 ## Related Agents
-- [[202609200758 - OpenCode]]
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 
 ## Sources
 - [Official Docs](url)
@@ -221,11 +221,11 @@ links:
 -
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]]
+- **Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
 - **Versions:** x.x.x+
 
 ## Related Plugins
-- [[202609200803 - Context7 MCP]]
+- [202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md)
 
 ## Sources
 - [GitHub](url)
@@ -260,10 +260,10 @@ links:
 - **Cons:**
 
 ## Examples
-- [[202609202000 - Claude Code]]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]]
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)
 
 ## Sources
 -
@@ -276,7 +276,7 @@ links:
 | `id` | Timestamp ID matching filename |
 | `created` | ISO 8601 creation date |
 | `tags` | Flat tag list — no hierarchy. Use kebab-case |
-| `aliases` | Alternative titles Obsidian can match via `[[202609202000 - Claude Code]]` |
+| `aliases` | Alternative titles Obsidian can match via `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` |
 | `links` | Explicit list of strongly related permanent notes |
 | `Core Idea` | The one-liner — if you can only read one sentence |
 | `Details` | The meat — own words, blockquotes for source material |
@@ -339,22 +339,22 @@ tags:
 [2 sentences on what this map covers]
 
 ## Key Notes
-- [[202609202000 - Claude Code]] — [one-line summary]
-- [[202609202000 - Claude Code]] — [one-line summary]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — [one-line summary]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — [one-line summary]
 
 ## Clusters
 ### Sub-theme A
-- [[202609202000 - Claude Code]]
-- [[202609200758 - OpenCode]]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)
 
 ### Sub-theme B
-- [[202609202000 - Cursor]]
+- [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)
 
 ## Open Questions
 - What is the relationship between X and Y?
 
 ## Related MOCs
-- [[MOC-Trending-Agents]]
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)
 ```
 
 ### MOC Maintenance
@@ -380,12 +380,12 @@ tags:
 
 ### Wikilink Resolution (CRITICAL)
 
-Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude Code]]` for readability. The merge step MUST resolve these to actual filenames before completing.
+Sub-agents write notes with short-name wikilinks like `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` for readability. The merge step MUST resolve these to actual filenames before completing.
 
 **Rules:**
-- `[[202609202000 - Claude Code]]` must resolve to `[[202609202000 - Claude Code]]` (the actual file)
-- `[[202609202000 - Browser Use MCP]]` must resolve to `[[202609202000 - Browser Use MCP]]`
-- `[[202609200758 - OpenCode]]` must resolve to `[[202609200758 - OpenCode]]`
+- `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` must resolve to `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` (the actual file)
+- `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` must resolve to `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)`
+- `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` must resolve to `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)`
 - Always search all folders to find the matching filename
 - If no exact match exists, find the closest partial match
 - If no match exists at all, link to the most relevant MOC
@@ -394,60 +394,60 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 
 | Source Link | Resolution Logic | Target Link |
 |-------------|------------------|-------------|
-| `[[202609202000 - Claude Code]]` | Find file with "Claude Code" in name | `[[202609202000 - Claude Code]]` |
-| `[[202609202000 - Codex]]` or `[[202609202000 - Codex]]` | Find file with "Codex" in name | `[[202609202000 - Codex]]` |
-| `[[202609200758 - OpenCode]]` | Find file with "OpenCode" in name | `[[202609200758 - OpenCode]]` |
-| `[[202609200759 - Hermes Agent]]` or `[[202609200759 - Hermes Agent]]` | Find file with "Hermes" in name | `[[202609200759 - Hermes Agent]]` |
-| `[[202609202000 - Cursor]]` | Find file with "Cursor" in name | `[[202609202000 - Cursor]]` |
-| `[[202609202000 - Cline]]` | Find file with "Cline" in name | `[[202609202000 - Cline]]` |
-| `[[202609202000 - Aider]]` | Find file with "Aider" in name | `[[202609202000 - Aider]]` |
-| `[[202609200800 - Windsurf]]` | Find file with "Windsurf" in name | `[[202609200800 - Windsurf]]` |
-| `[[202609202000 - Cursor]]` | Closest editor agent → Cursor | `[[202609202000 - Cursor]]` |
-| `[[202609202001 - GitHub Copilot Agent]]` | Find file with "Copilot" or "GitHub" | `[[202609202001 - GitHub Copilot Agent]]` |
-| `[[202609202002 - Gemini CLI]]` | Find file with "Gemini" | `[[202609202002 - Gemini CLI]]` |
-| `[[202609202005 - JetBrains Junie]]` | Find file with "Junie" or "JetBrains" | `[[202609202005 - JetBrains Junie]]` |
-| `[[2026092014 - Kilo Code]]` | Find file with "Kilo" | `[[2026092014 - Kilo Code]]` |
-| `[[202609202004 - RooCode]]` | Find file with "Roo" | `[[202609202004 - RooCode]]` |
-| `[[202609202004 - Pi]]` | Pi agent not yet created → link to MOC | `[[MOC-Trending-Agents]]` |
-| `[[202609202000 - Browser Use MCP]]` | Find file with "Browser Use" | `[[202609202000 - Browser Use MCP]]` |
-| `[[202609202000 - Firecrawl MCP Server]]` | Find file with "Firecrawl MCP" | `[[202609202000 - Firecrawl MCP Server]]` |
-| `[[202609200803 - Context7 MCP]]` | Find file with "Context7" | `[[202609200803 - Context7 MCP]]` |
-| `[[202609200804 - FAL MCP Server]]` | Find file with "FAL MCP" | `[[202609200804 - FAL MCP Server]]` |
-| `[[202609200805 - Hermes Kanban Dashboard]]` | Find file with "Kanban" | `[[202609200805 - Hermes Kanban Dashboard]]` |
-| `[[202609200806 - Hermes Curator]]` | Find file with "Curator" | `[[202609200806 - Hermes Curator]]` |
-| `[[202609202000 - Jev Agent Router]]` | Find file with "Jev" | `[[202609202000 - Jev Agent Router]]` |
-| `[[202609202010 - Playwright MCP]]` | Find file with "Playwright" | `[[202609202010 - Playwright MCP]]` |
-| `[[202609202011 - Chrome DevTools MCP]]` | Find file with "Chrome DevTools" | `[[202609202011 - Chrome DevTools MCP]]` |
-| `[[202609202000 - OpenCode Firecrawl]]` | Find file with "OpenCode Firecrawl" | `[[202609202000 - OpenCode Firecrawl]]` |
-| `[[202609202000 - OpenCode Supermemory]]` | Find file with "Supermemory" | `[[202609202000 - OpenCode Supermemory]]` |
-| `[[202609202000 - OpenCode Firecrawl]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
-| `[[202609202000 - OpenCode Firecrawl]]` | Closest OpenCode plugin | `[[202609202000 - OpenCode Firecrawl]]` |
-| `[[202609200805 - Hermes Kanban Dashboard]]` | Closest Hermes plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
-| `[[202609200805 - Hermes Kanban Dashboard]]` | Closest memory/dashboard plugin | `[[202609200805 - Hermes Kanban Dashboard]]` |
-| `[[202609202000 - Browser Use MCP]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
-| `[[202609202011 - Chrome DevTools MCP]]` | Closest devtools MCP | `[[202609202011 - Chrome DevTools MCP]]` |
-| `[[202609202000 - Browser Use MCP]]` | Closest browser MCP | `[[202609202000 - Browser Use MCP]]` |
-| `[[202609202000 - MCP Proxy Aggregator Pattern]]` | Find file with "Proxy Aggregator" | `[[202609202000 - MCP Proxy Aggregator Pattern]]` |
-| `[[202609202001 - Context Engineering for Long-Horizon Agents]]` | Find file with "Context Engineering" | `[[202609202001 - Context Engineering for Long-Horizon Agents]]` |
-| `[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]` | Find file with "Multi-Agent Orchestration" | `[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]` |
-| `[[202609202003 - MCP Apps Interactive UI Protocol]]` | Find file with "Interactive UI" | `[[202609202003 - MCP Apps Interactive UI Protocol]]` |
-| `[[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]` | Find file with "Layered Protocol" | `[[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]` |
-| `[[202609202005 - Agent Portability via Agent Client Protocol]]` | Find file with "Agent Portability" | `[[202609202005 - Agent Portability via Agent Client Protocol]]` |
-| `[[202609202020 - Orchestrator-Worker Delegation Pattern]]` | Find file with "Orchestrator" | `[[202609202020 - Orchestrator-Worker Delegation Pattern]]` |
-| `[[202609202021 - Context Compaction and Structured Note-Taking]]` | Find file with "Context Compaction" | `[[202609202021 - Context Compaction and Structured Note-Taking]]` |
-| `[[202609202022 - MCP Hybrid Client-Server Architecture]]` | Find file with "Hybrid Client-Server" | `[[202609202022 - MCP Hybrid Client-Server Architecture]]` |
-| `[[202609202001 - Claude Code Hooks for CI-CD Automation]]` | Find file with "CI/CD" | `[[202609202001 - Claude Code Hooks for CI-CD Automation]]` |
-| `[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]` | Find file with "Plugin Distribution" | `[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]` |
-| `[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]` | Find file with "Multi-Server MCP" | `[[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]` |
-| `[[202609200758 - OpenCode]]` | Wrong timestamp → actual file | `[[202609200758 - OpenCode]]` |
-| `[[202609200759 - Hermes Agent]]` | Wrong timestamp → actual file | `[[202609200759 - Hermes Agent]]` |
+| `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` | Find file with "Claude Code" in name | `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` |
+| `[202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)` or `[202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)` | Find file with "Codex" in name | `[202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md)` |
+| `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` | Find file with "OpenCode" in name | `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` |
+| `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)` or `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)` | Find file with "Hermes" in name | `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)` |
+| `[202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)` | Find file with "Cursor" in name | `[202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)` |
+| `[202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md)` | Find file with "Cline" in name | `[202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md)` |
+| `[202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md)` | Find file with "Aider" in name | `[202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md)` |
+| `[202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md)` | Find file with "Windsurf" in name | `[202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md)` |
+| `[202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)` | Closest editor agent → Cursor | `[202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md)` |
+| `[202609202001 - GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md)` | Find file with "Copilot" or "GitHub" | `[202609202001 - GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md)` |
+| `[202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)` | Find file with "Gemini" | `[202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)` |
+| `[202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md)` | Find file with "Junie" or "JetBrains" | `[202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md)` |
+| `[2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md)` | Find file with "Kilo" | `[2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md)` |
+| `[202609202004 - RooCode](./03%20-%20Agents/202609202004%20-%20RooCode.md)` | Find file with "Roo" | `[202609202004 - RooCode](./03%20-%20Agents/202609202004%20-%20RooCode.md)` |
+| `[202609202004 - Pi](./03%20-%20Agents/202609202004%20-%20Pi.md)` | Pi agent not yet created → link to MOC | `[MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)` |
+| `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` | Find file with "Browser Use" | `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` |
+| `[202609202000 - Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md)` | Find file with "Firecrawl MCP" | `[202609202000 - Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md)` |
+| `[202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md)` | Find file with "Context7" | `[202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md)` |
+| `[202609200804 - FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md)` | Find file with "FAL MCP" | `[202609200804 - FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md)` |
+| `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` | Find file with "Kanban" | `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` |
+| `[202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md)` | Find file with "Curator" | `[202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md)` |
+| `[202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)` | Find file with "Jev" | `[202609202000 - Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md)` |
+| `[202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md)` | Find file with "Playwright" | `[202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md)` |
+| `[202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)` | Find file with "Chrome DevTools" | `[202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)` |
+| `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` | Find file with "OpenCode Firecrawl" | `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` |
+| `[202609202000 - OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md)` | Find file with "Supermemory" | `[202609202000 - OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md)` |
+| `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` | Closest OpenCode plugin | `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` |
+| `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` | Closest OpenCode plugin | `[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)` |
+| `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` | Closest Hermes plugin | `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` |
+| `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` | Closest memory/dashboard plugin | `[202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md)` |
+| `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` | Closest browser MCP | `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` |
+| `[202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)` | Closest devtools MCP | `[202609202011 - Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md)` |
+| `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` | Closest browser MCP | `[202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)` |
+| `[202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)` | Find file with "Proxy Aggregator" | `[202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md)` |
+| `[202609202001 - Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)` | Find file with "Context Engineering" | `[202609202001 - Context Engineering for Long-Horizon Agents](./05%20-%20Architecture/202609202001%20-%20Context%20Engineering%20for%20Long-Horizon%20Agents.md)` |
+| `[202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)` | Find file with "Multi-Agent Orchestration" | `[202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md)` |
+| `[202609202003 - MCP Apps Interactive UI Protocol](./05%20-%20Architecture/202609202003%20-%20MCP%20Apps%20Interactive%20UI%20Protocol.md)` | Find file with "Interactive UI" | `[202609202003 - MCP Apps Interactive UI Protocol](./05%20-%20Architecture/202609202003%20-%20MCP%20Apps%20Interactive%20UI%20Protocol.md)` |
+| `[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)` | Find file with "Layered Protocol" | `[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md)` |
+| `[202609202005 - Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md)` | Find file with "Agent Portability" | `[202609202005 - Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md)` |
+| `[202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)` | Find file with "Orchestrator" | `[202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md)` |
+| `[202609202021 - Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)` | Find file with "Context Compaction" | `[202609202021 - Context Compaction and Structured Note-Taking](./05%20-%20Architecture/202609202021%20-%20Context%20Compaction%20and%20Structured%20Note-Taking.md)` |
+| `[202609202022 - MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)` | Find file with "Hybrid Client-Server" | `[202609202022 - MCP Hybrid Client-Server Architecture](./05%20-%20Architecture/202609202022%20-%20MCP%20Hybrid%20Client-Server%20Architecture.md)` |
+| `[202609202001 - Claude Code Hooks for CI-CD Automation](./06%20-%20Use%20Cases/202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md)` | Find file with "CI/CD" | `[202609202001 - Claude Code Hooks for CI-CD Automation](./06%20-%20Use%20Cases/202609202001%20-%20Claude%20Code%20Hooks%20for%20CI-CD%20Automation.md)` |
+| `[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization](./06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)` | Find file with "Plugin Distribution" | `[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization](./06%20-%20Use%20Cases/202609202000%20-%20Claude%20Code%20Plugin%20Distribution%20for%20Team%20Workflow%20Standardization.md)` |
+| `[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)` | Find file with "Multi-Server MCP" | `[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)` |
+| `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` | Wrong timestamp → actual file | `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` |
+| `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)` | Wrong timestamp → actual file | `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)` |
 
 **Important:** Wikilinks with wrong timestamps should resolve to the actual file. Check all folders systematically.
 
 **Process:**
 1. Use `search_files(pattern="\\[\\[.*\\]\\]", ...)` to find all wikilinks
-2. For each `[[202609202000 - Claude Code]]` find the actual file using the table above as reference
-3. Apply fix with `patch(path=..., old_string="[[202609202000 - Claude Code]]", new_string="[[202609202000 - Claude Code]]")`
+2. For each `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` find the actual file using the table above as reference
+3. Apply fix with `patch(path=..., old_string="[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)", new_string="[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)")`
 4. Repeat until zero orphans remain
 
 ### Refactoring Rules
@@ -455,9 +455,9 @@ Sub-agents write notes with short-name wikilinks like `[[202609202000 - Claude C
 Refactoring is expected. When restructuring:
 
 - **Never delete content** — split into new notes or move to `01 - Fleeting/` if it loses relevance
-- **Preserve wikilinks** — if a filename changes, update all `[[202609202000 - Claude Code]]` across the vault
+- **Preserve wikilinks** — if a filename changes, update all `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` across the vault
 - **Update MOCs** — rename or re-point any MOC references to moved notes
-- **Leave traces** — if a note is superseded, add a `replaced-by: [[202609202000 - Claude Code]]` frontmatter field
+- **Leave traces** — if a note is superseded, add a `replaced-by: [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` frontmatter field
 
 ### When to Create vs Link
 
@@ -597,13 +597,13 @@ tags:
   - agent
   - cli
 links:
-  - "[[202609202002 - Gemini CLI]]"
-  - "[[2026092012 - Factory Droids]]"
+  - "[202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md)"
+  - "[2026092012 - Factory Droids](./03%20-%20Agents/2026092012%20-%20Factory%20Droids.md)"
 ---
 ```
 
 **Sub-Agent Rules:**
-- **ALWAYS USE FULL FILENAMES FOR WIKILINKS** — `[[202609202000 - Claude Code]]`, never `[[202609202000 - Claude Code]]`
+- **ALWAYS USE FULL FILENAMES FOR WIKILINKS** — `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`, never `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
 - **ALWAYS CHECK FOR EXISTING FILES FIRST** — use `search_files` before writing
 - **ALWAYS ADD `links:` FIELD TO FRONTMATTER** — with 2+ full filename wikilinks
 - **NEVER CREATE DUPLICATES** — if a note exists, `patch()` it instead of writing new
@@ -620,10 +620,10 @@ The vault is a living system. Small, frequent, well-linked notes beat large, inf
 ## Wikilink vs Markdown Link Rules
 
 **Inside notes (`03 - Agents/`, `04 - Plugins/`, etc.):**
-Use Obsidian `[[202609202000 - Claude Code]]` — e.g., `[[202609202000 - Claude Code]]`
+Use Obsidian `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` — e.g., `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
 
 **In README.md:**
-GitHub does NOT render `[[202609202000 - Claude Code]]` as clickable. Use standard Markdown:
+GitHub does NOT render `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` as clickable. Use standard Markdown:
 - `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
 - `[Firecrawl MCP](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP.md)`
 
@@ -681,7 +681,7 @@ Modern AI plugins and extensions are documented in `04 - Plugins/`. This vault t
 ### Compatibility Detection Rules
 The `update-plugin-master-index.py` script detects compatibility via:
 1. Frontmatter `agents:` field — uses agent keys (e.g., `hermes`, `claude-code`, `opencode`)
-2. `**Agent:**` line in Compatibility section — uses wikilinks (e.g., `[[202609200759 - Hermes Agent]]`)
+2. `**Agent:**` line in Compatibility section — uses wikilinks (e.g., `[202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)`)
 3. Body text scanning — matches agent names mentioned in notes
 4. MCP-compatible detection — plugins tagged `mcp` with "any MCP-compatible" text work with ALL MCP agents (Claude Code, OpenCode, Hermes, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie)
 
@@ -744,12 +744,12 @@ Modern AI architecture patterns are documented in `05 - Architecture/`. This vau
 Every note must have at least 2 working outbound links. No exceptions.
 
 **Definition of "working link":**
-- `[[wikilink]]` points to a file that actually exists in the vault
+- `[wikilink](./00%20-%20Inbox/202609202033%20-%20wikilink.md)` points to a file that actually exists in the vault
 - `[markdown link](url)` points to a valid relative path
 
 **How to verify:**
 1. Read note content
-2. Extract all `[[202609202000 - Claude Code]]` links
+2. Extract all `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)` links
 3. For each link, search filesystem for matching file
 4. If match not found, resolve to actual filename using partial matching
 5. Apply fix with `patch()`
@@ -777,16 +777,16 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 
 2. **Build a file map** by walking all vault folders and noting every `.md` filename
 
-3. **Cross-reference** each `[[wikilink]]` against the file map:
-   - Direct match: `[[202609200758 - OpenCode]]` matches `03 - Agents/202609200758 - OpenCode.md`
-   - Short-name match: `[[202609200758 - OpenCode]]` partially matches → resolve to actual filename
+3. **Cross-reference** each `[wikilink](./00%20-%20Inbox/202609202033%20-%20wikilink.md)` against the file map:
+   - Direct match: `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` matches `03 - Agents/202609200758 - OpenCode.md`
+   - Short-name match: `[202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md)` partially matches → resolve to actual filename
    - No match: orphan → fix with `patch()` or replace with closest existing file
 
 4. **Fix orphans** using `patch()`:
    ```
    patch(path="04 - Plugins/202609202000 - Firecrawl MCP Server.md",
-         old_string="[[202609202000 - OpenCode Firecrawl]]",
-         new_string="[[202609202000 - OpenCode Firecrawl]]")
+         old_string="[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)",
+         new_string="[202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md)")
    ```
 
 5. **Repeat** until zero orphans remain.
@@ -795,7 +795,7 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 - `search_files` extracts every wikilink from the DOM/text
 - The agent reads each note's content and compares against filesystem
 - `patch()` updates links without overwriting existing content
-- The Obsidian skill's wikilink convention (`[[202609202000 - Claude Code]]`) is preserved for Obsidian vault navigation
+- The Obsidian skill's wikilink convention (`[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`) is preserved for Obsidian vault navigation
 
 ---
 

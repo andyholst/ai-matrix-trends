@@ -36,11 +36,11 @@ Context engineering replaces prompt engineering as the primary lever for agent q
 - **Cons:** Requires careful engineering of compaction and retrieval logic; irreversible compression risks information loss; adds complexity to the agent loop; tool masking requires constrained decoding support
 
 ## Examples
-- [[202609202000 - Claude Code]] — uses compaction, memory tool, and sub-agent isolation
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) — uses compaction, memory tool, and sub-agent isolation
 - Manus — file system as context, KV-cache optimization, tool masking via state machine
 
 ## Related Patterns
-- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092031 - Agent Teams Pattern]], [[202609202005 - Agent Portability via Agent Client Protocol]]
+- [2026092031 - Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md), [2026092031 - Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md), [202609202005 - Agent Portability via Agent Client Protocol](./05%20-%20Architecture/202609202005%20-%20Agent%20Portability%20via%20Agent%20Client%20Protocol.md)
 
 ## Sources
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

@@ -27,8 +27,8 @@ The key shift is economic: the cost of automating a one-off task drops from "hou
 Teams can automate tasks that were always on the "too expensive to automate" list, reducing repetitive manual work and human error. The throwaway script pattern also lowers the barrier to experimentation — if a script doesn't work, it cost almost nothing to generate a replacement.
 
 ## Related
-- [[202609202030 - Project-Level Rules for AI Code Standardization]]
-- [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
+- [202609202030 - Project-Level Rules for AI Code Standardization](./06%20-%20Use%20Cases/202609202030%20-%20Project-Level%20Rules%20for%20AI%20Code%20Standardization.md)
+- [202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows](./06%20-%20Use%20Cases/202609202002%20-%20Multi-Server%20MCP%20Orchestration%20for%20Cross-Tool%20Workflows.md)
 
 ## Sources
 - https://www.danclarke.com/the-many-use-cases-of-ai-coding-agents/

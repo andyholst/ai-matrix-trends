@@ -100,8 +100,8 @@ This pattern is best for data-heavy operations where structured processing matte
 MCP is the connective tissue of the AI agent ecosystem. It means a coding agent is no longer limited to text generation and file edits — it can review a PR, notify a team, file a ticket, query a database, and deploy to infrastructure, all within a single conversation. The protocol's standardization (donated to the Linux Foundation's Agentic AI Foundation in December 2025) ensures that a server built for Claude Code works with Cursor, Windsurf, or any compliant host. For teams, this means the AI toolchain composes rather than replaces — pick the best server for each domain and let the agent orchestrate across them.
 
 ## Related
-- [[202609202000 - Claude Code]]
-- [[202609202000 - Claude Code]]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
 
 ## Sources
 - https://openclaw.direct/mcp-guide/model-context-protocol-examples

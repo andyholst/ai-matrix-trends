@@ -19,11 +19,16 @@ MOC_MAPPINGS = {
 }
 
 def get_notes_in_folder(folder):
-    """Get all .md files in folder, sorted"""
+    """Get all .md files in folder (including subfolders), sorted"""
     folder_path = os.path.join(VAULT_DIR, folder)
     if not os.path.exists(folder_path):
         return []
-    return sorted([f.replace('.md', '') for f in os.listdir(folder_path) if f.endswith('.md')])
+    notes = []
+    for root, dirs, files in os.walk(folder_path):
+        for f in files:
+            if f.endswith('.md') and not f.startswith('00 -'):
+                notes.append(f.replace('.md', ''))
+    return sorted(notes)
 
 def extract_existing_entries(content):
     """Extract all wikilink entries from MOC content"""
@@ -42,10 +47,7 @@ def deduplicate_moc_content(content):
     for line in lines:
         match = re.match(r'^(\s*-\s*)\[\[([^\]|]+)(?:\|[^\]]+)?\]\](\s*.*)$', line)
         if match:
-            prefix = match.group(1)
             link = match.group(2).strip()
-            suffix = match.group(3)
-            
             link_lower = link.lower()
             
             if link_lower in seen:

@@ -28,8 +28,8 @@ AI agents increasingly run inside Docker containers for isolation, reproducibili
 Multiple major players have settled on containerization as the deployment pattern. The tooling (Docker, Podman) is mature.
 
 ## Related Patterns
-- [[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]] — MCP servers in containers
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — Containerized MCP routing
+- [202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP](./05%20-%20Architecture/202609202004%20-%20Layered%20Protocol%20Stack%20MCP%20A2A%20Streamable%20HTTP.md) — MCP servers in containers
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Containerized MCP routing
 
 ## Sources
 - [Docker MCP Toolkit](https://www.docker.com/blog/introducing-docker-mcp-toolkit/)

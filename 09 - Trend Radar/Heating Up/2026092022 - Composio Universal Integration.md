@@ -24,9 +24,9 @@ The key insight is that AI agents need to interact with the same SaaS tools huma
 The "universal integration layer" pattern could become essential infrastructure for AI coding agents. As agents move from code editing to full workflow automation, the ability to connect to any SaaS tool via MCP becomes a competitive advantage. Composio's 1,500+ app coverage sets a high bar for competitors.
 
 ## Related
-- [[2026092022 - Composio MCP]]
-- [[202609202000 - Browser Use MCP]]
-- [[2026092020 - GitHub MCP Server]]
+- [2026092022 - Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md)
+- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md)
+- [2026092020 - GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md)
 
 ## Sources
 - [Docs](https://docs.composio.dev/docs/claude-code-plugin)

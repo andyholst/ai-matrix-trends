@@ -31,9 +31,9 @@ The MCP (Model Context Protocol) ecosystem is experiencing hypergrowth with 100+
 - Context7 MCP: 8k+ stars, up-to-date documentation injection
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — Namespaced routing across upstream MCP servers
-- [[202609200803 - Context7 MCP]] — Up-to-date documentation injection
-- [[202609200804 - FAL MCP Server]] — Image generation via FAL
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — Namespaced routing across upstream MCP servers
+- [202609200803 - Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — Up-to-date documentation injection
+- [202609200804 - FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) — Image generation via FAL
 
 ## Sources
 - [MCP GitHub](https://github.com/modelcontextprotocol)

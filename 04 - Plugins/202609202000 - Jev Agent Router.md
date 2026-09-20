@@ -60,14 +60,14 @@ router = ModelRouterMiddleware(
 - Multi-step coding tasks that accumulate large tool outputs
 
 ## Compatibility
-**Agent:** [[202609200759 - Hermes Agent]], [[202609202000 - Claude Code]] (via LangChain), any LangChain-compatible agent
+**Agent:** [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md), [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) (via LangChain), any LangChain-compatible agent
 **Versions:** Hermes Agent 1.0+
 **Dependencies:** uv, Python 3.10+, TypeSafe API key (for LangChain integration)
 
 ## Related Plugins
-- [[202609202000 - Browser Use MCP]] — Validate browser tool calls with Jev before execution
-- [[202609200805 - Hermes Kanban Dashboard]] — Route Kanban worker tasks through Jev for cost optimization
-- [[202609200806 - Hermes Curator]] — Use Jev to decide which skills to prune or consolidate
+- [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Validate browser tool calls with Jev before execution
+- [202609200805 - Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) — Route Kanban worker tasks through Jev for cost optimization
+- [202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) — Use Jev to decide which skills to prune or consolidate
 
 ## Sources
 - [TypeSafe AI: Introducing System One Models and Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
@@ -76,5 +76,5 @@ router = ModelRouterMiddleware(
 - [Reddit: Jev Context Engine Integration](https://www.reddit.com/r/hermesagent/comments/1wkpl3q/integrated_the_jev_context_engine_into_hermes/)
 
 ## Related
-- [[MOC-Plugin-Ecosystem]]
-- [[MOC-Trending-Agents]]
+- [MOC-Plugin-Ecosystem](./07%20-%20Structure/MOC-Plugin-Ecosystem.md)
+- [MOC-Trending-Agents](./07%20-%20Structure/MOC-Trending-Agents.md)

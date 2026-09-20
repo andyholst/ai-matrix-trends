@@ -77,9 +77,9 @@ Research on needle-in-a-haystack benchmarking has uncovered "context rot": as to
 - Anthropic's multi-agent research system: sub-agents explore extensively but return only condensed summaries to the lead agent
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]] — the scoped variant's retrieval step is itself a context engineering challenge
-- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — sub-agent architectures are a form of multi-agent orchestration
-- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools reduce context burden by returning single summaries
+- [202609202000 - MCP Proxy Aggregator Pattern](./05%20-%20Architecture/202609202000%20-%20MCP%20Proxy%20Aggregator%20Pattern.md) — the scoped variant's retrieval step is itself a context engineering challenge
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — sub-agent architectures are a form of multi-agent orchestration
+- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — composite tools reduce context burden by returning single summaries
 
 ## Sources
 - Anthropic, "Effective context engineering for AI agents" (September 2025)

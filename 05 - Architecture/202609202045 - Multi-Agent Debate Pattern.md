@@ -49,9 +49,9 @@ The pattern is competitive rather than collaborative — agents are in tension, 
 - Strategic recommendation with advocate, skeptic, and synthesizer roles
 
 ## Related Patterns
-- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — guardrails at execution points
-- [[2026092031 - Agent Teams Pattern]] — collaborative team alternative
-- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — hierarchical alternative
+- [202609202002 - Multi-Agent Orchestration with Guardrail Layering](./05%20-%20Architecture/202609202002%20-%20Multi-Agent%20Orchestration%20with%20Guardrail%20Layering.md) — guardrails at execution points
+- [2026092031 - Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md) — collaborative team alternative
+- [202609202020 - Orchestrator-Worker Delegation Pattern](./05%20-%20Architecture/202609202020%20-%20Orchestrator-Worker%20Delegation%20Pattern.md) — hierarchical alternative
 
 ## Sources
 - https://beam.ai/agentic-insights/multi-agent-orchestration-patterns-production

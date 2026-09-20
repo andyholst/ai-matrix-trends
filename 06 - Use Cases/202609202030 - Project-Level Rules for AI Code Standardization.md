@@ -27,8 +27,8 @@ Teams that treat standards as code — versioned, reviewed, and enforced in real
 Project-level rules shift the burden of consistency from human reviewers to the agent itself, reducing cognitive debt and making code reviews faster. They also lower onboarding friction for new engineers and agents alike, since the rules serve as explicit tribal knowledge that no longer lives only in senior developers' heads.
 
 ## Related
-- [[202609202000 - Claude Code]]
-- [[202609202005 - Auto-Commit Checkpoint Workflow with Stop Hooks and Git]]
+- [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [202609202005 - Auto-Commit Checkpoint Workflow with Stop Hooks and Git](./06%20-%20Use%20Cases/202609202005%20-%20Auto-Commit%20Checkpoint%20Workflow%20with%20Stop%20Hooks%20and%20Git.md)
 
 ## Sources
 - https://www.ibm.com/think/insights/standardize-ai-code-generation-across-your-development-team

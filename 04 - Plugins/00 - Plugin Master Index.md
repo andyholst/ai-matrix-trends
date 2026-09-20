@@ -462,7 +462,7 @@ created: 2026-09-20T20:13:43+02:00
 
 ## 🔗 Related
 
-- [[README.md]] — vault dashboard
-- [[04 - Plugins/|All Plugins]] — all plugin notes
-- [[05 - Architecture/|Architecture]] — architecture patterns
-- [[09 - Trend Radar/|Trend Radar]] — trend analysis
+- [README.md](./README.md) — vault dashboard
+- [All Plugins](./04%20-%20Plugins/202609202035%20-%20Plugins.md) — all plugin notes
+- [Architecture](./05%20-%20Architecture/202609202035%20-%20Architecture.md) — architecture patterns
+- [Trend Radar](./00%20-%20Inbox/202609202035%20-%20Trend%20Radar.md) — trend analysis

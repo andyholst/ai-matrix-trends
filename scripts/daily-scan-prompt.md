@@ -9,8 +9,8 @@
 Launches 4 parallel research sub-agents via `delegate_task`.
 
 **SUB-AGENTS: ALWAYS USE FULL FILENAMES FOR WIKILINKS.**
-- ✅ Correct: `[[202609202000 - Claude Code]]`
-- ❌ Wrong: `[[202609202000 - Claude Code]]`
+- ✅ Correct: `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+- ❌ Wrong: `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
 
 ### Stream A: Agents (Goal: 5 new agents)
 Research trending AI coding agents.
@@ -28,7 +28,7 @@ For EACH agent, search:
 Each plugin note MUST have:
 ```
 ## Compatibility
-**Agent:** [[202609202000 - Claude Code]], [[202609200759 - Hermes Agent]]
+**Agent:** [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
 agents: [claude-code, hermes, opencode]
 ```
 
