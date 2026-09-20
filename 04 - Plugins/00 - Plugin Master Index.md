@@ -30,6 +30,11 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | Claude Code, Cursor, Windsurf, VS Code, OpenCode, Codex | GitHub repos, issues, PRs, Actions, code search | 33.1k+ |
 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | Claude Code, Cursor, Windsurf, VS Code, OpenCode | Cloud-hosted headless browsers | 3.4k+ |
 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | Claude Code, Cursor, Windsurf, VS Code | Cross-repo code search and symbol navigation | — |
+| [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | Claude Code | Skills framework with 200K+ stars | Trending |
+| [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | OpenCode, Codex CLI | Multi-agent harness, 45K+ installs | Trending |
+| [Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md) | Claude Code, Cursor, Codex | Universal 1500+ app integration | Trending |
+| [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | Claude Code, Cursor, Codex, OpenCode | Codebase knowledge graph | Trending |
+| [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) | OpenCode | Token reduction (60-90% savings) | Trending |
 
 ### Agent-Specific Plugins
 | Plugin | Agent | Description | Status |
@@ -78,7 +83,7 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 
 ### Claude Code Plugins
 1. [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) — Server-evaluated permissions
-2. [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) — Multi-agent PR review
+2. [Claude Code Code Review](./04%20-%20Plugins/202609202023%20-%20Claude%20Code%20Code%20Review.md) — Multi-agent PR review
 3. [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) — Web scraping
 4. [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation
 5. [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — Live documentation
@@ -89,6 +94,9 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 10. [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) — Error tracking
 11. [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) — Cloud browsers
 12. [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) — Code search
+13. [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) — Skills framework
+14. [Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md) — App integrations
+15. [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) — Code knowledge graph
 
 ### OpenCode Plugins
 1. [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) — Firecrawl CLI wrapper
@@ -99,6 +107,8 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 6. [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) — Multi-agent teams
 7. [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) — Semantic code search
 8. [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) — Browser automation
+9. [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) — Multi-agent harness
+10. [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) — Token reduction
 
 ### Hermes Agent Plugins
 1. [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) — Plugin framework

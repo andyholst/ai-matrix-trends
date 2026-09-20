@@ -38,7 +38,7 @@ The parent manages the dependency graph manually, tracking which sub-agents have
 
 ## Examples
 - [[202609202000 - Claude Code]] — Task tool spawns sub-agents with markdown-defined briefs
-- [[Spring AI]] — Task tool implementation inspired by Claude Code's subagents, model-agnostic
+- Spring AI — Task tool implementation inspired by Claude Code's subagents, model-agnostic
 
 ## Related Patterns
 - [[2026092030 - Context Engineering]], [[2026092032 - Agent Teams Pattern]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]

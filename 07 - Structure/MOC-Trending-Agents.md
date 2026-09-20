@@ -37,6 +37,7 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[2026092012 - Factory Droids]] — Enterprise autonomous agents, $5B valuation
 - [[2026092013 - Zencoder]] — Spec-driven development with multi-model orchestration
 - [[2026092014 - MagiCrew]] — Open-source multi-agent workforce platform
+- [[2026092010 - Claw Code]] — Rust reimplementation of Claude Code, 195K+ stars
 - [[Claude Code]] — Anthropic's CLI agent
 - [[OpenAI Codex]] — OpenAI's cloud agent
 - [[OpenCode]] — Open-source CLI agent
@@ -67,10 +68,13 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202001 - Google Antigravity]]
 - [[202609202002 - Augment]]
 
-### Cloud Agents
+### Cloud-Native Agents
 - [[202609202000 - Codex]]
 - [[202609202000 - Devin]]
 - [[202609200913 - Replit Agent]]
+
+### Rust-Based Agents
+- [[2026092010 - Claw Code]]
 
 ### Conversational
 - [[202609202004 - Pi]]

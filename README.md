@@ -36,6 +36,7 @@
 | [Factory Droids](./03%20-%20Agents/2026092012%20-%20Factory%20Droids.md) | Factory | — | Enterprise autonomous agents, $5B valuation |
 | [Zencoder](./03%20-%20Agents/2026092013%20-%20Zencoder.md) | Zencoder | — | Spec-driven development with multi-model orchestration |
 | [MagiCrew](./03%20-%20Agents/2026092014%20-%20MagiCrew.md) | MagiCrew | — | Open-source multi-agent workforce platform |
+| [Claw Code](./03%20-%20Agents/2026092010%20-%20Claw%20Code.md) | UltraWorkers | ⭐ 195K+ | Rust reimplementation of Claude Code, agent-managed development |
 
 ---
 
@@ -56,6 +57,11 @@
 | [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | Persistent cross-session memory via Supermemory | ✅ Active |
 | [OpenCode Dynamic Context Pruning](./04%20-%20Plugins/202609202012%20-%20OpenCode%20Dynamic%20Context%20Pruning.md) | Token reduction plugin, 60-90% savings | ✅ Active |
 | [OpenCode Oh-My-Openagent](./04%20-%20Plugins/202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | All-in-one plugin with 10 specialized agents | ✅ Active |
+| [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | Claude Code skills framework, 200K+ stars | ✅ Active |
+| [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | OpenCode/Codex multi-agent harness, 45K+ installs | ✅ Active |
+| [Composio MCP](./04%20-%20Plugins/2026092022%20-%20Composio%20MCP.md) | Universal 1500+ app integration layer via MCP | ✅ Active |
+| [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | Codebase knowledge graph with tree-sitter AST parsing | ✅ Active |
+| [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) | Token reduction plugin, 60-90% savings | ✅ Active |
 
 ### Cross-Agent Plugins
 | Plugin | Agents | Description |
@@ -105,6 +111,9 @@
 | [Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md) | Agent as both MCP client and server simultaneously | Emerging |
 | [Event-Driven Agent Concurrency Pattern](./05%20-%20Architecture/2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md) | Pub/sub event bus for async agent coordination | Emerging |
 | [Tiered Routing Model Cascade Pattern](./05%20-%20Architecture/2026092032%20-%20Tiered%20Routing%20Model%20Cascade%20Pattern.md) | Multi-layer classifier routing to cheapest capable model | Emerging |
+| [Context Engineering](./05%20-%20Architecture/2026092030%20-%20Context%20Engineering.md) | Curating minimal high-signal token sets for agent context | Growing |
+| [Sub-Agent Delegation Pattern](./05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md) | Parent orchestrator delegating to isolated child agents | Emerging |
+| [Agent Teams Pattern](./05%20-%20Architecture/2026092032%20-%20Agent%20Teams%20Pattern.md) | Parallel agents with shared task lists and peer messaging | Emerging |
 
 **Full index:** [AI Architecture Master Index](./05%20-%20Architecture/00%20-%20AI%20Architecture%20Master%20Index.md) (12 patterns, comparison table, protocol analysis)
 
@@ -127,6 +136,9 @@
 - [Multi-Agent Team Orchestration for Parallel Development](./06%20-%20Use%20Cases/2026092040%20-%20Multi-Agent%20Team%20Orchestration%20for%20Parallel%20Development.md)
 - [AI-Powered Automated Code Review and QA](./06%20-%20Use%20Cases/2026092041%20-%20AI-Powered%20Automated%20Code%20Review%20and%20QA.md)
 - [Automated Documentation Generation and Maintenance](./06%20-%20Use%20Cases/2026092042%20-%20Automated%20Documentation%20Generation%20and%20Maintenance.md)
+- [Spec-Driven Development with Spec Kit](./06%20-%20Use%20Cases/2026092040%20-%20Spec-Driven%20Development%20with%20Spec%20Kit.md)
+- [Git Worktree Isolation for Parallel AI Agents](./06%20-%20Use%20Cases/2026092041%20-%20Git%20Worktree%20Isolation%20for%20Parallel%20AI%20Agents.md)
+- [CLAUDE.md as Runtime Configuration for Agent Behavior](./06%20-%20Use%20Cases/2026092042%20-%20CLAUDE.md%20as%20Runtime%20Configuration%20for%20Agent%20Behavior.md)
 
 ---
 
@@ -137,6 +149,10 @@
 | [MCP Server Ecosystem Explosion](./09%20-%20Trend%20Radar/Heating%20Up/202609200100%20-%20MCP%20Server%20Ecosystem%20Explosion.md) | 100+ community servers, new ones shipping weekly |
 | [Terminal Agent Wars](./09%20-%20Trend%20Radar/Heating%20Up/202609200101%20-%20Terminal%20Agent%20Wars.md) | Claude Code vs OpenCode vs Codex vs Cline |
 | [OpenCode Plugin Ecosystem Maturation](./09%20-%20Trend%20Radar/Heating%20Up/202609200950%20-%20OpenCode%20Plugin%20Ecosystem%20Maturation.md) | 5+ new plugins: Morph Fast Apply, Ensemble, OpenCodeRAG, Chromium Browser |
+| [Claw Code Rust Reimplementation](./09%20-%20Trend%20Radar/Heating%20Up/2026092010%20-%20Claw%20Code%20Rust%20Reimplementation.md) | 195K+ stars, fastest repo to 100K in history |
+| [Superpowers Skills Framework](./09%20-%20Trend%20Radar/Heating%20Up/2026092020%20-%20Superpowers%20Skills%20Framework.md) | 200K+ stars, methodology-driven Claude Code plugin |
+| [Composio Universal Integration](./09%20-%20Trend%20Radar/Heating%20Up/2026092022%20-%20Composio%20Universal%20Integration.md) | 1500+ apps via single MCP connection |
+| [Spec-Driven Development](./09%20-%20Trend%20Radar/Heating%20Up/2026092040%20-%20Spec-Driven%20Development.md) | Spec-as-source-of-truth workflow goes mainstream |
 
 | Stable 📈 | Summary |
 |-----------|---------|
@@ -149,6 +165,8 @@
 | [Personal Agent Memory Systems](./09%20-%20Trend%20Radar/Emerging/202609200105%20-%20Personal%20Agent%20Memory%20Systems.md) | Cross-session memory and personalization |
 | [MCP Server-Side LLM Reusable Agent Pattern](./09%20-%20Trend%20Radar/Emerging/202609200951%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) | MCP servers embedding their own LLM as self-contained agents |
 | [Adaptive Planning (Magentic) Orchestration](./09%20-%20Trend%20Radar/Emerging/202609200952%20-%20Adaptive%20Planning%20Magentic%20Orchestration.md) | Manager agents that dynamically build and pivot task plans |
+| [Context Engineering Discipline](./09%20-%20Trend%20Radar/Emerging/2026092030%20-%20Context%20Engineering%20Discipline.md) | Curating minimal high-signal token sets for agent context |
+| [Agent Teams Pattern](./09%20-%20Trend%20Radar/Emerging/2026092031%20-%20Agent%20Teams%20Pattern.md) | Parallel agents with shared task lists and peer messaging |
 
 ---
 
@@ -182,6 +200,6 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20*
+*Last refreshed: 2026-09-20 20:30*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*

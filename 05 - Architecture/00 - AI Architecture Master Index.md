@@ -175,6 +175,9 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 - [[2026092030 - Bidirectional MCP Agent Pattern]]
 - [[2026092031 - Event-Driven Agent Concurrency Pattern]]
 - [[2026092032 - Tiered Routing Model Cascade Pattern]]
+- [[2026092030 - Context Engineering]]
+- [[2026092031 - Sub-Agent Delegation Pattern]]
+- [[2026092032 - Agent Teams Pattern]]
 
 ### Plugins (04 - Plugins/)
 - [[202609200759 - Hermes Agent]] — Typesafe context engine for Hermes

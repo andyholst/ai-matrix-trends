@@ -27,6 +27,9 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[2026092030 - Bidirectional MCP Agent Pattern]] — Agent as both MCP client and server simultaneously
 - [[2026092031 - Event-Driven Agent Concurrency Pattern]] — Pub/sub event bus for async agent coordination
 - [[2026092032 - Tiered Routing Model Cascade Pattern]] — Multi-layer classifier routing to cheapest capable model
+- [[2026092030 - Context Engineering]] — Curating minimal high-signal token sets for agent context
+- [[2026092031 - Sub-Agent Delegation Pattern]] — Parent orchestrator delegating to isolated child agents
+- [[2026092032 - Agent Teams Pattern]] — Parallel agents with shared task lists and peer messaging
 - [[MCP Protocol]] — Standardized tool/resource interface
 - [[Multi-Agent Orchestration]] — Coordinator + specialist trees
 - [[Context Engineering]] — Dynamic context curation
@@ -49,11 +52,14 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[202609202024 - Orchestrator Worker Multi-Agent Delegation]]
 - [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]]
 - [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]
+- [[2026092031 - Sub-Agent Delegation Pattern]]
+- [[2026092032 - Agent Teams Pattern]]
 
 ### Context Management
 - [[202609202001 - Context Engineering for Long-Horizon Agents]]
 - [[202609202021 - Context Compaction and Structured Note-Taking]]
 - [[202609202025 - Compaction and Note-Taking for Long-Horizon Context]]
+- [[2026092030 - Context Engineering]]
 - [[Context Engineering]]
 - [[Tool-Calling Patterns]]
 

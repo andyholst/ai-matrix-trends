@@ -37,7 +37,7 @@ Context engineering replaces prompt engineering as the primary lever for agent q
 
 ## Examples
 - [[202609202000 - Claude Code]] — uses compaction, memory tool, and sub-agent isolation
-- [[Manus]] — file system as context, KV-cache optimization, tool masking via state machine
+- Manus — file system as context, KV-cache optimization, tool masking via state machine
 
 ## Related Patterns
 - [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092032 - Agent Teams Pattern]], [[MCP Protocol]]

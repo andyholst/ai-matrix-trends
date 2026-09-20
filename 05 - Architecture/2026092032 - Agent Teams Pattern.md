@@ -40,7 +40,7 @@ File locking prevents two teammates from editing the same file simultaneously. E
 
 ## Examples
 - [[202609202000 - Claude Code]] — experimental Agent Teams feature (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`)
-- [[Conductor]] — local orchestrator managing agents in isolated worktrees
+- Conductor — local orchestrator managing agents in isolated worktrees
 
 ## Related Patterns
 - [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092030 - Context Engineering]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]

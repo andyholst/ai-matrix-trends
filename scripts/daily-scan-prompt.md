@@ -1,9 +1,5 @@
 # AI Matrix Trends — Daily Scan Instructions
 
-**CRITICAL: Run each step SEPARATELY IN ORDER. Do NOT skip steps. Do NOT combine steps.**
-
----
-
 ## Pre-Scan Setup
 
 1. `skill_view(name="obsidian")`
@@ -89,9 +85,7 @@ Git: commit + push
 
 ---
 
-## Post-Scan Merge (MANDATORY — RUN SCRIPTS IN ORDER)
-
-**AFTER ALL STREAMS COMPLETE, RUN THESE COMMANDS IN ORDER. DO NOT SKIP.**
+## Post-Scan Merge (MANDATORY — RUN IN ORDER)
 
 ### Step 1: Run Link Fixer
 ```bash
@@ -103,17 +97,36 @@ cd ~/repository/git/ai-matrix-trends && python3 scripts/fix-links.py
 cd ~/repository/git/ai-matrix-trends && python3 scripts/update-mocs.py
 ```
 
-### Step 3: Update README
-```bash
-cd ~/repository/git/ai-matrix-trends && python3 scripts/update-readme.py
-```
+### Step 3: Agent Updates README with Meaningful Content
+
+**After the scripts run, YOU must update README.md with meaningful content:**
+
+1. Read each new note created by the streams
+2. Extract key information (trending status, category, importance)
+3. Update README Trend Radar tables with new findings:
+   - Add to Heating Up 🔥 for rapid growth/new tools
+   - Add to Stable 📈 for established patterns
+   - Add to Emerging 🌱 for early signals
+4. Update the Trend Radar description to reflect current state
+5. Update the `Last refreshed: YYYY-MM-DD` date
+6. Format all links as Markdown: `[text](./path.md)`
 
 ### Step 4: Verify Vault
 ```bash
 cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py
 ```
 
-### Step 5: Commit and Push
+### Step 5: Agent Verification of README
+
+**YOU must verify README looks correct:**
+1. Read README.md
+2. Check Trend Radar tables have correct entries from Step 3
+3. Check all Markdown links resolve (decode %20 before checking)
+4. Verify no duplicate entries
+5. Verify formatting is clean and consistent
+6. Fix any issues found
+
+### Step 6: Commit and Push
 ```bash
 cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: cross-links, MOCs, README" && git push
 ```
@@ -123,7 +136,9 @@ cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan:
 ## Rules
 
 - Sub-agents: NEVER write `links:` in frontmatter
-- Merge step: ALWAYS runs the 5 Python scripts in order
+- Merge step: ALWAYS runs Python scripts in order FIRST
+- Main agent: ALWAYS updates README with meaningful content AFTER scripts
+- Main agent: ALWAYS verifies README looks correct after updating
 - Every note MUST end with 2+ working frontmatter wikilinks
 - Zero orphans in body text
 

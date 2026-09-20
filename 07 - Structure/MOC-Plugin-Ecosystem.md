@@ -24,6 +24,11 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
 - [[202609202013 - Hermes Plugin System]] — Comprehensive plugin architecture for Hermes Agent
 - [[202609202014 - OpenCode Oh-My-Openagent]] — All-in-one OpenCode plugin with 10 specialized agents
+- [[2026092020 - Superpowers]] — Claude Code skills framework, 200K+ stars
+- [[2026092021 - Oh My OpenAgent]] — OpenCode/Codex multi-agent harness, 45K+ installs
+- [[2026092022 - Composio MCP]] — Universal 1500+ app integration layer via MCP
+- [[2026092023 - CodeGraph MCP]] — Codebase knowledge graph with tree-sitter AST parsing
+- [[2026092024 - OpenCode Snip]] — Token reduction plugin (60-90% savings)
 - [[202609200920 - Vercel Agent Browser]] — Rust-based browser automation CLI, 42.9k stars
 - [[202609200921 - OpenCode Morph Fast Apply]] — 10x faster code editing via Morph API
 - [[202609200922 - OpenCode Ensemble]] — Multi-agent teams with parallel execution
@@ -60,6 +65,8 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 ### Claude Code Extensions
 - [[202609202000 - Browser Use MCP]]
 - [[202609200807 - Claude Code Auto Permission]]
+- [[2026092020 - Superpowers]]
+- [[2026092022 - Composio MCP]]
 - [[Claude MCP]]
 - [[Claude Skills]]
 
@@ -70,6 +77,8 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609200804 - FAL MCP Server]]
 - [[202609202010 - Playwright MCP]]
 - [[202609202011 - Chrome DevTools MCP]]
+- [[2026092022 - Composio MCP]]
+- [[2026092023 - CodeGraph MCP]]
 
 ### OpenCode Plugins
 - [[202609202000 - OpenCode Firecrawl]]
@@ -80,6 +89,8 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609200922 - OpenCode Ensemble]]
 - [[202609200923 - OpenCodeRAG]]
 - [[202609200924 - OpenCode Chromium Browser]]
+- [[2026092021 - Oh My OpenAgent]]
+- [[2026092024 - OpenCode Snip]]
 
 ### Cross-Agent Browser Automation
 - [[202609202000 - Browser Use MCP]]
