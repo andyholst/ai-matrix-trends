@@ -282,17 +282,8 @@ GitHub does NOT render `[[wikilinks]]` as clickable. Every link MUST use: `[Disp
 5. Update tables from manifests, update trend radar, update date
 6. `write_file(path="README.md", content="...")` with complete updated content
 
-**Goal:** Zero `[[wikilinks]]` in README. All links are clickable Markdown.
-5. **Update tables:**
-   - Trending Agents — from stream-a manifest, remove old duplicates
-   - Top Plugins — from stream-b manifest, remove old duplicates
-   - Architecture Patterns — from stream-c manifest, remove old duplicates
-   - Configuration Snippets — from stream-d manifest, only link to existing files
-6. **Update Trend Radar** — move items as needed
-7. **Update `Last refreshed: YYYY-MM-DD`** at the bottom
-8. **Write the updated README** using `write_file(path="README.md", content="...")` or `patch()` for targeted edits
 
-**Goal:** Every link in README must be a working Markdown link. No orphans, no `[[wikilinks]]`.
+   **Goal:** Zero `[[wikilinks]]` in README. All links are clickable Markdown. No orphans.
 
 ### Step 6: Verify All Links (NOTES + README)
 
