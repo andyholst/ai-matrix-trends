@@ -17,7 +17,14 @@ The cron job reads AGENTS.md first for context, then this file for instructions.
    search_files(pattern="*.md", target="files", path="05 - Architecture")
    search_files(pattern="*.md", target="files", path="06 - Use Cases")
    ```
-3. Initial commit checkpoint:
+3. **Read existing MOCs and README** to understand current vault state:
+   ```bash
+   read_file(path="07 - Structure/MOC-Trending-Agents.md")
+   read_file(path="07 - Structure/MOC-Plugin-Ecosystem.md")
+   read_file(path="07 - Structure/MOC-Architecture-Patterns.md")
+   read_file(path="README.md")
+   ```
+4. Initial commit checkpoint:
    ```bash
    cd "${HOME}/repository/git/ai-matrix-trends"
    git add -A
@@ -88,19 +95,77 @@ After writing: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git
 
 ---
 
-## Post-Scan Merge (after all streams complete)
+## Post-Scan Merge (CRITICAL — after all streams complete)
 
-1. **Deduplicate** — merge notes on the same topic; prefer updating existing notes over creating duplicates.
-2. **Cross-link** — every note must link to at least 2 existing notes via `[[wikilinks]]`.
-3. **Update MOCs** — add new notes to relevant Maps of Content in `07 - Structure/`.
-4. **Update README** — refresh trend tables, radar, and wikilinks in `README.md`.
-5. **Final commit and push:**
-   ```bash
-   cd "${HOME}/repository/git/ai-matrix-trends"
-   git add -A
-   git commit -m "Daily scan: merge, MOCs, README update $(date +%Y-%m-%d)" || echo "Nothing to commit"
-   git push
-   ```
+**This step is mandatory.** Do not skip. The vault is only complete when cross-links exist.
+
+### Step 1: Fix Orphan Wikilinks
+
+Search for broken links and fix them:
+```bash
+# Find all wikilinks
+search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")
+search_files(pattern="\\[\\[.*\\]\\]", target="content", path="04 - Plugins", file_glob="*.md")
+search_files(pattern="\\[\\[.*\\]\\]", target="content", path="05 - Architecture", file_glob="*.md")
+search_files(pattern="\\[\\[.*\\]\\]", target="content", path="06 - Use Cases", file_glob="*.md")
+```
+
+For each `[[link]]` found, check if the target file exists. If not:
+- Search for the correct filename: `search_files(pattern="*link*", target="files", path=".")`
+- Update the wikilink to match the actual filename
+
+### Step 2: Add Cross-Stream Links
+
+**Agents ↔ Plugins:** For each agent note, add links to plugins it uses.
+Example: `[[202609202000 - Claude Code]]` should link to plugins like `[[202609202000 - Browser Use MCP]]` if Claude Code supports it.
+
+**Architecture ↔ Agents:** For each pattern note, add links to agents that implement it.
+Example: `[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]` should link to `[[202609202000 - Claude Code]]`.
+
+**Use Cases ↔ All:** Each use case must link to at least 1 agent + 1 plugin or pattern.
+
+### Step 3: Update MOCs with New Notes
+
+Open each MOC file and add new notes to the appropriate cluster:
+- `07 - Structure/MOC-Trending-Agents.md` — add new agents
+- `07 - Structure/MOC-Plugin-Ecosystem.md` — add new plugins
+- `07 - Structure/MOC-Architecture-Patterns.md` — add new patterns
+
+Format:
+```markdown
+- [[YYYYMMDDHHMM - Note Title]] — [one-line summary]
+```
+
+### Step 4: Update README
+
+1. Update **Trending Agents** table — add new agents with stars/description
+2. Update **Top Plugins & Extensions** — add new plugins
+3. Update **Architecture Patterns** — add new patterns
+4. Update **Configuration Snippets** — add new use case links
+5. Update **Trend Radar** — move items between heating/stable/emerging as needed
+6. Update `Last refreshed: YYYY-MM-DD` at the bottom
+
+### Step 5: Verify Minimum Link Count
+
+Every note must have at least 2 working outbound links. Run:
+```bash
+# Count links per file (should be >= 2)
+grep -c "\\[\\[" "03 - Agents/"*.md
+grep -c "\\[\\[" "04 - Plugins/"*.md
+grep -c "\\[\\[" "05 - Architecture/"*.md
+grep -c "\\[\\[" "06 - Use Cases/"*.md
+```
+
+If any note has fewer than 2 links, add more.
+
+### Step 6: Final Commit and Push
+
+```bash
+cd "${HOME}/repository/git/ai-matrix-trends"
+git add -A
+git commit -m "Daily scan: cross-links, MOCs, README update $(date +%Y-%m-%d)" || echo "Nothing to commit"
+git push
+```
 
 ---
 
@@ -108,11 +173,12 @@ After writing: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git
 
 - One idea per note. Split compound topics.
 - Own words — synthesize, never copy-paste. Use blockquotes with attribution for sources.
-- Timestamp prefix filenames: `YYYYMMDDHHMM - Title.md`
+- **Unique timestamp prefix per filename:** `YYYYMMDDHHMM - Title.md` — never reuse the same timestamp for multiple files.
 - Frontmatter must include: `id`, `created`, `tags`, `links`
-- Minimum 2 outbound links per note
+- **Minimum 2 outbound links per note** — and they must point to EXISTING files
 - Never delete existing content — split, merge, or add `replaced-by` frontmatter
 - If a note already exists for a topic, UPDATE it rather than creating duplicate
+- **Cross-stream linking is mandatory** — agents link to plugins, patterns link to agents
 
 ---
 
