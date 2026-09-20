@@ -72,6 +72,12 @@ This prevents collisions between parallel streams.
 4. Write notes using the appropriate template
 5. Write manifest file
 
+**Important for sub-agents:**
+- You are a sub-agent. Load skills independently: `skill_view(name="obsidian")`
+- Use `terminal(command="...")` for all git operations (commit, push, etc.)
+- Use `write_file(path="...", content="...")` to create notes and manifests
+- Use `read_file(path="...")` to read templates before writing
+
 ### Stream A: Agent Profiles
 ```
 Goal: Find 3-5 trending AI coding agents.
@@ -81,6 +87,7 @@ Focus areas:
 - Compare features, pricing, architecture
 
 Before writing:
+- Load skill: skill_view(name="obsidian")
 - Read template: read_file(path=".obsidian/templates/agent-profile.md")
 
 Research steps:
@@ -95,10 +102,9 @@ RULES:
 - Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
-- After writing notes, create manifest:
-  write_file("08 - Projects/scan-manifests/stream-a-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "agent", "tags": [...]}, ...]')
-
-After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: agent profiles $(date +%Y-%m-%d)" && git push
+- After writing notes, create manifest using write_file:
+  write_file("08 - Projects/scan-manifests/stream-a-UNIQUE.json", '[{"file": "03 - Agents/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "agent", "tags": ["cli", "tool"]}, ...]')
+- Use terminal for git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: agent profiles' && git push")
 ```
 
 ### Stream B: Plugin Ecosystem
@@ -111,6 +117,7 @@ Focus areas:
 - Cross-agent tools (Browser Use, Firecrawl, FAL)
 
 Before writing:
+- Load skill: skill_view(name="obsidian")
 - Read template: read_file(path=".obsidian/templates/plugin-profile.md")
 
 Research steps:
@@ -126,10 +133,9 @@ RULES:
 - Use UNIQUE timestamps: 202609202010, 202609202011, 202609202012, etc.
 - Every note must link to at least 2 MOCs: [[MOC-Plugin-Ecosystem]] and [[MOC-Trending-Agents]]
 - Do NOT link to specific agent notes yet (cross-linking happens in merge)
-- After writing notes, create manifest:
-  write_file("08 - Projects/scan-manifests/stream-b-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "plugin", "agents": ["Claude Code"]}, ...]')
-
-After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: plugin ecosystem $(date +%Y-%m-%d)" && git push
+- After writing notes, create manifest using write_file:
+  write_file("08 - Projects/scan-manifests/stream-b-UNIQUE.json", '[{"file": "04 - Plugins/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "plugin", "agents": ["Claude Code"]}, ...]')
+- Use terminal for git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: plugin ecosystem' && git push")
 ```
 
 ### Stream C: Architecture Patterns
@@ -142,6 +148,7 @@ Focus areas:
 - Tool-calling patterns and guardrails
 
 Before writing:
+- Load skill: skill_view(name="obsidian")
 - Read template: read_file(path=".obsidian/templates/architecture-pattern.md")
 
 Research steps:
@@ -157,10 +164,9 @@ RULES:
 - Use UNIQUE timestamps: 202609202020, 202609202021, 202609202022, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
-- After writing notes, create manifest:
-  write_file("08 - Projects/scan-manifests/stream-c-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "architecture", "examples": ["Claude Code"]}, ...]')
-
-After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: architecture patterns $(date +%Y-%m-%d)" && git push
+- After writing notes, create manifest using write_file:
+  write_file("08 - Projects/scan-manifests/stream-c-UNIQUE.json", '[{"file": "05 - Architecture/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "architecture", "examples": ["Claude Code"]}, ...]')
+- Use terminal for git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: architecture patterns' && git push")
 ```
 
 ### Stream D: Use Cases
@@ -173,6 +179,7 @@ Focus areas:
 - Workflow automation examples
 
 Before writing:
+- Load skill: skill_view(name="obsidian")
 - Read template: read_file(path=".obsidian/templates/atomic-note.md")
 
 Research steps:
@@ -188,10 +195,9 @@ RULES:
 - Use UNIQUE timestamps: 202609202030, 202609202031, 202609202032, etc.
 - Every note must link to at least 2 MOCs: [[MOC-Plugin-Ecosystem]] and [[MOC-Architecture-Patterns]]
 - Do NOT link to specific notes yet (cross-linking happens in merge)
-- After writing notes, create manifest:
-  write_file("08 - Projects/scan-manifests/stream-d-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "workflow", "agents": ["Claude Code"], "plugins": ["Firecrawl"]}, ...]')
-
-After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: use cases $(date +%Y-%m-%d)" && git push
+- After writing notes, create manifest using write_file:
+  write_file("08 - Projects/scan-manifests/stream-d-UNIQUE.json", '[{"file": "06 - Use Cases/YYYYMMDDHHMM - Name.md", "title": "Name", "type": "workflow", "agents": ["Claude Code"], "plugins": ["Firecrawl"]}, ...]')
+- Use terminal for git: terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: use cases' && git push")
 ```
 
 ---
@@ -313,24 +319,22 @@ If any note has fewer than 2 links, add more.
 
 ### Step 7: Final Commit and Push
 
-```bash
-cd "${HOME}/repository/git/ai-matrix-trends"
-git add -A
-git commit -m "Daily scan: cross-links, MOCs, README update $(date +%Y-%m-%d)" || echo "Nothing to commit"
-git push
+Use `terminal` for git operations:
+```
+terminal(command="cd ${HOME}/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan: cross-links, MOCs, README update' && git push")
 ```
 
 ### Step 8: Cleanup
 
 Remove old manifest files from previous runs (keep current):
-```bash
-find "08 - Projects/scan-manifests" -name "*.json" ! -name "*$(date +%Y%m%d)*" -delete
+```
+terminal(command="find '${HOME}/repository/git/ai-matrix-trends/08 - Projects/scan-manifests' -name '*.json' ! -name '*$(date +%Y%m%d)*' -delete")
 ```
 
 ### Step 9: Validate Frontmatter
 
 Spot-check 2-3 notes to verify frontmatter is complete:
-```bash
+```
 read_file(path="03 - Agents/<newest-note>.md", limit=15)
 ```
 
