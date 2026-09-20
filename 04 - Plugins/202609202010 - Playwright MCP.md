@@ -55,7 +55,7 @@ claude mcp add playwright -- npx @playwright/mcp@latest
 - Regression testing through scripted browser sessions
 
 ## Compatibility
-- **Agent:** [[Claude Code]], [[Cursor]], [[Windsurf]], [[VS Code]], [[OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[Cursor]], [[Windsurf]], [[VS Code]], [[OpenCode]]
 - **Versions:** Node.js 18+, Playwright MCP 0.0.82+
 
 ## Related Plugins

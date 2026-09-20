@@ -6,8 +6,8 @@ tags:
   - config
   - agent
 links:
-  - [[Claude Code Hooks for CI-CD Automation]]
-  - [[Multi-Server MCP Orchestration for Cross-Tool Workflows]]
+  - [[202609202001 - Claude Code Hooks for CI-CD Automation]]
+  - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 ---
 
 # Claude Code Plugin Distribution for Team Workflow Standardization
@@ -69,8 +69,8 @@ A reference implementation is Cole Medin's `helpline` repo, which ships a stop h
 Plugins transform Claude Code from a personal tool into a platform. A team can standardize on a single `/deploy` skill, a shared set of MCP servers, and organization-wide hooks that enforce code quality — all maintained by one engineer and consumed by everyone. The tribal-knowledge problem that plagues AI-assisted teams (screenshots in Slack threads, incomplete README instructions) is solved by a single install command that delivers the entire workflow.
 
 ## Related
-- [[Claude Code Hooks for CI-CD Automation]]
-- [[Multi-Server MCP Orchestration for Cross-Tool Workflows]]
+- [[202609202001 - Claude Code Hooks for CI-CD Automation]]
+- [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 
 ## Sources
 - https://code.claude.com/docs/en/plugins

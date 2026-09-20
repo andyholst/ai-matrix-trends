@@ -89,7 +89,7 @@ The boundary between "coding" and "debugging" blurs when the agent can see the r
 
 ## Related
 - [[202609202000 - Browser Use MCP]] — Browser automation plugin used alongside DevTools MCP
-- [[Multi-Server MCP Orchestration for Cross-Tool Workflows]]
+- [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 
 ## Sources
 - https://medium.com/@addyosmani/my-llm-coding-workflow-going-into-2026-52fe1681325e

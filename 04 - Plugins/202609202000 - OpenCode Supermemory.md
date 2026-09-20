@@ -57,7 +57,7 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 - Onboarding to a new codebase by pre-loading project memory
 
 ## Compatibility
-- **Agent:** [[OpenCode]], [[Claude Code]] (via separate plugin)
+- **Agent:** [[OpenCode]], [[202609202000 - Claude Code]] (via separate plugin)
 - **Versions:** OpenCode 1.0+, bun or npx
 - **Dependencies:** Supermemory account or self-hosted instance
 

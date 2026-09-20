@@ -114,7 +114,7 @@ The auto-commit pattern turns AI coding sessions from risky (uncommitted changes
 
 ## Related
 - [[202609202000 - Claude Code]] — The agent this workflow uses
-- [[Claude Code Hooks for CI-CD Automation]]
+- [[202609202001 - Claude Code Hooks for CI-CD Automation]]
 
 ## Sources
 - https://blog.gitbutler.com/automate-your-ai-workflows-with-claude-code-hooks

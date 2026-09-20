@@ -55,7 +55,7 @@ claude mcp add chrome-devtools -- npx @modelcontextprotocol/server-chrome-devtoo
 - Cookie and storage debugging
 
 ## Compatibility
-- **Agent:** [[Claude Code]], [[Cursor]], [[Windsurf]], [[VS Code]]
+- **Agent:** [[202609202000 - Claude Code]], [[Cursor]], [[Windsurf]], [[VS Code]]
 - **Versions:** Node.js LTS, Chrome 112+
 
 ## Related Plugins

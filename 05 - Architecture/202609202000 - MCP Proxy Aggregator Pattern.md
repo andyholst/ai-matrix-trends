@@ -6,8 +6,8 @@ tags:
   - mcp
   - workflow
 links:
-  - [[context-engineering-long-horizon-agents]]
-  - [[multi-agent-orchestration-patterns]]
+  - [[202609202001 - Context Engineering for Long-Horizon Agents]]
+  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
 # MCP Proxy Aggregator Pattern
@@ -61,9 +61,9 @@ The scoped variant adds a retrieval step: given the current task context, it sel
 - **Unsanitized resource content**: Returning user-generated data without stripping injected content
 
 ## Related Patterns
-- [[resource-gateway-mcp-pattern]] — the upstream servers being aggregated often follow this pattern
-- [[tool-orchestrator-mcp-pattern]] — composite tools that wrap multi-system workflows
-- [[context-engineering-long-horizon-agents]] — the scoped variant's retrieval step is itself a context engineering challenge
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — the upstream servers being aggregated often follow this pattern
+- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows
+- [[202609202001 - Context Engineering for Long-Horizon Agents]] — the scoped variant's retrieval step is itself a context engineering challenge
 
 ## Sources
 - Rodrigues & Vas, "MCP Server Architecture Patterns for LLM-Integrated Applications" (arXiv:2606.30317, 2026)

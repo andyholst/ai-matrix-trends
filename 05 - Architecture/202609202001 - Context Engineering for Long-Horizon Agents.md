@@ -7,7 +7,7 @@ tags:
   - config
 links:
   - [[mcp-proxy-aggregator-pattern]]
-  - [[multi-agent-orchestration-patterns]]
+  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
 # Context Engineering for Long-Horizon Agents
@@ -78,8 +78,8 @@ Research on needle-in-a-haystack benchmarking has uncovered "context rot": as to
 
 ## Related Patterns
 - [[mcp-proxy-aggregator-pattern]] — the scoped variant's retrieval step is itself a context engineering challenge
-- [[multi-agent-orchestration-patterns]] — sub-agent architectures are a form of multi-agent orchestration
-- [[tool-orchestrator-mcp-pattern]] — composite tools reduce context burden by returning single summaries
+- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — sub-agent architectures are a form of multi-agent orchestration
+- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools reduce context burden by returning single summaries
 
 ## Sources
 - Anthropic, "Effective context engineering for AI agents" (September 2025)

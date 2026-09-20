@@ -60,7 +60,7 @@ The stack separates concerns that monolithic agent frameworks conflate:
 
 ## Examples
 - [[20260920200758 - OpenCode]] — Enterprise multi-agent platforms using MCP for tool access and A2A for cross-team agent delegation
-- [[20260920200759 - Hermes Agent]] — AWS Kiro and Amazon Q Developer CLI sharing MCP config format
+- [[202609200759 - Hermes Agent]] — AWS Kiro and Amazon Q Developer CLI sharing MCP config format
 - Docker MCP Toolkit running MCP servers in isolated containers with OAuth
 - Accenture's Trusted Agent Huddle for multi-system agent collaboration across enterprises
 

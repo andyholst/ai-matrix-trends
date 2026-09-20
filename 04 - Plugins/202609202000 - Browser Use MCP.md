@@ -61,14 +61,14 @@ Key environment variables: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` (one required
 - Any agent task that needs a real browser environment
 
 ## Compatibility
-- **Agent:** [[Claude Code]], [[Cursor]], [[Windsurf]], [[OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[Cursor]], [[Windsurf]], [[OpenCode]]
 - **Versions:** browser-use 0.4+, Python 3.10+, uv
 - **Dependencies:** Chrome or Chromium, uvx
 
 ## Related Plugins
-- [[mcp-browser-use]] — Community fork with skills system and deep research workflow
+- [[202609202000 - Browser Use MCP]] — Community fork with skills system and deep research workflow
 - [[chrome-devtools-mcp]] — Chrome DevTools team's MCP for debugging and performance
-- [[safari-mcp]] — Safari-only MCP server for macOS users
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — Safari-only MCP server for macOS users
 
 ## Sources
 - [Browser Use Docs: MCP Server](https://docs.browser-use.com/open-source/customize/integrations/mcp-server)

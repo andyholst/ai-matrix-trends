@@ -7,7 +7,7 @@ tags:
   - config
 links:
   - [[mcp-proxy-aggregator-pattern]]
-  - [[context-engineering-long-horizon-agents]]
+  - [[202609202001 - Context Engineering for Long-Horizon Agents]]
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering
@@ -104,8 +104,8 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 
 ## Related Patterns
 - [[mcp-proxy-aggregator-pattern]] — aggregated tool servers may feed into multi-agent pipelines
-- [[context-engineering-long-horizon-agents]] — orchestration context management uses the same compaction and note-taking strategies
-- [[tool-orchestrator-mcp-pattern]] — composite tools that wrap multi-system workflows for agent workers
+- [[202609202001 - Context Engineering for Long-Horizon Agents]] — orchestration context management uses the same compaction and note-taking strategies
+- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows for agent workers
 
 ## Sources
 - Beam AI, "6 Multi-Agent Orchestration Patterns for Production (2026)"

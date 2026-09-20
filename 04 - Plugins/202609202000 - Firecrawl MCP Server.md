@@ -57,14 +57,14 @@ Set `FIRECRAWL_API_KEY` in your environment or `.env` file. The key is `fc-` pre
 - Answering questions that require live information beyond the agent's training cutoff
 
 ## Compatibility
-- **Agent:** [[Claude Code]], [[Cursor]], [[OpenAI Codex]], [[Windsurf]], [[OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[Cursor]], [[202609202000 - Codex]], [[Windsurf]], [[OpenCode]]
 - **Versions:** Any MCP-compatible client
 - **Dependencies:** Node.js 18+, npx, Firecrawl API key
 
 ## Related Plugins
 - [[opencode-firecrawl]] — OpenCode-specific wrapper around the same CLI
 - [[opencode-tavily]] — Alternative web search plugin for OpenCode
-- [[mcp360]] — Unified MCP gateway that includes scraping tools
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — Unified MCP gateway that includes scraping tools
 
 ## Sources
 - [Firecrawl MCP Server GitHub](https://github.com/firecrawl/firecrawl-mcp-server)

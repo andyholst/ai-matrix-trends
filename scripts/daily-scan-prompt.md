@@ -220,13 +220,30 @@ Read each manifest file to understand what was created:
 
 ### Step 2: Fix Orphan Wikilinks
 
-Search for broken links in each folder and fix them. For each folder:
-1. Use `search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")` to find all wikilinks
-2. For each `[[link]]` found, check if the target file exists:
-   - If `link` contains a filename like `202609202000 - Claude Code`, search: `search_files(pattern="202609202000 - Claude Code.md", target="files", path=".")`
-   - If the file does NOT exist, search for a match: `search_files(pattern="*Claude Code*", target="files", path="03 - Agents")`
-   - Update the wikilink to match the actual filename using `patch()` on the source file
-3. Repeat for all folders: `03 - Agents`, `04 - Plugins`, `05 - Architecture`, `06 - Use Cases`
+For each folder (03 - Agents, 04 - Plugins, 05 - Architecture, 06 - Use Cases):
+
+1. Find all wikilinks: `search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")`
+
+2. For each `[[link_text]]` found, check if target file exists:
+   - Walk all folders and compare link_text against filenames
+   - Match rules: `[[Claude Code]]` matches `202609202000 - Claude Code.md`
+   - Match rules: `[[202609202000 - Claude Code]]` matches exactly
+
+3. If NO match found, find the best replacement:
+   - Search for partial match: if link is `[[opencode-tavily]]`, look for files containing "opencode" or "tavily"
+   - Search for related terms: if link is `[[VS Code]]`, link to an existing editor note like `[[202609202000 - Cursor]]`
+   - If no good match exists, link to the most relevant MOC
+
+4. Apply the fix using `patch()`:
+   ```
+   patch(path="04 - Plugins/202609202000 - Firecrawl MCP Server.md",
+         old_string="[[opencode-tavily]]",
+         new_string="[[202609202000 - OpenCode Firecrawl]]")
+   ```
+
+5. Repeat until zero orphans remain.
+
+**Important:** The sub-agents write notes with short-name wikilinks like `[[Claude Code]]` but files are named `202609202000 - Claude Code.md`. Your job is to resolve these to the actual filename.
 
 ### Step 3: Add Cross-Stream Links Using Manifests
 

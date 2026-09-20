@@ -59,7 +59,7 @@ claude update
 - Background safety checks that pause for approval when actions deviate from the request
 
 ## Compatibility
-**Agent:** [[Claude Code]]
+**Agent:** [[202609202000 - Claude Code]]
 **Versions:** v2.1.259+
 **Dependencies:** Claude Pro/Max or API access
 

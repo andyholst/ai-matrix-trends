@@ -62,7 +62,7 @@ router = ModelRouterMiddleware(
 - Multi-step coding tasks that accumulate large tool outputs
 
 ## Compatibility
-**Agent:** [[Hermes]], [[Claude Code]] (via LangChain), any LangChain-compatible agent
+**Agent:** [[Hermes]], [[202609202000 - Claude Code]] (via LangChain), any LangChain-compatible agent
 **Versions:** Hermes Agent 1.0+
 **Dependencies:** uv, Python 3.10+, TypeSafe API key (for LangChain integration)
 

@@ -48,6 +48,7 @@ JetBrains Junie is JetBrains' AI coding agent, integrated directly into IntelliJ
 ## Key Plugins/Extensions
 - [[202609202000 - Claude Code]] (terminal-native alternative)
 - [[202609202000 - Cursor]] (IDE-based alternative)
+- [[202609202010 - Playwright MCP]] (browser automation)
 
 ## Strengths
 - Deepest JetBrains IDE integration available

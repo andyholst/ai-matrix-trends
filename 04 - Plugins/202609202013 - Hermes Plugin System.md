@@ -50,7 +50,7 @@ requires_env:
 - Registering context-compression engines via `ctx.register_context_engine()`
 
 ## Compatibility
-- **Agent:** [[Hermes Agent]]
+- **Agent:** [[202609200759 - Hermes Agent]]
 - **Versions:** Hermes Agent 1.0+
 
 ## Related Plugins
