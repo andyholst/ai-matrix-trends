@@ -2,7 +2,42 @@
 
 ## Purpose
 
-This is an Obsidian vault for **AI Matrix Trends**, a knowledge system tracking trends, signals, and analysis in the AI/ML ecosystem. The agent (Hermes) operates within this vault using the **Zettelkasten method** — every insight is an atomic note, richly linked, progressively refined into higher-order structure.
+This is an Obsidian vault for **AI Matrix Trends**, a knowledge system tracking **trending AI coding agents, architecture patterns, plugins, and tooling**. The primary focus:
+
+- **Trending AI coding agents** — Claude Code, OpenAI Codex, OpenCode, Hermes, Cursor, Cline, Aider, Windsurf, and emerging players
+- **Architecture patterns** — agent orchestration, tool-calling patterns, context engineering, multi-agent workflows, guardrails
+- **Plugins & extensions** — Hermes plugins (jev, mcp, skills), Claude Code extensions, Codex integrations, OpenCode plugins
+- **Configuration & setup** — installation guides, config snippets, use-case patterns, real-world workflows
+
+The agent (Hermes) operates within this vault using the **Zettelkasten method** — every insight is an atomic note, richly linked, progressively refined into higher-order structure.
+
+## Agent Mission
+
+The agent's primary role is to **gather, track, and document trending AI coding agents, their architecture patterns, plugins, and configurations**. This means:
+
+1. **Discover** — Continuously scan for trending tools, plugins, and patterns (GitHub stars, social buzz, community adoption)
+2. **Analyze** — Evaluate what makes them popular: architecture, UX, integrations, use-case fit
+3. **Document** — Create atomic notes with installation, configuration, and real-world usage patterns
+4. **Synthesize** — Connect trends to broader patterns (e.g., "every new agent is adopting MCP servers")
+5. **Maintain** — Keep notes current as tools evolve; refactor when understanding deepens
+
+### Key Agent Profiles to Track
+- **Claude Code** — Anthropic's CLI agent
+- **OpenAI Codex** — OpenAI's cloud/agent system
+- **OpenCode** — Open-source coding agent
+- **Hermes** — Nous Research agent (this agent)
+- **Cursor** — IDE-integrated agent
+- **Cline** — VS Code extension agent
+- **Aider** — Terminal pair-programming agent
+- **Windsurf** — Codeium's agent
+- **Pi** — Another coding agent
+
+### What Makes a Note "Trending"
+- Rapid GitHub star growth
+- Community adoption (Reddit, HN, Twitter mentions)
+- New architecture patterns (e.g., MCP, multi-agent)
+- Plugin ecosystem expansion
+- Real-world workflow integrations
 
 ## Vault Philosophy
 
@@ -18,13 +53,16 @@ This is an Obsidian vault for **AI Matrix Trends**, a knowledge system tracking 
 
 ```
 ai-matrix-trends/
-├── .obsidian/              # Obsidian vault config (do NOT edit manually)
-├── 00 - Inbox/             # Raw, unprocessed observations (triage daily)
+├── .obsidian/              # Obsidian vault config
+├── 00 - Inbox/             # Raw, unprocessed observations
 ├── 01 - Fleeting/          # Quick thoughts, reminders, half-baked ideas
-├── 02 - Literature/        # Source-derived notes (papers, articles, talks)
-├── 03 - Permanent/         # Processed atomic evergreen notes (the core)
-├── 04 - Structure/         # Maps of Content (MOCs), indexes, dashboards
-├── 05 - Projects/          # Active project-specific notes
+├── 02 - Literature/        # Source material (articles, docs, talks)
+├── 03 - Agents/            # Agent profiles (Claude Code, Codex, Hermes, etc.)
+├── 04 - Plugins/           # Plugin & extension documentation
+├── 05 - Architecture/      # Architecture patterns (MCP, multi-agent, context engineering)
+├── 06 - Use Cases/         # Real-world workflows, config snippets, integrations
+├── 07 - Structure/         # MOCs, indexes, dashboards
+├── 08 - Projects/          # Time-bound work
 ├── 99 - Attachments/       # Images, PDFs, exported files
 ├── AGENTS.md               # This file
 └── LICENSE
@@ -34,13 +72,16 @@ ai-matrix-trends/
 
 | Folder | Purpose | Retention |
 |--------|---------|-----------|
-| `00 - Inbox` | Drop zone for new signals. Agent triages here first. | Processed into Permanent/Fleeting within a session |
-| `01 - Fleeting` | Quick capture, reminders, half-formed ideas. | Either promoted to Permanent or archived |
-| `02 - Literature` | Notes tied to a specific source (paper, blog, talk). | Source + own synthesis, permanently kept |
-| `03 - Permanent` | The vault's core. Atomic, evergreen, self-contained notes. | Kept indefinitely, continuously refined |
-| `04 - Structure` | Maps of Content that organize Permanent notes into themes. | Updated as the vault grows |
-| `05 - Projects` | Time-bound work (e.g., "analyze Q3 model releases"). | Archived or deleted after project closes |
-| `99 - Attachments` | Binary assets, images, PDFs. | Linked from notes, kept as needed |
+| `00 - Inbox` | Drop zone for new signals. Agent triages here first. | Processed within a session |
+| `01 - Fleeting` | Quick capture, reminders, half-formed ideas. | Promoted or archived |
+| `02 - Literature` | Source material with attribution. | Permanently kept |
+| `03 - Agents` | One note per agent. Installation, config, capabilities, quirks. | Updated as agents evolve |
+| `04 - Plugins` | One note per plugin. Config, use-cases, compatibility. | Updated as plugins change |
+| `05 - Architecture` | Pattern notes. MCP, context engineering, tool-calling, guardrails. | Evergreen |
+| `06 - Use Cases` | Real-world workflows. How to combine tools, integrations, setups. | Evergreen |
+| `07 - Structure` | Maps of Content organizing everything above. | Updated as vault grows |
+| `08 - Projects` | Time-bound work (e.g., "evaluate Q4 agent landscape"). | Archived after completion |
+| `99 - Attachments` | Binary assets, images, PDFs. | Linked from notes |
 
 ---
 
@@ -61,25 +102,22 @@ Examples:
 
 ---
 
-## Atomic Note Template
+## Note Templates
 
-Every permanent note follows this structure:
+### Atomic Note Template (Default)
 
 ```markdown
 ---
-id: 202609201430
-created: 2026-09-20T14:30:00+02:00
+id: {{date:YYYYMMDDHHmm}}
+created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
 tags:
   - trend
-  - architecture
+  - tool
 aliases:
-  - MoE variants
 links:
-  - "[[202609201400 - Mixture of Experts foundational paper]]"
-  - "[[202609201415 - Sparse vs dense model tradeoffs]]"
 ---
 
-# Mixture of Experts Architecture Variants
+# {{title}}
 
 ## Core Idea
 [One sentence capturing the single idea]
@@ -91,11 +129,140 @@ links:
 [So what? What does this enable or change?]
 
 ## Related
-- [[202609201400 - Mixture of Experts foundational paper]]
-- [[202609201415 - Sparse vs dense model tradeoffs]]
+- [[]]
 
 ## Sources
-- [Source Name](url) (if applicable)
+-
+```
+
+### Agent Profile Template (for `03 - Agents/`)
+
+```markdown
+---
+id: {{date:YYYYMMDDHHmm}}
+created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
+tags:
+  - agent
+aliases:
+links:
+---
+
+# [Agent Name]
+
+## Overview
+[One paragraph: what this agent is, who made it, its positioning]
+
+## Installation
+```bash
+# install command(s)
+```
+
+## Core Capabilities
+- [Capability 1]
+- [Capability 2]
+
+## Configuration
+```yaml
+# key config snippet
+```
+
+## Key Plugins/Extensions
+- [[link-to-plugin]]
+
+## Strengths
+-
+
+## Weaknesses
+-
+
+## Use Cases
+- 
+
+## Related Agents
+- [[link-to-comparable-agent]]
+
+## Sources
+- [Official Docs](url)
+- [GitHub](url)
+```
+
+### Plugin Profile Template (for `04 - Plugins/`)
+
+```markdown
+---
+id: {{date:YYYYMMDDHHmm}}
+created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
+tags:
+  - plugin
+aliases:
+links:
+---
+
+# [Plugin Name]
+
+## Overview
+[What it does, which agent(s) it supports]
+
+## Installation
+```bash
+# install command
+```
+
+## Configuration
+```yaml
+# config snippet
+```
+
+## Use Cases
+- 
+
+## Compatibility
+- **Agent:** [[agent-name]]
+- **Versions:** x.x.x+
+
+## Related Plugins
+- [[link-to-related-plugin]]
+
+## Sources
+- [GitHub](url)
+- [Docs](url)
+```
+
+### Architecture Pattern Template (for `05 - Architecture/`)
+
+```markdown
+---
+id: {{date:YYYYMMDDHHmm}}
+created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
+tags:
+  - architecture
+aliases:
+links:
+---
+
+# [Pattern Name]
+
+## Core Idea
+[One sentence on what this pattern is]
+
+## How It Works
+[Diagram description or flow]
+
+## When to Use
+-
+
+## Tradeoffs
+- **Pros:** 
+- **Cons:** 
+
+## Examples
+- [[agent-that-uses-this]]
+
+## Related Patterns
+- [[link-to-related-pattern]]
+
+## Sources
+-
 ```
 
 ### Field Definitions
@@ -137,14 +304,16 @@ Use these tags consistently. Add new ones only when a theme recurs.
 - `deprecated` — superseded or no longer relevant (keep for traceability)
 
 ### Domain Tags
-- `architecture` — model architecture topics
-- `training` — training methods, data, compute
-- `inference` — deployment, optimization, serving
-- `alignment` — safety, RLHF, constitutional AI
-- `multimodal` — vision, audio, video models
-- `agentic` — AI agents, tool use, planning
-- `regulation` — policy, governance, compliance
-- `benchmark` — evaluation, leaderboards, metrics
+- `agent` — AI coding agents (Claude Code, Codex, Hermes, OpenCode, etc.)
+- `plugin` — extensions and plugins for AI coding tools
+- `config` — configuration, settings, setup guides
+- `workflow` — use-case patterns, real-world applications
+- `architecture` — agent architecture patterns, orchestration, MCP
+- `cli` — command-line interface patterns, tools
+- `tool` — a software, library, or platform (general)
+- `mcp` — Model Context Protocol servers and integrations
+- `tui` — terminal UI patterns and tools
+- `gateway` — messaging platform integrations
 
 ---
 

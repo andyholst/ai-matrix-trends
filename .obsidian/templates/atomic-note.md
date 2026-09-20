@@ -2,7 +2,8 @@
 id: {{date:YYYYMMDDHHmm}}
 created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
 tags:
-  - seedling
+  - trend
+  - tool
 aliases:
 links:
 ---
