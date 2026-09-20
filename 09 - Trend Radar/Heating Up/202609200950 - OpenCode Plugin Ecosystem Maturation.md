@@ -6,8 +6,6 @@ tags:
   - tool
 links:
   - "[[202609200758 - OpenCode]]"
-  - "[[202609200758 - OpenCode]]"
-  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Plugin Ecosystem Maturation

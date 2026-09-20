@@ -10,7 +10,7 @@ Launches 4 parallel research sub-agents via `delegate_task`.
 
 **SUB-AGENTS: ALWAYS USE FULL FILENAMES FOR WIKILINKS.**
 - ✅ Correct: `[[202609202000 - Claude Code]]`
-- ❌ Wrong: `[[Claude Code]]`
+- ❌ Wrong: `[[202609202000 - Claude Code]]`
 
 ### Stream A: Agents (Goal: 5 new agents)
 Research trending AI coding agents.
