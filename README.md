@@ -8,6 +8,11 @@
 
 | Agent | Ecosystem | Stars | Description |
 |-------|-----------|-------|-------------|
+| [[202609202000 - Claude Code]] | Anthropic | — | CLI agent with MCP integration and multi-file editing |
+| [[202609202000 - Codex]] | OpenAI | — | Cloud-native agent with sandboxed execution |
+| [[202609202000 - Cursor]] | Anysphere | — | IDE-integrated AI agent with codebase indexing |
+| [[202609202000 - Cline]] | Cline Bot | ⭐ 35k+ | VS Code extension with autonomous capabilities |
+| [[202609202000 - Aider]] | Aider-AI | ⭐ 25k+ | Terminal pair-programming agent with repo mapping |
 | [[Claude Code]] | Anthropic | — | CLI agent with MCP integration and multi-file editing |
 | [[OpenAI Codex]] | OpenAI | — | Cloud-native agent with sandboxed execution |
 | [[OpenCode]] | Open source | — | Open-source CLI coding agent |
@@ -25,6 +30,7 @@
 ### Hermes Ecosystem
 | Plugin | Description | Status |
 |--------|-------------|--------|
+| [[202609202000 - Jev Agent Router]] | Typesafe context engine with agent_route MCP server | ✅ Active |
 | [[hermes-jev]] | Typesafe context engine | ✅ Active |
 | [[hermes-mcp]] | Model Context Protocol server integration | ✅ Active |
 | [[hermes-kanban]] | Multi-agent work queue | ✅ Active |
@@ -33,12 +39,21 @@
 ### Claude Code Ecosystem
 | Plugin | Description | Status |
 |--------|-------------|--------|
+| [[202609202000 - Browser Use MCP]] | Browser automation via stdio MCP server | ✅ Active |
 | [[Claude MCP]] | External tool & resource integrations | ✅ Active |
 | [[Claude Skills]] | Reusable skill bundles | ✅ Active |
+
+### OpenCode Ecosystem
+| Plugin | Description | Status |
+|--------|-------------|--------|
+| [[202609202000 - OpenCode Firecrawl]] | Firecrawl CLI wrapper with file-based results | ✅ Active |
+| [[202609202000 - OpenCode Supermemory]] | Persistent cross-session memory via Supermemory | ✅ Active |
 
 ### Cross-Agent Plugins
 | Plugin | Agents | Description |
 |--------|--------|-------------|
+| [[202609202000 - Firecrawl MCP Server]] | All MCP-compatible | Web scrape/search/crawl/map/parse tools |
+| [[202609202000 - Browser Use MCP]] | Claude, Cursor, Windsurf, OpenCode | Browser automation |
 | [[MCP Servers]] | All | Universal tool/resource bridge protocol |
 | [[Browser Use]] | Claude, Hermes | Browser automation |
 | [[Firecrawl]] | Multiple | Web scraping API |
@@ -51,6 +66,9 @@
 ### Core Patterns
 | Pattern | Description | Adoption |
 |---------|-------------|----------|
+| [[202609202000 - MCP Proxy Aggregator Pattern]] | Namespaced routing across upstream MCP servers | Emerging |
+| [[202609202001 - Context Engineering for Long-Horizon Agents]] | Compaction, structured notes, just-in-time retrieval | Growing |
+| [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] | Fan-out/fan-in with validation layers | Emerging |
 | [[MCP Protocol]] | Standardized tool/resource/context interface | Widespread |
 | [[Multi-Agent Orchestration]] | Coordinator + specialist agent trees | Growing |
 | [[Context Engineering]] | Dynamic context curation (RAG, summarization) | Critical |

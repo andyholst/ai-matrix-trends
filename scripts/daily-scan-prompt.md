@@ -3,6 +3,8 @@
 This file is the daily scan workflow for the AI Matrix Trends vault.
 The cron job reads AGENTS.md first for context, then this file for instructions.
 
+**Important:** After each major step, run `git add -A && git commit -m "..." && git push` to persist progress. If the Hermes agent fails mid-scan, completed work is already on remote.
+
 ---
 
 ## Pre-Scan Setup
@@ -14,6 +16,13 @@ The cron job reads AGENTS.md first for context, then this file for instructions.
    search_files(pattern="*.md", target="files", path="04 - Plugins")
    search_files(pattern="*.md", target="files", path="05 - Architecture")
    search_files(pattern="*.md", target="files", path="06 - Use Cases")
+   ```
+3. Initial commit checkpoint:
+   ```bash
+   cd /home/asimov/repository/git/ai-matrix-trends
+   git add -A
+   git commit -m "Daily scan: pre-scan state checkpoint" || echo "Nothing to commit"
+   git push
    ```
 
 ---
@@ -31,6 +40,8 @@ Focus areas:
 - Compare features, pricing, architecture
 
 Write notes to: 03 - Agents/ (use agent-profile template from AGENTS.md)
+
+After writing: cd /home/asimov/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: agent profiles $(date +%Y-%m-%d)" && git push
 ```
 
 ### Stream B: Plugin Ecosystem
@@ -43,6 +54,8 @@ Focus areas:
 - Cross-agent tools (Browser Use, Firecrawl, FAL)
 
 Write notes to: 04 - Plugins/ (use plugin-profile template from AGENTS.md)
+
+After writing: cd /home/asimov/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: plugin ecosystem $(date +%Y-%m-%d)" && git push
 ```
 
 ### Stream C: Architecture Patterns
@@ -55,6 +68,8 @@ Focus areas:
 - Tool-calling patterns and guardrails
 
 Write notes to: 05 - Architecture/ (use architecture-pattern template from AGENTS.md)
+
+After writing: cd /home/asimov/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: architecture patterns $(date +%Y-%m-%d)" && git push
 ```
 
 ### Stream D: Use Cases
@@ -67,6 +82,8 @@ Focus areas:
 - Workflow automation examples
 
 Write notes to: 06 - Use Cases/ (use atomic-note template from AGENTS.md)
+
+After writing: cd /home/asimov/repository/git/ai-matrix-trends && git add -A && git commit -m "Daily scan: use cases $(date +%Y-%m-%d)" && git push
 ```
 
 ---
@@ -77,7 +94,13 @@ Write notes to: 06 - Use Cases/ (use atomic-note template from AGENTS.md)
 2. **Cross-link** — every note must link to at least 2 existing notes via `[[wikilinks]]`.
 3. **Update MOCs** — add new notes to relevant Maps of Content in `07 - Structure/`.
 4. **Update README** — refresh trend tables, radar, and wikilinks in `README.md`.
-5. **Commit and push** — stage all changes, commit with descriptive message, push to origin.
+5. **Final commit and push:**
+   ```bash
+   cd /home/asimov/repository/git/ai-matrix-trends
+   git add -A
+   git commit -m "Daily scan: merge, MOCs, README update $(date +%Y-%m-%d)" || echo "Nothing to commit"
+   git push
+   ```
 
 ---
 
