@@ -522,6 +522,39 @@ GitHub does NOT render `[[wikilinks]]` as clickable. Use standard Markdown:
 
 ---
 
+### Trend Radar (in README.md)
+
+The Trend Radar is the vault's analysis of where AI coding agent trends are heading. It has three categories:
+
+**Heating Up 🔥** — Recent, rapid growth:
+- New tools/plugins with >5k GitHub stars/week
+- HN front page or Reddit r/LocalLMAI top posts
+- New architecture patterns gaining adoption
+- Major player releases (Claude Code, OpenAI Codex)
+
+**Stable 📈** — Established patterns:
+- Tool-calling as standard interface
+- RAG + context compression
+- IDE integrations
+- MCP as universal protocol
+- Containerized agent sandboxes
+
+**Emerging 🌁** — Early signals:
+- Agent-to-agent communication (A2A, ACP)
+- Verifiable execution
+- Federated agent networks
+- Personal memory systems
+- Interactive UI protocols (MCP Apps)
+
+**Maintenance rules:**
+1. Always analyze new findings from all 4 streams
+2. Move items between categories based on evidence
+3. Add new items with citations from research
+4. Remove outdated items
+5. Use `patch()` to update README.md
+
+---
+
 ## Link Verification Rules
 
 Every note must have at least 2 working outbound links. No exceptions.
