@@ -553,9 +553,9 @@ The cron job runs in **4 stages** — each as a separate cron job at staggered t
 Each sub-agent has a specific prompt file with full research instructions.
 
 ### Stage 2: Link Resolution (20:30)
-`stage-2-links.sh` — Fixes wikilinks after research completes:
+`stage-2-links.py` — Fixes wikilinks after research completes:
 1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
-2. `fix_all_links.py` — Fixes broken wikilinks
+2. `fix-all-links.py` — Comprehensive link fixing (dedup + resolve + create missing)
 3. `verify-vault.py` — Verifies all links resolve
 
 ### Stage 3: Scoring (20:45)

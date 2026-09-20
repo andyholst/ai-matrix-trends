@@ -20,7 +20,7 @@ mkdir -p "${HERMES_SCRIPTS_DIR}"
 
 # Copy stage scripts to Hermes profile
 echo "→ Copying stage scripts to ${HERMES_SCRIPTS_DIR}/"
-for script in stage-2-links.sh stage-3-scoring.sh stage-4-indexes.sh; do
+for script in stage-2-links.py stage-3-scoring.py stage-4-indexes.py; do
   cp -f "${VAULT_DIR}/scripts/${script}" "${HERMES_SCRIPTS_DIR}/${script}"
   chmod +x "${HERMES_SCRIPTS_DIR}/${script}"
   echo "  ✓ Copied ${script}"
@@ -51,7 +51,7 @@ else
   hermes cron create '30 20 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 2 - Links' \
-    --script "stage-2-links.sh" \
+    --script "stage-2-links.py" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 2 created"
@@ -66,7 +66,7 @@ else
   hermes cron create '45 20 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 3 - Scoring' \
-    --script "stage-3-scoring.sh" \
+    --script "stage-3-scoring.py" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 3 created"
@@ -81,7 +81,7 @@ else
   hermes cron create '0 21 * * *' \
     --profile "${PROFILE}" \
     --name 'Trends Stage 4 - Indexes' \
-    --script "stage-4-indexes.sh" \
+    --script "stage-4-indexes.py" \
     --no-agent \
     --deliver origin
   echo "  ✓ Stage 4 created"
