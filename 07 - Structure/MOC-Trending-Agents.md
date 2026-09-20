@@ -14,6 +14,9 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202000 - Cursor]] — IDE-integrated agent with codebase indexing
 - [[202609202000 - Cline]] — VS Code extension with autonomous capabilities
 - [[202609202000 - Aider]] — Terminal pair-programming agent with repo mapping
+- [[202609200758 - OpenCode]] — Open-source CLI agent, 182k+ stars, 75+ providers
+- [[202609200759 - Hermes Agent]] — Self-hosted general-purpose agent, 247k stars
+- [[202609200800 - Windsurf]] — IDE folded into Devin Desktop, SWE-2 model
 - [[Claude Code]] — Anthropic's CLI agent
 - [[OpenAI Codex]] — OpenAI's cloud agent
 - [[OpenCode]] — Open-source CLI agent
@@ -29,13 +32,13 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 ### CLI Agents
 - [[202609202000 - Claude Code]]
 - [[202609202000 - Aider]]
-- [[OpenCode]]
-- [[Hermes]]
+- [[202609200758 - OpenCode]]
+- [[202609200759 - Hermes Agent]]
 
 ### IDE Agents
 - [[202609202000 - Cursor]]
 - [[202609202000 - Cline]]
-- [[Windsurf]]
+- [[202609200800 - Windsurf]]
 
 ### Cloud Agents
 - [[202609202000 - Codex]]

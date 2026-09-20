@@ -8,8 +8,8 @@ tags:
   - protocol
   - transport
 links:
-  - [[mcp-proxy-aggregator-pattern]]
-  - [[multi-agent-orchestration-patterns]]
+  - [[202609202000 - MCP Proxy Aggregator Pattern]]
+  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
 # Layered Protocol Stack: MCP + A2A + Streamable HTTP
@@ -59,8 +59,8 @@ The stack separates concerns that monolithic agent frameworks conflate:
 - Security model across layers is still being defined (how do A2A authentication and MCP OAuth interact?)
 
 ## Examples
-- Enterprise multi-agent platforms using MCP for tool access and A2A for cross-team agent delegation
-- AWS Kiro and Amazon Q Developer CLI sharing MCP config format
+- [[20260920200758 - OpenCode]] — Enterprise multi-agent platforms using MCP for tool access and A2A for cross-team agent delegation
+- [[20260920200759 - Hermes Agent]] — AWS Kiro and Amazon Q Developer CLI sharing MCP config format
 - Docker MCP Toolkit running MCP servers in isolated containers with OAuth
 - Accenture's Trusted Agent Huddle for multi-system agent collaboration across enterprises
 
@@ -70,8 +70,8 @@ The stack separates concerns that monolithic agent frameworks conflate:
 - **Premature A2A adoption**: Using A2A for simple orchestration that MCP alone handles
 
 ## Related Patterns
-- [[mcp-proxy-aggregator-pattern]] — aggregators may expose both MCP and A2A interfaces
-- [[multi-agent-orchestration-patterns]] — A2A provides the inter-agent communication layer that orchestration patterns rely on
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — aggregators may expose both MCP and A2A interfaces
+- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — A2A provides the inter-agent communication layer that orchestration patterns rely on
 
 ## Sources
 - Truthifi, "The state of MCP 2026: how AI agents connect to your data" (February 2026)

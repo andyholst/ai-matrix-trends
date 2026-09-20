@@ -9,22 +9,39 @@ The cron job reads AGENTS.md first for context, then this file for instructions.
 
 ## Pre-Scan Setup
 
-1. Read `AGENTS.md` in the vault root for vault structure, templates, and rules.
-2. Check existing vault state:
+1. **Load required skills:**
+   ```
+   skill_view(name="obsidian")
+   ```
+   This gives you vault operations (read, write, wikilinks).
+
+2. **Load research tools.** This profile has Firecrawl enabled. Use:
+   - `web_search(query)` — search for trending tools
+   - `web_extract([urls])` — scrape content from specific pages
+
+3. Read `AGENTS.md` in the vault root for vault structure, templates, and rules.
+4. Read note templates:
+   ```
+   read_file(path=".obsidian/templates/agent-profile.md")
+   read_file(path=".obsidian/templates/plugin-profile.md")
+   read_file(path=".obsidian/templates/architecture-pattern.md")
+   read_file(path=".obsidian/templates/atomic-note.md")
+   ```
+5. Check existing vault state:
    ```bash
    search_files(pattern="*.md", target="files", path="03 - Agents")
    search_files(pattern="*.md", target="files", path="04 - Plugins")
    search_files(pattern="*.md", target="files", path="05 - Architecture")
    search_files(pattern="*.md", target="files", path="06 - Use Cases")
    ```
-3. **Read existing MOCs and README** to understand current vault state:
-   ```bash
+6. Read existing MOCs and README to understand current vault state:
+   ```
    read_file(path="07 - Structure/MOC-Trending-Agents.md")
    read_file(path="07 - Structure/MOC-Plugin-Ecosystem.md")
    read_file(path="07 - Structure/MOC-Architecture-Patterns.md")
    read_file(path="README.md")
    ```
-4. Initial commit checkpoint:
+7. Initial commit checkpoint:
    ```bash
    cd "${HOME}/repository/git/ai-matrix-trends"
    git add -A

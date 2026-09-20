@@ -7,8 +7,8 @@ tags:
   - ui
   - protocol
 links:
-  - [[mcp-proxy-aggregator-pattern]]
-  - [[multi-agent-orchestration-patterns]]
+  - [[202609202000 - MCP Proxy Aggregator Pattern]]
+  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
 # MCP Apps: Interactive UI Protocol Pattern
@@ -52,8 +52,8 @@ Key design decisions:
 - Limited adoption as of early 2026; most clients still expect text-only agent responses
 
 ## Examples
-- OpenAI's Apps SDK extends MCP with interactive UI components
-- goose adopted MCP-UI early and is shipping full MCP Apps support
+- [[202609202000 - Claude Code]] — OpenAI's Apps SDK extends MCP with interactive UI components
+- [[202609202000 - Cursor]] — goose adopted MCP-UI early and is shipping full MCP Apps support
 - Approval workflows where the agent presents a diff and the user approves/rejects via buttons
 - Configuration agents that render forms for parameter selection
 
@@ -63,8 +63,8 @@ Key design decisions:
 - **Context flooding**: Rendering large data tables as UI components when a text summary would suffice
 
 ## Related Patterns
-- [[mcp-proxy-aggregator-pattern]] — proxy aggregators may need to route UI component specs alongside tool calls
-- [[multi-agent-orchestration-patterns]] — orchestrator agents may use UI components to present aggregated results for human review
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — proxy aggregators may need to route UI component specs alongside tool calls
+- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — orchestrator agents may use UI components to present aggregated results for human review
 
 ## Sources
 - Model Context Protocol blog, "MCP Apps" (November 2025)

@@ -7,8 +7,8 @@ tags:
   - protocol
   - portability
 links:
-  - [[mcp-proxy-aggregator-pattern]]
-  - [[multi-agent-orchestration-patterns]]
+  - [[202609202000 - MCP Proxy Aggregator Pattern]]
+  - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
 # Agent Portability via Agent Client Protocol (ACP)
@@ -54,8 +54,8 @@ Key insight from Zed Industries: maintaining a VS Code extension for goose prove
 - Limited awareness compared to MCP; fewer tutorials and community resources
 
 ## Examples
-- goose running inside Zed editor via ACP instead of a VS Code extension
-- JetBrains IDEs adopting ACP for AI assistant integration
+- [[20260920200758 - OpenCode]] — goose running inside Zed editor via ACP instead of a VS Code extension
+- [[20260920200759 - Hermes Agent]] — JetBrains IDEs adopting ACP for AI assistant integration
 - Agents that need to operate across design tools, browsers, and other platforms beyond editors
 - Terminal agents that want to be accessible from any ACP-supporting host
 
@@ -65,8 +65,8 @@ Key insight from Zed Industries: maintaining a VS Code extension for goose prove
 - **Over-relying on host capabilities**: Expecting ACP clients to provide tool calling and MCP-like features
 
 ## Related Patterns
-- [[mcp-proxy-aggregator-pattern]] — ACP handles the host-agent interface; MCP handles the agent-tool interface; they are complementary
-- [[multi-agent-orchestration-patterns]] — portable agents can participate in orchestration regardless of host environment
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — ACP handles the host-agent interface; MCP handles the agent-tool interface; they are complementary
+- [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — portable agents can participate in orchestration regardless of host environment
 
 ## Sources
 - Agent Client Protocol (agentclientprotocol.com)
