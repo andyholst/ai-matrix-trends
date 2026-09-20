@@ -111,3 +111,9 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 ## Related MOCs
 - [[MOC: Trending Agents]]
 - [[MOC: Architecture Patterns]]
+- [[00 - Plugin Master Index]] - [auto-summary]
+- [[2026092020 - Superpowers]] - [auto-summary]
+- [[2026092021 - Oh My OpenAgent]] - [auto-summary]
+- [[2026092022 - Composio MCP]] - [auto-summary]
+- [[2026092023 - CodeGraph MCP]] - [auto-summary]
+- [[2026092024 - OpenCode Snip]] - [auto-summary]

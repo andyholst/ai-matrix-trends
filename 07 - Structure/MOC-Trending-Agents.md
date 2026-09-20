@@ -99,3 +99,8 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 ## Related MOCs
 - [[MOC: Architecture Patterns]]
 - [[MOC: Plugin Ecosystem]]
+- [[2026092010 - Claw Code]] - [auto-summary]
+- [[2026092011 - Gemini CLI]] - [auto-summary]
+- [[2026092012 - OpenCode]] - [auto-summary]
+- [[2026092013 - Cline]] - [auto-summary]
+- [[2026092014 - Kilo Code]] - [auto-summary]

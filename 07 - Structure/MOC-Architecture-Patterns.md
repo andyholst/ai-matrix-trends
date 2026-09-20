@@ -74,3 +74,7 @@ A map of the core architectural patterns powering modern AI coding agents.
 ## Related MOCs
 - [[MOC: Trending Agents]]
 - [[MOC: Plugin Ecosystem]]
+- [[00 - AI Architecture Master Index]] - [auto-summary]
+- [[2026092030 - Context Engineering]] - [auto-summary]
+- [[2026092031 - Sub-Agent Delegation Pattern]] - [auto-summary]
+- [[2026092032 - Agent Teams Pattern]] - [auto-summary]

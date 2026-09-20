@@ -182,6 +182,6 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20 20:00*
+*Last refreshed: 2026-09-20*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
