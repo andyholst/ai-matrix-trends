@@ -8,9 +8,9 @@ import os
 import re
 import sys
 
-# Use relative path from script location
+# Use relative path from script location (scripts/ci/ -> repo root)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-VAULT_DIR = os.path.dirname(SCRIPT_DIR)
+VAULT_DIR = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 
 # Files to skip
 SKIP_FILES = {
@@ -37,11 +37,18 @@ def build_file_map():
                     title = fname.split(' - ', 1)[1]
                     file_map[title.lower()] = rel_path
     
-    # Add folder aliases for index files
-    file_map['03 - agents/'] = '03 - Agents/00 - Agent Master Index'
-    file_map['04 - plugins/'] = '04 - Plugins/00 - Plugin Master Index'
-    file_map['05 - architecture/'] = '05 - Architecture/00 - AI Architecture Master Index'
-    file_map['09 - trend radar/'] = '07 - Structure/MOC-Trend-Radar'
+    # Add MOC references (both with and without colon format)
+    file_map['moc-plugin-ecosystem'] = '07 - Structure/MOC-Plugin-Ecosystem.md'
+    file_map['moc-trending-agents'] = '07 - Structure/MOC-Trending-Agents.md'
+    file_map['moc-architecture-patterns'] = '07 - Structure/MOC-Architecture-Patterns.md'
+    file_map['moc-trend-radar'] = '07 - Structure/MOC-Trend-Radar.md'
+    file_map['moc-use-cases'] = '07 - Structure/MOC-Use-Cases.md'
+    # Colon format (from templates)
+    file_map['moc: plugin ecosystem'] = '07 - Structure/MOC-Plugin-Ecosystem.md'
+    file_map['moc: trending agents'] = '07 - Structure/MOC-Trending-Agents.md'
+    file_map['moc: architecture patterns'] = '07 - Structure/MOC-Architecture-Patterns.md'
+    file_map['moc: trend radar'] = '07 - Structure/MOC-Trend-Radar.md'
+    file_map['moc: use cases'] = '07 - Structure/MOC-Use-Cases.md'
     
     return file_map
 
