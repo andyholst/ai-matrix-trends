@@ -6,6 +6,9 @@ tags:
   - code-review
   - qa
   - automation
+links:
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
 ---
 
 # AI-Powered Automated Code Review and QA

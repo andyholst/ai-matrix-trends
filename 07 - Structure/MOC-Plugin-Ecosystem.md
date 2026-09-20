@@ -29,6 +29,11 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609200922 - OpenCode Ensemble]] — Multi-agent teams with parallel execution
 - [[202609200923 - OpenCodeRAG]] — Local-first semantic code search with tree-sitter + LanceDB
 - [[202609200924 - OpenCode Chromium Browser]] — Browser automation via Manifest V3 extension
+- [[2026092020 - GitHub MCP Server]] — GitHub's official MCP server, 33.1k+ stars
+- [[2026092021 - Sentry MCP]] — Error tracking and performance monitoring via MCP
+- [[2026092022 - Browserbase MCP]] — Cloud-hosted headless browsers via MCP
+- [[2026092023 - Claude Code Code Review]] — Multi-agent PR review with confidence scoring
+- [[2026092024 - Sourcegraph MCP]] — Cross-repository code search and analysis
 - [[202609202010 - Playwright MCP]] — Microsoft's official browser automation MCP, 24 structured tools
 - [[202609202011 - Chrome DevTools MCP]] — Google's official DevTools Protocol MCP, 52k+ stars
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
@@ -81,6 +86,17 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202010 - Playwright MCP]]
 - [[202609202011 - Chrome DevTools MCP]]
 - [[202609200920 - Vercel Agent Browser]]
+- [[2026092022 - Browserbase MCP]]
+
+### Code Intelligence & Search
+- [[2026092024 - Sourcegraph MCP]]
+- [[2026092020 - GitHub MCP Server]]
+
+### Error Monitoring
+- [[2026092021 - Sentry MCP]]
+
+### Claude Code Extensions
+- [[2026092023 - Claude Code Code Review]]
 
 ### Hermes Plugins
 - [[202609202000 - Jev Agent Router]]

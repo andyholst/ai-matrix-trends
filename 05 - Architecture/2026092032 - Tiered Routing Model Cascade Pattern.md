@@ -5,6 +5,10 @@ tags:
   - architecture
   - cost-optimization
   - model-routing
+links:
+  - "[[2026092030 - Bidirectional MCP Agent Pattern]]"
+  - "[[2026092031 - Event-Driven Agent Concurrency Pattern]]"
+  - "[[202609202023 - MCP Gateway Aggregation Layer]]"
 ---
 
 # Tiered Routing / Model Cascade Pattern
@@ -67,9 +71,9 @@ Request ──►┌──────────────────┐
 - **Ignoring tail latency**: Cheaper models with 2x latency can hurt UX — test p95 and p99
 
 ## Related Patterns
-- [[Bidirectional MCP Agent Pattern]] — tiered routing can sit in front of a bidirectional MCP server to reduce per-call costs
-- [[Event-Driven Agent Concurrency Pattern]] — event-driven agents can each apply tiered routing independently
-- [[MCP Gateway Aggregation Layer]] — gateway can enforce tiered routing across all backend agents
+- [[2026092030 - Bidirectional MCP Agent Pattern]] — tiered routing can sit in front of a bidirectional MCP server to reduce per-call costs
+- [[2026092031 - Event-Driven Agent Concurrency Pattern]] — event-driven agents can each apply tiered routing independently
+- [[202609202023 - MCP Gateway Aggregation Layer]] — gateway can enforce tiered routing across all backend agents
 
 ## Sources
 - Google Developers Blog: "4 engineering patterns behind the strongest AI Agents Challenge submissions" (Sept 2026) — https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/

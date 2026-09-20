@@ -5,6 +5,9 @@ tags:
   - workflow
   - multi-agent
   - orchestration
+links:
+  - "[[MOC-Architecture-Patterns]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Multi-Agent Team Orchestration for Parallel Development

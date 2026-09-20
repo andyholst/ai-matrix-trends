@@ -5,6 +5,9 @@ tags:
   - agent
   - enterprise
   - autonomous
+links:
+  - "[[202609202000 - Devin]]"
+  - "[[202609202000 - Cursor]]"
 ---
 
 # Factory Droids
@@ -34,4 +37,4 @@ Autonomous AI agents for enterprise engineering teams. Raised $200M at $5B valua
 
 ## Related
 
-[[Devin]], [[Cursor]]
+[[202609202000 - Devin]], [[202609202000 - Cursor]]

@@ -27,17 +27,22 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | Claude Code, Cursor, VS Code, OpenCode | Browser automation with Playwright | 4k+ |
 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | Claude Code, Cursor, VS Code, OpenCode | End-to-end browser debugging | 3k+ |
 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | Claude Code, Cursor, OpenCode | Rust-based browser automation CLI | 42.9k+ |
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | Claude Code, Cursor, Windsurf, VS Code, OpenCode, Codex | GitHub repos, issues, PRs, Actions, code search | 33.1k+ |
+| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | Claude Code, Cursor, Windsurf, VS Code, OpenCode | Cloud-hosted headless browsers | 3.4k+ |
+| [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | Claude Code, Cursor, Windsurf, VS Code | Cross-repo code search and symbol navigation | — |
 
 ### Agent-Specific Plugins
 | Plugin | Agent | Description | Status |
 |--------|-------|-------------|--------|
 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions | Trending |
+| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | Claude Code | Multi-agent PR review with confidence scoring | Trending |
 | [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | OpenCode | Firecrawl CLI wrapper with file-based results | Trending |
 | [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | OpenCode | Persistent cross-session memory via Supermemory | Trending |
 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | Hermes Agent | Plugin framework for extending Hermes | Stable |
 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | Hermes Agent | Multi-agent work queue | Stable |
 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | Hermes Agent | Session memory consolidation | Stable |
 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | Hermes Agent, Claude Code | Typesafe context engine with agent_route MCP server | Stable |
+| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | Claude Code, Cursor, Windsurf, VS Code | Error tracking and performance monitoring | Stable |
 
 ---
 
@@ -73,12 +78,17 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 
 ### Claude Code Plugins
 1. [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) — Server-evaluated permissions
-2. [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) — Web scraping
-3. [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation
-4. [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — Live documentation
-5. [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) — Image generation
-6. [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — Playwright browser automation
-7. [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Browser debugging
+2. [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) — Multi-agent PR review
+3. [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) — Web scraping
+4. [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation
+5. [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — Live documentation
+6. [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) — Image generation
+7. [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — Playwright browser automation
+8. [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Browser debugging
+9. [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) — GitHub repos, issues, PRs
+10. [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) — Error tracking
+11. [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) — Cloud browsers
+12. [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) — Code search
 
 ### OpenCode Plugins
 1. [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) — Firecrawl CLI wrapper
@@ -103,11 +113,16 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 4. [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) — Image generation
 5. [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) — Playwright automation
 6. [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) — Browser debugging
+7. [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) — GitHub integration
+8. [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) — Error tracking
+9. [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) — Cloud browsers
+10. [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) — Code search
 
 ### Codex Plugins
 1. [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) — Web scraping
 2. [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) — Browser automation
 3. [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) — Live documentation
+4. [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) — GitHub integration
 
 ---
 
@@ -117,11 +132,13 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 |----------|-------------|-------|-------------|
 | Web/Scraping | 7 | Heating Up | Firecrawl, Browser Use |
 | Context/Memory | 5 | Stable | Jev, Supermemory, Hermes Curator |
-| Browser Automation | 4 | Heating Up | Playwright, Chrome DevTools, Safari |
+| Browser Automation | 5 | Heating Up | Playwright, Chrome DevTools, Browserbase |
 | Image Generation | 2 | Stable | FAL, DALL-E |
 | Documentation | 2 | Stable | Context7, Docs MCP |
 | Plugin Managers | 2 | Emerging | Oh-My-Openagent, Hermes Plugin System |
 | Agent Routing | 1 | Stable | Jev Agent Router |
+| Code Intelligence | 2 | Stable | Sourcegraph, GitHub MCP |
+| Error Monitoring | 1 | Stable | Sentry MCP |
 
 ---
 

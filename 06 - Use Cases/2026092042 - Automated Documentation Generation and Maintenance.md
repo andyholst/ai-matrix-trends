@@ -6,6 +6,9 @@ tags:
   - documentation
   - automation
   - multi-agent
+links:
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Architecture-Patterns]]"
 ---
 
 # Automated Documentation Generation and Maintenance

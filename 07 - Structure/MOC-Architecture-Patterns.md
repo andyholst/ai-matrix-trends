@@ -24,6 +24,9 @@ A map of the core architectural patterns powering modern AI coding agents.
 - [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]] — MCP server embeds its own LLM as a self-contained reusable agent
 - [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]] — Manager agent dynamically builds and pivots a task plan
 - [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]] — Dispatcher fans out to N parallel agents, collector aggregates
+- [[2026092030 - Bidirectional MCP Agent Pattern]] — Agent as both MCP client and server simultaneously
+- [[2026092031 - Event-Driven Agent Concurrency Pattern]] — Pub/sub event bus for async agent coordination
+- [[2026092032 - Tiered Routing Model Cascade Pattern]] — Multi-layer classifier routing to cheapest capable model
 - [[MCP Protocol]] — Standardized tool/resource interface
 - [[Multi-Agent Orchestration]] — Coordinator + specialist trees
 - [[Context Engineering]] — Dynamic context curation
@@ -60,6 +63,13 @@ A map of the core architectural patterns powering modern AI coding agents.
 ### Safety
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 - [[Guardrails & Safety]]
+
+### Cost Optimization
+- [[2026092032 - Tiered Routing Model Cascade Pattern]]
+
+### Event-Driven & Bidirectional
+- [[2026092030 - Bidirectional MCP Agent Pattern]]
+- [[2026092031 - Event-Driven Agent Concurrency Pattern]]
 
 ## Related MOCs
 - [[MOC: Trending Agents]]

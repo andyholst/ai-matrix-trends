@@ -5,6 +5,10 @@ tags:
   - architecture
   - multi-agent
   - event-driven
+links:
+  - "[[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]"
+  - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
+  - "[[2026092030 - Bidirectional MCP Agent Pattern]]"
 ---
 
 # Event-Driven Agent Concurrency Pattern
@@ -79,9 +83,9 @@ Agents publish typed events to named topics on an async event bus and subscribe 
 - **Unbounded event payloads**: Publishing large data blobs instead of references defeats the decoupling benefit
 
 ## Related Patterns
-- [[Fan-Out Fan-In Parallel Agent Pattern]] — fan-out is about parallel execution with aggregation; event-driven is about async coordination without a central aggregator
-- [[Orchestrator-Worker Delegation Pattern]] — orchestrator-worker uses direct delegation; event-driven uses indirect pub/sub
-- [[Bidirectional MCP Agent Pattern]] — bidirectional MCP can expose an event-driven agent's tools to external callers
+- [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]] — fan-out is about parallel execution with aggregation; event-driven is about async coordination without a central aggregator
+- [[202609202020 - Orchestrator-Worker Delegation Pattern]] — orchestrator-worker uses direct delegation; event-driven uses indirect pub/sub
+- [[2026092030 - Bidirectional MCP Agent Pattern]] — bidirectional MCP can expose an event-driven agent's tools to external callers
 
 ## Sources
 - Google Developers Blog: "4 engineering patterns behind the strongest AI Agents Challenge submissions" (Sept 2026) — https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/

@@ -31,6 +31,11 @@
 | [Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | Nimbalyst | — | Open-source visual workspace wrapping Claude Code and Codex with kanban board |
 | [Replit Agent](./03%20-%20Agents/202609200913%20-%20Replit%20Agent.md) | Replit | — | Cloud-only AI app builder with design canvas and one-click deployment |
 | [JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | JetBrains | — | Agentic Development Environment running multiple agents side by side |
+| [Amp](./03%20-%20Agents/2026092010%20-%20Amp.md) | Sourcegraph | — | Cloud-native agent with persistent Orbs |
+| [Qwen Code](./03%20-%20Agents/2026092011%20-%20Qwen%20Code.md) | Alibaba Qwen | 28k+ | Open-source CLI agent, multi-protocol |
+| [Factory Droids](./03%20-%20Agents/2026092012%20-%20Factory%20Droids.md) | Factory | — | Enterprise autonomous agents, $5B valuation |
+| [Zencoder](./03%20-%20Agents/2026092013%20-%20Zencoder.md) | Zencoder | — | Spec-driven development with multi-model orchestration |
+| [MagiCrew](./03%20-%20Agents/2026092014%20-%20MagiCrew.md) | MagiCrew | — | Open-source multi-agent workforce platform |
 
 ---
 
@@ -67,6 +72,11 @@
 | [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) | OpenCode | Local-first semantic code search |
 | [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) | OpenCode | Browser automation via Manifest V3 extension |
 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | Claude Code | Server-evaluated tool call permissions |
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | All MCP-compatible | GitHub repos, issues, PRs, Actions, code search |
+| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | All MCP-compatible | Error tracking and performance monitoring |
+| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | All MCP-compatible | Cloud-hosted headless browsers |
+| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | Claude Code | Multi-agent PR review with confidence scoring |
+| [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | All MCP-compatible | Cross-repo code search and symbol navigation |
 
 **Full index:** [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) (20+ plugins, by agent ecosystem, comparison table)
 
@@ -92,6 +102,9 @@
 | [MCP Server-Side LLM Reusable Agent Pattern](./05%20-%20Architecture/202609200930%20-%20MCP%20Server-Side%20LLM%20Reusable%20Agent%20Pattern.md) | MCP server embeds its own LLM as a self-contained reusable agent | Emerging |
 | [Adaptive Planning (Magentic) Orchestration Pattern](./05%20-%20Architecture/202609200931%20-%20Adaptive%20Planning%20Magentic%20Orchestration%20Pattern.md) | Manager agent dynamically builds and pivots a task plan | Emerging |
 | [Fan-Out / Fan-In Parallel Agent Pattern](./05%20-%20Architecture/202609200932%20-%20Fan-Out%20Fan-In%20Parallel%20Agent%20Pattern.md) | Dispatcher fans out to N parallel agents, collector aggregates | Emerging |
+| [Bidirectional MCP Agent Pattern](./05%20-%20Architecture/2026092030%20-%20Bidirectional%20MCP%20Agent%20Pattern.md) | Agent as both MCP client and server simultaneously | Emerging |
+| [Event-Driven Agent Concurrency Pattern](./05%20-%20Architecture/2026092031%20-%20Event-Driven%20Agent%20Concurrency%20Pattern.md) | Pub/sub event bus for async agent coordination | Emerging |
+| [Tiered Routing Model Cascade Pattern](./05%20-%20Architecture/2026092032%20-%20Tiered%20Routing%20Model%20Cascade%20Pattern.md) | Multi-layer classifier routing to cheapest capable model | Emerging |
 
 **Full index:** [AI Architecture Master Index](./05%20-%20Architecture/00%20-%20AI%20Architecture%20Master%20Index.md) (12 patterns, comparison table, protocol analysis)
 
@@ -111,6 +124,9 @@
 - [CI/CD Pipeline Automation with Claude Code Hooks and GitHub Actions](./06%20-%20Use%20Cases/202609202030%20-%20CI-CD%20Pipeline%20Automation%20with%20Claude%20Code%20Hooks%20and%20GitHub%20Actions.md)
 - [Multi-Server MCP Orchestration for Enterprise Agent Workflows](./06%20-%20Use%20Cases/202609202031%20-%20Multi-Server%20MCP%20Orchestration%20for%20Enterprise%20Agent%20Workflows.md)
 - [Custom Skills and Slash Commands as Team Workflow Accelerators](./06%20-%20Use%20Cases/202609202032%20-%20Custom%20Skills%20and%20Slash%20Commands%20as%20Team%20Workflow%20Accelerators.md)
+- [Multi-Agent Team Orchestration for Parallel Development](./06%20-%20Use%20Cases/2026092040%20-%20Multi-Agent%20Team%20Orchestration%20for%20Parallel%20Development.md)
+- [AI-Powered Automated Code Review and QA](./06%20-%20Use%20Cases/2026092041%20-%20AI-Powered%20Automated%20Code%20Review%20and%20QA.md)
+- [Automated Documentation Generation and Maintenance](./06%20-%20Use%20Cases/2026092042%20-%20Automated%20Documentation%20Generation%20and%20Maintenance.md)
 
 ---
 
@@ -166,6 +182,6 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20 09:23*
+*Last refreshed: 2026-09-20 20:00*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*

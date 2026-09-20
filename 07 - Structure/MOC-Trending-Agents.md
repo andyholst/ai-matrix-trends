@@ -32,6 +32,11 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609200912 - Nimbalyst]] — Open-source visual workspace wrapping Claude Code and Codex
 - [[202609200913 - Replit Agent]] — Cloud-only AI app builder with design canvas
 - [[202609200914 - JetBrains Air]] — Agentic Development Environment running multiple agents side by side
+- [[2026092010 - Amp]] — Sourcegraph's cloud-native agent with persistent Orbs
+- [[2026092011 - Qwen Code]] — Alibaba's open-source CLI agent, 28k stars
+- [[2026092012 - Factory Droids]] — Enterprise autonomous agents, $5B valuation
+- [[2026092013 - Zencoder]] — Spec-driven development with multi-model orchestration
+- [[2026092014 - MagiCrew]] — Open-source multi-agent workforce platform
 - [[Claude Code]] — Anthropic's CLI agent
 - [[OpenAI Codex]] — OpenAI's cloud agent
 - [[OpenCode]] — Open-source CLI agent
@@ -77,6 +82,14 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 
 ### Visual Workspaces
 - [[202609200912 - Nimbalyst]]
+
+### Cloud-Native Agents
+- [[2026092010 - Amp]]
+- [[2026092012 - Factory Droids]]
+
+### Enterprise Agents
+- [[2026092013 - Zencoder]]
+- [[2026092014 - MagiCrew]]
 
 ## Open Questions
 - Which agents support MCP natively vs via extension?

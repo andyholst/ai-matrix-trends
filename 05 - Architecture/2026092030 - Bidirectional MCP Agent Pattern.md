@@ -5,6 +5,10 @@ tags:
   - architecture
   - mcp
   - multi-agent
+links:
+  - "[[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]]"
+  - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
+  - "[[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]"
 ---
 
 # Bidirectional MCP Agent Pattern
@@ -68,9 +72,9 @@ An agent that is simultaneously a **client** of its own MCP tools (for internal 
 - **Chat UI as the only interface**: Building a human-only dashboard when the tool layer could serve agents directly
 
 ## Related Patterns
-- [[MCP Server-Side LLM Reusable Agent Pattern]] — that pattern places the LLM inside the server; this pattern makes the agent both client and server
-- [[MCP Proxy Aggregator Pattern]] — proxy aggregates multiple servers; this pattern makes one agent serve multiple callers
-- [[Fan-Out Fan-In Parallel Agent Pattern]] — fan-out can expose its specialist agents as bidirectional MCP servers
+- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]] — that pattern places the LLM inside the server; this pattern makes the agent both client and server
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — proxy aggregates multiple servers; this pattern makes one agent serve multiple callers
+- [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]] — fan-out can expose its specialist agents as bidirectional MCP servers
 
 ## Sources
 - Google Developers Blog: "4 engineering patterns behind the strongest AI Agents Challenge submissions" (Sept 2026) — https://developers.googleblog.com/4-engineering-patterns-behind-the-strongest-ai-agents-challenge-submissions/

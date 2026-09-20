@@ -4,6 +4,9 @@ created: 2026-09-20T22:00:00+02:00
 tags:
   - plugin
   - mcp
+links:
+  - "[[MOC-Plugin-Ecosystem]]"
+  - "[[MOC-Trending-Agents]]"
 ---
 
 # Browserbase MCP
