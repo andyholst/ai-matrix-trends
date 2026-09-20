@@ -1,0 +1,32 @@
+[
+  {
+    "file": "04 - Plugins/2026092020 - GitHub MCP Server.md",
+    "title": "GitHub MCP Server",
+    "type": "plugin",
+    "agents": ["Claude Code", "Claude Desktop", "Cursor", "Windsurf", "VS Code", "OpenCode", "Codex"]
+  },
+  {
+    "file": "04 - Plugins/2026092021 - Sentry MCP.md",
+    "title": "Sentry MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Claude Desktop", "Cursor", "Windsurf", "VS Code"]
+  },
+  {
+    "file": "04 - Plugins/2026092022 - Browserbase MCP.md",
+    "title": "Browserbase MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Claude Desktop", "Cursor", "Windsurf", "VS Code", "OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/2026092023 - Claude Code Code Review.md",
+    "title": "Claude Code Code Review",
+    "type": "plugin",
+    "agents": ["Claude Code"]
+  },
+  {
+    "file": "04 - Plugins/2026092024 - Sourcegraph MCP.md",
+    "title": "Sourcegraph MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Claude Desktop", "Cursor", "Windsurf", "VS Code"]
+  }
+]

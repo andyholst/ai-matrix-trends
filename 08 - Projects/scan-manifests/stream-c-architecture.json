@@ -1,0 +1,23 @@
+[
+  {
+    "file": "05 - Architecture/2026092030 - Bidirectional MCP Agent Pattern.md",
+    "title": "Bidirectional MCP Agent Pattern",
+    "type": "architecture-pattern",
+    "tags": ["architecture", "mcp", "multi-agent"],
+    "created": "2026-09-20T30:00:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/2026092031 - Event-Driven Agent Concurrency Pattern.md",
+    "title": "Event-Driven Agent Concurrency Pattern",
+    "type": "architecture-pattern",
+    "tags": ["architecture", "multi-agent", "event-driven"],
+    "created": "2026-09-20T31:00:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/2026092032 - Tiered Routing Model Cascade Pattern.md",
+    "title": "Tiered Routing / Model Cascade Pattern",
+    "type": "architecture-pattern",
+    "tags": ["architecture", "cost-optimization", "model-routing"],
+    "created": "2026-09-20T32:00:00+02:00"
+  }
+]

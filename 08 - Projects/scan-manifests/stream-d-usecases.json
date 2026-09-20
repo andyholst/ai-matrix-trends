@@ -1,0 +1,23 @@
+[
+  {
+    "file": "06 - Use Cases/2026092040 - Multi-Agent Team Orchestration for Parallel Development.md",
+    "title": "Multi-Agent Team Orchestration for Parallel Development",
+    "type": "use-case",
+    "agents": ["Claude Code", "Codex", "GitHub Copilot"],
+    "plugins": ["Agent Teams", "Conductor", "Git Worktrees"]
+  },
+  {
+    "file": "06 - Use Cases/2026092041 - AI-Powered Automated Code Review and QA.md",
+    "title": "AI-Powered Automated Code Review and QA",
+    "type": "use-case",
+    "agents": ["CodeRabbit", "Qodo", "Greptile", "GitHub Copilot"],
+    "plugins": ["SonarQube", "Semgrep", "DeepSource"]
+  },
+  {
+    "file": "06 - Use Cases/2026092042 - Automated Documentation Generation and Maintenance.md",
+    "title": "Automated Documentation Generation and Maintenance",
+    "type": "use-case",
+    "agents": ["DocAgent", "GitBook Agent", "Promptless"],
+    "plugins": ["MCP", "llms.txt", "Kapa"]
+  }
+]
