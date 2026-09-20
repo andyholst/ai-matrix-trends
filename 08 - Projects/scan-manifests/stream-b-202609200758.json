@@ -1,0 +1,38 @@
+[
+  {
+    "file": "04 - Plugins/202609200803 - Context7 MCP.md",
+    "title": "Context7 MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Windsurf", "OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/202609200804 - FAL MCP Server.md",
+    "title": "FAL MCP Server",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Windsurf", "OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/202609200805 - Hermes Kanban Dashboard.md",
+    "title": "Hermes Kanban Dashboard",
+    "type": "plugin",
+    "agents": ["Hermes"]
+  },
+  {
+    "file": "04 - Plugins/202609200806 - Hermes Curator.md",
+    "title": "Hermes Curator",
+    "type": "plugin",
+    "agents": ["Hermes"]
+  },
+  {
+    "file": "04 - Plugins/202609200807 - Claude Code Auto Permission.md",
+    "title": "Claude Code Auto Permission",
+    "type": "plugin",
+    "agents": ["Claude Code"]
+  },
+  {
+    "file": "04 - Plugins/202609202000 - Jev Agent Router.md",
+    "title": "Jev Agent Router",
+    "type": "plugin",
+    "agents": ["Hermes", "Claude Code"]
+  }
+]
