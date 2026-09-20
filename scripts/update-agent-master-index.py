@@ -23,11 +23,11 @@ def load_trend_data():
     return {'items': {}}
 
 def scan_all_agents():
-    """Scan all agent notes and extract comprehensive data"""
-    agents = []
+    """Scan all agent notes and extract data, deduplicating by title"""
+    agents_by_title = {}  # title (lowercase) -> agent dict
     
     if not os.path.exists(AGENTS_DIR):
-        return agents
+        return []
     
     for f in sorted(os.listdir(AGENTS_DIR)):
         if not f.endswith('.md') or f.startswith('00 -'):
@@ -61,7 +61,6 @@ def scan_all_agents():
         trend_items = trend_data.get('items', {})
         score = trend_items.get(title, {}).get('score', 0)
         
-        # Also compute score if not in trend data
         if score == 0:
             score += min(stars_num // 1000, 50)
             if 'cli' in tags:
@@ -79,24 +78,16 @@ def scan_all_agents():
         else:
             status = "Emerging"
         
-        # Description — extract from first paragraph after Overview
+        # Description
         desc_match = re.search(r'## Overview\n+(.+?)(?=\n## |\Z)', content, re.DOTALL)
         description = desc_match.group(1).strip() if desc_match else ""
         if '.' in description:
             description = description[:description.index('.') + 1]
         description = description.replace('\n', ' ').strip()
         
-        # Links count
-        links_match = re.findall(r'\[\[([^\]]+)\]\]', content)
-        links_count = len(links_match)
-        
-        # Provider/company
-        provider = ""
-        provider_match = re.search(r'\|\s*\w+\s*\|\s*([^|]+?)\s*\|', content)
-        if provider_match:
-            provider = provider_match.group(1).strip()
-        
-        agents.append({
+        # Deduplicate: keep only the highest scored version of each title
+        title_key = title.lower()
+        agent_data = {
             'title': title,
             'file': f,
             'rel_path': f"./{f.replace(' ', '%20')}",
@@ -105,11 +96,19 @@ def scan_all_agents():
             'tags': tags,
             'status': status,
             'description': description,
-            'links_count': links_count,
-            'provider': provider,
-        })
+            'links_count': 0,
+            'provider': '',
+        }
+        
+        if title_key in agents_by_title:
+            existing = agents_by_title[title_key]
+            # Keep the one with higher score, or longer description if tied
+            if score > existing['score'] or (score == existing['score'] and len(description) > len(existing['description'])):
+                agents_by_title[title_key] = agent_data
+        else:
+            agents_by_title[title_key] = agent_data
     
-    return agents
+    return list(agents_by_title.values())
 
 def generate_top5_table(agents):
     """Generate top 5 trending agents table"""

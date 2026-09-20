@@ -57,11 +57,11 @@ AGENT_WIKILINKS = {
 }
 
 def scan_all_plugins():
-    """Scan all plugin notes and extract comprehensive data"""
-    plugins = []
+    """Scan all plugin notes and extract data, deduplicating by title (keeps highest scored version)"""
+    plugins_by_title = {}
     
     if not os.path.exists(PLUGINS_DIR):
-        return plugins
+        return []
     
     for f in sorted(os.listdir(PLUGINS_DIR)):
         if not f.endswith('.md') or f.startswith('00 -'):
@@ -180,7 +180,9 @@ def scan_all_plugins():
             description = description[:description.index('.') + 1]
         description = description.replace('\n', ' ').strip()
         
-        plugins.append({
+        # Deduplicate: keep only the highest scored version of each title
+        title_key = title.lower()
+        plugin_data = {
             'title': title,
             'file': f,
             'rel_path': f"./{f.replace(' ', '%20')}",
@@ -190,9 +192,16 @@ def scan_all_plugins():
             'tags': tags,
             'status': status,
             'description': description,
-        })
+        }
+        
+        if title_key in plugins_by_title:
+            existing = plugins_by_title[title_key]
+            if score > existing['score'] or (score == existing['score'] and len(description) > len(existing['description'])):
+                plugins_by_title[title_key] = plugin_data
+        else:
+            plugins_by_title[title_key] = plugin_data
     
-    return plugins
+    return list(plugins_by_title.values())
 
 def generate_agent_table(agent_key, agent_name, plugins):
     """Generate a complete table for a specific agent with ALL its plugins"""

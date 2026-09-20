@@ -187,4 +187,5 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202010 - Playwright MCP]] - [auto-summary]
 - [[202609202013 - Hermes Plugin System]] - [auto-summary]
 - [[202609202500 - GitHub MCP Server]] - [auto-summary]
+- [[202609202500 - GitHub MCP Server]] - [auto-summary]
 - [[2026092020 - GitHub MCP Server]] - [auto-summary]
