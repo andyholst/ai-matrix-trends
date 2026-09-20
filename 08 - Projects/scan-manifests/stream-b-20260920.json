@@ -63,5 +63,35 @@
     "type": "plugin",
     "agents": ["OpenCode"],
     "created": "2026-09-20T09:24:00+02:00"
+  },
+  {
+    "file": "04 - Plugins/2026092020 - Superpowers.md",
+    "title": "Superpowers",
+    "type": "plugin",
+    "agents": ["Claude Code"]
+  },
+  {
+    "file": "04 - Plugins/2026092021 - Oh My OpenAgent.md",
+    "title": "Oh My OpenAgent",
+    "type": "plugin",
+    "agents": ["OpenCode", "Codex CLI"]
+  },
+  {
+    "file": "04 - Plugins/2026092022 - Composio MCP.md",
+    "title": "Composio MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Codex CLI"]
+  },
+  {
+    "file": "04 - Plugins/2026092023 - CodeGraph MCP.md",
+    "title": "CodeGraph MCP",
+    "type": "plugin",
+    "agents": ["Claude Code", "Cursor", "Codex CLI", "OpenCode"]
+  },
+  {
+    "file": "04 - Plugins/2026092024 - OpenCode Snip.md",
+    "title": "OpenCode Snip",
+    "type": "plugin",
+    "agents": ["OpenCode"]
   }
 ]
