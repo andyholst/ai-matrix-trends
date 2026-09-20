@@ -514,14 +514,14 @@ Every note's frontmatter MUST contain at least 2 wikilinks in the `links:` field
 
 ```markdown
 ---
-id: 202609202000
-created: 2026-09-20T20:00:00+02:00
+id: 2026092010
+created: 2026-09-20T10:00:00+02:00
 tags:
   - agent
   - cli
 links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Aider]]"
+  - "[[2026092011 - Agent Name 2]]"
+  - "[[2026092012 - Agent Name 3]]"
 ---
 ```
 
@@ -532,6 +532,17 @@ links:
 - The `links:` field is separate from the `## Related` section at the bottom of notes
 - **Sub-agents are responsible for adding these links when they write notes**
 - **The merge step is responsible for verifying and fixing them**
+
+**How the merge step fixes missing links:**
+1. Read note: `read_file(path="<note>", limit=15)`
+2. Check for `links:` field
+3. If missing or empty, add it using `patch()`:
+   ```
+   patch(path="<note>",
+         old_string="---\nid: ...\ncreated: ...\ntags:\n  - ...",
+         new_string="---\nid: ...\ncreated: ...\ntags:\n  - ...\nlinks:\n  - \"[[<actual filename 1>]]\"\n  - \"[[<actual filename 2>]]\"\n---")
+   ```
+4. Verify the fix landed
 
 The vault is a living system. Small, frequent, well-linked notes beat large, infrequent ones. Refactoring is growth.
 

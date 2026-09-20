@@ -19,5 +19,29 @@
     "type": "use-case",
     "agents": ["Claude Code"],
     "plugins": ["Aspire CLI", "Grafana MCP", "kubectl"]
+  },
+  {
+    "file": "06 - Use Cases/202609200940 - Claude Code Hooks for CI-CD Automation.md",
+    "title": "Claude Code Hooks for CI-CD Automation",
+    "type": "workflow",
+    "agents": ["Claude Code"],
+    "plugins": ["GitHub Actions", "GitLab CI"],
+    "created": "2026-09-20T09:40:00+02:00"
+  },
+  {
+    "file": "06 - Use Cases/202609200941 - Multi-Server MCP Orchestration for Enterprise Agent Workflows.md",
+    "title": "Multi-Server MCP Orchestration for Enterprise Agent Workflows",
+    "type": "workflow",
+    "agents": ["Claude Code", "Amazon Bedrock AgentCore", "Azure AI Studio"],
+    "plugins": ["MCP"],
+    "created": "2026-09-20T09:41:00+02:00"
+  },
+  {
+    "file": "06 - Use Cases/202609200942 - AI Agent Plugin Combinations for Accelerated Development.md",
+    "title": "AI Agent Plugin Combinations for Accelerated Development",
+    "type": "workflow",
+    "agents": ["Claude Code", "Cursor", "Codex"],
+    "plugins": ["Context7", "Superpowers", "DataImpulse", "Linear", "Obsidian"],
+    "created": "2026-09-20T09:42:00+02:00"
   }
 ]
