@@ -1,12 +1,3 @@
----
-id: {{date:YYYYMMDDHHmm}}
-created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
-tags:
-  - agent
-aliases:
-links:
----
-
 # [Agent Name]
 
 ## Overview
@@ -27,7 +18,7 @@ links:
 ```
 
 ## Key Plugins/Extensions
-- [[202609202000 - Browser Use MCP]]
+- [[link-to-plugin]]
 
 ## Strengths
 -
@@ -36,10 +27,10 @@ links:
 -
 
 ## Use Cases
-- 
+-
 
 ## Related Agents
-- [[202609200758 - OpenCode]]
+- [[link-to-comparable-agent]]
 
 ## Sources
 - [Official Docs](url)

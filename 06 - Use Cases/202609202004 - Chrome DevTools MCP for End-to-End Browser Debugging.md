@@ -43,7 +43,7 @@ npm install -g @modelcontextprotocol/server-chrome-devtools
 claude mcp add chrome-devtools npx @modelcontextprotocol/server-chrome-devtools
 ```
 
-### Debugging Workflow Example
+## Debugging Workflow Example
 
 A developer asks Claude Code to "fix the checkout flow." The agent:
 

@@ -9,7 +9,7 @@ import re
 import sys
 from collections import Counter
 
-VAULT_DIR = os.path.expanduser("~/repository/git/ai-matrix-trends")
+VAULT_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Files to skip
 SKIP_FILES = {
@@ -18,6 +18,7 @@ SKIP_FILES = {
     '.obsidian/templates/agent-profile.md',
     '.obsidian/templates/plugin-profile.md',
     '.obsidian/templates/architecture-pattern.md',
+    '.obsidian/templates/atomic-note.md',
     'scripts/daily-scan-prompt.md',
 }
 

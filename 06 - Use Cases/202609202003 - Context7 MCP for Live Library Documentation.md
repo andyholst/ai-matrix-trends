@@ -42,7 +42,7 @@ Or manually in `.claude/settings.json`:
 }
 ```
 
-### Workflow in Practice
+## Workflow in Practice
 
 When working with a specific library version, the agent calls Context7's `resolve-library-id` tool to map a library name to an internal ID, then calls `get-library-docs` with that ID and a version string. The returned markdown gets injected into context as a system message or tool result.
 

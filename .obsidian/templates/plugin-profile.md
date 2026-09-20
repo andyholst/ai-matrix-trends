@@ -1,12 +1,3 @@
----
-id: {{date:YYYYMMDDHHmm}}
-created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
-tags:
-  - plugin
-aliases:
-links:
----
-
 # [Plugin Name]
 
 ## Overview
@@ -23,14 +14,14 @@ links:
 ```
 
 ## Use Cases
-- 
+-
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]]
-- **Versions:** x.x.x+
+**Agent:** [[agent-name]]
+**Versions:** x.x.x+
 
 ## Related Plugins
-- [[202609200803 - Context7 MCP]]
+- [[link-to-related-plugin]]
 
 ## Sources
 - [GitHub](url)

@@ -7,14 +7,14 @@ created: 2026-09-20T18:50:01+02:00
 
 # MOC: 05 - Architecture
 
-- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
-- [[2026092031 - Agent Teams Pattern]] - [auto-summary]
+- [[2026092032 - Agent Teams Pattern]] - [auto-summary]
+- [[2026092032 - Agent Teams Pattern]] - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 05 - Architecture.
 
 ## Key Notes
 - [[00 - AI Architecture Master Index]] - [auto-summary]
-- [[202609200951 - MCP Server-Side LLM Reusable Agent Pattern]] - [auto-summary]
+- [[202609200930 - MCP Server-Side LLM Reusable Agent Pattern]] - [auto-summary]
 - [[202609200931 - Adaptive Planning Magentic Orchestration Pattern]] - [auto-summary]
 - [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]] - [auto-summary]
 - [[202609202000 - MCP Proxy Aggregator Pattern]] - [auto-summary]

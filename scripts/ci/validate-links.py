@@ -8,7 +8,9 @@ import os
 import re
 import sys
 
-VAULT_DIR = os.path.expanduser("~/repository/git/ai-matrix-trends")
+# Use relative path from script location
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+VAULT_DIR = os.path.dirname(SCRIPT_DIR)
 
 # Files to skip
 SKIP_FILES = {
@@ -34,6 +36,13 @@ def build_file_map():
                 if ' - ' in fname:
                     title = fname.split(' - ', 1)[1]
                     file_map[title.lower()] = rel_path
+    
+    # Add folder aliases for index files
+    file_map['03 - agents/'] = '03 - Agents/00 - Agent Master Index'
+    file_map['04 - plugins/'] = '04 - Plugins/00 - Plugin Master Index'
+    file_map['05 - architecture/'] = '05 - Architecture/00 - AI Architecture Master Index'
+    file_map['09 - trend radar/'] = '07 - Structure/MOC-Trend-Radar'
+    
     return file_map
 
 def validate_file(filepath, file_map):
@@ -115,5 +124,4 @@ def main():
         sys.exit(0)
 
 if __name__ == '__main__':
-    os.chdir(VAULT_DIR)
     main()

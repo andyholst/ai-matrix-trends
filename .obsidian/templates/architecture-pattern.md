@@ -1,15 +1,6 @@
----
-id: {{date:YYYYMMDDHHmm}}
-created: {{date:YYYY-MM-DDTHH:mm:ss+02:00}}
-tags:
-  - architecture
-aliases:
-links:
----
-
 # [Pattern Name]
 
-## Core Idea
+## Overview
 [One sentence on what this pattern is]
 
 ## How It Works
@@ -19,14 +10,14 @@ links:
 -
 
 ## Tradeoffs
-- **Pros:** 
-- **Cons:** 
+- **Pros:**
+- **Cons:**
 
 ## Examples
-- [[202609202000 - Claude Code]]
+- [[agent-that-uses-this]]
 
 ## Related Patterns
-- [[202609202000 - MCP Proxy Aggregator Pattern]]
+- [[link-to-related-pattern]]
 
 ## Sources
 -

@@ -180,7 +180,7 @@ links:
 -
 
 ## Use Cases
-- 
+-
 
 ## Related Agents
 - [[202609200758 - OpenCode]]
@@ -218,7 +218,7 @@ links:
 ```
 
 ## Use Cases
-- 
+-
 
 ## Compatibility
 - **Agent:** [[202609202000 - Claude Code]]
@@ -256,8 +256,8 @@ links:
 -
 
 ## Tradeoffs
-- **Pros:** 
-- **Cons:** 
+- **Pros:**
+- **Cons:**
 
 ## Examples
 - [[202609202000 - Claude Code]]
@@ -516,7 +516,7 @@ The cron job MUST maintain comprehensive scored trend tables in README.md:
 
 ### Required README Tables
 1. **🚀 Trending Agents** - Top 5 scored agents
-2. **🔌 Top Plugins & Extensions** - Top 5 scored plugins  
+2. **🔌 Top Plugins & Extensions** - Top 5 scored plugins
 3. **📊 Trend Radar** - Three sub-tables:
    - 🔥 Heating Up (score >= 50)
    - 📈 Stable (score 20-49)
@@ -546,10 +546,10 @@ Items are scored based on:
 
 ## Daily Scan Scripts (CRITICAL)
 
-The cron job runs in **4 stages** — each as a separate cron job at staggered times:
+The cron job runs in **8 stages**:
 
 ### Stage 1: Research (20:00)
-`stage-1-research.py` — Launches 4 parallel research streams. Uses full filenames for wikilinks.
+`stage-1-research.py` — Creates new agent and plugin notes directly.
 
 ### Stage 2: Link Resolution (20:30)
 `stage-2-links.py` — Fixes wikilinks after research completes:

@@ -67,7 +67,7 @@ Configuration persists in `.claude/settings.json`:
 }
 ```
 
-### Code Execution with MCP (2025 Pattern)
+## Code Execution with MCP (2025 Pattern)
 
 A newer pattern lets the agent write and execute code to interact with MCP servers, rather than making direct tool calls. This reduces context overhead — instead of loading full tool schemas and results into the prompt, the agent writes a script that calls the MCP server directly and returns only the processed result.
 

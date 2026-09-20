@@ -25,4 +25,4 @@ Jev is a System One decision model from TypeSafe AI for agent routing.
 - [[202609202000 - Claude Code]]
 
 ## Sources
-- 
+-

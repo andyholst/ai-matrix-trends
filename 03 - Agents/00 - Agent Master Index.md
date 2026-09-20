@@ -6,40 +6,40 @@ tags:
   - ai-tools
   - index
 links:
-  - "[[202609200758 - OpenCode]]"
-  - "[[202609200759 - Hermes Agent]]"
-  - "[[202609200800 - Windsurf]]"
-  - "[[202609200910 - Vellum]]"
-  - "[[202609200911 - Amazon Q Developer]]"
-  - "[[202609200912 - Nimbalyst]]"
-  - "[[202609200913 - Replit Agent]]"
-  - "[[202609200914 - JetBrains Air]]"
-  - "[[2026092010 - Amp]]"
-  - "[[2026092010 - Claw Code]]"
-  - "[[2026092011 - Qwen Code]]"
-  - "[[2026092012 - Factory Droids]]"
-  - "[[2026092013 - Zencoder]]"
-  - "[[2026092014 - Kilo Code]]"
-  - "[[2026092014 - MagiCrew]]"
-  - "[[202609202000 - Aider]]"
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609202000 - Cline]]"
-  - "[[202609202000 - Codex]]"
-  - "[[202609202000 - Cursor]]"
-  - "[[202609202000 - Devin]]"
-  - "[[202609202001 - GitHub Copilot Agent]]"
-  - "[[202609202001 - Google Antigravity]]"
-  - "[[202609202002 - Augment]]"
-  - "[[202609202002 - Gemini CLI]]"
-  - "[[202609202003 - AWS Kiro]]"
-  - "[[202609202004 - Pi]]"
-  - "[[202609202004 - RooCode]]"
-  - "[[202609202005 - JetBrains Junie]]"
-  - "[[202609202015 - SWE-2]]"
-  - "[[202609202025 - Devin Desktop]]"
-  - "[[202609202035 - Jev]]"
-  - "[[202609202045 - Pareto]]"
-  - "[[202609202055 - Muse Code]]"
+  - "[[03 - Agents/202609200758 - OpenCode.md]]"
+  - "[[03 - Agents/202609200759 - Hermes Agent.md]]"
+  - "[[03 - Agents/202609200800 - Windsurf.md]]"
+  - "[[03 - Agents/202609200910 - Vellum.md]]"
+  - "[[03 - Agents/202609200911 - Amazon Q Developer.md]]"
+  - "[[03 - Agents/202609200912 - Nimbalyst.md]]"
+  - "[[03 - Agents/202609200913 - Replit Agent.md]]"
+  - "[[03 - Agents/202609200914 - JetBrains Air.md]]"
+  - "[[03 - Agents/2026092010 - Amp.md]]"
+  - "[[03 - Agents/2026092010 - Claw Code.md]]"
+  - "[[03 - Agents/2026092011 - Qwen Code.md]]"
+  - "[[03 - Agents/2026092012 - Factory Droids.md]]"
+  - "[[03 - Agents/2026092013 - Zencoder.md]]"
+  - "[[03 - Agents/2026092014 - Kilo Code.md]]"
+  - "[[03 - Agents/2026092014 - MagiCrew.md]]"
+  - "[[03 - Agents/202609202000 - Aider.md]]"
+  - "[[03 - Agents/202609202000 - Claude Code.md]]"
+  - "[[03 - Agents/202609202000 - Cline.md]]"
+  - "[[03 - Agents/202609202000 - Codex.md]]"
+  - "[[03 - Agents/202609202000 - Cursor.md]]"
+  - "[[03 - Agents/202609202000 - Devin.md]]"
+  - "[[03 - Agents/202609202001 - GitHub Copilot Agent.md]]"
+  - "[[03 - Agents/202609202001 - Google Antigravity.md]]"
+  - "[[03 - Agents/202609202002 - Augment.md]]"
+  - "[[03 - Agents/202609202002 - Gemini CLI.md]]"
+  - "[[03 - Agents/202609202003 - AWS Kiro.md]]"
+  - "[[03 - Agents/202609202004 - Pi.md]]"
+  - "[[03 - Agents/202609202004 - RooCode.md]]"
+  - "[[03 - Agents/202609202005 - JetBrains Junie.md]]"
+  - "[[03 - Agents/202609202015 - SWE-2.md]]"
+  - "[[03 - Agents/202609202025 - Devin Desktop.md]]"
+  - "[[03 - Agents/202609202035 - Jev.md]]"
+  - "[[03 - Agents/202609202045 - Pareto.md]]"
+  - "[[03 - Agents/202609202055 - Muse Code.md]]"
 created: 2026-09-20T18:50:01+02:00
 ---
 
@@ -209,7 +209,7 @@ created: 2026-09-20T18:50:01+02:00
 
 ## 🔗 Related
 
-- [[README]] — vault dashboard
+- [[README.md]] — vault dashboard
 - [[03 - Agents/|All Agents]] — all agent notes
 - [[04 - Plugins/00 - Plugin Master Index|Plugin Master Index]] — plugin index
 - [[09 - Trend Radar/|Trend Radar]] — trend analysis
