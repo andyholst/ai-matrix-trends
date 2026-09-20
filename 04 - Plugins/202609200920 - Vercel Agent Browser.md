@@ -8,8 +8,8 @@ tags:
 links:
   - "[[MOC-Plugin-Ecosystem]]"
   - "[[MOC-Trending-Agents]]"
-  - "[[202609202010 - Playwright MCP]]"
-  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202504 - Playwright MCP]]"
+  - "[[202609202503 - Browser Use MCP]]"
   - "[[202609202011 - Chrome DevTools MCP]]"
 ---
 
@@ -53,8 +53,8 @@ claude mcp add agent-browser -- npx agent-browser-mcp
 - **Versions:** Node.js 18+, Rust 1.75+
 
 ## Related Plugins
-- [[202609202010 - Playwright MCP]] — alternative browser automation via MCP
-- [[202609202000 - Browser Use MCP]] — Python-based browser agent
+- [[202609202504 - Playwright MCP]] — alternative browser automation via MCP
+- [[202609202503 - Browser Use MCP]] — Python-based browser agent
 - [[202609202011 - Chrome DevTools MCP]] — Chrome DevTools Protocol MCP server
 
 ## Sources

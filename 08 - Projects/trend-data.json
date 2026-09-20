@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T14:07:53.467220",
+  "last_updated": "2026-09-20T14:13:14.617971",
   "items": {
     "Cline": {
       "type": "agent",
@@ -16,14 +16,14 @@
     "Codex": {
       "type": "agent",
       "stars": 0,
-      "mentions": 17,
+      "mentions": 4,
       "tags": [
         "agent",
         "cli",
-        "tool"
+        "cloud"
       ],
-      "score": 95,
-      "file": "03 - Agents/202609202000 - Codex.md"
+      "score": 30,
+      "file": "03 - Agents/202609202503 - Codex.md"
     },
     "Aider": {
       "type": "agent",
@@ -118,49 +118,49 @@
     "Claude Code": {
       "type": "agent",
       "stars": 0,
-      "mentions": 7,
+      "mentions": 4,
       "tags": [
         "agent",
         "cli",
-        "tool"
+        "mcp"
       ],
       "score": 45,
-      "file": "03 - Agents/202609202000 - Claude Code.md"
+      "file": "03 - Agents/202609202500 - Claude Code.md"
     },
     "Cursor": {
       "type": "agent",
       "stars": 0,
-      "mentions": 21,
+      "mentions": 4,
       "tags": [
         "agent",
-        "tool"
+        "ide"
       ],
-      "score": 105,
-      "file": "03 - Agents/202609202000 - Cursor.md"
+      "score": 20,
+      "file": "03 - Agents/202609202502 - Cursor.md"
     },
     "OpenCode": {
       "type": "agent",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 4,
       "tags": [
         "agent",
-        "open-source",
-        "cli"
+        "cli",
+        "open-source"
       ],
-      "score": 25,
-      "file": "03 - Agents/2026092012 - OpenCode.md"
+      "score": 30,
+      "file": "03 - Agents/202609202501 - OpenCode.md"
     },
     "Devin": {
       "type": "agent",
       "stars": 0,
-      "mentions": 20,
+      "mentions": 4,
       "tags": [
         "agent",
         "cloud",
         "autonomous"
       ],
-      "score": 100,
-      "file": "03 - Agents/202609202000 - Devin.md"
+      "score": 20,
+      "file": "03 - Agents/202609202504 - Devin.md"
     },
     "Google Antigravity": {
       "type": "agent",
@@ -425,14 +425,14 @@
     "Browser Use MCP": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 2,
       "tags": [
         "plugin",
-        "tool",
-        "mcp"
+        "mcp",
+        "browser"
       ],
-      "score": 29,
-      "file": "04 - Plugins/202609202000 - Browser Use MCP.md"
+      "score": 26,
+      "file": "04 - Plugins/202609202503 - Browser Use MCP.md"
     },
     "Jev Agent Router": {
       "type": "plugin",
@@ -452,11 +452,10 @@
       "mentions": 1,
       "tags": [
         "plugin",
-        "hermes",
-        "tool"
+        "hermes"
       ],
       "score": 3,
-      "file": "04 - Plugins/202609200805 - Hermes Kanban Dashboard.md"
+      "file": "04 - Plugins/202609202506 - Hermes Kanban Dashboard.md"
     },
     "Claude Code Auto Permission": {
       "type": "plugin",
@@ -464,23 +463,21 @@
       "mentions": 1,
       "tags": [
         "plugin",
-        "claude-code",
-        "tool"
+        "claude-code"
       ],
       "score": 3,
-      "file": "04 - Plugins/202609200807 - Claude Code Auto Permission.md"
+      "file": "04 - Plugins/202609202509 - Claude Code Auto Permission.md"
     },
     "Hermes Curator": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 5,
+      "mentions": 1,
       "tags": [
         "plugin",
-        "hermes",
-        "tool"
+        "hermes"
       ],
-      "score": 15,
-      "file": "04 - Plugins/202609200806 - Hermes Curator.md"
+      "score": 3,
+      "file": "04 - Plugins/202609202507 - Hermes Curator.md"
     },
     "Context7 MCP": {
       "type": "plugin",
@@ -488,11 +485,10 @@
       "mentions": 1,
       "tags": [
         "plugin",
-        "mcp",
-        "tool"
+        "mcp"
       ],
       "score": 23,
-      "file": "04 - Plugins/202609200803 - Context7 MCP.md"
+      "file": "04 - Plugins/202609202502 - Context7 MCP.md"
     },
     "FAL MCP Server": {
       "type": "plugin",
@@ -509,14 +505,14 @@
     "Playwright MCP": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 2,
       "tags": [
         "plugin",
         "mcp",
-        "browser-automation"
+        "browser"
       ],
-      "score": 29,
-      "file": "04 - Plugins/202609202010 - Playwright MCP.md"
+      "score": 26,
+      "file": "04 - Plugins/202609202504 - Playwright MCP.md"
     },
     "OpenCode Dynamic Context Pruning": {
       "type": "plugin",
@@ -561,23 +557,21 @@
       "mentions": 1,
       "tags": [
         "plugin",
-        "hermes",
-        "architecture"
+        "hermes"
       ],
       "score": 3,
-      "file": "04 - Plugins/202609202013 - Hermes Plugin System.md"
+      "file": "04 - Plugins/202609202508 - Hermes Plugin System.md"
     },
     "Firecrawl MCP Server": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 2,
       "tags": [
         "plugin",
-        "tool",
         "mcp"
       ],
-      "score": 29,
-      "file": "04 - Plugins/202609202000 - Firecrawl MCP Server.md"
+      "score": 26,
+      "file": "04 - Plugins/202609202501 - Firecrawl MCP Server.md"
     },
     "OpenCode Firecrawl": {
       "type": "plugin",
@@ -667,13 +661,13 @@
     "GitHub MCP Server": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 3,
+      "mentions": 1,
       "tags": [
         "plugin",
         "mcp"
       ],
-      "score": 29,
-      "file": "04 - Plugins/2026092020 - GitHub MCP Server.md"
+      "score": 23,
+      "file": "04 - Plugins/202609202500 - GitHub MCP Server.md"
     },
     "Browserbase MCP": {
       "type": "plugin",
@@ -914,6 +908,17 @@
       ],
       "score": 26,
       "file": "04 - Plugins/202609202215 - Zapier MCP.md"
+    },
+    "Hermes Jev Agent Router": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 1,
+      "tags": [
+        "plugin",
+        "hermes"
+      ],
+      "score": 3,
+      "file": "04 - Plugins/202609202505 - Hermes Jev Agent Router.md"
     }
   }
 }

@@ -51,7 +51,7 @@ plugins:
 **Dependencies:** pip, PTY support
 
 ## Related Plugins
-- [[202609200806 - Hermes Curator]] — Pair with Curator for lifecycle management of the skills used by Kanban workers
+- [[202609202507 - Hermes Curator]] — Pair with Curator for lifecycle management of the skills used by Kanban workers
 - [[202609202000 - Jev Agent Router]] — Use Jev for intelligent routing decisions within Kanban workflows
 
 ## Sources

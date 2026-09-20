@@ -8,7 +8,7 @@ tags:
   - cursor
   - codebase-intelligence
 links:
-  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202503 - Browser Use MCP]]"
   - "[[202609202000 - Jev Agent Router]]"
 ---
 

@@ -22,7 +22,7 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[2026092014 - Kilo Code]] — VS Code agent focused on context control, 12k+ stars
 - [[202609202004 - RooCode]] — Reliability-first VS Code agent for large monorepos
 - [[202609202005 - JetBrains Junie]] — JetBrains' native IDE agent, 9% developer adoption
-- [[202609202000 - Devin]] — Cognition's cloud-native autonomous agent, issue-to-PR workflow
+- [[202609202504 - Devin]] — Cognition's cloud-native autonomous agent, issue-to-PR workflow
 - [[202609202001 - Google Antigravity]] — Google's Gemini 3-based agentic IDE, 47% awareness
 - [[202609202002 - Augment]] — Code-intelligence platform for enterprise teams
 - [[202609202003 - AWS Kiro]] — Amazon's spec-driven agentic environment for AWS teams
@@ -70,7 +70,7 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 
 ### Cloud-Native Agents
 - [[202609202000 - Codex]]
-- [[202609202000 - Devin]]
+- [[202609202504 - Devin]]
 - [[202609200913 - Replit Agent]]
 
 ### Rust-Based Agents
@@ -162,8 +162,18 @@ A map of all tracked AI coding agents — from CLI tools to IDE integrations.
 - [[202609202000 - Cline]] - [auto-summary]
 - [[2026092014 - Kilo Code]] - [auto-summary]
 - [[202609202000 - Jev Agent Router]] - [auto-summary]
+- [[202609202002 - Gemini CLI]] - [auto-summary]
+- [[202609200758 - OpenCode]] - [auto-summary]
+- [[202609202000 - Cline]] - [auto-summary]
+- [[2026092014 - Kilo Code]] - [auto-summary]
+- [[202609202000 - Jev Agent Router]] - [auto-summary]
 - [[2026092011 - Gemini CLI]] - [auto-summary]
 - [[2026092012 - OpenCode]] - [auto-summary]
 - [[2026092013 - Cline]] - [auto-summary]
+- [[202609202000 - Devin]] - [auto-summary]
 - [[202609202003 - Kilo Code]] - [auto-summary]
 - [[202609202035 - Jev]] - [auto-summary]
+- [[202609202500 - Claude Code]] - [auto-summary]
+- [[202609202501 - OpenCode]] - [auto-summary]
+- [[202609202502 - Cursor]] - [auto-summary]
+- [[202609202503 - Codex]] - [auto-summary]

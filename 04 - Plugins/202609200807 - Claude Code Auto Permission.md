@@ -64,7 +64,7 @@ claude update
 **Dependencies:** Claude Pro/Max or API access
 
 ## Related Plugins
-- [[202609200803 - Context7 MCP]] — A prime candidate for managedMcpServers deployment
+- [[202609202502 - Context7 MCP]] — A prime candidate for managedMcpServers deployment
 - [[202609200804 - FAL MCP Server]] — Deploy as a managed server for org-wide media generation
 
 ## Sources

@@ -9,7 +9,7 @@ links:
   - "[[MOC-Plugin-Ecosystem]]"
   - "[[MOC-Architecture-Patterns]]"
   - "[[202609202000 - Claude Code]]"
-  - "[[202609202013 - Hermes Plugin System]]"
+  - "[[202609202508 - Hermes Plugin System]]"
 ---
 
 # Custom Skills and Slash Commands as Team Workflow Accelerators

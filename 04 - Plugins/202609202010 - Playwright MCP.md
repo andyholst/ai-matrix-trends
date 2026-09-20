@@ -63,7 +63,7 @@ claude mcp add playwright -- npx @playwright/mcp@latest
 - **Versions:** Node.js 18+, Playwright MCP 0.0.82+
 
 ## Related Plugins
-- [[202609202000 - Browser Use MCP]] — alternative browser automation MCP
+- [[202609202503 - Browser Use MCP]] — alternative browser automation MCP
 - [[202609202000 - Jev Agent Router]] — context management for long browser sessions
 
 ## Sources

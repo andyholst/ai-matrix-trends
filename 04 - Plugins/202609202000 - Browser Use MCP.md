@@ -66,7 +66,7 @@ Key environment variables: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` (one required
 - **Dependencies:** Chrome or Chromium, uvx
 
 ## Related Plugins
-- [[202609202000 - Browser Use MCP]] — Community fork with skills system and deep research workflow
+- [[202609202503 - Browser Use MCP]] — Community fork with skills system and deep research workflow
 - [[202609202011 - Chrome DevTools MCP]] — Chrome DevTools team's MCP for debugging and performance
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — Safari-only MCP server for macOS users
 
