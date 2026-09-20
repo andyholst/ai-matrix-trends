@@ -1,0 +1,42 @@
+[
+  {
+    "file": "03 - Agents/202609202000 - Devin.md",
+    "title": "Devin",
+    "type": "agent",
+    "tags": ["agent", "cloud", "autonomous"],
+    "created": "2026-09-20T20:00:00+02:00",
+    "links": ["202609202000 - Claude Code", "202609202000 - Codex", "202609200800 - Windsurf"]
+  },
+  {
+    "file": "03 - Agents/202609202001 - Google Antigravity.md",
+    "title": "Google Antigravity",
+    "type": "agent",
+    "tags": ["agent", "ide", "google", "gemini"],
+    "created": "2026-09-20T20:01:00+02:00",
+    "links": ["202609202000 - Claude Code", "202609202000 - Cursor", "202609202002 - Gemini CLI"]
+  },
+  {
+    "file": "03 - Agents/202609202002 - Augment.md",
+    "title": "Augment",
+    "type": "agent",
+    "tags": ["agent", "code-intelligence", "enterprise"],
+    "created": "2026-09-20T20:02:00+02:00",
+    "links": ["202609202000 - Claude Code", "202609202000 - Codex", "202609202000 - Cline"]
+  },
+  {
+    "file": "03 - Agents/202609202003 - AWS Kiro.md",
+    "title": "AWS Kiro",
+    "type": "agent",
+    "tags": ["agent", "spec-driven", "aws", "enterprise"],
+    "created": "2026-09-20T20:03:00+02:00",
+    "links": ["202609202000 - Claude Code", "202609202000 - Cursor", "202609202001 - Google Antigravity"]
+  },
+  {
+    "file": "03 - Agents/202609202004 - Pi.md",
+    "title": "Pi",
+    "type": "agent",
+    "tags": ["agent", "cli", "open-source", "multi-model"],
+    "created": "2026-09-20T20:04:00+02:00",
+    "links": ["202609202000 - Claude Code", "202609200758 - OpenCode", "202609202000 - Aider"]
+  }
+]
