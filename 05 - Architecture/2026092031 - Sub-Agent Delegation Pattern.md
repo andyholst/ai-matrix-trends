@@ -41,7 +41,7 @@ The parent manages the dependency graph manually, tracking which sub-agents have
 - Spring AI — Task tool implementation inspired by Claude Code's subagents, model-agnostic
 
 ## Related Patterns
-- [[2026092030 - Context Engineering]], [[2026092032 - Agent Teams Pattern]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]
+- [[2026092030 - Context Engineering]], [[2026092031 - Agent Teams Pattern]], [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 
 ## Sources
 - https://addyosmani.com/blog/code-agent-orchestra/

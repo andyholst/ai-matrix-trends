@@ -26,7 +26,7 @@ The explosive growth signals that developers want open-source, provider-agnostic
 ## Related
 - [[2026092010 - Claw Code]]
 - [[202609202000 - Claude Code]]
-- [[2026092012 - OpenCode]]
+- [[202609200758 - OpenCode]]
 
 ## Sources
 - [GitHub](https://github.com/ultraworkers/claw-code)

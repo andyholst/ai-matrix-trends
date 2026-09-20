@@ -59,7 +59,7 @@ The stack separates concerns that monolithic agent frameworks conflate:
 - Security model across layers is still being defined (how do A2A authentication and MCP OAuth interact?)
 
 ## Examples
-- [[2026092012 - OpenCode]] — Enterprise multi-agent platforms using MCP for tool access and A2A for cross-team agent delegation
+- [[202609200758 - OpenCode]] — Enterprise multi-agent platforms using MCP for tool access and A2A for cross-team agent delegation
 - [[202609200759 - Hermes Agent]] — AWS Kiro and Amazon Q Developer CLI sharing MCP config format
 - Docker MCP Toolkit running MCP servers in isolated containers with OAuth
 - Accenture's Trusted Agent Huddle for multi-system agent collaboration across enterprises

@@ -52,7 +52,7 @@ npx lazycodex-ai install
 - Ultrawork mode for extended autonomous coding sessions
 
 ## Compatibility
-- **Agent:** [[2026092012 - OpenCode]], [[202609202000 - Codex]]
+- **Agent:** [[202609200758 - OpenCode]], [[202609202000 - Codex]]
 - **Versions:** OpenCode v1.x+, Codex CLI
 
 ## Related Plugins

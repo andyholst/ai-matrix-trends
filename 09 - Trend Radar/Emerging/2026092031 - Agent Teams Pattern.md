@@ -6,7 +6,7 @@ tags:
   - architecture
   - multi-agent
 links:
-  - "[[2026092032 - Agent Teams Pattern]]"
+  - "[[2026092031 - Agent Teams Pattern]]"
   - "[[2026092031 - Sub-Agent Delegation Pattern]]"
 ---
 
@@ -24,7 +24,7 @@ When a teammate marks a task complete, any blocked tasks that depended on it aut
 Agent Teams represent the evolution from simple sub-agent delegation to true multi-agent collaboration. The pattern is being explored experimentally by Claude Code (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`) and implemented in tools like Conductor. As agent tasks grow more complex, team-based coordination will become essential.
 
 ## Related
-- [[2026092032 - Agent Teams Pattern]]
+- [[2026092031 - Agent Teams Pattern]]
 - [[2026092031 - Sub-Agent Delegation Pattern]]
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]]
 

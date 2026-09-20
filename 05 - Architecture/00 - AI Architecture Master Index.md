@@ -177,7 +177,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 - [[2026092032 - Tiered Routing Model Cascade Pattern]]
 - [[2026092030 - Context Engineering]]
 - [[2026092031 - Sub-Agent Delegation Pattern]]
-- [[2026092032 - Agent Teams Pattern]]
+- [[2026092031 - Agent Teams Pattern]]
 
 ### Plugins (04 - Plugins/)
 - [[202609200759 - Hermes Agent]] — Typesafe context engine for Hermes
@@ -189,7 +189,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 
 ### Agents (03 - Agents/)
 - [[202609202000 - Claude Code]] — Anthropic CLI agent
-- [[2026092012 - OpenCode]] — Open-source CLI agent
+- [[202609200758 - OpenCode]] — Open-source CLI agent
 - [[202609200759 - Hermes Agent]] — Nous Research multi-platform agent
 
 ---

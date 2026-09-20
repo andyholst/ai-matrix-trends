@@ -44,7 +44,7 @@ go install github.com/edouard-claude/snip/cmd/snip@latest
 - CI/CD pipeline runs where output verbosity is high
 
 ## Compatibility
-- **Agent:** [[2026092012 - OpenCode]]
+- **Agent:** [[202609200758 - OpenCode]]
 - **Versions:** OpenCode v1.x+
 
 ## Related Plugins

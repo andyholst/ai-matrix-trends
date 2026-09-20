@@ -26,7 +26,7 @@ The "universal integration layer" pattern could become essential infrastructure 
 ## Related
 - [[2026092022 - Composio MCP]]
 - [[202609202000 - Browser Use MCP]]
-- [[202609202000 - GitHub MCP Server]]
+- [[2026092020 - GitHub MCP Server]]
 
 ## Sources
 - [Docs](https://docs.composio.dev/docs/claude-code-plugin)

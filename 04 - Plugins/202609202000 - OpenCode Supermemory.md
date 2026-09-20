@@ -57,12 +57,12 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 - Onboarding to a new codebase by pre-loading project memory
 
 ## Compatibility
-- **Agent:** [[2026092012 - OpenCode]], [[202609202000 - Claude Code]] (via separate plugin)
+- **Agent:** [[202609200758 - OpenCode]], [[202609202000 - Claude Code]] (via separate plugin)
 - **Versions:** OpenCode 1.0+, bun or npx
 - **Dependencies:** Supermemory account or self-hosted instance
 
 ## Related Plugins
-- [[2026092012 - OpenCode]] — Same plugin, Claude Code variant
+- [[202609200758 - OpenCode]] — Same plugin, Claude Code variant
 - [[202609200805 - Hermes Kanban Dashboard]] — Memory dashboard for Hermes
 - [[202609200805 - Hermes Kanban Dashboard]] — Local memory visualization for Hermes
 

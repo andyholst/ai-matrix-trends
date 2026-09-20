@@ -40,7 +40,7 @@ Context engineering replaces prompt engineering as the primary lever for agent q
 - Manus — file system as context, KV-cache optimization, tool masking via state machine
 
 ## Related Patterns
-- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092032 - Agent Teams Pattern]], [[MCP Protocol]]
+- [[2026092031 - Sub-Agent Delegation Pattern]], [[2026092031 - Agent Teams Pattern]], [[202609202005 - Agent Portability via Agent Client Protocol]]
 
 ## Sources
 - https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

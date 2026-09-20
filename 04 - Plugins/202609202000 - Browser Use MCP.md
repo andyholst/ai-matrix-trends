@@ -61,7 +61,7 @@ Key environment variables: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` (one required
 - Any agent task that needs a real browser environment
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200800 - Windsurf]], [[2026092012 - OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609200800 - Windsurf]], [[202609200758 - OpenCode]]
 - **Versions:** browser-use 0.4+, Python 3.10+, uv
 - **Dependencies:** Chrome or Chromium, uvx
 

@@ -8,7 +8,7 @@ tags:
 links:
   - "[[MOC-Plugin-Ecosystem]]"
   - "[[MOC-Trending-Agents]]"
-  - "[[2026092012 - OpenCode]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Oh-My-Openagent
@@ -44,12 +44,12 @@ Oh-My-Openagent is the most prominent all-in-one plugin in the OpenCode ecosyste
 - Curated agent packs for common development patterns
 
 ## Compatibility
-- **Agent:** [[2026092012 - OpenCode]]
+- **Agent:** [[202609200758 - OpenCode]]
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins
-- [[2026092012 - OpenCode]] — persistent memory layer
-- [[2026092012 - OpenCode]] — web scraping integration
+- [[202609200758 - OpenCode]] — persistent memory layer
+- [[202609200758 - OpenCode]] — web scraping integration
 
 ## Sources
 - [GitHub](https://github.com/ohmyopencode/oh-my-opencode)

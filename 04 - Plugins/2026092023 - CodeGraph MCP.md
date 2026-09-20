@@ -56,7 +56,7 @@ codegraph init
 - Codebase Q&A without loading full files into context
 
 ## Compatibility
-- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]], [[2026092012 - OpenCode]]
+- **Agent:** [[202609202000 - Claude Code]], [[202609202000 - Cursor]], [[202609202000 - Codex]], [[202609200758 - OpenCode]]
 - **Versions:** Claude Code v2.x+, current Cursor/Codex/OpenCode
 
 ## Related Plugins
