@@ -44,10 +44,10 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202012 - OpenCode Dynamic Context Pruning]] — Token reduction plugin for OpenCode, 60-90% savings
 - [[202609202013 - Hermes Plugin System]] — Comprehensive plugin architecture for Hermes Agent
 - [[202609202014 - OpenCode Oh-My-Openagent]] — All-in-one OpenCode plugin with 10 specialized agents
-- [[hermes-jev]] — Typesafe context engine for Hermes
-- [[hermes-mcp]] — MCP server integration
-- [[hermes-kanban]] — Multi-agent work queue
-- [[hermes-curator]] — Memory consolidation
+- [[202609200759 - Hermes Agent]] — Typesafe context engine for Hermes
+- [[202609200759 - Hermes Agent]] — MCP server integration
+- [[202609200805 - Hermes Kanban Dashboard]] — Multi-agent work queue
+- [[202609200806 - Hermes Curator]] — Memory consolidation
 - [[Claude MCP]] — Claude Code MCP integrations
 - [[Claude Skills]] — Reusable skill bundles
 
@@ -57,10 +57,10 @@ A map of plugins, extensions, and integrations across the agent ecosystem.
 - [[202609202000 - Jev Agent Router]]
 - [[202609200805 - Hermes Kanban Dashboard]]
 - [[202609200806 - Hermes Curator]]
-- [[hermes-jev]]
-- [[hermes-mcp]]
-- [[hermes-kanban]]
-- [[hermes-curator]]
+- [[202609200759 - Hermes Agent]]
+- [[202609200759 - Hermes Agent]]
+- [[202609200805 - Hermes Kanban Dashboard]]
+- [[202609200806 - Hermes Curator]]
 
 ### Claude Code Extensions
 - [[202609202000 - Browser Use MCP]]

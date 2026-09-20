@@ -548,11 +548,12 @@ Items are scored based on:
 
 The cron job MUST execute these scripts in EXACT ORDER:
 
-1. **fix_all_links.py** - Resolves ALL broken wikilinks to actual filenames
-2. **aggregate-trends.py** - Scores all items based on stars/mentions/tags
-3. **collect_agent_plugins.py** - Builds per-agent plugin compatibility tables
-4. **update_readme.py** - Updates README with scored trend tables
-5. **verify-vault.py** - Verifies all links resolve correctly
+1. **resolve_wikilinks.py** - Resolves ALL short-name wikilinks to actual filenames
+2. **fix_all_links.py** - Resolves ALL broken wikilinks to actual filenames
+3. **aggregate-trends.py** - Scores all items based on stars/mentions/tags
+4. **collect_agent_plugins.py** - Builds per-agent plugin compatibility tables
+5. **update_readme.py** - Updates README with scored trend tables
+6. **verify-vault.py** - Verifies all links resolve correctly
 
 **NEVER skip any script. NEVER change the order.**
 

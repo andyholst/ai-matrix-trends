@@ -13,40 +13,48 @@ Read templates, MOCs, README
 
 ## Parallel Research Streams
 
+Launch 4 streams via `delegate_task`.
+
+**SUB-AGENTS: DO NOT ADD `links:` TO FRONTMATTER. Only use `## Related` section at bottom.**
+
 ### Stream A: Agents
 ```
 Goal: 5 agents | 03 - Agents/ | Timestamps: 10-14
-Frontmatter: id, created, tags (NO links)
+Frontmatter: id, created, tags (NO links field)
 Body: ## Related with [[Short Names]]
+Manifest: stream-a-UNIQUE.json
 ```
 
 ### Stream B: Plugins
 ```
 Goal: 10+ plugins | 04 - Plugins/ | Timestamps: 20-29
-Include: Claude Code MCP servers, OpenCode plugins, Hermes plugins, Cursor extensions, Codex integrations
-Frontmatter: id, created, tags (NO links)
+Frontmatter: id, created, tags (NO links field)
 Body: ## Related with [[Short Names]]
+Manifest: stream-b-UNIQUE.json
 ```
 
 ### Stream C: Architecture
 ```
 Goal: 3 patterns | 05 - Architecture/ | Timestamps: 30-32
-Frontmatter: id, created, tags (NO links)
+Frontmatter: id, created, tags (NO links field)
+Manifest: stream-c-UNIQUE.json
 ```
 
 ### Stream D: Use Cases
 ```
 Goal: 3 use cases | 06 - Use Cases/ | Timestamps: 40-42
-Frontmatter: id, created, tags (NO links)
+Frontmatter: id, created, tags (NO links field)
+Manifest: stream-d-UNIQUE.json
 ```
 
 ---
 
 ## Post-Scan Merge (MANDATORY ORDER)
 
-1. `cd ~/repository/git/ai-matrix-trends && python3 scripts/fix_all_links.py`
-2. `cd ~/repository/git/ai-matrix-trends && python3 scripts/aggregate-trends.py`
-3. `cd ~/repository/git/ai-matrix-trends && python3 scripts/collect_agent_plugins.py`
-4. `cd ~/repository/git/ai-matrix-trends && python3 scripts/update_readme.py`
-5. `cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py`
-6. `cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan' && git push`
+1. `cd ~/repository/git/ai-matrix-trends && python3 scripts/resolve_wikilinks.py`
+2. `cd ~/repository/git/ai-matrix-trends && python3 scripts/fix_all_links.py`
+3. `cd ~/repository/git/ai-matrix-trends && python3 scripts/aggregate-trends.py`
+4. `cd ~/repository/git/ai-matrix-trends && python3 scripts/collect_agent_plugins.py`
+5. `cd ~/repository/git/ai-matrix-trends && python3 scripts/update_readme.py`
+6. `cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py`
+7. `cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan' && git push`
