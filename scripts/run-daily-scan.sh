@@ -168,8 +168,8 @@ echo "Step 7/7c: Verifying vault links..."
 python3 "$SCRIPTS_DIR/verify-vault.py"
 
 echo ""
-echo "Step 7/7d: Updating MOCs..."
-python3 "$SCRIPTS_DIR/update-mocs.py"
+echo "Step 7/7e: Updating Plugin Master Index..."
+python3 "$SCRIPTS_DIR/update-plugin-master-index.py"
 
 echo ""
 echo "============================================"

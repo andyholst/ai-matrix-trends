@@ -69,4 +69,5 @@ Frontmatter: id, created, tags, links (2+ full filename links)
 5. `cd ~/repository/git/ai-matrix-trends && python3 scripts/update_readme.py`
 6. `cd ~/repository/git/ai-matrix-trends && python3 scripts/verify-vault.py`
 7. `cd ~/repository/git/ai-matrix-trends && python3 scripts/update-mocs.py`
-8. `cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan' && git push`
+8. `cd ~/repository/git/ai-matrix-trends && python3 scripts/update-plugin-master-index.py`
+9. `cd ~/repository/git/ai-matrix-trends && git add -A && git commit -m 'Daily scan' && git push`
