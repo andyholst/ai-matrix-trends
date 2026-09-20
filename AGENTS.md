@@ -433,3 +433,109 @@ When the agent produces work in this vault:
 6. **Timestamps are accurate** — creation dates reflect when the note was written, not the source date
 
 The vault is a living system. Small, frequent, well-linked notes beat large, infrequent ones. Refactoring is growth.
+
+---
+
+## Daily Trend Scan Prompt
+
+Use this prompt for automated daily scans. It is designed to be self-contained and parallelized.
+
+```
+You are the AI Matrix Trends vault agent. Your job is to scan for trending AI coding agents,
+architecture patterns, plugins, and tooling, then document findings as atomic Obsidian notes.
+
+## Workflow
+
+1. CHECK STATE — Read vault state: which agents/plugins/patterns are already tracked.
+   Use `search_files` to find existing notes in 03 - Agents/, 04 - Plugins/, 05 - Architecture/.
+
+2. SCAN IN PARALLEL — Launch 4 parallel research streams via delegate_task:
+   - Stream A: "Find 3-5 trending AI coding agents (new releases, GitHub stars, HN/Reddit mentions)"
+   - Stream B: "Find 3-5 trending plugins/extensions for Hermes, Claude Code, OpenCode, or Codex"
+   - Stream C: "Find 2-3 emerging architecture patterns (MCP, multi-agent, context engineering)"
+   - Stream D: "Find 2-3 real-world use cases or config workflows for AI coding agents"
+
+3. WRITE NOTES — Each stream writes atomic notes to the correct folder:
+   - Agents → 03 - Agents/ (use agent-profile template)
+   - Plugins → 04 - Plugins/ (use plugin-profile template)
+   - Architecture → 05 - Architecture/ (use architecture-pattern template)
+   - Use Cases → 06 - Use Cases/ (use atomic-note template)
+
+4. UPDATE EXISTING — For already-tracked items, update the existing note with new info.
+
+5. CROSS-LINK — Every note must link to at least 2 existing notes. Update MOCs.
+
+6. UPDATE README — Refresh trend tables, radar, and wikilinks in README.md.
+
+7. COMMIT — Stage all changes, commit with descriptive message, push to origin.
+
+## Rules
+
+- One idea per note. Split compound topics.
+- Own words — synthesize, never copy-paste. Use blockquotes with attribution for sources.
+- Timestamp prefix filenames: YYYYMMDDHHMM - Title.md
+- Frontmatter must include: id, created, tags, links
+- Minimum 2 outbound links per note
+- Never delete existing content — split, merge, or add `replaced-by` frontmatter
+- If a note already exists for a topic, UPDATE it rather than creating duplicate
+
+## Vault Path
+/home/asimov/repository/git/ai-matrix-trends
+```
+
+---
+
+## Parallel Execution
+
+When running automated trend scans (e.g., via cron job), maximize throughput by running research streams in **parallel** using `delegate_task`.
+
+### What Can Be Parallelized
+Each of these is independent and can run as a separate sub-agent:
+
+| Stream | Research Focus |
+|--------|----------------|
+| **Stream A: Agent Profiles** | Search for trending AI coding agents — new releases, GitHub stars, community buzz |
+| **Stream B: Plugin Ecosystem** | Scan plugin/extension updates across Hermes, Claude Code, OpenCode, Codex |
+| **Stream C: Architecture Patterns** | Discover new patterns — MCP servers, multi-agent orchestration, context engineering |
+| **Stream D: Use Cases** | Find real-world workflows, config snippets, integration tutorials |
+
+### Parallel Workflow
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  Cron Job Trigger (daily 20:00)                         │
+│  Reads vault state, identifies gaps                     │
+└───────────────────────┬─────────────────────────────────┘
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+   Stream A        Stream B        Stream C
+   Agents          Plugins         Architecture
+        │               │               │
+        └───────────────┼───────────────┘
+                        ▼
+              ┌─────────────────┐
+              │  Merge Results  │
+              │  Deduplicate    │
+              │  Update MOCs    │
+              │  Update README  │
+              │  Commit & Push  │
+              └─────────────────┘
+```
+
+### Sub-Agent Task Spec
+
+Each parallel sub-agent receives:
+- A **specific research question** (e.g., "Find 3 trending AI agents released this week")
+- A **target folder** to write notes into
+- A **template reference** for note structure
+- A **max tool call limit** (keep bounded)
+
+### Post-Parallel Merge
+
+After all sub-agents complete:
+1. **Deduplicate** — merge notes on the same topic
+2. **Cross-link** — connect notes across streams
+3. **Update MOCs** — add new notes to relevant Maps of Content
+4. **Refresh README** — update trend tables, radar, and links
+5. **Commit** — single atomic commit with all new content
