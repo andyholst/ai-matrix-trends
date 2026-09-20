@@ -549,8 +549,7 @@ Items are scored based on:
 The cron job runs in **4 stages** — each as a separate cron job at staggered times:
 
 ### Stage 1: Research (20:00)
-`stage-1-research.sh` — Launches 4 parallel sub-agents via `delegate_task`.
-Each sub-agent has a specific prompt file with full research instructions.
+`stage-1-research.py` — Launches 4 parallel research streams. Uses full filenames for wikilinks.
 
 ### Stage 2: Link Resolution (20:30)
 `stage-2-links.py` — Fixes wikilinks after research completes:
@@ -564,10 +563,10 @@ Each sub-agent has a specific prompt file with full research instructions.
 2. `collect_agent_plugins.py` — Builds per-agent plugin tables
 
 ### Stage 4: Indexes & Commit (21:00)
-`stage-4-indexes.sh` — Updates all indexes and pushes:
-1. `update-mocs.py` — Updates Maps of Content
-2. `update-plugin-master-index.py` — Generates Plugin Master Index
-3. `update-agent-master-index.py` — Generates Agent Master Index
+`stage-4-indexes.py` — Updates all indexes and pushes:
+1. `update-mocs.py` — Updates Maps of Content (idempotent, deduplicated)
+2. `update-plugin-master-index.py` — Generates Plugin Master Index (deduplicated)
+3. `update-agent-master-index.py` — Generates Agent Master Index (deduplicated)
 4. `update_readme.py` — Updates README tables
 5. `fix-master-index-links.py` — Fixes Master Index frontmatter links
 6. `verify-vault.py` — Final verification
