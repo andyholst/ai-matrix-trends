@@ -657,10 +657,18 @@ Modern AI plugins and extensions are documented in `04 - Plugins/`. This vault t
 - **Stable**: Established patterns, steady adoption (Jev, Hermes Kanban, MCP servers)
 - **Emerging**: Early signals, watch list (Oh-My-Openagent, Auto Permission)
 
-### Master Index
+### Master Indexes
 **All plugins are indexed in:** `04 - Plugins/00 - Plugin Master Index.md`
+**All agents are indexed in:** `03 - Agents/00 - Agent Master Index.md`
 
-**Maintenance rules:**
+### Compatibility Detection Rules
+The `update-plugin-master-index.py` script detects compatibility via:
+1. Frontmatter `agents:` field — uses agent keys (e.g., `hermes`, `claude-code`, `opencode`)
+2. `**Agent:**` line in Compatibility section — uses wikilinks (e.g., `[[202609200759 - Hermes Agent]]`)
+3. Body text scanning — matches agent names mentioned in notes
+4. MCP-compatible detection — plugins tagged `mcp` with "any MCP-compatible" text work with ALL MCP agents (Claude Code, OpenCode, Hermes, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie)
+
+### Maintenance rules:
 1. Add new plugins to both `04 - Plugins/` and the master index
 2. Categorize by trending/stable/emerging based on adoption data
 3. Link to supported agents (Claude Code, OpenCode, Hermes, Cursor, Codex)

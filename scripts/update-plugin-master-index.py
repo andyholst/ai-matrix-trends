@@ -3,6 +3,12 @@
 update-plugin-master-index.py - Generate comprehensive Plugin Master Index.
 Creates separate tables for each agent CLI with ALL plugins/extensions.
 Run by cron job after collect_agent_plugins.py.
+
+Compatibility detection:
+1. frontmatter agents: [..] field (agent keys)
+2. Compatibility section **Agent:** line (wikilinks like [[202609202000 - Claude Code]])
+3. Body text scanning for agent names
+4. MCP-compatible plugins (tag: mcp) with "any MCP-compatible" text work with ALL MCP agents
 """
 
 import os
@@ -15,7 +21,7 @@ VAULT = os.path.expanduser("~/repository/git/ai-matrix-trends")
 PLUGINS_DIR = os.path.join(VAULT, "04 - Plugins")
 INDEX_FILE = os.path.join(PLUGINS_DIR, "00 - Plugin Master Index.md")
 
-# Agent definitions: key -> (display_name, filename_pattern)
+# Agent definitions: key -> display_name
 AGENTS = {
     'claude-code': 'Claude Code',
     'opencode': 'OpenCode',
@@ -29,6 +35,25 @@ AGENTS = {
     'kilo-code': 'Kilo Code',
     'roocode': 'RooCode',
     'jetbrains-junie': 'JetBrains Junie',
+}
+
+# All agents that support MCP servers
+MCP_AGENTS = ['claude-code', 'opencode', 'hermes', 'cursor', 'codex', 'windsurf', 'aider', 'gemini-cli', 'github-copilot', 'kilo-code', 'roocode', 'jetbrains-junie']
+
+# Wikilink patterns for each agent in **Agent:** lines
+AGENT_WIKILINKS = {
+    'claude-code': ['202609202000 - Claude Code', '202609202000 - Claude'],
+    'opencode': ['202609200758 - OpenCode', '202609200758 - Open'],
+    'hermes': ['202609200759 - Hermes Agent', '202609200759 - Hermes'],
+    'cursor': ['202609202000 - Cursor'],
+    'codex': ['202609202000 - Codex'],
+    'windsurf': ['202609200800 - Windsurf'],
+    'aider': ['202609202000 - Aider'],
+    'gemini-cli': ['2026092011 - Gemini CLI', '202609202002 - Gemini CLI'],
+    'github-copilot': ['202609202001 - GitHub Copilot Agent'],
+    'kilo-code': ['2026092014 - Kilo Code', '202609202003 - Kilo Code'],
+    'roocode': ['202609202004 - RooCode'],
+    'jetbrains-junie': ['202609202005 - JetBrains Junie'],
 }
 
 def scan_all_plugins():
@@ -59,8 +84,10 @@ def scan_all_plugins():
             except:
                 pass
         
-        # Compatibility — check frontmatter agents field
+        # === COMPATIBILITY DETECTION ===
         compat_agents = set()
+        
+        # 1. Check frontmatter agents: field (contains agent keys)
         fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
         if fm_match:
             fm = fm_match.group(1)
@@ -71,15 +98,28 @@ def scan_all_plugins():
                     if agent_key in agents_str:
                         compat_agents.add(agent_key)
         
-        # Also check Compatibility section
+        # 2. Check Compatibility section **Agent:** line (contains wikilinks)
         compat_section = re.search(r'## Compatibility.*?\n(.*?)(?=\n## |\Z)', content, re.DOTALL)
         if compat_section:
-            compat_text = compat_section.group(1).lower()
-            for agent_key, agent_name in AGENTS.items():
-                if agent_name.lower() in compat_text or agent_key in compat_text:
+            compat_text = compat_section.group(1)
+            # Look for **Agent:** line with wikilinks
+            agent_line = re.search(r'\*\*Agent:\*\*\s*(.+?)(?:\n|$)', compat_text)
+            if agent_line:
+                agent_line_text = agent_line.group(1)
+                # Check for wikilinks for each agent
+                for agent_key, wikilinks in AGENT_WIKILINKS.items():
+                    for wl in wikilinks:
+                        if wl in agent_line_text:
+                            compat_agents.add(agent_key)
+                            break
+            
+            # Check for "any MCP-compatible" or "all MCP-compatible"
+            compat_lower = compat_text.lower()
+            if 'any mcp-compatible' in compat_lower or 'all mcp-compatible' in compat_lower or 'any mcp compatible' in compat_lower:
+                for agent_key in MCP_AGENTS:
                     compat_agents.add(agent_key)
         
-        # Also scan body text for agent mentions
+        # 3. Scan body text for agent mentions
         body_match = re.search(r'^---\n.*?\n---\n(.*)', content, re.DOTALL)
         if body_match:
             body_text = body_match.group(1).lower()
@@ -104,11 +144,17 @@ def scan_all_plugins():
                             compat_agents.add(agent_key)
                             break
         
-        # Tags
+        # 4. If plugin has mcp tag and mentions "any MCP-compatible" in body, add all MCP agents
         tags_match = re.search(r'^tags:\n((?:-\s*.+\n?)+)', content, re.MULTILINE)
         tags = []
         if tags_match:
             tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n')]
+        
+        if 'mcp' in tags:
+            full_text = content.lower()
+            if 'any mcp-compatible' in full_text or 'all mcp-compatible' in full_text or 'works with any' in full_text:
+                for agent_key in MCP_AGENTS:
+                    compat_agents.add(agent_key)
         
         # Score
         score = 0
@@ -130,7 +176,6 @@ def scan_all_plugins():
         # Description — extract from first paragraph after Overview
         desc_match = re.search(r'## Overview\n+(.+?)(?=\n## |\Z)', content, re.DOTALL)
         description = desc_match.group(1).strip() if desc_match else ""
-        # Truncate to one sentence
         if '.' in description:
             description = description[:description.index('.') + 1]
         description = description.replace('\n', ' ').strip()
@@ -156,7 +201,6 @@ def generate_agent_table(agent_key, agent_name, plugins):
     if not agent_plugins:
         return f"### {agent_name}\n\n*No plugins tracked yet. Run daily scan to collect plugins.*\n\n"
     
-    # Sort by score descending
     agent_plugins.sort(key=lambda x: x['score'], reverse=True)
     
     table = f"### {agent_name}\n\n"
@@ -174,13 +218,11 @@ def generate_agent_table(agent_key, agent_name, plugins):
 
 def generate_cross_agent_table(plugins):
     """Generate cross-agent compatibility matrix for top plugins"""
-    # Top 20 by score
     top_plugins = sorted(plugins, key=lambda x: x['score'], reverse=True)[:20]
     
     table = "## 📊 Cross-Agent Compatibility Matrix\n\n"
     table += "*Top 20 plugins by score — which agents they support*\n\n"
     
-    # Header
     agent_names = [AGENTS[k] for k in AGENTS]
     table += "| Plugin | " + " | ".join(agent_names) + " | Score |\n"
     table += "|" + "|".join(["--------" for _ in range(len(AGENTS) + 1)]) + "|-------|\n"
@@ -275,7 +317,6 @@ def generate_category_table(plugins):
     """Generate plugins grouped by category"""
     categories = defaultdict(list)
     for p in plugins:
-        # Determine category from tags
         tags_str = ','.join(p['tags'])
         if 'mcp' in tags_str:
             categories['MCP Servers'].append(p)
@@ -347,19 +388,15 @@ links:
 
 """
     
-    # Trending
     content += generate_trending_table(plugins)
     content += "---\n\n"
     
-    # Stable
     content += generate_stable_table(plugins)
     content += "---\n\n"
     
-    # Emerging
     content += generate_emerging_table(plugins)
     content += "---\n\n"
     
-    # By Agent Ecosystem
     content += "## 🔌 By Agent Ecosystem\n\n"
     content += "*Complete plugin lists for each agent CLI*\n\n"
     
@@ -368,15 +405,12 @@ links:
     
     content += "---\n\n"
     
-    # By Category
     content += generate_category_table(plugins)
     content += "---\n\n"
     
-    # Cross-Agent Matrix
     content += generate_cross_agent_table(plugins)
     content += "---\n\n"
     
-    # Stats
     content += f"""## 📈 Statistics
 
 | Metric | Value |
@@ -389,8 +423,6 @@ links:
 | Cross-agent (2+) | {len([p for p in plugins if len(p['agents']) >= 2])} |
 
 ---
-
-## 🔗 Related
 
 ## 🔗 Related
 

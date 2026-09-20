@@ -7,10 +7,10 @@ tags:
 links:
   - "[[202609202000 - Browser Use MCP]]"
   - "[[202609202000 - Jev Agent Router]]"
-  - "[[2026092020 - GitHub MCP Server]]"
-  - "[[202609202000 - Firecrawl MCP Server]]"
   - "[[202609200803 - Context7 MCP]]"
   - "[[202609200804 - FAL MCP Server]]"
+  - "[[202609202000 - Firecrawl MCP Server]]"
+  - "[[2026092020 - GitHub MCP Server]]"
   - "[[202609202010 - Playwright MCP]]"
   - "[[2026092022 - Browserbase MCP]]"
   - "[[2026092023 - CodeGraph MCP]]"
@@ -75,10 +75,10 @@ links:
 
 | # | Plugin | Score | Stars | Agents | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Claude Code, Codex, Cursor +3 | GitHub's official MCP Server exposes repository, issue, pull... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Claude Code, Codex, Cursor +2 | The official Firecrawl MCP Server brings web scraping, crawl... |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Claude Code, Cursor, OpenCode +1 | Context7 is an open-source Model Context Protocol server bui... |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Claude Code, Cursor, OpenCode +1 | FAL MCP Server is a hosted Model Context Protocol endpoint t... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Aider, Claude Code, Codex +9 | Context7 is an open-source Model Context Protocol server bui... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Aider, Claude Code, Codex +9 | FAL MCP Server is a hosted Model Context Protocol endpoint t... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Aider, Claude Code, Codex +9 | The official Firecrawl MCP Server brings web scraping, crawl... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Claude Code, Codex, Cursor +3 | GitHub's official MCP Server exposes repository, issue, pull... |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Claude Code, Cursor, OpenCode +1 | Browser Use MCP is a local Model Context Protocol server tha... |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Claude Code, Cursor, OpenCode +1 | Playwright MCP is Microsoft's official Model Context Protoco... |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Claude Code, Cursor, OpenCode +1 | Browserbase MCP gives AI coding agents access to cloud-hoste... |
@@ -136,10 +136,10 @@ links:
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Heating Up | Browser Use MCP is a local Model Context Protocol server that gives AI coding ag... |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Heating Up | Playwright MCP is Microsoft's official Model Context Protocol server that gives ... |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Heating Up | Browserbase MCP gives AI coding agents access to cloud-hosted, headless browsers... |
@@ -174,10 +174,10 @@ links:
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Heating Up | Browser Use MCP is a local Model Context Protocol server that gives AI coding ag... |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Heating Up | Playwright MCP is Microsoft's official Model Context Protocol server that gives ... |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Heating Up | Browserbase MCP gives AI coding agents access to cloud-hosted, headless browsers... |
@@ -197,15 +197,18 @@ links:
 
 ### Hermes Agent
 
-*All plugins/extensions for Hermes Agent — 5 total*
+*All plugins/extensions for Hermes Agent — 8 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [OpenCode Supermemory](./202609202000%20-%20OpenCode%20Supermemory.md) | 60 | — | Heating Up | OpenCode Supermemory is a plugin that gives OpenCode agents persistent memory ac... |
-| 2 | [Jev Agent Router](./202609202000%20-%20Jev%20Agent%20Router.md) | 40 | — | Stable | Jev is a System One decision model from TypeSafe AI that returns typed decisions... |
-| 3 | [Hermes Plugin System](./202609202013%20-%20Hermes%20Plugin%20System.md) | 40 | — | Stable | Hermes Agent has a comprehensive plugin system for adding custom tools, hooks, a... |
-| 4 | [Hermes Kanban Dashboard](./202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Stable | The Kanban Dashboard is a built-in Hermes Agent plugin that provides a visual Ka... |
-| 5 | [Hermes Curator](./202609200806%20-%20Hermes%20Curator.md) | 20 | — | Stable | Curator is a built-in Hermes Agent plugin that automatically manages the skill c... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [OpenCode Supermemory](./202609202000%20-%20OpenCode%20Supermemory.md) | 60 | — | Heating Up | OpenCode Supermemory is a plugin that gives OpenCode agents persistent memory ac... |
+| 5 | [Jev Agent Router](./202609202000%20-%20Jev%20Agent%20Router.md) | 40 | — | Stable | Jev is a System One decision model from TypeSafe AI that returns typed decisions... |
+| 6 | [Hermes Plugin System](./202609202013%20-%20Hermes%20Plugin%20System.md) | 40 | — | Stable | Hermes Agent has a comprehensive plugin system for adding custom tools, hooks, a... |
+| 7 | [Hermes Kanban Dashboard](./202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Stable | The Kanban Dashboard is a built-in Hermes Agent plugin that provides a visual Ka... |
+| 8 | [Hermes Curator](./202609200806%20-%20Hermes%20Curator.md) | 20 | — | Stable | Curator is a built-in Hermes Agent plugin that automatically manages the skill c... |
 
 ### Cursor
 
@@ -213,10 +216,10 @@ links:
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Heating Up | Browser Use MCP is a local Model Context Protocol server that gives AI coding ag... |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Heating Up | Playwright MCP is Microsoft's official Model Context Protocol server that gives ... |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Heating Up | Browserbase MCP gives AI coding agents access to cloud-hosted, headless browsers... |
@@ -241,27 +244,29 @@ links:
 
 ### Codex
 
-*All plugins/extensions for Codex — 17 total*
+*All plugins/extensions for Codex — 19 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
-| 3 | [CodeGraph MCP](./2026092023%20-%20CodeGraph%20MCP.md) | 80 | — | Heating Up | CodeGraph is an MCP server that converts your codebase into a knowledge graph, e... |
-| 4 | [Exa MCP](./202609202025%20-%20Exa%20MCP.md) | 60 | — | Heating Up | Exa MCP is a semantic search engine purpose-built for AI agents. |
-| 5 | [Supabase MCP](./202609202035%20-%20Supabase%20MCP.md) | 60 | — | Heating Up | Supabase MCP is the official Model Context Protocol server for the Supabase plat... |
-| 6 | [Notion MCP](./202609202045%20-%20Notion%20MCP.md) | 60 | — | Heating Up | Notion MCP is the official Model Context Protocol server for Notion workspaces. |
-| 7 | [Linear MCP](./202609202055%20-%20Linear%20MCP.md) | 60 | — | Heating Up | Linear MCP is a Model Context Protocol server that connects AI coding agents to ... |
-| 8 | [Oh My OpenAgent](./2026092021%20-%20Oh%20My%20OpenAgent.md) | 60 | — | Heating Up | Oh My OpenAgent (omo) is a batteries-included agent harness for OpenCode (and a ... |
-| 9 | [Figma MCP](./202609202105%20-%20Figma%20MCP.md) | 60 | — | Heating Up | Figma MCP is the official Model Context Protocol server for Figma. |
-| 10 | [Stripe MCP](./202609202115%20-%20Stripe%20MCP.md) | 60 | — | Heating Up | Stripe MCP is the official Model Context Protocol server for Stripe. |
-| 11 | [Cloudflare MCP](./202609202125%20-%20Cloudflare%20MCP.md) | 60 | — | Heating Up | Cloudflare MCP is the official Model Context Protocol server for the Cloudflare ... |
-| 12 | [Datadog MCP](./202609202135%20-%20Datadog%20MCP.md) | 60 | — | Heating Up | Datadog MCP is the official Model Context Protocol server for Datadog's unified ... |
-| 13 | [Kubernetes MCP](./202609202145%20-%20Kubernetes%20MCP.md) | 60 | — | Heating Up | Kubernetes MCP is a community-maintained Model Context Protocol server that give... |
-| 14 | [Terraform MCP](./202609202155%20-%20Terraform%20MCP.md) | 60 | — | Heating Up | Terraform MCP is the official Model Context Protocol server from HashiCorp for T... |
-| 15 | [Composio MCP](./2026092022%20-%20Composio%20MCP.md) | 60 | — | Heating Up | Composio is a universal integration layer that gives AI coding agents secure acc... |
-| 16 | [Sequential Thinking MCP](./202609202205%20-%20Sequential%20Thinking%20MCP.md) | 60 | — | Heating Up | Sequential Thinking MCP is an official Anthropic reference server that gives AI ... |
-| 17 | [Zapier MCP](./202609202215%20-%20Zapier%20MCP.md) | 60 | — | Heating Up | Zapier MCP is the official Model Context Protocol server for Zapier's automation... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
+| 5 | [CodeGraph MCP](./2026092023%20-%20CodeGraph%20MCP.md) | 80 | — | Heating Up | CodeGraph is an MCP server that converts your codebase into a knowledge graph, e... |
+| 6 | [Exa MCP](./202609202025%20-%20Exa%20MCP.md) | 60 | — | Heating Up | Exa MCP is a semantic search engine purpose-built for AI agents. |
+| 7 | [Supabase MCP](./202609202035%20-%20Supabase%20MCP.md) | 60 | — | Heating Up | Supabase MCP is the official Model Context Protocol server for the Supabase plat... |
+| 8 | [Notion MCP](./202609202045%20-%20Notion%20MCP.md) | 60 | — | Heating Up | Notion MCP is the official Model Context Protocol server for Notion workspaces. |
+| 9 | [Linear MCP](./202609202055%20-%20Linear%20MCP.md) | 60 | — | Heating Up | Linear MCP is a Model Context Protocol server that connects AI coding agents to ... |
+| 10 | [Oh My OpenAgent](./2026092021%20-%20Oh%20My%20OpenAgent.md) | 60 | — | Heating Up | Oh My OpenAgent (omo) is a batteries-included agent harness for OpenCode (and a ... |
+| 11 | [Figma MCP](./202609202105%20-%20Figma%20MCP.md) | 60 | — | Heating Up | Figma MCP is the official Model Context Protocol server for Figma. |
+| 12 | [Stripe MCP](./202609202115%20-%20Stripe%20MCP.md) | 60 | — | Heating Up | Stripe MCP is the official Model Context Protocol server for Stripe. |
+| 13 | [Cloudflare MCP](./202609202125%20-%20Cloudflare%20MCP.md) | 60 | — | Heating Up | Cloudflare MCP is the official Model Context Protocol server for the Cloudflare ... |
+| 14 | [Datadog MCP](./202609202135%20-%20Datadog%20MCP.md) | 60 | — | Heating Up | Datadog MCP is the official Model Context Protocol server for Datadog's unified ... |
+| 15 | [Kubernetes MCP](./202609202145%20-%20Kubernetes%20MCP.md) | 60 | — | Heating Up | Kubernetes MCP is a community-maintained Model Context Protocol server that give... |
+| 16 | [Terraform MCP](./202609202155%20-%20Terraform%20MCP.md) | 60 | — | Heating Up | Terraform MCP is the official Model Context Protocol server from HashiCorp for T... |
+| 17 | [Composio MCP](./2026092022%20-%20Composio%20MCP.md) | 60 | — | Heating Up | Composio is a universal integration layer that gives AI coding agents secure acc... |
+| 18 | [Sequential Thinking MCP](./202609202205%20-%20Sequential%20Thinking%20MCP.md) | 60 | — | Heating Up | Sequential Thinking MCP is an official Anthropic reference server that gives AI ... |
+| 19 | [Zapier MCP](./202609202215%20-%20Zapier%20MCP.md) | 60 | — | Heating Up | Zapier MCP is the official Model Context Protocol server for Zapier's automation... |
 
 ### Windsurf
 
@@ -269,10 +274,10 @@ links:
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Heating Up | Browser Use MCP is a local Model Context Protocol server that gives AI coding ag... |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Heating Up | Playwright MCP is Microsoft's official Model Context Protocol server that gives ... |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Heating Up | Browserbase MCP gives AI coding agents access to cloud-hosted, headless browsers... |
@@ -282,33 +287,66 @@ links:
 
 ### Aider
 
-*No plugins tracked yet. Run daily scan to collect plugins.*
-
-### Gemini CLI
-
-*No plugins tracked yet. Run daily scan to collect plugins.*
-
-### GitHub Copilot
-
-*All plugins/extensions for GitHub Copilot — 3 total*
+*All plugins/extensions for Aider — 3 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
-| 2 | [Oh My OpenAgent](./2026092021%20-%20Oh%20My%20OpenAgent.md) | 60 | — | Heating Up | Oh My OpenAgent (omo) is a batteries-included agent harness for OpenCode (and a ... |
-| 3 | [Claude Code Auto Permission](./202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Stable | Auto Permission is a Claude Code permission mode introduced in v2. |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+
+### Gemini CLI
+
+*All plugins/extensions for Gemini CLI — 3 total*
+
+| # | Plugin | Score | Stars | Status | Description |
+|---|--------|-------|-------|--------|-------------|
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+
+### GitHub Copilot
+
+*All plugins/extensions for GitHub Copilot — 6 total*
+
+| # | Plugin | Score | Stars | Status | Description |
+|---|--------|-------|-------|--------|-------------|
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Heating Up | GitHub's official MCP Server exposes repository, issue, pull request, Actions, a... |
+| 5 | [Oh My OpenAgent](./2026092021%20-%20Oh%20My%20OpenAgent.md) | 60 | — | Heating Up | Oh My OpenAgent (omo) is a batteries-included agent harness for OpenCode (and a ... |
+| 6 | [Claude Code Auto Permission](./202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Stable | Auto Permission is a Claude Code permission mode introduced in v2. |
 
 ### Kilo Code
 
-*No plugins tracked yet. Run daily scan to collect plugins.*
+*All plugins/extensions for Kilo Code — 3 total*
+
+| # | Plugin | Score | Stars | Status | Description |
+|---|--------|-------|-------|--------|-------------|
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
 
 ### RooCode
 
-*No plugins tracked yet. Run daily scan to collect plugins.*
+*All plugins/extensions for RooCode — 3 total*
+
+| # | Plugin | Score | Stars | Status | Description |
+|---|--------|-------|-------|--------|-------------|
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
 
 ### JetBrains Junie
 
-*No plugins tracked yet. Run daily scan to collect plugins.*
+*All plugins/extensions for JetBrains Junie — 3 total*
+
+| # | Plugin | Score | Stars | Status | Description |
+|---|--------|-------|-------|--------|-------------|
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Heating Up | Context7 is an open-source Model Context Protocol server built by Upstash that g... |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Heating Up | FAL MCP Server is a hosted Model Context Protocol endpoint that connects any MCP... |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Heating Up | The official Firecrawl MCP Server brings web scraping, crawling, and search capa... |
 
 ---
 
@@ -318,10 +356,10 @@ links:
 
 | # | Plugin | Score | Stars | Agents |
 |---|--------|-------|-------|--------|
-| 1 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Claude Code, Codex |
-| 2 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 100 | — | Claude Code, Codex |
-| 3 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 80 | — | Claude Code, Cursor |
-| 4 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 80 | — | Claude Code, Cursor |
+| 1 | [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | 240 | — | Aider, Claude Code |
+| 2 | [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | 240 | — | Aider, Claude Code |
+| 3 | [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | 240 | — | Aider, Claude Code |
+| 4 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | 120 | — | Claude Code, Codex |
 | 5 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | 80 | — | Claude Code, Cursor |
 | 6 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | 80 | — | Claude Code, Cursor |
 | 7 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | 80 | — | Claude Code, Cursor |
@@ -337,10 +375,10 @@ links:
 
 | Plugin | Claude Code | OpenCode | Hermes Agent | Cursor | Codex | Windsurf | Aider | Gemini CLI | GitHub Copilot | Kilo Code | RooCode | JetBrains Junie | Score |
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|-------|
+| [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 240 |
+| [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 240 |
+| [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 240 |
 | [GitHub MCP Server](./2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | ✅ | — | — | — | 120 |
-| [Firecrawl MCP Server](./202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | — | — | — | — | 100 |
-| [Context7 MCP](./202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | 80 |
-| [FAL MCP Server](./202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | 80 |
 | [Browser Use MCP](./202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | 80 |
 | [Playwright MCP](./202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | 80 |
 | [Browserbase MCP](./2026092022%20-%20Browserbase%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | 80 |
@@ -372,8 +410,6 @@ links:
 | Cross-agent (2+) | 31 |
 
 ---
-
-## 🔗 Related
 
 ## 🔗 Related
 
