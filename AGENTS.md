@@ -820,16 +820,37 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 
 ## Cron Jobs
 
-The daily scan runs as **4 separate cron jobs** at staggered times:
+The daily scan runs as a **single cron job** at 20:00 that executes all 4 stages sequentially:
 
 | Time | Job | Script | What it does |
 |------|-----|--------|--------------|
-| 20:00 | Trends Stage 1 - Research | `stage-1-research.sh` | Launches 4 parallel research sub-agents |
-| 20:30 | Trends Stage 2 - Links | `stage-2-links.sh` | Resolves & fixes wikilinks |
-| 20:45 | Trends Stage 3 - Scoring | `stage-3-scoring.py` | Aggregates trend scores |
-| 21:00 | Trends Stage 4 - Indexes | `stage-4-indexes.sh` | Updates MOCs, indexes, README, commits |
+| 20:00 | AI Matrix Trends - Daily Scan | `daily-scan.sh` | Runs all 4 stages: Research → Links → Scoring → Indexes → Commit |
 
 Setup: `bash scripts/setup-cron.sh` (run once after cloning)
+
+### Stage 1: Research (20:00)
+`stage-1-research.py` — Creates new agent and plugin notes directly (no delegate_task needed).
+Searches for trending agents, plugins, architecture patterns, and use cases.
+
+### Stage 2: Link Resolution
+1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
+2. `fix_all_links.py` — Fixes broken wikilinks
+3. `verify-vault.py` — Verifies all links resolve
+
+### Stage 3: Scoring
+1. `aggregate-trends.py` — Scores items based on stars/mentions/tags
+2. `collect_agent_plugins.py` — Builds per-agent plugin tables
+
+### Stage 4: Indexes & Commit
+1. `update-mocs.py` — Updates Maps of Content
+2. `update-plugin-master-index.py` — Generates Plugin Master Index
+3. `update-agent-master-index.py` — Generates Agent Master Index
+4. `update_readme.py` — Updates README tables
+5. `fix-master-index-links.py` — Fixes Master Index frontmatter links
+6. `verify-vault.py` — Final verification
+7. `git add -A && git commit && git push`
+
+**NEVER skip any script. NEVER change the order. NEVER delete files.**
 
 ---
 
