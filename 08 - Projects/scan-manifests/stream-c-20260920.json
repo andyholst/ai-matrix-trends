@@ -37,5 +37,26 @@
     "type": "architecture",
     "examples": ["Microsoft Azure", "Beam AI"],
     "created": "2026-09-20T09:32:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/2026092030 - Context Engineering.md",
+    "title": "Context Engineering",
+    "type": "architecture",
+    "examples": ["Claude Code", "Manus"],
+    "created": "2026-09-20T30:00:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/2026092031 - Sub-Agent Delegation Pattern.md",
+    "title": "Sub-Agent Delegation Pattern",
+    "type": "architecture",
+    "examples": ["Claude Code", "Spring AI"],
+    "created": "2026-09-20T31:00:00+02:00"
+  },
+  {
+    "file": "05 - Architecture/2026092032 - Agent Teams Pattern.md",
+    "title": "Agent Teams Pattern",
+    "type": "architecture",
+    "examples": ["Claude Code", "Conductor"],
+    "created": "2026-09-20T32:00:00+02:00"
   }
 ]
