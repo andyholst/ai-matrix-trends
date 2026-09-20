@@ -1,0 +1,12 @@
+{
+  "stream": "A",
+  "category": "agents",
+  "scan_date": "2026-09-20",
+  "notes": [
+    {"name": "Amp", "file": "2026092010 - Amp.md", "id": "2026092010"},
+    {"name": "Qwen Code", "file": "2026092011 - Qwen Code.md", "id": "2026092011"},
+    {"name": "Factory Droids", "file": "2026092012 - Factory Droids.md", "id": "2026092012"},
+    {"name": "Zencoder", "file": "2026092013 - Zencoder.md", "id": "2026092013"},
+    {"name": "MagiCrew", "file": "2026092014 - MagiCrew.md", "id": "2026092014"}
+  ]
+}
