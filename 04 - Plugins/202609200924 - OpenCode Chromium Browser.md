@@ -6,8 +6,6 @@ tags:
   - opencode
   - browser-automation
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202010 - Playwright MCP]]"
   - "[[202609202011 - Chrome DevTools MCP]]"
   - "[[202609202000 - Browser Use MCP]]"
@@ -64,3 +62,7 @@ OpenCode Chromium Browser is a browser automation plugin for OpenCode that contr
 - [GitHub](https://github.com/Quindart-com/opencode-chromium)
 - [Awesome OpenCode](https://github.com/awesome-opencode/awesome-opencode)
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

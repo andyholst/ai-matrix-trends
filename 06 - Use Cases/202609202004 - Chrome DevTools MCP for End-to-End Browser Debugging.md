@@ -5,9 +5,7 @@ tags:
   - workflow
   - mcp
   - debugging
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
+
 ---
 
 # Chrome DevTools MCP for End-to-End Browser Debugging
@@ -88,6 +86,8 @@ The agent's verification becomes a quality gate before merge.
 The boundary between "coding" and "debugging" blurs when the agent can see the running application. This shifts the agent's role from code generator to full-stack verifier — it doesn't just write the React component, it confirms the component renders, the API call succeeds, and no console errors appear. For frontend-heavy teams, this is the difference between "my code works" and "my app works."
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[202609202000 - Browser Use MCP]] — Browser automation plugin used alongside DevTools MCP
 - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 

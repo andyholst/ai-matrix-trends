@@ -6,8 +6,6 @@ tags:
   - opencode
   - code-editing
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609200758 - OpenCode]]"
 ---
 
@@ -58,3 +56,7 @@ OpenCode Morph Fast Apply is a plugin that integrates the Morph Fast Apply API i
 - [GitHub](https://github.com/JRedeker/opencode-morph-fast-apply)
 - [Awesome OpenCode](https://github.com/awesome-opencode/awesome-opencode)
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

@@ -6,8 +6,6 @@ tags:
   - tool
 aliases:
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
   - "[[202609202000 - Claude Code]]"
 ---
 
@@ -25,6 +23,8 @@ The autonomy model is tiered: in development the agent deploys freely; in stagin
 CI/CD pipelines shift from deterministic scripts that pause on judgment calls to hybrid workflows where the agent handles triage, fixes lint, updates docs, and even ships changes — all inside gates the organization defines. The developer role changes from manually investigating every failed build to reviewing agent-authored summaries and PRs. DORA metrics improve as build triage time drops to zero and mean-time-to-recovery shrinks because the agent can immediately diagnose and propose fixes for pipeline failures.
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Architecture-Patterns]]
 

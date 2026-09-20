@@ -6,8 +6,6 @@ tags:
   - tool
 aliases:
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
   - "[[202609202000 - Claude Code]]"
   - "[[202609202013 - Hermes Plugin System]]"
 ---
@@ -26,6 +24,8 @@ The portability is the key differentiator: skills are just markdown, so the same
 Custom skills shift workflow automation from ad-hoc prompts to standardized, team-owned tools. The cost of encoding a recurring workflow is low — a markdown file — but the payoff is consistency: every commit follows the same format, every Jira ticket has the required fields, every podcast episode has show notes in the same style. This also creates a continuous improvement loop: teams discover edge cases, update the skill, and every developer's agent immediately benefits.
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Architecture-Patterns]]
 

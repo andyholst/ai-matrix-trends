@@ -5,9 +5,7 @@ tags:
   - plugin
   - claude-code
   - tool
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Claude Code Auto Permission
@@ -71,3 +69,7 @@ claude update
 - [Claude Platform Release Notes](https://platform.claude.com/docs/en/release-notes/overview)
 - [Claude Code v2.1.259 changelog](https://code.claude.com/docs/en/whats-new)
 - [managedMcpServers setting](https://www.getclaudeskills.com/blog/claude-code-managed-mcp-servers-setting)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

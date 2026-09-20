@@ -10,7 +10,6 @@ tags:
 aliases:
 links:
   - "[[202609202021 - Context Compaction and Structured Note-Taking]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
   - "[[202609202000 - Claude Code]]"
 ---
@@ -55,3 +54,6 @@ Session 2: agent reads notes.md ──► reorients ──► continues work
 - Anthropic Engineering: "Effective context engineering for AI agents" (https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 - arXiv:2606.10209 — "Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents"
 - Sequoia Capital: "Context Engineering Our Way to Long-Horizon Agents" — Harrison Chase interview (https://sequoiacap.com/podcast/context-engineering-our-way-to-long-horizon-agents-langchains-harrison-chase)
+
+## Related
+- [[MOC-Trending-Agents]]

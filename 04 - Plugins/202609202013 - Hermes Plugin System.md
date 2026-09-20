@@ -6,8 +6,6 @@ tags:
   - hermes
   - architecture
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609200759 - Hermes Agent]]"
 ---
 
@@ -62,3 +60,7 @@ requires_env:
 - [Hermes Plugin Docs](https://hermes-agent.nousresearch.com/docs/user-guide/features/plugins)
 - [Plugin Catalog](https://hermes-agent.nousresearch.com/docs/plugins)
 - [Evey's Hermes Plugins](https://github.com/42-evey/hermes-plugins)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

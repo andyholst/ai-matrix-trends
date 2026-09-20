@@ -4,9 +4,7 @@ created: 2026-09-20T22:00:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Browserbase MCP
@@ -59,6 +57,8 @@ claude mcp add browserbase --transport http https://mcp.browserbase.com/mcp
 - **Status:** Self-hosted package archived July 2026; use hosted endpoint
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Trending-Agents]]
 

@@ -5,9 +5,7 @@ tags:
   - workflow
   - mcp
   - docs
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
+
 ---
 
 # Context7 MCP for Live Library Documentation
@@ -80,6 +78,8 @@ In a monorepo with multiple services using different library versions, each agen
 Context7 turns "trust the model's training data" into "verify against the source." For teams upgrading libraries or working with internal packages, it eliminates a whole class of subtle bugs where code compiles but uses deprecated signatures. The MCP pattern means the same server works identically in Claude Code, Cursor, Windsurf, or any compliant client — no custom integration per tool.
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[202609200803 - Context7 MCP]] — The plugin this workflow uses
 - [[202609200803 - Context7 MCP]] — This note (self-reference for Obsidian graph)
 - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]

@@ -7,8 +7,6 @@ tags:
   - browser-automation
   - debugging
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Cursor]]"
   - "[[202609200800 - Windsurf]]"
@@ -68,3 +66,7 @@ claude mcp add chrome-devtools -- npx @modelcontextprotocol/server-chrome-devtoo
 ## Sources
 - [GitHub](https://github.com/ChromeDevTools/chrome-devtools-mcp)
 - [Chrome DevTools for Agents](https://developer.chrome.com/docs/devtools/agents)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

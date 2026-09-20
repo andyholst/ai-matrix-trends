@@ -6,9 +6,7 @@ tags:
   - documentation
   - automation
   - multi-agent
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
+
 ---
 
 # Automated Documentation Generation and Maintenance
@@ -58,6 +56,8 @@ The documentation tool stack has split into four layers:
 - FAQs are almost the perfect format for machines: clear question, clear answer, easily parseable
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Architecture-Patterns]]

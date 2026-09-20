@@ -6,7 +6,6 @@ tags:
 links:
   - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
   - "[[202609202024 - Orchestrator Worker Multi-Agent Delegation]]"
-  - "[[MOC-Trending-Agents]]"
 ---
 
 # Fan-Out / Fan-In Parallel Agent Pattern
@@ -77,3 +76,6 @@ A dispatcher sends the same input (or independent subtasks) to multiple agents r
 ## Sources
 - Beam AI: "6 Multi-Agent Orchestration Patterns for Production (2026)" — Fan-out/fan-in (https://beam.ai/agentic-insights/multi-agent-orchestration-patterns-production)
 - Microsoft Azure Architecture Center: "AI Agent Orchestration Patterns" — Concurrent orchestration (https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
+
+## Related
+- [[MOC-Trending-Agents]]

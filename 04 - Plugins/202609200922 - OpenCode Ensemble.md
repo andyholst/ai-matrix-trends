@@ -6,8 +6,6 @@ tags:
   - opencode
   - multi-agent
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609200758 - OpenCode]]"
 ---
 
@@ -60,3 +58,7 @@ OpenCode Ensemble is a multi-agent orchestration plugin that enables parallel ag
 - [GitHub](https://github.com/hueyexe/opencode-ensemble)
 - [Awesome OpenCode](https://github.com/awesome-opencode/awesome-opencode)
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

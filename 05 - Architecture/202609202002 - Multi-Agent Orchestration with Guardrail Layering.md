@@ -7,7 +7,6 @@ tags:
   - config
 links:
   - "[[202609202000 - MCP Proxy Aggregator Pattern]]"
-  - "[[MOC-Trending-Agents]]"
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering
@@ -112,3 +111,6 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 - Microsoft Azure Architecture Center, "AI agent design patterns"
 - Augment Code, "Agentic Design Patterns: 2026 Pattern Catalog"
 - Princeton NLP, multi-agent benchmarking study (2025)
+
+## Related
+- [[MOC-Trending-Agents]]

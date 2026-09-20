@@ -5,9 +5,7 @@ tags:
   - plugin
   - tool
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Browser Use MCP
@@ -73,3 +71,7 @@ Key environment variables: `OPENAI_API_KEY` or `ANTHROPIC_API_KEY` (one required
 ## Sources
 - [Browser Use Docs: MCP Server](https://docs.browser-use.com/open-source/customize/integrations/mcp-server)
 - [Browser Use GitHub](https://github.com/browser-use/browser-use)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

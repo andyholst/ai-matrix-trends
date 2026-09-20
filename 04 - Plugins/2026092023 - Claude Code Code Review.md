@@ -4,9 +4,7 @@ created: 2026-09-20T23:00:00+02:00
 tags:
   - plugin
   - claude-code
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Claude Code Code Review
@@ -60,6 +58,8 @@ The Code Review plugin is an official Claude Code extension that automates pull 
 - **Optional:** CLAUDE.md files for guideline checking
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Trending-Agents]]
 

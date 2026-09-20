@@ -5,9 +5,7 @@ tags:
   - plugin
   - tool
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # OpenCode Supermemory
@@ -70,3 +68,7 @@ Memory scopes: `user` (cross-project) and `project` (isolated to current project
 - [Supermemory Docs: OpenCode](https://supermemory.ai/docs/integrations/opencode)
 - [OpenCode Supermemory GitHub](https://github.com/supermemoryai/opencode-supermemory)
 - [Supermemory Blog: OpenCode Memory](https://supermemory.ai/blog/opencode-memory/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

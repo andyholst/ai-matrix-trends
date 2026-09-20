@@ -6,9 +6,7 @@ tags:
   - code-review
   - qa
   - automation
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
+
 ---
 
 # AI-Powered Automated Code Review and QA
@@ -58,6 +56,8 @@ Key principles:
 - Signal-to-noise ratio is the most important metric for tool adoption
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Architecture-Patterns]]

@@ -4,9 +4,7 @@ created: 2026-09-20T20:00:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # GitHub MCP Server
@@ -62,6 +60,8 @@ claude mcp add github --transport http https://api.githubcopilot.com/mcp
 - **Auth:** GitHub PAT or OAuth
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Trending-Agents]]
 

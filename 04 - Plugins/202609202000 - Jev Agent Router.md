@@ -5,9 +5,7 @@ tags:
   - plugin
   - tool
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Jev Agent Router
@@ -76,3 +74,7 @@ router = ModelRouterMiddleware(
 - [LangChain: Building a Harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev)
 - [DataCamp: Jev System One Model Explained](https://www.datacamp.com/blog/system-one-models-jev)
 - [Reddit: Jev Context Engine Integration](https://www.reddit.com/r/hermesagent/comments/1wkpl3q/integrated_the_jev_context_engine_into_hermes/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

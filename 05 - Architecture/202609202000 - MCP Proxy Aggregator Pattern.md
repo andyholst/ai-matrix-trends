@@ -6,7 +6,6 @@ tags:
   - mcp
   - workflow
 links:
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
@@ -69,3 +68,6 @@ The scoped variant adds a retrieval step: given the current task context, it sel
 - Rodrigues & Vas, "MCP Server Architecture Patterns for LLM-Integrated Applications" (arXiv:2606.30317, 2026)
 - Model Context Protocol specification (modelcontextprotocol.io/specification/2025-11-25)
 - Gan & Sun, "RAG-MCP: Mitigating prompt bloat in LLM tool selection via retrieval-augmented generation" (arXiv:2505.03275, 2025)
+
+## Related
+- [[MOC-Trending-Agents]]

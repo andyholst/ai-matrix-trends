@@ -5,9 +5,7 @@ tags:
   - plugin
   - hermes
   - tool
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Hermes Curator
@@ -62,3 +60,7 @@ curator:
 ## Sources
 - [Hermes Docs: Curator](https://hermes-agent.nousresearch.com/docs/user-guide/features/curator)
 - [YouTube: Hermes Agent Curator Guide](https://www.youtube.com/watch?v=SpFgS7WlCJc)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

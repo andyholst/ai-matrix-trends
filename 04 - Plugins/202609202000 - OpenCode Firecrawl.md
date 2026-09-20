@@ -5,9 +5,7 @@ tags:
   - plugin
   - tool
   - config
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # OpenCode Firecrawl
@@ -61,3 +59,7 @@ Set `FIRECRAWL_API_KEY` in your environment for authenticated higher-rate access
 - [OpenCode Firecrawl GitHub](https://github.com/firecrawl/opencode-firecrawl)
 - [OpenCode Ecosystem Docs](https://opencode.ai/docs/ecosystem/)
 - [Firecrawl Blog: Best OpenCode Skills](https://www.firecrawl.dev/blog/best-opencode-skills)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

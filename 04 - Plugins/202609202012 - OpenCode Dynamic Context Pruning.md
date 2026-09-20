@@ -6,8 +6,6 @@ tags:
   - opencode
   - context-management
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609200758 - OpenCode]]"
 ---
 
@@ -54,3 +52,7 @@ OpenCode Dynamic Context Pruning (DCP) is a plugin that intelligently manages co
 ## Sources
 - [GitHub](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning)
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

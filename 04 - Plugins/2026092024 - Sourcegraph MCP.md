@@ -4,9 +4,7 @@ created: 2026-09-20T24:00:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Sourcegraph MCP
@@ -60,6 +58,8 @@ claude mcp add sourcegraph -- npx -y @sourcegraph/mcp-server
 - **Auth:** Sourcegraph access token
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Trending-Agents]]
 

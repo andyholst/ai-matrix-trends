@@ -5,9 +5,7 @@ tags:
   - workflow
   - hooks
   - git
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
+
 ---
 
 # Auto-Commit Checkpoint Workflow with Stop Hooks and Git
@@ -113,6 +111,8 @@ This means five parallel agent sessions produce five organized branches like `cl
 The auto-commit pattern turns AI coding sessions from risky (uncommitted changes, lost work) into safe (every session is a checkpoint). Combined with branch isolation, it makes parallel agent workflows practical — you can run 5 agents simultaneously and review 5 clean branches instead of one tangled diff. The transcript-as-commit-message approach also creates a searchable history: `git log --grep="🤖 Claude"` shows everything the agent did.
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[202609202000 - Claude Code]] — The agent this workflow uses
 - [[202609202000 - Claude Code]]
 

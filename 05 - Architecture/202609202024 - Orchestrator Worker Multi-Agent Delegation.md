@@ -10,7 +10,6 @@ aliases:
 links:
   - "[[202609202020 - Orchestrator-Worker Delegation Pattern]]"
   - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202000 - Claude Code]]"
 ---
 
@@ -53,3 +52,6 @@ User Goal ──► Orchestrator ──┬── Worker A (logs)    ──► re
 - Anthropic Engineering: "How we built our multi-agent research system" (https://www.anthropic.com/engineering/multi-agent-research-system)
 - LangChain Blog: "Choosing the Right Multi-Agent Architecture" (https://www.langchain.com/blog/choosing-the-right-multi-agent-architecture)
 - Azure Architecture Center: "AI agent orchestration patterns" (https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns)
+
+## Related
+- [[MOC-Trending-Agents]]

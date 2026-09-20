@@ -10,8 +10,9 @@ import sys
 import os
 
 # Use the directory where this script lives as the CI dir
+# scripts/ci/ -> repo root (go up 2 levels)
 CI_DIR = os.path.dirname(os.path.abspath(__file__))
-VAULT_DIR = os.path.dirname(CI_DIR)
+VAULT_DIR = os.path.dirname(os.path.dirname(CI_DIR))
 
 STAGES = [
     ("Stage 1: Link Validation", "validate-links.py"),
@@ -22,6 +23,7 @@ STAGES = [
     ("Stage 6: Orphan Detection", "validate-orphans.py"),
     ("Stage 7: Template Consistency", "validate-templates.py"),
     ("Stage 8: Markdown Formatting", "validate-formatting.py"),
+    ("Stage 9: Link Quality", "validate-link-quality.py"),
 ]
 
 def main():

@@ -5,9 +5,7 @@ tags:
   - plugin
   - hermes
   - tool
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Hermes Kanban Dashboard
@@ -57,3 +55,7 @@ plugins:
 ## Sources
 - [Hermes Docs: Built-in Plugins](https://hermes-agent.nousresearch.com/docs/user-guide/features/built-in-plugins)
 - [Firecrawl: 9 Best Hermes Tools](https://www.firecrawl.dev/blog/best-hermes-plugins)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

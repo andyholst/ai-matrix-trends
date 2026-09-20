@@ -6,8 +6,6 @@ tags:
   - mcp
   - browser-automation
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202000 - Claude Code]]"
   - "[[202609202000 - Cursor]]"
   - "[[202609200800 - Windsurf]]"
@@ -69,3 +67,7 @@ claude mcp add playwright -- npx @playwright/mcp@latest
 ## Sources
 - [GitHub](https://github.com/microsoft/playwright-mcp)
 - [npm](https://www.npmjs.com/package/@playwright/mcp)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

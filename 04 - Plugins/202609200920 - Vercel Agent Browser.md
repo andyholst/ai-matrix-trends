@@ -6,8 +6,6 @@ tags:
   - browser-automation
   - cli
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
   - "[[202609202010 - Playwright MCP]]"
   - "[[202609202000 - Browser Use MCP]]"
   - "[[202609202011 - Chrome DevTools MCP]]"
@@ -61,3 +59,7 @@ claude mcp add agent-browser -- npx agent-browser-mcp
 - [GitHub](https://github.com/vercel-labs/agent-browser)
 - [npm](https://www.npmjs.com/package/agent-browser)
 - [Bright Data](https://brightdata.com/blog/ai/best-agent-browsers)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

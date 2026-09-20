@@ -5,9 +5,7 @@ tags:
   - plugin
   - tool
   - mcp
-links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Firecrawl MCP Server
@@ -70,3 +68,7 @@ Set `FIRECRAWL_API_KEY` in your environment or `.env` file. The key is `fc-` pre
 - [Firecrawl MCP Server GitHub](https://github.com/firecrawl/firecrawl-mcp-server)
 - [Firecrawl Docs: AI MCPs](https://www.firecrawl.dev/use-cases/ai-mcps)
 - [Firecrawl Blog: Best MCP Servers](https://www.firecrawl.dev/blog/best-mcp-servers-for-developers)
+
+## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Trending-Agents]]

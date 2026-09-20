@@ -5,9 +5,7 @@ tags:
   - workflow
   - multi-agent
   - orchestration
-links:
-  - "[[MOC-Architecture-Patterns]]"
-  - "[[MOC-Trending-Agents]]"
+
 ---
 
 # Multi-Agent Team Orchestration for Parallel Development
@@ -64,6 +62,8 @@ A six-step production line: Plan (specs with acceptance criteria) → Spawn (cre
 - Cap fan-out at what you can actually verify — more agents means more tokens and more review
 
 ## Related
+- [[MOC-Architecture-Patterns]]
+- [[MOC-Trending-Agents]]
 
 - [[MOC-Architecture-Patterns]]
 - [[MOC-Trending-Agents]]

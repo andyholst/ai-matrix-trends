@@ -6,8 +6,6 @@ tags:
   - tool
 aliases:
 links:
-  - "[[MOC-Plugin-Ecosystem]]"
-  - "[[MOC-Architecture-Patterns]]"
   - "[[202609202000 - Claude Code]]"
   - "[[202609202023 - MCP Gateway Aggregation Layer]]"
 ---
@@ -26,6 +24,8 @@ This architecture lets a single agent orchestrate a workflow like: query recent 
 Multi-server orchestration transforms MCP from a single-tool adapter protocol into the connective tissue for enterprise agent workflows. Without centralized governance, scaling beyond two or three servers becomes an operational burden. With it, onboarding a new tool means updating one policy store, not rewriting server-side logic across every server. Security improves because short-lived, server-specific credentials reduce blast radius, and the single audit log makes compliance reviews tractable.
 
 ## Related
+- [[MOC-Plugin-Ecosystem]]
+- [[MOC-Architecture-Patterns]]
 - [[MOC-Plugin-Ecosystem]]
 - [[MOC-Architecture-Patterns]]
 
