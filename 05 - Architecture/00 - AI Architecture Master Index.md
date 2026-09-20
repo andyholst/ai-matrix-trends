@@ -4,6 +4,9 @@ tags:
   - architecture
   - ai-architecture
   - index
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # AI Architecture Patterns — Master Index
@@ -155,7 +158,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 
 ### Architecture Patterns (05 - Architecture/)
 - [[202609202000 - MCP Proxy Aggregator Pattern]]
-- [[202609202001 - Context Engineering for Long-Horizon Agents]]
+- [[AGENTS]]
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 - [[202609202003 - MCP Apps Interactive UI Protocol]]
 - [[202609202004 - Layered Protocol Stack MCP A2A Streamable HTTP]]
@@ -171,7 +174,7 @@ This is a comprehensive index of modern AI architecture patterns, including LLM 
 - [[202609200932 - Fan-Out Fan-In Parallel Agent Pattern]]
 
 ### Plugins (04 - Plugins/)
-- [[hermes-jev]] — Typesafe context engine for Hermes
+- [[202609200759 - Hermes Agent]] — Typesafe context engine for Hermes
 - [[202609202000 - Jev Agent Router]] — Agent routing via Jev
 - [[202609200803 - Context7 MCP]] — Live library documentation
 - [[202609200804 - FAL MCP Server]] — Image generation

@@ -8,8 +8,8 @@ tags:
 links:
   - [[MOC-Plugin-Ecosystem]]
   - [[MOC-Trending-Agents]]
-  - [[202609202014 - OpenCode Oh-My-Openagent]]
-  - [[202609202012 - OpenCode Dynamic Context Pruning]]
+  - [[202609200758 - OpenCode]]
+  - [[202609200758 - OpenCode]]
 ---
 
 # OpenCode Morph Fast Apply
@@ -52,8 +52,8 @@ OpenCode Morph Fast Apply is a plugin that integrates the Morph Fast Apply API i
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins
-- [[202609202014 - OpenCode Oh-My-Openagent]] — all-in-one agent harness
-- [[202609202012 - OpenCode Dynamic Context Pruning]] — context optimization
+- [[202609200758 - OpenCode]] — all-in-one agent harness
+- [[202609200758 - OpenCode]] — context optimization
 
 ## Sources
 - [GitHub](https://github.com/JRedeker/opencode-morph-fast-apply)

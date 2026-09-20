@@ -6,7 +6,7 @@ tags:
   - workflow
   - config
 links:
-  - [[mcp-proxy-aggregator-pattern]]
+  - [[202609202000 - MCP Proxy Aggregator Pattern]]
   - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]
 ---
 
@@ -77,7 +77,7 @@ Research on needle-in-a-haystack benchmarking has uncovered "context rot": as to
 - Anthropic's multi-agent research system: sub-agents explore extensively but return only condensed summaries to the lead agent
 
 ## Related Patterns
-- [[mcp-proxy-aggregator-pattern]] — the scoped variant's retrieval step is itself a context engineering challenge
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — the scoped variant's retrieval step is itself a context engineering challenge
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — sub-agent architectures are a form of multi-agent orchestration
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools reduce context burden by returning single summaries
 

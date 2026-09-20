@@ -7,6 +7,9 @@ aliases:
   - MCP Hybrid Architecture
   - Hybrid LLM Placement Pattern
 links:
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # MCP Hybrid Client-Server Architecture

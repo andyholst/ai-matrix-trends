@@ -29,7 +29,7 @@ This pattern has crossed the chasm from "innovation" to "requirement." No seriou
 
 ## Related Patterns
 - [[202609202000 - MCP Proxy Aggregator Pattern]] — Namespaced tool routing
-- [[202609202001 - Context Engineering for Long-Horizon Agents]] — Tools for context curation
+- [[AGENTS]] — Tools for context curation
 
 ## Sources
 - [Anthropic Tool Use Docs](https://docs.anthropic.com/en/docs/tool-use)

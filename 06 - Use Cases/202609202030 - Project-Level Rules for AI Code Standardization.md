@@ -6,6 +6,9 @@ tags:
   - tool
 aliases:
 links:
+links:
+  - "[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]"
+  - "[[202609202001 - Claude Code Hooks for CI-CD Automation]]"
 ---
 
 # Project-Level Rules for AI Code Standardization
@@ -24,7 +27,7 @@ Teams that treat standards as code — versioned, reviewed, and enforced in real
 Project-level rules shift the burden of consistency from human reviewers to the agent itself, reducing cognitive debt and making code reviews faster. They also lower onboarding friction for new engineers and agents alike, since the rules serve as explicit tribal knowledge that no longer lives only in senior developers' heads.
 
 ## Related
-- [[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]
+- [[202609202000 - Claude Code]]
 - [[202609202005 - Auto-Commit Checkpoint Workflow with Stop Hooks and Git]]
 
 ## Sources

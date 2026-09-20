@@ -6,6 +6,9 @@ tags:
   - tool
 aliases:
 links:
+links:
+  - "[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]"
+  - "[[202609202001 - Claude Code Hooks for CI-CD Automation]]"
 ---
 
 # Throwaway Scripts and One-Off Automation

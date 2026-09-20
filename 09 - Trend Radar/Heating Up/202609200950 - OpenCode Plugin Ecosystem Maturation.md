@@ -6,8 +6,8 @@ tags:
   - tool
 links:
   - "[[202609200758 - OpenCode]]"
-  - "[[202609200921 - OpenCode Morph Fast Apply]]"
-  - "[[202609200922 - OpenCode Ensemble]]"
+  - "[[202609200758 - OpenCode]]"
+  - "[[202609200758 - OpenCode]]"
 ---
 
 # OpenCode Plugin Ecosystem Maturation
@@ -25,10 +25,10 @@ OpenCode's plugin ecosystem maturation signals a shift from "CLI agent" to "agen
 
 ## Related
 - [[202609200758 - OpenCode]]
-- [[202609200921 - OpenCode Morph Fast Apply]]
-- [[202609200922 - OpenCode Ensemble]]
-- [[202609200923 - OpenCodeRAG]]
-- [[202609200924 - OpenCode Chromium Browser]]
+- [[202609200758 - OpenCode]]
+- [[202609200758 - OpenCode]]
+- [[202609200758 - OpenCode]]
+- [[202609200758 - OpenCode]]
 
 ## Sources
 - [OpenCode Ecosystem](https://opencode.ai/docs/ecosystem/)

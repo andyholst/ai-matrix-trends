@@ -48,13 +48,13 @@ Set `FIRECRAWL_API_KEY` in your environment for authenticated higher-rate access
 - Answering "what's the latest..." questions with live data
 
 ## Compatibility
-- **Agent:** [[OpenCode]]
+- **Agent:** [[202609200758 - OpenCode]]
 - **Versions:** OpenCode 1.0+, Node.js 18+
 - **Dependencies:** firecrawl-cli (npm), Firecrawl API key (recommended)
 
 ## Related Plugins
-- [[202609202000 - OpenCode Firecrawl]] — Alternative search/scrape plugin using Tavily
-- [[202609202000 - OpenCode Firecrawl]] — Native web search with citation grounding
+- [[202609200758 - OpenCode]] — Alternative search/scrape plugin using Tavily
+- [[202609200758 - OpenCode]] — Native web search with citation grounding
 - [[202609202000 - Firecrawl MCP Server]] — The MCP-server version for non-OpenCode agents
 
 ## Sources

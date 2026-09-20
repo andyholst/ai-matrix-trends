@@ -81,7 +81,7 @@ Context7 turns "trust the model's training data" into "verify against the source
 
 ## Related
 - [[202609200803 - Context7 MCP]] — The plugin this workflow uses
-- [[202609202003 - Context7 MCP for Live Library Documentation]] — This note (self-reference for Obsidian graph)
+- [[202609200803 - Context7 MCP]] — This note (self-reference for Obsidian graph)
 - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 
 ## Sources

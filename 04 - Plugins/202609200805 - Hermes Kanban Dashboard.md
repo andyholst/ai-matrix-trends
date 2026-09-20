@@ -46,7 +46,7 @@ plugins:
 - Coordinating sub-agents on large refactors or research tasks
 
 ## Compatibility
-**Agent:** [[Hermes]]
+**Agent:** [[202609200759 - Hermes Agent]]
 **Versions:** Hermes Agent 1.0+ (requires `hermes-agent[web,pty]`)
 **Dependencies:** pip, PTY support
 

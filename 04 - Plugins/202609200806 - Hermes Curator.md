@@ -51,7 +51,7 @@ curator:
 - Adopting unmanaged skills into curator governance
 
 ## Compatibility
-**Agent:** [[Hermes]]
+**Agent:** [[202609200759 - Hermes Agent]]
 **Versions:** Hermes Agent 1.0+
 **Dependencies:** None (built-in)
 

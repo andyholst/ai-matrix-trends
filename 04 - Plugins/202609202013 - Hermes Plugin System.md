@@ -56,7 +56,7 @@ requires_env:
 
 ## Related Plugins
 - [[202609202000 - Jev Agent Router]] — example plugin using the system
-- [[202609202000 - OpenCode Supermemory]] — alternative memory approach
+- [[202609200758 - OpenCode]] — alternative memory approach
 
 ## Sources
 - [Hermes Plugin Docs](https://hermes-agent.nousresearch.com/docs/user-guide/features/plugins)

@@ -4,6 +4,9 @@ tags:
   - plugin
   - ai-tools
   - index
+links:
+  - "[[202609202000 - Browser Use MCP]]"
+  - "[[202609202000 - Jev Agent Router]]"
 ---
 
 # AI Plugins & Extensions — Master Index
@@ -134,7 +137,7 @@ This is a comprehensive index of trending, stable, and emerging plugins/extensio
 - [[202609202023 - MCP Gateway Aggregation Layer]] — Federation pattern
 
 ### Trend Radar (09 - Trend Radar/)
-- [[MCP Server Ecosystem Explosion]] — Rapid MCP growth analysis
+- [[202609200100 - MCP Server Ecosystem Explosion]] — Rapid MCP growth analysis
 
 ---
 

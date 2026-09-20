@@ -48,8 +48,8 @@ Oh-My-Openagent is the most prominent all-in-one plugin in the OpenCode ecosyste
 - **Versions:** OpenCode 2.x+
 
 ## Related Plugins
-- [[202609202000 - OpenCode Supermemory]] — persistent memory layer
-- [[202609202000 - OpenCode Firecrawl]] — web scraping integration
+- [[202609200758 - OpenCode]] — persistent memory layer
+- [[202609200758 - OpenCode]] — web scraping integration
 
 ## Sources
 - [GitHub](https://github.com/ohmyopencode/oh-my-opencode)

@@ -7,6 +7,9 @@ aliases:
   - Context Compaction Pattern
   - Agentic Memory Pattern
 links:
+links:
+  - "[[202609202001 - Context Engineering for Long-Horizon Agents]]"
+  - "[[202609202002 - Multi-Agent Orchestration with Guardrail Layering]]"
 ---
 
 # Context Compaction and Structured Note-Taking
@@ -40,7 +43,7 @@ Two complementary techniques address context overflow:
   - Multi-agent coordination adds orchestration overhead and prompt complexity.
 
 ## Examples
-- [[202609202001 - Context Engineering for Long-Horizon Agents]] — Broader context engineering strategies including compaction and sub-agent architectures.
+- [[AGENTS]] — Broader context engineering strategies including compaction and sub-agent architectures.
 - [[202609202002 - Multi-Agent Orchestration with Guardrail Layering]] — Sub-agent isolation as a guardrail mechanism.
 
 ## Related Patterns

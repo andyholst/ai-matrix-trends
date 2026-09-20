@@ -6,6 +6,9 @@ tags:
   - tool
 aliases:
 links:
+links:
+  - "[[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]"
+  - "[[202609202001 - Claude Code Hooks for CI-CD Automation]]"
 ---
 
 # Agentic Debugging with CLI Observability
@@ -25,7 +28,7 @@ Agentic debugging shifts the developer's role from manual log spelunking to revi
 
 ## Related
 - [[202609202031 - Throwaway Scripts and One-Off Automation]]
-- [[202609202004 - Chrome DevTools MCP for End-to-End Browser Debugging]]
+- [[202609202011 - Chrome DevTools MCP]]
 
 ## Sources
 - https://www.danclarke.com/the-many-use-cases-of-ai-coding-agents/

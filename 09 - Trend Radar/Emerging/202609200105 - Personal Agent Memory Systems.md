@@ -9,7 +9,7 @@ tags:
 aliases:
   - Personal Agent Memory Systems
 links:
-  - "[[202609202000 - OpenCode Supermemory]]"
+  - "[[202609200758 - OpenCode]]"
   - "[[202609200805 - Hermes Kanban Dashboard]]"
   - "[[202609202021 - Context Compaction and Structured Note-Taking]]"
 ---
@@ -31,7 +31,7 @@ Multiple approaches are competing. No clear winner yet. Privacy concerns are unr
 ## Related Patterns
 - [[202609202021 - Context Compaction and Structured Note-Taking]] — Long-term context management
 - [[202609200805 - Hermes Kanban Dashboard]] — Work queue + memory
-- [[202609202000 - OpenCode Supermemory]] — Cross-session memory
+- [[202609200758 - OpenCode]] — Cross-session memory
 
 ## Sources
 - [Supermemory AI](https://supermemory.ai)

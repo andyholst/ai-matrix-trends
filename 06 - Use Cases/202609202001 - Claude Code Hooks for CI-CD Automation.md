@@ -6,7 +6,7 @@ tags:
   - config
   - cli
 links:
-  - [[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]
+  - [[202609202000 - Claude Code]]
   - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 ---
 
@@ -133,7 +133,7 @@ This ensures AI-generated code meets the same standards as human-written code be
 Hooks make Claude Code deterministic where the LLM alone is probabilistic. Instead of hoping the AI remembers to format code or avoids dangerous commands, hooks enforce those policies at the system level. This shifts the trust boundary from "trust the model" to "trust the hook script" — a much easier audit surface. Teams can enforce organizational policies (no direct prod DB access, no edits to `.env` files, mandatory test runs before push) without relying on prompt engineering or system-prompt reminders that the model may ignore.
 
 ## Related
-- [[202609202000 - Claude Code Plugin Distribution for Team Workflow Standardization]]
+- [[202609202000 - Claude Code]]
 - [[202609202002 - Multi-Server MCP Orchestration for Cross-Tool Workflows]]
 
 ## Sources

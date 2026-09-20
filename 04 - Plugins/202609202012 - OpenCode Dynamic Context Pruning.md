@@ -49,7 +49,7 @@ OpenCode Dynamic Context Pruning (DCP) is a plugin that intelligently manages co
 
 ## Related Plugins
 - [[202609202000 - Jev Agent Router]] — alternative context management approach
-- [[202609202000 - OpenCode Supermemory]] — persistent memory across sessions
+- [[202609200758 - OpenCode]] — persistent memory across sessions
 
 ## Sources
 - [GitHub](https://github.com/Opencode-DCP/opencode-dynamic-context-pruning)

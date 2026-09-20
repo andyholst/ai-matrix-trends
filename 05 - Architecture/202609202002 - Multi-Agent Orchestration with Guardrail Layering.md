@@ -6,8 +6,8 @@ tags:
   - workflow
   - config
 links:
-  - [[mcp-proxy-aggregator-pattern]]
-  - [[202609202001 - Context Engineering for Long-Horizon Agents]]
+  - [[202609202000 - MCP Proxy Aggregator Pattern]]
+  - [[AGENTS]]
 ---
 
 # Multi-Agent Orchestration with Guardrail Layering
@@ -103,8 +103,8 @@ Start with the simplest pattern that fits. Princeton NLP found that a single age
 - **Over-architecting**: Using multi-agent when a single agent with the same tools would suffice
 
 ## Related Patterns
-- [[mcp-proxy-aggregator-pattern]] — aggregated tool servers may feed into multi-agent pipelines
-- [[202609202001 - Context Engineering for Long-Horizon Agents]] — orchestration context management uses the same compaction and note-taking strategies
+- [[202609202000 - MCP Proxy Aggregator Pattern]] — aggregated tool servers may feed into multi-agent pipelines
+- [[AGENTS]] — orchestration context management uses the same compaction and note-taking strategies
 - [[202609202020 - Orchestrator-Worker Delegation Pattern]] — composite tools that wrap multi-system workflows for agent workers
 
 ## Sources
