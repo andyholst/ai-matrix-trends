@@ -392,10 +392,12 @@ links:
 
 ## 🔗 Related
 
-- [README](../../README.md) — vault dashboard
-- [04 - Plugins/](.) — all plugin notes
-- [05 - Architecture](../05%20-%20Architecture/) — architecture patterns
-- [09 - Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
+## 🔗 Related
+
+- [[README]] — vault dashboard
+- [[04 - Plugins/|All Plugins]] — all plugin notes
+- [[05 - Architecture/|Architecture]] — architecture patterns
+- [[09 - Trend Radar/|Trend Radar]] — trend analysis
 """
     
     with open(INDEX_FILE, 'w') as f:

@@ -272,11 +272,12 @@ links:
 
 ## 🔗 Related
 
-- [README](../../README.md) — vault dashboard
-- [03 - Agents/](.) — all agent notes
-- [04 - Plugins](../04%20-%20Plugins/) — plugin documentation
-- [04 - Plugins/00 - Plugin Master Index](../04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — plugin index
-- [09 - Trend Radar](../09%20-%20Trend%20Radar/) — trend analysis
+## 🔗 Related
+
+- [[README]] — vault dashboard
+- [[03 - Agents/|All Agents]] — all agent notes
+- [[04 - Plugins/00 - Plugin Master Index|Plugin Master Index]] — plugin index
+- [[09 - Trend Radar/|Trend Radar]] — trend analysis
 """
     
     with open(INDEX_FILE, 'w') as f:

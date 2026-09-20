@@ -180,6 +180,10 @@ echo "Step 7/7g: Updating Agent Master Index..."
 python3 "$SCRIPTS_DIR/update-agent-master-index.py"
 
 echo ""
+echo "Step 7/7h: Fixing Master Index links..."
+python3 "$SCRIPTS_DIR/fix-master-index-links.py"
+
+echo ""
 echo "============================================"
 echo "Daily scan complete!"
 echo "$(date)"
