@@ -436,6 +436,29 @@ The vault is a living system. Small, frequent, well-linked notes beat large, inf
 
 ---
 
+## Wikilink vs Markdown Link Rules
+
+**Inside notes (`03 - Agents/`, `04 - Plugins/`, etc.):**
+Use Obsidian `[[wikilinks]]` — e.g., `[[202609202000 - Claude Code]]`
+
+**In README.md:**
+GitHub does NOT render `[[wikilinks]]` as clickable. Use standard Markdown:
+- `[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
+- `[Firecrawl MCP](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP.md)`
+
+**Always verify the target file exists** before linking. If the file doesn't exist, either create it or link to an existing note.
+
+---
+
+## Editing Existing Notes
+
+Never overwrite an entire file. Always:
+1. `read_file(path="...")` to see current content
+2. Use `patch(path="...", old_string="...", new_string="...")` for targeted edits
+3. Verify the edit landed with another `read_file` if needed
+
+---
+
 ## Daily Trend Scan
 
 For the daily scan workflow, see `scripts/daily-scan-prompt.md`.

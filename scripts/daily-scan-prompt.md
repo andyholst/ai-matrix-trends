@@ -57,6 +57,21 @@ Launch 4 parallel research streams using `delegate_task`.
 
 **Key:** Each stream writes a **manifest** file after creating notes. The merge step reads all manifests to cross-link.
 
+**Timestamp allocation strategy:**
+- Stream A: use minutes 00, 01, 02, 03, 04
+- Stream B: use minutes 10, 11, 12, 13, 14
+- Stream C: use minutes 20, 21, 22
+- Stream D: use minutes 30, 31, 32
+
+This prevents collisions between parallel streams.
+
+**Research method for each stream:**
+1. Use `web_search(query)` to find trending tools (e.g., "trending AI coding agents 2026", "best Claude Code plugins")
+2. Use `web_extract([urls])` to get details from specific pages
+3. Synthesize findings into atomic notes
+4. Write notes using the appropriate template
+5. Write manifest file
+
 ### Stream A: Agent Profiles
 ```
 Goal: Find 3-5 trending AI coding agents.
@@ -65,14 +80,23 @@ Focus areas:
 - New releases, GitHub star growth, HN/Reddit/Twitter mentions
 - Compare features, pricing, architecture
 
-Write notes to: 03 - Agents/ (use agent-profile template from AGENTS.md)
+Before writing:
+- Read template: read_file(path=".obsidian/templates/agent-profile.md")
+
+Research steps:
+1. web_search("trending AI coding agents 2026")
+2. web_search("Claude Code vs Codex vs Cursor comparison")
+3. web_search("AI coding agent GitHub stars growth")
+4. web_extract relevant URLs for details
+
+Write notes to: 03 - Agents/
 
 RULES:
-- Use UNIQUE timestamps per note (increment: 2000, 2001, 2002...)
+- Use UNIQUE timestamps: 202609202000, 202609202001, 202609202002, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
-- After writing notes, create manifest: write_file("08 - Projects/scan-manifests/stream-a-$(date +%Y%m%d%H%M).json", ...)
-- Manifest format: JSON array of {"file": "...", "title": "...", "type": "agent", "tags": [...]}
+- After writing notes, create manifest:
+  write_file("08 - Projects/scan-manifests/stream-a-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "agent", "tags": [...]}, ...]')
 
 After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: agent profiles $(date +%Y-%m-%d)" && git push
 ```
@@ -86,14 +110,24 @@ Focus areas:
 - OpenCode/Codex integrations
 - Cross-agent tools (Browser Use, Firecrawl, FAL)
 
-Write notes to: 04 - Plugins/ (use plugin-profile template from AGENTS.md)
+Before writing:
+- Read template: read_file(path=".obsidian/templates/plugin-profile.md")
+
+Research steps:
+1. web_search("best Claude Code MCP servers 2026")
+2. web_search("Hermes AI agent plugins")
+3. web_search("OpenCode plugins and extensions")
+4. web_search("AI coding agent browser automation tools")
+5. web_extract relevant URLs for details
+
+Write notes to: 04 - Plugins/
 
 RULES:
-- Use UNIQUE timestamps per note (increment: 2000, 2001, 2002...)
+- Use UNIQUE timestamps: 202609202010, 202609202011, 202609202012, etc.
 - Every note must link to at least 2 MOCs: [[MOC-Plugin-Ecosystem]] and [[MOC-Trending-Agents]]
 - Do NOT link to specific agent notes yet (cross-linking happens in merge)
-- After writing notes, create manifest: write_file("08 - Projects/scan-manifests/stream-b-$(date +%Y%m%d%H%M).json", ...)
-- Manifest format: JSON array of {"file": "...", "title": "...", "type": "plugin", "agents": ["Claude Code"]}
+- After writing notes, create manifest:
+  write_file("08 - Projects/scan-manifests/stream-b-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "plugin", "agents": ["Claude Code"]}, ...]')
 
 After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: plugin ecosystem $(date +%Y-%m-%d)" && git push
 ```
@@ -107,14 +141,24 @@ Focus areas:
 - Context engineering (RAG, summarization, curation)
 - Tool-calling patterns and guardrails
 
-Write notes to: 05 - Architecture/ (use architecture-pattern template from AGENTS.md)
+Before writing:
+- Read template: read_file(path=".obsidian/templates/architecture-pattern.md")
+
+Research steps:
+1. web_search("MCP protocol architecture patterns 2026")
+2. web_search("multi-agent AI orchestration patterns")
+3. web_search("context engineering for long-horizon agents")
+4. web_search("AI agent guardrails and safety patterns")
+5. web_extract relevant URLs for details
+
+Write notes to: 05 - Architecture/
 
 RULES:
-- Use UNIQUE timestamps per note (increment: 2000, 2001, 2002...)
+- Use UNIQUE timestamps: 202609202020, 202609202021, 202609202022, etc.
 - Every note must link to at least 2 other notes in the SAME folder
 - Do NOT link to notes in other folders yet (cross-linking happens in merge)
-- After writing notes, create manifest: write_file("08 - Projects/scan-manifests/stream-c-$(date +%Y%m%d%H%M).json", ...)
-- Manifest format: JSON array of {"file": "...", "title": "...", "type": "architecture", "examples": ["Claude Code"]}
+- After writing notes, create manifest:
+  write_file("08 - Projects/scan-manifests/stream-c-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "architecture", "examples": ["Claude Code"]}, ...]')
 
 After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: architecture patterns $(date +%Y-%m-%d)" && git push
 ```
@@ -128,14 +172,24 @@ Focus areas:
 - Integration tutorials
 - Workflow automation examples
 
-Write notes to: 06 - Use Cases/ (use atomic-note template from AGENTS.md)
+Before writing:
+- Read template: read_file(path=".obsidian/templates/atomic-note.md")
+
+Research steps:
+1. web_search("Claude Code hooks CI/CD automation")
+2. web_search("AI coding agent team workflow standardization")
+3. web_search("multi-server MCP orchestration workflows")
+4. web_search("AI agent plugin combinations use cases")
+5. web_extract relevant URLs for details
+
+Write notes to: 06 - Use Cases/
 
 RULES:
-- Use UNIQUE timestamps per note (increment: 2000, 2001, 2002...)
+- Use UNIQUE timestamps: 202609202030, 202609202031, 202609202032, etc.
 - Every note must link to at least 2 MOCs: [[MOC-Plugin-Ecosystem]] and [[MOC-Architecture-Patterns]]
 - Do NOT link to specific notes yet (cross-linking happens in merge)
-- After writing notes, create manifest: write_file("08 - Projects/scan-manifests/stream-d-$(date +%Y%m%d%H%M).json", ...)
-- Manifest format: JSON array of {"file": "...", "title": "...", "type": "workflow", "agents": ["Claude Code"], "plugins": ["Firecrawl"]}
+- After writing notes, create manifest:
+  write_file("08 - Projects/scan-manifests/stream-d-$(date +%Y%m%d%H%M).json", '[{"file": "...", "title": "...", "type": "workflow", "agents": ["Claude Code"], "plugins": ["Firecrawl"]}, ...]')
 
 After manifest: cd "${HOME}/repository/git/ai-matrix-trends" && git add -A && git commit -m "Daily scan: use cases $(date +%Y-%m-%d)" && git push
 ```
@@ -160,17 +214,13 @@ Read each manifest file to understand what was created:
 
 ### Step 2: Fix Orphan Wikilinks
 
-Search for broken links and fix them:
-```bash
-search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")
-search_files(pattern="\\[\\[.*\\]\\]", target="content", path="04 - Plugins", file_glob="*.md")
-search_files(pattern="\\[\\[.*\\]\\]", target="content", path="05 - Architecture", file_glob="*.md")
-search_files(pattern="\\[\\[.*\\]\\]", target="content", path="06 - Use Cases", file_glob="*.md")
-```
-
-For each `[[link]]` found, check if the target file exists. If not:
-- Search for the correct filename: `search_files(pattern="*link*", target="files", path=".")`
-- Update the wikilink to match the actual filename
+Search for broken links in each folder and fix them. For each folder:
+1. Use `search_files(pattern="\\[\\[.*\\]\\]", target="content", path="03 - Agents", file_glob="*.md")` to find all wikilinks
+2. For each `[[link]]` found, check if the target file exists:
+   - If `link` contains a filename like `202609202000 - Claude Code`, search: `search_files(pattern="202609202000 - Claude Code.md", target="files", path=".")`
+   - If the file does NOT exist, search for a match: `search_files(pattern="*Claude Code*", target="files", path="03 - Agents")`
+   - Update the wikilink to match the actual filename using `patch()` on the source file
+3. Repeat for all folders: `03 - Agents`, `04 - Plugins`, `05 - Architecture`, `06 - Use Cases`
 
 ### Step 3: Add Cross-Stream Links Using Manifests
 
@@ -184,7 +234,14 @@ Use the manifest data to add intelligent cross-links:
 
 **Use Cases → Agents/Plugins:** For each use case, add links to agents and plugins listed in its manifest.
 
-**Use read_file() + patch() to update existing notes with new links.**
+**How to update links in existing notes:**
+1. `read_file(path="03 - Agents/202609202000 - Claude Code.md")`
+2. Use `patch()` to add new links to the `links:` frontmatter and `## Related` section:
+   ```
+   patch(path="03 - Agents/202609202000 - Claude Code.md",
+         old_string="links:\n  - [[202609202000 - Codex]]\n  - [[202609202000 - Cline]]",
+         new_string="links:\n  - [[202609202000 - Codex]]\n  - [[202609202000 - Cline]]\n  - [[202609202010 - Browser Use MCP]]")
+   ```
 
 ### Step 4: Update MOCs with New Notes
 
@@ -192,6 +249,10 @@ Open each MOC file and add new notes from manifests to the appropriate cluster:
 - `07 - Structure/MOC-Trending-Agents.md` — add new agents from stream-a manifest
 - `07 - Structure/MOC-Plugin-Ecosystem.md` — add new plugins from stream-b manifest
 - `07 - Structure/MOC-Architecture-Patterns.md` — add new patterns from stream-c manifest
+
+How:
+1. `read_file(path="07 - Structure/MOC-Trending-Agents.md")`
+2. Use `patch()` to add new entries under `## Key Notes` or `## Clusters`
 
 Format:
 ```markdown
@@ -210,12 +271,7 @@ GitHub does NOT render `[[Obsidian wikilinks]]` as clickable links. The README M
 
 **Use:**
 ```markdown
-|[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
-```
-
-Or relative links:
-```markdown
-|[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
+|[Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | Anthropic | ...
 ```
 
 **Important:** The README likely contains BOTH old placeholder links AND new timestamped links. You MUST:
@@ -231,12 +287,13 @@ Or relative links:
    - Configuration Snippets — from stream-d manifest, only link to existing files
 6. **Update Trend Radar** — move items as needed
 7. **Update `Last refreshed: YYYY-MM-DD`** at the bottom
+8. **Write the updated README** using `write_file(path="README.md", content="...")` or `patch()` for targeted edits
 
 **Goal:** Every link in README must be a working Markdown link. No orphans, no `[[wikilinks]]`.
 
 ### Step 6: Verify All Links (NOTES + README)
 
-Every note AND every wikilinks in README/MOCs must have at least 2 working outbound links.
+Every note AND every link in README/MOCs must have at least 2 working outbound links.
 
 ```bash
 # Count links per file (should be >= 2)
@@ -247,10 +304,10 @@ grep -c "\\[\\[" "06 - Use Cases/"*.md
 ```
 
 **Also verify README links:**
-1. Read README.md
-2. Extract all `[[wikilinks]]`
+1. `read_file(path="README.md")`
+2. Extract all `[text](url)` and `[[wikilinks]]`
 3. For each, check if target file exists with `search_files`
-4. If any link is broken, fix it now
+4. If any link is broken, fix it now using `patch()` on README.md
 
 If any note has fewer than 2 links, add more.
 
@@ -267,9 +324,17 @@ git push
 
 Remove old manifest files from previous runs (keep current):
 ```bash
-# Remove manifests older than today
 find "08 - Projects/scan-manifests" -name "*.json" ! -name "*$(date +%Y%m%d)*" -delete
 ```
+
+### Step 9: Validate Frontmatter
+
+Spot-check 2-3 notes to verify frontmatter is complete:
+```bash
+read_file(path="03 - Agents/<newest-note>.md", limit=15)
+```
+
+Verify: `id`, `created`, `tags`, `links` all present and populated. If missing, add them via `patch()`.
 
 ---
 
