@@ -549,7 +549,7 @@ Items are scored based on:
 The cron job runs in **8 stages**:
 
 ### Stage 1: Research (20:00)
-`stage-1-research.py` — Creates new agent and plugin notes directly.
+`stage-1-research.py` — Creates new agent and plugin notes from hardcoded lists (no web search, no delegate_task).
 
 ### Stage 2: Link Resolution (20:30)
 `stage-2-links.py` — Fixes links after research completes:
@@ -837,17 +837,19 @@ The Obsidian skill is Hermes's filesystem vault tool. There's no standalone Obsi
 
 ## Cron Jobs
 
-The daily scan runs as a **single cron job** at 20:00 that executes all 4 stages sequentially:
+The daily scan runs as **4 separate cron jobs** (stages), each running after the previous completes:
 
 | Time | Job | Script | What it does |
 |------|-----|--------|--------------|
-| 20:00 | AI Matrix Trends - Daily Scan | `daily-scan.sh` | Runs all 4 stages: Research → Links → Scoring → Indexes → Commit |
+| 20:00 | Trends Stage 1 - Research | `stage-1-research.py` | Creates agent/plugin notes from hardcoded lists |
+| 20:30 | Trends Stage 2 - Links | `stage-2-links.py` | Resolves wikilinks, fixes broken links |
+| 20:45 | Trends Stage 3 - Scoring | `stage-3-scoring.py` | Aggregates trend scores, collects agent plugins |
+| 21:00 | Trends Stage 4 - Indexes | `stage-4-indexes.py` | Updates MOCs, Master Indexes, README, commits |
 
 Setup: `bash scripts/setup-cron.sh` (run once after cloning)
 
 ### Stage 1: Research (20:00)
-`stage-1-research.py` — Creates new agent and plugin notes directly (no delegate_task needed).
-Searches for trending agents, plugins, architecture patterns, and use cases.
+`stage-1-research.py` — Creates new agent and plugin notes from hardcoded lists (no web search, no delegate_task).
 
 ### Stage 2: Link Resolution
 1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
@@ -871,9 +873,9 @@ Searches for trending agents, plugins, architecture patterns, and use cases.
 
 ---
 
-## Parallel Execution
+## Parallel Execution (Future Work)
 
-When running automated trend scans (e.g., via cron job), maximize throughput by running research streams in **parallel** using `delegate_task`.
+The current pipeline runs stages sequentially. The following describes the **target architecture** for parallel research via `delegate_task` — not yet implemented.
 
 ### What Can Be Parallelized
 Each of these is independent and can run as a separate sub-agent:
@@ -885,7 +887,7 @@ Each of these is independent and can run as a separate sub-agent:
 | **Stream C: Architecture Patterns** | Discover new patterns — MCP servers, multi-agent orchestration, context engineering |
 | **Stream D: Use Cases** | Find real-world workflows, config snippets, integration tutorials |
 
-### Parallel Workflow
+### Parallel Workflow (Target)
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -909,7 +911,7 @@ Each of these is independent and can run as a separate sub-agent:
               └─────────────────┘
 ```
 
-### Sub-Agent Task Spec
+### Sub-Agent Task Spec (Target)
 
 Each parallel sub-agent receives:
 - A **specific research question** (e.g., "Find 3 trending AI agents released this week")
@@ -917,7 +919,7 @@ Each parallel sub-agent receives:
 - A **template reference** for note structure
 - A **max tool call limit** (keep bounded)
 
-### Post-Parallel Merge
+### Post-Parallel Merge (Target)
 
 After all sub-agents complete:
 1. **Deduplicate** — merge notes on the same topic
