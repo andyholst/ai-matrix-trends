@@ -53,7 +53,7 @@ links:
 
 # AI Plugins & Extensions — Master Index
 
-*Comprehensive index of all plugins/extensions for AI coding agents — Last updated: 2026-09-20*
+*Comprehensive index of all plugins/extensions for AI coding agents — Last updated: 2026-09-21*
 
 **Total plugins tracked:** 44
 **Agents covered:** Claude Code, OpenCode, Hermes Agent, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie

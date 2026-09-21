@@ -85,6 +85,39 @@ def clean_duplicates(content):
     
     return content
 
+def get_all_agents():
+    """Get all agent items sorted by score"""
+    data = load_trend_data()
+    items = data.get('items', {})
+    agents = [(name, info) for name, info in items.items() if info.get('type') == 'agent']
+    agents.sort(key=lambda x: x[1].get('score', 0), reverse=True)
+    return agents
+
+
+def generate_agent_tools_section():
+    """Generate the full Agent Tools & CLIs section with all agents ranked"""
+    agents = get_all_agents()
+    date_str = datetime.now().strftime('%Y-%m-%d')
+    
+    section = f"## 🛠️ Agent Tools & CLIs\n\n"
+    section += f"*All {len(agents)} tracked agent tools/CLIs ranked by score — Last updated: {date_str}*\n\n"
+    section += "| # | Agent | Score | Stars | Status | Tags |\n"
+    section += "|---|-------|-------|-------|--------|------|\n"
+    
+    for i, (name, item) in enumerate(agents, 1):
+        score = item.get('score', 0)
+        stars = item.get('stars', 0)
+        stars_str = f"⭐ {stars:,}" if stars > 0 else "—"
+        status = "Heating Up" if score >= 50 else "Stable" if score >= 20 else "Emerging"
+        tags = ', '.join(item.get('tags', [])[:3]) if item.get('tags') else "—"
+        file_path = item.get('file', '')
+        encoded = file_path.replace(' ', '%20')
+        title = os.path.basename(file_path).replace('.md', '')
+        section += f"| {i} | [{title}](./{encoded}) | {score} | {stars_str} | {status} | {tags} |\n"
+    
+    return section
+
+
 def update_readme():
     """Update README.md with scored trend tables"""
     os.chdir(VAULT)
@@ -117,6 +150,9 @@ def update_readme():
     for i, (name, item) in enumerate(agents, 1):
         agents_section += generate_table_row(i, name, item) + "\n"
     agents_section += "\n"
+    
+    # Build new Agent Tools & CLIs section (full ranked list)
+    agent_tools_section = generate_agent_tools_section()
     
     # Build new Plugins section
     plugins_section = f"""## 🔌 Top Plugins & Extensions
@@ -163,6 +199,23 @@ def update_readme():
         content = re.sub(
             r'## 🚀 Trending Agents\n.*?(?=\n## |\Z)',
             agents_section,
+            content,
+            flags=re.DOTALL
+        )
+    
+    # Replace Agent Tools & CLIs (full ranked list)
+    if '## 🛠️ Agent Tools & CLIs' in content:
+        content = re.sub(
+            r'## 🛠️ Agent Tools & CLIs\n.*?(?=\n## |\Z)',
+            agent_tools_section,
+            content,
+            flags=re.DOTALL
+        )
+    else:
+        # Insert after Trending Agents section
+        content = re.sub(
+            r'(## 🚀 Trending Agents\n.*?\n\n)',
+            r'\1\n' + agent_tools_section,
             content,
             flags=re.DOTALL
         )

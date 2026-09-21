@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T20:45:18.091163",
+  "last_updated": "2026-09-21T08:17:18.991002",
   "items": {
     "Cline": {
       "type": "agent",
@@ -124,18 +124,6 @@
       ],
       "score": 105,
       "file": "03 - Agents/202609202000 - Cursor.md"
-    },
-    "OpenCode": {
-      "type": "agent",
-      "stars": 0,
-      "mentions": 13,
-      "tags": [
-        "agent",
-        "open-source",
-        "cli"
-      ],
-      "score": 75,
-      "file": "03 - Agents/202609200758 - OpenCode.md"
     },
     "Devin": {
       "type": "agent",
@@ -268,18 +256,6 @@
       "score": 15,
       "file": "03 - Agents/202609200913 - Replit Agent.md"
     },
-    "Factory Droids": {
-      "type": "agent",
-      "stars": 0,
-      "mentions": 1,
-      "tags": [
-        "agent",
-        "enterprise",
-        "autonomous"
-      ],
-      "score": 5,
-      "file": "03 - Agents/2026092012 - Factory Droids.md"
-    },
     "Amp": {
       "type": "agent",
       "stars": 0,
@@ -406,6 +382,18 @@
       ],
       "score": 50,
       "file": "03 - Agents/202609202055 - Muse Code.md"
+    },
+    "OpenCode": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 12,
+      "tags": [
+        "agent",
+        "open-source",
+        "cli"
+      ],
+      "score": 70,
+      "file": "03 - Agents/202609200758 - OpenCode.md"
     },
     "AI Agents \u2014 Master Index": {
       "type": "agent",

@@ -6,7 +6,7 @@
 
 ## 🚀 Trending Agents
 
-*Top 5 scored trending — Last updated: 2026-09-20*
+*Top 5 scored trending — Last updated: 2026-09-21*
 
 *See [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) for complete list*
 
@@ -19,9 +19,50 @@
 | 5 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
 
 
+## 🛠️ Agent Tools & CLIs
+
+*All 34 tracked agent tools/CLIs ranked by score — Last updated: 2026-09-21*
+
+| # | Agent | Score | Stars | Status | Tags |
+|---|-------|-------|-------|--------|------|
+| 1 | [202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) | 130 | — | Heating Up | agent, tool, mcp |
+| 2 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | — | Heating Up | agent, cli, tool |
+| 3 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | — | Heating Up | agent, workspace, open-source |
+| 4 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | — | Heating Up | agent, tool |
+| 5 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | — | Heating Up | agent, cloud, autonomous |
+| 6 | [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | — | Heating Up | agent, cli, tool |
+| 7 | [202609200910 - Vellum](./03%20-%20Agents/202609200910%20-%20Vellum.md) | 80 | — | Heating Up | agent, personal-assistant, open-source |
+| 8 | [202609202004 - Pi](./03%20-%20Agents/202609202004%20-%20Pi.md) | 75 | — | Heating Up | agent, cli, open-source |
+| 9 | [202609202015 - SWE-2](./03%20-%20Agents/202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | agent, model |
+| 10 | [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | agent, open-source, cli |
+| 11 | [202609202035 - Jev](./03%20-%20Agents/202609202035%20-%20Jev.md) | 65 | — | Heating Up | agent, model, decision-model |
+| 12 | [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | agent, ide, rebrand |
+| 13 | [202609202002 - Augment](./03%20-%20Agents/202609202002%20-%20Augment.md) | 50 | — | Heating Up | agent, code-intelligence, enterprise |
+| 14 | [202609202055 - Muse Code](./03%20-%20Agents/202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up | agent, cli |
+| 15 | [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | 45 | — | Stable | agent, cli, tool |
+| 16 | [202609202025 - Devin Desktop](./03%20-%20Agents/202609202025%20-%20Devin%20Desktop.md) | 40 | — | Stable | agent, ide |
+| 17 | [202609202045 - Pareto](./03%20-%20Agents/202609202045%20-%20Pareto.md) | 35 | — | Stable | agent, model, composite |
+| 18 | [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md) | 30 | — | Stable | agent, open-source, self-improving |
+| 19 | [2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md) | 30 | — | Stable | agent, cli |
+| 20 | [202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md) | 25 | — | Stable | agent |
+| 21 | [2026092010 - Amp](./03%20-%20Agents/2026092010%20-%20Amp.md) | 25 | — | Stable | agent, cli, cloud |
+| 22 | [202609202004 - RooCode](./03%20-%20Agents/202609202004%20-%20RooCode.md) | 20 | — | Stable | agent |
+| 23 | [202609202001 - Google Antigravity](./03%20-%20Agents/202609202001%20-%20Google%20Antigravity.md) | 20 | — | Stable | agent, ide, google |
+| 24 | [202609202003 - AWS Kiro](./03%20-%20Agents/202609202003%20-%20AWS%20Kiro.md) | 20 | — | Stable | agent, spec-driven, aws |
+| 25 | [2026092011 - Qwen Code](./03%20-%20Agents/2026092011%20-%20Qwen%20Code.md) | 20 | — | Stable | agent, cli, open-source |
+| 26 | [2026092010 - Claw Code](./03%20-%20Agents/2026092010%20-%20Claw%20Code.md) | 20 | — | Stable | agent, cli |
+| 27 | [202609202005 - JetBrains Junie](./03%20-%20Agents/202609202005%20-%20JetBrains%20Junie.md) | 15 | — | Emerging | agent |
+| 28 | [202609200911 - Amazon Q Developer](./03%20-%20Agents/202609200911%20-%20Amazon%20Q%20Developer.md) | 15 | — | Emerging | agent, aws, enterprise |
+| 29 | [202609200914 - JetBrains Air](./03%20-%20Agents/202609200914%20-%20JetBrains%20Air.md) | 15 | — | Emerging | agent, ide, multi-agent |
+| 30 | [202609200913 - Replit Agent](./03%20-%20Agents/202609200913%20-%20Replit%20Agent.md) | 15 | — | Emerging | agent, app-builder, cloud |
+| 31 | [2026092014 - MagiCrew](./03%20-%20Agents/2026092014%20-%20MagiCrew.md) | 15 | — | Emerging | agent, multi-agent, open-source |
+| 32 | [202609202001 - GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md) | 10 | — | Emerging | agent |
+| 33 | [2026092013 - Zencoder](./03%20-%20Agents/2026092013%20-%20Zencoder.md) | 10 | — | Emerging | agent, enterprise, spec-driven |
+| 34 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
+
 ## 🔌 Top Plugins & Extensions
 
-*Top 5 scored trending — Last updated: 2026-09-20*
+*Top 5 scored trending — Last updated: 2026-09-21*
 
 *See [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete per-agent tables*
 
@@ -90,7 +131,7 @@
 
 ## 📊 Trend Radar
 
-*Last updated: 2026-09-20*
+*Last updated: 2026-09-21*
 
 ### Heating Up
 
@@ -160,13 +201,13 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-20*
+*Last refreshed: 2026-09-21*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
 
 ## 🔌 Plugins by Agent
 
-*Top 5 scored plugins for each agentic tool — Last updated: 2026-09-20*
+*Top 5 scored plugins for each agentic tool — Last updated: 2026-09-21*
 
 ### Claude Code
 

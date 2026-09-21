@@ -42,7 +42,7 @@ links:
 
 # AI Agents — Master Index
 
-*Comprehensive index of all trending AI coding agents — Last updated: 2026-09-20*
+*Comprehensive index of all trending AI coding agents — Last updated: 2026-09-21*
 
 **Total agents tracked:** 33
 **Heating Up:** 14 | **Stable:** 12 | **Emerging:** 7
@@ -86,8 +86,8 @@ links:
 | 5 | [Devin](202609202000%20-%20Devin.md) | 100 | — | Heating Up | — | 0 |
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Heating Up | — | 0 |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Heating Up | — | 0 |
-| 8 | [OpenCode](202609200758%20-%20OpenCode.md) | 75 | — | Heating Up | — | 0 |
-| 9 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up | — | 0 |
+| 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up | — | 0 |
+| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | — | 0 |
 | 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | — | 0 |
 | 11 | [Jev](202609202035%20-%20Jev.md) | 65 | — | Heating Up | — | 0 |
 | 12 | [Windsurf](202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | — | 0 |
@@ -128,8 +128,8 @@ links:
 | 5 | [Devin](202609202000%20-%20Devin.md) | 100 | — | Devin is Cognition AI's cloud-native autonomous coding agent... |
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Codex is OpenAI's agent-native coding platform, re-emerged i... |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Vellum is an open-source personal AI assistant that goes bey... |
-| 8 | [OpenCode](202609200758%20-%20OpenCode.md) | 75 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
-| 9 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Pi is an open-source, terminal-native coding agent that supp... |
+| 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Pi is an open-source, terminal-native coding agent that supp... |
+| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
 | 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | SWE-2 is Cognition's coding model released on September 10, ... |
 | 11 | [Jev](202609202035%20-%20Jev.md) | 65 | — | Jev is TypeSafe AI's first "System One Model," released on S... |
 | 12 | [Windsurf](202609200800%20-%20Windsurf.md) | 50 | — | Windsurf was a popular AI coding IDE built on VS Code, known... |
@@ -180,8 +180,8 @@ links:
 | 5 | [Devin](202609202000%20-%20Devin.md) | 100 | — | Heating Up |
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Heating Up |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Heating Up |
-| 8 | [OpenCode](202609200758%20-%20OpenCode.md) | 75 | — | Heating Up |
-| 9 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up |
+| 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up |
+| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up |
 | 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | Heating Up |
 
 ---
