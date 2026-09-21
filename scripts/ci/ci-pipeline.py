@@ -24,6 +24,7 @@ STAGES = [
     ("Stage 7: Template Consistency", "validate-templates.py"),
     ("Stage 8: Markdown Formatting", "validate-formatting.py"),
     ("Stage 9: Link Quality", "validate-link-quality.py"),
+    ("Stage 10: README Completeness", "validate-readme-completeness.py"),
 ]
 
 def main():

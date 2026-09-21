@@ -4,9 +4,9 @@
 
 ---
 
-## Stage 1: Research (20:00) — `stage-1-research.sh`
+## Stage 1: Research (20:00) — `stage-1-research.py`
 
-Launches 4 parallel research sub-agents via `delegate_task`.
+Creates new agent and plugin notes from hardcoded lists (no web search, no delegate_task).
 
 **SUB-AGENTS: ALWAYS USE FULL FILENAMES FOR WIKILINKS.**
 - ✅ Correct: `[202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md)`
