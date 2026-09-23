@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T11:11:31.525052",
+  "last_updated": "2026-09-23T11:25:07.024141",
   "items": {
     "Cline": {
       "type": "agent",
@@ -407,6 +407,102 @@
       ],
       "score": 5,
       "file": "03 - Agents/00 - Agent Master Index.md"
+    },
+    "Factory Code": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "cloud",
+        "enterprise"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202065 - Factory Code.md"
+    },
+    "Sweep AI": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "github",
+        "autonomous"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202075 - Sweep AI.md"
+    },
+    "Greptile": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "code-intelligence",
+        "enterprise"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202085 - Greptile.md"
+    },
+    "OpenHands": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "open-source",
+        "autonomous"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202095 - OpenHands.md"
+    },
+    "Continue.dev": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "ide",
+        "open-source"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202105 - Continue.dev.md"
+    },
+    "Sourcegraph Cody": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 1,
+      "tags": [
+        "agent",
+        "code-intelligence",
+        "enterprise"
+      ],
+      "score": 5,
+      "file": "03 - Agents/202609202115 - Sourcegraph Cody.md"
+    },
+    "Tabnine": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "code-completion",
+        "enterprise"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202125 - Tabnine.md"
+    },
+    "Mintlify": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "agent",
+        "documentation",
+        "autonomous"
+      ],
+      "score": 10,
+      "file": "03 - Agents/202609202135 - Mintlify.md"
     },
     "Browser Use MCP": {
       "type": "plugin",
@@ -990,25 +1086,148 @@
       "score": 3,
       "file": "04 - Plugins/202609202225 - Hermes Jev Agent Router.md"
     },
-    "Plugins/00 - Plugin Master Index": {
+    "Slack MCP": {
       "type": "plugin",
       "stars": 0,
       "mentions": 2,
       "tags": [
-        "placeholder"
+        "plugin",
+        "mcp"
       ],
-      "score": 6,
-      "file": "04 - Plugins/202609202035 - Plugins00 - Plugin Master Index.md"
+      "score": 26,
+      "file": "04 - Plugins/202609202235 - Slack MCP.md"
     },
-    "Plugins/": {
+    "Atlassian Jira MCP": {
       "type": "plugin",
       "stars": 0,
-      "mentions": 0,
+      "mentions": 2,
       "tags": [
-        "placeholder"
+        "plugin",
+        "mcp"
       ],
-      "score": 0,
-      "file": "04 - Plugins/202609202035 - Plugins.md"
+      "score": 26,
+      "file": "04 - Plugins/202609202245 - Atlassian Jira MCP.md"
+    },
+    "Airtable MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202255 - Airtable MCP.md"
+    },
+    "GitLab MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202265 - GitLab MCP.md"
+    },
+    "Docker MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202275 - Docker MCP.md"
+    },
+    "Google Workspace MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202285 - Google Workspace MCP.md"
+    },
+    "Pinecone MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202295 - Pinecone MCP.md"
+    },
+    "Weaviate MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202305 - Weaviate MCP.md"
+    },
+    "Neo4j MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202315 - Neo4j MCP.md"
+    },
+    "Snowflake MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202325 - Snowflake MCP.md"
+    },
+    "BigQuery MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202335 - BigQuery MCP.md"
+    },
+    "Asana MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202345 - Asana MCP.md"
+    },
+    "Monday.com MCP": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "mcp"
+      ],
+      "score": 26,
+      "file": "04 - Plugins/202609202355 - Monday.com MCP.md"
     }
   }
 }

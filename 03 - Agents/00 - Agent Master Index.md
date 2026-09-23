@@ -38,14 +38,22 @@ links:
   - "[Jev](./202609202035%20-%20Jev.md)"
   - "[Pareto](./202609202045%20-%20Pareto.md)"
   - "[Muse Code](./202609202055%20-%20Muse%20Code.md)"
+  - "[Factory Code](./202609202065%20-%20Factory%20Code.md)"
+  - "[Sweep AI](./202609202075%20-%20Sweep%20AI.md)"
+  - "[Greptile](./202609202085%20-%20Greptile.md)"
+  - "[OpenHands](./202609202095%20-%20OpenHands.md)"
+  - "[Continue.dev](./202609202105%20-%20Continue.dev.md)"
+  - "[Sourcegraph Cody](./202609202115%20-%20Sourcegraph%20Cody.md)"
+  - "[Tabnine](./202609202125%20-%20Tabnine.md)"
+  - "[Mintlify](./202609202135%20-%20Mintlify.md)"
 ---
 
 # AI Agents — Master Index
 
 *Comprehensive index of all trending AI coding agents — Last updated: 2026-09-23*
 
-**Total agents tracked:** 33
-**Heating Up:** 14 | **Stable:** 12 | **Emerging:** 7
+**Total agents tracked:** 41
+**Heating Up:** 14 | **Stable:** 12 | **Emerging:** 15
 
 ---
 
@@ -75,7 +83,7 @@ links:
 
 ## 📋 Complete Agent List
 
-*All 33 tracked AI coding agents — sorted by score*
+*All 41 tracked AI coding agents — sorted by score*
 
 | # | Agent | Score | Stars | Status | Tags | Links |
 |---|-------|-------|-------|--------|------|-------|
@@ -112,6 +120,14 @@ links:
 | 31 | [JetBrains Junie](202609202005%20-%20JetBrains%20Junie.md) | 15 | — | Emerging | — | 0 |
 | 32 | [Zencoder](2026092013%20-%20Zencoder.md) | 10 | — | Emerging | — | 0 |
 | 33 | [GitHub Copilot Agent](202609202001%20-%20GitHub%20Copilot%20Agent.md) | 10 | — | Emerging | — | 0 |
+| 34 | [Factory Code](202609202065%20-%20Factory%20Code.md) | 10 | — | Emerging | — | 0 |
+| 35 | [Sweep AI](202609202075%20-%20Sweep%20AI.md) | 10 | — | Emerging | — | 0 |
+| 36 | [Greptile](202609202085%20-%20Greptile.md) | 10 | — | Emerging | — | 0 |
+| 37 | [OpenHands](202609202095%20-%20OpenHands.md) | 10 | — | Emerging | — | 0 |
+| 38 | [Continue.dev](202609202105%20-%20Continue.dev.md) | 10 | — | Emerging | — | 0 |
+| 39 | [Tabnine](202609202125%20-%20Tabnine.md) | 10 | — | Emerging | — | 0 |
+| 40 | [Mintlify](202609202135%20-%20Mintlify.md) | 10 | — | Emerging | — | 0 |
+| 41 | [Sourcegraph Cody](202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Emerging | — | 0 |
 
 ---
 
@@ -153,7 +169,7 @@ links:
 | 11 | [AWS Kiro](202609202003%20-%20AWS%20Kiro.md) | 20 | — | AWS Kiro is Amazon's spec-driven agentic development environ... |
 | 12 | [RooCode](202609202004%20-%20RooCode.md) | 20 | — | RooCode is a reliability-first AI coding agent designed for ... |
 
-### Emerging (7)
+### Emerging (15)
 
 | # | Agent | Score | Stars | Description |
 |---|-------|-------|-------|-------------|
@@ -164,12 +180,20 @@ links:
 | 5 | [JetBrains Junie](202609202005%20-%20JetBrains%20Junie.md) | 15 | — | JetBrains Junie is JetBrains' AI coding agent, integrated di... |
 | 6 | [Zencoder](2026092013%20-%20Zencoder.md) | 10 | — |  |
 | 7 | [GitHub Copilot Agent](202609202001%20-%20GitHub%20Copilot%20Agent.md) | 10 | — | GitHub Copilot Agent Mode is Microsoft/GitHub's agentic codi... |
+| 8 | [Factory Code](202609202065%20-%20Factory%20Code.md) | 10 | — | Factory Code is an enterprise-grade autonomous coding agent ... |
+| 9 | [Sweep AI](202609202075%20-%20Sweep%20AI.md) | 10 | — | Sweep AI is a GitHub-integrated AI agent that autonomously c... |
+| 10 | [Greptile](202609202085%20-%20Greptile.md) | 10 | — | Greptile is an AI agent that understands entire codebases an... |
+| 11 | [OpenHands](202609202095%20-%20OpenHands.md) | 10 | — | OpenHands (formerly OpenDevin) is an open-source autonomous ... |
+| 12 | [Continue.dev](202609202105%20-%20Continue.dev.md) | 10 | — | Continue. |
+| 13 | [Tabnine](202609202125%20-%20Tabnine.md) | 10 | — | Tabnine is an AI-powered code completion agent that learns f... |
+| 14 | [Mintlify](202609202135%20-%20Mintlify.md) | 10 | — | Mintlify is an AI agent that automatically generates and mai... |
+| 15 | [Sourcegraph Cody](202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Cody is Sourcegraph's AI coding agent that leverages the Sou... |
 
 ---
 
 ## 🏷️ By Category
 
-### uncategorized (33)
+### uncategorized (41)
 
 | # | Agent | Score | Stars | Status |
 |---|-------|-------|-------|--------|
@@ -190,10 +214,10 @@ links:
 
 | Metric | Value |
 |--------|-------|
-| Total agents | 33 |
+| Total agents | 41 |
 | Heating Up | 14 |
 | Stable | 12 |
-| Emerging | 7 |
+| Emerging | 15 |
 | CLI agents | 0 |
 | MCP-compatible | 0 |
 | With plugins | 0 |

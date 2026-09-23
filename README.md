@@ -21,7 +21,7 @@
 
 ## 🛠️ Agent Tools & CLIs
 
-*All 34 tracked agent tools/CLIs ranked by score — Last updated: 2026-09-23*
+*All 42 tracked agent tools/CLIs ranked by score — Last updated: 2026-09-23*
 
 | # | Agent | Score | Stars | Status | Tags |
 |---|-------|-------|-------|--------|------|
@@ -58,7 +58,15 @@
 | 31 | [2026092014 - MagiCrew](./03%20-%20Agents/2026092014%20-%20MagiCrew.md) | 15 | — | Emerging | agent, multi-agent, open-source |
 | 32 | [202609202001 - GitHub Copilot Agent](./03%20-%20Agents/202609202001%20-%20GitHub%20Copilot%20Agent.md) | 10 | — | Emerging | agent |
 | 33 | [2026092013 - Zencoder](./03%20-%20Agents/2026092013%20-%20Zencoder.md) | 10 | — | Emerging | agent, enterprise, spec-driven |
-| 34 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
+| 34 | [202609202065 - Factory Code](./03%20-%20Agents/202609202065%20-%20Factory%20Code.md) | 10 | — | Emerging | agent, cloud, enterprise |
+| 35 | [202609202075 - Sweep AI](./03%20-%20Agents/202609202075%20-%20Sweep%20AI.md) | 10 | — | Emerging | agent, github, autonomous |
+| 36 | [202609202085 - Greptile](./03%20-%20Agents/202609202085%20-%20Greptile.md) | 10 | — | Emerging | agent, code-intelligence, enterprise |
+| 37 | [202609202095 - OpenHands](./03%20-%20Agents/202609202095%20-%20OpenHands.md) | 10 | — | Emerging | agent, open-source, autonomous |
+| 38 | [202609202105 - Continue.dev](./03%20-%20Agents/202609202105%20-%20Continue.dev.md) | 10 | — | Emerging | agent, ide, open-source |
+| 39 | [202609202125 - Tabnine](./03%20-%20Agents/202609202125%20-%20Tabnine.md) | 10 | — | Emerging | agent, code-completion, enterprise |
+| 40 | [202609202135 - Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 10 | — | Emerging | agent, documentation, autonomous |
+| 41 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
+| 42 | [202609202115 - Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Emerging | agent, code-intelligence, enterprise |
 
 ## 🔌 Top Plugins & Extensions
 
@@ -193,8 +201,8 @@ ai-matrix-trends/
 This README is the vault's **dashboard**. It refreshes daily via cron job at 20:00.
 
 **Complete Lists:**
-- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — Top 5 trending + complete agent list (38 agents)
-- [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — Per-agent plugin tables (42 plugins)
+- [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) — Top 5 trending + complete agent list (41 agents)
+- [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) — Per-agent plugin tables (55 plugins)
 - [Trend Radar](09%20-%20Trend%20Radar) — Trend analysis
 
 > **Open this vault in Obsidian** for the full linked experience — every note has install guides, config snippets, and real-world patterns.

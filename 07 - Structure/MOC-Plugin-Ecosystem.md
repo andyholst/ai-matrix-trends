@@ -49,6 +49,19 @@ tags:
 - [04 - Plugins/2026092023 - CodeGraph MCP](./../04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) - [auto-summary]
 - [04 - Plugins/2026092024 - OpenCode Snip](./../04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) - [auto-summary]
 - [04 - Plugins/2026092024 - Sourcegraph MCP](./../04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202235 - Slack MCP](./../04%20-%20Plugins/202609202235%20-%20Slack%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202245 - Atlassian Jira MCP](./../04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202255 - Airtable MCP](./../04%20-%20Plugins/202609202255%20-%20Airtable%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202265 - GitLab MCP](./../04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202275 - Docker MCP](./../04%20-%20Plugins/202609202275%20-%20Docker%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202285 - Google Workspace MCP](./../04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202295 - Pinecone MCP](./../04%20-%20Plugins/202609202295%20-%20Pinecone%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202305 - Weaviate MCP](./../04%20-%20Plugins/202609202305%20-%20Weaviate%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202315 - Neo4j MCP](./../04%20-%20Plugins/202609202315%20-%20Neo4j%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202325 - Snowflake MCP](./../04%20-%20Plugins/202609202325%20-%20Snowflake%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202335 - BigQuery MCP](./../04%20-%20Plugins/202609202335%20-%20BigQuery%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202345 - Asana MCP](./../04%20-%20Plugins/202609202345%20-%20Asana%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202355 - Monday.com MCP](./../04%20-%20Plugins/202609202355%20-%20Monday.com%20MCP.md) - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 04 - Plugins.
 

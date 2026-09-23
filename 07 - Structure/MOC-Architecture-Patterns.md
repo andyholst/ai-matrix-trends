@@ -30,6 +30,14 @@ tags:
 - [05 - Architecture/2026092031 - Sub-Agent Delegation Pattern](./../05%20-%20Architecture/2026092031%20-%20Sub-Agent%20Delegation%20Pattern.md) - [auto-summary]
 - [05 - Architecture/2026092032 - Agent Teams Pattern](./../05%20-%20Architecture/2026092032%20-%20Agent%20Teams%20Pattern.md) - [auto-summary]
 - [05 - Architecture/2026092032 - Tiered Routing Model Cascade Pattern](./../05%20-%20Architecture/2026092032%20-%20Tiered%20Routing%20Model%20Cascade%20Pattern.md) - [auto-summary]
+- [05 - Architecture/202609202065 - ReAct Reasoning and Acting](./../05%20-%20Architecture/202609202065%20-%20ReAct%20Reasoning%20and%20Acting.md) - [auto-summary]
+- [05 - Architecture/202609202075 - Reflexion](./../05%20-%20Architecture/202609202075%20-%20Reflexion.md) - [auto-summary]
+- [05 - Architecture/202609202085 - Tree of Thought](./../05%20-%20Architecture/202609202085%20-%20Tree%20of%20Thought.md) - [auto-summary]
+- [05 - Architecture/202609202095 - Graph of Thought](./../05%20-%20Architecture/202609202095%20-%20Graph%20of%20Thought.md) - [auto-summary]
+- [05 - Architecture/202609202105 - Mixture of Experts for Agents](./../05%20-%20Architecture/202609202105%20-%20Mixture%20of%20Experts%20for%20Agents.md) - [auto-summary]
+- [05 - Architecture/202609202115 - Speculative Decoding](./../05%20-%20Architecture/202609202115%20-%20Speculative%20Decoding.md) - [auto-summary]
+- [05 - Architecture/202609202125 - Guardrails and Safety Layers](./../05%20-%20Architecture/202609202125%20-%20Guardrails%20and%20Safety%20Layers.md) - [auto-summary]
+- [05 - Architecture/202609202135 - Prompt Caching and KV Cache](./../05%20-%20Architecture/202609202135%20-%20Prompt%20Caching%20and%20KV%20Cache.md) - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 05 - Architecture.
 
