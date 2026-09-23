@@ -60,6 +60,14 @@ tags:
 - [04 - Plugins/202609202335 - BigQuery MCP](./../04%20-%20Plugins/202609202335%20-%20BigQuery%20MCP.md) - [auto-summary]
 - [04 - Plugins/202609202345 - Asana MCP](./../04%20-%20Plugins/202609202345%20-%20Asana%20MCP.md) - [auto-summary]
 - [04 - Plugins/202609202355 - Monday.com MCP](./../04%20-%20Plugins/202609202355%20-%20Monday.com%20MCP.md) - [auto-summary]
+- [04 - Plugins/202609202365 - Cursor Tab](./../04%20-%20Plugins/202609202365%20-%20Cursor%20Tab.md) - [auto-summary]
+- [04 - Plugins/202609202375 - Cursor Composer](./../04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) - [auto-summary]
+- [04 - Plugins/202609202385 - Cursor Rules](./../04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) - [auto-summary]
+- [04 - Plugins/202609202395 - Codex Cloud Tasks](./../04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) - [auto-summary]
+- [04 - Plugins/202609202405 - Codex AGENTS.md](./../04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) - [auto-summary]
+- [04 - Plugins/202609202415 - Windsurf Cascade](./../04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) - [auto-summary]
+- [04 - Plugins/202609202425 - Windsurf Supercomplete](./../04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) - [auto-summary]
+- [04 - Plugins/202609202435 - Windsurf Forge](./../04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 04 - Plugins.
 

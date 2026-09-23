@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T13:05:27.732460",
+  "last_updated": "2026-09-23T13:06:34.359983",
   "items": {
     "Cline": {
       "type": "agent",
@@ -1138,6 +1138,102 @@
       ],
       "score": 26,
       "file": "04 - Plugins/202609202355 - Monday.com MCP.md"
+    },
+    "Cursor Tab": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "cursor",
+        "code-completion"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202365 - Cursor Tab.md"
+    },
+    "Cursor Composer": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "cursor",
+        "multi-agent"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202375 - Cursor Composer.md"
+    },
+    "Cursor Rules": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "cursor",
+        "config"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202385 - Cursor Rules.md"
+    },
+    "Codex Cloud Tasks": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "codex",
+        "autonomous"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202395 - Codex Cloud Tasks.md"
+    },
+    "Codex AGENTS.md": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "codex",
+        "config"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202405 - Codex AGENTS.md.md"
+    },
+    "Windsurf Cascade": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "windsurf",
+        "multi-agent"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202415 - Windsurf Cascade.md"
+    },
+    "Windsurf Supercomplete": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "windsurf",
+        "code-completion"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202425 - Windsurf Supercomplete.md"
+    },
+    "Windsurf Forge": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "windsurf",
+        "app-builder"
+      ],
+      "score": 6,
+      "file": "04 - Plugins/202609202435 - Windsurf Forge.md"
     }
   }
 }

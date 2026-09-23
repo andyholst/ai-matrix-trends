@@ -58,15 +58,23 @@ links:
   - "[BigQuery MCP](./202609202335%20-%20BigQuery%20MCP.md)"
   - "[Asana MCP](./202609202345%20-%20Asana%20MCP.md)"
   - "[Monday.com MCP](./202609202355%20-%20Monday.com%20MCP.md)"
+  - "[Cursor Tab](./202609202365%20-%20Cursor%20Tab.md)"
+  - "[Cursor Composer](./202609202375%20-%20Cursor%20Composer.md)"
+  - "[Cursor Rules](./202609202385%20-%20Cursor%20Rules.md)"
+  - "[Codex Cloud Tasks](./202609202395%20-%20Codex%20Cloud%20Tasks.md)"
   - "[OpenCode Snip](./2026092024%20-%20OpenCode%20Snip.md)"
   - "[Sourcegraph MCP](./2026092024%20-%20Sourcegraph%20MCP.md)"
+  - "[Codex AGENTS](./202609202405%20-%20Codex%20AGENTS.md)"
+  - "[Windsurf Cascade](./202609202415%20-%20Windsurf%20Cascade.md)"
+  - "[Windsurf Supercomplete](./202609202425%20-%20Windsurf%20Supercomplete.md)"
+  - "[Windsurf Forge](./202609202435%20-%20Windsurf%20Forge.md)"
 ---
 
 # AI Plugins & Extensions — Master Index
 
 *Comprehensive index of all plugins/extensions for AI coding agents — Last updated: 2026-09-23*
 
-**Total plugins tracked:** 55
+**Total plugins tracked:** 63
 **Agents covered:** Claude Code, OpenCode, Hermes Agent, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie
 
 ---
@@ -116,15 +124,17 @@ links:
 | 2 | [Hermes Plugin System](202609202013%20-%20Hermes%20Plugin%20System.md) | 40 | — | Hermes Agent, OpenCode | Hermes Agent has a comprehensive plugin system for adding cu... |
 | 3 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Claude Code, OpenCode | Oh-My-Openagent is the most prominent all-in-one plugin in t... |
 | 4 | [Hermes Jev Agent Router](202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 40 | — | Claude Code, Hermes Agent | Jev is a System One decision model from TypeSafe AI for agen... |
-| 5 | [Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Hermes Agent | The Kanban Dashboard is a built-in Hermes Agent plugin that ... |
-| 6 | [Hermes Curator](202609200806%20-%20Hermes%20Curator.md) | 20 | — | Hermes Agent | Curator is a built-in Hermes Agent plugin that automatically... |
-| 7 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode | OpenCode Morph Fast Apply is a plugin that integrates the Mo... |
-| 8 | [OpenCode Ensemble](202609200922%20-%20OpenCode%20Ensemble.md) | 20 | — | OpenCode | OpenCode Ensemble is a multi-agent orchestration plugin that... |
-| 9 | [OpenCodeRAG](202609200923%20-%20OpenCodeRAG.md) | 20 | — | OpenCode | OpenCodeRAG is a local-first Retrieval-Augmented Generation ... |
-| 10 | [OpenCode Chromium Browser](202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 20 | — | OpenCode | OpenCode Chromium Browser is a browser automation plugin for... |
-| 11 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Claude Code | Superpowers is an agentic skills framework and software deve... |
-| 12 | [OpenCode Firecrawl](202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | OpenCode | OpenCode Firecrawl is a plugin that integrates Firecrawl's w... |
-| 13 | [OpenCode Snip](2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | OpenCode | OpenCode Snip is an OpenCode plugin that automatically prefi... |
+| 5 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Claude Code, Codex | Codex AGENTS. |
+| 6 | [Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Hermes Agent | The Kanban Dashboard is a built-in Hermes Agent plugin that ... |
+| 7 | [Hermes Curator](202609200806%20-%20Hermes%20Curator.md) | 20 | — | Hermes Agent | Curator is a built-in Hermes Agent plugin that automatically... |
+| 8 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode | OpenCode Morph Fast Apply is a plugin that integrates the Mo... |
+| 9 | [OpenCode Ensemble](202609200922%20-%20OpenCode%20Ensemble.md) | 20 | — | OpenCode | OpenCode Ensemble is a multi-agent orchestration plugin that... |
+| 10 | [OpenCodeRAG](202609200923%20-%20OpenCodeRAG.md) | 20 | — | OpenCode | OpenCodeRAG is a local-first Retrieval-Augmented Generation ... |
+| 11 | [OpenCode Chromium Browser](202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 20 | — | OpenCode | OpenCode Chromium Browser is a browser automation plugin for... |
+| 12 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Claude Code | Superpowers is an agentic skills framework and software deve... |
+| 13 | [OpenCode Firecrawl](202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | OpenCode | OpenCode Firecrawl is a plugin that integrates Firecrawl's w... |
+| 14 | [Cursor Tab](202609202365%20-%20Cursor%20Tab.md) | 20 | — | Cursor | Cursor Tab is Cursor's native AI code completion and generat... |
+| 15 | [Cursor Composer](202609202375%20-%20Cursor%20Composer.md) | 20 | — | Cursor | Cursor Composer is Cursor's multi-file editing agent. |
 
 ---
 
@@ -144,7 +154,7 @@ links:
 
 ### Claude Code
 
-*All plugins/extensions for Claude Code — 45 total*
+*All plugins/extensions for Claude Code — 46 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -192,7 +202,8 @@ links:
 | 42 | [Claude Code Auto Permission](202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Stable | Auto Permission is a Claude Code permission mode introduced in v2. |
 | 43 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Stable | Oh-My-Openagent is the most prominent all-in-one plugin in the OpenCode ecosyste... |
 | 44 | [Hermes Jev Agent Router](202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 40 | — | Stable | Jev is a System One decision model from TypeSafe AI for agent routing. |
-| 45 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Stable | Superpowers is an agentic skills framework and software development methodology ... |
+| 45 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Stable | Codex AGENTS. |
+| 46 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Stable | Superpowers is an agentic skills framework and software development methodology ... |
 
 ### OpenCode
 
@@ -265,7 +276,7 @@ links:
 
 ### Cursor
 
-*All plugins/extensions for Cursor — 28 total*
+*All plugins/extensions for Cursor — 31 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -297,10 +308,13 @@ links:
 | 26 | [Zapier MCP](202609202215%20-%20Zapier%20MCP.md) | 75 | — | Heating Up | Zapier MCP is the official Model Context Protocol server for Zapier's automation... |
 | 27 | [Sourcegraph MCP](2026092024%20-%20Sourcegraph%20MCP.md) | 75 | — | Heating Up | Sourcegraph MCP is the official Model Context Protocol server for Sourcegraph, e... |
 | 28 | [Vercel Agent Browser](202609200920%20-%20Vercel%20Agent%20Browser.md) | 60 | — | Heating Up | Vercel Agent Browser is a browser automation CLI purpose-built for AI coding age... |
+| 29 | [Cursor Tab](202609202365%20-%20Cursor%20Tab.md) | 20 | — | Stable | Cursor Tab is Cursor's native AI code completion and generation feature. |
+| 30 | [Cursor Composer](202609202375%20-%20Cursor%20Composer.md) | 20 | — | Stable | Cursor Composer is Cursor's multi-file editing agent. |
+| 31 | [Cursor Rules](202609202385%20-%20Cursor%20Rules.md) | 20 | — | Stable | Cursor Rules is Cursor's configuration system for customizing agent behavior. |
 
 ### Codex
 
-*All plugins/extensions for Codex — 20 total*
+*All plugins/extensions for Codex — 22 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -324,10 +338,12 @@ links:
 | 18 | [Composio MCP](2026092022%20-%20Composio%20MCP.md) | 75 | — | Heating Up | Composio is a universal integration layer that gives AI coding agents secure acc... |
 | 19 | [Sequential Thinking MCP](202609202205%20-%20Sequential%20Thinking%20MCP.md) | 75 | — | Heating Up | Sequential Thinking MCP is an official Anthropic reference server that gives AI ... |
 | 20 | [Zapier MCP](202609202215%20-%20Zapier%20MCP.md) | 75 | — | Heating Up | Zapier MCP is the official Model Context Protocol server for Zapier's automation... |
+| 21 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Stable | Codex AGENTS. |
+| 22 | [Codex Cloud Tasks](202609202395%20-%20Codex%20Cloud%20Tasks.md) | 20 | — | Stable | Codex Cloud Tasks is OpenAI's task queue system for the Codex agent. |
 
 ### Windsurf
 
-*All plugins/extensions for Windsurf — 10 total*
+*All plugins/extensions for Windsurf — 13 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -341,6 +357,9 @@ links:
 | 8 | [Chrome DevTools MCP](202609202011%20-%20Chrome%20DevTools%20MCP.md) | 75 | — | Heating Up | Chrome DevTools MCP is Google's official MCP server for controlling a live Chrom... |
 | 9 | [Sentry MCP](2026092021%20-%20Sentry%20MCP.md) | 75 | ⭐ 858 | Heating Up | Sentry MCP is the official Model Context Protocol server for Sentry, giving AI c... |
 | 10 | [Sourcegraph MCP](2026092024%20-%20Sourcegraph%20MCP.md) | 75 | — | Heating Up | Sourcegraph MCP is the official Model Context Protocol server for Sourcegraph, e... |
+| 11 | [Windsurf Cascade](202609202415%20-%20Windsurf%20Cascade.md) | 20 | — | Stable | Windsurf Cascade is Codeium's native agentic flow system. |
+| 12 | [Windsurf Supercomplete](202609202425%20-%20Windsurf%20Supercomplete.md) | 20 | — | Stable | Windsurf Supercomplete is Codeium's next-generation code completion system. |
+| 13 | [Windsurf Forge](202609202435%20-%20Windsurf%20Forge.md) | 20 | — | Stable | Windsurf Forge is Codeium's application scaffolding and generation tool. |
 
 ### Aider
 
@@ -429,11 +448,13 @@ links:
 | 1 | [Claude Code Code Review](2026092023%20-%20Claude%20Code%20Code%20Review.md) | 70 | ⭐ 438,525 | Claude Code |
 | 2 | [Claude Code Auto Permission](202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Claude Code, GitHub Copilot |
 | 3 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Claude Code, OpenCode |
-| 4 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode |
-| 5 | [OpenCode Ensemble](202609200922%20-%20OpenCode%20Ensemble.md) | 20 | — | OpenCode |
-| 6 | [OpenCodeRAG](202609200923%20-%20OpenCodeRAG.md) | 20 | — | OpenCode |
-| 7 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Claude Code |
-| 8 | [OpenCode Snip](2026092024%20-%20OpenCode%20Snip.md) | 20 | ⭐ 1 | OpenCode |
+| 4 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Claude Code, Codex |
+| 5 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode |
+| 6 | [OpenCode Ensemble](202609200922%20-%20OpenCode%20Ensemble.md) | 20 | — | OpenCode |
+| 7 | [OpenCodeRAG](202609200923%20-%20OpenCodeRAG.md) | 20 | — | OpenCode |
+| 8 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Claude Code |
+| 9 | [Cursor Tab](202609202365%20-%20Cursor%20Tab.md) | 20 | — | Cursor |
+| 10 | [Codex Cloud Tasks](202609202395%20-%20Codex%20Cloud%20Tasks.md) | 20 | — | Codex |
 
 ### MCP Servers
 
@@ -459,6 +480,10 @@ links:
 | 3 | [Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Hermes Agent |
 | 4 | [Hermes Curator](202609200806%20-%20Hermes%20Curator.md) | 20 | — | Hermes Agent |
 | 5 | [OpenCode Firecrawl](202609202000%20-%20OpenCode%20Firecrawl.md) | 20 | — | OpenCode |
+| 6 | [Cursor Composer](202609202375%20-%20Cursor%20Composer.md) | 20 | — | Cursor |
+| 7 | [Cursor Rules](202609202385%20-%20Cursor%20Rules.md) | 20 | — | Cursor |
+| 8 | [Windsurf Cascade](202609202415%20-%20Windsurf%20Cascade.md) | 20 | — | Windsurf |
+| 9 | [Windsurf Forge](202609202435%20-%20Windsurf%20Forge.md) | 20 | — | Windsurf |
 
 ---
 
@@ -495,12 +520,12 @@ links:
 
 | Metric | Value |
 |--------|-------|
-| Total plugins | 55 |
+| Total plugins | 63 |
 | Heating Up | 42 |
-| Stable | 13 |
+| Stable | 21 |
 | Emerging | 0 |
 | MCP servers | 40 |
-| Cross-agent (2+) | 45 |
+| Cross-agent (2+) | 46 |
 
 ---
 

@@ -277,13 +277,13 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
 | 1 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
-| 2 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 3 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 5 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 6 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
-| 7 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
-| 8 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | plugin, mcp |
+| 2 | [Cursor Tab](./04%20-%20Plugins/202609202365%20-%20Cursor%20Tab.md) | 10 | — | plugin, cursor |
+| 3 | [Cursor Composer](./04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) | 10 | — | plugin, cursor |
+| 4 | [Cursor Rules](./04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) | 10 | — | plugin, cursor |
+| 5 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 6 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 7 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 8 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
 
 ### Codex
 
@@ -291,14 +291,14 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 2 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
-| 6 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
-| 7 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | plugin, mcp |
-| 8 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | 30 | — | plugin, mcp |
+| 1 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | 10 | — | plugin, codex |
+| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) | 10 | — | plugin, codex |
+| 3 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 4 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 6 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 7 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
+| 8 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
 
 ### Windsurf
 
@@ -306,14 +306,14 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 2 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
-| 6 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
-| 7 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | plugin, mcp |
-| 8 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | 30 | — | plugin, mcp |
+| 1 | [Windsurf Cascade](./04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) | 10 | — | plugin, windsurf |
+| 2 | [Windsurf Supercomplete](./04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) | 10 | — | plugin, windsurf |
+| 3 | [Windsurf Forge](./04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) | 10 | — | plugin, windsurf |
+| 4 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 5 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 6 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 7 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 8 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
 
 ## 🔌 Common MCP Plugins
 
