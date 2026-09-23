@@ -7,18 +7,6 @@ tags:
   - skills
 agents:
   - claude-code
-  - opencode
-  - cursor
-  - codex
-  - windsurf
-  - aider
-  - gemini-cli
-  - github-copilot
-  - kilo-code
-  - roocode
-  - jetbrains-junie
-  - cline
-  - hermes
 ---
 
 # Superpowers

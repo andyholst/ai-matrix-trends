@@ -6,19 +6,8 @@ tags:
   - tool
   - mcp
 agents:
-  - claude-code
-  - opencode
-  - cursor
-  - codex
-  - windsurf
-  - aider
-  - gemini-cli
-  - github-copilot
-  - kilo-code
-  - roocode
-  - jetbrains-junie
-  - cline
   - hermes
+  - claude-code
 ---
 
 # Jev Agent Router

@@ -126,29 +126,40 @@ def scan_plugins():
 
 
 def generate_agent_specific_table(agent_key, agent_name, plugins):
-    """Generate a table of agent-specific plugins (NOT universal MCP)"""
-    # Filter: agent-specific plugins that support this agent
+    """Generate a table of top plugins for this agent.
+    Mix of: agent-specific plugins + top universal MCP plugins, sorted by quality."""
+    
+    # Get all plugins that support this agent
     agent_plugins = {
         k: v for k, v in plugins.items() 
-        if agent_key in v.get('agents', []) and v.get('category') == 'specific'
+        if agent_key in v.get('agents', [])
     }
     
-    # Sort by score (quality), then by stars
-    sorted_plugins = sorted(agent_plugins.items(), key=lambda x: (-x[1]['score'], -x[1]['stars']))
+    # Sort by: category (specific first), then score (quality), then stars
+    def sort_key(item):
+        name, data = item
+        cat = data.get('category', 'common')
+        score = data.get('score', 0)
+        stars = data.get('stars', 0)
+        # specific=0 (first), niche=1, common=2
+        cat_order = {'specific': 0, 'niche': 1, 'common': 2}
+        return (cat_order.get(cat, 2), -score, -stars)
+    
+    sorted_plugins = sorted(agent_plugins.items(), key=sort_key)
     
     table = f"### {agent_name}\n\n"
     table += f"*Top plugins/extensions for {agent_name}*\n\n"
     table += "| # | Plugin | Score | Stars | Type |\n"
     table += "|---|--------|-------|-------|------|\n"
     
-    for i, (name, data) in enumerate(sorted_plugins[:5], 1):
+    for i, (name, data) in enumerate(sorted_plugins[:7], 1):
         file_path = f"04 - Plugins/{data['file']}"
         encoded = file_path.replace(' ', '%20')
         stars_str = f"⭐ {data['stars']:,}" if data['stars'] > 0 else "—"
         table += f"| {i} | [{data['title']}](./{encoded}) | {data['score']} | {stars_str} | {', '.join(data['tags'][:2])} |\n"
     
     if not sorted_plugins:
-        table += "*No agent-specific plugins found yet.*\n"
+        table += "*No plugins found yet.*\n"
     
     table += "\n"
     return table
@@ -239,9 +250,6 @@ def update_readme():
         agent_file = AGENTS[agent_key]
         agent_name = agent_file.split(' - ')[1].replace('.md', '')
         new_section += generate_agent_specific_table(agent_key, agent_name, plugins)
-    
-    # Common MCP table
-    new_section += generate_common_mcp_table(plugins)
     
     # Compact matrix
     new_section += generate_compact_matrix(plugins)
