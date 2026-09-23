@@ -70,16 +70,11 @@ def scan_plugins():
             except:
                 pass
         
-        # Compatibility (from Compatibility section or frontmatter agents field)
+        # Compatibility - ONLY from frontmatter agents: field
+        # Do NOT match body text (mentions != compatibility)
         compat_agents = set()
-        compat_section = re.search(r'## Compatibility.*?\n(.*?)(?=\n## |\Z)', content, re.DOTALL)
-        if compat_section:
-            for agent_key, agent_file in AGENTS.items():
-                agent_name = agent_file.split(' - ')[1].replace('.md', '')
-                if agent_name.lower() in compat_section.group(1).lower():
-                    compat_agents.add(agent_key)
         
-        # Also check frontmatter - handle both YAML list and bracketed array
+        # Check frontmatter - handle both YAML list and bracketed array
         fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
         if fm_match:
             fm = fm_match.group(1)
@@ -107,7 +102,16 @@ def scan_plugins():
         # Score
         score = 0
         score += min(stars_num // 1000, 50)
-        score += len(compat_agents) * 20  # Cross-agent bonus: +20 per agent supported
+        # Cross-agent bonus: more agents = more points, but diminishing returns
+        num_agents = len(compat_agents)
+        if num_agents <= 2:
+            score += 60  # Agent-specific plugins get big bonus
+        elif num_agents <= 5:
+            score += 40
+        elif num_agents <= 10:
+            score += 20
+        else:
+            score += 10  # Universal MCP plugins get small bonus
         
         # Tags
         tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
@@ -136,8 +140,16 @@ def generate_agent_table(agent_key, agent_name, plugins):
     # Filter plugins that support this agent
     agent_plugins = {k: v for k, v in plugins.items() if agent_key in v.get('agents', [])}
     
-    # Sort by score
-    sorted_plugins = sorted(agent_plugins.items(), key=lambda x: x[1]['score'], reverse=True)
+    # Sort: agent-specific plugins first (fewer total agents = more specific), then by score
+    def sort_key(item):
+        name, data = item
+        num_agents = len(data.get('agents', []))
+        score = data.get('score', 0)
+        # Prioritize: fewer agents (more specific), then higher score
+        # Use negative score for descending sort, but primary sort is specificity
+        return (num_agents, -score)
+    
+    sorted_plugins = sorted(agent_plugins.items(), key=sort_key)
     
     table = f"### {agent_name}\n\n"
     table += f"*Top plugins/extensions for {agent_name}*\n\n"
