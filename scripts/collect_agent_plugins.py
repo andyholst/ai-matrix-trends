@@ -210,8 +210,8 @@ def update_readme_agent_plugins():
     sorted_all = sorted(plugins.items(), key=lambda x: x[1]['score'], reverse=True)[:15]
     
     matrix = "## 📊 Plugin Compatibility Matrix\n\n"
-    matrix += "*Top plugins vs. major agents — ✅ = compatible, — = not yet supported*\n\n"
-    header = "| Plugin | " + " | ".join(top_agent_labels[k] for k in top_agents) + " | Agents |"
+    matrix += "*Top plugins vs. major agents — ✅ = compatible, · = not yet supported*\n\n"
+    header = "| Plugin | " + " | ".join(top_agent_labels[k] for k in top_agents) + " | Total |"
     sep = "|" + "|".join(["--------" for _ in range(len(top_agents) + 2)]) + "|"
     matrix += header + "\n" + sep + "\n"
     
@@ -221,18 +221,13 @@ def update_readme_agent_plugins():
             title = title[:25] + "…"
         encoded = f"./04%20-%20Plugins/{data['file'].replace(' ', '%20')}"
         row = f"| [{title}]({encoded}) |"
-        count = 0
+        total = len(data.get('agents', []))
         for agent_key in top_agents:
             if agent_key in data.get('agents', []):
                 row += " ✅ |"
-                count += 1
             else:
                 row += " · |"
-        others = len(data.get('agents', [])) - count
-        if others > 0:
-            row += f" {count}+{others} |"
-        else:
-            row += f" {count} |"
+        row += f" {total} |"
         matrix += row + "\n"
     
     matrix += "\n> **Full per-agent breakdowns:** See [Plugin Master Index](04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete tables.\n"

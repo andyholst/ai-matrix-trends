@@ -447,25 +447,25 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ## 📊 Plugin Compatibility Matrix
 
-*Top plugins vs. major agents — ✅ = compatible, — = not yet supported*
+*Top plugins vs. major agents — ✅ = compatible, · = not yet supported*
 
-| Plugin | Claude Code | OpenCode | Cursor | Codex | Hermes | Windsurf | Agents |
+| Plugin | Claude Code | OpenCode | Cursor | Codex | Hermes | Windsurf | Total |
 |--------|--------|--------|--------|--------|--------|--------|--------|
-| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Linear MCP](./04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
-| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Linear MCP](./04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
+| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 13 |
 
 > **Full per-agent breakdowns:** See [Plugin Master Index](04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete tables.
 ---
