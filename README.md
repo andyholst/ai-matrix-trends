@@ -223,7 +223,7 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ## 🔌 Plugins by Agent
 
-*Top plugins for each tool — Last updated: 2026-09-23*
+*Agent-specific plugins for each tool — Last updated: 2026-09-23*
 
 ### Claude Code
 
@@ -231,14 +231,12 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 155 | ⭐ 438,525 | plugin, claude-code |
-| 2 | [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 130 | — | plugin, claude-code |
-| 3 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 125 | — | plugin, tool |
-| 4 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 110 | — | plugin, browser-automation |
-| 5 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 105 | — | plugin, claude-code |
-| 6 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 105 | — | plugin, hermes |
-| 7 | [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 80 | — | plugin, tool |
-| 8 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 55 | ⭐ 438,525 | plugin, claude-code |
+| 2 | [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 30 | — | plugin, claude-code |
+| 3 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
+| 4 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 5 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 5 | — | plugin, claude-code |
+| 6 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
 
 ### OpenCode
 
@@ -246,14 +244,14 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) | 115 | — | plugin, opencode |
-| 2 | [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | 115 | — | plugin, tool |
-| 3 | [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) | 110 | ⭐ 1 | plugin, opencode |
-| 4 | [OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 110 | — | plugin, opencode |
-| 5 | [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | 110 | — | plugin, opencode |
-| 6 | [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 110 | — | plugin, opencode |
-| 7 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 105 | — | plugin, hermes |
-| 8 | [OpenCode Oh-My-Openagent](./04%20-%20Plugins/202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 105 | — | plugin, opencode |
+| 1 | [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) | 15 | — | plugin, opencode |
+| 2 | [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | 15 | — | plugin, tool |
+| 3 | [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) | 10 | ⭐ 1 | plugin, opencode |
+| 4 | [OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 10 | — | plugin, opencode |
+| 5 | [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | 10 | — | plugin, opencode |
+| 6 | [OpenCode Chromium Browser](./04%20-%20Plugins/202609200924%20-%20OpenCode%20Chromium%20Browser.md) | 10 | — | plugin, opencode |
+| 7 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
+| 8 | [OpenCode Oh-My-Openagent](./04%20-%20Plugins/202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 5 | — | plugin, opencode |
 
 ### Hermes Agent
 
@@ -261,14 +259,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 125 | — | plugin, hermes |
-| 2 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 125 | — | plugin, tool |
-| 3 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 105 | — | plugin, hermes |
-| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 105 | — | plugin, hermes |
-| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 105 | — | plugin, hermes |
-| 6 | [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 80 | — | plugin, tool |
-| 7 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 8 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 1 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 25 | — | plugin, hermes |
+| 2 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
+| 3 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
+| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
+| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
 
 ### Cursor
 
@@ -276,14 +271,10 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 110 | — | plugin, browser-automation |
-| 2 | [Cursor Tab](./04%20-%20Plugins/202609202365%20-%20Cursor%20Tab.md) | 110 | — | plugin, cursor |
-| 3 | [Cursor Composer](./04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) | 110 | — | plugin, cursor |
-| 4 | [Cursor Rules](./04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) | 110 | — | plugin, cursor |
-| 5 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 6 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 7 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 8 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 1 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 2 | [Cursor Tab](./04%20-%20Plugins/202609202365%20-%20Cursor%20Tab.md) | 10 | — | plugin, cursor |
+| 3 | [Cursor Composer](./04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) | 10 | — | plugin, cursor |
+| 4 | [Cursor Rules](./04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) | 10 | — | plugin, cursor |
 
 ### Codex
 
@@ -291,14 +282,8 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | 110 | — | plugin, codex |
-| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) | 110 | — | plugin, codex |
-| 3 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 4 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 6 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 7 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
-| 8 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
+| 1 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | 10 | — | plugin, codex |
+| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) | 10 | — | plugin, codex |
 
 ### Windsurf
 
@@ -306,14 +291,9 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Windsurf Cascade](./04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) | 110 | — | plugin, windsurf |
-| 2 | [Windsurf Supercomplete](./04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) | 110 | — | plugin, windsurf |
-| 3 | [Windsurf Forge](./04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) | 110 | — | plugin, windsurf |
-| 4 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 5 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 6 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 7 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 8 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
+| 1 | [Windsurf Cascade](./04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) | 10 | — | plugin, windsurf |
+| 2 | [Windsurf Supercomplete](./04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) | 10 | — | plugin, windsurf |
+| 3 | [Windsurf Forge](./04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) | 10 | — | plugin, windsurf |
 
 ## 🔌 Common MCP Plugins
 
@@ -321,26 +301,22 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Agents | Type |
 |---|--------|-------|-------|--------|------|
-| 1 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | 13 | plugin, mcp |
-| 2 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | 13 | plugin, mcp |
-| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | 13 | plugin, mcp |
-| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | 13 | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | 13 | plugin, tool |
-| 6 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | 13 | plugin, tool |
-| 7 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | 13 | plugin, mcp |
-| 8 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | 30 | — | 13 | plugin, mcp |
-| 9 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 10 | [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 11 | [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 12 | [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 13 | [Linear MCP](./04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 14 | [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | 25 | — | 13 | plugin, opencode |
-| 15 | [Figma MCP](./04%20-%20Plugins/202609202105%20-%20Figma%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 16 | [Stripe MCP](./04%20-%20Plugins/202609202115%20-%20Stripe%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 17 | [Cloudflare MCP](./04%20-%20Plugins/202609202125%20-%20Cloudflare%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 18 | [Datadog MCP](./04%20-%20Plugins/202609202135%20-%20Datadog%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 19 | [Kubernetes MCP](./04%20-%20Plugins/202609202145%20-%20Kubernetes%20MCP.md) | 25 | — | 13 | plugin, mcp |
-| 20 | [Terraform MCP](./04%20-%20Plugins/202609202155%20-%20Terraform%20MCP.md) | 25 | — | 13 | plugin, mcp |
+| 1 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | 6 | plugin, mcp |
+| 2 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | 6 | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | 6 | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | 6 | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | 6 | plugin, tool |
+| 6 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | 6 | plugin, tool |
+| 7 | [OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 30 | — | 3 | plugin, tool |
+| 8 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | 6 | plugin, mcp |
+| 9 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | 30 | — | 6 | plugin, mcp |
+| 10 | [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | 25 | — | 6 | plugin, mcp |
+| 11 | [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | 25 | — | 6 | plugin, mcp |
+| 12 | [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | 25 | — | 6 | plugin, mcp |
+| 13 | [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | 25 | — | 6 | plugin, mcp |
+| 14 | [Linear MCP](./04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) | 25 | — | 6 | plugin, mcp |
+| 15 | [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | 25 | — | 6 | plugin, opencode |
+
 
 ## 📊 Plugin Compatibility Matrix
 
