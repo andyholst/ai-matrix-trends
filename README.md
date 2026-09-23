@@ -84,11 +84,11 @@
 
 | # | Name | Score | Type | Stars | Status |
 |---|------|-------|------|-------|--------|
-| 1 | [2026092021 - Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 33 | plugin | 858 | Stable |
-| 2 | [2026092022 - Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 32 | plugin | 0 | Stable |
-| 3 | [202609202000 - Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 29 | plugin | 0 | Stable |
-| 4 | [202609200804 - FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 29 | plugin | 0 | Stable |
-| 5 | [202609202010 - Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 29 | plugin | 0 | Stable |
+| 1 | [202609202000 - OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 129 | plugin | 0 | Heating Up |
+| 2 | [202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 115 | plugin | 0 | Heating Up |
+| 3 | [202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | 109 | plugin | 0 | Heating Up |
+| 4 | [202609200921 - OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 106 | plugin | 0 | Heating Up |
+| 5 | [202609200922 - OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | 106 | plugin | 0 | Heating Up |
 
 
 ## 🏗️ Architecture Patterns
@@ -155,9 +155,9 @@
 |---|------|-------|------|-------|--------|
 | 1 | [202609202000 - Cline](./03%20-%20Agents/202609202000%20-%20Cline.md) | 130 | agent | 0 | Heating Up |
 | 2 | [202609202000 - Aider](./03%20-%20Agents/202609202000%20-%20Aider.md) | 130 | agent | 0 | Heating Up |
-| 3 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
-| 4 | [202609202000 - Cursor](./03%20-%20Agents/202609202000%20-%20Cursor.md) | 105 | agent | 0 | Heating Up |
-| 5 | [202609202000 - Devin](./03%20-%20Agents/202609202000%20-%20Devin.md) | 100 | agent | 0 | Heating Up |
+| 3 | [202609202000 - OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 129 | plugin | 0 | Heating Up |
+| 4 | [202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 115 | plugin | 0 | Heating Up |
+| 5 | [202609200912 - Nimbalyst](./03%20-%20Agents/202609200912%20-%20Nimbalyst.md) | 110 | agent | 0 | Heating Up |
 
 ### Stable
 

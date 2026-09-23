@@ -108,6 +108,15 @@ def extract_trends_from_notes():
                     score = 0
                     score += min(stars_num // 500, 40)  # Max 40 from stars
                     score += mentions * 3
+                    
+                    # Detect agent-specific plugins (e.g., "Cursor Tab", "OpenCodeRAG")
+                    name_words = set(name.lower().split())
+                    agent_tags = {'claude-code', 'opencode', 'hermes', 'cursor', 'codex', 'windsurf', 'aider', 'gemini', 'github-copilot', 'kilo', 'roocode', 'jetbrains', 'cline'}
+                    is_specific = bool(name_words & agent_tags)
+                    
+                    if is_specific:
+                        score += 100  # Massive bonus for agent-specific plugins
+                    
                     if 'mcp' in tags:
                         score += 20
                     if 'trending' in tags:
@@ -126,9 +135,31 @@ def extract_trends_from_notes():
     return trends, sources
 
 def get_top_trends(n=5):
-    """Get top N trending items"""
+    """Get top N trending items — agent-specific plugins prioritized"""
     trends, sources = extract_trends_from_notes()
-    top = trends.most_common(n)
+    
+    # Sort: agent-specific first, then by score
+    def sort_key(item):
+        name, score = item
+        source = sources.get(name, {})
+        tags = source.get('tags', [])
+        item_type = source.get('type', '')
+        stars = source.get('stars', 0)
+        
+        # Detect agent-specific: tag matches plugin name or only 1-2 agent tags
+        is_specific = False
+        if item_type == 'plugin':
+            # Check tags for agent-specific
+            agent_tags = {'claude-code', 'opencode', 'hermes', 'cursor', 'codex', 'windsurf', 'opencode'}
+            name_words = set(name.lower().split())
+            if name_words & agent_tags:
+                is_specific = True
+        
+        # Sort: specific first (is_specific=False comes first), then score, then stars
+        return (0 if is_specific else 1, -score, -stars)
+    
+    sorted_trends = sorted(trends.items(), key=sort_key)
+    top = sorted_trends[:n]
     
     result = []
     for name, score in top:
