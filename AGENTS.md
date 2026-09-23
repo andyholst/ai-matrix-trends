@@ -858,33 +858,34 @@ The daily scan runs as **4 separate cron jobs** (stages), each running after the
 
 | Time | Job | Script | What it does |
 |------|-----|--------|--------------|
-| 20:00 | Trends Stage 1 - Research | `stage-1-research.py` | Creates agent/plugin notes from hardcoded lists |
+| 20:00 | Trends Stage 1 - Research | `stage-1-research.py` | Creates agent/plugin notes from comprehensive list (41 agents, 55+ plugins, 8 architectures) |
 | 20:30 | Trends Stage 2 - Links | `stage-2-links.py` | Resolves wikilinks, fixes broken links |
-| 20:45 | Trends Stage 3 - Scoring | `stage-3-scoring.py` | Aggregates trend scores, collects agent plugins |
+| 20:45 | Trends Stage 3 - Scoring | `stage-3-scoring.py` | Aggregates trend scores, collects per-agent plugin tables |
 | 21:00 | Trends Stage 4 - Indexes | `stage-4-indexes.py` | Updates MOCs, Master Indexes, README, commits |
 
 Setup: `bash scripts/setup-cron.sh` (run once after cloning)
 
 ### Stage 1: Research (20:00)
-`stage-1-research.py` — Creates new agent and plugin notes from hardcoded lists (no web search, no delegate_task).
+`stage-1-research.py` — Creates new agent and plugin notes from hardcoded lists. Covers all 41 tracked agents (core + extended) and 55+ MCP plugins. Includes architecture patterns. 
 
 ### Stage 2: Link Resolution
 1. `resolve_wikilinks.py` — Resolves short-name wikilinks to full filenames
-2. `fix_all_links.py` — Fixes broken wikilinks
+2. `fix-all-links.py` — Fixes broken wikilinks, emits markdown links
 3. `verify-vault.py` — Verifies all links resolve
 
 ### Stage 3: Scoring
 1. `aggregate-trends.py` — Scores items based on stars/mentions/tags
-2. `collect_agent_plugins.py` — Builds per-agent plugin tables
+2. `collect_agent_plugins.py` — Builds per-agent plugin tables (all 21 agents × top 5 plugins)
 
 ### Stage 4: Indexes & Commit
-1. `update-mocs.py` — Updates Maps of Content
-2. `update-plugin-master-index.py` — Generates Plugin Master Index
-3. `update-agent-master-index.py` — Generates Agent Master Index
-4. `update_readme.py` — Updates README tables
+1. `update-mocs.py` — Updates Maps of Content (6 MOCs: Agents, Plugins, Architecture, Use Cases, Trend Radar)
+2. `update-plugin-master-index.py` — Generates Plugin Master Index (55+ plugins, all agent breakdowns)
+3. `update-agent-master-index.py` — Generates Agent Master Index (41 agents)
+4. `update_readme.py` — Updates README tables (trending agents, trend radar, agent tools, plugins by agent)
 5. `fix-master-index-links.py` — Fixes Master Index frontmatter links
-6. `verify-vault.py` — Final verification
-7. `git add -A && git commit && git push`
+6. `fix-links-relative.py` — Rewrites any vault-root-style link to file-relative
+7. `verify-vault.py` — Final verification
+8. `git add -A && git commit && git push`
 
 **NEVER skip any script. NEVER change the order. NEVER delete files.**
 
