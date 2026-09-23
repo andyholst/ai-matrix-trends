@@ -15,4 +15,4 @@ agents:
 Windsurf Cascade is Codeium's native agentic flow system. Cascade provides an AI agent that can explore codebases, understand context, and make multi-file edits. It features 'Cascade Notes' for persistent memory across sessions and 'Cascade Automations' for repetitive task automation. Cascade runs locally and supports real-time collaboration.
 
 ## Sources
-- 
+-

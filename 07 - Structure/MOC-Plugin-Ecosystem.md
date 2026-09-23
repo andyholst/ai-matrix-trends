@@ -64,7 +64,7 @@ tags:
 - [04 - Plugins/202609202375 - Cursor Composer](./../04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) - [auto-summary]
 - [04 - Plugins/202609202385 - Cursor Rules](./../04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) - [auto-summary]
 - [04 - Plugins/202609202395 - Codex Cloud Tasks](./../04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) - [auto-summary]
-- [04 - Plugins/202609202405 - Codex AGENTS.md](./../04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) - [auto-summary]
+- [04 - Plugins/202609202405 - Codex AGENTS.md](./../04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md) - [auto-summary]
 - [04 - Plugins/202609202415 - Windsurf Cascade](./../04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) - [auto-summary]
 - [04 - Plugins/202609202425 - Windsurf Supercomplete](./../04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) - [auto-summary]
 - [04 - Plugins/202609202435 - Windsurf Forge](./../04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) - [auto-summary]

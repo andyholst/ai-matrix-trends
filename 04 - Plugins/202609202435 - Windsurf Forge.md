@@ -15,4 +15,4 @@ agents:
 Windsurf Forge is Codeium's application scaffolding and generation tool. It can create entire project structures, set up build configurations, and generate boilerplate code for frameworks like React, Next.js, and Node.js. Forge combines template-based generation with AI customization for rapid project initialization.
 
 ## Sources
-- 
+-

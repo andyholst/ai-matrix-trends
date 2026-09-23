@@ -124,7 +124,7 @@ links:
 | 2 | [Hermes Plugin System](202609202013%20-%20Hermes%20Plugin%20System.md) | 40 | — | Hermes Agent, OpenCode | Hermes Agent has a comprehensive plugin system for adding cu... |
 | 3 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Claude Code, OpenCode | Oh-My-Openagent is the most prominent all-in-one plugin in t... |
 | 4 | [Hermes Jev Agent Router](202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 40 | — | Claude Code, Hermes Agent | Jev is a System One decision model from TypeSafe AI for agen... |
-| 5 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Claude Code, Codex | Codex AGENTS. |
+| 5 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md) | 40 | — | Claude Code, Codex | Codex AGENTS. |
 | 6 | [Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Hermes Agent | The Kanban Dashboard is a built-in Hermes Agent plugin that ... |
 | 7 | [Hermes Curator](202609200806%20-%20Hermes%20Curator.md) | 20 | — | Hermes Agent | Curator is a built-in Hermes Agent plugin that automatically... |
 | 8 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode | OpenCode Morph Fast Apply is a plugin that integrates the Mo... |
@@ -202,7 +202,7 @@ links:
 | 42 | [Claude Code Auto Permission](202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Stable | Auto Permission is a Claude Code permission mode introduced in v2. |
 | 43 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Stable | Oh-My-Openagent is the most prominent all-in-one plugin in the OpenCode ecosyste... |
 | 44 | [Hermes Jev Agent Router](202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 40 | — | Stable | Jev is a System One decision model from TypeSafe AI for agent routing. |
-| 45 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Stable | Codex AGENTS. |
+| 45 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md) | 40 | — | Stable | Codex AGENTS. |
 | 46 | [Superpowers](2026092020%20-%20Superpowers.md) | 20 | — | Stable | Superpowers is an agentic skills framework and software development methodology ... |
 
 ### OpenCode
@@ -338,7 +338,7 @@ links:
 | 18 | [Composio MCP](2026092022%20-%20Composio%20MCP.md) | 75 | — | Heating Up | Composio is a universal integration layer that gives AI coding agents secure acc... |
 | 19 | [Sequential Thinking MCP](202609202205%20-%20Sequential%20Thinking%20MCP.md) | 75 | — | Heating Up | Sequential Thinking MCP is an official Anthropic reference server that gives AI ... |
 | 20 | [Zapier MCP](202609202215%20-%20Zapier%20MCP.md) | 75 | — | Heating Up | Zapier MCP is the official Model Context Protocol server for Zapier's automation... |
-| 21 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Stable | Codex AGENTS. |
+| 21 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md) | 40 | — | Stable | Codex AGENTS. |
 | 22 | [Codex Cloud Tasks](202609202395%20-%20Codex%20Cloud%20Tasks.md) | 20 | — | Stable | Codex Cloud Tasks is OpenAI's task queue system for the Codex agent. |
 
 ### Windsurf
@@ -448,7 +448,7 @@ links:
 | 1 | [Claude Code Code Review](2026092023%20-%20Claude%20Code%20Code%20Review.md) | 70 | ⭐ 438,525 | Claude Code |
 | 2 | [Claude Code Auto Permission](202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 40 | — | Claude Code, GitHub Copilot |
 | 3 | [OpenCode Oh-My-Openagent](202609202014%20-%20OpenCode%20Oh-My-Openagent.md) | 40 | — | Claude Code, OpenCode |
-| 4 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md.md) | 40 | — | Claude Code, Codex |
+| 4 | [Codex AGENTS.md](202609202405%20-%20Codex%20AGENTS.md) | 40 | — | Claude Code, Codex |
 | 5 | [OpenCode Morph Fast Apply](202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 20 | — | OpenCode |
 | 6 | [OpenCode Ensemble](202609200922%20-%20OpenCode%20Ensemble.md) | 20 | — | OpenCode |
 | 7 | [OpenCodeRAG](202609200923%20-%20OpenCodeRAG.md) | 20 | — | OpenCode |

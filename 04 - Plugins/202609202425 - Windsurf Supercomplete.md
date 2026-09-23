@@ -15,4 +15,4 @@ agents:
 Windsurf Supercomplete is Codeium's next-generation code completion system. It goes beyond single-line suggestions to provide multi-line completions, function generation, and contextual code transformations. Supercomplete uses a hybrid approach combining local models for latency and cloud models for complex reasoning.
 
 ## Sources
-- 
+-

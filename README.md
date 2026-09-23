@@ -283,7 +283,7 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
 | 1 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | 10 | — | plugin, codex |
-| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) | 10 | — | plugin, codex |
+| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md) | 10 | — | plugin, codex |
 
 ### Windsurf
 
@@ -339,7 +339,7 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | [Cursor Composer](./04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) | · | · | ✅ | · | · | · |
 | [Cursor Rules](./04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) | · | · | ✅ | · | · | · |
 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | · | · | · | ✅ | · | · |
-| [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md.md) | · | · | · | ✅ | · | · |
+| [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md) | · | · | · | ✅ | · | · |
 | [Windsurf Cascade](./04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) | · | · | · | · | · | ✅ |
 | [Windsurf Supercomplete](./04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) | · | · | · | · | · | ✅ |
 | [Windsurf Forge](./04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) | · | · | · | · | · | ✅ |

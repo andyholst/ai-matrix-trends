@@ -30,6 +30,7 @@ VALID_TAGS = {
     'personal-assistant', 'code-intelligence', 'ide-plugin', 'aws',
     'google', 'gemini', 'rebrand', 'self-improving', 'messaging',
     'multi-model', 'code-editing', 'event-driven', 'MCP', 'placeholder',
+    'windsurf', 'cursor', 'codex',
     # New tags for extended coverage
     'code-completion', 'reasoning', 'modeling', 'optimization', 'safety',
     'vector-database', 'graph-database', 'data-warehouse', 'project-management',
