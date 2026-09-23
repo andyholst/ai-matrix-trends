@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T17:22:44.360382",
+  "last_updated": "2026-09-23T20:45:01.092241",
   "items": {
     "Cline": {
       "type": "agent",
@@ -76,19 +76,6 @@
       ],
       "score": 20,
       "file": "03 - Agents/202609202004 - RooCode.md"
-    },
-    "Hermes Agent": {
-      "type": "agent",
-      "stars": 0,
-      "mentions": 6,
-      "tags": [
-        "agent",
-        "open-source",
-        "self-improving",
-        "messaging"
-      ],
-      "score": 30,
-      "file": "03 - Agents/202609200759 - Hermes Agent.md"
     },
     "Windsurf": {
       "type": "agent",
@@ -349,18 +336,6 @@
       "score": 35,
       "file": "03 - Agents/202609202045 - Pareto.md"
     },
-    "Jev": {
-      "type": "agent",
-      "stars": 0,
-      "mentions": 13,
-      "tags": [
-        "agent",
-        "model",
-        "decision-model"
-      ],
-      "score": 65,
-      "file": "03 - Agents/202609202035 - Jev.md"
-    },
     "Devin Desktop": {
       "type": "agent",
       "stars": 0,
@@ -503,6 +478,31 @@
       ],
       "score": 10,
       "file": "03 - Agents/202609202135 - Mintlify.md"
+    },
+    "Jev": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 15,
+      "tags": [
+        "agent",
+        "model",
+        "decision-model"
+      ],
+      "score": 75,
+      "file": "03 - Agents/202609202035 - Jev.md"
+    },
+    "Hermes Agent": {
+      "type": "agent",
+      "stars": 0,
+      "mentions": 6,
+      "tags": [
+        "agent",
+        "open-source",
+        "self-improving",
+        "messaging"
+      ],
+      "score": 30,
+      "file": "03 - Agents/202609200759 - Hermes Agent.md"
     },
     "Browser Use MCP": {
       "type": "plugin",
@@ -1234,6 +1234,23 @@
       ],
       "score": 106,
       "file": "04 - Plugins/202609202435 - Windsurf Forge.md"
+    },
+    "Hermes Jev": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 3,
+      "tags": [
+        "plugin",
+        "hermes",
+        "jev",
+        "typesafe",
+        "system-one",
+        "context-governance",
+        "decision-model",
+        "nervous-system"
+      ],
+      "score": 109,
+      "file": "04 - Plugins/202609202500 - Hermes Jev.md"
     }
   }
 }

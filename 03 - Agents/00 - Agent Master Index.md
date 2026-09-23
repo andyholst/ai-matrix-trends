@@ -95,9 +95,9 @@ links:
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Heating Up | — | 0 |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Heating Up | — | 0 |
 | 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up | — | 0 |
-| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | — | 0 |
-| 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | — | 0 |
-| 11 | [Jev](202609202035%20-%20Jev.md) | 65 | — | Heating Up | — | 0 |
+| 9 | [Jev](202609202035%20-%20Jev.md) | 75 | — | Heating Up | — | 0 |
+| 10 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | — | 0 |
+| 11 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | — | 0 |
 | 12 | [Windsurf](202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | — | 0 |
 | 13 | [Augment](202609202002%20-%20Augment.md) | 50 | — | Heating Up | — | 0 |
 | 14 | [Muse Code](202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up | — | 0 |
@@ -145,9 +145,9 @@ links:
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Codex is OpenAI's agent-native coding platform, re-emerged i... |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Vellum is an open-source personal AI assistant that goes bey... |
 | 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Pi is an open-source, terminal-native coding agent that supp... |
-| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
-| 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | SWE-2 is Cognition's coding model released on September 10, ... |
-| 11 | [Jev](202609202035%20-%20Jev.md) | 65 | — | Jev is TypeSafe AI's first "System One Model," released on S... |
+| 9 | [Jev](202609202035%20-%20Jev.md) | 75 | — | Jev is TypeSafe AI's first "System One Model," released on S... |
+| 10 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | OpenCode is an open-source, MIT-licensed AI coding agent bui... |
+| 11 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | SWE-2 is Cognition's coding model released on September 10, ... |
 | 12 | [Windsurf](202609200800%20-%20Windsurf.md) | 50 | — | Windsurf was a popular AI coding IDE built on VS Code, known... |
 | 13 | [Augment](202609202002%20-%20Augment.md) | 50 | — | Augment is a code-intelligence platform that combines deep r... |
 | 14 | [Muse Code](202609202055%20-%20Muse%20Code.md) | 50 | — | Muse Code is Meta's first terminal-based coding agent, relea... |
@@ -205,8 +205,8 @@ links:
 | 6 | [Codex](202609202000%20-%20Codex.md) | 95 | — | Heating Up |
 | 7 | [Vellum](202609200910%20-%20Vellum.md) | 80 | — | Heating Up |
 | 8 | [Pi](202609202004%20-%20Pi.md) | 75 | — | Heating Up |
-| 9 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up |
-| 10 | [SWE-2](202609202015%20-%20SWE-2.md) | 70 | — | Heating Up |
+| 9 | [Jev](202609202035%20-%20Jev.md) | 75 | — | Heating Up |
+| 10 | [OpenCode](202609200758%20-%20OpenCode.md) | 70 | — | Heating Up |
 
 ---
 

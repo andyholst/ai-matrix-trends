@@ -33,17 +33,17 @@
 | 6 | [202609202000 - Codex](./03%20-%20Agents/202609202000%20-%20Codex.md) | 95 | — | Heating Up | agent, cli, tool |
 | 7 | [202609200910 - Vellum](./03%20-%20Agents/202609200910%20-%20Vellum.md) | 80 | — | Heating Up | agent, personal-assistant, open-source |
 | 8 | [202609202004 - Pi](./03%20-%20Agents/202609202004%20-%20Pi.md) | 75 | — | Heating Up | agent, cli, open-source |
-| 9 | [202609202015 - SWE-2](./03%20-%20Agents/202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | agent, model |
-| 10 | [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | agent, open-source, cli |
-| 11 | [202609202035 - Jev](./03%20-%20Agents/202609202035%20-%20Jev.md) | 65 | — | Heating Up | agent, model, decision-model |
+| 9 | [202609202035 - Jev](./03%20-%20Agents/202609202035%20-%20Jev.md) | 75 | — | Heating Up | agent, model, decision-model |
+| 10 | [202609202015 - SWE-2](./03%20-%20Agents/202609202015%20-%20SWE-2.md) | 70 | — | Heating Up | agent, model |
+| 11 | [202609200758 - OpenCode](./03%20-%20Agents/202609200758%20-%20OpenCode.md) | 70 | — | Heating Up | agent, open-source, cli |
 | 12 | [202609200800 - Windsurf](./03%20-%20Agents/202609200800%20-%20Windsurf.md) | 50 | — | Heating Up | agent, ide, rebrand |
 | 13 | [202609202002 - Augment](./03%20-%20Agents/202609202002%20-%20Augment.md) | 50 | — | Heating Up | agent, code-intelligence, enterprise |
 | 14 | [202609202055 - Muse Code](./03%20-%20Agents/202609202055%20-%20Muse%20Code.md) | 50 | — | Heating Up | agent, cli |
 | 15 | [202609202000 - Claude Code](./03%20-%20Agents/202609202000%20-%20Claude%20Code.md) | 45 | — | Stable | agent, cli, tool |
 | 16 | [202609202025 - Devin Desktop](./03%20-%20Agents/202609202025%20-%20Devin%20Desktop.md) | 40 | — | Stable | agent, ide |
 | 17 | [202609202045 - Pareto](./03%20-%20Agents/202609202045%20-%20Pareto.md) | 35 | — | Stable | agent, model, composite |
-| 18 | [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md) | 30 | — | Stable | agent, open-source, self-improving |
-| 19 | [2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md) | 30 | — | Stable | agent, cli |
+| 18 | [2026092014 - Kilo Code](./03%20-%20Agents/2026092014%20-%20Kilo%20Code.md) | 30 | — | Stable | agent, cli |
+| 19 | [202609200759 - Hermes Agent](./03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md) | 30 | — | Stable | agent, open-source, self-improving |
 | 20 | [202609202002 - Gemini CLI](./03%20-%20Agents/202609202002%20-%20Gemini%20CLI.md) | 25 | — | Stable | agent |
 | 21 | [2026092010 - Amp](./03%20-%20Agents/2026092010%20-%20Amp.md) | 25 | — | Stable | agent, cli, cloud |
 | 22 | [202609202004 - RooCode](./03%20-%20Agents/202609202004%20-%20RooCode.md) | 20 | — | Stable | agent |
@@ -293,9 +293,10 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 |---|--------|-------|-------|------|
 | 1 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 25 | — | plugin, hermes |
 | 2 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
-| 3 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
-| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
-| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
+| 3 | [Hermes Jev](./04%20-%20Plugins/202609202500%20-%20Hermes%20Jev.md) | 15 | — | plugin, hermes |
+| 4 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
+| 5 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
+| 6 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
 
 ### Cursor
 
