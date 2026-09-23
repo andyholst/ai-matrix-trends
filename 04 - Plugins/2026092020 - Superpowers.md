@@ -21,7 +21,6 @@ agents:
   - hermes
 ---
 
-
 # Superpowers
 
 ## Overview

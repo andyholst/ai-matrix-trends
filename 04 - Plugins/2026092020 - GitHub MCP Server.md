@@ -20,8 +20,6 @@ agents:
   - hermes
 ---
 
-
-
 # GitHub MCP Server
 
 ## Overview

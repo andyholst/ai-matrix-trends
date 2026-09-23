@@ -23,7 +23,6 @@ agents:
   - hermes
 ---
 
-
 # CodeGraph MCP
 
 ## Overview

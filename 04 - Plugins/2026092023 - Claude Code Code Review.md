@@ -20,8 +20,6 @@ agents:
   - hermes
 ---
 
-
-
 # Claude Code Code Review
 
 ## Overview

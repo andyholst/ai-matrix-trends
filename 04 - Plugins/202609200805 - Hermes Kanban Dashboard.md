@@ -9,8 +9,6 @@ agents:
   - hermes
 ---
 
-
-
 # Hermes Kanban Dashboard
 
 ## Overview

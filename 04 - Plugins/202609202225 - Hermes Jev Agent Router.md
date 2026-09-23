@@ -9,7 +9,6 @@ agents:
   - claude-code
 ---
 
-
 # Hermes Jev Agent Router
 
 ## Overview

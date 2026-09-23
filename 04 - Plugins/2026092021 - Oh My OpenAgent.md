@@ -22,7 +22,6 @@ agents:
   - hermes
 ---
 
-
 # Oh My OpenAgent
 
 ## Overview

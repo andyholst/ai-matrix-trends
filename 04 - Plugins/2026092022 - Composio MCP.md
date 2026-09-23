@@ -22,7 +22,6 @@ agents:
   - hermes
 ---
 
-
 # Composio MCP
 
 ## Overview

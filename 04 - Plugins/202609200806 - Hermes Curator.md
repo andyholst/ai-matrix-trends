@@ -9,8 +9,6 @@ agents:
   - hermes
 ---
 
-
-
 # Hermes Curator
 
 ## Overview

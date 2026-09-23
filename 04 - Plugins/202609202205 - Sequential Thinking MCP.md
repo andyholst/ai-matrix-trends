@@ -20,7 +20,6 @@ agents:
   - hermes
 ---
 
-
 # Sequential Thinking MCP
 
 ## Overview

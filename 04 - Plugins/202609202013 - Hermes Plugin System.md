@@ -10,7 +10,6 @@ agents:
   - opencode
 ---
 
-
 # Hermes Plugin System
 
 ## Overview

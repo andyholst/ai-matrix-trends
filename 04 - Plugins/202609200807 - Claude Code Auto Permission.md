@@ -10,8 +10,6 @@ agents:
   - github-copilot
 ---
 
-
-
 # Claude Code Auto Permission
 
 ## Overview

@@ -11,8 +11,6 @@ agents:
   - claude-code
 ---
 
-
-
 # OpenCode Supermemory
 
 ## Overview

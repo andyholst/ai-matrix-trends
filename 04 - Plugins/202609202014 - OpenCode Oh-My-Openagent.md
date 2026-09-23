@@ -9,7 +9,6 @@ agents:
   - opencode
 ---
 
-
 # OpenCode Oh-My-Openagent
 
 ## Overview

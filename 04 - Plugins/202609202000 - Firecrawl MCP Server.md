@@ -21,8 +21,6 @@ agents:
   - hermes
 ---
 
-
-
 # Firecrawl MCP Server
 
 ## Overview

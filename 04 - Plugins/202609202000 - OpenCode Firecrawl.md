@@ -9,8 +9,6 @@ agents:
   - opencode
 ---
 
-
-
 # OpenCode Firecrawl
 
 ## Overview

@@ -21,8 +21,6 @@ agents:
   - hermes
 ---
 
-
-
 # Jev Agent Router
 
 ## Overview

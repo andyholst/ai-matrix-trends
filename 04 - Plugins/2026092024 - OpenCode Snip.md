@@ -9,7 +9,6 @@ agents:
   - opencode
 ---
 
-
 # OpenCode Snip
 
 ## Overview

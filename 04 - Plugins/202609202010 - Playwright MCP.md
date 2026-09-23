@@ -21,7 +21,6 @@ agents:
   - hermes
 ---
 
-
 # Playwright MCP
 
 ## Overview

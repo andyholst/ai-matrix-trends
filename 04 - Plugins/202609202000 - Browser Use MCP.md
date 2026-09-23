@@ -21,8 +21,6 @@ agents:
   - hermes
 ---
 
-
-
 # Browser Use MCP
 
 ## Overview

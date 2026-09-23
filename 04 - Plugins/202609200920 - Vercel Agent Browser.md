@@ -21,7 +21,6 @@ agents:
   - hermes
 ---
 
-
 # Vercel Agent Browser
 
 ## Overview

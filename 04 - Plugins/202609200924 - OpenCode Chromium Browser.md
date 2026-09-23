@@ -9,7 +9,6 @@ agents:
   - opencode
 ---
 
-
 # OpenCode Chromium Browser
 
 ## Overview

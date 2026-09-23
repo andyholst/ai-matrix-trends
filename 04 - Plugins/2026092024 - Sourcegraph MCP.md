@@ -20,8 +20,6 @@ agents:
   - hermes
 ---
 
-
-
 # Sourcegraph MCP
 
 ## Overview

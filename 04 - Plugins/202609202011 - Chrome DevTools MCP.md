@@ -22,7 +22,6 @@ agents:
   - hermes
 ---
 
-
 # Chrome DevTools MCP
 
 ## Overview

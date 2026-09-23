@@ -20,7 +20,6 @@ agents:
   - hermes
 ---
 
-
 # Cloudflare MCP
 
 ## Overview

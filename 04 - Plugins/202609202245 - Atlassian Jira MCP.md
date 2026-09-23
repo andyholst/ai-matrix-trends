@@ -20,7 +20,6 @@ agents:
   - hermes
 ---
 
-
 # Atlassian Jira MCP
 
 ## Overview

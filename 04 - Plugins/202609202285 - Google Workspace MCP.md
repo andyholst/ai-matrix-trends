@@ -20,7 +20,6 @@ agents:
   - hermes
 ---
 
-
 # Google Workspace MCP
 
 ## Overview
