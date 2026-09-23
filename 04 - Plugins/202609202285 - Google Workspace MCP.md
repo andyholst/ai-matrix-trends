@@ -6,13 +6,20 @@ tags:
   - mcp
 agents:
   - claude-code
-  - hermes
   - opencode
   - cursor
-links:
-  - "[[202609202000 - Claude Code]]"
-  - "[[202609200759 - Hermes Agent]]"
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # Google Workspace MCP
 

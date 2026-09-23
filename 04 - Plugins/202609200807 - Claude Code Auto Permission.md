@@ -5,8 +5,12 @@ tags:
   - plugin
   - claude-code
   - tool
-
+agents:
+  - claude-code
+  - github-copilot
 ---
+
+
 
 # Claude Code Auto Permission
 

@@ -4,8 +4,23 @@ created: 2026-09-20T23:00:00+02:00
 tags:
   - plugin
   - claude-code
-
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
+
 
 # Claude Code Code Review
 
@@ -38,8 +53,7 @@ The Code Review plugin is an official Claude Code extension that automates pull 
 1. Checks if review is needed (skips closed, draft, trivial, or already-reviewed PRs)
 2. Gathers relevant CLAUDE.md guideline files from the repository
 3. Summarizes the pull request changes
-4. Launches 4 parallel agents:
-   - **Agents #1 & #2:** Audit for CLAUDE.md compliance
+4. Launches 4 parallel    - **Agents #1 & #2:** Audit for CLAUDE.md compliance
    - **Agent #3:** Scan for obvious bugs in changes
    - **Agent #4:** Analyze git blame/history for context-based issues
 5. Scores each issue 0-100 for confidence level

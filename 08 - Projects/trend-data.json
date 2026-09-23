@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T12:13:41.340675",
+  "last_updated": "2026-09-23T12:20:05.867470",
   "items": {
     "Cline": {
       "type": "agent",
@@ -511,13 +511,7 @@
       "tags": [
         "plugin",
         "tool",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Browser Use MCP",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 29,
       "file": "04 - Plugins/202609202000 - Browser Use MCP.md"
@@ -529,13 +523,7 @@
       "tags": [
         "plugin",
         "tool",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Jev Agent Router",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 26,
       "file": "04 - Plugins/202609202000 - Jev Agent Router.md"
@@ -547,13 +535,7 @@
       "tags": [
         "plugin",
         "hermes",
-        "tool",
-        "",
-        "",
-        "",
-        "# Hermes Kanban Dashboard",
-        "",
-        "## Overview"
+        "tool"
       ],
       "score": 3,
       "file": "04 - Plugins/202609200805 - Hermes Kanban Dashboard.md"
@@ -565,13 +547,7 @@
       "tags": [
         "plugin",
         "claude-code",
-        "tool",
-        "",
-        "",
-        "",
-        "# Claude Code Auto Permission",
-        "",
-        "## Overview"
+        "tool"
       ],
       "score": 3,
       "file": "04 - Plugins/202609200807 - Claude Code Auto Permission.md"
@@ -583,13 +559,7 @@
       "tags": [
         "plugin",
         "hermes",
-        "tool",
-        "",
-        "",
-        "",
-        "# Hermes Curator",
-        "",
-        "## Overview"
+        "tool"
       ],
       "score": 15,
       "file": "04 - Plugins/202609200806 - Hermes Curator.md"
@@ -601,13 +571,7 @@
       "tags": [
         "plugin",
         "mcp",
-        "tool",
-        "",
-        "",
-        "",
-        "# Context7 MCP",
-        "",
-        "## Overview"
+        "tool"
       ],
       "score": 23,
       "file": "04 - Plugins/202609200803 - Context7 MCP.md"
@@ -619,13 +583,7 @@
       "tags": [
         "plugin",
         "mcp",
-        "tool",
-        "",
-        "",
-        "",
-        "# FAL MCP Server",
-        "",
-        "## Overview"
+        "tool"
       ],
       "score": 29,
       "file": "04 - Plugins/202609200804 - FAL MCP Server.md"
@@ -686,13 +644,7 @@
       "tags": [
         "plugin",
         "tool",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Firecrawl MCP Server",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 29,
       "file": "04 - Plugins/202609202000 - Firecrawl MCP Server.md"
@@ -704,13 +656,7 @@
       "tags": [
         "plugin",
         "tool",
-        "config",
-        "",
-        "",
-        "",
-        "# OpenCode Firecrawl",
-        "",
-        "## Overview"
+        "config"
       ],
       "score": 9,
       "file": "04 - Plugins/202609202000 - OpenCode Firecrawl.md"
@@ -722,13 +668,7 @@
       "tags": [
         "plugin",
         "tool",
-        "mcp",
-        "",
-        "",
-        "",
-        "# OpenCode Supermemory",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 29,
       "file": "04 - Plugins/202609202000 - OpenCode Supermemory.md"
@@ -800,13 +740,7 @@
       "mentions": 3,
       "tags": [
         "plugin",
-        "mcp",
-        "",
-        "",
-        "",
-        "# GitHub MCP Server",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 29,
       "file": "04 - Plugins/2026092020 - GitHub MCP Server.md"
@@ -817,13 +751,7 @@
       "mentions": 4,
       "tags": [
         "plugin",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Browserbase MCP",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 32,
       "file": "04 - Plugins/2026092022 - Browserbase MCP.md"
@@ -834,13 +762,7 @@
       "mentions": 4,
       "tags": [
         "plugin",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Sentry MCP",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 33,
       "file": "04 - Plugins/2026092021 - Sentry MCP.md"
@@ -851,13 +773,7 @@
       "mentions": 3,
       "tags": [
         "plugin",
-        "mcp",
-        "",
-        "",
-        "",
-        "# Sourcegraph MCP",
-        "",
-        "## Overview"
+        "mcp"
       ],
       "score": 29,
       "file": "04 - Plugins/2026092024 - Sourcegraph MCP.md"
@@ -868,13 +784,7 @@
       "mentions": 1,
       "tags": [
         "plugin",
-        "claude-code",
-        "",
-        "",
-        "",
-        "# Claude Code Code Review",
-        "",
-        "## Overview"
+        "claude-code"
       ],
       "score": 3,
       "file": "04 - Plugins/2026092023 - Claude Code Code Review.md"

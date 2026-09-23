@@ -5,10 +5,10 @@ tags:
   - plugin
   - opencode
   - token-optimization
-links:
-  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
+agents:
+  - opencode
 ---
+
 
 # OpenCode Snip
 

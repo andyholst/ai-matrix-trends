@@ -5,8 +5,13 @@ tags:
   - plugin
   - tool
   - mcp
-
+agents:
+  - opencode
+  - hermes
+  - claude-code
 ---
+
+
 
 # OpenCode Supermemory
 

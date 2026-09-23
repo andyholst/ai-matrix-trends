@@ -107,7 +107,7 @@ def scan_plugins():
         # Score
         score = 0
         score += min(stars_num // 1000, 50)
-        score += len(compat_agents) * 20
+        score += len(compat_agents) * 20  # Cross-agent bonus: +20 per agent supported
         
         # Tags
         tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
@@ -196,25 +196,49 @@ def update_readme_agent_plugins():
         agent_name = agent_file.split(' - ')[1].replace('.md', '')
         agent_tables += generate_agent_table(agent_key, agent_name, plugins)
     
-    # Also add cross-agent comparison table
-    agent_tables += "## 📊 Plugin Compatibility Matrix\n\n"
-    agent_tables += "| Plugin | " + " | ".join(AGENTS.keys()) + " | Score |\n"
-    agent_tables += "|" + "|".join(["--------" for _ in AGENTS]) + "|-------|\n"
+    # Generate cross-agent comparison matrix (compact, top 6 agents)
+    top_agents = ['claude-code', 'opencode', 'cursor', 'codex', 'hermes', 'windsurf']
+    top_agent_labels = {
+        'claude-code': 'Claude Code',
+        'opencode': 'OpenCode',
+        'cursor': 'Cursor',
+        'codex': 'Codex',
+        'hermes': 'Hermes',
+        'windsurf': 'Windsurf',
+    }
     
-    # Sort all plugins by score
-    sorted_all = sorted(plugins.items(), key=lambda x: x[1]['score'], reverse=True)
+    sorted_all = sorted(plugins.items(), key=lambda x: x[1]['score'], reverse=True)[:15]
     
-    for name, data in sorted_all[:10]:
-        row = f"| [{data['title']}](./04%20-%20Plugins/{data['file'].replace(' ', '%20')}) |"
-        for agent_key in AGENTS:
+    matrix = "## 📊 Plugin Compatibility Matrix\n\n"
+    matrix += "*Top plugins vs. major agents — ✅ = compatible, — = not yet supported*\n\n"
+    header = "| Plugin | " + " | ".join(top_agent_labels[k] for k in top_agents) + " | Agents |"
+    sep = "|" + "|".join(["--------" for _ in range(len(top_agents) + 2)]) + "|"
+    matrix += header + "\n" + sep + "\n"
+    
+    for name, data in sorted_all[:15]:
+        title = data['title']
+        if len(title) > 28:
+            title = title[:25] + "…"
+        encoded = f"./04%20-%20Plugins/{data['file'].replace(' ', '%20')}"
+        row = f"| [{title}]({encoded}) |"
+        count = 0
+        for agent_key in top_agents:
             if agent_key in data.get('agents', []):
                 row += " ✅ |"
+                count += 1
             else:
-                row += " — |"
-        row += f" {data['score']} |"
-        agent_tables += row + "\n"
+                row += " · |"
+        others = len(data.get('agents', [])) - count
+        if others > 0:
+            row += f" {count}+{others} |"
+        else:
+            row += f" {count} |"
+        matrix += row + "\n"
     
-    agent_tables += "\n---\n"
+    matrix += "\n> **Full per-agent breakdowns:** See [Plugin Master Index](04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete tables.\n"
+    matrix += "---\n"
+    
+    agent_tables += matrix
     
     # Replace or add section
     if '## 🔌 Plugins by Agent' in content:

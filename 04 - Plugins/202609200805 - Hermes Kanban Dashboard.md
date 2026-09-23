@@ -5,8 +5,11 @@ tags:
   - plugin
   - hermes
   - tool
-
+agents:
+  - hermes
 ---
+
+
 
 # Hermes Kanban Dashboard
 

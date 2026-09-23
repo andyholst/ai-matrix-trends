@@ -5,8 +5,11 @@ tags:
   - plugin
   - tool
   - config
-
+agents:
+  - opencode
 ---
+
+
 
 # OpenCode Firecrawl
 

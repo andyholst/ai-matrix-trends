@@ -4,8 +4,23 @@ created: 2026-09-20T22:00:00+02:00
 tags:
   - plugin
   - mcp
-
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
+
 
 # Browserbase MCP
 

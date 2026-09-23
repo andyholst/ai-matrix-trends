@@ -5,9 +5,11 @@ tags:
   - plugin
   - hermes
   - architecture
-links:
-  - "[Hermes Agent](../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)"
+agents:
+  - hermes
+  - opencode
 ---
+
 
 # Hermes Plugin System
 

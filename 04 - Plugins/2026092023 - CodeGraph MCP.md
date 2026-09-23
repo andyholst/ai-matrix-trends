@@ -7,10 +7,22 @@ tags:
   - claude-code
   - cursor
   - codebase-intelligence
-links:
-  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # CodeGraph MCP
 

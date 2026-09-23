@@ -5,11 +5,22 @@ tags:
   - plugin
   - browser-automation
   - cli
-links:
-  - "[Playwright MCP](202609202010%20-%20Playwright%20MCP.md)"
-  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
-  - "[Chrome DevTools MCP](202609202011%20-%20Chrome%20DevTools%20MCP.md)"
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # Vercel Agent Browser
 

@@ -4,10 +4,22 @@ created: 2026-09-20T21:45:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[GitHub MCP Server](2026092020%20-%20GitHub%20MCP%20Server.md)"
-  - "[Browser Use MCP](202609202000%20-%20Browser%20Use%20MCP.md)"
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # Kubernetes MCP
 

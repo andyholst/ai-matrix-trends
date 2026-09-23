@@ -5,9 +5,10 @@ tags:
   - plugin
   - opencode
   - code-editing
-links:
-  - "[OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md)"
+agents:
+  - opencode
 ---
+
 
 # OpenCode Morph Fast Apply
 

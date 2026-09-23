@@ -231,11 +231,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
-| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### OpenCode
 
@@ -243,11 +243,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
-| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Hermes Agent
 
@@ -255,11 +255,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | 95 | — | plugin, mcp |
-| 2 | [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | 95 | — | plugin, mcp |
-| 3 | [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [Slack MCP](./04%20-%20Plugins/202609202235%20-%20Slack%20MCP.md) | 75 | — | plugin, mcp |
-| 5 | [Airtable MCP](./04%20-%20Plugins/202609202255%20-%20Airtable%20MCP.md) | 75 | — | plugin, mcp |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Cursor
 
@@ -267,11 +267,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
-| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Codex
 
@@ -279,11 +279,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
-| 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | 75 | — | plugin, mcp |
-| 5 | [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | 75 | — | plugin, mcp |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Windsurf
 
@@ -291,11 +291,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
-| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Aider
 
@@ -303,7 +303,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Gemini CLI
 
@@ -311,7 +315,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### GitHub Copilot Agent
 
@@ -319,7 +327,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Kilo Code
 
@@ -327,7 +339,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### RooCode
 
@@ -335,7 +351,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### JetBrains Junie
 
@@ -343,7 +363,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Cline
 
@@ -351,7 +375,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-*No plugins found yet. Run daily scan to collect plugins.*
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 310 | 438525 | plugin, claude-code |
+| 2 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 275 | — | plugin, mcp |
+| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 275 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 275 | — | plugin, tool |
 
 ### Factory Code
 
@@ -419,18 +447,26 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ## 📊 Plugin Compatibility Matrix
 
-| Plugin | claude-code | opencode | hermes | cursor | codex | windsurf | aider | gemini-cli | github-copilot | kilo-code | roocode | jetbrains-junie | cline | factory-code | sweep-ai | greptile | openhands | continue-dev | sourcegraph-cody | tabnine | mintlify | Score |
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|-------|
-| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 115 |
-| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 115 |
-| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
-| [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+*Top plugins vs. major agents — ✅ = compatible, — = not yet supported*
 
+| Plugin | Claude Code | OpenCode | Cursor | Codex | Hermes | Windsurf | Agents |
+|--------|--------|--------|--------|--------|--------|--------|--------|
+| [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Chrome DevTools MCP](./04%20-%20Plugins/202609202011%20-%20Chrome%20DevTools%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Linear MCP](./04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Oh My OpenAgent](./04%20-%20Plugins/2026092021%20-%20Oh%20My%20OpenAgent.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+| [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 6+7 |
+
+> **Full per-agent breakdowns:** See [Plugin Master Index](04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete tables.
 ---
 

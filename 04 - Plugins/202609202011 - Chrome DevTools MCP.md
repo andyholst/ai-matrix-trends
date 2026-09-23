@@ -6,11 +6,22 @@ tags:
   - mcp
   - browser-automation
   - debugging
-links:
-  - "[Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)"
-  - "[Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md)"
-  - "[Windsurf](../03%20-%20Agents/202609200800%20-%20Windsurf.md)"
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # Chrome DevTools MCP
 

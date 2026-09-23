@@ -4,10 +4,22 @@ created: 2026-09-20T22:05:00+02:00
 tags:
   - plugin
   - mcp
-links:
-  - "[Superpowers](2026092020%20-%20Superpowers.md)"
-  - "[Jev Agent Router](202609202000%20-%20Jev%20Agent%20Router.md)"
+agents:
+  - claude-code
+  - opencode
+  - cursor
+  - codex
+  - windsurf
+  - aider
+  - gemini-cli
+  - github-copilot
+  - kilo-code
+  - roocode
+  - jetbrains-junie
+  - cline
+  - hermes
 ---
+
 
 # Sequential Thinking MCP
 
