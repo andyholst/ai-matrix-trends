@@ -6,7 +6,7 @@
 
 ## 🚀 Trending Agents
 
-*Top 5 scored trending — Last updated: 2026-09-22*
+*Top 5 scored trending — Last updated: 2026-09-23*
 
 *See [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) for complete list*
 
@@ -21,7 +21,7 @@
 
 ## 🛠️ Agent Tools & CLIs
 
-*All 34 tracked agent tools/CLIs ranked by score — Last updated: 2026-09-22*
+*All 34 tracked agent tools/CLIs ranked by score — Last updated: 2026-09-23*
 
 | # | Agent | Score | Stars | Status | Tags |
 |---|-------|-------|-------|--------|------|
@@ -62,7 +62,7 @@
 
 ## 🔌 Top Plugins & Extensions
 
-*Top 5 scored trending — Last updated: 2026-09-22*
+*Top 5 scored trending — Last updated: 2026-09-23*
 
 *See [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete per-agent tables*
 
@@ -131,7 +131,7 @@
 
 ## 📊 Trend Radar
 
-*Last updated: 2026-09-22*
+*Last updated: 2026-09-23*
 
 ### Heating Up
 
@@ -201,13 +201,13 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-09-22*
+*Last refreshed: 2026-09-23*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
 
 ## 🔌 Plugins by Agent
 
-*Top 5 scored plugins for each agentic tool — Last updated: 2026-09-22*
+*Top 5 scored plugins for each agentic tool — Last updated: 2026-09-23*
 
 ### Claude Code
 
@@ -268,6 +268,23 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
 | 4 | [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | 75 | — | plugin, mcp |
 | 5 | [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | 75 | — | plugin, mcp |
+
+## 📊 Plugin Compatibility Matrix
+
+| Plugin | claude-code | opencode | hermes | cursor | codex | Score |
+|--------|--------|--------|--------|--------|-------|
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
+| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | ✅ | — | — | ✅ | ✅ | 75 |
+| [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | ✅ | — | — | ✅ | ✅ | 75 |
+| [Notion MCP](./04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) | ✅ | — | — | ✅ | ✅ | 75 |
+
+---
 
 ## 📊 Plugin Compatibility Matrix
 
