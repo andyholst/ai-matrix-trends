@@ -1,13 +1,9 @@
 #!/usr/bin/env python3
 """
-collect_agent_plugins.py - Collect and score plugins/extensions for each agent.
-Creates a comprehensive table in README.md showing which plugins work with which agents.
-
-Scoring:
-- Cross-agent compatibility (works with 2+ agents = +20 points)
-- GitHub stars/installs (1 point per 1000 stars, max 50)
-- Mention frequency (5 points per mention)
-- Tag bonuses (mcp=+15, trending=+20)
+collect_agent_plugins.py - Build per-agent plugin tables and common MCP table.
+- Per-agent tables: agent-specific plugins ONLY (no universal MCP duplicates)
+- Common MCP table: universal MCP plugins that work across many agents
+- Both sorted by quality/stars, not just agent count
 """
 
 import os
@@ -31,16 +27,11 @@ AGENTS = {
     'roocode': '202609202004 - RooCode.md',
     'jetbrains-junie': '202609202005 - JetBrains Junie.md',
     'cline': '202609202000 - Cline.md',
-    'factory-code': '202609202065 - Factory Code.md',
-    'sweep-ai': '202609202075 - Sweep AI.md',
-    'greptile': '202609202085 - Greptile.md',
-    'openhands': '202609202095 - OpenHands.md',
-    'continue-dev': '202609202105 - Continue.dev.md',
-    'sourcegraph-cody': '202609202115 - Sourcegraph Cody.md',
-    'tabnine': '202609202125 - Tabnine.md',
-    'mintlify': '202609202135 - Mintlify.md',
 }
 PLUGINS_DIR = os.path.join(VAULT, "04 - Plugins")
+
+# Only show these agents in per-agent tables (the "top tier")
+TOP_AGENTS = ['claude-code', 'opencode', 'hermes', 'cursor', 'codex', 'windsurf']
 
 def scan_plugins():
     """Scan all plugin notes and extract compatibility data"""
@@ -57,7 +48,6 @@ def scan_plugins():
         with open(filepath) as fh:
             content = fh.read()
         
-        # Extract metadata
         title_match = re.search(r'^# (.+)', content, re.MULTILINE)
         title = title_match.group(1) if title_match else f.replace('.md', '')
         
@@ -70,11 +60,11 @@ def scan_plugins():
             except:
                 pass
         
-        # Compatibility - ONLY from frontmatter agents: field
-        # Do NOT match body text (mentions != compatibility)
-        compat_agents = set()
+        # Mentions (rough proxy for quality/popularity)
+        mentions = len(re.findall(r'\b' + re.escape(title) + r'\b', content, re.IGNORECASE))
         
-        # Check frontmatter - handle both YAML list and bracketed array
+        # Compatibility - ONLY from frontmatter agents: field
+        compat_agents = set()
         fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
         if fm_match:
             fm = fm_match.group(1)
@@ -87,10 +77,7 @@ def scan_plugins():
                     if agent_key in agents_text or agent_name in agents_text:
                         compat_agents.add(agent_key)
             else:
-                # Try YAML list format:
-                # agents:
-                #   - claude-code
-                #   - "202609202000 - Claude Code"
+                # Try YAML list format
                 agents_match = re.search(r'agents:\s*\n((?:\s*-\s*.+\n?)+)', fm, re.MULTILINE)
                 if agents_match:
                     agents_text = agents_match.group(1).lower()
@@ -99,57 +86,55 @@ def scan_plugins():
                         if agent_key in agents_text or agent_name in agents_text:
                             compat_agents.add(agent_key)
         
-        # Score
-        score = 0
-        score += min(stars_num // 1000, 50)
-        # Cross-agent bonus: more agents = more points, but diminishing returns
-        num_agents = len(compat_agents)
-        if num_agents <= 2:
-            score += 60  # Agent-specific plugins get big bonus
-        elif num_agents <= 5:
-            score += 40
-        elif num_agents <= 10:
-            score += 20
-        else:
-            score += 10  # Universal MCP plugins get small bonus
-        
         # Tags
         tags_match = re.search(r'^tags:\n((?:[-\s]+.+\n?)+)', content, re.MULTILINE)
         tags = []
         if tags_match:
             tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n') if t.strip()]
         
+        # Score based on QUALITY (stars, mentions), not agent count
+        score = 0
+        score += min(stars_num // 1000, 50)  # Stars: up to 50 pts
+        score += mentions * 5  # Mentions: 5 pts each
         if 'mcp' in tags:
-            score += 15
+            score += 15  # MCP bonus
         if 'trending' in tags:
-            score += 20
+            score += 20  # Trending bonus
+        
+        # Categorize
+        num_agents = len(compat_agents)
+        if num_agents <= 2:
+            category = 'specific'  # Agent-specific
+        elif num_agents >= 5:
+            category = 'common'  # Universal MCP
+        else:
+            category = 'niche'  # A few agents
         
         plugins[f.replace('.md', '')] = {
             'title': title,
             'file': f,
             'stars': stars_num,
+            'mentions': mentions,
             'agents': list(compat_agents),
             'score': score,
             'tags': tags,
+            'category': category,
+            'num_agents': num_agents,
         }
     
     return plugins
 
-def generate_agent_table(agent_key, agent_name, plugins):
-    """Generate a Markdown table for a specific agent"""
-    # Filter plugins that support this agent
-    agent_plugins = {k: v for k, v in plugins.items() if agent_key in v.get('agents', [])}
+
+def generate_agent_specific_table(agent_key, agent_name, plugins):
+    """Generate a table of agent-specific plugins (NOT universal MCP)"""
+    # Filter: agent-specific plugins that support this agent
+    agent_plugins = {
+        k: v for k, v in plugins.items() 
+        if agent_key in v.get('agents', []) and v.get('category') == 'specific'
+    }
     
-    # Sort: agent-specific plugins first (fewer total agents = more specific), then by score
-    def sort_key(item):
-        name, data = item
-        num_agents = len(data.get('agents', []))
-        score = data.get('score', 0)
-        # Prioritize: fewer agents (more specific), then higher score
-        # Use negative score for descending sort, but primary sort is specificity
-        return (num_agents, -score)
-    
-    sorted_plugins = sorted(agent_plugins.items(), key=sort_key)
+    # Sort by score (quality), then by stars
+    sorted_plugins = sorted(agent_plugins.items(), key=lambda x: (-x[1]['score'], -x[1]['stars']))
     
     table = f"### {agent_name}\n\n"
     table += f"*Top plugins/extensions for {agent_name}*\n\n"
@@ -159,56 +144,47 @@ def generate_agent_table(agent_key, agent_name, plugins):
     for i, (name, data) in enumerate(sorted_plugins[:5], 1):
         file_path = f"04 - Plugins/{data['file']}"
         encoded = file_path.replace(' ', '%20')
-        table += f"| {i} | [{data['title']}](./{encoded}) | {data['score']} | {data['stars'] if data['stars'] else '—'} | {', '.join(data['tags'][:2])} |\n"
+        stars_str = f"⭐ {data['stars']:,}" if data['stars'] > 0 else "—"
+        table += f"| {i} | [{data['title']}](./{encoded}) | {data['score']} | {stars_str} | {', '.join(data['tags'][:2])} |\n"
     
     if not sorted_plugins:
-        table += "*No plugins found yet. Run daily scan to collect plugins.*\n"
+        table += "*No agent-specific plugins found yet.*\n"
     
     table += "\n"
     return table
 
-def clean_duplicates(content):
-    """Remove duplicate sections, keeping only the first occurrence of each."""
-    headers = [(m.start(), m.group()) for m in re.finditer(r'^## .+', content, re.MULTILINE)]
-    
-    seen = set()
-    to_remove = []
-    
-    for pos, header in headers:
-        normalized = re.sub(r'[^\w\s-]', '', header).strip().lower()
-        if normalized in seen:
-            to_remove.append((pos, header))
-        else:
-            seen.add(normalized)
-    
-    for pos, header in reversed(to_remove):
-        next_section = content.find('\n## ', pos + 1)
-        if next_section == -1:
-            next_section = len(content)
-        content = content[:pos] + content[next_section:]
-    
-    return content
 
-def update_readme_agent_plugins():
-    """Update README.md with per-agent plugin tables"""
-    plugins = scan_plugins()
+def generate_common_mcp_table(plugins):
+    """Generate table of common MCP plugins (universal, 5+ agents)"""
+    common = {
+        k: v for k, v in plugins.items() 
+        if v.get('category') == 'common'
+    }
     
-    readme_path = os.path.join(VAULT, 'README.md')
-    with open(readme_path) as f:
-        content = f.read()
+    # Sort by score (quality), then by stars
+    sorted_common = sorted(common.items(), key=lambda x: (-x[1]['score'], -x[1]['stars']))
     
-    # Clean up any duplicate sections first
-    content = clean_duplicates(content)
+    table = "## 🔌 Common MCP Plugins\n\n"
+    table += "*Universal MCP servers that work across all major AI agents*\n\n"
+    table += "| # | Plugin | Score | Stars | Agents | Type |\n"
+    table += "|---|--------|-------|-------|--------|------|\n"
     
-    # Generate per-agent tables
-    agent_tables = "## 🔌 Plugins by Agent\n\n"
-    agent_tables += f"*Top 5 scored plugins for each agentic tool — Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
+    for i, (name, data) in enumerate(sorted_common[:15], 1):
+        file_path = f"04 - Plugins/{data['file']}"
+        encoded = file_path.replace(' ', '%20')
+        stars_str = f"⭐ {data['stars']:,}" if data['stars'] > 0 else "—"
+        num_agents = data.get('num_agents', 0)
+        table += f"| {i} | [{data['title']}](./{encoded}) | {data['score']} | {stars_str} | {num_agents} | {', '.join(data['tags'][:2])} |\n"
     
-    for agent_key, agent_file in AGENTS.items():
-        agent_name = agent_file.split(' - ')[1].replace('.md', '')
-        agent_tables += generate_agent_table(agent_key, agent_name, plugins)
+    if not sorted_common:
+        table += "*No common MCP plugins found yet.*\n"
     
-    # Generate cross-agent comparison matrix (compact, top 6 agents)
+    table += "\n"
+    return table
+
+
+def generate_compact_matrix(plugins):
+    """Generate compact compatibility matrix for top agents"""
     top_agents = ['claude-code', 'opencode', 'cursor', 'codex', 'hermes', 'windsurf']
     top_agent_labels = {
         'claude-code': 'Claude Code',
@@ -219,54 +195,80 @@ def update_readme_agent_plugins():
         'windsurf': 'Windsurf',
     }
     
-    sorted_all = sorted(plugins.items(), key=lambda x: x[1]['score'], reverse=True)[:15]
+    # Get top common MCP plugins
+    common = {k: v for k, v in plugins.items() if v.get('category') == 'common'}
+    sorted_common = sorted(common.items(), key=lambda x: (-x[1]['score'], -x[1]['stars']))[:10]
     
     matrix = "## 📊 Plugin Compatibility Matrix\n\n"
-    matrix += "*Top plugins vs. major agents — ✅ = compatible, · = not yet supported*\n\n"
-    header = "| Plugin | " + " | ".join(top_agent_labels[k] for k in top_agents) + " | Total |"
-    sep = "|" + "|".join(["--------" for _ in range(len(top_agents) + 2)]) + "|"
+    matrix += "*Top common MCP plugins vs. major agents*\n\n"
+    header = "| Plugin | " + " | ".join(top_agent_labels[k] for k in top_agents) + " |"
+    sep = "|" + "|".join(["--------" for _ in range(len(top_agents) + 1)]) + "|"
     matrix += header + "\n" + sep + "\n"
     
-    for name, data in sorted_all[:15]:
+    for name, data in sorted_common:
         title = data['title']
-        if len(title) > 28:
-            title = title[:25] + "…"
+        if len(title) > 25:
+            title = title[:22] + "…"
         encoded = f"./04%20-%20Plugins/{data['file'].replace(' ', '%20')}"
         row = f"| [{title}]({encoded}) |"
-        total = len(data.get('agents', []))
         for agent_key in top_agents:
             if agent_key in data.get('agents', []):
                 row += " ✅ |"
             else:
                 row += " · |"
-        row += f" {total} |"
         matrix += row + "\n"
     
-    matrix += "\n> **Full per-agent breakdowns:** See [Plugin Master Index](04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete tables.\n"
-    matrix += "---\n"
+    matrix += "\n---\n"
+    return matrix
+
+
+def update_readme():
+    """Update README.md with all plugin tables"""
+    plugins = scan_plugins()
     
-    agent_tables += matrix
+    readme_path = os.path.join(VAULT, 'README.md')
+    with open(readme_path) as f:
+        content = f.read()
     
-    # Replace or add section
+    # Build new section
+    new_section = "## 🔌 Plugins by Agent\n\n"
+    new_section += f"*Agent-specific plugins for each tool — Last updated: {datetime.now().strftime('%Y-%m-%d')}*\n\n"
+    
+    # Per-agent tables (specific plugins only)
+    for agent_key in TOP_AGENTS:
+        agent_file = AGENTS[agent_key]
+        agent_name = agent_file.split(' - ')[1].replace('.md', '')
+        new_section += generate_agent_specific_table(agent_key, agent_name, plugins)
+    
+    # Common MCP table
+    new_section += generate_common_mcp_table(plugins)
+    
+    # Compact matrix
+    new_section += generate_compact_matrix(plugins)
+    
+    # Replace existing section
     if '## 🔌 Plugins by Agent' in content:
-        # Replace existing
-        pattern = r'## 🔌 Plugins by Agent\n.*?(?=\n## [^🔌]|\Z)'
-        content = re.sub(pattern, agent_tables, content, flags=re.DOTALL)
+        content = re.sub(
+            r'## 🔌 Plugins by Agent\n.*?(?=\n## [^🔌]|\Z)',
+            new_section,
+            content,
+            flags=re.DOTALL
+        )
     else:
-        content += agent_tables
+        content += new_section
     
     with open(readme_path, 'w') as f:
         f.write(content)
     
-    print(f"Updated README with per-agent plugin tables")
     print(f"Total plugins tracked: {len(plugins)}")
-    for agent_key, agent_file in AGENTS.items():
-        count = len([p for p in plugins.values() if agent_key in p.get('agents', [])])
-        print(f"  {agent_file.split(' - ')[1].replace('.md', '')}: {count} plugins")
+    print(f"  Agent-specific: {len([p for p in plugins.values() if p.get('category') == 'specific'])}")
+    print(f"  Common MCP: {len([p for p in plugins.values() if p.get('category') == 'common'])}")
+    for agent_key in TOP_AGENTS:
+        agent_name = AGENTS[agent_key].split(' - ')[1].replace('.md', '')
+        count = len([p for p in plugins.values() if agent_key in p.get('agents', '') and p.get('category') == 'specific'])
+        print(f"  {agent_name}: {count} specific plugins")
 
-def main():
-    os.chdir(VAULT)
-    update_readme_agent_plugins()
 
 if __name__ == '__main__':
-    main()
+    os.chdir(VAULT)
+    update_readme()
