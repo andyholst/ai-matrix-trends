@@ -30,6 +30,12 @@ VALID_TAGS = {
     'personal-assistant', 'code-intelligence', 'ide-plugin', 'aws',
     'google', 'gemini', 'rebrand', 'self-improving', 'messaging',
     'multi-model', 'code-editing', 'event-driven', 'MCP', 'placeholder',
+    # New tags for extended coverage
+    'code-completion', 'reasoning', 'modeling', 'optimization', 'safety',
+    'vector-database', 'graph-database', 'data-warehouse', 'project-management',
+    'messaging', 'documentation', 'devops', 'cicd', 'containers',
+    'browser', 'web-scraping', 'search', 'monitoring', 'analytics',
+    'database', 'sql', 'api', 'integration', 'sdk',
 }
 
 # Files to skip
@@ -62,13 +68,19 @@ def extract_tags(fm):
                 # Remove surrounding quotes if present
                 if tag.startswith('"') and tag.endswith('"'):
                     tag = tag[1:-1]
+                # Skip markdown links: "[title](path)"
+                if tag.startswith('[') and '](' in tag:
+                    continue
                 # Skip wikilinks in tags
                 if tag.startswith('[[') and tag.endswith(']]'):
                     continue
                 # Skip MOC references
                 if 'moc' in tag.lower():
                     continue
-                # Skip if it looks like a field name
+                # Skip if it looks like a field name (ends with :)
+                if tag.endswith(':'):
+                    continue
+                # Skip YAML keys that aren't list items
                 if tag.endswith(':'):
                     continue
                 if tag:

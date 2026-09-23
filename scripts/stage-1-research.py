@@ -79,21 +79,21 @@ tags:
     
     frontmatter += "---\n\n"
     
-    # Build body
+    # Build body - use markdown links, NOT wikilinks
     body = f"# {title}\n\n"
     body += f"## Overview\n{overview}\n\n"
     
     if agents:
         body += "## Compatibility\n"
-        body += "**Agent:** " + ", ".join([f"[[{a}]]" for a in agents[:5]])
+        body += "**Agent:** " + ", ".join([f"[{a}](./03%20-%20Agents/{a}.md)" for a in agents[:5]])
         if len(agents) > 5:
             body += f" +{len(agents)-5} more"
         body += "\n\n"
     
     body += "## Related\n"
     for link in links:
-        body += f"- [[{link}]]\n"
-    body += "\n## Sources\n- \n"
+        body += f"- [{link}](./03%20-%20Agents/{link}.md)\n"
+    body += "\n## Sources\n-"
     
     with open(filepath, 'w') as f:
         f.write(frontmatter + body)
