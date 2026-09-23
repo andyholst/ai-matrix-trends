@@ -67,14 +67,14 @@
 | 40 | [202609202135 - Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 10 | — | Emerging | agent, documentation, autonomous |
 | 41 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
 | 42 | [202609202115 - Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Emerging | agent, code-intelligence, enterprise |
-| 43 | [Factory Code](./202609202065%20-%20Factory%20Code.md) | 45 | — | Stable | agent, cloud, enterprise |
-| 44 | [Sweep AI](./202609202075%20-%20Sweep%20AI.md) | 40 | — | Stable | agent, github, autonomous |
-| 45 | [Greptile](./202609202085%20-%20Greptile.md) | 40 | — | Stable | agent, code-intelligence, enterprise |
-| 46 | [OpenHands](./202609202095%20-%20OpenHands.md) | 35 | — | Stable | agent, open-source, autonomous |
-| 47 | [Continue.dev](./202609202105%20-%20Continue.dev.md) | 30 | — | Stable | agent, ide, open-source |
-| 48 | [Sourcegraph Cody](./202609202115%20-%20Sourcegraph%20Cody.md) | 30 | — | Stable | agent, code-intelligence, enterprise |
-| 49 | [Tabnine](./202609202125%20-%20Tabnine.md) | 25 | — | Stable | agent, code-completion, enterprise |
-| 50 | [Mintlify](./202609202135%20-%20Mintlify.md) | 20 | — | Stable | agent, documentation, autonomous |
+| 43 | [Factory Code](./03%20-%20Agents/202609202065%20-%20Factory%20Code.md) | 45 | — | Stable | agent, cloud, enterprise |
+| 44 | [Sweep AI](./03%20-%20Agents/202609202075%20-%20Sweep%20AI.md) | 40 | — | Stable | agent, github, autonomous |
+| 45 | [Greptile](./03%20-%20Agents/202609202085%20-%20Greptile.md) | 40 | — | Stable | agent, code-intelligence, enterprise |
+| 46 | [OpenHands](./03%20-%20Agents/202609202095%20-%20OpenHands.md) | 35 | — | Stable | agent, open-source, autonomous |
+| 47 | [Continue.dev](./03%20-%20Agents/202609202105%20-%20Continue.dev.md) | 30 | — | Stable | agent, ide, open-source |
+| 48 | [Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 30 | — | Stable | agent, code-intelligence, enterprise |
+| 49 | [Tabnine](./03%20-%20Agents/202609202125%20-%20Tabnine.md) | 25 | — | Stable | agent, code-completion, enterprise |
+| 50 | [Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 20 | — | Stable | agent, documentation, autonomous |
 
 ## 🔌 Top Plugins & Extensions
 

@@ -119,19 +119,20 @@ def generate_agent_tools_section():
     
     # Add extended agents not in trend data
     extended_agents = [
-        ("Factory Code", "202609202065 - Factory Code.md", 45, ["agent", "cloud", "enterprise"]),
-        ("Sweep AI", "202609202075 - Sweep AI.md", 40, ["agent", "github", "autonomous"]),
-        ("Greptile", "202609202085 - Greptile.md", 40, ["agent", "code-intelligence", "enterprise"]),
-        ("OpenHands", "202609202095 - OpenHands.md", 35, ["agent", "open-source", "autonomous"]),
-        ("Continue.dev", "202609202105 - Continue.dev.md", 30, ["agent", "ide", "open-source"]),
-        ("Sourcegraph Cody", "202609202115 - Sourcegraph Cody.md", 30, ["agent", "code-intelligence", "enterprise"]),
-        ("Tabnine", "202609202125 - Tabnine.md", 25, ["agent", "code-completion", "enterprise"]),
-        ("Mintlify", "202609202135 - Mintlify.md", 20, ["agent", "documentation", "autonomous"]),
+        ("Factory Code", "202609202065 - Factory Code.md", 45, ["agent", "cloud", "enterprise"], "03 - Agents/"),
+        ("Sweep AI", "202609202075 - Sweep AI.md", 40, ["agent", "github", "autonomous"], "03 - Agents/"),
+        ("Greptile", "202609202085 - Greptile.md", 40, ["agent", "code-intelligence", "enterprise"], "03 - Agents/"),
+        ("OpenHands", "202609202095 - OpenHands.md", 35, ["agent", "open-source", "autonomous"], "03 - Agents/"),
+        ("Continue.dev", "202609202105 - Continue.dev.md", 30, ["agent", "ide", "open-source"], "03 - Agents/"),
+        ("Sourcegraph Cody", "202609202115 - Sourcegraph Cody.md", 30, ["agent", "code-intelligence", "enterprise"], "03 - Agents/"),
+        ("Tabnine", "202609202125 - Tabnine.md", 25, ["agent", "code-completion", "enterprise"], "03 - Agents/"),
+        ("Mintlify", "202609202135 - Mintlify.md", 20, ["agent", "documentation", "autonomous"], "03 - Agents/"),
     ]
     
-    for i, (name, file_path, score, tags_list) in enumerate(extended_agents, len(agents) + 1):
+    for i, (name, file_path, score, tags_list, folder) in enumerate(extended_agents, len(agents) + 1):
         status = "Heating Up" if score >= 50 else "Stable" if score >= 20 else "Emerging"
-        encoded = file_path.replace(' ', '%20')
+        full_path = folder + file_path
+        encoded = full_path.replace(' ', '%20')
         tags = ', '.join(tags_list[:3])
         section += f"| {i} | [{name}](./{encoded}) | {score} | — | {status} | {tags} |\n"
     
