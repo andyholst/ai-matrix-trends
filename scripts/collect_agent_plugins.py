@@ -83,7 +83,18 @@ def scan_plugins():
             tags = [t.strip().strip('-').strip() for t in tags_match.group(1).strip().split('\n') if t.strip()]
 
         # Score based on QUALITY (stars, mentions, MCP bonus)
-        score = min(stars_num // 1000, 50) + mentions * 5
+        # Agent-specific plugins get a massive bonus to always appear first
+        num_agents = len(compat_agents)
+        if num_agents <= 2:
+            # Agent-specific: huge bonus (100+) + quality
+            score = 100 + min(stars_num // 1000, 50) + mentions * 5
+        elif num_agents >= 10:
+            # Universal MCP: no bonus, just quality
+            score = min(stars_num // 1000, 50) + mentions * 5
+        else:
+            # Mid-range: small bonus
+            score = 50 + min(stars_num // 1000, 50) + mentions * 5
+        
         if 'mcp' in tags:
             score += 15
         if 'trending' in tags:
