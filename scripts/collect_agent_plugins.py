@@ -23,6 +23,22 @@ AGENTS = {
     'hermes': '202609200759 - Hermes Agent.md',
     'cursor': '202609202000 - Cursor.md',
     'codex': '202609202000 - Codex.md',
+    'windsurf': '202609200800 - Windsurf.md',
+    'aider': '202609202000 - Aider.md',
+    'gemini-cli': '202609202002 - Gemini CLI.md',
+    'github-copilot': '202609202001 - GitHub Copilot Agent.md',
+    'kilo-code': '2026092014 - Kilo Code.md',
+    'roocode': '202609202004 - RooCode.md',
+    'jetbrains-junie': '202609202005 - JetBrains Junie.md',
+    'cline': '202609202000 - Cline.md',
+    'factory-code': '202609202065 - Factory Code.md',
+    'sweep-ai': '202609202075 - Sweep AI.md',
+    'greptile': '202609202085 - Greptile.md',
+    'openhands': '202609202095 - OpenHands.md',
+    'continue-dev': '202609202105 - Continue.dev.md',
+    'sourcegraph-cody': '202609202115 - Sourcegraph Cody.md',
+    'tabnine': '202609202125 - Tabnine.md',
+    'mintlify': '202609202135 - Mintlify.md',
 }
 PLUGINS_DIR = os.path.join(VAULT, "04 - Plugins")
 
@@ -63,15 +79,30 @@ def scan_plugins():
                 if agent_name.lower() in compat_section.group(1).lower():
                     compat_agents.add(agent_key)
         
-        # Also check frontmatter
+        # Also check frontmatter - handle both YAML list and bracketed array
         fm_match = re.search(r'^---\n(.*?)\n---', content, re.DOTALL)
         if fm_match:
             fm = fm_match.group(1)
+            # Try bracketed array: agents: [claude-code, opencode]
             agents_match = re.search(r'agents:\s*\[(.*?)\]', fm, re.DOTALL)
             if agents_match:
-                for agent_key in AGENTS:
-                    if agent_key in agents_match.group(1).lower():
+                agents_text = agents_match.group(1).lower()
+                for agent_key, agent_file in AGENTS.items():
+                    agent_name = agent_file.split(' - ')[1].replace('.md', '').lower()
+                    if agent_key in agents_text or agent_name in agents_text:
                         compat_agents.add(agent_key)
+            else:
+                # Try YAML list format:
+                # agents:
+                #   - claude-code
+                #   - "202609202000 - Claude Code"
+                agents_match = re.search(r'agents:\s*\n((?:\s*-\s*.+\n?)+)', fm, re.MULTILINE)
+                if agents_match:
+                    agents_text = agents_match.group(1).lower()
+                    for agent_key, agent_file in AGENTS.items():
+                        agent_name = agent_file.split(' - ')[1].replace('.md', '').lower()
+                        if agent_key in agents_text or agent_name in agents_text:
+                            compat_agents.add(agent_key)
         
         # Score
         score = 0

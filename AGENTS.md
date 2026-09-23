@@ -31,6 +31,14 @@ The agent's primary role is to **gather, track, and document trending AI coding 
 - **Aider** — Terminal pair-programming agent
 - **Windsurf** — Codeium's agent
 - **Pi** — Another coding agent
+- **Factory Code** — Enterprise autonomous coding agent
+- **Sweep AI** — GitHub-integrated AI agent for PRs
+- **Greptile** — Codebase intelligence agent
+- **OpenHands** — Open-source autonomous software engineer
+- **Continue.dev** — VS Code/JetBrains AI assistant
+- **Sourcegraph Cody** — Code graph-powered agent
+- **Tabnine** — AI code completion agent
+- **Mintlify** — Documentation automation agent
 
 ### What Makes a Note "Trending"
 - Rapid GitHub star growth
@@ -318,6 +326,15 @@ Use these tags consistently. Add new ones only when a theme recurs.
 - `mcp` — Model Context Protocol servers and integrations
 - `tui` — terminal UI patterns and tools
 - `gateway` — messaging platform integrations
+- `vector-database` — vector DB integrations (Pinecone, Weaviate)
+- `graph-database` — graph DB integrations (Neo4j)
+- `data-warehouse` — analytics/warehouse integrations (Snowflake, BigQuery)
+- `project-management` — PM tool integrations (Jira, Asana, Monday.com)
+- `monitoring` — observability integrations (Sentry, Datadog)
+- `browser` — browser automation plugins
+- `search` — search engine integrations (Exa, Firecrawl)
+- `devops` — DevOps/CI-CD integrations
+- `containers` — container orchestration (Docker, Kubernetes)
 
 ---
 

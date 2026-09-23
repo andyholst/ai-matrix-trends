@@ -67,6 +67,14 @@
 | 40 | [202609202135 - Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 10 | — | Emerging | agent, documentation, autonomous |
 | 41 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
 | 42 | [202609202115 - Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Emerging | agent, code-intelligence, enterprise |
+| 43 | [Factory Code](./202609202065%20-%20Factory%20Code.md) | 45 | — | Stable | agent, cloud, enterprise |
+| 44 | [Sweep AI](./202609202075%20-%20Sweep%20AI.md) | 40 | — | Stable | agent, github, autonomous |
+| 45 | [Greptile](./202609202085%20-%20Greptile.md) | 40 | — | Stable | agent, code-intelligence, enterprise |
+| 46 | [OpenHands](./202609202095%20-%20OpenHands.md) | 35 | — | Stable | agent, open-source, autonomous |
+| 47 | [Continue.dev](./202609202105%20-%20Continue.dev.md) | 30 | — | Stable | agent, ide, open-source |
+| 48 | [Sourcegraph Cody](./202609202115%20-%20Sourcegraph%20Cody.md) | 30 | — | Stable | agent, code-intelligence, enterprise |
+| 49 | [Tabnine](./202609202125%20-%20Tabnine.md) | 25 | — | Stable | agent, code-completion, enterprise |
+| 50 | [Mintlify](./202609202135%20-%20Mintlify.md) | 20 | — | Stable | agent, documentation, autonomous |
 
 ## 🔌 Top Plugins & Extensions
 
@@ -223,11 +231,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
-| 3 | [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | 95 | — | plugin, mcp |
-| 5 | [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | 95 | — | plugin, mcp |
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
+| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
 
 ### OpenCode
 
@@ -235,11 +243,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
-| 3 | [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | 95 | — | plugin, mcp |
-| 5 | [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | 95 | — | plugin, mcp |
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
+| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
 
 ### Hermes Agent
 
@@ -259,11 +267,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
-| 3 | [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | 95 | — | plugin, mcp |
-| 4 | [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | 95 | — | plugin, mcp |
-| 5 | [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | 95 | — | plugin, mcp |
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
+| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
 
 ### Codex
 
@@ -271,26 +279,158 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 95 | — | plugin, mcp |
-| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 95 | — | plugin, tool |
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
 | 3 | [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | 95 | — | plugin, mcp |
 | 4 | [Exa MCP](./04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) | 75 | — | plugin, mcp |
 | 5 | [Supabase MCP](./04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) | 75 | — | plugin, mcp |
 
+### Windsurf
+
+*Top plugins/extensions for Windsurf*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 115 | — | plugin, mcp |
+| 2 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 115 | — | plugin, tool |
+| 3 | [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | 95 | — | plugin, mcp |
+| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 95 | — | plugin, mcp |
+| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 95 | — | plugin, tool |
+
+### Aider
+
+*Top plugins/extensions for Aider*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Gemini CLI
+
+*Top plugins/extensions for Gemini CLI*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### GitHub Copilot Agent
+
+*Top plugins/extensions for GitHub Copilot Agent*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Kilo Code
+
+*Top plugins/extensions for Kilo Code*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### RooCode
+
+*Top plugins/extensions for RooCode*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### JetBrains Junie
+
+*Top plugins/extensions for JetBrains Junie*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Cline
+
+*Top plugins/extensions for Cline*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Factory Code
+
+*Top plugins/extensions for Factory Code*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Sweep AI
+
+*Top plugins/extensions for Sweep AI*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Greptile
+
+*Top plugins/extensions for Greptile*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### OpenHands
+
+*Top plugins/extensions for OpenHands*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Continue.dev
+
+*Top plugins/extensions for Continue.dev*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Sourcegraph Cody
+
+*Top plugins/extensions for Sourcegraph Cody*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Tabnine
+
+*Top plugins/extensions for Tabnine*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
+### Mintlify
+
+*Top plugins/extensions for Mintlify*
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+*No plugins found yet. Run daily scan to collect plugins.*
+
 ## 📊 Plugin Compatibility Matrix
 
-| Plugin | claude-code | opencode | hermes | cursor | codex | Score |
-|--------|--------|--------|--------|--------|-------|
-| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
-| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
-| [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | 95 |
-| [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | 95 |
-| [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | 95 |
-| [CodeGraph MCP](./04%20-%20Plugins/2026092023%20-%20CodeGraph%20MCP.md) | ✅ | ✅ | — | ✅ | ✅ | 95 |
-| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
-| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | 75 |
-| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
-| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | 75 |
+| Plugin | claude-code | opencode | hermes | cursor | codex | windsurf | aider | gemini-cli | github-copilot | kilo-code | roocode | jetbrains-junie | cline | factory-code | sweep-ai | greptile | openhands | continue-dev | sourcegraph-cody | tabnine | mintlify | Score |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|-------|
+| [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 115 |
+| [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 115 |
+| [Context7 MCP](./04%20-%20Plugins/202609200803%20-%20Context7%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | ✅ | ✅ | — | ✅ | — | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [Atlassian Jira MCP](./04%20-%20Plugins/202609202245%20-%20Atlassian%20Jira%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [GitLab MCP](./04%20-%20Plugins/202609202265%20-%20GitLab%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
+| [Google Workspace MCP](./04%20-%20Plugins/202609202285%20-%20Google%20Workspace%20MCP.md) | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | — | 95 |
 
 ---
 
