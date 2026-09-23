@@ -63,8 +63,15 @@ def validate_file(filepath, file_map):
     # Strip code blocks so links inside fences are not checked
     body = re.sub(r'```.*?```', '', content, flags=re.DOTALL)
     
+    # Strip frontmatter so Obsidian [[...]] links aren't flagged
+    fm_match = re.match(r'^---\n.*?\n---\n', content, flags=re.DOTALL)
+    if fm_match:
+        body = content[fm_match.end():]
+    else:
+        body = content
+    
     # === Check wikilinks [[...]] ===
-    wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', content)
+    wikilinks = re.findall(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]', body)
     for link in wikilinks:
         link_lower = link.lower().strip()
         if link_lower not in file_map:

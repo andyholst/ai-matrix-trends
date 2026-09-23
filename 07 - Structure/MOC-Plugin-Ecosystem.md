@@ -27,8 +27,6 @@ tags:
 - [04 - Plugins/202609202013 - Hermes Plugin System](./../04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) - [auto-summary]
 - [04 - Plugins/202609202014 - OpenCode Oh-My-Openagent](./../04%20-%20Plugins/202609202014%20-%20OpenCode%20Oh-My-Openagent.md) - [auto-summary]
 - [04 - Plugins/202609202025 - Exa MCP](./../04%20-%20Plugins/202609202025%20-%20Exa%20MCP.md) - [auto-summary]
-- [04 - Plugins/202609202035 - Plugins](./../04%20-%20Plugins/202609202035%20-%20Plugins.md) - [auto-summary]
-- [04 - Plugins/202609202035 - Plugins00 - Plugin Master Index](./../04%20-%20Plugins/202609202035%20-%20Plugins00%20-%20Plugin%20Master%20Index.md) - [auto-summary]
 - [04 - Plugins/202609202035 - Supabase MCP](./../04%20-%20Plugins/202609202035%20-%20Supabase%20MCP.md) - [auto-summary]
 - [04 - Plugins/202609202045 - Notion MCP](./../04%20-%20Plugins/202609202045%20-%20Notion%20MCP.md) - [auto-summary]
 - [04 - Plugins/202609202055 - Linear MCP](./../04%20-%20Plugins/202609202055%20-%20Linear%20MCP.md) - [auto-summary]

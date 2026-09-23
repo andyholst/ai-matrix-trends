@@ -20,11 +20,11 @@ links:
 Google Workspace MCP server gives AI agents access to Gmail, Calendar, Drive, and Google Sheets.
 
 ## Compatibility
-**Agent:** [[claude-code]], [[hermes]], [[opencode]], [[cursor]]
+**Agent:** [Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md), [Hermes Agent](../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md), [OpenCode](../03%20-%20Agents/202609200758%20-%20OpenCode.md), [Cursor](../03%20-%20Agents/202609202000%20-%20Cursor.md)
 
 ## Related
-- [[202609202000 - Claude Code]]
-- [[202609200759 - Hermes Agent]]
+- [Claude Code](../03%20-%20Agents/202609202000%20-%20Claude%20Code.md)
+- [Hermes Agent](../03%20-%20Agents/202609200759%20-%20Hermes%20Agent.md)
 
 ## Sources
-- 
+-
