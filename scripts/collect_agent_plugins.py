@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
 collect_agent_plugins.py - Build per-agent plugin tables and common MCP table.
-- Per-agent tables: Best plugins for this agent (specific + common MCP, sorted by quality)
-- Common MCP table: All universal MCP plugins in one place
-- Compatibility matrix: Mix of specific and common plugins showing real ✅/· patterns
+- Per-agent tables: Best plugins for this agent (specific first, then common MCP)
+- Common MCP table: All universal MCP plugins
+- Compatibility matrix: Mix of specific and common plugins
 """
 
 import os

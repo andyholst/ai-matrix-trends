@@ -234,11 +234,11 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 | 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 55 | ⭐ 438,525 | plugin, claude-code |
 | 2 | [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 30 | — | plugin, claude-code |
 | 3 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
-| 4 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 5 | — | plugin, claude-code |
-| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
-| 6 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 7 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 8 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 4 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 5 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 5 | — | plugin, claude-code |
+| 6 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
+| 7 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 8 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
 
 ### OpenCode
 
@@ -276,14 +276,14 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 | # | Plugin | Score | Stars | Type |
 |---|--------|-------|-------|------|
-| 1 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
-| 2 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
-| 3 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 4 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
-| 5 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
-| 6 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
-| 7 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | plugin, mcp |
-| 8 | [Sourcegraph MCP](./04%20-%20Plugins/2026092024%20-%20Sourcegraph%20MCP.md) | 30 | — | plugin, mcp |
+| 1 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 2 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 3 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 4 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 5 | [GitHub MCP Server](./04%20-%20Plugins/2026092020%20-%20GitHub%20MCP%20Server.md) | 30 | — | plugin, mcp |
+| 6 | [Browser Use MCP](./04%20-%20Plugins/202609202000%20-%20Browser%20Use%20MCP.md) | 30 | — | plugin, tool |
+| 7 | [Firecrawl MCP Server](./04%20-%20Plugins/202609202000%20-%20Firecrawl%20MCP%20Server.md) | 30 | — | plugin, tool |
+| 8 | [Playwright MCP](./04%20-%20Plugins/202609202010%20-%20Playwright%20MCP.md) | 30 | — | plugin, mcp |
 
 ### Codex
 
