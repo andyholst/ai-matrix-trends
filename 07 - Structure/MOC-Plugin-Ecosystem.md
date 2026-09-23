@@ -68,6 +68,7 @@ tags:
 - [04 - Plugins/202609202415 - Windsurf Cascade](./../04%20-%20Plugins/202609202415%20-%20Windsurf%20Cascade.md) - [auto-summary]
 - [04 - Plugins/202609202425 - Windsurf Supercomplete](./../04%20-%20Plugins/202609202425%20-%20Windsurf%20Supercomplete.md) - [auto-summary]
 - [04 - Plugins/202609202435 - Windsurf Forge](./../04%20-%20Plugins/202609202435%20-%20Windsurf%20Forge.md) - [auto-summary]
+- [04 - Plugins/202609202500 - Hermes Jev](./../04%20-%20Plugins/202609202500%20-%20Hermes%20Jev.md) - [auto-summary]
 ## Overview
 Auto-generated Map of Content for 04 - Plugins.
 

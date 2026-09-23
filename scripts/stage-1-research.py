@@ -248,6 +248,13 @@ def main():
             "links": ["202609200759 - Hermes Agent", "202609202000 - Claude Code"],
         },
         {
+            "title": "Hermes Jev",
+            "tags": ["plugin", "hermes", "jev", "typesafe", "system-one", "context-governance"],
+            "agents": ["hermes"],
+            "overview": "Hermes Jev is the official Jev plugin for Hermes Agent (v0.2.1.2, KeelTrace). It implements an asynchronous decision nervous system for Hermes Agent with turn admission, adaptive local routing, confidence-gated challenges, typed decisions, verification, and context governance. This is the plugin installed and active in the default Hermes profile.",
+            "links": ["202609200759 - Hermes Agent", "202609202035 - Jev"],
+        },
+        {
             "title": "Hermes Kanban Dashboard",
             "tags": ["plugin", "hermes"],
             "agents": ["hermes"],

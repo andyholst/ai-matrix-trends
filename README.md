@@ -98,9 +98,9 @@
 |---|--------|-------|-------|------|
 | 1 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 25 | — | plugin, hermes |
 | 2 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
-| 3 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
-| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
-| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
+| 3 | [Hermes Jev](./04%20-%20Plugins/202609202500%20-%20Hermes%20Jev.md) | 15 | — | plugin, hermes |
+| 4 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
+| 5 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
 
 ### Cursor
 

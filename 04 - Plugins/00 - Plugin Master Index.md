@@ -68,13 +68,14 @@ links:
   - "[Windsurf Cascade](./202609202415%20-%20Windsurf%20Cascade.md)"
   - "[Windsurf Supercomplete](./202609202425%20-%20Windsurf%20Supercomplete.md)"
   - "[Windsurf Forge](./202609202435%20-%20Windsurf%20Forge.md)"
+  - "[Hermes Jev](./202609202500%20-%20Hermes%20Jev.md)"
 ---
 
 # AI Plugins & Extensions — Master Index
 
 *Comprehensive index of all plugins/extensions for AI coding agents — Last updated: 2026-09-23*
 
-**Total plugins tracked:** 63
+**Total plugins tracked:** 64
 **Agents covered:** Claude Code, OpenCode, Hermes Agent, Cursor, Codex, Windsurf, Aider, Gemini CLI, GitHub Copilot, Kilo Code, RooCode, JetBrains Junie
 
 ---
@@ -246,7 +247,7 @@ links:
 
 ### Hermes Agent
 
-*All plugins/extensions for Hermes Agent — 23 total*
+*All plugins/extensions for Hermes Agent — 24 total*
 
 | # | Plugin | Score | Stars | Status | Description |
 |---|--------|-------|-------|--------|-------------|
@@ -273,6 +274,7 @@ links:
 | 21 | [Hermes Jev Agent Router](202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 40 | — | Stable | Jev is a System One decision model from TypeSafe AI for agent routing. |
 | 22 | [Hermes Kanban Dashboard](202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 20 | — | Stable | The Kanban Dashboard is a built-in Hermes Agent plugin that provides a visual Ka... |
 | 23 | [Hermes Curator](202609200806%20-%20Hermes%20Curator.md) | 20 | — | Stable | Curator is a built-in Hermes Agent plugin that automatically manages the skill c... |
+| 24 | [Hermes Jev](202609202500%20-%20Hermes%20Jev.md) | 20 | — | Stable | Hermes Jev is the official Jev plugin for Hermes Agent (v0. |
 
 ### Cursor
 
@@ -456,6 +458,12 @@ links:
 | 9 | [Cursor Tab](202609202365%20-%20Cursor%20Tab.md) | 20 | — | Cursor |
 | 10 | [Codex Cloud Tasks](202609202395%20-%20Codex%20Cloud%20Tasks.md) | 20 | — | Codex |
 
+### Context & Memory
+
+| # | Plugin | Score | Stars | Agents |
+|---|--------|-------|-------|--------|
+| 1 | [Hermes Jev](202609202500%20-%20Hermes%20Jev.md) | 20 | — | Hermes Agent |
+
 ### MCP Servers
 
 | # | Plugin | Score | Stars | Agents |
@@ -520,9 +528,9 @@ links:
 
 | Metric | Value |
 |--------|-------|
-| Total plugins | 63 |
+| Total plugins | 64 |
 | Heating Up | 42 |
-| Stable | 21 |
+| Stable | 22 |
 | Emerging | 0 |
 | MCP servers | 40 |
 | Cross-agent (2+) | 46 |
