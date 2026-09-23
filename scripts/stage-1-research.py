@@ -3,6 +3,9 @@
 Stage 1: Research - Create new agent and plugin notes directly.
 Runs as a Python script (no delegate_task needed).
 Prevents duplicates by checking ALL vault folders for existing titles.
+
+This is the daily entry point. Add new agents/plugins here to ensure
+they are created on the next run (or recreated if deleted).
 """
 
 import os
@@ -19,7 +22,7 @@ def get_all_existing_titles():
     """Get ALL note titles across ALL vault folders (prevents cross-folder duplicates)"""
     titles = set()
     for root, dirs, files in os.walk(VAULT_DIR):
-        if '/.git' in root:
+        if '/.git' in root or '/__pycache__' in root:
             continue
         for f in files:
             if f.endswith('.md') and ' - ' in f and not f.startswith('00 -'):
@@ -100,9 +103,12 @@ tags:
 def main():
     print("Stage 1: Research - Creating notes...")
     
-    # Create agent notes
+    # ============================================================
+    # AGENTS — Add new agents here to ensure daily coverage
+    # ============================================================
     print("\n  Creating agent notes...")
     agents_to_create = [
+        # --- Core agents (original) ---
         {
             "title": "Claude Code",
             "tags": ["agent", "cli", "mcp"],
@@ -133,6 +139,55 @@ def main():
             "overview": "Devin is Cognition AI's cloud-native autonomous coding agent.",
             "links": ["202609202000 - Devin", "202609202000 - Claude Code"],
         },
+        # --- Extended agents (2026 landscape) ---
+        {
+            "title": "Factory Code",
+            "tags": ["agent", "cloud", "enterprise"],
+            "overview": "Factory Code is an enterprise-grade autonomous coding agent that builds, tests, and deploys code autonomously.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Sweep AI",
+            "tags": ["agent", "github", "autonomous"],
+            "overview": "Sweep AI is a GitHub-integrated AI agent that autonomously creates pull requests from issue descriptions.",
+            "links": ["202609202001 - GitHub Copilot Agent", "202609202000 - Claude Code"],
+        },
+        {
+            "title": "Greptile",
+            "tags": ["agent", "code-intelligence", "enterprise"],
+            "overview": "Greptile is an AI agent that understands entire codebases and provides context-aware code search and generation.",
+            "links": ["202609202000 - Cursor", "202609200911 - Amazon Q Developer"],
+        },
+        {
+            "title": "OpenHands",
+            "tags": ["agent", "open-source", "autonomous"],
+            "overview": "OpenHands (formerly OpenDevin) is an open-source autonomous AI software engineer built for full-stack development.",
+            "links": ["202609202000 - Devin", "202609202000 - Claude Code"],
+        },
+        {
+            "title": "Continue.dev",
+            "tags": ["agent", "ide", "open-source"],
+            "overview": "Continue.dev is an open-source AI code assistant that integrates with VS Code and JetBrains IDEs.",
+            "links": ["202609202000 - Cursor", "202609202001 - GitHub Copilot Agent"],
+        },
+        {
+            "title": "Sourcegraph Cody",
+            "tags": ["agent", "code-intelligence", "enterprise"],
+            "overview": "Cody is Sourcegraph's AI coding agent that leverages the Sourcegraph code graph for deep codebase understanding.",
+            "links": ["202609202000 - Cursor", "202609202001 - GitHub Copilot Agent"],
+        },
+        {
+            "title": "Tabnine",
+            "tags": ["agent", "code-completion", "enterprise"],
+            "overview": "Tabnine is an AI-powered code completion agent that learns from your codebase and provides context-aware suggestions.",
+            "links": ["202609202001 - GitHub Copilot Agent", "202609202000 - Cursor"],
+        },
+        {
+            "title": "Mintlify",
+            "tags": ["agent", "documentation", "autonomous"],
+            "overview": "Mintlify is an AI agent that automatically generates and maintains documentation from code changes.",
+            "links": ["202609202000 - Claude Code", "202609200758 - OpenCode"],
+        },
     ]
     
     for agent in agents_to_create:
@@ -144,9 +199,12 @@ def main():
             agent['overview']
         )
     
-    # Create plugin notes
+    # ============================================================
+    # PLUGINS / MCP SERVERS — Add new plugins here
+    # ============================================================
     print("\n  Creating plugin notes...")
     plugins_to_create = [
+        # --- Original plugins ---
         {
             "title": "GitHub MCP Server",
             "tags": ["plugin", "mcp"],
@@ -217,6 +275,98 @@ def main():
             "overview": "Auto Permission is a Claude Code permission mode with server-evaluated tool call permissions.",
             "links": ["202609202000 - Claude Code", "202609202001 - GitHub Copilot Agent"],
         },
+        # --- Extended MCP servers (2026 landscape) ---
+        {
+            "title": "Slack MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Slack MCP server provides AI agents with access to Slack channels, messages, and user management.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Atlassian Jira MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode", "cursor"],
+            "overview": "Atlassian Jira MCP server enables AI agents to create, update, and search Jira issues and projects.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Airtable MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Airtable MCP server provides AI agents with read/write access to Airtable bases and tables.",
+            "links": ["202609202000 - Claude Code", "202609200758 - OpenCode"],
+        },
+        {
+            "title": "GitLab MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode", "cursor"],
+            "overview": "GitLab MCP server enables AI agents to interact with GitLab repositories, merge requests, and CI/CD pipelines.",
+            "links": ["202609202000 - Claude Code", "202609200758 - OpenCode"],
+        },
+        {
+            "title": "Docker MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Docker MCP server provides AI agents with container management, image building, and deployment capabilities.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Google Workspace MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode", "cursor"],
+            "overview": "Google Workspace MCP server gives AI agents access to Gmail, Calendar, Drive, and Google Sheets.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Pinecone MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Pinecone MCP server enables AI agents to query and manage Pinecone vector databases for RAG applications.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Weaviate MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Weaviate MCP server provides AI agents with vector search and knowledge graph capabilities via Weaviate.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Neo4j MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Neo4j MCP server enables AI agents to query and manage Neo4j graph databases for relationship analysis.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Snowflake MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Snowflake MCP server provides AI agents with SQL query capabilities and data warehouse access via Snowflake.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "BigQuery MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "BigQuery MCP server enables AI agents to query Google BigQuery datasets and manage data pipelines.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Asana MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Asana MCP server provides AI agents with project management capabilities via the Asana API.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
+        {
+            "title": "Monday.com MCP",
+            "tags": ["plugin", "mcp"],
+            "agents": ["claude-code", "hermes", "opencode"],
+            "overview": "Monday.com MCP server enables AI agents to manage boards, items, and workflows on the Monday.com platform.",
+            "links": ["202609202000 - Claude Code", "202609200759 - Hermes Agent"],
+        },
     ]
     
     for plugin in plugins_to_create:
@@ -227,6 +377,70 @@ def main():
             plugin['links'],
             plugin['overview'],
             plugin.get('agents')
+        )
+    
+    # ============================================================
+    # ARCHITECTURE PATTERNS — Add new patterns here
+    # ============================================================
+    print("\n  Creating architecture pattern notes...")
+    arch_to_create = [
+        {
+            "title": "ReAct Reasoning and Acting",
+            "tags": ["architecture", "reasoning"],
+            "overview": "ReAct interleaves reasoning traces and actions, allowing agents to perform dynamic reasoning while interacting with external environments.",
+            "links": ["202609202001 - Context Engineering for Long-Horizon Agents", "202609200931 - Adaptive Planning Magentic Orchestration Pattern"],
+        },
+        {
+            "title": "Reflexion",
+            "tags": ["architecture", "self-improving"],
+            "overview": "Reflexion is a framework where agents reflect on task feedback verbally, maintaining reflective memories to improve subsequent performances.",
+            "links": ["202609202001 - Context Engineering for Long-Horizon Agents", "202609200931 - Adaptive Planning Magentic Orchestration Pattern"],
+        },
+        {
+            "title": "Tree of Thought",
+            "tags": ["architecture", "reasoning"],
+            "overview": "Tree of Thought generalizes chain-of-thought by exploring multiple reasoning paths, using tree search strategies to find optimal solutions.",
+            "links": ["202609202001 - Context Engineering for Long-Horizon Agents", "202609200932 - Fan-Out Fan-In Parallel Agent Pattern"],
+        },
+        {
+            "title": "Graph of Thought",
+            "tags": ["architecture", "reasoning"],
+            "overview": "Graph of Thought extends Tree of Thought by allowing arbitrary graph structures of reasoning, enabling more flexible problem-solving.",
+            "links": ["202609202001 - Context Engineering for Long-Horizon Agents", "202609200932 - Fan-Out Fan-In Parallel Agent Pattern"],
+        },
+        {
+            "title": "Mixture of Experts for Agents",
+            "tags": ["architecture", "modeling"],
+            "overview": "Mixture of Experts routes tasks to specialized sub-models or agents, each expert in a specific domain or task type.",
+            "links": ["2026092032 - Tiered Routing Model Cascade Pattern", "202609202002 - Multi-Agent Orchestration with Guardrail Layering"],
+        },
+        {
+            "title": "Speculative Decoding",
+            "tags": ["architecture", "optimization"],
+            "overview": "Speculative Decoding uses a smaller draft model to generate tokens in parallel, then verifies them with the main model for faster inference.",
+            "links": ["2026092032 - Tiered Routing Model Cascade Pattern", "202609202020 - Orchestrator-Worker Delegation Pattern"],
+        },
+        {
+            "title": "Guardrails and Safety Layers",
+            "tags": ["architecture", "safety"],
+            "overview": "Guardrails enforce boundaries on agent actions through validation layers, preventing unauthorized or unsafe operations.",
+            "links": ["202609202002 - Multi-Agent Orchestration with Guardrail Layering", "202609202003 - MCP Apps Interactive UI Protocol"],
+        },
+        {
+            "title": "Prompt Caching and KV Cache",
+            "tags": ["architecture", "optimization"],
+            "overview": "Prompt Caching stores key-value pairs from previous computations to avoid redundant processing, reducing latency and cost.",
+            "links": ["202609202021 - Context Compaction and Structured Note-Taking", "2026092032 - Tiered Routing Model Cascade Pattern"],
+        },
+    ]
+    
+    for pattern in arch_to_create:
+        create_note(
+            ARCH_DIR,
+            pattern['title'],
+            pattern['tags'],
+            pattern['links'],
+            pattern['overview']
         )
     
     print("\nStage 1 complete")
