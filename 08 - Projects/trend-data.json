@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23T13:11:26.559568",
+  "last_updated": "2026-09-23T17:10:37.393668",
   "items": {
     "Cline": {
       "type": "agent",
@@ -1139,6 +1139,18 @@
       "score": 26,
       "file": "04 - Plugins/202609202355 - Monday.com MCP.md"
     },
+    "Codex AGENTS.md": {
+      "type": "plugin",
+      "stars": 0,
+      "mentions": 2,
+      "tags": [
+        "plugin",
+        "codex",
+        "config"
+      ],
+      "score": 106,
+      "file": "04 - Plugins/202609202405 - Codex AGENTS.md"
+    },
     "Cursor Tab": {
       "type": "plugin",
       "stars": 0,
@@ -1186,18 +1198,6 @@
       ],
       "score": 106,
       "file": "04 - Plugins/202609202395 - Codex Cloud Tasks.md"
-    },
-    "Codex AGENTS.md": {
-      "type": "plugin",
-      "stars": 0,
-      "mentions": 2,
-      "tags": [
-        "plugin",
-        "codex",
-        "config"
-      ],
-      "score": 106,
-      "file": "04 - Plugins/202609202405 - Codex AGENTS.md.md"
     },
     "Windsurf Cascade": {
       "type": "plugin",

@@ -67,28 +67,60 @@
 | 40 | [202609202135 - Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 10 | — | Emerging | agent, documentation, autonomous |
 | 41 | [00 - Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) | 5 | — | Emerging | moc, agent, ai-tools |
 | 42 | [202609202115 - Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 5 | — | Emerging | agent, code-intelligence, enterprise |
-| 43 | [Factory Code](./03%20-%20Agents/202609202065%20-%20Factory%20Code.md) | 45 | — | Stable | agent, cloud, enterprise |
-| 44 | [Sweep AI](./03%20-%20Agents/202609202075%20-%20Sweep%20AI.md) | 40 | — | Stable | agent, github, autonomous |
-| 45 | [Greptile](./03%20-%20Agents/202609202085%20-%20Greptile.md) | 40 | — | Stable | agent, code-intelligence, enterprise |
-| 46 | [OpenHands](./03%20-%20Agents/202609202095%20-%20OpenHands.md) | 35 | — | Stable | agent, open-source, autonomous |
-| 47 | [Continue.dev](./03%20-%20Agents/202609202105%20-%20Continue.dev.md) | 30 | — | Stable | agent, ide, open-source |
-| 48 | [Sourcegraph Cody](./03%20-%20Agents/202609202115%20-%20Sourcegraph%20Cody.md) | 30 | — | Stable | agent, code-intelligence, enterprise |
-| 49 | [Tabnine](./03%20-%20Agents/202609202125%20-%20Tabnine.md) | 25 | — | Stable | agent, code-completion, enterprise |
-| 50 | [Mintlify](./03%20-%20Agents/202609202135%20-%20Mintlify.md) | 20 | — | Stable | agent, documentation, autonomous |
 
 ## 🔌 Top Plugins & Extensions
 
-*Top 5 scored trending — Last updated: 2026-09-23*
+*Top 5 plugins for each of the top 5 AI tools/CLIs*
 
-*See [Plugin Master Index](./04%20-%20Plugins/00%20-%20Plugin%20Master%20Index.md) for complete per-agent tables*
+### Claude Code
 
-| # | Name | Score | Type | Stars | Status |
-|---|------|-------|------|-------|--------|
-| 1 | [202609202000 - OpenCode Supermemory](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Supermemory.md) | 129 | plugin | 0 | Heating Up |
-| 2 | [202609200806 - Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 115 | plugin | 0 | Heating Up |
-| 3 | [202609202000 - OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | 109 | plugin | 0 | Heating Up |
-| 4 | [202609200921 - OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 106 | plugin | 0 | Heating Up |
-| 5 | [202609200922 - OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | 106 | plugin | 0 | Heating Up |
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [Claude Code Code Review](./04%20-%20Plugins/2026092023%20-%20Claude%20Code%20Code%20Review.md) | 55 | ⭐ 438,525 | plugin, claude-code |
+| 2 | [Superpowers](./04%20-%20Plugins/2026092020%20-%20Superpowers.md) | 30 | — | plugin, claude-code |
+| 3 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
+| 4 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 5 | [Claude Code Auto Permission](./04%20-%20Plugins/202609200807%20-%20Claude%20Code%20Auto%20Permission.md) | 5 | — | plugin, claude-code |
+
+### OpenCode
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [OpenCodeRAG](./04%20-%20Plugins/202609200923%20-%20OpenCodeRAG.md) | 15 | — | plugin, opencode |
+| 2 | [OpenCode Firecrawl](./04%20-%20Plugins/202609202000%20-%20OpenCode%20Firecrawl.md) | 15 | — | plugin, tool |
+| 3 | [OpenCode Snip](./04%20-%20Plugins/2026092024%20-%20OpenCode%20Snip.md) | 10 | ⭐ 1 | plugin, opencode |
+| 4 | [OpenCode Morph Fast Apply](./04%20-%20Plugins/202609200921%20-%20OpenCode%20Morph%20Fast%20Apply.md) | 10 | — | plugin, opencode |
+| 5 | [OpenCode Ensemble](./04%20-%20Plugins/202609200922%20-%20OpenCode%20Ensemble.md) | 10 | — | plugin, opencode |
+
+### Hermes Agent
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [Hermes Curator](./04%20-%20Plugins/202609200806%20-%20Hermes%20Curator.md) | 25 | — | plugin, hermes |
+| 2 | [Jev Agent Router](./04%20-%20Plugins/202609202000%20-%20Jev%20Agent%20Router.md) | 25 | — | plugin, tool |
+| 3 | [Hermes Kanban Dashboard](./04%20-%20Plugins/202609200805%20-%20Hermes%20Kanban%20Dashboard.md) | 5 | — | plugin, hermes |
+| 4 | [Hermes Plugin System](./04%20-%20Plugins/202609202013%20-%20Hermes%20Plugin%20System.md) | 5 | — | plugin, hermes |
+| 5 | [Hermes Jev Agent Router](./04%20-%20Plugins/202609202225%20-%20Hermes%20Jev%20Agent%20Router.md) | 5 | — | plugin, hermes |
+
+### Cursor
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [Vercel Agent Browser](./04%20-%20Plugins/202609200920%20-%20Vercel%20Agent%20Browser.md) | 10 | — | plugin, browser-automation |
+| 2 | [Cursor Tab](./04%20-%20Plugins/202609202365%20-%20Cursor%20Tab.md) | 10 | — | plugin, cursor |
+| 3 | [Cursor Composer](./04%20-%20Plugins/202609202375%20-%20Cursor%20Composer.md) | 10 | — | plugin, cursor |
+| 4 | [Cursor Rules](./04%20-%20Plugins/202609202385%20-%20Cursor%20Rules.md) | 10 | — | plugin, cursor |
+| 5 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+
+### Codex
+
+| # | Plugin | Score | Stars | Type |
+|---|--------|-------|-------|------|
+| 1 | [Codex Cloud Tasks](./04%20-%20Plugins/202609202395%20-%20Codex%20Cloud%20Tasks.md) | 10 | — | plugin, codex |
+| 2 | [Codex AGENTS.md](./04%20-%20Plugins/202609202405%20-%20Codex%20AGENTS.md) | 10 | — | plugin, codex |
+| 3 | [Sentry MCP](./04%20-%20Plugins/2026092021%20-%20Sentry%20MCP.md) | 35 | ⭐ 858 | plugin, mcp |
+| 4 | [Browserbase MCP](./04%20-%20Plugins/2026092022%20-%20Browserbase%20MCP.md) | 35 | — | plugin, mcp |
+| 5 | [FAL MCP Server](./04%20-%20Plugins/202609200804%20-%20FAL%20MCP%20Server.md) | 30 | — | plugin, mcp |
 
 
 ## 🏗️ Architecture Patterns
