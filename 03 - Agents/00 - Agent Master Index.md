@@ -50,7 +50,7 @@ links:
 
 # AI Agents — Master Index
 
-*Comprehensive index of all trending AI coding agents — Last updated: 2026-09-30*
+*Comprehensive index of all trending AI coding agents — Last updated: 2026-10-01*
 
 **Total agents tracked:** 41
 **Heating Up:** 14 | **Stable:** 12 | **Emerging:** 15
