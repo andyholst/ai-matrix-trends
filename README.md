@@ -6,7 +6,7 @@
 
 ## 🚀 Trending Agents
 
-*Top 5 scored trending — Last updated: 2026-10-05*
+*Top 5 scored trending — Last updated: 2026-10-06*
 
 *See [Agent Master Index](./03%20-%20Agents/00%20-%20Agent%20Master%20Index.md) for complete list*
 
@@ -21,7 +21,7 @@
 
 ## 🛠️ Agent Tools & CLIs
 
-*All 42 tracked agent tools/CLIs ranked by score — Last updated: 2026-10-05*
+*All 42 tracked agent tools/CLIs ranked by score — Last updated: 2026-10-06*
 
 | # | Agent | Score | Stars | Status | Tags |
 |---|-------|-------|-------|--------|------|
@@ -179,7 +179,7 @@
 
 ## 📊 Trend Radar
 
-*Last updated: 2026-10-05*
+*Last updated: 2026-10-06*
 
 ### Heating Up
 
@@ -249,13 +249,13 @@ This README is the vault's **dashboard**. It refreshes daily via cron job at 20:
 
 ---
 
-*Last refreshed: 2026-10-05*
+*Last refreshed: 2026-10-06*
 *Agent profile: ai-matrix-trends*
 *Cron job: [AI Matrix Trends - Daily Trend Scan](./scripts/daily-scan-prompt.md)*
 
 ## 🔌 Plugins by Agent
 
-*Agent-specific plugins for each tool — Last updated: 2026-10-05*
+*Agent-specific plugins for each tool — Last updated: 2026-10-06*
 
 ### Claude Code
 
