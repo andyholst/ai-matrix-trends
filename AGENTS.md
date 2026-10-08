@@ -563,7 +563,7 @@ Items are scored based on:
 
 ## Daily Scan Scripts (CRITICAL)
 
-The cron job runs in **8 stages**:
+The daily scan runs as **4 cron stages** (host crontab, each `setsid python3 scripts/stage-N-*.py`); Stage 4 internally runs **8 sub-steps**:
 
 ### Stage 1: Research (20:00)
 `stage-1-research.py` — Creates new agent and plugin notes from hardcoded lists (no web search, no delegate_task).
@@ -596,7 +596,7 @@ The cron job runs in **8 stages**:
 
 | Script | Purpose | Output |
 |--------|---------|--------|
-| fix_all_links.py | Fixes frontmatter + body wikilinks | Fixed files |
+| fix-all-links.py | Fixes frontmatter + body wikilinks | Fixed files |
 | aggregate-trends.py | Scores all items | trend-data.json |
 | collect_agent_plugins.py | Builds per-agent plugin tables | Updated README |
 | update_readme.py | Updates Trend Radar tables | Updated README |

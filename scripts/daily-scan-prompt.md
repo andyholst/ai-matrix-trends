@@ -37,7 +37,7 @@ agents: [claude-code, hermes, opencode]
 
 ---
 
-## Stage 2: Link Resolution (20:30) — `stage-2-links.sh`
+## Stage 2: Link Resolution (20:30) — `stage-2-links.py`
 
 1. `python3 scripts/resolve_wikilinks.py`
 2. `python3 scripts/fix_all_links.py`
@@ -45,7 +45,7 @@ agents: [claude-code, hermes, opencode]
 
 ---
 
-## Stage 3: Scoring (20:45) — `stage-3-scoring.sh`
+## Stage 3: Scoring (20:45) — `stage-3-scoring.py`
 
 4. `python3 scripts/aggregate-trends.py`
 5. `python3 scripts/collect_agent_plugins.py`
